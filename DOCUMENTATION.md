@@ -12,17 +12,45 @@
 ## Multilingual Architecture
 
 ### Overview
-The theme is **fully multilingual by design**, supporting 8 base languages across 13 regional markets. Every feature works seamlessly in all languages.
+The theme is **fully multilingual by design**, supporting **20 languages across 14 countries**. Every feature works seamlessly in all languages with complete regional coverage.
 
-### Supported Languages
-- **Dutch (NL)** - Netherlands, Belgium
-- **English (EN)** - Ireland, UK, International
-- **German (DE)** - Austria, Germany
-- **French (FR)** - France, Belgium
-- **Spanish (ES)** - Spain
-- **Italian (IT)** - Italy
-- **Portuguese (PT)** - Portugal
-- **Danish (DA)** - Denmark
+### Supported Languages (20 Total)
+
+#### Major European Languages (9)
+- 🇺🇸 **English (US)** - `en` - United States, International
+- 🇬🇧 **English (UK)** - `en-GB` - United Kingdom, Ireland, Australia, New Zealand
+- 🇳🇱 **Dutch** - `nl` - Netherlands
+- 🇩🇪 **German** - `de` - Germany
+- 🇫🇷 **French** - `fr` - France
+- 🇪🇸 **Spanish** - `es` - Spain
+- 🇮🇹 **Italian** - `it` - Italy
+- 🇵🇹 **Portuguese** - `pt-PT` - Portugal
+- 🇩🇰 **Danish** - `da` - Denmark
+
+#### Regional Variants (5)
+- 🇧🇪 **Flemish** - `nl-BE` - Belgium (Flanders)
+- 🇧🇪 **Belgian French** - `fr-BE` - Belgium (Wallonia)
+- 🇧🇪 **Belgian German** - `de-BE` - Belgium (Ostbelgien)
+- 🇦🇹 **Austrian German** - `de-AT` - Austria
+- 🇪🇸 **Catalan** - `ca` - Catalonia, Valencia, Balearic Islands
+
+#### Regional/Minority Languages (6)
+- 🇪🇸 **Basque** - `eu` - Basque Country, Navarre
+- 🇪🇸 **Galician** - `gl` - Galicia
+- 🇫🇷 **Corsican** - `co` - Corsica
+- 🇱🇺 **Luxembourgish** - `lb` - Luxembourg
+- 🇮🇪 **Irish** - `ga` - Ireland (Gaeilge)
+- 🇳🇱 **Frisian** - `fy` - Friesland, Netherlands
+
+**Complete Country Coverage:**
+| Country | Languages | Locales | Coverage |
+|---------|-----------|---------|----------|
+| 🇧🇪 Belgium | 3 official | `nl-BE`, `fr-BE`, `de-BE` | ✅ 3/3 |
+| 🇱🇺 Luxembourg | 3 official | `lb`, `de`, `fr` | ✅ 3/3 |
+| 🇪🇸 Spain | 4 major | `es`, `ca`, `eu`, `gl` | ✅ 4/4 |
+| 🇨🇭 Switzerland | 3 of 4 | `de`, `fr`, `it` | ✅ 3/4 |
+| 🇮🇪 Ireland | 2 official | `en-GB`, `ga` | ✅ 2/2 |
+| 🇳🇱 Netherlands | 2 official | `nl`, `fy` | ✅ 2/2 |
 
 ### Language Detection
 Automatically detects from:
@@ -44,11 +72,12 @@ Search in ANY language, find products in ALL languages:
 ```
 
 #### 2. Synonym Dictionary
-150+ synonym mappings across 8 languages:
+300+ synonym mappings across 20 languages:
 - **Product types**: laminate, vinyl, parquet, wood, tile, stone
 - **Characteristics**: waterproof, scratch-resistant, pet-friendly
-- **Colors**: oak, walnut, white, grey, natural (all 8 languages)
+- **Colors**: oak, walnut, white, grey, natural (all 20 languages)
 - **Materials**: PVC, LVT, SPC, WPC, etc.
+- **Regional variations**: UK "grey" vs US "gray", AT "Parkettboden" vs DE "Parkett"
 
 #### 3. Parallel Search
 Query analyzed and expanded to synonym variations:
