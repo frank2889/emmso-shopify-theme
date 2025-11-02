@@ -1,0 +1,147 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Passer au contenu",
+      "close": "Fermer",
+      "learn_more": "En savoir plus"
+    },
+    "404": {
+      "title": "Page introuvable",
+      "subtext": "La page que vous recherchez n'existe pas.",
+      "continue_shopping": "Continuer les achats"
+    },
+    "search": {
+      "title": "Rechercher",
+      "placeholder": "Rechercher des produits...",
+      "no_results": "Aucun résultat trouvé pour \"{{ terms }}\"",
+      "results_for": "Résultats pour \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} résultat",
+        "count_other": "{{ count }} résultats"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "Adresse e-mail",
+      "submit": "S'inscrire"
+    },
+    "social": {
+      "share": "Partager",
+      "follow_us": "Suivez-nous"
+    }
+  },
+  "filters": {
+    "title": "Filtrer",
+    "active_filters": "Filtres actifs",
+    "clear_all": "Tout effacer",
+    "category": "Catégorie",
+    "brand": "Marque",
+    "price": "Prix",
+    "room": "Type de pièce",
+    "characteristics": "Caractéristiques",
+    "price_range": "Gamme de prix",
+    "min_price": "Min",
+    "max_price": "Max",
+    "apply": "Appliquer"
+  },
+  "comparison": {
+    "title": "Comparaison de produits",
+    "compare_products": "Comparer les produits",
+    "clear_all": "Tout supprimer",
+    "remove": "Supprimer",
+    "added": "{{ product }} ajouté à la comparaison",
+    "removed": "{{ product }} retiré de la comparaison",
+    "cleared": "Comparaison effacée",
+    "max_reached": "Maximum {{ max }} produits peuvent être comparés",
+    "min_required": "Sélectionnez au moins {{ min }} produits pour comparer",
+    "price": "Prix",
+    "availability": "Disponibilité",
+    "variants": "Variantes",
+    "features": "Caractéristiques",
+    "in_stock": "En stock",
+    "out_of_stock": "Rupture de stock",
+    "products_selected": "{{ count }} produits sélectionnés pour la comparaison"
+  },
+  "products": {
+    "product": {
+      "in_stock": "En stock",
+      "out_of_stock": "Épuisé",
+      "add_to_cart": "Ajouter au panier",
+      "view_details": "Voir les détails",
+      "price": {
+        "from": "À partir de {{ price }}",
+        "regular": "Prix régulier",
+        "sale": "Prix promotionnel"
+      }
+    },
+    "related": {
+      "title": "Ceci pourrait également vous intéresser"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Aucun produit trouvé"
+    },
+    "sorting": {
+      "title": "Trier par",
+      "featured": "En vedette",
+      "best_selling": "Meilleures ventes",
+      "alphabetically_a_z": "Alphabétiquement, A-Z",
+      "alphabetically_z_a": "Alphabétiquement, Z-A",
+      "price_ascending": "Prix croissant",
+      "price_descending": "Prix décroissant",
+      "date_ascending": "Date croissante",
+      "date_descending": "Date décroissante"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Panier",
+      "empty": "Votre panier est vide",
+      "continue_shopping": "Continuer les achats",
+      "checkout": "Commander",
+      "subtotal": "Sous-total",
+      "remove": "Retirer",
+      "quantity": "Quantité",
+      "update": "Mettre à jour"
+    },
+    "shipping": {
+      "free_shipping": "Livraison gratuite",
+      "free_shipping_remaining": "Encore {{ amount }} pour la livraison gratuite"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mon compte",
+      "orders": "Commandes",
+      "addresses": "Adresses",
+      "logout": "Se déconnecter"
+    },
+    "login": {
+      "title": "Se connecter",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "forgot_password": "Mot de passe oublié ?"
+    },
+    "addresses": {
+      "postcode": "Code postal",
+      "city": "Ville",
+      "province": "Province"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Lire la suite"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Inscrivez-vous pour des offres exclusives"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d %B %Y"
+  }
+}
