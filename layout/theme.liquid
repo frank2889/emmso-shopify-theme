@@ -48,6 +48,9 @@
 
     {% sections 'footer-group' %}
     
+    {%- # Mobile Bottom Navigation -%}
+    {% render 'mobile-nav' %}
+    
     {%- # Search Intelligence Module - Load first -%}
     <script src="{{ 'search-intelligence.js' | asset_url }}"></script>
     

@@ -1,0 +1,61 @@
+{%- # Compact Search Bar for Header -%}
+<div class="search-bar" role="search">
+  <svg class="search-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="11" cy="11" r="8"></circle>
+    <path d="m21 21-4.35-4.35"></path>
+  </svg>
+  
+  <input 
+    type="search"
+    class="search-bar__input"
+    placeholder="{{ 'general.search.placeholder' | t | default: 'Search products...' }}"
+    aria-label="{{ 'general.search.title' | t }}"
+    data-predictive-search-input
+    autocomplete="off"
+  >
+  
+  <button 
+    type="button" 
+    class="search-bar__clear" 
+    aria-label="{{ 'general.search.clear' | t | default: 'Clear search' }}"
+    data-search-clear
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+  
+  <button 
+    type="button" 
+    class="search-bar__voice" 
+    aria-label="{{ 'general.search.voice' | t | default: 'Voice search' }}"
+    data-voice-search-button
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+      <line x1="12" y1="19" x2="12" y2="23"></line>
+      <line x1="8" y1="23" x2="16" y2="23"></line>
+    </svg>
+    <span class="search-bar__voice-indicator"></span>
+  </button>
+</div>
+
+{%- # Autocomplete Results -%}
+<div class="search-autocomplete" data-predictive-search-results>
+  <div class="search-autocomplete__section">
+    <h3 class="search-autocomplete__heading">{{ 'general.search.recent' | t | default: 'Recent Searches' }}</h3>
+    <ul class="search-autocomplete__list" data-recent-searches></ul>
+  </div>
+  
+  <div class="search-autocomplete__section">
+    <h3 class="search-autocomplete__heading">{{ 'general.search.suggestions' | t | default: 'Suggestions' }}</h3>
+    <ul class="search-autocomplete__list" data-search-suggestions></ul>
+  </div>
+  
+  <div class="search-autocomplete__section">
+    <h3 class="search-autocomplete__heading">{{ 'general.search.products' | t | default: 'Products' }}</h3>
+    <div data-search-products></div>
+  </div>
+</div>
