@@ -87,49 +87,24 @@ body {
 /** Section layout utilities */
 
 /**
- * Setup a grid that enables both full-width and constrained layouts
- * depending on the class of the child elements.
- *
- * By default, a minimum content margin is set on the left and right
- * sides of the section and the content is centered in the viewport to
- * not exceed the maximum page width.
- *
- * When a child element is given the `full-width` class, it will span
- * the entire viewport.
+ * Shopify Section Wrapper Styles
+ * 
+ * Working WITH Shopify's architecture:
+ * - Shopify auto-generates wrapper divs for each section
+ * - We style them to be neutral/transparent by default
+ * - Individual sections can override as needed (e.g., search-hero for full-width)
+ * - Uses simple approach instead of complex grid
  */
 .shopify-section {
-  --content-width: min(
-    calc(var(--container-max) - var(--space-8) * 2),
-    calc(100% - var(--space-4) * 2)
-  );
-  --content-margin: minmax(var(--space-4), 1fr);
-  --content-grid: var(--content-margin) var(--content-width) var(--content-margin);
-
+  /* Remove constraints - let sections control their own layout */
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  width: 100%;
+  
   /* This is required to make <img> elements work as background images */
   position: relative;
-  grid-template-columns: var(--content-grid);
-  display: grid;
-  width: 100%;
 }
 
-@media (min-width: 640px) {
-  .shopify-section {
-    --content-margin: minmax(var(--space-6), 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .shopify-section {
-    --content-margin: minmax(var(--space-8), 1fr);
-  }
-}
-
-/* Child elements, by default, are constrained to the central column of the grid. */
-.shopify-section > * {
-  grid-column: 2;
-}
-
-/* Child elements that use the full-width utility class span the entire viewport. */
-.shopify-section > .full-width {
-  grid-column: 1 / -1;
-}
+/* No special grid or child element constraints */
+/* Sections control their own content width via .container or .page-width classes */
