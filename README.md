@@ -2,17 +2,69 @@
   <br>
     <img src="./assets/shoppy-x-ray.svg" alt="logo" width="200">
   <br>
-  Shopify Skeleton Theme
+  EMMSO Custom Shopify Theme
 </h1>
 
-A minimal, carefully structured Shopify theme designed to help you quickly get started. Designed with modularity, maintainability, and Shopify's best practices in mind.
+Custom Shopify theme for EMMSO - A pan-European flooring and pet products specialist. Built from scratch using Shopify's modern theme architecture with multi-language support and optimized for B2B/B2C commerce.
 
 <p align="center">
   <a href="./LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
-  <a href="./actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Shopify/skeleton-theme/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/frank2889/emmso-shopify-theme"><img src="https://img.shields.io/badge/GitHub-Repository-blue.svg" alt="GitHub"></a>
 </p>
 
-## Getting started
+## 📊 Business Overview
+
+### 🏢 Company
+**EMMSO** - Floor Products & Solutions Specialist  
+**Store:** vloerproducten.myshopify.com
+
+### 🌍 Active Markets & Languages (8)
+- 🇳🇱 **Dutch (NL)** - Netherlands (Primary Market)
+- 🇬🇧 **English (EN)** - International/UK
+- 🇩🇪 **German (DE)** - Germany
+- 🇫🇷 **French (FR)** - France
+- 🇪🇸 **Spanish (ES)** - Spain
+- 🇮🇹 **Italian (IT)** - Italy
+- 🇵🇹 **Portuguese (PT)** - Portugal
+- 🇩🇰 **Danish (DA)** - Denmark
+
+### 🏭 Product Brands (19)
+
+**Floor Care & Maintenance:**
+1. **Lithofin** - Stone & tile care
+2. **HMK** - Stone protection
+3. **Lecol** - Adhesives
+4. **Woca** - Wood care
+5. **Bona** - Hardwood floor care
+6. **Loba** - Wood floor systems
+7. **FloorService** - Floor maintenance
+8. **Blue Dolphin** - Cleaning products
+9. **Dr. Schutz** - Floor care systems
+10. **Blanchon** - Wood finishes
+
+**Flooring Products:**
+11. **Forbo** - Flooring solutions
+12. **Mflor** - Luxury vinyl flooring
+13. **Kerakoll** - Tile adhesives
+14. **Bauwerk** - Parquet flooring
+15. **StoneTech** - Stone care
+
+**Pet Products:**
+16. **Excellent Pets** - Pet supplies
+17. **Elanco** - Pet health
+18. **Milbemax** - Pet medications
+19. **ProPad** - Pet products
+
+### 📈 Business Model
+- **B2B & B2C** Multi-market e-commerce
+- **Multi-language** SEO optimization
+- **Product feeds** for Google Shopping (8 languages)
+- **Content marketing** via blogs in all languages
+- **Pan-European** distribution
+
+---
+
+## 🚀 Getting started
 
 ### Prerequisites
 
@@ -26,102 +78,265 @@ If you use VS Code:
 
 ### Clone
 
-Clone this repository using Git or Shopify CLI:
+Clone this repository:
 
 ```bash
-git clone git@github.com:Shopify/skeleton-theme.git
-# or
-shopify theme init
+git clone git@github.com:frank2889/emmso-shopify-theme.git
+cd emmso-shopify-theme
 ```
 
-### Preview
+### Connect to Shopify Store
 
-Preview this theme using Shopify CLI:
+Connect to your EMMSO Shopify store and start the development server:
 
 ```bash
 shopify theme dev
 ```
 
-## Theme architecture
+This will:
+- Open authentication in your browser
+- Upload theme as development theme
+- Start local server at `http://127.0.0.1:9292`
+- Enable hot-reload for instant preview
+
+### Push to Store
+
+Push your theme to Shopify:
+
+```bash
+# Push as unpublished theme
+shopify theme push --unpublished
+
+# Or publish directly
+shopify theme publish
+```
+
+---
+
+## 🏗️ Theme architecture
 
 ```bash
 .
-├── assets          # Stores static assets (CSS, JS, images, fonts, etc.)
-├── blocks          # Reusable, nestable, customizable UI components
-├── config          # Global theme settings and customization options
-├── layout          # Top-level wrappers for pages (layout templates)
-├── locales         # Translation files for theme internationalization
-├── sections        # Modular full-width page components
-├── snippets        # Reusable Liquid code or HTML fragments
-└── templates       # Templates combining sections to define page structures
+├── assets/         # Static assets (CSS, JS, images, fonts, SVGs)
+├── blocks/         # Reusable, nestable UI components (Horizon theme blocks)
+├── config/         # Global theme settings and customization options
+├── layout/         # Top-level wrappers (theme.liquid, password.liquid)
+├── locales/        # Translation files (8 languages: NL, EN, DE, FR, ES, IT, PT, DA)
+├── sections/       # Modular full-width page components
+├── snippets/       # Reusable Liquid code fragments
+└── templates/      # JSON templates combining sections for page structures
 ```
 
-To learn more, refer to the [theme architecture documentation](https://shopify.dev/docs/storefronts/themes/architecture).
+### Multi-Language Support
+
+This theme supports **8 European markets** with dedicated:
+- **Sitemaps** for each language (SEO optimization)
+- **Product feeds** for Google Shopping integration
+- **Blog content** for content marketing
+- **Locale files** for UI translations
+
+### Key Features
+
+✅ **Modern Shopify 2.0 Architecture**
+- JSON templates for merchant customization
+- Modular sections and blocks
+- Horizon theme compatibility
+- Theme editor integration
+
+✅ **Multi-Market Optimization**
+- 8-language support (NL, EN, DE, FR, ES, IT, PT, DA)
+- SEO-optimized sitemaps per market
+- Google Shopping feeds per language
+- Localized content and blogs
+
+✅ **Performance Optimized**
+- Critical CSS inlining
+- CSS variables for theming
+- Structured data (Schema.org)
+- Lazy loading images
+
+✅ **E-commerce Features**
+- Product pages with variants
+- Collection filtering
+- Cart functionality
+- Search integration
+- Gift card support
+
+---
+
+## 📁 File Structure Details
 
 ### Templates
-
-[Templates](https://shopify.dev/docs/storefronts/themes/architecture/templates#template-types) control what's rendered on each type of page in a theme.
-
-The Skeleton Theme scaffolds [JSON templates](https://shopify.dev/docs/storefronts/themes/architecture/templates/json-templates) to make it easy for merchants to customize their store.
-
-None of the template types are required, and not all of them are included in the Skeleton Theme. Refer to the [template types reference](https://shopify.dev/docs/storefronts/themes/architecture/templates#template-types) for a full list.
+JSON templates combining sections to define page structures. This theme includes:
+- `index.json` - Homepage
+- `product.json` - Product pages
+- `collection.json` - Collection pages
+- `cart.json` - Shopping cart
+- `404.json` - Error page
+- Multi-language sitemaps (NL, EN, DE, FR, ES, IT, PT, DA)
+- Multi-language product feeds for Google Shopping
 
 ### Sections
+Modular, customizable Liquid components:
+- `header.liquid` - Site navigation and branding
+- `footer.liquid` - Footer content and links
+- `product.liquid` - Product display and purchase
+- `collection.liquid` - Product grid with filtering
+- `cart.liquid` - Shopping cart management
+- `search.liquid` - Search functionality
+- `article.liquid` - Blog post display
+- `custom-section.liquid` - Custom content areas
 
-[Sections](https://shopify.dev/docs/storefronts/themes/architecture/sections) are Liquid files that allow you to create reusable modules of content that can be customized by merchants. They can also include blocks which allow merchants to add, remove, and reorder content within a section.
-
-Sections are made customizable by including a `{% schema %}` in the body. For more information, refer to the [section schema documentation](https://shopify.dev/docs/storefronts/themes/architecture/sections/section-schema).
+### Snippets
+Reusable code fragments:
+- `meta-tags.liquid` - SEO and social meta tags
+- `css-variables.liquid` - Theme CSS variables
+- `image.liquid` - Responsive image rendering
+- `structured-data-*.liquid` - Schema.org markup for:
+  - Products
+  - Collections
+  - Articles
+  - Reviews
+  - FAQs
+  - Videos
+  - Breadcrumbs
+  - Organization
 
 ### Blocks
+Horizon-compatible theme blocks:
+- `group.liquid` - Container for nested blocks
+- `text.liquid` - Text content blocks
 
-[Blocks](https://shopify.dev/docs/storefronts/themes/architecture/blocks) let developers create flexible layouts by breaking down sections into smaller, reusable pieces of Liquid. Each block has its own set of settings, and can be added, removed, and reordered within a section.
+---
 
-Blocks are made customizable by including a `{% schema %}` in the body. For more information, refer to the [block schema documentation](https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/schema).
+## 🎨 Development
 
-## Schemas
+### CSS Architecture
+- **Critical CSS** inlined in `<head>` for performance
+- **CSS Variables** for easy theming and customization
+- **Modular styles** scoped to components
+- **Responsive design** mobile-first approach
 
-When developing components defined by schema settings, we recommend these guidelines to simplify your code:
+### JavaScript
+- Vanilla JavaScript for performance
+- Modular component-based structure
+- Cart API integration
+- Product variant selection
+- Search functionality
 
-- **Single property settings**: For settings that correspond to a single CSS property, use CSS variables:
+### Schema Configuration
+Settings defined in `config/settings_schema.json`:
+- Typography settings
+- Color schemes
+- Layout options
+- Page width controls
+- Spacing and margins
 
-  ```liquid
-  <div class="collection" style="--gap: {{ block.settings.gap }}px">
-    ...
-  </div>
+---
 
-  {% stylesheet %}
-    .collection {
-      gap: var(--gap);
+## 🔧 Customization
+
+### Theme Settings
+Customize your theme in the Shopify admin:
+1. Go to **Online Store > Themes**
+2. Click **Customize** on your theme
+3. Use the theme editor to modify:
+   - Colors and fonts
+   - Layout and spacing
+   - Header and footer
+   - Homepage sections
+
+### Adding Sections
+Create new sections in `/sections/`:
+```liquid
+{% schema %}
+{
+  "name": "Custom Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome"
     }
-  {% endstylesheet %}
+  ]
+}
+{% endschema %}
+```
 
-  {% schema %}
-  {
-    "settings": [{
-      "type": "range",
-      "label": "gap",
-      "id": "gap",
-      "min": 0,
-      "max": 100,
-      "unit": "px",
-      "default": 0,
-    }]
-  }
-  {% endschema %}
-  ```
+### Multi-Language Content
+Add translations in `/locales/`:
+- Edit `en.default.json` for English
+- Create language files for each market
+- Use `{{ 'key' | t }}` in Liquid templates
 
-- **Multiple property settings**: For settings that control multiple CSS properties, use CSS classes:
+---
 
-  ```liquid
-  <div class="collection {{ block.settings.layout }}">
-    ...
-  </div>
+## 🚀 Deployment
 
-  {% stylesheet %}
-    .collection--full-width {
-      /* multiple styles */
-    }
-    .collection--narrow {
+### Development Workflow
+```bash
+# Start local development
+shopify theme dev
+
+# Check theme
+shopify theme check
+
+# Push to store
+shopify theme push --unpublished
+```
+
+### Production Deployment
+```bash
+# Publish theme
+shopify theme publish
+
+# Or create a new theme version
+shopify theme push --unpublished --theme-name="EMMSO v2.0"
+```
+
+### GitHub Integration
+This theme is version controlled with Git:
+```bash
+# Commit changes
+git add .
+git commit -m "Add new product section"
+
+# Push to GitHub
+git push origin main
+```
+
+---
+
+## 📚 Resources
+
+### Shopify Documentation
+- [Theme Architecture](https://shopify.dev/docs/storefronts/themes/architecture)
+- [Liquid Reference](https://shopify.dev/docs/api/liquid)
+- [Theme Editor](https://shopify.dev/docs/storefronts/themes/tools/online-editor)
+- [Shopify CLI](https://shopify.dev/docs/api/shopify-cli)
+
+### EMMSO-Specific
+- **Repository:** https://github.com/frank2889/emmso-shopify-theme
+- **Store:** vloerproducten.myshopify.com
+- **Markets:** 8 European countries
+- **Languages:** NL, EN, DE, FR, ES, IT, PT, DA
+
+---
+
+## 📝 License
+
+This theme is licensed under the MIT License. See [LICENSE.md](./LICENSE.md) for details.
+
+---
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
+
+---
+
+**Built with ❤️ for EMMSO** - Pan-European Flooring & Pet Products Specialist
       /* multiple styles */
     }
   {% endstylesheet %}
