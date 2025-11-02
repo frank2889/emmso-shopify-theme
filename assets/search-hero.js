@@ -30,35 +30,36 @@
       'asdf',
       'asd',
       'laminate',
-      'vinyl'
+      'vinyl',
+      'lithofinin', // typos
+      'laminaat'
     ];
 
     try {
-      // Get existing recent searches
-      const recentSearches = JSON.parse(localStorage.getItem('recentSearches') || '[]');
-      debugLog('Current recent searches:', recentSearches);
+      // AGGRESSIVE CLEAR - Just remove all searches for now
+      localStorage.removeItem('recentSearches');
+      localStorage.removeItem('recent_searches');
+      localStorage.removeItem('searchHistory');
+      localStorage.removeItem('search_history');
       
-      // Filter out old flooring-specific terms
-      const filteredSearches = recentSearches.filter(term => {
-        const lowerTerm = term.toLowerCase();
-        const shouldRemove = oldSearchTerms.some(oldTerm => lowerTerm.includes(oldTerm.toLowerCase()));
-        if (shouldRemove) {
-          debugLog(`Removing old search term: "${term}"`);
-        }
-        return !shouldRemove;
-      });
-
-      // Save cleaned searches back
-      if (filteredSearches.length !== recentSearches.length) {
-        localStorage.setItem('recentSearches', JSON.stringify(filteredSearches));
-        debugLog(`Cleared ${recentSearches.length - filteredSearches.length} old searches`);
-        
-        // Force hide recent searches section if empty
+      debugLog('Aggressively cleared all search history');
+      
+      // Hide recent searches section
+      setTimeout(() => {
         const recentSection = document.querySelector('[data-recent-searches]');
-        if (recentSection && filteredSearches.length === 0) {
+        if (recentSection) {
           recentSection.setAttribute('hidden', '');
+          recentSection.style.display = 'none';
         }
-      }
+        
+        // Also hide the chips
+        const recentChips = document.querySelectorAll('.search-suggestions__recent');
+        recentChips.forEach(chip => {
+          chip.setAttribute('hidden', '');
+          chip.style.display = 'none';
+        });
+      }, 100);
+      
     } catch (e) {
       console.error('[EMMSO] Error clearing old searches:', e);
     }

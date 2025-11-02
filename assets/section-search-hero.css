@@ -36,14 +36,14 @@
 .search-hero {
   position: relative;
   min-height: var(--search-hero-min-height);
-  height: var(--search-hero-min-height);
+  height: auto;
   width: 100vw;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 6rem 1.5rem 4rem;
+  padding: 8rem 1.5rem 6rem;
   margin: 0;
-  overflow: hidden;
+  overflow: visible;
   background: linear-gradient(
     135deg,
     var(--search-hero-gradient-start) 0%,
@@ -337,6 +337,11 @@
 /* ============================================================================
    Trending Searches
    ========================================================================= */
+
+/* Hide recent searches section by default until we have valid data */
+.search-suggestions__recent {
+  display: none !important;
+}
 
 .search-suggestions__trending {
   margin-bottom: 1.5rem;
