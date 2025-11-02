@@ -1,0 +1,30 @@
+# Shopify Theme Files
+.shopify
+config.yml
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using any build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+
+# Theme Kit
+config/settings_data.json
+
+# Build files
+dist/
+build/
