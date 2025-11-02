@@ -11,10 +11,8 @@
       </a>
     </div>
 
-    {%- # Search Bar (Desktop) -%}
-    <div class="site-header__search hide-mobile">
-      {% render 'search-bar-compact' %}
-    </div>
+    {%- # Spacer to push icons right -%}
+    <div style="flex: 1;"></div>
 
     {%- # Language Selector -%}
     <div class="site-header__language hide-mobile">
@@ -23,14 +21,6 @@
 
     {%- # Icons -%}
     <div class="site-header__icons">
-      {%- # Search Icon (Mobile) -%}
-      <button type="button" class="icon-button hide-desktop" data-mobile-search-toggle aria-label="{{ 'general.search.title' | t }}">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"></circle>
-          <path d="m21 21-4.35-4.35"></path>
-        </svg>
-      </button>
-
       {%- # Account -%}
       {% if shop.customer_accounts_enabled %}
         <a href="{{ routes.account_url }}" class="icon-button" aria-label="{{ 'customer.account.title' | t }}">
@@ -54,31 +44,25 @@
       </a>
     </div>
   </div>
-
-  {%- # Mobile Search (Hidden by default) -%}
-  <div class="site-header__mobile-search hide-desktop" data-mobile-search>
-    <div class="container">
-      {% render 'search-bar-compact' %}
-    </div>
-  </div>
 </header>
 
 {% stylesheet %}
 .site-header {
   position: sticky;
   top: 0;
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  z-index: var(--z-header);
+  background: #FFFFFF;
+  border-bottom: 2px solid #FBB03B;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(251, 176, 59, 0.1);
 }
 
 .site-header__container {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
-  padding-top: var(--space-4);
-  padding-bottom: var(--space-4);
-  min-height: 64px;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 72px;
 }
 
 /* Logo */
@@ -92,20 +76,19 @@
 }
 
 .logo-image {
-  height: 40px;
+  height: 48px;
   width: auto;
+  display: block;
 }
 
 .logo-text {
-  font-size: var(--text-xl);
-  font-weight: var(--weight-bold);
-  color: var(--color-text-primary);
-}
-
-/* Search */
-.site-header__search {
-  flex: 1;
-  max-width: 600px;
+  font-size: 1.75rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #FBB03B, #FF8C42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 
 /* Language */
@@ -117,7 +100,7 @@
 .site-header__icons {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 0.75rem;
   flex-shrink: 0;
 }
 
@@ -127,30 +110,45 @@
 
 .cart-count {
   position: absolute;
-  top: -4px;
-  right: -4px;
-  min-width: 18px;
-  height: 18px;
+  top: -6px;
+  right: -6px;
+  min-width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-primary);
-  color: white;
-  font-size: var(--text-xs);
-  font-weight: var(--weight-bold);
-  border-radius: var(--radius-full);
-  padding: 0 4px;
+  background: #FF8C42;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 5px;
+  box-shadow: 0 2px 8px rgba(255, 140, 66, 0.4);
 }
 
-/* Mobile Search */
-.site-header__mobile-search {
-  padding: var(--space-4) 0;
-  border-top: 1px solid var(--color-border);
-  display: none;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header {
+    min-height: 60px;
+    padding: 0.75rem 0;
+  }
 
-.site-header__mobile-search.is-visible {
-  display: block;
+  .logo-image {
+    height: 36px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .site-header__icons {
+    gap: 0.5rem;
+  }
+
+  .icon-button svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Responsive */
@@ -166,7 +164,11 @@
   }
   
   .site-header__container {
-    gap: var(--space-4);
+    gap: 1rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
   }
 }
 
