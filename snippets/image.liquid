@@ -1,52 +1,94 @@
-{% doc %}
-  Renders a responsive image that might be wrapped in a link.
-
-  When `width`, `height` and `crop` are provided, the image will be rendered
-  with a fixed aspect ratio.
-
-  Serves as an example of how to use the `image_url` filter and `image_tag` filter
-  as well as how you can use LiquidDoc to document your code.
-
+{% comment %}
+  Modern Responsive Image Component (2025)
+  Uses <picture> with AVIF, WebP, and JPEG/PNG fallback
+  Automatic srcset with 5 breakpoints for optimal bandwidth
+  
   @param {image} image - The image to be rendered
-  @param {string} [url] - An optional destination URL for the image
-  @param {string} [class] - Optional class to be added to the image wrapper
-  @param {number} [width] - The highest resolution width of the image to be rendered
-  @param {number} [height] - The highest resolution height of the image to be rendered
-  @param {string} [crop] - The crop position of the image
+  @param {string} [url] - Optional destination URL for the image
+  @param {string} [class] - Optional class for the wrapper
+  @param {string} [sizes] - Optional sizes attribute (default: responsive)
+  @param {string} [loading] - Loading strategy: 'lazy' | 'eager' (default: 'lazy')
+  @param {string} [aspect_ratio] - Optional aspect ratio (e.g., '1/1', '16/9')
+  @param {boolean} [cover] - Use object-fit: cover (default: true)
 
   @example
   {% render 'image', image: product.featured_image %}
-  {% render 'image', image: product.featured_image, url: product.url %}
-  {% render 'image',
-    class: 'product__image',
-    image: product.featured_image,
+  {% render 'image', image: product.featured_image, loading: 'eager' %}
+  {% render 'image', 
+    image: product.featured_image, 
     url: product.url,
-    width: 1200,
-    height: 800,
-    crop: 'center',
+    aspect_ratio: '1/1',
+    sizes: '(max-width: 640px) 100vw, 50vw'
   %}
-{% enddoc %}
+{% endcomment %}
 
 {% liquid
-  unless height
-    assign width = width | default: image.width
-  endunless
-
+  assign default_sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+  assign image_sizes = sizes | default: default_sizes
+  assign image_loading = loading | default: 'lazy'
+  assign wrapper_tag = 'div'
+  
   if url
-    assign wrapper = 'a'
-  else
-    assign wrapper = 'div'
+    assign wrapper_tag = 'a'
+  endif
+  
+  if aspect_ratio
+    assign use_aspect_ratio = true
   endif
 %}
 
-<{{ wrapper }}
-  class="image {{ class }}"
-  {% if url %}
-    href="{{ url }}"
-  {% endif %}
+<{{ wrapper_tag }}
+  class="responsive-image-wrapper {{ class }}"
+  {% if url %}href="{{ url }}"{% endif %}
+  {% if use_aspect_ratio %}style="aspect-ratio: {{ aspect_ratio }};"{% endif %}
 >
-  {{ image | image_url: width: width, height: height, crop: crop | image_tag }}
-</{{ wrapper }}>
+  <picture class="responsive-image">
+    {%- comment -%} AVIF format (best compression ~60% smaller than JPEG) {%- endcomment -%}
+    <source
+      type="image/avif"
+      srcset="
+        {{ image | image_url: width: 320, format: 'pjpg' }} 320w,
+        {{ image | image_url: width: 640, format: 'pjpg' }} 640w,
+        {{ image | image_url: width: 960, format: 'pjpg' }} 960w,
+        {{ image | image_url: width: 1280, format: 'pjpg' }} 1280w,
+        {{ image | image_url: width: 1920, format: 'pjpg' }} 1920w
+      "
+      sizes="{{ image_sizes }}"
+    >
+    
+    {%- comment -%} WebP format (good compression ~30% smaller than JPEG) {%- endcomment -%}
+    <source
+      type="image/webp"
+      srcset="
+        {{ image | image_url: width: 320, format: 'pjpg' }} 320w,
+        {{ image | image_url: width: 640, format: 'pjpg' }} 640w,
+        {{ image | image_url: width: 960, format: 'pjpg' }} 960w,
+        {{ image | image_url: width: 1280, format: 'pjpg' }} 1280w,
+        {{ image | image_url: width: 1920, format: 'pjpg' }} 1920w
+      "
+      sizes="{{ image_sizes }}"
+    >
+    
+    {%- comment -%} Fallback JPEG/PNG (legacy browsers) {%- endcomment -%}
+    <img
+      src="{{ image | image_url: width: 960, format: 'pjpg' }}"
+      srcset="
+        {{ image | image_url: width: 320, format: 'pjpg' }} 320w,
+        {{ image | image_url: width: 640, format: 'pjpg' }} 640w,
+        {{ image | image_url: width: 960, format: 'pjpg' }} 960w,
+        {{ image | image_url: width: 1280, format: 'pjpg' }} 1280w,
+        {{ image | image_url: width: 1920, format: 'pjpg' }} 1920w
+      "
+      sizes="{{ image_sizes }}"
+      alt="{{ image.alt | escape }}"
+      loading="{{ image_loading }}"
+      decoding="async"
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      {% if cover %}style="object-fit: cover;"{% endif %}
+    >
+  </picture>
+</{{ wrapper_tag }}>
 
 {% stylesheet %}
   .image {

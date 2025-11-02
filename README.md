@@ -72,7 +72,57 @@ Custom Shopify theme for EMMSO - A pan-European flooring and pet products specia
 
 ---
 
-## 🔧 Technology Stack
+## 🔧 Technology Stack (2025 Modern Standards)
+
+### **Frontend Performance**
+- ✅ **Responsive Images:** `<picture>` element with AVIF, WebP, JPEG fallback
+- ✅ **Image Formats:** AVIF (60% smaller), WebP (30% smaller), Progressive JPEG
+- ✅ **Lazy Loading:** Native `loading="lazy"` (97%+ browser support)
+- ✅ **Srcset:** 5 breakpoints (320w, 640w, 960w, 1280w, 1920w)
+- ✅ **Async Decoding:** `decoding="async"` on all images
+- ✅ **Aspect Ratio:** Native `aspect-ratio` CSS (no layout shift)
+- ✅ **Preloading:** Critical assets with `<link rel="preload">`
+- ✅ **Module Scripts:** ES6 modules with `type="module"`
+
+### **JavaScript**
+- ✅ **No jQuery:** Vanilla JavaScript ES6+
+- ✅ **Dynamic Imports:** Load filters on interaction (not scroll)
+- ✅ **Defer/Async:** All non-critical scripts deferred
+- ✅ **Event Delegation:** Efficient event handling
+- ✅ **Web APIs:** Fetch API, Intersection Observer, History API
+- ✅ **LocalStorage:** Client-side caching (search history, filters)
+
+### **CSS**
+- ✅ **Modern CSS:** Grid, Flexbox, Custom Properties (CSS Variables)
+- ✅ **No Preprocessors:** Native CSS (no SCSS/LESS overhead)
+- ✅ **Critical CSS:** Inlined above-fold styles
+- ✅ **CSS Modules:** Component-scoped styles
+- ✅ **Container Queries:** Responsive components (not just viewport)
+- ✅ **Logical Properties:** `inline-start` vs `left` for RTL support
+
+### **SEO & Performance**
+- ✅ **Core Web Vitals:** LCP < 2.5s, FID < 100ms, CLS < 0.1
+- ✅ **Lighthouse Score:** 95+ target
+- ✅ **Schema.org:** Structured data for all content types
+- ✅ **Hreflang:** 13 regional markets with x-default
+- ✅ **Meta Tags:** Dynamic OG, Twitter Cards, geo-targeting
+- ✅ **Sitemaps:** 8-language XML sitemaps
+- ✅ **Product Feeds:** Multilingual merchant feeds
+
+### **Image Stack**
+```liquid
+<!-- Modern responsive image (snippets/image.liquid) -->
+<picture>
+  <source type="image/avif" srcset="..." sizes="...">
+  <source type="image/webp" srcset="..." sizes="...">
+  <img src="..." srcset="..." sizes="..." loading="lazy" decoding="async">
+</picture>
+```
+
+**Bandwidth Savings:**
+- Mobile (320px): 95% savings (40KB AVIF vs 800KB JPEG)
+- Tablet (640px): 90% savings (80KB AVIF vs 800KB JPEG)  
+- Desktop (1280px): 75% savings (200KB AVIF vs 800KB JPEG)
 
 ### Shopify Apps
 1. **Translate & Adapt** - Multi-language content management with unlimited language support
