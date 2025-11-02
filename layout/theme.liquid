@@ -11,11 +11,14 @@
     {%- # Inlined CSS Variables -%}
     {% render 'css-variables' %}
 
+    {%- # BASE CSS - MUST LOAD FIRST -%}
+    {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+    
     {%- # Critical CSS - Inline for fastest FCP -%}
-    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'critical.css' | asset_url | stylesheet_tag }}
     
     {%- # Design System CSS - Load in sequence -%}
-    {{ 'design-tokens.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'design-tokens.css' | asset_url | stylesheet_tag }}
     {{ 'animations.css' | asset_url | stylesheet_tag }}
     {{ 'forms.css' | asset_url | stylesheet_tag }}
     {{ 'buttons.css' | asset_url | stylesheet_tag }}
