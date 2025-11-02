@@ -678,6 +678,19 @@ class UnifiedFilters {
     
     return `
       <article class="${cardClass} ${cardClass}--${this.viewMode}" data-product-id="${product.id}">
+        ${this.context !== 'product' ? `
+          <div class="product-card__compare">
+            <label class="compare-label">
+              <input 
+                type="checkbox" 
+                class="compare-checkbox" 
+                data-compare-product="${product.id}"
+                aria-label="Compare ${product.title}"
+              >
+            </label>
+          </div>
+        ` : ''}
+        
         <a href="${product.url}" class="${cardClass}__link">
           <div class="${cardClass}__image-wrapper">
             <img 
@@ -703,13 +716,6 @@ class UnifiedFilters {
             </span>
           </div>
         </a>
-        
-        ${this.config.enableComparison ? `
-          <label class="${cardClass}__compare">
-            <input type="checkbox" data-compare-product="${product.id}">
-            <span>Compare</span>
-          </label>
-        ` : ''}
       </article>
     `;
   }

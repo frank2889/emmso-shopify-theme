@@ -1,0 +1,27 @@
+{% comment %}
+  Product Comparison Checkbox
+  Add to product cards to enable comparison
+  
+  Parameters:
+  - product: Product object
+{% endcomment %}
+
+<div class="product-card__compare">
+  <label class="compare-label">
+    <input 
+      type="checkbox" 
+      class="compare-checkbox" 
+      data-compare-product="{{ product.id }}"
+      aria-label="{% case request.locale.iso_code %}
+        {% when 'nl' %}Vergelijk {{ product.title }}
+        {% when 'de' %}Vergleiche {{ product.title }}
+        {% when 'fr' %}Comparer {{ product.title }}
+        {% when 'es' %}Comparar {{ product.title }}
+        {% when 'it' %}Confronta {{ product.title }}
+        {% when 'pt' %}Comparar {{ product.title }}
+        {% when 'da' %}Sammenlign {{ product.title }}
+        {% else %}Compare {{ product.title }}
+      {% endcase %}"
+    >
+  </label>
+</div>

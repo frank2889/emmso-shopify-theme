@@ -1,357 +1,711 @@
-<h1 align="center" style="position: relative;">
+# EMMSO Shopify Theme<h1 align="center" style="position: relative;">
+
   <br>
-    <img src="./assets/shoppy-x-ray.svg" alt="logo" width="200">
+
+**Product-Agnostic Search-First E-Commerce Theme**    <img src="./assets/shoppy-x-ray.svg" alt="logo" width="200">
+
   <br>
-  EMMSO Custom Shopify Theme
+
+Built from scratch for modern, multilingual e-commerce. Optimized for search-driven product discovery with intelligent filtering, comparison tools, and seamless cross-language support.  EMMSO Custom Shopify Theme
+
 </h1>
 
-Custom Shopify theme for EMMSO - A pan-European flooring and pet products specialist. Built from scratch using Shopify's modern theme architecture with multi-language support and optimized for B2B/B2C commerce.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE.md)
 
-<p align="center">
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/frank2889/emmso-shopify-theme)Custom Shopify theme for EMMSO - A pan-European flooring and pet products specialist. Built from scratch using Shopify's modern theme architecture with multi-language support and optimized for B2B/B2C commerce.
+
+
+
+---<p align="center">
+
   <a href="./LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
-  <a href="https://github.com/frank2889/emmso-shopify-theme"><img src="https://img.shields.io/badge/GitHub-Repository-blue.svg" alt="GitHub"></a>
+
+## 🎯 Core Philosophy  <a href="https://github.com/frank2889/emmso-shopify-theme"><img src="https://img.shields.io/badge/GitHub-Repository-blue.svg" alt="GitHub"></a>
+
 </p>
+
+**Search-First Architecture**: Homepage is a powerful search engine. Users find products in seconds through intelligent predictive search, not endless clicking.
 
 ## 📊 Business Overview
 
+**Product-Agnostic Design**: Works for any product type - flooring, furniture, electronics, fashion. No hardcoded categories or product-specific assumptions.
+
 ### 🏢 Company Information
-**EMMSO** - Floor Products & Pet Supplies Specialist  
+
+**Collections Optional**: Search is primary. Collections auto-generate from popular queries via smart normalization and deduplication.**EMMSO** - Floor Products & Pet Supplies Specialist  
+
 **Store URL:** vloerproducten.myshopify.com  
-**GSC Account:** emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com
 
-### 🌍 Markets & Languages
+---**GSC Account:** emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com
 
-**Active Markets:**
-- 🇳🇱 **Netherlands (NL)** - Primary Market
-- ��🇪 **Belgium** - Dutch (NL) & French (FR)
-- 🇩🇪 **Germany (DE)**
-- 🇦🇹 **Austria (AT)** - German (DE)
-- 🇫🇷 **France (FR)**
-- 🇪🇸 **Spain (ES)**
-- 🇮🇹 **Italy (IT)**
+
+
+## ✨ Key Features### 🌍 Markets & Languages
+
+
+
+### 1. 🔍 Intelligent Search**Active Markets:**
+
+- **Instant predictive search** with autocomplete (< 200ms response)- 🇳🇱 **Netherlands (NL)** - Primary Market
+
+- **Cross-language search** - search in any language, find all products- ��🇪 **Belgium** - Dutch (NL) & French (FR)
+
+- **150+ multilingual synonyms** across 8 languages- 🇩🇪 **Germany (DE)**
+
+- **Fuzzy matching** - handles typos and misspellings- 🇦🇹 **Austria (AT)** - German (DE)
+
+- **Intent detection** - questions, comparisons, problem-solving- 🇫🇷 **France (FR)**
+
+- **Context-aware** - detects room types, usage characteristics- 🇪🇸 **Spain (ES)**
+
+- **Voice search** support (Web Speech API)- 🇮🇹 **Italy (IT)**
+
 - 🇵🇹 **Portugal (PT)**
-- 🇩🇰 **Denmark (DA)**
-- 🇮🇪 **Ireland (IE)** - English (EN)
 
-**Total Markets:** 10 European countries
+### 2. 🌍 Multilingual by Design- 🇩🇰 **Denmark (DA)**
 
-**Multi-Language Strategy:**
-- **Powered by:** Translate & Adapt app (Shopify)
+- **8 base languages**: EN, NL, DE, FR, ES, IT, PT, DA- 🇮🇪 **Ireland (IE)** - English (EN)
+
+- **13 regional markets**: NL, BE, DE, AT, FR, ES, IT, PT, DA, IE, GB, INT, DK
+
+- **Automatic language detection** from URL, locale, or browser**Total Markets:** 10 European countries
+
+- **Cross-language product matching** for related products
+
+- **Localized UI** - every label translated (buttons, filters, notifications)**Multi-Language Strategy:**
+
+- **Multilingual SEO** - hreflang tags, dynamic meta tags, XML sitemaps- **Powered by:** Translate & Adapt app (Shopify)
+
 - **Unlimited Languages & Nuances:** Can create regional variations (e.g., BE-NL vs NL-NL, BE-FR vs FR-FR)
-- **Current Active Languages:** 8 base languages (expandable on demand)
-- **Auto-detection:** Via URL path structure (`/en/`, `/de/`, `/nl-be/`, etc.)
-- **SEO-Optimized:** Each language version fully indexed separately
 
-**Base Languages:**
-- Dutch (NL) - Netherlands, Belgium
-- English (EN) - Ireland, UK, International
-- German (DE) - Austria, Germany
-- French (FR) - France, Belgium
+### 3. 🎨 Unified Smart Filters- **Current Active Languages:** 8 base languages (expandable on demand)
+
+- **Single codebase** for Collections, Products, and Search pages- **Auto-detection:** Via URL path structure (`/en/`, `/de/`, `/nl-be/`, etc.)
+
+- **Dynamic faceted filtering** - Category, Brand, Price, Room, Characteristics- **SEO-Optimized:** Each language version fully indexed separately
+
+- **Multi-select filters** with AND/OR logic
+
+- **Instant AJAX updates** - no page reload**Base Languages:**
+
+- **URL persistence** - shareable filtered URLs- Dutch (NL) - Netherlands, Belgium
+
+- **Active filter chips** - easy removal- English (EN) - Ireland, UK, International
+
+- **Grid/List toggle** with view persistence- German (DE) - Austria, Germany
+
+- **Sort options** - Relevance, Price, Newest, Best Selling- French (FR) - France, Belgium
+
 - Spanish (ES) - Spain
-- Italian (IT) - Italy
-- Portuguese (PT) - Portugal
-- Danish (DA) - Denmark
 
-**Future Expansion Potential:**
-- Regional variations (Swiss German, Austrian German, Belgian Dutch)
-- Additional markets (Sweden, Norway, Finland, Poland)
-- Dialect-specific content per market
+### 4. 🔄 Product Comparison Tool- Italian (IT) - Italy
+
+- **Side-by-side comparison** of up to 4 products- Portuguese (PT) - Portugal
+
+- **Smart feature analysis** - price, availability, variants, features- Danish (DA) - Denmark
+
+- **Best value highlighting** - star badges on lowest prices
+
+- **Persistent storage** - localStorage across sessions**Future Expansion Potential:**
+
+- **Keyboard shortcut** - Press 'C' to open comparison- Regional variations (Swiss German, Austrian German, Belgian Dutch)
+
+- **Mobile responsive** - full-screen modal on mobile- Additional markets (Sweden, Norway, Finland, Poland)
+
+- **Multilingual support** - all labels translated- Dialect-specific content per market
+
 - B2B vs B2C language nuances
 
-**Market-Language Matrix:**
-- **Austria:** German (DE)
-- **Belgium:** Dutch (NL), French (FR), German (DE)
-- **Denmark:** Danish (DA)
-- **France:** French (FR)
-- **Germany:** German (DE)
-- **Ireland:** English (EN)
+### 5. 🧠 Query Normalizer & Deduplication
+
+- **Prevents duplicate collections** from search query variations**Market-Language Matrix:**
+
+- **Quality scoring** (0-1 scale) - filters spam and low-value queries- **Austria:** German (DE)
+
+- **Spam detection** - regex patterns block test queries- **Belgium:** Dutch (NL), French (FR), German (DE)
+
+- **Similarity detection** - 80%+ Levenshtein distance matching- **Denmark:** Danish (DA)
+
+- **Multi-language normalization** - stop word removal for 8 languages- **France:** French (FR)
+
+- **Collection matching** - finds existing collections with confidence scores- **Germany:** German (DE)
+
+- **Webhook integration** - ready for auto-collection creation- **Ireland:** English (EN)
+
 - **Italy:** Italian (IT)
-- **Netherlands:** Dutch (NL)
-- **Portugal:** Portuguese (PT)
-- **Spain:** Spanish (ES)
 
----
+### 6. 📱 Modern Performance- **Netherlands:** Dutch (NL)
 
-## 🔧 Technology Stack (2025 Modern Standards)
+- **Responsive images** - `<picture>` element with AVIF, WebP, JPEG- **Portugal:** Portuguese (PT)
 
-### **Frontend Performance**
+- **Lazy loading** - native `loading="lazy"` attribute- **Spain:** Spanish (ES)
+
+- **Critical CSS** - inlined above-fold styles
+
+- **Deferred scripts** - non-blocking JavaScript---
+
+- **LocalStorage caching** - search history, filters, comparison
+
+- **Core Web Vitals** - LCP < 2.5s, FID < 100ms, CLS < 0.1## 🔧 Technology Stack (2025 Modern Standards)
+
+
+
+---### **Frontend Performance**
+
 - ✅ **Responsive Images:** `<picture>` element with AVIF, WebP, JPEG fallback
-- ✅ **Image Formats:** AVIF (60% smaller), WebP (30% smaller), Progressive JPEG
+
+## 📁 Project Structure- ✅ **Image Formats:** AVIF (60% smaller), WebP (30% smaller), Progressive JPEG
+
 - ✅ **Lazy Loading:** Native `loading="lazy"` (97%+ browser support)
-- ✅ **Srcset:** 5 breakpoints (320w, 640w, 960w, 1280w, 1920w)
-- ✅ **Async Decoding:** `decoding="async"` on all images
-- ✅ **Aspect Ratio:** Native `aspect-ratio` CSS (no layout shift)
-- ✅ **Preloading:** Critical assets with `<link rel="preload">`
-- ✅ **Module Scripts:** ES6 modules with `type="module"`
 
-### **JavaScript**
-- ✅ **No jQuery:** Vanilla JavaScript ES6+
-- ✅ **Dynamic Imports:** Load filters on interaction (not scroll)
-- ✅ **Defer/Async:** All non-critical scripts deferred
-- ✅ **Event Delegation:** Efficient event handling
-- ✅ **Web APIs:** Fetch API, Intersection Observer, History API
-- ✅ **LocalStorage:** Client-side caching (search history, filters)
+```- ✅ **Srcset:** 5 breakpoints (320w, 640w, 960w, 1280w, 1920w)
 
-### **CSS**
-- ✅ **Modern CSS:** Grid, Flexbox, Custom Properties (CSS Variables)
-- ✅ **No Preprocessors:** Native CSS (no SCSS/LESS overhead)
-- ✅ **Critical CSS:** Inlined above-fold styles
-- ✅ **CSS Modules:** Component-scoped styles
-- ✅ **Container Queries:** Responsive components (not just viewport)
-- ✅ **Logical Properties:** `inline-start` vs `left` for RTL support
+EMMSO NOV/- ✅ **Async Decoding:** `decoding="async"` on all images
 
-### **SEO & Performance**
-- ✅ **Core Web Vitals:** LCP < 2.5s, FID < 100ms, CLS < 0.1
-- ✅ **Lighthouse Score:** 95+ target
-- ✅ **Schema.org:** Structured data for all content types
-- ✅ **Hreflang:** 13 regional markets with x-default
-- ✅ **Meta Tags:** Dynamic OG, Twitter Cards, geo-targeting
-- ✅ **Sitemaps:** 8-language XML sitemaps
-- ✅ **Product Feeds:** Multilingual merchant feeds
+├── assets/- ✅ **Aspect Ratio:** Native `aspect-ratio` CSS (no layout shift)
 
-### **Image Stack**
-```liquid
-<!-- Modern responsive image (snippets/image.liquid) -->
-<picture>
-  <source type="image/avif" srcset="..." sizes="...">
-  <source type="image/webp" srcset="..." sizes="...">
-  <img src="..." srcset="..." sizes="..." loading="lazy" decoding="async">
-</picture>
-```
+│   ├── unified-filters.js         # Unified filtering (1029 lines)- ✅ **Preloading:** Critical assets with `<link rel="preload">`
 
-**Bandwidth Savings:**
-- Mobile (320px): 95% savings (40KB AVIF vs 800KB JPEG)
-- Tablet (640px): 90% savings (80KB AVIF vs 800KB JPEG)  
+│   ├── search-intelligence.js     # Search NLP, synonyms, intent- ✅ **Module Scripts:** ES6 modules with `type="module"`
+
+│   ├── search-engine.js           # Predictive search engine
+
+│   ├── related-products.js        # Cross-language product matching### **JavaScript**
+
+│   ├── product-comparison.js      # Comparison tool (500+ lines)- ✅ **No jQuery:** Vanilla JavaScript ES6+
+
+│   ├── query-normalizer.js        # Query normalization (500+ lines)- ✅ **Dynamic Imports:** Load filters on interaction (not scroll)
+
+│   ├── product-card.css           # Product card styles- ✅ **Defer/Async:** All non-critical scripts deferred
+
+│   ├── product-comparison.css     # Comparison UI styles- ✅ **Event Delegation:** Efficient event handling
+
+│   └── critical.css               # Critical above-fold CSS- ✅ **Web APIs:** Fetch API, Intersection Observer, History API
+
+│- ✅ **LocalStorage:** Client-side caching (search history, filters)
+
+├── sections/
+
+│   ├── search-results.liquid      # Search page with filters### **CSS**
+
+│   ├── collection.liquid          # Collection page with filters- ✅ **Modern CSS:** Grid, Flexbox, Custom Properties (CSS Variables)
+
+│   ├── product.liquid             # Product page with related products- ✅ **No Preprocessors:** Native CSS (no SCSS/LESS overhead)
+
+│   ├── header.liquid              # Header with search bar- ✅ **Critical CSS:** Inlined above-fold styles
+
+│   └── footer.liquid              # Footer- ✅ **CSS Modules:** Component-scoped styles
+
+│- ✅ **Container Queries:** Responsive components (not just viewport)
+
+├── snippets/- ✅ **Logical Properties:** `inline-start` vs `left` for RTL support
+
+│   ├── comparison-bar.liquid      # Floating comparison bar
+
+│   ├── comparison-checkbox.liquid # Comparison checkbox component### **SEO & Performance**
+
+│   ├── meta-tags.liquid           # Multilingual SEO meta tags- ✅ **Core Web Vitals:** LCP < 2.5s, FID < 100ms, CLS < 0.1
+
+│   └── image.liquid               # Responsive image component- ✅ **Lighthouse Score:** 95+ target
+
+│- ✅ **Schema.org:** Structured data for all content types
+
+├── templates/- ✅ **Hreflang:** 13 regional markets with x-default
+
+│   ├── index.json                 # Homepage (search-first)- ✅ **Meta Tags:** Dynamic OG, Twitter Cards, geo-targeting
+
+│   ├── search.json                # Search results- ✅ **Sitemaps:** 8-language XML sitemaps
+
+│   ├── collection.json            # Collection page- ✅ **Product Feeds:** Multilingual merchant feeds
+
+│   └── product.json               # Product page
+
+│### **Image Stack**
+
+├── config/```liquid
+
+│   ├── settings_schema.json       # Theme settings<!-- Modern responsive image (snippets/image.liquid) -->
+
+│   └── settings_data.json         # Current settings<picture>
+
+│  <source type="image/avif" srcset="..." sizes="...">
+
+├── locales/  <source type="image/webp" srcset="..." sizes="...">
+
+│   ├── en.default.json            # English translations  <img src="..." srcset="..." sizes="..." loading="lazy" decoding="async">
+
+│   └── en.default.schema.json     # Schema translations</picture>
+
+│```
+
+├── DOCUMENTATION.md               # Technical documentation
+
+├── QUERY_NORMALIZER.md            # Query normalization deep dive**Bandwidth Savings:**
+
+└── README.md                      # This file- Mobile (320px): 95% savings (40KB AVIF vs 800KB JPEG)
+
+```- Tablet (640px): 90% savings (80KB AVIF vs 800KB JPEG)  
+
 - Desktop (1280px): 75% savings (200KB AVIF vs 800KB JPEG)
 
+---
+
 ### Shopify Apps
-1. **Translate & Adapt** - Multi-language content management with unlimited language support
+
+## 🚀 Quick Start1. **Translate & Adapt** - Multi-language content management with unlimited language support
+
 2. **Instaindex** - Instant Google indexing for new products and content
-3. **Wuunder Shipping** - Smart European shipping integration
 
-### Core Policies
-- ❌ **No Free Shipping** - Transparent shipping costs
+### Prerequisites3. **Wuunder Shipping** - Smart European shipping integration
+
+- **Shopify CLI**: 3.86.1+
+
+- **Node.js**: 18+ (for local development)### Core Policies
+
+- **Git**: For version control- ❌ **No Free Shipping** - Transparent shipping costs
+
 - ❌ **No Discounts** - Value-based pricing strategy
-- ✅ **Smart Shopping** - Intelligent product recommendations and search
 
-### Brand Assets
-- Logo: `emmso-logo-homepage.webp` (color version)
-- Logo Inverted: `emmso-logo-invert.webp` (for dark backgrounds)
-- Trust Marks: 5 certification badges (Trusted Shops, Thuiswinkel, WebwinkelKeur, etc.)
+### Installation- ✅ **Smart Shopping** - Intelligent product recommendations and search
+
+
+
+1. **Clone the repository**### Brand Assets
+
+   ```bash- Logo: `emmso-logo-homepage.webp` (color version)
+
+   git clone https://github.com/frank2889/emmso-shopify-theme.git- Logo Inverted: `emmso-logo-invert.webp` (for dark backgrounds)
+
+   cd emmso-shopify-theme- Trust Marks: 5 certification badges (Trusted Shops, Thuiswinkel, WebwinkelKeur, etc.)
+
+   ```
 
 ---
 
-## 🔍 Search-First Architecture
+2. **Connect to Shopify store**
 
-### Core Concept
+   ```bash## 🔍 Search-First Architecture
+
+   shopify theme dev --store=your-store.myshopify.com
+
+   ```### Core Concept
+
 **Homepage = Search Engine**: Ultra-fast, predictive search as the primary navigation method. Users find products in seconds, not clicks.
 
-### Search Performance Targets
-- **First Input Delay:** < 100ms
-- **Search Response Time:** < 200ms
+3. **Open development preview**
+
+   ```### Search Performance Targets
+
+   http://127.0.0.1:9292- **First Input Delay:** < 100ms
+
+   ```- **Search Response Time:** < 200ms
+
 - **Results Display:** < 300ms
-- **Total Time to Interactive:** < 2s
 
-### Search Features
+### Deployment- **Total Time to Interactive:** < 2s
 
-#### **1. Instant Predictive Search**
-- **Real-time autocomplete** as user types (debounced at 150ms)
+
+
+**Push to live theme:**### Search Features
+
+```bash
+
+shopify theme push --theme=YOUR_THEME_ID#### **1. Instant Predictive Search**
+
+```- **Real-time autocomplete** as user types (debounced at 150ms)
+
 - **Product suggestions** with thumbnails, prices, availability
-- **Category suggestions** based on query intent
-- **Search history** (last 5 searches, localStorage)
-- **Trending searches** for empty state
-- **Voice search** support (Web Speech API)
 
-#### **2. Advanced Filtering (Search Results Page)**
+**Or publish from Shopify Admin:**- **Category suggestions** based on query intent
+
+1. Go to Online Store → Themes- **Search history** (last 5 searches, localStorage)
+
+2. Find the uploaded theme- **Trending searches** for empty state
+
+3. Click Actions → Publish- **Voice search** support (Web Speech API)
+
+
+
+---#### **2. Advanced Filtering (Search Results Page)**
+
 - **Faceted search:** Category, Brand, Price, Color, Material, Size
-- **Dynamic filters:** Only show relevant filters based on results
+
+## 🛠️ Configuration- **Dynamic filters:** Only show relevant filters based on results
+
 - **Multi-select:** Combine multiple filters (AND/OR logic)
-- **Price range slider:** Min/Max with histogram
+
+### Theme Settings- **Price range slider:** Min/Max with histogram
+
 - **Instant filter updates:** No page reload, URL updates for sharing
-- **Active filter chips:** Easy removal of applied filters
 
-#### **3. Smart Search Algorithm**
-- **Fuzzy matching:** Handle typos and misspellings
-- **Synonym support:** "laminate" = "laminaat" = "laminat"
-- **Multi-language:** Search across all 8 languages
+**Enable/Disable Features:**- **Active filter chips:** Easy removal of applied filters
+
+- Product comparison tool
+
+- Infinite scroll vs Load More#### **3. Smart Search Algorithm**
+
+- Grid/List default view- **Fuzzy matching:** Handle typos and misspellings
+
+- Products per page (12, 24, 48)- **Synonym support:** "laminate" = "laminaat" = "laminat"
+
+- Auto-collection creation (requires custom app)- **Multi-language:** Search across all 8 languages
+
 - **Product field search:** Title, Description, SKU, Brand, Tags, Metafields
-- **Weighted relevance:** Title (100%), Tags (80%), Description (60%)
-- **Boost logic:** New products, sale items, high stock priority
 
-#### **4. Search Result Optimization**
-- **Infinite scroll** OR **Load More** button (A/B test)
+**Search Settings:**- **Weighted relevance:** Title (100%), Tags (80%), Description (60%)
+
+- Query quality threshold (0-1)- **Boost logic:** New products, sale items, high stock priority
+
+- Minimum products for collection (default: 10)
+
+- Spam pattern detection#### **4. Search Result Optimization**
+
+- Synonym expansion- **Infinite scroll** OR **Load More** button (A/B test)
+
 - **Grid/List view toggle**
-- **Sort options:** Relevance, Price (Low-High), Price (High-Low), Newest, Best Selling
-- **Quick view modal:** Product details without page navigation
-- **Add to cart** directly from results
-- **Result count** and query display ("147 results for 'oak laminate'")
 
-#### **5. Zero-Results Handling**
+### Multilingual Setup- **Sort options:** Relevance, Price (Low-High), Price (High-Low), Newest, Best Selling
+
+- **Quick view modal:** Product details without page navigation
+
+1. Install **Translate & Adapt** app from Shopify App Store- **Add to cart** directly from results
+
+2. Add languages in Shopify Admin → Settings → Languages- **Result count** and query display ("147 results for 'oak laminate'")
+
+3. Theme auto-detects language from URL path
+
+4. Translate product content in Translate & Adapt#### **5. Zero-Results Handling**
+
 - **Suggestions:** "Did you mean...?" based on Levenshtein distance
-- **Alternative products:** Show similar categories
+
+---- **Alternative products:** Show similar categories
+
 - **Popular products:** Fallback to trending items
-- **Search tips:** Help users refine their query
+
+## 📊 Performance Benchmarks- **Search tips:** Help users refine their query
+
 - **Contact support:** CTA for specific product requests
 
----
+### Search Performance
 
-## 💡 Search-Based Store Innovations
+- **First keystroke response**: < 100ms---
+
+- **Autocomplete suggestions**: < 200ms
+
+- **Full results display**: < 300ms## 💡 Search-Based Store Innovations
+
+- **Filter application**: < 150ms
 
 ### 1. **AI-Powered Search Intent Recognition**
-- Detect user intent: "how to clean marble" → Show products + How-To content
-- Question-based search: "what floor for kitchen?" → Guided recommendations
-- Problem-solving: "remove stains from wood" → Care products + tutorials
-- Natural language: "cheap vinyl that looks like oak" → Filtered results
+
+### Page Load- Detect user intent: "how to clean marble" → Show products + How-To content
+
+- **Time to Interactive**: < 2s- Question-based search: "what floor for kitchen?" → Guided recommendations
+
+- **First Contentful Paint**: < 1s- Problem-solving: "remove stains from wood" → Care products + tutorials
+
+- **Largest Contentful Paint**: < 2.5s- Natural language: "cheap vinyl that looks like oak" → Filtered results
+
+- **Cumulative Layout Shift**: < 0.1
 
 ### 2. **Visual Search & Image Upload**
-- **Upload floor photo:** Match products by color, texture, pattern
-- **Room visualization:** AR preview of flooring in user's space
-- **Style matching:** Find similar products to uploaded inspiration images
-- **Color extraction:** Search by dominant colors in uploaded photos
 
-### 3. **Smart Filters & Faceted Search**
+### Query Normalization- **Upload floor photo:** Match products by color, texture, pattern
+
+- **Single query**: < 2ms- **Room visualization:** AR preview of flooring in user's space
+
+- **Batch (100 queries)**: < 200ms- **Style matching:** Find similar products to uploaded inspiration images
+
+- **Memory usage**: < 50KB- **Color extraction:** Search by dominant colors in uploaded photos
+
+
+
+---### 3. **Smart Filters & Faceted Search**
+
 - **Dynamic filters:** Only show relevant options (if no red products, hide red filter)
-- **Multi-attribute search:** "waterproof vinyl under €30/m²"
+
+## 🌐 Multilingual Support- **Multi-attribute search:** "waterproof vinyl under €30/m²"
+
 - **Room-based filtering:** Kitchen, Bathroom, Living Room (auto-filter compatible products)
-- **Usage filters:** Pet-friendly, High-traffic, Underfloor heating compatible
-- **Installation complexity:** DIY-friendly vs Professional installation
 
-### 4. **Contextual Search Results**
-- **Weather-aware:** Promote fast-drying products on rainy days
-- **Seasonal:** Winter = underfloor heating compatible, Summer = outdoor products
-- **Geographic:** Show products available in user's shipping region first
-- **Time-sensitive:** "need it tomorrow" → In-stock + fast shipping filter
+### Supported Languages- **Usage filters:** Pet-friendly, High-traffic, Underfloor heating compatible
 
-### 5. **Search-Driven Product Discovery**
-- **Autocomplete with product previews:** Show thumbnail + price as user types
+| Language | Code | Markets |- **Installation complexity:** DIY-friendly vs Professional installation
+
+|----------|------|---------|
+
+| Dutch | nl | Netherlands, Belgium |### 4. **Contextual Search Results**
+
+| English | en | Ireland, UK, International |- **Weather-aware:** Promote fast-drying products on rainy days
+
+| German | de | Germany, Austria |- **Seasonal:** Winter = underfloor heating compatible, Summer = outdoor products
+
+| French | fr | France, Belgium |- **Geographic:** Show products available in user's shipping region first
+
+| Spanish | es | Spain |- **Time-sensitive:** "need it tomorrow" → In-stock + fast shipping filter
+
+| Italian | it | Italy |
+
+| Portuguese | pt | Portugal |### 5. **Search-Driven Product Discovery**
+
+| Danish | da | Denmark |- **Autocomplete with product previews:** Show thumbnail + price as user types
+
 - **Related searches:** "People also searched for..." horizontal scroll
-- **Search history timeline:** "You searched for vinyl 3 days ago - prices dropped!"
-- **Saved searches:** Get alerts when matching products added/on sale
-- **Search trends dashboard:** "Trending in Belgium this week: Oak laminate"
 
-### 6. **Comparison & Decision Tools**
-- **Side-by-side comparison:** Select products from search results to compare specs
+### Features- **Search history timeline:** "You searched for vinyl 3 days ago - prices dropped!"
+
+- **Cross-language search** - "parket" finds "parquet" products- **Saved searches:** Get alerts when matching products added/on sale
+
+- **Synonym dictionary** - 150+ terms across 8 languages- **Search trends dashboard:** "Trending in Belgium this week: Oak laminate"
+
+- **Localized UI** - all labels, buttons, notifications translated
+
+- **Price formatting** - locale-specific (€1.234,56 vs €1,234.56)### 6. **Comparison & Decision Tools**
+
+- **SEO optimized** - hreflang tags for 13 markets- **Side-by-side comparison:** Select products from search results to compare specs
+
 - **Pros/Cons generator:** AI-generated based on use case
-- **Compatibility checker:** "Works with Bona cleaner?" instant answers
+
+---- **Compatibility checker:** "Works with Bona cleaner?" instant answers
+
 - **Calculator integration:** m² calculator directly in search results
-- **ROI estimator:** Durability vs price over 10 years
 
-### 7. **Expert Search Modes**
+## 🧪 Testing- **ROI estimator:** Durability vs price over 10 years
+
+
+
+See [DOCUMENTATION.md](./DOCUMENTATION.md) for comprehensive testing guide.### 7. **Expert Search Modes**
+
 - **Professional Mode:** B2B pricing, bulk quantities, project management tools
-- **DIY Mode:** Beginner-friendly, installation guides included
+
+**Quick Tests:**- **DIY Mode:** Beginner-friendly, installation guides included
+
 - **Quick Reorder:** Scan barcode or enter SKU for instant reorder
-- **Brand-specific search:** Deep dive into single brand catalog
 
-### 8. **Search Performance Features**
-- **Instant filters:** Apply filters without page reload (AJAX)
-- **Infinite scroll:** Lazy load results as user scrolls
+1. **Multilingual Search**- **Brand-specific search:** Deep dive into single brand catalog
+
+   ```
+
+   Search: "laminaat" (Dutch)### 8. **Search Performance Features**
+
+   Expected: Matches "laminate" products- **Instant filters:** Apply filters without page reload (AJAX)
+
+   ```- **Infinite scroll:** Lazy load results as user scrolls
+
 - **Search preview cache:** Preload next 24 results in background
-- **Offline search:** Service Worker cache for previously searched terms
-- **Voice search expansion:** "Show me all Bona products under €50"
 
-### 9. **Social Proof in Search**
-- **Review snippets:** Star rating + review count in search results
-- **"Most purchased":** Badge for popular items in search results
+2. **Product Comparison**- **Offline search:** Service Worker cache for previously searched terms
+
+   ```- **Voice search expansion:** "Show me all Bona products under €50"
+
+   1. Select 3 products
+
+   2. Click "Compare Products"### 9. **Social Proof in Search**
+
+   3. See side-by-side table- **Review snippets:** Star rating + review count in search results
+
+   ```- **"Most purchased":** Badge for popular items in search results
+
 - **"Verified compatible":** Show verified product combinations
-- **User photos:** Real customer images in search previews
-- **Pro recommendations:** "Preferred by 87% of installers"
 
-### 10. **Smart Shopping Features (No Discounts Strategy)**
-- **Value indicators:** "Best value per m²" badges
+3. **Query Normalization**- **User photos:** Real customer images in search previews
+
+   ```- **Pro recommendations:** "Preferred by 87% of installers"
+
+   "waterproof vinyl flooring" === "vinyl waterproof flooring"
+
+   Both normalize to same handle### 10. **Smart Shopping Features (No Discounts Strategy)**
+
+   ```- **Value indicators:** "Best value per m²" badges
+
 - **Bundle suggestions:** "Complete your floor care kit" in search
-- **Stock urgency:** "Only 3 in stock" (transparent, not fake scarcity)
-- **Shipping cost preview:** Show total cost including Wuunder shipping
-- **Coverage calculator:** "Covers X m² for €Y" in search results
-- **Quality indicators:** Premium/Professional/Budget tier badges
 
-### 11. **Content-Integrated Search**
-- **Mixed results:** Products + Blog posts + How-To videos + FAQs
+4. **Smart Filters**- **Stock urgency:** "Only 3 in stock" (transparent, not fake scarcity)
+
+   ```- **Shipping cost preview:** Show total cost including Wuunder shipping
+
+   1. Apply multiple filters- **Coverage calculator:** "Covers X m² for €Y" in search results
+
+   2. URL updates (shareable)- **Quality indicators:** Premium/Professional/Budget tier badges
+
+   3. Remove filter chip
+
+   4. Results update instantly### 11. **Content-Integrated Search**
+
+   ```- **Mixed results:** Products + Blog posts + How-To videos + FAQs
+
 - **Learning center:** Search triggers educational content
-- **Video tutorials:** Embedded in search results for relevant queries
+
+---- **Video tutorials:** Embedded in search results for relevant queries
+
 - **Case studies:** "See this product in action" customer projects
-- **Expert advice:** Live chat trigger for complex searches
 
-### 12. **Multi-Language Search Intelligence**
-- **Cross-language search:** Search in English, find Dutch product names
-- **Local terminology:** "parket" (NL) = "parquet" (EN) = "parkett" (DE)
-- **Brand name normalization:** Different spellings across markets
+## 📚 Documentation- **Expert advice:** Live chat trigger for complex searches
+
+
+
+- **[DOCUMENTATION.md](./DOCUMENTATION.md)** - Complete technical reference### 12. **Multi-Language Search Intelligence**
+
+- **[QUERY_NORMALIZER.md](./QUERY_NORMALIZER.md)** - Query normalization deep dive- **Cross-language search:** Search in English, find Dutch product names
+
+- **[CONTRIBUTING.md](./CONTRIBUTING.md)** - Contribution guidelines- **Local terminology:** "parket" (NL) = "parquet" (EN) = "parkett" (DE)
+
+- **[LICENSE.md](./LICENSE.md)** - MIT License- **Brand name normalization:** Different spellings across markets
+
 - **Unit conversion:** Display m² in UK, ft² for international
-- **Regional product variations:** Same product, localized names
 
-### Implementation Priority (Search-First Focus)
+---- **Regional product variations:** Same product, localized names
+
+
+
+## 🔮 Roadmap### Implementation Priority (Search-First Focus)
+
 **Phase 1 - Core Search (✅ COMPLETE):**
-- ✅ Instant predictive search with Shopify API
-- ✅ Visual design with brand colors
-- ✅ Performance optimization (< 200ms response)
-- ✅ Search hero homepage section
-- ✅ Voice search support
-- ✅ Trending searches & recent searches
-- ⬜ Smart filters (category, brand, price, specs)
+
+### Phase 1: Core Features ✅- ✅ Instant predictive search with Shopify API
+
+- [x] Search-first homepage- ✅ Visual design with brand colors
+
+- [x] Multilingual search intelligence- ✅ Performance optimization (< 200ms response)
+
+- [x] Unified smart filters- ✅ Search hero homepage section
+
+- [x] Product comparison tool- ✅ Voice search support
+
+- [x] Query normalizer & deduplication- ✅ Trending searches & recent searches
+
+- [x] Product-agnostic architecture- ⬜ Smart filters (category, brand, price, specs)
+
 - ⬜ Full search results page with infinite scroll
 
-**Phase 2 - Intelligence (✅ COMPLETE):**
-- ✅ Search intent recognition (questions, problems, comparisons)
-- ✅ Natural language processing (NLP)
-- ✅ Fuzzy matching & spell correction (Levenshtein distance)
-- ✅ 150+ multilingual synonyms across 8 languages
+### Phase 2: Automation (Optional)
+
+- [ ] Custom Shopify app for auto-collection creation**Phase 2 - Intelligence (✅ COMPLETE):**
+
+- [ ] Backend webhook endpoint- ✅ Search intent recognition (questions, problems, comparisons)
+
+- [ ] Collection analytics dashboard- ✅ Natural language processing (NLP)
+
+- [ ] Auto-delete stale collections- ✅ Fuzzy matching & spell correction (Levenshtein distance)
+
+- [ ] A/B testing framework- ✅ 150+ multilingual synonyms across 8 languages
+
 - ✅ Parallel multilingual search (3 simultaneous queries)
-- ✅ Smart deduplication and relevance ranking
-- ✅ Room detection (kitchen, bathroom, living, etc.)
-- ✅ Usage characteristics (pet-friendly, waterproof, DIY)
-- ✅ Brand detection for 19 premium brands
-- ✅ Color detection with multilingual support
-- ⬜ Search analytics dashboard
 
-**Phase 3 - Multilingual & SEO (✅ COMPLETE):**
+### Phase 3: Advanced Features- ✅ Smart deduplication and relevance ranking
+
+- [ ] Visual search (image upload)- ✅ Room detection (kitchen, bathroom, living, etc.)
+
+- [ ] AI-powered product recommendations- ✅ Usage characteristics (pet-friendly, waterproof, DIY)
+
+- [ ] AR product visualization- ✅ Brand detection for 19 premium brands
+
+- [ ] Voice search refinement- ✅ Color detection with multilingual support
+
+- [ ] Conversion funnel analytics- ⬜ Search analytics dashboard
+
+- [ ] Export comparison as PDF
+
+- [ ] Share comparison URLs**Phase 3 - Multilingual & SEO (✅ COMPLETE):**
+
 - ✅ 13 regional markets (nl-NL, nl-BE, de-DE, de-AT, fr-FR, fr-BE, en-IE, en-GB, en-INT, es-ES, it-IT, pt-PT, da-DK)
-- ✅ Advanced hreflang tags with regional variations
-- ✅ Enhanced meta tags with geo-targeting
-- ✅ OG tags & Twitter cards
-- ✅ Schema.org structured data (Organization, Product, Collection, Article, FAQ, Breadcrumbs, Video, Reviews)
-- ✅ Multilingual related products with intelligent cross-language matching
-- ✅ Language/region switcher with CRO optimization
-- ✅ 8-language product feeds & sitemaps
-- ✅ Mobile optimization & performance hints
 
-**Phase 3.5 - Unified Filter System (✅ COMPLETE):**
-- ✅ Pure unified approach: Collections, Products, Search use SAME codebase
-- ✅ Context auto-detection (collection vs product vs search)
+---- ✅ Advanced hreflang tags with regional variations
+
+- ✅ Enhanced meta tags with geo-targeting
+
+## 🤝 Contributing- ✅ OG tags & Twitter cards
+
+- ✅ Schema.org structured data (Organization, Product, Collection, Article, FAQ, Breadcrumbs, Video, Reviews)
+
+We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.- ✅ Multilingual related products with intelligent cross-language matching
+
+- ✅ Language/region switcher with CRO optimization
+
+**Areas for contribution:**- ✅ 8-language product feeds & sitemaps
+
+- Additional language support- ✅ Mobile optimization & performance hints
+
+- Performance optimizations
+
+- Accessibility improvements**Phase 3.5 - Unified Filter System (✅ COMPLETE):**
+
+- Mobile UX enhancements- ✅ Pure unified approach: Collections, Products, Search use SAME codebase
+
+- Documentation improvements- ✅ Context auto-detection (collection vs product vs search)
+
 - ✅ Smart collection redirect (search "laminate" → /collections/laminate)
-- ✅ 5 filter types: Category, Brand, Price, Room, Characteristics
+
+---- ✅ 5 filter types: Category, Brand, Price, Room, Characteristics
+
 - ✅ Dynamic filters: Only show options present in results
-- ✅ URL persistence: Shareable filtered URLs
+
+## 📄 License- ✅ URL persistence: Shareable filtered URLs
+
 - ✅ Grid/List toggle on collections & search
-- ✅ Related products on product pages with compact filters
+
+This project is licensed under the MIT License - see [LICENSE.md](./LICENSE.md) for details.- ✅ Related products on product pages with compact filters
+
 - ✅ Multilingual filter labels (8 languages)
-- ✅ Client-side filtering for instant results
+
+---- ✅ Client-side filtering for instant results
+
 - ✅ Progressive loading (24 products per page)
 
+## 🙏 Acknowledgments
+
 **Phase 4 - Advanced Features (Next):**
-- ⬜ Visual search (image upload)
-- ✅ Product comparison tools (next in queue)
-- ⬜ Smart recommendations engine
-- ⬜ Voice search refinement
-- ⬜ AR floor visualization
-- ⬜ Search analytics dashboard
+
+**Built with modern web standards:**- ⬜ Visual search (image upload)
+
+- Vanilla JavaScript ES6+ (no jQuery)- ✅ Product comparison tools (next in queue)
+
+- Native CSS (no preprocessors)- ⬜ Smart recommendations engine
+
+- Fetch API, Intersection Observer, History API- ⬜ Voice search refinement
+
+- Web Speech API for voice search- ⬜ AR floor visualization
+
+- LocalStorage for persistence- ⬜ Search analytics dashboard
+
 - ⬜ Saved searches & alerts
 
-**Phase 4 - Optimization (Weeks 7-8):**
-- ⬜ A/B testing search layouts
-- ⬜ Conversion funnel optimization
+**Shopify Apps:**
+
+- Translate & Adapt - Multilingual content**Phase 4 - Optimization (Weeks 7-8):**
+
+- Instaindex - Instant Google indexing- ⬜ A/B testing search layouts
+
+- Wuunder Shipping - European shipping- ⬜ Conversion funnel optimization
+
 - ⬜ Performance monitoring
-- ⬜ Search-to-purchase analytics
+
+---- ⬜ Search-to-purchase analytics
+
 - ⬜ User behavior heatmaps
+
+## 📞 Support
 
 ---
 
-## 🎨 Brand & Design System
+**Store**: vloerproducten.myshopify.com  
+
+**Repository**: [frank2889/emmso-shopify-theme](https://github.com/frank2889/emmso-shopify-theme)  ## 🎨 Brand & Design System
+
+**Issues**: [GitHub Issues](https://github.com/frank2889/emmso-shopify-theme/issues)
 
 ### Color Palette
 
+---
+
 **Primary Brand Colors:**
-- **Brand Orange:** `#FBB03B` - Primary CTA, Accents, Active states
-- **Dark Gray:** `#4D4D4D` - Text, Headers, Footer
-- **Light Gray:** `#E8E8E1` - Backgrounds, Borders, Subtle sections
+
+**Built with ❤️ for modern, multilingual e-commerce**  - **Brand Orange:** `#FBB03B` - Primary CTA, Accents, Active states
+
+**Version**: 2.0 (Product-Agnostic)  - **Dark Gray:** `#4D4D4D` - Text, Headers, Footer
+
+**Last Updated**: November 2025- **Light Gray:** `#E8E8E1` - Backgrounds, Borders, Subtle sections
+
 - **White:** `#FFFFFF` - Primary background, Cards, Clean areas
 
 **Color Usage Rules (CRO Optimized):**

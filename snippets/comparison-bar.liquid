@@ -1,0 +1,73 @@
+{% comment %}
+  Product Comparison Bar - Floating bar at bottom of page
+  Shows selected products count and compare button
+{% endcomment %}
+
+<div class="comparison-bar hidden" data-compare-bar>
+  <div class="comparison-bar__content">
+    <div class="comparison-bar__info">
+      <span class="comparison-bar__count" data-compare-count>0</span>
+      <span>
+        {% case request.locale.iso_code %}
+          {% when 'nl' %}
+            producten geselecteerd voor vergelijking
+          {% when 'de' %}
+            Produkte zum Vergleich ausgewählt
+          {% when 'fr' %}
+            produits sélectionnés pour comparaison
+          {% when 'es' %}
+            productos seleccionados para comparar
+          {% when 'it' %}
+            prodotti selezionati per il confronto
+          {% when 'pt' %}
+            produtos selecionados para comparação
+          {% when 'da' %}
+            produkter valgt til sammenligning
+          {% else %}
+            products selected for comparison
+        {% endcase %}
+      </span>
+    </div>
+
+    <div class="comparison-bar__actions">
+      <button 
+        class="comparison-bar__button comparison-bar__button--secondary" 
+        data-clear-compare
+      >
+        {% case request.locale.iso_code %}
+          {% when 'nl' %}Wis alles
+          {% when 'de' %}Alles löschen
+          {% when 'fr' %}Tout effacer
+          {% when 'es' %}Borrar todo
+          {% when 'it' %}Cancella tutto
+          {% when 'pt' %}Limpar tudo
+          {% when 'da' %}Ryd alle
+          {% else %}Clear All
+        {% endcase %}
+      </button>
+
+      <button 
+        class="comparison-bar__button comparison-bar__button--primary" 
+        data-compare-button
+        disabled
+      >
+        {% case request.locale.iso_code %}
+          {% when 'nl' %}Producten vergelijken
+          {% when 'de' %}Produkte vergleichen
+          {% when 'fr' %}Comparer les produits
+          {% when 'es' %}Comparar productos
+          {% when 'it' %}Confronta prodotti
+          {% when 'pt' %}Comparar produtos
+          {% when 'da' %}Sammenlign produkter
+          {% else %}Compare Products
+        {% endcase %}
+      </button>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+  Load comparison scripts
+{% endcomment %}
+<link rel="stylesheet" href="{{ 'product-comparison.css' | asset_url }}">
+<script src="{{ 'product-comparison.js' | asset_url }}" defer></script>
