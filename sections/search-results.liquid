@@ -1,8 +1,10 @@
 {% comment %}
   Search Results Page with Unified Smart Filters
   Includes smart collection redirect, dynamic faceted filtering, grid/list toggle
+  Query normalization prevents duplicate collections
 {% endcomment %}
 
+<script src="{{ 'query-normalizer.js' | asset_url }}" defer></script>
 <script src="{{ 'unified-filters.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="{{ 'product-card.css' | asset_url }}">
 

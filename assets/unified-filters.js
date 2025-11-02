@@ -2,6 +2,7 @@
  * Unified Filter System
  * Works seamlessly across Collections, Products (related), and Search
  * Single codebase, context auto-detection, smart behavior
+ * Includes query normalization and deduplication detection
  */
 
 class UnifiedFilters {
@@ -9,13 +10,19 @@ class UnifiedFilters {
     // Auto-detect context
     this.context = this.detectContext();
     
+    // Initialize query normalizer
+    this.queryNormalizer = new QueryNormalizer();
+    
     // Configuration
     this.config = {
       mode: config.mode || 'full', // 'full', 'compact', 'collapsed'
       enableSmartRedirect: config.enableSmartRedirect !== false, // Default true
+      enableAutoCollectionCreation: config.enableAutoCollectionCreation || false, // Requires custom app
       productsPerPage: config.productsPerPage || 24,
       enableInfiniteScroll: config.enableInfiniteScroll || false,
       enableComparison: config.enableComparison || false,
+      minProductsForCollection: config.minProductsForCollection || 10,
+      minQualityScore: config.minQualityScore || 0.5,
       ...config
     };
     
@@ -196,40 +203,175 @@ class UnifiedFilters {
 
   /**
    * Smart redirect: If search query closely matches a collection, redirect there
+   * OPTIONAL: Only if collections exist. Works perfectly without collections too.
+   * Uses query normalization to prevent duplicates
    */
   async shouldRedirectToCollection(query) {
-    if (!query || this.context !== 'search') return false;
+    if (!query || this.context !== 'search' || !this.config.enableSmartRedirect) {
+      return false;
+    }
+    
+    // Get locale from page
+    const locale = document.documentElement.lang || 'en';
+    
+    // Normalize query to detect duplicates
+    const normalized = this.queryNormalizer.normalize(query, locale);
+    
+    console.info('Query normalization:', {
+      original: normalized.original,
+      normalized: normalized.normalized,
+      handle: normalized.handle,
+      qualityScore: normalized.qualityScore,
+      shouldCreateCollection: normalized.shouldCreateCollection,
+      reason: normalized.reason
+    });
+    
+    // Check if spam or low quality
+    if (normalized.isSpam) {
+      console.warn('Spam query detected, staying on search:', query);
+      return false;
+    }
     
     try {
-      // Fetch all collections
+      // Try to fetch collections (may not exist or be disabled)
       const response = await fetch('/collections.json');
-      const data = await response.json();
       
+      // If collections endpoint doesn't exist, skip redirect
+      if (!response.ok) {
+        console.info('Collections not available, continuing with search-first approach');
+        
+        // Optionally: Signal to backend to create collection
+        if (this.config.enableAutoCollectionCreation && normalized.shouldCreateCollection) {
+          this.requestCollectionCreation(normalized, this.products);
+        }
+        
+        return false;
+      }
+      
+      const data = await response.json();
       const collections = data.collections || [];
       
-      // Find exact or close match
-      const match = collections.find(c => 
-        c.handle === query.toLowerCase().replace(/\s+/g, '-') ||
-        c.title.toLowerCase() === query.toLowerCase()
+      // No collections? No problem - search works standalone
+      if (collections.length === 0) {
+        console.info('No collections exist yet, using search-first approach');
+        return false;
+      }
+      
+      // Find matching collection using normalizer (smart deduplication)
+      const match = this.queryNormalizer.findMatchingCollection(
+        query, 
+        collections, 
+        locale
       );
       
       if (match) {
+        console.info('Found matching collection:', {
+          query: query,
+          collection: match.collection.handle,
+          matchType: match.matchType,
+          confidence: match.confidence
+        });
+        
         // Preserve filters in redirect
         const params = new URLSearchParams(window.location.search);
         params.delete('q'); // Remove search query
         
         const filterParams = params.toString();
-        const redirectUrl = `/collections/${match.handle}${filterParams ? '?' + filterParams : ''}`;
+        const redirectUrl = `/collections/${match.collection.handle}${filterParams ? '?' + filterParams : ''}`;
         
         window.location.href = redirectUrl;
         return true;
       }
       
+      // No matching collection found
+      console.info('No matching collection found for:', normalized.handle);
+      
+      // Optionally: Signal to backend to create collection if query is good
+      if (this.config.enableAutoCollectionCreation && 
+          normalized.shouldCreateCollection && 
+          this.products.length >= this.config.minProductsForCollection) {
+        
+        console.info('Query qualifies for collection creation:', {
+          handle: normalized.handle,
+          products: this.products.length,
+          qualityScore: normalized.qualityScore
+        });
+        
+        this.requestCollectionCreation(normalized, this.products);
+      }
+      
     } catch (error) {
-      console.error('Collection check error:', error);
+      // Collections not available? No problem - continue with search
+      console.info('Collections check failed, using search-first approach:', error.message);
     }
     
     return false;
+  }
+  
+  /**
+   * Request collection creation via webhook/API
+   * Requires custom Shopify app with Admin API access
+   */
+  async requestCollectionCreation(normalizedQuery, products) {
+    if (!this.config.collectionWebhookUrl) {
+      console.warn('Auto-collection creation enabled but no webhook URL configured');
+      return;
+    }
+    
+    try {
+      await fetch(this.config.collectionWebhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          query: normalizedQuery.original,
+          handle: normalizedQuery.handle,
+          title: this.generateCollectionTitle(normalizedQuery.normalized),
+          productCount: products.length,
+          productIds: products.slice(0, 250).map(p => p.id), // Shopify limit
+          automatedRules: this.generateAutomatedRules(normalizedQuery.normalized),
+          qualityScore: normalizedQuery.qualityScore,
+          locale: document.documentElement.lang || 'en'
+        })
+      });
+      
+      console.info('Collection creation requested:', normalizedQuery.handle);
+    } catch (error) {
+      console.error('Failed to request collection creation:', error);
+    }
+  }
+  
+  /**
+   * Generate human-friendly collection title from normalized query
+   */
+  generateCollectionTitle(normalizedQuery) {
+    // Capitalize first letter of each word
+    return normalizedQuery
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
+  
+  /**
+   * Generate automated collection rules based on query
+   * These rules make collections auto-update as products are tagged
+   */
+  generateAutomatedRules(normalizedQuery) {
+    const words = normalizedQuery.split(' ');
+    
+    // Create tag-based rules (products auto-added if they match tags)
+    const rules = words.map(word => ({
+      column: 'tag',
+      relation: 'equals',
+      condition: word
+    }));
+    
+    return {
+      rules: rules,
+      disjunctive: false, // AND logic (must match all tags)
+      sortOrder: 'best-selling' // Default sort
+    };
   }
 
   /**
