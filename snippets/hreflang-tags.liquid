@@ -1,0 +1,181 @@
+{% comment %}
+  Hreflang Tags - Advanced Multilingual SEO
+  Automatically generates hreflang tags for all market variations
+  Supports regional variations (BE-FR vs FR-FR, NL-NL vs NL-BE, etc.)
+{% endcomment %}
+
+{%- liquid
+  assign current_url = canonical_url | default: request.origin | append: request.path
+  assign base_url = shop.url
+  
+  comment
+    Regional Market Configuration
+    Format: locale-COUNTRY for regional variations
+  endcomment
+  
+  assign markets = "nl-NL,nl-BE,en-IE,en-GB,en-INT,de-DE,de-AT,fr-FR,fr-BE,es-ES,it-IT,pt-PT,da-DK" | split: ','
+  
+  comment
+    URL Pattern Detection
+    Determines if we're on a product, collection, article, or page
+  endcomment
+  
+  assign is_product = false
+  assign is_collection = false
+  assign is_article = false
+  assign is_page = false
+  
+  if template contains 'product'
+    assign is_product = true
+    assign resource_handle = product.handle
+  elsif template contains 'collection'
+    assign is_collection = true
+    assign resource_handle = collection.handle
+  elsif template contains 'article'
+    assign is_article = true
+    assign resource_handle = article.handle
+  elsif template contains 'page'
+    assign is_page = true
+    assign resource_handle = page.handle
+  endif
+-%}
+
+{%- comment -%} X-Default (International English fallback) {%- endcomment -%}
+<link rel="alternate" hreflang="x-default" href="{{ base_url }}/en{{ request.path }}">
+
+{%- comment -%} Generate hreflang for each market {%- endcomment -%}
+{%- for market in markets -%}
+  {%- liquid
+    assign market_parts = market | split: '-'
+    assign lang = market_parts[0]
+    assign country = market_parts[1]
+    
+    comment Build URL for this market endcomment
+    if is_product
+      assign market_url = base_url | append: '/' | append: lang | append: '/products/' | append: resource_handle
+    elsif is_collection
+      assign market_url = base_url | append: '/' | append: lang | append: '/collections/' | append: resource_handle
+    elsif is_article
+      assign market_url = base_url | append: '/' | append: lang | append: '/blogs/' | append: article.blog.handle | append: '/' | append: resource_handle
+    elsif is_page
+      assign market_url = base_url | append: '/' | append: lang | append: '/pages/' | append: resource_handle
+    else
+      assign market_url = base_url | append: '/' | append: lang | append: request.path
+    endif
+    
+    comment Clean up double slashes endcomment
+    assign market_url = market_url | replace: '//', '/' | replace: 'https:/', 'https://' | replace: 'http:/', 'http://'
+  -%}
+  
+  {%- comment -%} Regional hreflang (lang-COUNTRY) {%- endcomment -%}
+  <link rel="alternate" hreflang="{{ lang }}-{{ country }}" href="{{ market_url }}">
+  
+  {%- comment -%} Language-only hreflang for primary market {%- endcomment -%}
+  {%- if country == 'NL' and lang == 'nl' -%}
+    <link rel="alternate" hreflang="nl" href="{{ market_url }}">
+  {%- elsif country == 'DE' and lang == 'de' -%}
+    <link rel="alternate" hreflang="de" href="{{ market_url }}">
+  {%- elsif country == 'FR' and lang == 'fr' -%}
+    <link rel="alternate" hreflang="fr" href="{{ market_url }}">
+  {%- elsif country == 'IE' and lang == 'en' -%}
+    <link rel="alternate" hreflang="en" href="{{ market_url }}">
+  {%- elsif country == 'ES' and lang == 'es' -%}
+    <link rel="alternate" hreflang="es" href="{{ market_url }}">
+  {%- elsif country == 'IT' and lang == 'it' -%}
+    <link rel="alternate" hreflang="it" href="{{ market_url }}">
+  {%- elsif country == 'PT' and lang == 'pt' -%}
+    <link rel="alternate" hreflang="pt" href="{{ market_url }}">
+  {%- elsif country == 'DK' and lang == 'da' -%}
+    <link rel="alternate" hreflang="da" href="{{ market_url }}">
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%} 
+  Canonical URL - Points to current language version
+  Helps search engines understand this is the preferred version for this language
+{%- endcomment -%}
+<link rel="canonical" href="{{ current_url }}">
+
+{%- comment -%}
+  Open Graph & Twitter Card with locale
+{%- endcomment -%}
+{%- liquid
+  assign og_locale = request.locale.iso_code | replace: '-', '_'
+  assign og_locale_alternate = ''
+  
+  comment Generate alternate locales for OG endcomment
+  for market in markets
+    assign market_parts = market | split: '-'
+    assign market_locale = market_parts[0] | append: '_' | append: market_parts[1]
+    if market_locale != og_locale
+      assign og_locale_alternate = og_locale_alternate | append: market_locale | append: ','
+    endif
+  endfor
+-%}
+
+<meta property="og:locale" content="{{ og_locale }}">
+{%- assign alternates = og_locale_alternate | split: ',' -%}
+{%- for alt in alternates -%}
+  {%- if alt != blank -%}
+    <meta property="og:locale:alternate" content="{{ alt }}">
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+  Language Switcher Data (for JavaScript)
+  Provides URLs for language switcher in header/footer
+{%- endcomment -%}
+<script type="application/json" id="hreflang-data">
+{
+  "current": {
+    "locale": "{{ request.locale.iso_code }}",
+    "language": "{{ request.locale.iso_code | split: '-' | first }}",
+    "country": "{{ request.locale.iso_code | split: '-' | last }}",
+    "url": "{{ current_url }}"
+  },
+  "alternatives": [
+    {%- for market in markets -%}
+      {%- liquid
+        assign market_parts = market | split: '-'
+        assign lang = market_parts[0]
+        assign country = market_parts[1]
+        
+        if is_product
+          assign market_url = base_url | append: '/' | append: lang | append: '/products/' | append: resource_handle
+        elsif is_collection
+          assign market_url = base_url | append: '/' | append: lang | append: '/collections/' | append: resource_handle
+        elsif is_article
+          assign market_url = base_url | append: '/' | append: lang | append: '/blogs/' | append: article.blog.handle | append: '/' | append: resource_handle
+        elsif is_page
+          assign market_url = base_url | append: '/' | append: lang | append: '/pages/' | append: resource_handle
+        else
+          assign market_url = base_url | append: '/' | append: lang | append: request.path
+        endif
+        
+        assign market_url = market_url | replace: '//', '/' | replace: 'https:/', 'https://' | replace: 'http:/', 'http://'
+      -%}
+      {
+        "locale": "{{ market }}",
+        "language": "{{ lang }}",
+        "country": "{{ country }}",
+        "url": "{{ market_url }}",
+        "label": "{% case market %}
+          {% when 'nl-NL' %}Nederlands (Nederland)
+          {% when 'nl-BE' %}Nederlands (België)
+          {% when 'en-IE' %}English (Ireland)
+          {% when 'en-GB' %}English (United Kingdom)
+          {% when 'en-INT' %}English (International)
+          {% when 'de-DE' %}Deutsch (Deutschland)
+          {% when 'de-AT' %}Deutsch (Österreich)
+          {% when 'fr-FR' %}Français (France)
+          {% when 'fr-BE' %}Français (Belgique)
+          {% when 'es-ES' %}Español (España)
+          {% when 'it-IT' %}Italiano (Italia)
+          {% when 'pt-PT' %}Português (Portugal)
+          {% when 'da-DK' %}Dansk (Danmark)
+        {% endcase %}"
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>

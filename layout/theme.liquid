@@ -1,23 +1,78 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
-    {% # Inlined CSS Variables %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {%- # Preconnect to critical domains -%}
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.shopify.com">
+    
+    {%- # Inlined CSS Variables -%}
     {% render 'css-variables' %}
 
-    {% # Load and preload the critical CSS %}
+    {%- # Critical CSS - Inline for fastest FCP -%}
     {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    
+    {%- # Search Results CSS - Defer non-critical -%}
+    {{ 'search-results.css' | asset_url | stylesheet_tag }}
 
-    {% # Social, title, etc. %}
+    {%- # Social, title, etc. -%}
     {% render 'meta-tags' %}
 
     {{ content_for_header }}
+    
+    {%- # Preload critical fonts (if any) -%}
+    {%- comment -%}
+    <link rel="preload" href="{{ 'font.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endcomment -%}
   </head>
 
   <body>
     {% sections 'header-group' %}
 
-    {{ content_for_layout }}
+    <main id="main-content" role="main">
+      {{ content_for_layout }}
+    </main>
 
     {% sections 'footer-group' %}
+    
+    {%- # Search Intelligence Module - Load first -%}
+    <script src="{{ 'search-intelligence.js' | asset_url }}"></script>
+    
+    {%- # Search Engine JavaScript - Load after intelligence -%}
+    <script src="{{ 'search-engine.js' | asset_url }}" defer></script>
+    
+    {%- # Related Products - Uses search intelligence -%}
+    <script src="{{ 'related-products.js' | asset_url }}" defer></script>
+    
+    {%- # Performance monitoring -%}
+    <script>
+      // Core Web Vitals monitoring
+      if ('PerformanceLongTaskTiming' in window) {
+        const observer = new PerformanceObserver((list) => {
+          for (const entry of list.getEntries()) {
+            console.warn('Long task detected:', entry.duration.toFixed(2) + 'ms');
+          }
+        });
+        observer.observe({ entryTypes: ['longtask'] });
+      }
+      
+      // Log Core Web Vitals
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const perfData = performance.getEntriesByType('navigation')[0];
+          if (perfData) {
+            console.log('Performance Metrics:', {
+              'FCP': performance.getEntriesByName('first-contentful-paint')[0]?.startTime || 'N/A',
+              'DOM Content Loaded': perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+              'Load Complete': perfData.loadEventEnd - perfData.loadEventStart,
+              'Total Load Time': perfData.loadEventEnd
+            });
+          }
+        }, 0);
+      });
+    </script>
   </body>
 </html>
+

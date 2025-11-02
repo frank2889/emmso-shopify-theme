@@ -1,0 +1,254 @@
+/**
+ * Related Products - Multilingual Intelligence
+ * Finds related products using search intelligence across all languages
+ */
+
+class RelatedProducts {
+  constructor() {
+    this.container = document.querySelector('[data-related-products-container]');
+    this.productData = window.currentProductData;
+    this.intelligence = window.SearchIntelligence ? new window.SearchIntelligence() : null;
+    
+    if (this.container && this.productData) {
+      this.init();
+    }
+  }
+
+  async init() {
+    try {
+      await this.fetchRelatedProducts();
+    } catch (error) {
+      console.error('Failed to load related products:', error);
+      this.showError();
+    }
+  }
+
+  async fetchRelatedProducts() {
+    if (!this.intelligence) {
+      console.warn('Search intelligence not available');
+      return;
+    }
+
+    // Get multilingual search queries for related products
+    const queries = this.intelligence.getRelatedProductsQuery(this.productData);
+    
+    if (queries.length === 0) {
+      this.hideLoading();
+      return;
+    }
+
+    console.log('Finding related products with queries:', queries);
+
+    // Perform searches for each query
+    const searchPromises = queries.map(query => 
+      fetch(`/search/suggest.json?q=${encodeURIComponent(query)}&resources[type]=product&resources[limit]=8`)
+        .then(res => res.ok ? res.json() : null)
+        .catch(() => null)
+    );
+
+    const results = await Promise.all(searchPromises);
+
+    // Merge and deduplicate products
+    const allProducts = new Map();
+    results.forEach(data => {
+      if (data?.resources?.results?.products) {
+        data.resources.results.products.forEach(product => {
+          // Exclude current product
+          if (product.id !== this.productData.id) {
+            const key = product.id || product.handle;
+            if (!allProducts.has(key)) {
+              allProducts.set(key, product);
+            }
+          }
+        });
+      }
+    });
+
+    const relatedProducts = Array.from(allProducts.values());
+
+    // Rank by relevance
+    const rankedProducts = this.rankRelatedProducts(relatedProducts);
+
+    // Display top 4 (or limit specified)
+    this.displayProducts(rankedProducts.slice(0, 4));
+  }
+
+  rankRelatedProducts(products) {
+    return products.map(product => {
+      let score = 0;
+
+      // Same vendor/brand (+50 points)
+      if (product.vendor === this.productData.vendor) {
+        score += 50;
+      }
+
+      // Same product type (+40 points)
+      if (product.product_type === this.productData.product_type) {
+        score += 40;
+      }
+
+      // Shared tags (+10 points per tag)
+      if (product.tags && this.productData.tags) {
+        const sharedTags = product.tags.filter(tag => 
+          this.productData.tags.includes(tag)
+        );
+        score += sharedTags.length * 10;
+      }
+
+      // Similar price range (+20 points)
+      const currentPrice = this.productData.price || 0;
+      const productPrice = product.price || 0;
+      const priceDiff = Math.abs(currentPrice - productPrice) / currentPrice;
+      if (priceDiff < 0.3) { // Within 30% price range
+        score += 20;
+      }
+
+      // In stock (+15 points)
+      if (product.available) {
+        score += 15;
+      }
+
+      // Title similarity (basic word matching, +5 points per match)
+      const currentWords = this.productData.title.toLowerCase().split(/\s+/);
+      const productWords = product.title.toLowerCase().split(/\s+/);
+      const matchingWords = currentWords.filter(word => 
+        word.length > 3 && productWords.includes(word)
+      );
+      score += matchingWords.length * 5;
+
+      return { ...product, relevanceScore: score };
+    }).sort((a, b) => b.relevanceScore - a.relevanceScore);
+  }
+
+  displayProducts(products) {
+    if (products.length === 0) {
+      this.container.innerHTML = this.getEmptyState();
+      return;
+    }
+
+    const html = products.map((product, index) => {
+      const image = product.image || product.featured_image;
+      const price = this.formatPrice(product.price);
+      const comparePrice = product.compare_at_price ? this.formatPrice(product.compare_at_price) : null;
+      const showMatchBadge = index === 0 && product.relevanceScore > 50;
+
+      return `
+        <a href="${product.url}" class="related-product-card" data-product-id="${product.id}">
+          <div class="related-product-card__image">
+            ${image ? `
+              <img 
+                src="${image}" 
+                alt="${this.escapeHtml(product.title)}"
+                loading="lazy"
+                width="300"
+                height="300"
+              >
+            ` : `
+              <div style="width: 100%; height: 100%; background: #E8E8E1;"></div>
+            `}
+            ${showMatchBadge ? `
+              <span class="related-product-card__match-badge">
+                ${this.getMatchLabel()}
+              </span>
+            ` : ''}
+          </div>
+          <div class="related-product-card__content">
+            ${product.vendor ? `<p class="related-product-card__vendor">${this.escapeHtml(product.vendor)}</p>` : ''}
+            <h3 class="related-product-card__title">${this.escapeHtml(product.title)}</h3>
+            <div class="related-product-card__price ${comparePrice ? 'on-sale' : ''}">
+              ${comparePrice ? `<span class="related-product-card__compare-price">${comparePrice}</span>` : ''}
+              ${price}
+            </div>
+          </div>
+        </a>
+      `;
+    }).join('');
+
+    this.container.innerHTML = html;
+  }
+
+  getMatchLabel() {
+    const locale = this.productData.locale || 'en';
+    const labels = {
+      'nl': 'Beste Match',
+      'de': 'Beste Übereinstimmung',
+      'fr': 'Meilleure Correspondance',
+      'es': 'Mejor Coincidencia',
+      'it': 'Migliore Corrispondenza',
+      'pt': 'Melhor Correspondência',
+      'da': 'Bedste Match',
+      'en': 'Best Match'
+    };
+    return labels[locale] || labels['en'];
+  }
+
+  getEmptyState() {
+    const locale = this.productData.locale || 'en';
+    const messages = {
+      'nl': 'Geen gerelateerde producten gevonden',
+      'de': 'Keine verwandten Produkte gefunden',
+      'fr': 'Aucun produit connexe trouvé',
+      'es': 'No se encontraron productos relacionados',
+      'it': 'Nessun prodotto correlato trovato',
+      'pt': 'Nenhum produto relacionado encontrado',
+      'da': 'Ingen relaterede produkter fundet',
+      'en': 'No related products found'
+    };
+    
+    return `
+      <div class="related-products__empty">
+        <p>${messages[locale] || messages['en']}</p>
+      </div>
+    `;
+  }
+
+  showError() {
+    this.container.innerHTML = `
+      <div class="related-products__error">
+        <p>Unable to load related products</p>
+      </div>
+    `;
+  }
+
+  hideLoading() {
+    const loading = this.container.querySelector('.related-products__loading');
+    if (loading) {
+      loading.style.display = 'none';
+    }
+  }
+
+  formatPrice(cents) {
+    const amount = cents / 100;
+    const locale = this.productData.locale || 'en';
+    const localeMap = {
+      'nl': 'nl-NL',
+      'de': 'de-DE',
+      'fr': 'fr-FR',
+      'es': 'es-ES',
+      'it': 'it-IT',
+      'pt': 'pt-PT',
+      'da': 'da-DK',
+      'en': 'en-US'
+    };
+
+    return new Intl.NumberFormat(localeMap[locale] || 'en-US', {
+      style: 'currency',
+      currency: window.Shopify?.currency?.active || 'EUR'
+    }).format(amount);
+  }
+
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    new RelatedProducts();
+  });
+} else {
+  new RelatedProducts();
+}

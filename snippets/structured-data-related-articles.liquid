@@ -1,0 +1,67 @@
+{%- if context != blank and context.metafields.custom.related_posts != blank -%}
+  {% assign blogsdata_raw = context.metafields.custom.related_posts %}
+  {% assign blogsdata_clean = blogsdata_raw
+    | remove: '['
+    | remove: ']'
+    | replace: '","', '|'
+    | replace: '"'
+    | remove: '\n'
+  %}
+  {% assign blogsdata = blogsdata_clean | split: '|' %}
+  {% assign blogparent = context.metafields.custom.parent_blog | downcase | replace: ' ', '-' | replace: '.', '' %}
+  {% assign max_articles = limit | default: 3 %}
+
+  {% for blog_handle in blogsdata limit: max_articles %}
+    {% assign article_handle = blog_handle | downcase | replace: ' ', '-' | replace: '.', '' | strip %}
+    {% assign article_key = blogparent | append: '/' | append: article_handle %}
+    {% assign related_article = articles[article_key] %}
+
+    {% if related_article and related_article.title != blank and related_article.url != blank and related_article.published_at != blank %}
+      {% assign paragraphs = related_article.content | split: '<p>' %}
+      {% assign second_paragraph = paragraphs[2] | split: '</p>' | first %}
+      {% assign page_url = shop.url | append: related_article.url %}
+      {% assign image_url = '' %}
+      {% if related_article.image %}
+        {% assign image_url = related_article.image | img_url: '1200x1200' | prepend: 'https:' %}
+      {% elsif related_article.metafields.custom.featured_products %}
+        {% assign featured_product = all_products[related_article.metafields.custom.featured_products] %}
+        {% if featured_product.featured_image %}
+          {% assign image_url = featured_product.featured_image | img_url: '1200x1200' | prepend: 'https:' %}
+        {% endif %}
+      {% endif %}
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ related_article.title | strip_newlines | escape | json }},
+        "description": {{ second_paragraph | strip_html | strip_newlines | json }},
+        "articleBody": {{ related_article.content | strip_html | strip_newlines | json }},
+        "inLanguage": {{ request.locale.iso_code | json }},
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": {{ page_url | json }}
+        },
+        "datePublished": "{{ related_article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+        "dateModified": "{{ related_article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+        "author": {
+          "@type": "Person",
+          "name": {{ related_article.author | json }},
+          "url": {{ related_article.author_url | default: '#' | json }}
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": {{ shop.name | json }},
+          "logo": {
+            "@type": "ImageObject",
+            "url": {{ 'emmso-logo-homepage.webp' | asset_url | prepend: shop.url | json }},
+            "width": 600,
+            "height": 60
+          }
+        }{% if image_url != '' %},
+        "image": [{{ image_url | json }}]{% endif %}
+      }
+      </script>
+    {% endif %}
+  {% endfor %}
+{%- endif -%}

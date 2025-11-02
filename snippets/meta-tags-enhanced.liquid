@@ -1,0 +1,181 @@
+{% comment %}
+  Enhanced Meta Tags - Multilingual SEO & CRO Optimized
+  Includes: Title, Description, OG, Twitter, JSON-LD, Geo-targeting
+{% endcomment %}
+
+{%- liquid
+  assign current_locale = request.locale.iso_code
+  assign current_lang = current_locale | split: '-' | first
+  assign current_country = current_locale | split: '-' | last
+  
+  comment Determine page type endcomment
+  assign is_home = false
+  assign is_product = false
+  assign is_collection = false
+  assign is_article = false
+  
+  if template == 'index'
+    assign is_home = true
+  elsif template contains 'product'
+    assign is_product = true
+  elsif template contains 'collection'
+    assign is_collection = true
+  elsif template contains 'article'
+    assign is_article = true
+  endif
+-%}
+
+{%- comment -%} Basic Meta Tags {%- endcomment -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{%- comment -%} Language & Region {%- endcomment -%}
+<html lang="{{ current_locale }}" dir="ltr">
+<meta http-equiv="content-language" content="{{ current_locale }}">
+
+{%- comment -%} Dynamic Title - Multilingual & CRO Optimized {%- endcomment -%}
+<title>
+  {%- if is_home -%}
+    {% case current_lang %}
+      {% when 'nl' %}{{ shop.name }} - Vloeren & Onderhoud | 19 Premium Merken | Gratis Verzending vanaf €75
+      {% when 'de' %}{{ shop.name }} - Böden & Pflege | 19 Premium-Marken | Kostenloser Versand ab €75
+      {% when 'fr' %}{{ shop.name }} - Sols & Entretien | 19 Marques Premium | Livraison Gratuite dès €75
+      {% when 'es' %}{{ shop.name }} - Suelos & Mantenimiento | 19 Marcas Premium | Envío Gratis desde €75
+      {% when 'it' %}{{ shop.name }} - Pavimenti & Manutenzione | 19 Marchi Premium | Spedizione Gratuita da €75
+      {% when 'pt' %}{{ shop.name }} - Pisos & Manutenção | 19 Marcas Premium | Frete Grátis a partir de €75
+      {% when 'da' %}{{ shop.name }} - Gulve & Vedligeholdelse | 19 Premium Mærker | Gratis Forsendelse fra €75
+      {% else %}{{ shop.name }} - Flooring & Maintenance | 19 Premium Brands | Free Shipping from €75
+    {% endcase %}
+  {%- elsif is_product -%}
+    {{ product.title }} | {{ product.vendor }} | {{ shop.name }}
+  {%- elsif is_collection -%}
+    {{ collection.title }} | {{ shop.name }}
+  {%- elsif is_article -%}
+    {{ article.title }} | {{ shop.name }}
+  {%- elsif page_title -%}
+    {{ page_title }} | {{ shop.name }}
+  {%- else -%}
+    {{ shop.name }}
+  {%- endif -%}
+</title>
+
+{%- comment -%} Meta Description - CRO Optimized {%- endcomment -%}
+<meta name="description" content="
+  {%- if is_home -%}
+    {% case current_lang %}
+      {% when 'nl' %}Specialist in vloeren en onderhoud voor {{ current_country }}. 19 topmerken zoals Bona, Woca, Lithofin. Snelle levering via Wuunder. Bestel nu!
+      {% when 'de' %}Spezialist für Böden und Pflege in {{ current_country }}. 19 Top-Marken wie Bona, Woca, Lithofin. Schnelle Lieferung über Wuunder. Jetzt bestellen!
+      {% when 'fr' %}Spécialiste en sols et entretien pour {{ current_country }}. 19 grandes marques comme Bona, Woca, Lithofin. Livraison rapide via Wuunder. Commandez maintenant!
+      {% else %}Flooring and maintenance specialist for {{ current_country }}. 19 top brands like Bona, Woca, Lithofin. Fast delivery via Wuunder. Order now!
+    {% endcase %}
+  {%- elsif is_product and product.description -%}
+    {{ product.description | strip_html | truncate: 155 }}
+  {%- elsif is_collection and collection.description -%}
+    {{ collection.description | strip_html | truncate: 155 }}
+  {%- elsif page_description -%}
+    {{ page_description }}
+  {%- endif -%}
+">
+
+{%- comment -%} Keywords - Multilingual {%- endcomment -%}
+<meta name="keywords" content="
+  {%- case current_lang -%}
+    {%- when 'nl' -%}vloeren, laminaat, vinyl, parket, vloeronderhoud, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- when 'de' -%}böden, laminat, vinyl, parkett, bodenpflege, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- when 'fr' -%}sols, stratifié, vinyle, parquet, entretien des sols, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- else -%}flooring, laminate, vinyl, parquet, floor care, bona, woca, lithofin, {{ current_country | downcase }}
+  {%- endcase -%}
+">
+
+{%- comment -%} Geo-Targeting {%- endcomment -%}
+<meta name="geo.region" content="{{ current_country }}">
+<meta name="geo.placename" content="
+  {%- case current_country -%}
+    {%- when 'NL' -%}Netherlands
+    {%- when 'BE' -%}Belgium
+    {%- when 'DE' -%}Germany
+    {%- when 'AT' -%}Austria
+    {%- when 'FR' -%}France
+    {%- when 'IE' -%}Ireland
+    {%- when 'GB' -%}United Kingdom
+    {%- when 'ES' -%}Spain
+    {%- when 'IT' -%}Italy
+    {%- when 'PT' -%}Portugal
+    {%- when 'DK' -%}Denmark
+  {%- endcase -%}
+">
+
+{%- comment -%} Robots - Smart by market {%- endcomment -%}
+{%- if current_country == 'INT' -%}
+  <meta name="robots" content="noindex, follow">
+{%- else -%}
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+{%- endif -%}
+
+{%- comment -%} Author & Publisher {%- endcomment -%}
+<meta name="author" content="{{ shop.name }}">
+<meta name="publisher" content="{{ shop.name }}">
+
+{%- comment -%} Open Graph - Multilingual {%- endcomment -%}
+<meta property="og:site_name" content="{{ shop.name }}">
+<meta property="og:type" content="{% if is_product %}product{% elsif is_article %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ canonical_url | default: request.origin }}{{ request.path }}">
+<meta property="og:title" content="{{ page_title | default: shop.name }}">
+<meta property="og:description" content="{{ page_description | default: shop.description }}">
+{%- if is_product and product.featured_image -%}
+  <meta property="og:image" content="{{ product.featured_image | image_url: width: 1200 }}">
+  <meta property="og:image:secure_url" content="{{ product.featured_image | image_url: width: 1200 }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:alt" content="{{ product.featured_image.alt | default: product.title }}">
+  
+  {%- comment -%} Product-specific OG tags {%- endcomment -%}
+  <meta property="product:brand" content="{{ product.vendor }}">
+  <meta property="product:availability" content="{% if product.available %}in stock{% else %}out of stock{% endif %}">
+  <meta property="product:condition" content="new">
+  <meta property="product:price:amount" content="{{ product.price | money_without_currency }}">
+  <meta property="product:price:currency" content="{{ shop.currency }}">
+{%- endif -%}
+
+{%- comment -%} Twitter Card {%- endcomment -%}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title | default: shop.name }}">
+<meta name="twitter:description" content="{{ page_description | default: shop.description }}">
+{%- if is_product and product.featured_image -%}
+  <meta name="twitter:image" content="{{ product.featured_image | image_url: width: 1200 }}">
+  <meta name="twitter:image:alt" content="{{ product.featured_image.alt | default: product.title }}">
+{%- endif -%}
+
+{%- comment -%} Favicon - Multiple sizes for all devices {%- endcomment -%}
+<link rel="icon" type="image/webp" sizes="32x32" href="{{ 'emmso-favicon.webp' | asset_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ 'emmso-favicon.webp' | asset_url }}">
+
+{%- comment -%} Preconnect to critical domains {%- endcomment -%}
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.shopify.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+{%- comment -%} Theme Color - Brand color {%- endcomment -%}
+<meta name="theme-color" content="#FBB03B">
+<meta name="msapplication-TileColor" content="#FBB03B">
+
+{%- comment -%} Mobile Optimization {%- endcomment -%}
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="{{ shop.name }}">
+
+{%- comment -%} Performance Hints {%- endcomment -%}
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+{%- comment -%} Shopping-specific {%- endcomment -%}
+{%- if is_product -%}
+  <meta property="og:price:amount" content="{{ product.price | money_without_currency }}">
+  <meta property="og:price:currency" content="{{ shop.currency }}">
+  <meta property="product:retailer_item_id" content="{{ product.id }}">
+{%- endif -%}
+
+{%- comment -%} Include hreflang tags {%- endcomment -%}
+{% render 'hreflang-tags' %}

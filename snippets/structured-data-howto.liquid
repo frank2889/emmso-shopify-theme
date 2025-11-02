@@ -1,0 +1,82 @@
+<div id="howto-tools-data"
+     style="display: none !important"
+     data-product-handles='[
+       {% for related_product in product.metafields.custom.tools.value %}
+         "{{ related_product.handle }}"{% unless forloop.last %},{% endunless %}
+       {% endfor %}
+     ]'
+     data-howto-steps='{{ product.metafields.custom.howto.value | json }}'
+     data-product-title='{{ product.title | escape }}'>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("howto-tools-data");
+    if (!container) return;
+
+    const handlesData = container.dataset.productHandles;
+    const howtoSteps = JSON.parse(container.dataset.howtoSteps || "[]");
+    const productTitle = container.dataset.productTitle || "Product";
+    const productUrl = window.location.href;
+
+    const langMatch = window.location.pathname.match(/^\/([a-z]{2})(\/|$)/);
+    const lang = (langMatch && ["en", "de", "fr", "es", "it", "pt", "da"].includes(langMatch[1])) ? langMatch[1] : 'nl';
+
+    const langDescriptions = {
+      en: `This step-by-step guide shows you how to use ${productTitle} effectively.`,
+      de: `In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie ${productTitle} optimal verwenden.`,
+      fr: `Ce guide étape par étape vous montre comment utiliser efficacement ${productTitle}.`,
+      es: `Esta guía paso a paso le enseña cómo utilizar ${productTitle} de forma eficaz.`,
+      it: `Questa guida passo-passo ti mostra come usare al meglio ${productTitle}.`,
+      pt: `Este guia passo a passo mostra-lhe como utilizar ${productTitle} de forma eficaz.`,
+      da: `Denne trinvise vejledning viser dig, hvordan du bruger ${productTitle} optimalt.`,
+      nl: `In deze stapsgewijze handleiding leer je hoe je ${productTitle} optimaal gebruikt of toepast.`
+    };
+
+    if (!handlesData || !howtoSteps.length) return;
+
+    const handles = JSON.parse(handlesData);
+    const tools = [];
+    let loaded = 0;
+
+    const localePrefix = lang !== 'nl' ? `/${lang}` : '';
+
+    handles.forEach(handle => {
+      fetch(`${localePrefix}/products/${handle}.js`)
+        .then(res => res.json())
+        .then(product => {
+          tools.push({
+            "@type": "HowToTool",
+            name: product.title,
+            image: product.featured_image,
+            url: `${localePrefix}/products/${product.handle}`
+          });
+
+          loaded++;
+          if (loaded === handles.length) {
+            const structuredData = {
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              "name": productTitle,
+              "mainEntityOfPage": productUrl,
+              "inLanguage": lang,
+              "description": langDescriptions[lang] || langDescriptions["nl"],
+              "step": howtoSteps.map(step => ({
+                "@type": "HowToStep",
+                "text": step
+              })),
+              "tool": tools
+            };
+
+            const script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.textContent = JSON.stringify(structuredData);
+            document.head.appendChild(script);
+          }
+        })
+        .catch(err => {
+          console.error("FOUT bij ophalen structured data tool:", handle, err);
+        });
+    });
+  });
+</script>

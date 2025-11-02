@@ -1,0 +1,15 @@
+{%- assign locale_prefix = request.locale.root_url | remove_first: '/' -%}
+{%- assign base_url = shop.url | replace: 'https://www.', 'https://' -%}
+{%- if locale_prefix != "" -%}
+  {%- assign base_url = base_url | append: '/' | append: locale_prefix -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name }}",
+  "url": "{{ base_url }}",
+  "logo": "{{ 'emmso-logo-invert.webp' | asset_url }}"
+}
+</script>

@@ -1,0 +1,33 @@
+{%- assign page_url = request.origin | append: request.path -%}
+{%- assign image = collection.image -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ collection.title | json }},
+  "url": {{ page_url | json }},
+  "inLanguage": {{ request.locale.iso_code | json }},
+  {%- if collection.description != blank -%}
+  "description": {{ collection.description | strip_html | json }},
+  {%- endif -%}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page_url | json }}
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": {{ shop.url | json }},
+    "name": {{ shop.name | json }}
+  }
+  {%- if image -%}
+  ,
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ image | image_url: width: image.width | prepend: "https:" | json }},
+    "width": {{ image.width }},
+    "height": {{ image.height }}
+  }
+  {%- endif -%}
+}
+</script>

@@ -1,0 +1,425 @@
+{% comment %}
+  Language & Region Switcher - CRO Optimized
+  Smart detection, geo-targeting, conversion-focused design
+{% endcomment %}
+
+<div class="language-switcher" data-language-switcher>
+  <button 
+    type="button" 
+    class="language-switcher__trigger" 
+    aria-label="
+      {%- case request.locale.iso_code | split: '-' | first -%}
+        {%- when 'nl' -%}Wijzig taal en regio
+        {%- when 'de' -%}Sprache und Region ändern
+        {%- when 'fr' -%}Changer la langue et la région
+        {%- when 'es' -%}Cambiar idioma y región
+        {%- when 'it' -%}Cambia lingua e regione
+        {%- when 'pt' -%}Alterar idioma e região
+        {%- when 'da' -%}Skift sprog og region
+        {%- else -%}Change language and region
+      {%- endcase -%}
+    "
+    aria-expanded="false"
+    data-switcher-trigger
+  >
+    {%- liquid
+      assign current_flag = ''
+      assign current_lang_label = ''
+      
+      case request.locale.iso_code
+        when 'nl-NL'
+          assign current_flag = '🇳🇱'
+          assign current_lang_label = 'NL'
+        when 'nl-BE'
+          assign current_flag = '🇧🇪'
+          assign current_lang_label = 'BE-NL'
+        when 'en-IE'
+          assign current_flag = '🇮🇪'
+          assign current_lang_label = 'IE'
+        when 'en-GB'
+          assign current_flag = '🇬🇧'
+          assign current_lang_label = 'GB'
+        when 'en-INT'
+          assign current_flag = '🌍'
+          assign current_lang_label = 'INT'
+        when 'de-DE'
+          assign current_flag = '🇩🇪'
+          assign current_lang_label = 'DE'
+        when 'de-AT'
+          assign current_flag = '🇦🇹'
+          assign current_lang_label = 'AT'
+        when 'fr-FR'
+          assign current_flag = '🇫🇷'
+          assign current_lang_label = 'FR'
+        when 'fr-BE'
+          assign current_flag = '🇧🇪'
+          assign current_lang_label = 'BE-FR'
+        when 'es-ES'
+          assign current_flag = '🇪🇸'
+          assign current_lang_label = 'ES'
+        when 'it-IT'
+          assign current_flag = '🇮🇹'
+          assign current_lang_label = 'IT'
+        when 'pt-PT'
+          assign current_flag = '🇵🇹'
+          assign current_lang_label = 'PT'
+        when 'da-DK'
+          assign current_flag = '🇩🇰'
+          assign current_lang_label = 'DK'
+      endcase
+    -%}
+    
+    <span class="language-switcher__flag">{{ current_flag }}</span>
+    <span class="language-switcher__label">{{ current_lang_label }}</span>
+    <svg class="language-switcher__icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+      <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <div class="language-switcher__dropdown" data-switcher-dropdown hidden>
+    <div class="language-switcher__content">
+      
+      {%- comment -%} Primary Markets (most traffic) {%- endcomment -%}
+      <div class="language-switcher__section">
+        <h3 class="language-switcher__section-title">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Hoofdmarkten
+            {%- when 'de' -%}Hauptmärkte
+            {%- when 'fr' -%}Marchés Principaux
+            {%- else -%}Main Markets
+          {%- endcase -%}
+        </h3>
+        <div class="language-switcher__options">
+          <a href="#" class="language-option" data-locale="nl-NL" data-market="primary">
+            <span class="language-option__flag">🇳🇱</span>
+            <div class="language-option__text">
+              <span class="language-option__name">Nederlands</span>
+              <span class="language-option__region">Nederland</span>
+            </div>
+          </a>
+          <a href="#" class="language-option" data-locale="de-DE" data-market="primary">
+            <span class="language-option__flag">🇩🇪</span>
+            <div class="language-option__text">
+              <span class="language-option__name">Deutsch</span>
+              <span class="language-option__region">Deutschland</span>
+            </div>
+          </a>
+          <a href="#" class="language-option" data-locale="fr-FR" data-market="primary">
+            <span class="language-option__flag">🇫🇷</span>
+            <div class="language-option__text">
+              <span class="language-option__name">Français</span>
+              <span class="language-option__region">France</span>
+            </div>
+          </a>
+          <a href="#" class="language-option" data-locale="en-IE" data-market="primary">
+            <span class="language-option__flag">🇮🇪</span>
+            <div class="language-option__text">
+              <span class="language-option__name">English</span>
+              <span class="language-option__region">Ireland</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      {%- comment -%} Regional Variations {%- endcomment -%}
+      <div class="language-switcher__section">
+        <h3 class="language-switcher__section-title">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Regionale Varianten
+            {%- when 'de' -%}Regionale Varianten
+            {%- when 'fr' -%}Variantes Régionales
+            {%- else -%}Regional Variations
+          {%- endcase -%}
+        </h3>
+        <div class="language-switcher__options language-switcher__options--compact">
+          <a href="#" class="language-option language-option--compact" data-locale="nl-BE">
+            <span class="language-option__flag">🇧🇪</span>
+            <span class="language-option__name">BE-NL</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="fr-BE">
+            <span class="language-option__flag">🇧🇪</span>
+            <span class="language-option__name">BE-FR</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="de-AT">
+            <span class="language-option__flag">🇦🇹</span>
+            <span class="language-option__name">AT</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="en-GB">
+            <span class="language-option__flag">🇬🇧</span>
+            <span class="language-option__name">UK</span>
+          </a>
+        </div>
+      </div>
+
+      {%- comment -%} Other Markets {%- endcomment -%}
+      <div class="language-switcher__section">
+        <h3 class="language-switcher__section-title">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Andere Markten
+            {%- when 'de' -%}Andere Märkte
+            {%- when 'fr' -%}Autres Marchés
+            {%- else -%}Other Markets
+          {%- endcase -%}
+        </h3>
+        <div class="language-switcher__options language-switcher__options--compact">
+          <a href="#" class="language-option language-option--compact" data-locale="es-ES">
+            <span class="language-option__flag">🇪🇸</span>
+            <span class="language-option__name">ES</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="it-IT">
+            <span class="language-option__flag">🇮🇹</span>
+            <span class="language-option__name">IT</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="pt-PT">
+            <span class="language-option__flag">🇵🇹</span>
+            <span class="language-option__name">PT</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="da-DK">
+            <span class="language-option__flag">🇩🇰</span>
+            <span class="language-option__name">DK</span>
+          </a>
+          <a href="#" class="language-option language-option--compact" data-locale="en-INT">
+            <span class="language-option__flag">🌍</span>
+            <span class="language-option__name">INT</span>
+          </a>
+        </div>
+      </div>
+
+      {%- comment -%} Trust & Shipping Info {%- endcomment -%}
+      <div class="language-switcher__footer">
+        <p class="language-switcher__shipping">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}
+              🚚 Gratis verzending vanaf €75 | ✓ 19 Premium Merken
+            {%- when 'de' -%}
+              🚚 Kostenloser Versand ab €75 | ✓ 19 Premium-Marken
+            {%- when 'fr' -%}
+              🚚 Livraison gratuite dès €75 | ✓ 19 Marques Premium
+            {%- else -%}
+              🚚 Free shipping from €75 | ✓ 19 Premium Brands
+          {%- endcase -%}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .language-switcher {
+    position: relative;
+  }
+
+  .language-switcher__trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+    font-family: inherit;
+    color: #4D4D4D;
+  }
+
+  .language-switcher__trigger:hover {
+    border-color: #FBB03B;
+    background: rgba(251, 176, 59, 0.05);
+  }
+
+  .language-switcher__flag {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .language-switcher__label {
+    font-weight: 600;
+  }
+
+  .language-switcher__icon {
+    transition: transform 0.2s ease;
+  }
+
+  .language-switcher__trigger[aria-expanded="true"] .language-switcher__icon {
+    transform: rotate(180deg);
+  }
+
+  .language-switcher__dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    min-width: 320px;
+    max-width: 90vw;
+    z-index: 1000;
+  }
+
+  .language-switcher__content {
+    padding: 1rem;
+  }
+
+  .language-switcher__section {
+    margin-bottom: 1.5rem;
+  }
+
+  .language-switcher__section:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .language-switcher__section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba(77, 77, 77, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.75rem;
+  }
+
+  .language-switcher__options {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .language-switcher__options--compact {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  }
+
+  .language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    color: #4D4D4D;
+    transition: all 0.2s ease;
+  }
+
+  .language-option:hover {
+    border-color: #FBB03B;
+    background: rgba(251, 176, 59, 0.05);
+    transform: translateX(2px);
+  }
+
+  .language-option--compact {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  .language-option__flag {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .language-option--compact .language-option__flag {
+    font-size: 1.75rem;
+  }
+
+  .language-option__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .language-option__name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+
+  .language-option__region {
+    font-size: 0.8125rem;
+    color: rgba(77, 77, 77, 0.6);
+  }
+
+  .language-option--compact .language-option__name {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .language-switcher__footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E8E1;
+  }
+
+  .language-switcher__shipping {
+    font-size: 0.8125rem;
+    color: rgba(77, 77, 77, 0.7);
+    margin: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .language-switcher__dropdown {
+      left: 0;
+      right: 0;
+      min-width: auto;
+    }
+  }
+</style>
+
+<script>
+  // Language Switcher Logic with hreflang data
+  (function() {
+    const trigger = document.querySelector('[data-switcher-trigger]');
+    const dropdown = document.querySelector('[data-switcher-dropdown]');
+    const hreflangData = document.getElementById('hreflang-data');
+    
+    if (!trigger || !dropdown || !hreflangData) return;
+
+    const data = JSON.parse(hreflangData.textContent);
+    
+    // Populate URLs from hreflang data
+    document.querySelectorAll('.language-option').forEach(option => {
+      const locale = option.dataset.locale;
+      const alternative = data.alternatives.find(alt => alt.locale === locale);
+      if (alternative) {
+        option.href = alternative.url;
+        
+        // Mark current locale
+        if (locale === data.current.locale) {
+          option.style.borderColor = '#FBB03B';
+          option.style.background = 'rgba(251, 176, 59, 0.1)';
+        }
+      }
+    });
+
+    // Toggle dropdown
+    trigger.addEventListener('click', () => {
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.setAttribute('aria-expanded', !isExpanded);
+      dropdown.hidden = isExpanded;
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('[data-language-switcher]')) {
+        trigger.setAttribute('aria-expanded', 'false');
+        dropdown.hidden = true;
+      }
+    });
+
+    // Analytics tracking
+    document.querySelectorAll('.language-option').forEach(option => {
+      option.addEventListener('click', () => {
+        if (window.gtag) {
+          gtag('event', 'language_switch', {
+            'from_locale': data.current.locale,
+            'to_locale': option.dataset.locale,
+            'market_type': option.dataset.market
+          });
+        }
+      });
+    });
+  })();
+</script>

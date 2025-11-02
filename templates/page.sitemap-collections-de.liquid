@@ -1,0 +1,15 @@
+{% layout none %}
+
+{% assign current_path = request.path | downcase %}
+{% if current_path contains '/de/pages/sitemap-collections-de' %}
+
+  {% assign base_url = shop.url %}
+  {% assign locale = "de" %}
+
+  {% for collection in collections %}
+    {% unless collection.handle == 'all' or collection.handle contains 'google' %}
+{{ base_url }}/{{ locale }}/collections/{{ collection.handle }}
+    {% endunless %}
+  {% endfor %}
+
+{% endif %}

@@ -1,0 +1,51 @@
+{%- if blog != blank -%}
+  {%- for article in blog.articles limit: limit | default: 10 -%}
+    {%- if article.title != blank and article.published_at != blank -%}
+      {%- assign paragraphs = article.content | split: '<p>' -%}
+      {%- assign second_paragraph = paragraphs[2] | split: '</p>' | first -%}
+      {%- assign page_url = shop.url | append: article.url -%}
+      {%- assign image_url = '' -%}
+      {%- if article.image -%}
+        {%- assign image_url = article.image | img_url: '1200x1200' | prepend: 'https:' -%}
+      {%- elsif article.metafields.custom.featured_products -%}
+        {%- assign featured_product = all_products[article.metafields.custom.featured_products] -%}
+        {%- if featured_product.featured_image -%}
+          {%- assign image_url = featured_product.featured_image | img_url: '1200x1200' | prepend: 'https:' -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ article.title | strip_newlines | escape | json }},
+        "description": {{ second_paragraph | strip_html | strip_newlines | json }},
+        "articleBody": {{ article.content | strip_html | strip_newlines | json }},
+        "inLanguage": {{ request.locale.iso_code | json }},
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": {{ page_url | json }}
+        },
+        "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+        "dateModified": "{{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+        "author": {
+          "@type": "Person",
+          "name": {{ article.author | json }},
+          "url": {{ article.author_url | default: '#' | json }}
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": {{ shop.name | json }},
+          "logo": {
+            "@type": "ImageObject",
+            "url": {{ 'emmso-logo-homepage.webp' | asset_url | prepend: shop.url | json }},
+            "width": 600,
+            "height": 60
+          }
+        }{% if image_url != '' %},
+        "image": [{{ image_url | json }}]{% endif %}
+      }
+      </script>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

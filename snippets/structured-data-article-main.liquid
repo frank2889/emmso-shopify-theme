@@ -1,0 +1,69 @@
+{%- if article != blank -%}
+  {%- assign paragraphs = article.content | split: '<p>' -%}
+  {%- assign second_paragraph = paragraphs[2] | split: '</p>' | first -%}
+  {%- assign product = article.metafields.custom.featured_products.value.first -%}
+  {%- assign product_url = shop.url | append: request.locale.root_url | append: 'products/' | append: product.handle -%}
+  {%- assign image_url = product.featured_image | img_url: '1200x1200' | prepend: 'https:' -%}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ article.title | strip_newlines | escape | json }},
+    "description": {{ second_paragraph | strip_html | strip_newlines | json }},
+    "articleBody": {{ article.content | strip_html | strip_newlines | json }},
+    "inLanguage": {{ request.locale.iso_code | json }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ shop.url | append: article.url | json }}
+    },
+    "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+    "dateModified": "{{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+    "author": {
+      "@type": "Person",
+      "name": {{ article.author | json }},
+      "url": {{ article.author_url | default: '#' | json }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ 'emmso-logo-homepage.webp' | asset_url | prepend: shop.url | json }},
+        "width": 600,
+        "height": 60
+      }
+    }
+    {%- if article.image -%}
+      ,
+      "image": [{{ article.image | img_url: '1200x1200' | prepend: 'https:' | json }}]
+    {%- elsif article.metafields.custom.featured_products -%}
+      {%- assign featured_product = all_products[article.metafields.custom.featured_products] -%}
+      {%- if featured_product.featured_image -%}
+        ,
+        "image": [{{ featured_product.featured_image | img_url: '1200x1200' | prepend: 'https:' | json }}]
+      {%- else -%}
+        ,
+        "image": [{{ 'emmso-logo-homepage.webp' | asset_url | prepend: shop.url | json }}]
+      {%- endif -%}
+    {%- else -%}
+      ,
+      "image": [{{ 'emmso-logo-homepage.webp' | asset_url | prepend: shop.url | json }}]
+    {%- endif -%}
+    {%- if product != blank -%}
+      ,
+      "mentions": {
+        "@type": "Product",
+        "name": {{ product.title | json }},
+        "url": {{ product_url | json }},
+        "image": [{{ image_url | json }}],
+        "description": {{ product.description | strip_html | truncate: 400 | json }},
+        "brand": {
+          "@type": "Brand",
+          "name": {{ product.vendor | json }}
+        }
+      }
+    {%- endif -%}
+  }
+  </script>
+{%- endif -%}

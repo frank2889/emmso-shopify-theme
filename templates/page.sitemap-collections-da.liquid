@@ -1,0 +1,15 @@
+{% layout none %}
+
+{% assign current_path = request.path | downcase %}
+{% if current_path contains '/da/pages/sitemap-collections-da' %}
+
+  {% assign base_url = shop.url %}
+  {% assign locale = "da" %}
+
+  {% for collection in collections %}
+    {% unless collection.handle == 'all' or collection.handle == 'meguiars' or collection.handle contains 'google' %}
+{{ base_url }}/{{ locale }}/collections/{{ collection.handle }}
+    {% endunless %}
+  {% endfor %}
+
+{% endif %}

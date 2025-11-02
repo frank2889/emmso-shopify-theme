@@ -1,0 +1,34 @@
+{%- assign locale_prefix = request.locale.root_url | remove_first: '/' -%}
+{%- assign base_url = shop.url -%}
+{%- if locale_prefix != "" -%}
+  {%- assign base_url = shop.url | append: '/' | append: locale_prefix -%}
+{%- endif -%}
+
+{%- assign count = 0 -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Productlijst {{ collection.title }} – Pagina {{ paginate.current_page }}",
+  "itemListElement": [
+    {%- for p in collection.products -%}
+      {%- if p.handle and p.featured_image and p.price > 0 -%}
+        {
+          "@type": "ListItem",
+          "position": {{ count | plus: 1 }},
+          "url": {{ base_url | append: '/products/' | append: p.handle | json }},
+          "name": {{ p.title | json }},
+          "image": {{ p.featured_image | img_url: '1200x1200' | prepend: "https:" | json }},
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "{{ p.price | divided_by: 100.0 | format: "%.2f" }}",
+            "availability": "https://schema.org/InStock"
+          }
+        }{%- assign count = count | plus: 1 -%}{%- unless forloop.last -%},{%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}
+</script>

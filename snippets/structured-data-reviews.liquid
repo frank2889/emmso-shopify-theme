@@ -1,0 +1,60 @@
+{%- if template.name contains 'product' -%}
+  <script type="application/ld+json" id="structured-review-fragment">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": { "@type": "Person", "name": "Anoniem" },
+    "datePublished": "2025-01-01",
+    "reviewBody": "Review nog niet geladen",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+  }
+  </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const el = document.getElementById('structured-review-fragment');
+    if (!el) return;
+
+    const reviewsDOM = document.querySelectorAll('.review'); // pas deze class aan op jouw theme
+    if (!reviewsDOM.length) return;
+
+    const reviews = [];
+    let totalRating = 0;
+
+    reviewsDOM.forEach((reviewEl, i) => {
+      if (i > 2) return; // maximaal 3 reviews
+
+      const name = reviewEl.querySelector('.review-author')?.textContent?.trim() || "Anoniem";
+      const body = reviewEl.querySelector('.review-body')?.textContent?.trim() || "";
+      const date = reviewEl.querySelector('time')?.getAttribute('datetime') || new Date().toISOString().split("T")[0];
+      const ratingRaw = reviewEl.querySelector('.review-rating')?.textContent?.trim();
+      const rating = parseFloat(ratingRaw?.replace(",", ".") || 0);
+
+      if (rating && body.length > 5) {
+        totalRating += rating;
+        reviews.push({
+          "@type": "Review",
+          "author": { "@type": "Person", "name": name },
+          "datePublished": date,
+          "reviewBody": body,
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": rating.toFixed(1),
+            "bestRating": "5"
+          }
+        });
+      }
+    });
+
+    if (!reviews.length) return;
+
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      ...reviews[0] // neem alleen de eerste geldige review
+    };
+
+    el.textContent = JSON.stringify(jsonLd, null, 2);
+  });
+  </script>
+{%- endif -%}

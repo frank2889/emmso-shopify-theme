@@ -1,0 +1,33 @@
+{%- comment -%}
+  structured-data.liquid – index file that renders specific structured data blocks conditionally
+{%- endcomment -%}
+
+{%- render 'structured-data-organization' -%}
+
+{%- if template contains 'product' and product != blank -%}
+  {%- render 'structured-data-breadcrumbs', product: product -%}
+  {%- render 'structured-data-related-articles', context: product, limit: 4 -%}
+  {%- render 'structured-data-video', context: product -%}
+  {%- render 'structured-data-product-main', product: product -%}
+  {%- render 'structured-data-faq', product: product -%}
+  {%- render 'structured-data-howto', product: product -%}
+  {%- render 'structured-data-reviews', product: product -%}
+{%- endif -%}
+
+{%- if template contains 'article' and article != blank -%}
+  {%- render 'structured-data-article-main', article: article -%}
+  {%- render 'structured-data-related-articles', context: article, limit: 3 -%}
+{%- endif -%}
+
+{%- if template contains 'collection' and collection != blank -%}
+  {%- render 'structured-data-collection-main', collection: collection -%}
+  {%- render 'structured-data-faq', collection: collection -%}
+  {%- render 'structured-data-video', context: collection -%}
+  {%- render 'structured-data-collection-articles', collection: collection -%}
+  {%- render 'structured-data-collection-carrousel', collection: collection -%}
+{%- endif -%}
+
+
+{%- if template contains 'blog' and blog != blank -%}
+  {%- render 'structured-data-blog-articles', blog: blog, limit: 10 -%}
+{%- endif -%}

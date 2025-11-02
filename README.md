@@ -35,17 +35,396 @@ Custom Shopify theme for EMMSO - A pan-European flooring and pet products specia
 
 **Total Markets:** 10 European countries
 
-**Supported Languages:** 8 Languages
-- Dutch (NL) - Primary (Netherlands, Belgium)
-- English (EN) - International (Ireland, UK)
-- German (DE) - Germany, Austria
+**Multi-Language Strategy:**
+- **Powered by:** Translate & Adapt app (Shopify)
+- **Unlimited Languages & Nuances:** Can create regional variations (e.g., BE-NL vs NL-NL, BE-FR vs FR-FR)
+- **Current Active Languages:** 8 base languages (expandable on demand)
+- **Auto-detection:** Via URL path structure (`/en/`, `/de/`, `/nl-be/`, etc.)
+- **SEO-Optimized:** Each language version fully indexed separately
+
+**Base Languages:**
+- Dutch (NL) - Netherlands, Belgium
+- English (EN) - Ireland, UK, International
+- German (DE) - Austria, Germany
 - French (FR) - France, Belgium
 - Spanish (ES) - Spain
 - Italian (IT) - Italy
 - Portuguese (PT) - Portugal
 - Danish (DA) - Denmark
 
-**Language Detection:** Automatic via URL path (`/en/`, `/de/`, `/fr/`, etc.)
+**Future Expansion Potential:**
+- Regional variations (Swiss German, Austrian German, Belgian Dutch)
+- Additional markets (Sweden, Norway, Finland, Poland)
+- Dialect-specific content per market
+- B2B vs B2C language nuances
+
+**Market-Language Matrix:**
+- **Austria:** German (DE)
+- **Belgium:** Dutch (NL), French (FR), German (DE)
+- **Denmark:** Danish (DA)
+- **France:** French (FR)
+- **Germany:** German (DE)
+- **Ireland:** English (EN)
+- **Italy:** Italian (IT)
+- **Netherlands:** Dutch (NL)
+- **Portugal:** Portuguese (PT)
+- **Spain:** Spanish (ES)
+
+---
+
+## 🔧 Technology Stack
+
+### Shopify Apps
+1. **Translate & Adapt** - Multi-language content management with unlimited language support
+2. **Instaindex** - Instant Google indexing for new products and content
+3. **Wuunder Shipping** - Smart European shipping integration
+
+### Core Policies
+- ❌ **No Free Shipping** - Transparent shipping costs
+- ❌ **No Discounts** - Value-based pricing strategy
+- ✅ **Smart Shopping** - Intelligent product recommendations and search
+
+### Brand Assets
+- Logo: `emmso-logo-homepage.webp` (color version)
+- Logo Inverted: `emmso-logo-invert.webp` (for dark backgrounds)
+- Trust Marks: 5 certification badges (Trusted Shops, Thuiswinkel, WebwinkelKeur, etc.)
+
+---
+
+## 🔍 Search-First Architecture
+
+### Core Concept
+**Homepage = Search Engine**: Ultra-fast, predictive search as the primary navigation method. Users find products in seconds, not clicks.
+
+### Search Performance Targets
+- **First Input Delay:** < 100ms
+- **Search Response Time:** < 200ms
+- **Results Display:** < 300ms
+- **Total Time to Interactive:** < 2s
+
+### Search Features
+
+#### **1. Instant Predictive Search**
+- **Real-time autocomplete** as user types (debounced at 150ms)
+- **Product suggestions** with thumbnails, prices, availability
+- **Category suggestions** based on query intent
+- **Search history** (last 5 searches, localStorage)
+- **Trending searches** for empty state
+- **Voice search** support (Web Speech API)
+
+#### **2. Advanced Filtering (Search Results Page)**
+- **Faceted search:** Category, Brand, Price, Color, Material, Size
+- **Dynamic filters:** Only show relevant filters based on results
+- **Multi-select:** Combine multiple filters (AND/OR logic)
+- **Price range slider:** Min/Max with histogram
+- **Instant filter updates:** No page reload, URL updates for sharing
+- **Active filter chips:** Easy removal of applied filters
+
+#### **3. Smart Search Algorithm**
+- **Fuzzy matching:** Handle typos and misspellings
+- **Synonym support:** "laminate" = "laminaat" = "laminat"
+- **Multi-language:** Search across all 8 languages
+- **Product field search:** Title, Description, SKU, Brand, Tags, Metafields
+- **Weighted relevance:** Title (100%), Tags (80%), Description (60%)
+- **Boost logic:** New products, sale items, high stock priority
+
+#### **4. Search Result Optimization**
+- **Infinite scroll** OR **Load More** button (A/B test)
+- **Grid/List view toggle**
+- **Sort options:** Relevance, Price (Low-High), Price (High-Low), Newest, Best Selling
+- **Quick view modal:** Product details without page navigation
+- **Add to cart** directly from results
+- **Result count** and query display ("147 results for 'oak laminate'")
+
+#### **5. Zero-Results Handling**
+- **Suggestions:** "Did you mean...?" based on Levenshtein distance
+- **Alternative products:** Show similar categories
+- **Popular products:** Fallback to trending items
+- **Search tips:** Help users refine their query
+- **Contact support:** CTA for specific product requests
+
+---
+
+## 💡 Search-Based Store Innovations
+
+### 1. **AI-Powered Search Intent Recognition**
+- Detect user intent: "how to clean marble" → Show products + How-To content
+- Question-based search: "what floor for kitchen?" → Guided recommendations
+- Problem-solving: "remove stains from wood" → Care products + tutorials
+- Natural language: "cheap vinyl that looks like oak" → Filtered results
+
+### 2. **Visual Search & Image Upload**
+- **Upload floor photo:** Match products by color, texture, pattern
+- **Room visualization:** AR preview of flooring in user's space
+- **Style matching:** Find similar products to uploaded inspiration images
+- **Color extraction:** Search by dominant colors in uploaded photos
+
+### 3. **Smart Filters & Faceted Search**
+- **Dynamic filters:** Only show relevant options (if no red products, hide red filter)
+- **Multi-attribute search:** "waterproof vinyl under €30/m²"
+- **Room-based filtering:** Kitchen, Bathroom, Living Room (auto-filter compatible products)
+- **Usage filters:** Pet-friendly, High-traffic, Underfloor heating compatible
+- **Installation complexity:** DIY-friendly vs Professional installation
+
+### 4. **Contextual Search Results**
+- **Weather-aware:** Promote fast-drying products on rainy days
+- **Seasonal:** Winter = underfloor heating compatible, Summer = outdoor products
+- **Geographic:** Show products available in user's shipping region first
+- **Time-sensitive:** "need it tomorrow" → In-stock + fast shipping filter
+
+### 5. **Search-Driven Product Discovery**
+- **Autocomplete with product previews:** Show thumbnail + price as user types
+- **Related searches:** "People also searched for..." horizontal scroll
+- **Search history timeline:** "You searched for vinyl 3 days ago - prices dropped!"
+- **Saved searches:** Get alerts when matching products added/on sale
+- **Search trends dashboard:** "Trending in Belgium this week: Oak laminate"
+
+### 6. **Comparison & Decision Tools**
+- **Side-by-side comparison:** Select products from search results to compare specs
+- **Pros/Cons generator:** AI-generated based on use case
+- **Compatibility checker:** "Works with Bona cleaner?" instant answers
+- **Calculator integration:** m² calculator directly in search results
+- **ROI estimator:** Durability vs price over 10 years
+
+### 7. **Expert Search Modes**
+- **Professional Mode:** B2B pricing, bulk quantities, project management tools
+- **DIY Mode:** Beginner-friendly, installation guides included
+- **Quick Reorder:** Scan barcode or enter SKU for instant reorder
+- **Brand-specific search:** Deep dive into single brand catalog
+
+### 8. **Search Performance Features**
+- **Instant filters:** Apply filters without page reload (AJAX)
+- **Infinite scroll:** Lazy load results as user scrolls
+- **Search preview cache:** Preload next 24 results in background
+- **Offline search:** Service Worker cache for previously searched terms
+- **Voice search expansion:** "Show me all Bona products under €50"
+
+### 9. **Social Proof in Search**
+- **Review snippets:** Star rating + review count in search results
+- **"Most purchased":** Badge for popular items in search results
+- **"Verified compatible":** Show verified product combinations
+- **User photos:** Real customer images in search previews
+- **Pro recommendations:** "Preferred by 87% of installers"
+
+### 10. **Smart Shopping Features (No Discounts Strategy)**
+- **Value indicators:** "Best value per m²" badges
+- **Bundle suggestions:** "Complete your floor care kit" in search
+- **Stock urgency:** "Only 3 in stock" (transparent, not fake scarcity)
+- **Shipping cost preview:** Show total cost including Wuunder shipping
+- **Coverage calculator:** "Covers X m² for €Y" in search results
+- **Quality indicators:** Premium/Professional/Budget tier badges
+
+### 11. **Content-Integrated Search**
+- **Mixed results:** Products + Blog posts + How-To videos + FAQs
+- **Learning center:** Search triggers educational content
+- **Video tutorials:** Embedded in search results for relevant queries
+- **Case studies:** "See this product in action" customer projects
+- **Expert advice:** Live chat trigger for complex searches
+
+### 12. **Multi-Language Search Intelligence**
+- **Cross-language search:** Search in English, find Dutch product names
+- **Local terminology:** "parket" (NL) = "parquet" (EN) = "parkett" (DE)
+- **Brand name normalization:** Different spellings across markets
+- **Unit conversion:** Display m² in UK, ft² for international
+- **Regional product variations:** Same product, localized names
+
+### Implementation Priority (Search-First Focus)
+**Phase 1 - Core Search (Weeks 1-2):**
+- ✅ Instant predictive search with Shopify API
+- ✅ Visual design with brand colors
+- ✅ Performance optimization (< 200ms response)
+- ⬜ Smart filters (category, brand, price, specs)
+- ⬜ Infinite scroll results page
+
+**Phase 2 - Intelligence (Weeks 3-4):**
+- ⬜ Search intent recognition
+- ⬜ Natural language processing
+- ⬜ Fuzzy matching & spell correction
+- ⬜ Multi-language search normalization
+- ⬜ Search analytics dashboard
+
+**Phase 3 - Advanced Features (Weeks 5-6):**
+- ⬜ Visual search (image upload)
+- ⬜ Comparison tools
+- ⬜ Smart recommendations
+- ⬜ Voice search refinement
+- ⬜ Saved searches & alerts
+
+**Phase 4 - Optimization (Weeks 7-8):**
+- ⬜ A/B testing search layouts
+- ⬜ Conversion funnel optimization
+- ⬜ Performance monitoring
+- ⬜ Search-to-purchase analytics
+- ⬜ User behavior heatmaps
+
+---
+
+## 🎨 Brand & Design System
+
+### Color Palette
+
+**Primary Brand Colors:**
+- **Brand Orange:** `#FBB03B` - Primary CTA, Accents, Active states
+- **Dark Gray:** `#4D4D4D` - Text, Headers, Footer
+- **Light Gray:** `#E8E8E1` - Backgrounds, Borders, Subtle sections
+- **White:** `#FFFFFF` - Primary background, Cards, Clean areas
+
+**Color Usage Rules (CRO Optimized):**
+
+#### **Conversion-Focused Elements:**
+1. **Primary CTA Buttons** 
+   - Background: `#FBB03B` (Orange)
+   - Text: `#FFFFFF` (White)
+   - Hover: Darken by 10% (`#E29F2A`)
+   - Use for: Add to Cart, Checkout, Buy Now, Subscribe
+
+2. **Secondary CTA Buttons**
+   - Background: `#4D4D4D` (Dark Gray)
+   - Text: `#FFFFFF` (White)
+   - Hover: Lighten by 10% (`#666666`)
+   - Use for: View Product, Learn More, Contact
+
+3. **Urgency/Scarcity Indicators**
+   - Use Orange `#FBB03B` for low stock warnings
+   - Subtle background: `#FBB03B` at 10% opacity
+   - Bold text: `#4D4D4D`
+
+#### **Trust & Readability:**
+4. **Body Text**
+   - Primary: `#4D4D4D` (Dark Gray)
+   - Secondary: `#4D4D4D` at 70% opacity
+   - Always ensure 4.5:1 contrast ratio minimum
+
+5. **Headings**
+   - H1-H2: `#4D4D4D` (Dark Gray)
+   - H3-H6: `#4D4D4D` at 90% opacity
+
+6. **Backgrounds**
+   - Primary: `#FFFFFF` (White)
+   - Alternate sections: `#E8E8E1` (Light Gray)
+   - Cards/Panels: `#FFFFFF` with subtle shadow
+
+#### **Interactive Elements:**
+7. **Links**
+   - Default: `#FBB03B` (Orange)
+   - Hover: `#4D4D4D` (Dark Gray)
+   - Visited: `#FBB03B` at 80% opacity
+   - Underline on hover for accessibility
+
+8. **Form Elements**
+   - Border: `#E8E8E1` (Light Gray)
+   - Focus: `#FBB03B` (Orange) 2px border
+   - Error: `#D32F2F` (Red - outside palette for errors)
+   - Success: `#388E3C` (Green - outside palette for success)
+
+9. **Navigation**
+   - Background: `#FFFFFF` (White)
+   - Active/Hover: `#FBB03B` (Orange) underline or background tint
+   - Text: `#4D4D4D` (Dark Gray)
+
+#### **E-commerce Specific:**
+10. **Product Cards**
+    - Background: `#FFFFFF` (White)
+    - Border: `#E8E8E1` (Light Gray) 1px
+    - Hover: Lift with shadow, Orange accent line
+    - Price: `#4D4D4D` (Dark Gray) - Bold
+    - Sale Price: `#FBB03B` (Orange) - Bold
+
+11. **Badges & Labels**
+    - Sale/Discount: `#FBB03B` background, white text
+    - New: `#4D4D4D` background, white text
+    - Out of Stock: `#E8E8E1` background, `#4D4D4D` text
+
+12. **Icons**
+    - Default: `#4D4D4D` (Dark Gray)
+    - Active/Selected: `#FBB03B` (Orange)
+    - Cart counter: `#FBB03B` background, white text
+
+### Accessibility Standards
+- **WCAG 2.1 AA Compliance** minimum
+- Orange `#FBB03B` on white = 3.9:1 (Use for large text 18px+ only)
+- Dark Gray `#4D4D4D` on white = 9.7:1 (Excellent for all text)
+- Never use Light Gray `#E8E8E1` for text on white
+- Provide focus indicators (2px Orange outline)
+
+### Design Principles
+1. **High Contrast:** Use Dark Gray for maximum readability
+2. **Orange Sparingly:** Reserve for CTAs and key interactions
+3. **White Space:** Use generously for clean, professional look
+4. **Consistency:** Maintain color roles across all 10 markets
+5. **Trust:** Professional Dark Gray + Clean White = Reliability
+6. **Energy:** Strategic Orange = Action & Conversion
+
+---
+
+## ⚡ Performance Architecture
+
+### Speed Optimization Strategy
+**Goal:** Fastest Shopify theme for search-based e-commerce in Europe.
+
+#### **Critical Performance Metrics**
+- **Lighthouse Score:** 95+ (Mobile & Desktop)
+- **First Contentful Paint (FCP):** < 1.2s
+- **Largest Contentful Paint (LCP):** < 2.5s
+- **Time to Interactive (TTI):** < 2.0s
+- **Cumulative Layout Shift (CLS):** < 0.1
+- **First Input Delay (FID):** < 100ms
+
+#### **1. Asset Optimization**
+```liquid
+{%- # Critical CSS inline in <head> -%}
+{%- # Defer non-critical CSS -%}
+{%- # Lazy load images with native loading="lazy" -%}
+{%- # WebP images with fallback -%}
+{%- # Minified JavaScript modules -%}
+{%- # Preload hero images and fonts -%}
+```
+
+**Implementation:**
+- **Inline critical CSS** (above-the-fold: search bar, header, hero)
+- **Defer non-critical CSS** (footer, modals, drawers)
+- **Code splitting:** Separate bundles for homepage, product, collection
+- **Tree shaking:** Remove unused JavaScript
+- **Gzip/Brotli compression** on all text assets
+
+#### **2. Image Strategy**
+- **Modern formats:** WebP primary, JPEG fallback
+- **Responsive images:** `srcset` with 5 breakpoints (320, 640, 960, 1280, 1920)
+- **Lazy loading:** Native `loading="lazy"` for below-fold images
+- **Aspect ratio boxes:** Prevent layout shift
+- **Blur placeholder:** Low-quality image placeholders (LQIP)
+- **CDN delivery:** Shopify CDN with edge caching
+
+#### **3. JavaScript Performance**
+- **Vanilla JS first:** Avoid heavy frameworks
+- **Async/Defer:** Non-blocking script loading
+- **Event delegation:** Minimize event listeners
+- **Debouncing:** Search input (150ms), scroll events (200ms)
+- **Intersection Observer:** Lazy load images and components
+- **Web Workers:** Offload search filtering to background thread
+
+#### **4. Caching Strategy**
+- **Browser caching:** Aggressive headers for static assets
+- **Service Worker:** Offline support and asset caching
+- **LocalStorage:** Search history, recently viewed products
+- **SessionStorage:** Cart state, filter selections
+- **CDN edge caching:** Shopify CDN for global delivery
+
+#### **5. Database & API Optimization**
+- **Shopify Ajax API:** Fast cart updates without reload
+- **Predictive Search API:** Native Shopify search endpoint
+- **Pagination:** Limit to 24-48 products per page
+- **Lean queries:** Only fetch required fields
+- **Prefetching:** Preload next page on scroll proximity
+
+#### **6. Rendering Strategy**
+- **Progressive enhancement:** Core functionality without JS
+- **Skeleton screens:** Instant visual feedback during load
+- **Optimistic UI:** Update UI before server confirmation
+- **No render-blocking:** All CSS/JS non-blocking
+- **Font display swap:** Prevent invisible text
+
+---
 
 ### 🏭 Product Brands (19)
 

@@ -1,0 +1,20 @@
+{% layout none %}
+
+{% assign current_path = request.path | downcase %}
+{% if current_path contains '/en/pages/sitemap-blogs-en' %}
+
+  {% assign base_url = shop.url %}
+  {% assign blog_handles = "lithofin,hmk,lecol,woca,bona,loba,floorservice,blue-dolphin,dr-schutz,forbo,mflor,kerakoll,bauwerk,stonetech,blanchon,excellent-pets,elanco,milbemax,propad" | split: "," %}
+
+  {% for handle in blog_handles %}
+    {% assign blog = blogs[handle] %}
+    {% if blog and blog.articles_count > 0 %}
+      {% paginate blog.articles by 1000 %}
+        {% for article in blog.articles %}
+{{ base_url }}{{ article.url }}
+        {% endfor %}
+      {% endpaginate %}
+    {% endif %}
+  {% endfor %}
+
+{% endif %}

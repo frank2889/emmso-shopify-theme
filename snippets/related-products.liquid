@@ -1,0 +1,205 @@
+{% comment %}
+  Related Products - Multilingual Intelligence
+  Uses search intelligence to find related products across all languages
+  
+  Usage:
+  {% render 'related-products', product: product, limit: 4 %}
+{% endcomment %}
+
+{%- liquid
+  assign limit = limit | default: 4
+  assign current_product_id = product.id
+-%}
+
+<div class="related-products" data-product-id="{{ product.id }}">
+  <div class="related-products__header">
+    <h2 class="related-products__title">
+      {%- case request.locale.iso_code -%}
+        {%- when 'nl' -%}Gerelateerde Producten
+        {%- when 'de' -%}Verwandte Produkte
+        {%- when 'fr' -%}Produits Connexes
+        {%- when 'es' -%}Productos Relacionados
+        {%- when 'it' -%}Prodotti Correlati
+        {%- when 'pt' -%}Produtos Relacionados
+        {%- when 'da' -%}Relaterede Produkter
+        {%- else -%}Related Products
+      {%- endcase -%}
+    </h2>
+  </div>
+
+  <div class="related-products__grid" data-related-products-container>
+    {%- comment -%} Loading state {%- endcomment -%}
+    <div class="related-products__loading">
+      <div class="spinner"></div>
+      <p>
+        {%- case request.locale.iso_code -%}
+          {%- when 'nl' -%}Aan het laden...
+          {%- when 'de' -%}Wird geladen...
+          {%- when 'fr' -%}Chargement...
+          {%- when 'es' -%}Cargando...
+          {%- when 'it' -%}Caricamento...
+          {%- when 'pt' -%}Carregando...
+          {%- when 'da' -%}Indlæser...
+          {%- else -%}Loading...
+        {%- endcase -%}
+      </p>
+    </div>
+  </div>
+</div>
+
+{%- comment -%} Pass product data to JavaScript {%- endcomment -%}
+<script>
+  window.currentProductData = {
+    id: {{ product.id | json }},
+    title: {{ product.title | json }},
+    vendor: {{ product.vendor | json }},
+    product_type: {{ product.product_type | json }},
+    tags: {{ product.tags | json }},
+    handle: {{ product.handle | json }},
+    locale: {{ request.locale.iso_code | json }}
+  };
+</script>
+
+<style>
+  .related-products {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #E8E8E1;
+  }
+
+  .related-products__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .related-products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .related-products__loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .related-products__loading .spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid #E8E8E1;
+    border-top-color: #FBB03B;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    animation: spin 0.6s linear infinite;
+  }
+
+  .related-product-card {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .related-product-card:hover {
+    border-color: #FBB03B;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .related-product-card__image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* 1:1 aspect ratio */
+    background: #E8E8E1;
+    overflow: hidden;
+  }
+
+  .related-product-card__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .related-product-card__match-badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(251, 176, 59, 0.95);
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    z-index: 1;
+  }
+
+  .related-product-card__content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .related-product-card__vendor {
+    font-size: 0.8125rem;
+    color: rgba(77, 77, 77, 0.6);
+    margin: 0 0 0.25rem;
+  }
+
+  .related-product-card__title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #4D4D4D;
+    margin: 0 0 0.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .related-product-card__price {
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4D4D4D;
+  }
+
+  .related-product-card__price.on-sale {
+    color: #FBB03B;
+  }
+
+  .related-product-card__compare-price {
+    font-size: 0.875rem;
+    color: rgba(77, 77, 77, 0.5);
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .related-products__grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .related-product-card__content {
+      padding: 0.75rem;
+    }
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+</style>

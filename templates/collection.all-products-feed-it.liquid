@@ -1,0 +1,45 @@
+{% layout none %}{{ '<?xml version="1.0" encoding="UTF-8"?>' }}
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>{{ shop.name | escape }} – IT Product Feed</title>
+    <link>{{ shop.url }}/it/collections/google-feed-it</link>
+    <description>Product feed for Italian market</description>
+
+    {% paginate collection.products by 1000 %}
+      {% for product in collection.products %}
+        {% for variant in product.variants %}
+          <item>
+            <g:id>{{ variant.id }}</g:id>
+
+            <g:title>
+              {% if product.variants.size > 1 %}
+                {{ product.title | escape }} – {{ variant.title | escape }}
+              {% else %}
+                {{ product.title | escape }}
+              {% endif %}
+            </g:title>
+
+            <g:description><![CDATA[
+              {{ product.description | replace: '&nbsp;', ' ' | replace: '<br>', '<br />' }}
+            ]]></g:description>
+
+            <g:link>{{ shop.url }}/it/products/{{ product.handle }}{% unless variant == product.variants.first %}?variant={{ variant.id }}{% endunless %}</g:link>
+
+            <g:image_link>{{ variant.featured_image | default: product.featured_image | img_url: 'master' }}</g:image_link>
+
+            <g:condition>new</g:condition>
+            <g:availability>{% if variant.available %}in stock{% else %}out of stock{% endif %}</g:availability>
+
+            <g:price>{{ variant.price | money_without_currency | replace: ',', '.' }} {{ shop.currency }}</g:price>
+
+            <g:brand>{{ product.vendor | escape }}</g:brand>
+
+            {% if variant.barcode != blank %}
+              <g:gtin>{{ variant.barcode }}</g:gtin>
+            {% endif %}
+          </item>
+        {% endfor %}
+      {% endfor %}
+    {% endpaginate %}
+  </channel>
+</rss>

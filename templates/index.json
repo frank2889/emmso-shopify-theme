@@ -9,12 +9,23 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "hello-world",
-      "settings": {}
+    "search_hero": {
+      "type": "search-hero",
+      "settings": {
+        "headline": "Find Your Perfect Floor Solution",
+        "subheadline": "Search from thousands of products across 19 premium brands",
+        "search_placeholder": "Search for products, brands, or categories...",
+        "enable_voice_search": false,
+        "show_suggestions": true,
+        "trending_searches": "laminate flooring, vinyl planks, wood care, tile adhesive, stone sealer",
+        "show_stats": true,
+        "brand_count": "19",
+        "market_count": "10"
+      }
     }
   },
   "order": [
-    "main"
+    "search_hero"
   ]
 }
+

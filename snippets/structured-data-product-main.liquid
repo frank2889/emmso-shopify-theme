@@ -1,0 +1,66 @@
+{%- if product != blank -%}
+  {%- assign current_variant = product.variants.first -%}
+  {%- assign is_barcode_available = current_variant.barcode != blank -%}
+  {%- assign is_valid_gtin_length = current_variant.barcode and (current_variant.barcode.size == 8 or current_variant.barcode.size == 12 or current_variant.barcode.size == 13 or current_variant.barcode.size == 14) -%}
+  {%- assign gtin_option = 'gtin' | append: current_variant.barcode.size -%}
+
+  {%- assign p_blocks = product.description | split: '<p>' -%}
+  {%- assign first_paragraph = p_blocks[1] | split: '</p>' | first | default: '' -%}
+  {%- assign second_paragraph = '' -%}
+  {%- for p in p_blocks offset:2 -%}
+    {%- assign cleaned = p | strip -%}
+    {%- if cleaned contains '</p>' and second_paragraph == '' -%}
+      {%- assign second_paragraph = p | split: '</p>' | first -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign combined_description = (first_paragraph | append: ' ' | append: second_paragraph) | strip_html | strip_newlines -%}
+  {%- if combined_description == '' -%}
+    {%- assign combined_description = product.description | strip_html | truncate: 160 -%}
+  {%- endif -%}
+
+  {%- assign rating = product.metafields.custom.wwk_rating_value -%}
+  {%- assign count = product.metafields.custom.wwk_review_count -%}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": {{ product.title | json }},
+    "description": {{ combined_description | json }},
+    "url": {{ shop.url | append: product.url | json }},
+    "image": {{ product.featured_image | default: current_variant.image | img_url: '1200x1200' | prepend: 'https:' | json }},
+    "brand": {
+      "@type": "Brand",
+      "name": {{ product.vendor | json }}
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ shop.url | append: product.url | json }}
+    },
+    "inLanguage": {{ request.locale.iso_code | json }},
+    {%- if is_barcode_available and is_valid_gtin_length -%}
+      "{{ gtin_option }}": {{ current_variant.barcode | json }},
+    {%- elsif is_barcode_available -%}
+      "mpn": {{ current_variant.barcode | json }},
+    {%- endif -%}
+    "sku": {{ current_variant.sku | json }},
+    "offers": {
+      "@type": "Offer",
+      "url": {{ shop.url | append: current_variant.url | json }},
+      "sku": {{ current_variant.sku | json }},
+      "availability": "https://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+      "price": {{ current_variant.price | divided_by: 100.0 | json }},
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "priceValidUntil": "{{ 'now' | date: '%s' | plus: 2678400 | date: '%Y-%m-%d' }}",
+      "itemCondition": "https://schema.org/NewCondition"
+    }{% if rating and count %},
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": {{ rating | json }},
+      "reviewCount": {{ count | json }},
+      "bestRating": "5"
+    }
+    {% endif %}
+  }
+  </script>
+{%- endif -%}

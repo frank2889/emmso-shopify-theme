@@ -1,0 +1,33 @@
+{%- assign locale_prefix = request.locale.root_url | remove_first: '/' -%}
+{%- if locale_prefix == "" -%}
+  {%- assign base_url = shop.url -%}
+{%- else -%}
+  {%- assign base_url = shop.url | append: '/' | append: locale_prefix -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ 'general.breadcrumbs.home' | t }}",
+      "item": "{{ base_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ product.vendor }}",
+      "item": "{{ base_url }}/collections/{{ product.vendor | handle }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ product.title }}",
+      "item": "{{ base_url }}/products/{{ product.handle }}"
+    }
+  ]
+}
+</script>

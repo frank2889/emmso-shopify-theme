@@ -1,0 +1,15 @@
+{% layout none %}
+
+{% assign current_path = request.path | downcase %}
+{% if current_path contains '/de/pages/sitemap-pages-de' %}
+
+  {% assign base_url = shop.url %}
+  {% assign locale = "de" %}
+
+  {% for page in pages %}
+    {% unless page.handle contains 'sitemap' %}
+{{ base_url }}/{{ locale }}/pages/{{ page.handle }}
+    {% endunless %}
+  {% endfor %}
+
+{% endif %}

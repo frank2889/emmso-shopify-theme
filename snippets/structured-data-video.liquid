@@ -1,0 +1,23 @@
+{%- assign video_file = context.metafields.custom.video_file -%}
+{%- assign video_thumbnail = context.metafields.custom.video_thumbnail | default: '' -%}
+{%- assign video_title = context.metafields.custom.video_title | default: context.title -%}
+{%- assign fallback_thumbnail = 'fallback.webp' | asset_url | prepend: 'https:' -%}
+
+{%- if video_file -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ video_title | json }},
+  "description": {{ page_description | json }},
+  "thumbnailUrl": {{ video_thumbnail | default: fallback_thumbnail | json }},
+  "uploadDate": "{{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "contentUrl": {{ video_file | file_url | prepend: 'https:' | json }},
+  "embedUrl": {{ video_file | file_url | prepend: 'https:' | json }},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }}
+  }
+}
+</script>
+{%- endif -%}

@@ -1,0 +1,111 @@
+{%- assign parent_blog_handle = collection.metafields.custom.parent_collection | default: '' -%}
+
+{%- if parent_blog_handle != '' -%}
+  {%- assign parent_blog = blogs[parent_blog_handle] -%}
+  {%- if parent_blog -%}
+    {%- assign articles_with_views = '' -%}
+    {%- assign total_views = 0 -%}
+    {%- for article in parent_blog.articles -%}
+      {%- assign views = article.metafields.custom.views | default: 0 | plus: 0 -%}
+      {%- assign total_views = total_views | plus: views -%}
+      {%- capture articles_with_views -%}
+        {{ articles_with_views }}
+        {%- unless forloop.first -%},{%- endunless -%}
+        {{ views }}::{{ article.id }}
+      {%- endcapture -%}
+    {%- endfor -%}
+    {%- assign articles_array = articles_with_views | split: ',' -%}
+
+    {%- if total_views > 0 -%}
+      {%- assign sorted_articles = articles_array | sort_natural | reverse -%}
+      {%- assign sorted_article_ids = '' -%}
+      {%- for item in sorted_articles %}
+        {%- assign parts = item | split: '::' -%}
+        {%- assign sorted_article_ids = sorted_article_ids | append: parts[1] | append: ',' -%}
+      {%- endfor -%}
+      {%- assign sorted_article_ids = sorted_article_ids | split: ',' -%}
+
+      {%- for article_id in sorted_article_ids limit:6 -%}
+        {%- assign article = all_articles[article_id] -%}
+        {%- if article and article.title != blank and article.published_at != blank -%}
+          {%- assign paragraphs = article.content | split: '<p>' -%}
+          {%- assign second_paragraph = paragraphs[2] | split: '</p>' | first -%}
+
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": {{ shop.url | append: article.url | json }}
+            },
+            "headline": {{ article.title | strip_newlines | escape | json }},
+            "description": {{ second_paragraph | strip_html | strip_newlines | json }},
+            {% if article.image %}
+            "image": {{ article.image | img_url: '1200x1200' | prepend: 'https:' | json }},
+            {% elsif article.metafields.custom.featured_products %}
+              {% assign featured_product = all_products[article.metafields.custom.featured_products] %}
+              {% if featured_product.featured_image %}
+            "image": {{ featured_product.featured_image | img_url: '1200x1200' | prepend: 'https:' | json }},
+              {% endif %}
+            {% endif %}
+            "author": {
+              "@type": "Person",
+              "name": {{ article.author | json }},
+              "url": {{ article.author_url | default: '#' | json }}
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": {{ shop.name | json }}
+            },
+            "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+            "dateModified": "{{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+            "url": {{ article.url | json }}
+          }
+          </script>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- else -%}
+      {%- assign sorted_articles = parent_blog.articles | sort: 'updated_at' | reverse -%}
+      {%- for article in sorted_articles limit:6 -%}
+        {%- if article.title != blank and article.published_at != blank -%}
+          {%- assign paragraphs = article.content | split: '<p>' -%}
+          {%- assign second_paragraph = paragraphs[2] | split: '</p>' | first -%}
+
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": {{ shop.url | append: article.url | json }}
+            },
+            "headline": {{ article.title | strip_newlines | escape | json }},
+            "description": {{ second_paragraph | strip_html | strip_newlines | json }},
+            {% if article.image %}
+            "image": {{ article.image | img_url: '1200x1200' | prepend: 'https:' | json }},
+            {% elsif article.metafields.custom.featured_products %}
+              {% assign featured_product = all_products[article.metafields.custom.featured_products] %}
+              {% if featured_product.featured_image %}
+            "image": {{ featured_product.featured_image | img_url: '1200x1200' | prepend: 'https:' | json }},
+              {% endif %}
+            {% endif %}
+            "author": {
+              "@type": "Person",
+              "name": {{ article.author | json }},
+              "url": {{ article.author_url | default: '#' | json }}
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": {{ shop.name | json }}
+            },
+            "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+            "dateModified": "{{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+            "url": {{ article.url | json }}
+          }
+          </script>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
