@@ -1,0 +1,74 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Spring til indhold",
+      "close_modal": "Luk (esc)",
+      "close": "Luk",
+      "learn_more": "Lær mere"
+    },
+    "404": {
+      "title": "Side ikke fundet",
+      "subtext": "Siden du leder efter findes ikke.",
+      "continue_shopping": "Fortsæt med at handle"
+    },
+    "search": {
+      "title": "Søg",
+      "placeholder": "Søg produkter...",
+      "no_results": "Ingen resultater fundet",
+      "results_for": "Resultater for \"{{ terms }}\"",
+      "result_count_one": "{{ count }} resultat",
+      "result_count_other": "{{ count }} resultater"
+    }
+  },
+  "filters": {
+    "title": "Filtre",
+    "active_filters": "Aktive filtre",
+    "clear_all": "Ryd alle",
+    "category": "Kategori",
+    "brand": "Mærke",
+    "price": "Pris",
+    "room": "Rumtype",
+    "characteristics": "Egenskaber"
+  },
+  "comparison": {
+    "title": "Produktsammenligning",
+    "compare_products": "Sammenlign produkter",
+    "clear_all": "Ryd alle",
+    "remove": "Fjern",
+    "added": "{{ product }} tilføjet til sammenligning",
+    "cleared": "Sammenligning ryddet",
+    "max_reached": "Maksimalt {{ max }} produkter kan sammenlignes",
+    "min_required": "Vælg mindst 2 produkter at sammenligne",
+    "price": "Pris",
+    "availability": "Tilgængelighed",
+    "variants": "Varianter",
+    "features": "Funktioner",
+    "in_stock": "På lager",
+    "out_of_stock": "Udsolgt",
+    "products_selected": "{{ count }} produkter valgt til sammenligning"
+  },
+  "products": {
+    "product": {
+      "in_stock": "På lager",
+      "out_of_stock": "Udsolgt",
+      "add_to_cart": "Læg i kurv"
+    },
+    "related": {
+      "title": "Relaterede produkter"
+    }
+  },
+  "collections": {
+    "sorting": {
+      "title": "Sortér efter",
+      "price_ascending": "Pris, lav til høj",
+      "price_descending": "Pris, høj til lav"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Din kurv",
+      "empty": "Din kurv er tom",
+      "checkout": "Gå til kassen"
+    }
+  }
+}

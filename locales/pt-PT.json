@@ -1,0 +1,74 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Ir para o conteúdo",
+      "close_modal": "Fechar (esc)",
+      "close": "Fechar",
+      "learn_more": "Saiba mais"
+    },
+    "404": {
+      "title": "Página não encontrada",
+      "subtext": "A página que procura não existe.",
+      "continue_shopping": "Continuar a comprar"
+    },
+    "search": {
+      "title": "Pesquisar",
+      "placeholder": "Pesquisar produtos...",
+      "no_results": "Nenhum resultado encontrado",
+      "results_for": "Resultados para \"{{ terms }}\"",
+      "result_count_one": "{{ count }} resultado",
+      "result_count_other": "{{ count }} resultados"
+    }
+  },
+  "filters": {
+    "title": "Filtros",
+    "active_filters": "Filtros ativos",
+    "clear_all": "Limpar tudo",
+    "category": "Categoria",
+    "brand": "Marca",
+    "price": "Preço",
+    "room": "Tipo de divisão",
+    "characteristics": "Características"
+  },
+  "comparison": {
+    "title": "Comparação de produtos",
+    "compare_products": "Comparar produtos",
+    "clear_all": "Limpar tudo",
+    "remove": "Remover",
+    "added": "{{ product }} adicionado à comparação",
+    "cleared": "Comparação limpa",
+    "max_reached": "Máximo de {{ max }} produtos podem ser comparados",
+    "min_required": "Selecione pelo menos 2 produtos para comparar",
+    "price": "Preço",
+    "availability": "Disponibilidade",
+    "variants": "Variantes",
+    "features": "Características",
+    "in_stock": "Em stock",
+    "out_of_stock": "Esgotado",
+    "products_selected": "{{ count }} produtos selecionados para comparação"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Em stock",
+      "out_of_stock": "Esgotado",
+      "add_to_cart": "Adicionar ao carrinho"
+    },
+    "related": {
+      "title": "Produtos relacionados"
+    }
+  },
+  "collections": {
+    "sorting": {
+      "title": "Ordenar por",
+      "price_ascending": "Preço, baixo a alto",
+      "price_descending": "Preço, alto a baixo"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "O seu carrinho",
+      "empty": "O seu carrinho está vazio",
+      "checkout": "Finalizar compra"
+    }
+  }
+}

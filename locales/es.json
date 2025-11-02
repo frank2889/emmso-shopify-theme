@@ -1,0 +1,74 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Saltar al contenido",
+      "close_modal": "Cerrar (esc)",
+      "close": "Cerrar",
+      "learn_more": "Más información"
+    },
+    "404": {
+      "title": "Página no encontrada",
+      "subtext": "La página que buscas no existe.",
+      "continue_shopping": "Continuar comprando"
+    },
+    "search": {
+      "title": "Buscar",
+      "placeholder": "Buscar productos...",
+      "no_results": "No se encontraron resultados",
+      "results_for": "Resultados para \"{{ terms }}\"",
+      "result_count_one": "{{ count }} resultado",
+      "result_count_other": "{{ count }} resultados"
+    }
+  },
+  "filters": {
+    "title": "Filtros",
+    "active_filters": "Filtros activos",
+    "clear_all": "Borrar todo",
+    "category": "Categoría",
+    "brand": "Marca",
+    "price": "Precio",
+    "room": "Tipo de habitación",
+    "characteristics": "Características"
+  },
+  "comparison": {
+    "title": "Comparación de productos",
+    "compare_products": "Comparar productos",
+    "clear_all": "Borrar todo",
+    "remove": "Eliminar",
+    "added": "{{ product }} añadido a comparación",
+    "cleared": "Comparación borrada",
+    "max_reached": "Máximo {{ max }} productos pueden ser comparados",
+    "min_required": "Selecciona al menos 2 productos para comparar",
+    "price": "Precio",
+    "availability": "Disponibilidad",
+    "variants": "Variantes",
+    "features": "Características",
+    "in_stock": "En stock",
+    "out_of_stock": "Agotado",
+    "products_selected": "{{ count }} productos seleccionados para comparación"
+  },
+  "products": {
+    "product": {
+      "in_stock": "En stock",
+      "out_of_stock": "Agotado",
+      "add_to_cart": "Añadir al carrito"
+    },
+    "related": {
+      "title": "Productos relacionados"
+    }
+  },
+  "collections": {
+    "sorting": {
+      "title": "Ordenar por",
+      "price_ascending": "Precio, menor a mayor",
+      "price_descending": "Precio, mayor a menor"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Tu carrito",
+      "empty": "Tu carrito está vacío",
+      "checkout": "Finalizar compra"
+    }
+  }
+}

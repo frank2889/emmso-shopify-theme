@@ -1,0 +1,74 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Vai al contenuto",
+      "close_modal": "Chiudi (esc)",
+      "close": "Chiudi",
+      "learn_more": "Scopri di più"
+    },
+    "404": {
+      "title": "Pagina non trovata",
+      "subtext": "La pagina che stai cercando non esiste.",
+      "continue_shopping": "Continua lo shopping"
+    },
+    "search": {
+      "title": "Cerca",
+      "placeholder": "Cerca prodotti...",
+      "no_results": "Nessun risultato trovato",
+      "results_for": "Risultati per \"{{ terms }}\"",
+      "result_count_one": "{{ count }} risultato",
+      "result_count_other": "{{ count }} risultati"
+    }
+  },
+  "filters": {
+    "title": "Filtri",
+    "active_filters": "Filtri attivi",
+    "clear_all": "Cancella tutto",
+    "category": "Categoria",
+    "brand": "Marca",
+    "price": "Prezzo",
+    "room": "Tipo di stanza",
+    "characteristics": "Caratteristiche"
+  },
+  "comparison": {
+    "title": "Confronto prodotti",
+    "compare_products": "Confronta prodotti",
+    "clear_all": "Cancella tutto",
+    "remove": "Rimuovi",
+    "added": "{{ product }} aggiunto al confronto",
+    "cleared": "Confronto cancellato",
+    "max_reached": "Massimo {{ max }} prodotti possono essere confrontati",
+    "min_required": "Seleziona almeno 2 prodotti da confrontare",
+    "price": "Prezzo",
+    "availability": "Disponibilità",
+    "variants": "Varianti",
+    "features": "Caratteristiche",
+    "in_stock": "Disponibile",
+    "out_of_stock": "Esaurito",
+    "products_selected": "{{ count }} prodotti selezionati per il confronto"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Disponibile",
+      "out_of_stock": "Esaurito",
+      "add_to_cart": "Aggiungi al carrello"
+    },
+    "related": {
+      "title": "Prodotti correlati"
+    }
+  },
+  "collections": {
+    "sorting": {
+      "title": "Ordina per",
+      "price_ascending": "Prezzo, dal più basso",
+      "price_descending": "Prezzo, dal più alto"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Il tuo carrello",
+      "empty": "Il tuo carrello è vuoto",
+      "checkout": "Procedi al checkout"
+    }
+  }
+}
