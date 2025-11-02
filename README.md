@@ -14,19 +14,34 @@ Custom Shopify theme for EMMSO - A pan-European flooring and pet products specia
 
 ## 📊 Business Overview
 
-### 🏢 Company
-**EMMSO** - Floor Products & Solutions Specialist  
-**Store:** vloerproducten.myshopify.com
+### 🏢 Company Information
+**EMMSO** - Floor Products & Pet Supplies Specialist  
+**Store URL:** vloerproducten.myshopify.com  
+**GSC Account:** emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com
 
-### 🌍 Active Markets & Languages (8)
-- 🇳🇱 **Dutch (NL)** - Netherlands (Primary Market)
-- 🇬🇧 **English (EN)** - International/UK
-- 🇩🇪 **German (DE)** - Germany
-- 🇫🇷 **French (FR)** - France
-- 🇪🇸 **Spanish (ES)** - Spain
-- 🇮🇹 **Italian (IT)** - Italy
-- 🇵🇹 **Portuguese (PT)** - Portugal
-- 🇩🇰 **Danish (DA)** - Denmark
+### 🌍 Markets & Languages
+
+**Active Markets:**
+- 🇳🇱 **Netherlands (NL)** - Primary Market
+- 🇪 **Belgium** - Dutch (NL) & French (FR)
+- 🇩🇪 **Germany (DE)**
+- 🇫🇷 **France (FR)**
+- 🇪🇸 **Spain (ES)**
+- 🇮🇹 **Italy (IT)**
+- 🇵🇹 **Portugal (PT)**
+- �� **Denmark (DA)**
+
+**Supported Languages:** 8 Languages
+- Dutch (NL) - Primary
+- English (EN) - International
+- German (DE)
+- French (FR)
+- Spanish (ES)
+- Italian (IT)
+- Portuguese (PT)
+- Danish (DA)
+
+**Language Detection:** Automatic via URL path (`/en/`, `/de/`, `/fr/`, etc.)
 
 ### 🏭 Product Brands (19)
 
@@ -61,6 +76,102 @@ Custom Shopify theme for EMMSO - A pan-European flooring and pet products specia
 - **Product feeds** for Google Shopping (8 languages)
 - **Content marketing** via blogs in all languages
 - **Pan-European** distribution
+
+---
+
+## 🔧 Technical Implementation
+
+### 📦 Metafields Structure
+
+EMMSO uses custom metafields for advanced functionality and SEO optimization:
+
+#### **Product Metafields**
+| Metafield | Type | Namespace | Purpose |
+|-----------|------|-----------|---------|
+| `wwk_rating_value` | Number | `custom` | Product rating (for Schema.org ratings) |
+| `wwk_review_count` | Number | `custom` | Number of reviews (for Schema.org) |
+| `faq` | List | `custom` | FAQ questions/answers for product pages |
+| `tools` | Product Reference List | `custom` | Related tools/products for HowTo schema |
+| `howto` | JSON/List | `custom` | Step-by-step usage instructions |
+
+#### **Article/Blog Metafields**
+| Metafield | Type | Namespace | Purpose |
+|-----------|------|-----------|---------|
+| `featured_products` | Product Reference | `custom` | Product featured in article (for Schema.org) |
+| `related_posts` | List | `custom` | Related article handles for cross-linking |
+| `parent_blog` | Text | `custom` | Parent blog handle for article relationships |
+| `views` | Number | `custom` | Article view count for analytics |
+
+#### **Collection Metafields**
+| Metafield | Type | Namespace | Purpose |
+|-----------|------|-----------|---------|
+| `faq` | List | `custom` | FAQ for collection pages |
+| `parent_collection` | Text | `custom` | Parent collection for blog article filtering |
+
+#### **Video Metafields**
+| Metafield | Type | Namespace | Purpose |
+|-----------|------|-----------|---------|
+| `video_file` | File | `custom` | Video file for VideoObject schema |
+| `video_thumbnail` | Image | `custom` | Video thumbnail image |
+| `video_title` | Text | `custom` | Video title for schema markup |
+
+### 🎯 Schema.org Implementation
+
+**Structured Data Types:**
+- `Product` - Product pages with GTIN/SKU, ratings, prices
+- `BlogPosting` - Article pages with author, dates, featured products
+- `FAQPage` - Dynamic FAQ sections on products/collections/articles
+- `HowTo` - Step-by-step product usage guides
+- `VideoObject` - Embedded video content
+- `BreadcrumbList` - Navigation breadcrumbs
+- `Organization` - Company information
+- `WebPage` - Page metadata
+- `ItemList` - Collection articles, related products
+- `Review` - Product reviews with ratings
+
+**SEO Features:**
+- Multi-language hreflang tags
+- Dynamic meta descriptions from content
+- Open Graph tags for social sharing
+- Twitter Card meta tags
+- Canonical URLs per market/language
+- Structured data for rich snippets
+
+### 🌐 Multi-Market Configuration
+
+**URL Structure:**
+```
+vloerproducten.myshopify.com/
+├── /nl/           # Dutch (Primary)
+├── /en/           # English
+├── /de/           # German
+├── /fr/           # French
+├── /es/           # Spanish
+├── /it/           # Italian
+├── /pt/           # Portuguese
+└── /da/           # Danish
+```
+
+**SEO Per Market:**
+- Language-specific sitemaps (`/nl/pages/sitemap-blogs-nl`)
+- Google Shopping product feeds per language
+- Localized blog content (19 brand blogs × 8 languages)
+- Market-specific meta descriptions
+
+### 📊 Analytics & Tracking
+
+**Google Services:**
+- **Service Account:** emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com
+- **Google Search Console:** Multi-market property
+- **Google Analytics:** (Connected via Shopify admin)
+- **Google Shopping Feeds:** 8 language-specific feeds
+
+**Tracking Capabilities:**
+- Multi-language page views
+- E-commerce transactions per market
+- Product performance by language
+- Blog article views (via metafields)
+- Cross-market conversion tracking
 
 ---
 
