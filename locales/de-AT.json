@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Direkt zum Inhalt",
+      "close": "Schließen",
+      "learn_more": "Mehr erfahren"
+    },
+    "404": {
+      "title": "Seite nicht gefunden",
+      "subtext": "Die von Ihnen gesuchte Seite existiert nicht.",
+      "continue_shopping": "Weiter einkaufen"
+    },
+    "search": {
+      "title": "Suche",
+      "placeholder": "Produkte suchen...",
+      "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\"",
+      "results_for": "Ergebnisse für \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} Ergebnis",
+        "count_other": "{{ count }} Ergebnisse"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "E-Mail-Adresse",
+      "submit": "Abonnieren"
+    },
+    "social": {
+      "share": "Teilen",
+      "follow_us": "Folgen Sie uns"
+    }
+  },
+  "filters": {
+    "title": "Filtern",
+    "active_filters": "Aktive Filter",
+    "clear_all": "Alle löschen",
+    "category": "Kategorie",
+    "brand": "Marke",
+    "price": "Preis",
+    "room": "Raumart",
+    "characteristics": "Eigenschaften",
+    "price_range": "Preisspanne",
+    "min_price": "Min",
+    "max_price": "Max",
+    "apply": "Anwenden"
+  },
+  "comparison": {
+    "title": "Produktvergleich",
+    "compare_products": "Produkte vergleichen",
+    "clear_all": "Alle entfernen",
+    "remove": "Entfernen",
+    "added": "{{ product }} zum Vergleich hinzugefügt",
+    "removed": "{{ product }} aus dem Vergleich entfernt",
+    "cleared": "Vergleich geleert",
+    "max_reached": "Maximal {{ max }} Produkte können verglichen werden",
+    "min_required": "Wählen Sie mindestens {{ min }} Produkte zum Vergleichen aus",
+    "price": "Preis",
+    "availability": "Verfügbarkeit",
+    "variants": "Varianten",
+    "features": "Eigenschaften",
+    "in_stock": "Auf Lager",
+    "out_of_stock": "Nicht vorrätig",
+    "products_selected": "{{ count }} Produkte zum Vergleich ausgewählt"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Auf Lager",
+      "out_of_stock": "Ausverkauft",
+      "add_to_cart": "In den Warenkorb",
+      "view_details": "Details ansehen",
+      "price": {
+        "from": "Ab {{ price }}",
+        "regular": "Normalpreis",
+        "sale": "Angebotspreis"
+      }
+    },
+    "related": {
+      "title": "Das könnte Sie auch interessieren"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Keine Produkte gefunden"
+    },
+    "sorting": {
+      "title": "Sortieren nach",
+      "featured": "Ausgewählt",
+      "best_selling": "Meistverkauft",
+      "alphabetically_a_z": "Alphabetisch, A-Z",
+      "alphabetically_z_a": "Alphabetisch, Z-A",
+      "price_ascending": "Preis aufsteigend",
+      "price_descending": "Preis absteigend",
+      "date_ascending": "Datum aufsteigend",
+      "date_descending": "Datum absteigend"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Warenkorb",
+      "empty": "Ihr Warenkorb ist leer",
+      "continue_shopping": "Weiter einkaufen",
+      "checkout": "Zur Kassa",
+      "subtotal": "Zwischensumme",
+      "remove": "Entfernen",
+      "quantity": "Anzahl",
+      "update": "Aktualisieren"
+    },
+    "shipping": {
+      "free_shipping": "Gratis Versand",
+      "free_shipping_remaining": "Noch {{ amount }} bis zum kostenlosen Versand"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mein Konto",
+      "orders": "Bestellungen",
+      "addresses": "Adressen",
+      "logout": "Abmelden"
+    },
+    "login": {
+      "title": "Anmelden",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "forgot_password": "Passwort vergessen?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Weiterlesen"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Melden Sie sich für exklusive Angebote an"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d. %B %Y"
+  }
+}

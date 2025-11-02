@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Léim go dtí an t-ábhar",
+      "close": "Dún",
+      "learn_more": "Foghlaim níos mó"
+    },
+    "404": {
+      "title": "Níor aimsíodh an leathanach",
+      "subtext": "Níl an leathanach atá á lorg agat ann.",
+      "continue_shopping": "Lean ar aghaidh ag siopadóireacht"
+    },
+    "search": {
+      "title": "Cuardaigh",
+      "placeholder": "Cuardaigh táirgí...",
+      "no_results": "Níor aimsíodh torthaí ar \"{{ terms }}\"",
+      "results_for": "Torthaí do \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} toradh",
+        "count_other": "{{ count }} torthaí"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "Seoladh ríomhphoist",
+      "submit": "Cláraigh"
+    },
+    "social": {
+      "share": "Roinn",
+      "follow_us": "Lean muid"
+    }
+  },
+  "filters": {
+    "title": "Scag",
+    "active_filters": "Scagairí gníomhacha",
+    "clear_all": "Glan uile",
+    "category": "Catagóir",
+    "brand": "Branda",
+    "price": "Praghas",
+    "room": "Cineál seomra",
+    "characteristics": "Saintréithe",
+    "price_range": "Raon praghsanna",
+    "min_price": "Íos",
+    "max_price": "Uas",
+    "apply": "Cuir i bhfeidhm"
+  },
+  "comparison": {
+    "title": "Comparáid Táirgí",
+    "compare_products": "Déan comparáid idir táirgí",
+    "clear_all": "Glan uile",
+    "remove": "Bain",
+    "added": "{{ product }} curtha leis an gcomparáid",
+    "removed": "{{ product }} bainte ón gcomparáid",
+    "cleared": "Comparáid glanta",
+    "max_reached": "Is féidir uasmhéid {{ max }} táirge a chur i gcomparáid",
+    "min_required": "Roghnaigh {{ min }} táirge ar a laghad le comparáid",
+    "price": "Praghas",
+    "availability": "Infhaighteacht",
+    "variants": "Leaganacha",
+    "features": "Gnéithe",
+    "in_stock": "I stoc",
+    "out_of_stock": "As stoc",
+    "products_selected": "{{ count }} táirge roghnaithe le comparáid"
+  },
+  "products": {
+    "product": {
+      "in_stock": "I stoc",
+      "out_of_stock": "As stoc",
+      "add_to_cart": "Cuir sa chiseán",
+      "view_details": "Féach ar shonraí",
+      "price": {
+        "from": "Ó {{ price }}",
+        "regular": "Gnáthphraghas",
+        "sale": "Praghas díola"
+      }
+    },
+    "related": {
+      "title": "B'fhéidir go mbeadh suim agat freisin"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Níor aimsíodh táirgí"
+    },
+    "sorting": {
+      "title": "Sórtáil de réir",
+      "featured": "Buaicphointí",
+      "best_selling": "Is fearr a dhíoltar",
+      "alphabetically_a_z": "In ord aibítre, A-Z",
+      "alphabetically_z_a": "In ord aibítre, Z-A",
+      "price_ascending": "Praghas ag dul suas",
+      "price_descending": "Praghas ag dul síos",
+      "date_ascending": "Dáta ag dul suas",
+      "date_descending": "Dáta ag dul síos"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Ciseán",
+      "empty": "Tá do chiseán folamh",
+      "continue_shopping": "Lean ar aghaidh ag siopadóireacht",
+      "checkout": "Seiceáil amach",
+      "subtotal": "Fo-iomlán",
+      "remove": "Bain",
+      "quantity": "Cainníocht",
+      "update": "Nuashonraigh"
+    },
+    "shipping": {
+      "free_shipping": "Seoladh saor in aisce",
+      "free_shipping_remaining": "{{ amount }} eile go seoladh saor in aisce"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mo chuntas",
+      "orders": "Orduithe",
+      "addresses": "Seoltaí",
+      "logout": "Logáil amach"
+    },
+    "login": {
+      "title": "Logáil isteach",
+      "email": "Ríomhphost",
+      "password": "Pasfhocal",
+      "submit": "Logáil isteach",
+      "forgot_password": "Pasfhocal imithe i ndearmad?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blag",
+      "read_more": "Léigh níos mó"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Nuachtlitir",
+      "description": "Cláraigh le haghaidh tairiscintí eisiacha"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d %B %Y"
+  }
+}

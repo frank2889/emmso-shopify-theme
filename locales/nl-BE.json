@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Ga naar inhoud",
+      "close": "Sluiten",
+      "learn_more": "Meer informatie"
+    },
+    "404": {
+      "title": "Pagina niet gevonden",
+      "subtext": "De pagina die u zoekt bestaat niet.",
+      "continue_shopping": "Verder winkelen"
+    },
+    "search": {
+      "title": "Zoeken",
+      "placeholder": "Producten zoeken...",
+      "no_results": "Geen resultaten gevonden voor \"{{ terms }}\"",
+      "results_for": "Resultaten voor \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} resultaat",
+        "count_other": "{{ count }} resultaten"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "E-mailadres",
+      "submit": "Inschrijven"
+    },
+    "social": {
+      "share": "Delen",
+      "follow_us": "Volg ons"
+    }
+  },
+  "filters": {
+    "title": "Filteren",
+    "active_filters": "Actieve filters",
+    "clear_all": "Alles wissen",
+    "category": "Categorie",
+    "brand": "Merk",
+    "price": "Prijs",
+    "room": "Kamertype",
+    "characteristics": "Eigenschappen",
+    "price_range": "Prijsbereik",
+    "min_price": "Min",
+    "max_price": "Max",
+    "apply": "Toepassen"
+  },
+  "comparison": {
+    "title": "Productvergelijking",
+    "compare_products": "Producten vergelijken",
+    "clear_all": "Alles verwijderen",
+    "remove": "Verwijderen",
+    "added": "{{ product }} toegevoegd aan vergelijking",
+    "removed": "{{ product }} verwijderd uit vergelijking",
+    "cleared": "Vergelijking gewist",
+    "max_reached": "Maximaal {{ max }} producten kunnen vergeleken worden",
+    "min_required": "Selecteer minstens {{ min }} producten om te vergelijken",
+    "price": "Prijs",
+    "availability": "Beschikbaarheid",
+    "variants": "Varianten",
+    "features": "Kenmerken",
+    "in_stock": "Op voorraad",
+    "out_of_stock": "Niet op voorraad",
+    "products_selected": "{{ count }} producten geselecteerd voor vergelijking"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Op voorraad",
+      "out_of_stock": "Uitverkocht",
+      "add_to_cart": "In winkelmandje",
+      "view_details": "Bekijk details",
+      "price": {
+        "from": "Vanaf {{ price }}",
+        "regular": "Normale prijs",
+        "sale": "Aanbiedingsprijs"
+      }
+    },
+    "related": {
+      "title": "Dit kan u ook interesseren"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Geen producten gevonden"
+    },
+    "sorting": {
+      "title": "Sorteren op",
+      "featured": "Aanbevolen",
+      "best_selling": "Bestverkocht",
+      "alphabetically_a_z": "Alfabetisch, A-Z",
+      "alphabetically_z_a": "Alfabetisch, Z-A",
+      "price_ascending": "Prijs oplopend",
+      "price_descending": "Prijs aflopend",
+      "date_ascending": "Datum oplopend",
+      "date_descending": "Datum aflopend"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Winkelmandje",
+      "empty": "Uw winkelmandje is leeg",
+      "continue_shopping": "Verder winkelen",
+      "checkout": "Afrekenen",
+      "subtotal": "Subtotaal",
+      "remove": "Verwijderen",
+      "quantity": "Aantal",
+      "update": "Bijwerken"
+    },
+    "shipping": {
+      "free_shipping": "Gratis verzending",
+      "free_shipping_remaining": "Nog {{ amount }} tot gratis verzending"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mijn account",
+      "orders": "Bestellingen",
+      "addresses": "Adressen",
+      "logout": "Afmelden"
+    },
+    "login": {
+      "title": "Aanmelden",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "submit": "Aanmelden",
+      "forgot_password": "Wachtwoord vergeten?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Lees meer"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Nieuwsbrief",
+      "description": "Schrijf u in voor exclusieve aanbiedingen"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d %B %Y"
+  }
+}

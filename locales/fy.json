@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Gean nei ynhâld",
+      "close": "Slute",
+      "learn_more": "Mear ynformaasje"
+    },
+    "404": {
+      "title": "Side net fûn",
+      "subtext": "De side dy't jo sykje bestiet net.",
+      "continue_shopping": "Trochgean mei winkeljen"
+    },
+    "search": {
+      "title": "Sykje",
+      "placeholder": "Produkten sykje...",
+      "no_results": "Gjin resultaten fûn foar \"{{ terms }}\"",
+      "results_for": "Resultaten foar \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} resultaat",
+        "count_other": "{{ count }} resultaten"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "E-mailadres",
+      "submit": "Ynskriuwe"
+    },
+    "social": {
+      "share": "Diele",
+      "follow_us": "Folgje ús"
+    }
+  },
+  "filters": {
+    "title": "Filterje",
+    "active_filters": "Aktyve filters",
+    "clear_all": "Alles wiskje",
+    "category": "Kategory",
+    "brand": "Merk",
+    "price": "Priis",
+    "room": "Keamertype",
+    "characteristics": "Eigenskippen",
+    "price_range": "Priisbereik",
+    "min_price": "Min",
+    "max_price": "Maks",
+    "apply": "Tapasse"
+  },
+  "comparison": {
+    "title": "Produktferliking",
+    "compare_products": "Produkten fergelykje",
+    "clear_all": "Alles fuortsmite",
+    "remove": "Fuortsmite",
+    "added": "{{ product }} tafoege oan ferliking",
+    "removed": "{{ product }} fuortsmiten út ferliking",
+    "cleared": "Ferliking wiske",
+    "max_reached": "Maksimaal {{ max }} produkten kinne ferliken wurde",
+    "min_required": "Selektearje op syn minst {{ min }} produkten om te fergelykjen",
+    "price": "Priis",
+    "availability": "Beskikberens",
+    "variants": "Fariaasjes",
+    "features": "Skaaimerken",
+    "in_stock": "Op foarried",
+    "out_of_stock": "Net op foarried",
+    "products_selected": "{{ count }} produkten selektearre foar ferliking"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Op foarried",
+      "out_of_stock": "Utferkocht",
+      "add_to_cart": "Yn winkelweinen",
+      "view_details": "Details besjen",
+      "price": {
+        "from": "Fanôf {{ price }}",
+        "regular": "Normale priis",
+        "sale": "Oanbieding"
+      }
+    },
+    "related": {
+      "title": "Dit kin jo ek ynteressearje"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Gjin produkten fûn"
+    },
+    "sorting": {
+      "title": "Sortearje op",
+      "featured": "Oanrikkemandearre",
+      "best_selling": "Meast ferkocht",
+      "alphabetically_a_z": "Alfabetysk, A-Z",
+      "alphabetically_z_a": "Alfabetysk, Z-A",
+      "price_ascending": "Priis oprinnend",
+      "price_descending": "Priis ôfrinnend",
+      "date_ascending": "Datum oprinnend",
+      "date_descending": "Datum ôfrinnend"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Winkelweinen",
+      "empty": "Jo winkelweinen is leech",
+      "continue_shopping": "Trochgean mei winkeljen",
+      "checkout": "Ofrekkenjen",
+      "subtotal": "Subtotaal",
+      "remove": "Fuortsmite",
+      "quantity": "Oantal",
+      "update": "Bywurkje"
+    },
+    "shipping": {
+      "free_shipping": "Fergees ferstjoeren",
+      "free_shipping_remaining": "Noch {{ amount }} oant fergees ferstjoeren"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Myn account",
+      "orders": "Bestellings",
+      "addresses": "Adressen",
+      "logout": "Ofmelde"
+    },
+    "login": {
+      "title": "Oanmelde",
+      "email": "E-mail",
+      "password": "Wachtwurd",
+      "submit": "Oanmelde",
+      "forgot_password": "Wachtwurd fergetten?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Lês mear"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Nijsbrief",
+      "description": "Ynskriuwe foar eksklusive oanbiedingen"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d %B %Y"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Salta al contingut",
+      "close": "Tanca",
+      "learn_more": "Més informació"
+    },
+    "404": {
+      "title": "Pàgina no trobada",
+      "subtext": "La pàgina que cerques no existeix.",
+      "continue_shopping": "Continua comprant"
+    },
+    "search": {
+      "title": "Cerca",
+      "placeholder": "Cerca productes...",
+      "no_results": "No s'han trobat resultats per \"{{ terms }}\"",
+      "results_for": "Resultats per \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} resultat",
+        "count_other": "{{ count }} resultats"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "Adreça electrònica",
+      "submit": "Subscriu-te"
+    },
+    "social": {
+      "share": "Comparteix",
+      "follow_us": "Segueix-nos"
+    }
+  },
+  "filters": {
+    "title": "Filtrar",
+    "active_filters": "Filtres actius",
+    "clear_all": "Esborra-ho tot",
+    "category": "Categoria",
+    "brand": "Marca",
+    "price": "Preu",
+    "room": "Tipus d'habitació",
+    "characteristics": "Característiques",
+    "price_range": "Rang de preus",
+    "min_price": "Mín",
+    "max_price": "Màx",
+    "apply": "Aplica"
+  },
+  "comparison": {
+    "title": "Comparació de productes",
+    "compare_products": "Compara productes",
+    "clear_all": "Esborra-ho tot",
+    "remove": "Elimina",
+    "added": "{{ product }} afegit a la comparació",
+    "removed": "{{ product }} eliminat de la comparació",
+    "cleared": "Comparació esborrada",
+    "max_reached": "Es poden comparar un màxim de {{ max }} productes",
+    "min_required": "Selecciona almenys {{ min }} productes per comparar",
+    "price": "Preu",
+    "availability": "Disponibilitat",
+    "variants": "Variants",
+    "features": "Característiques",
+    "in_stock": "En estoc",
+    "out_of_stock": "Esgotat",
+    "products_selected": "{{ count }} productes seleccionats per comparar"
+  },
+  "products": {
+    "product": {
+      "in_stock": "En estoc",
+      "out_of_stock": "Esgotat",
+      "add_to_cart": "Afegeix a la cistella",
+      "view_details": "Veure detalls",
+      "price": {
+        "from": "Des de {{ price }}",
+        "regular": "Preu regular",
+        "sale": "Preu de descompte"
+      }
+    },
+    "related": {
+      "title": "També et pot interessar"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "No s'han trobat productes"
+    },
+    "sorting": {
+      "title": "Ordena per",
+      "featured": "Destacats",
+      "best_selling": "Més venuts",
+      "alphabetically_a_z": "Alfabèticament, A-Z",
+      "alphabetically_z_a": "Alfabèticament, Z-A",
+      "price_ascending": "Preu ascendent",
+      "price_descending": "Preu descendent",
+      "date_ascending": "Data ascendent",
+      "date_descending": "Data descendent"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Cistella",
+      "empty": "La teva cistella està buida",
+      "continue_shopping": "Continua comprant",
+      "checkout": "Finalitza compra",
+      "subtotal": "Subtotal",
+      "remove": "Elimina",
+      "quantity": "Quantitat",
+      "update": "Actualitza"
+    },
+    "shipping": {
+      "free_shipping": "Enviament gratuït",
+      "free_shipping_remaining": "Només {{ amount }} més per l'enviament gratuït"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "El meu compte",
+      "orders": "Comandes",
+      "addresses": "Adreces",
+      "logout": "Tanca sessió"
+    },
+    "login": {
+      "title": "Inicia sessió",
+      "email": "Correu electrònic",
+      "password": "Contrasenya",
+      "submit": "Inicia sessió",
+      "forgot_password": "Has oblidat la contrasenya?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Llegeix més"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Butlletí",
+      "description": "Subscriu-te per a ofertes exclusives"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d de %B de %Y"
+  }
+}
