@@ -1,7 +1,10 @@
 {% comment %}
-  Search Results Page with Smart Filters
-  Dynamic faceted filtering, grid/list toggle, sort options
+  Search Results Page with Unified Smart Filters
+  Includes smart collection redirect, dynamic faceted filtering, grid/list toggle
 {% endcomment %}
+
+<script src="{{ 'unified-filters.js' | asset_url }}" defer></script>
+<link rel="stylesheet" href="{{ 'product-card.css' | asset_url }}">
 
 <div class="search-results-page" data-search-results-page>
   

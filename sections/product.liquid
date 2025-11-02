@@ -1,50 +1,418 @@
 {% comment %}
-  This section is used in the product template to render product page with
-  media, content, and add-to-cart form.
-
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/product
+  Product page with Related Products (Unified Filters)
+  Compact filter sidebar for intelligent product recommendations
 {% endcomment %}
 
-<div class="product-images">
-  {% for image in product.images %}
-    {% render 'image', class: 'product-image', image: image %}
-  {% endfor %}
-</div>
+<script src="{{ 'unified-filters.js' | asset_url }}" defer></script>
+<link rel="stylesheet" href="{{ 'product-card.css' | asset_url }}">
 
-<div class="product-info">
-  <h1>{{ product.title }}</h1>
-  <p>{{ product.price | money }}</p>
-  <p>{{ product.description }}</p>
-</div>
-
-<div class="product-form">
-  {% form 'product', product %}
-    {% assign current_variant = product.selected_or_first_available_variant %}
-
-    <select name="id">
-      {% for variant in product.variants %}
-        <option
-          value="{{ variant.id }}"
-          {% if variant == current_variant %}
-            selected="selected"
-          {% endif %}
-        >
-          {{ variant.title }} - {{ variant.price | money }}
-        </option>
+<div class="product-page">
+  <div class="product-main">
+    {%- # Product Images -%}
+    <div class="product-images">
+      {% for image in product.images %}
+        {% render 'image', 
+          class: 'product-image', 
+          image: image,
+          sizes: '(max-width: 640px) 100vw, 50vw',
+          aspect_ratio: '1:1'
+        %}
       {% endfor %}
-    </select>
+    </div>
 
-    <input type="text" name="quantity" min="1" value="1">
+    {%- # Product Info -%}
+    <div class="product-info">
+      <p class="product-vendor">{{ product.vendor }}</p>
+      <h1 class="product-title">{{ product.title }}</h1>
+      
+      <div class="product-price">
+        <span class="product-price__current">{{ product.price | money }}</span>
+        {% if product.compare_at_price > product.price %}
+          <span class="product-price__compare">{{ product.compare_at_price | money }}</span>
+        {% endif %}
+      </div>
 
-    <input type="submit" value="Add to cart">
-    {{ form | payment_button }}
-  {% endform %}
+      <div class="product-description">
+        {{ product.description }}
+      </div>
+
+      {%- # Product Form -%}
+      <div class="product-form">
+        {% form 'product', product %}
+          {% assign current_variant = product.selected_or_first_available_variant %}
+
+          {% if product.variants.size > 1 %}
+            <div class="product-variants">
+              <label for="product-variant">Variant</label>
+              <select name="id" id="product-variant" class="product-variants__select">
+                {% for variant in product.variants %}
+                  <option
+                    value="{{ variant.id }}"
+                    {% if variant == current_variant %}selected{% endif %}
+                    {% unless variant.available %}disabled{% endunless %}
+                  >
+                    {{ variant.title }} - {{ variant.price | money }}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+          {% else %}
+            <input type="hidden" name="id" value="{{ current_variant.id }}">
+          {% endif %}
+
+          <div class="product-quantity">
+            <label for="product-quantity">Quantity</label>
+            <input 
+              type="number" 
+              name="quantity" 
+              id="product-quantity"
+              min="1" 
+              value="1"
+              class="product-quantity__input"
+            >
+          </div>
+
+          <button type="submit" class="product-form__submit">
+            Add to Cart
+          </button>
+          
+          {{ form | payment_button }}
+        {% endform %}
+      </div>
+    </div>
+  </div>
+
+  {%- # Related Products Section -%}
+  <div class="related-products">
+    <h2 class="related-products__title">Related Products</h2>
+    
+    <div class="related-products__main">
+      {%- # Compact Filters -%}
+      <aside class="related-products__filters" aria-label="Related product filters">
+        {%- # Brand Filter -%}
+        <div class="filter-group filter-group--compact" data-filter-group="brand">
+          <button 
+            type="button" 
+            class="filter-group__toggle" 
+            aria-expanded="true"
+          >
+            <span>Brand</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="brand"></div>
+        </div>
+
+        {%- # Price Filter -%}
+        <div class="filter-group filter-group--compact" data-filter-group="price">
+          <button 
+            type="button" 
+            class="filter-group__toggle" 
+            aria-expanded="true"
+          >
+            <span>Price</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <div class="filter-group__content">
+            <div class="price-range">
+              <input 
+                type="number" 
+                class="price-range__input" 
+                placeholder="€ Min" 
+                data-price-min
+              >
+              <span class="price-range__separator">-</span>
+              <input 
+                type="number" 
+                class="price-range__input" 
+                placeholder="€ Max" 
+                data-price-max
+              >
+            </div>
+          </div>
+        </div>
+
+        {%- # Characteristics Filter -%}
+        <div class="filter-group filter-group--compact" data-filter-group="characteristics">
+          <button 
+            type="button" 
+            class="filter-group__toggle" 
+            aria-expanded="false"
+          >
+            <span>Features</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="characteristics" hidden></div>
+        </div>
+      </aside>
+
+      {%- # Product Grid -%}
+      <div class="related-products__content">
+        {%- # Loading State -%}
+        <div class="loading-state" data-loading-state hidden>
+          <div class="loading-spinner"></div>
+          <p>Loading related products...</p>
+        </div>
+
+        {%- # Empty State -%}
+        <div class="empty-state" data-empty-state hidden>
+          <p>No related products found</p>
+        </div>
+
+        {%- # Product Grid -%}
+        <div class="product-grid product-grid--grid" data-product-grid>
+          {%- # JavaScript will populate this -%}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+{% stylesheet %}
+  .product-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .product-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .product-main {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .product-images {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .product-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .product-info {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+  }
+
+  .product-vendor {
+    font-size: 0.875rem;
+    color: #4D4D4D;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-title {
+    font-size: 2rem;
+    color: #4D4D4D;
+    margin-bottom: 1rem;
+  }
+
+  .product-price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-price__current {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4D4D4D;
+  }
+
+  .product-price__compare {
+    font-size: 1.25rem;
+    color: #4D4D4D;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+
+  .product-description {
+    color: #4D4D4D;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-variants__select,
+  .product-quantity__input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E8E8E1;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .product-form__submit {
+    padding: 1rem 2rem;
+    background: #FBB03B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .product-form__submit:hover {
+    background: #E29F2A;
+  }
+
+  /* Related Products */
+  .related-products {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #E8E8E1;
+  }
+
+  .related-products__title {
+    font-size: 1.75rem;
+    color: #4D4D4D;
+    margin-bottom: 2rem;
+  }
+
+  .related-products__main {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .related-products__main {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .related-products__filters {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+  }
+
+  .filter-group--compact {
+    border-bottom: 1px solid #E8E8E1;
+    padding: 0.75rem 0;
+  }
+
+  .filter-group__toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4D4D4D;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .filter-group__content {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+
+  .filter-option__checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .filter-option__label {
+    flex: 1;
+    color: #4D4D4D;
+  }
+
+  .filter-option__count {
+    color: #4D4D4D;
+    opacity: 0.6;
+  }
+
+  .price-range {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .price-range__input {
+    flex: 1;
+    padding: 0.375rem;
+    border: 1px solid #E8E8E1;
+    border-radius: 4px;
+    font-size: 0.875rem;
+  }
+
+  .loading-state,
+  .empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #4D4D4D;
+  }
+
+  .loading-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid #E8E8E1;
+    border-top-color: #FBB03B;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .hidden {
+    display: none !important;
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
-  "name": "t:general.product",
-  "settings": [],
+  "name": "Product with Related",
+  "settings": [
+    {
+      "type": "range",
+      "id": "related_products_count",
+      "label": "Related products to show",
+      "min": 4,
+      "max": 20,
+      "step": 4,
+      "default": 12
+    }
+  ],
   "disabled_on": {
     "groups": ["header", "footer"]
   }
