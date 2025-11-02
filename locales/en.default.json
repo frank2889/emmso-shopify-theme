@@ -9,15 +9,33 @@
       "no_results": "No results found",
       "trending": "Trending searches",
       "recent": "Recent searches",
+      "suggestions": "Suggestions",
       "products": "Products",
       "brands": "Brands",
-      "markets": "Markets"
+      "markets": "Markets",
+      "clear": "Clear",
+      "voice": "Voice search"
     },
     "cart": {
       "title": "Cart"
     },
+    "compare": {
+      "title": "Compare"
+    },
+    "navigation": {
+      "home": "Home",
+      "mobile": "Mobile navigation"
+    },
     "accessibility": {
-      "skip_to_content": "Skip to content"
+      "skip_to_content": "Skip to content",
+      "language_selector": "Select language"
+    },
+    "breadcrumbs": {
+      "home": "Home"
+    },
+    "404": {
+      "title": "Page Not Found",
+      "subtext": "The page you were looking for does not exist."
     }
   },
   "customer": {

@@ -9,15 +9,33 @@
       "no_results": "Geen resultaten gevonden",
       "trending": "Trending zoekopdrachten",
       "recent": "Recente zoekopdrachten",
+      "suggestions": "Suggesties",
       "products": "Producten",
       "brands": "Merken",
-      "markets": "Markten"
+      "markets": "Markten",
+      "clear": "Wissen",
+      "voice": "Spraakzoeken"
     },
     "cart": {
       "title": "Winkelwagen"
     },
+    "compare": {
+      "title": "Vergelijken"
+    },
+    "navigation": {
+      "home": "Home",
+      "mobile": "Mobiele navigatie"
+    },
     "accessibility": {
-      "skip_to_content": "Ga naar inhoud"
+      "skip_to_content": "Ga naar inhoud",
+      "language_selector": "Taal selecteren"
+    },
+    "breadcrumbs": {
+      "home": "Home"
+    },
+    "404": {
+      "title": "Pagina niet gevonden",
+      "subtext": "De pagina die u zocht bestaat niet."
     }
   },
   "customer": {
