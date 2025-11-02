@@ -889,6 +889,154 @@ git push origin main
 
 ---
 
+## 🎯 Smart Filters Implementation
+
+### Dynamic Faceted Search
+**Built:** sections/search-results.liquid, assets/search-filters.js, assets/product-card.css
+
+**Core Features:**
+- ✅ **Dynamic filters** - Only show options that exist in current results
+- ✅ **Multi-select** - Combine multiple filters with AND logic
+- ✅ **Instant AJAX filtering** - No page reload
+- ✅ **URL persistence** - Shareable filtered result URLs
+- ✅ **Active filter chips** - Visual feedback with easy removal
+- ✅ **Grid/List toggle** - Two view modes for user preference
+- ✅ **Sort options** - Relevance, Price (asc/desc), Newest
+- ✅ **Load more** - Progressive loading with infinite scroll option
+
+### Filter Types
+
+**1. Category Filter**
+- Auto-extracted from `product.product_type`
+- Alphabetically sorted
+- Shows product count per category
+- Dynamic: Only shows categories present in results
+
+**2. Brand Filter**
+- Auto-extracted from `product.vendor`
+- Supports 19 premium brands (Bona, Woca, Lithofin, etc.)
+- Product count per brand
+- Multi-select with checkbox UI
+
+**3. Price Range Filter**
+- Min/Max number inputs
+- Auto-calculates range from results
+- Placeholder shows available min/max
+- Instant filtering on change
+
+**4. Room Type Filter**
+- Extracted from product tags (format: `room:kitchen`, `ruimte:badkamer`)
+- Multilingual tag support
+- Kitchen, Bathroom, Living Room, Bedroom, Hallway, Office, etc.
+- Only shows rooms with available products
+
+**5. Characteristics Filter**
+- Feature tags (format: `feature:waterproof`, `eigenschap:huisdiervriendelijk`)
+- Pet-friendly, Waterproof, DIY-friendly, High-traffic, etc.
+- Extracted dynamically from search results
+- Multi-select for complex filtering
+
+### Technical Architecture
+
+**JavaScript Class: `SearchFilters`**
+```javascript
+{
+  filters: {
+    category: [],      // Multi-select array
+    brand: [],         // Multi-select array
+    room: [],          // Multi-select array
+    characteristics: [], // Multi-select array
+    priceMin: null,    // Number or null
+    priceMax: null     // Number or null
+  },
+  products: [],        // All search results
+  filteredProducts: [], // After filter application
+  currentPage: 1,      // For pagination
+  productsPerPage: 24, // Configurable
+  sortBy: 'relevance', // Sort method
+  viewMode: 'grid'     // 'grid' or 'list'
+}
+```
+
+**Filter Application Flow:**
+1. **Initial Search** - Fetch products via Shopify Search API (`/search/suggest.json`)
+2. **Build Filters** - Extract unique values from results (categories, brands, tags)
+3. **Render Options** - Display checkboxes with product counts
+4. **User Selection** - Multi-select checkboxes, price inputs
+5. **Apply Filters** - JavaScript array filtering on client-side
+6. **Sort Products** - Apply selected sort order
+7. **Render Results** - Display paginated product grid
+8. **Update URL** - Persist filters in query params for sharing
+
+**Performance Optimizations:**
+- Client-side filtering (no API calls after initial search)
+- Lazy image loading on product cards
+- Debounced price input filtering
+- Virtual scrolling for large result sets (optional)
+- Filter count caching
+
+### Product Card Features
+
+**Grid View:**
+- 1:1 aspect ratio image
+- Title (2-line clamp)
+- Vendor/Brand
+- Price with currency
+- Availability badge (In Stock / Out of Stock)
+- Hover effects (scale image, border highlight)
+
+**List View:**
+- 200px x 200px image
+- Full product title
+- Vendor, price, availability
+- Horizontal layout for scanning
+- Right-aligned price
+
+**CRO Elements:**
+- Orange hover borders (#FBB03B)
+- Clear availability indicators
+- Prominent pricing
+- Smooth transitions
+- Mobile-responsive layouts
+
+### URL Structure
+
+**Shareable Filter URLs:**
+```
+/search?q=parket&category=Laminate,Vinyl&brand=Bona,Woca&priceMin=20&priceMax=50&sort=price-asc
+```
+
+**URL Parameters:**
+- `q` - Search query
+- `category` - Comma-separated categories
+- `brand` - Comma-separated brands
+- `room` - Comma-separated room types
+- `characteristics` - Comma-separated features
+- `priceMin` - Minimum price (€)
+- `priceMax` - Maximum price (€)
+- `sort` - Sort method (relevance, price-asc, price-desc, newest)
+
+### Multilingual Filter Labels
+
+**All filter UI elements support 8 languages:**
+- Dutch (NL): Categorie, Merk, Prijs, Ruimte, Eigenschappen
+- German (DE): Kategorie, Marke, Preis, Raum, Eigenschaften
+- French (FR): Catégorie, Marque, Prix, Pièce, Caractéristiques
+- Spanish (ES): Categoría, Marca, Precio, Habitación, Características
+- Italian (IT): Categoria, Marca, Prezzo, Stanza, Caratteristiche
+- Portuguese (PT): Categoria, Marca, Preço, Sala, Características
+- Danish (DA): Kategori, Mærke, Pris, Rum, Egenskaber
+- English (EN): Category, Brand, Price, Room Type, Characteristics
+
+**Filter-specific translations** for:
+- Active filters header
+- Clear all button
+- Sort dropdown options
+- View toggle labels
+- Loading & empty states
+
+---
+
 ## 📝 License
 
 This theme is licensed under the MIT License. See [LICENSE.md](./LICENSE.md) for details.

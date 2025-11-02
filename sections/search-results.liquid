@@ -1,0 +1,686 @@
+{% comment %}
+  Search Results Page with Smart Filters
+  Dynamic faceted filtering, grid/list toggle, sort options
+{% endcomment %}
+
+<div class="search-results-page" data-search-results-page>
+  
+  {%- comment -%} Search Header with Query & Stats {%- endcomment -%}
+  <div class="search-header">
+    <div class="search-header__container">
+      <h1 class="search-header__title">
+        {%- case request.locale.iso_code | split: '-' | first -%}
+          {%- when 'nl' -%}Zoekresultaten
+          {%- when 'de' -%}Suchergebnisse
+          {%- when 'fr' -%}Résultats de recherche
+          {%- when 'es' -%}Resultados de búsqueda
+          {%- when 'it' -%}Risultati della ricerca
+          {%- when 'pt' -%}Resultados da pesquisa
+          {%- when 'da' -%}Søgeresultater
+          {%- else -%}Search Results
+        {%- endcase -%}
+      </h1>
+      
+      <div class="search-header__stats" data-result-stats>
+        <span class="search-header__count" data-result-count>0</span>
+        <span class="search-header__query" data-result-query></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-results-layout">
+    
+    {%- comment -%} Smart Filters Sidebar {%- endcomment -%}
+    <aside class="search-filters" data-search-filters>
+      
+      {%- comment -%} Active Filters {%- endcomment -%}
+      <div class="active-filters" data-active-filters hidden>
+        <div class="active-filters__header">
+          <h3 class="active-filters__title">
+            {%- case request.locale.iso_code | split: '-' | first -%}
+              {%- when 'nl' -%}Actieve filters
+              {%- when 'de' -%}Aktive Filter
+              {%- when 'fr' -%}Filtres actifs
+              {%- when 'es' -%}Filtros activos
+              {%- when 'it' -%}Filtri attivi
+              {%- when 'pt' -%}Filtros ativos
+              {%- when 'da' -%}Aktive filtre
+              {%- else -%}Active Filters
+            {%- endcase -%}
+          </h3>
+          <button type="button" class="active-filters__clear" data-clear-all>
+            {%- case request.locale.iso_code | split: '-' | first -%}
+              {%- when 'nl' -%}Wis alles
+              {%- when 'de' -%}Alle löschen
+              {%- when 'fr' -%}Tout effacer
+              {%- when 'es' -%}Borrar todo
+              {%- when 'it' -%}Cancella tutto
+              {%- when 'pt' -%}Limpar tudo
+              {%- when 'da' -%}Ryd alt
+              {%- else -%}Clear all
+            {%- endcase -%}
+          </button>
+        </div>
+        <div class="active-filters__chips" data-filter-chips></div>
+      </div>
+
+      {%- comment -%} Filter Groups {%- endcomment -%}
+      <div class="filter-groups">
+        
+        {%- comment -%} Category Filter {%- endcomment -%}
+        <div class="filter-group" data-filter-group="category">
+          <button type="button" class="filter-group__toggle" aria-expanded="true">
+            <span class="filter-group__title">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Categorie
+                {%- when 'de' -%}Kategorie
+                {%- when 'fr' -%}Catégorie
+                {%- when 'es' -%}Categoría
+                {%- when 'it' -%}Categoria
+                {%- when 'pt' -%}Categoria
+                {%- when 'da' -%}Kategori
+                {%- else -%}Category
+              {%- endcase -%}
+            </span>
+            <svg class="filter-group__icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="category"></div>
+        </div>
+
+        {%- comment -%} Brand Filter {%- endcomment -%}
+        <div class="filter-group" data-filter-group="brand">
+          <button type="button" class="filter-group__toggle" aria-expanded="true">
+            <span class="filter-group__title">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Merk
+                {%- when 'de' -%}Marke
+                {%- when 'fr' -%}Marque
+                {%- when 'es' -%}Marca
+                {%- when 'it' -%}Marca
+                {%- when 'pt' -%}Marca
+                {%- when 'da' -%}Mærke
+                {%- else -%}Brand
+              {%- endcase -%}
+            </span>
+            <svg class="filter-group__icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="brand"></div>
+        </div>
+
+        {%- comment -%} Price Filter {%- endcomment -%}
+        <div class="filter-group" data-filter-group="price">
+          <button type="button" class="filter-group__toggle" aria-expanded="true">
+            <span class="filter-group__title">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Prijs
+                {%- when 'de' -%}Preis
+                {%- when 'fr' -%}Prix
+                {%- when 'es' -%}Precio
+                {%- when 'it' -%}Prezzo
+                {%- when 'pt' -%}Preço
+                {%- when 'da' -%}Pris
+                {%- else -%}Price
+              {%- endcase -%}
+            </span>
+            <svg class="filter-group__icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="price">
+            <div class="price-filter">
+              <div class="price-filter__inputs">
+                <input 
+                  type="number" 
+                  class="price-filter__input" 
+                  placeholder="Min" 
+                  data-price-min
+                  min="0"
+                  step="1"
+                >
+                <span class="price-filter__separator">-</span>
+                <input 
+                  type="number" 
+                  class="price-filter__input" 
+                  placeholder="Max" 
+                  data-price-max
+                  min="0"
+                  step="1"
+                >
+              </div>
+              <div class="price-filter__slider" data-price-slider></div>
+            </div>
+          </div>
+        </div>
+
+        {%- comment -%} Room Type Filter {%- endcomment -%}
+        <div class="filter-group" data-filter-group="room">
+          <button type="button" class="filter-group__toggle" aria-expanded="false">
+            <span class="filter-group__title">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Ruimte
+                {%- when 'de' -%}Raum
+                {%- when 'fr' -%}Pièce
+                {%- when 'es' -%}Habitación
+                {%- when 'it' -%}Stanza
+                {%- when 'pt' -%}Sala
+                {%- when 'da' -%}Rum
+                {%- else -%}Room Type
+              {%- endcase -%}
+            </span>
+            <svg class="filter-group__icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="room" hidden></div>
+        </div>
+
+        {%- comment -%} Characteristics Filter {%- endcomment -%}
+        <div class="filter-group" data-filter-group="characteristics">
+          <button type="button" class="filter-group__toggle" aria-expanded="false">
+            <span class="filter-group__title">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Eigenschappen
+                {%- when 'de' -%}Eigenschaften
+                {%- when 'fr' -%}Caractéristiques
+                {%- when 'es' -%}Características
+                {%- when 'it' -%}Caratteristiche
+                {%- when 'pt' -%}Características
+                {%- when 'da' -%}Egenskaber
+                {%- else -%}Characteristics
+              {%- endcase -%}
+            </span>
+            <svg class="filter-group__icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="filter-group__content" data-filter-content="characteristics" hidden></div>
+        </div>
+
+      </div>
+    </aside>
+
+    {%- comment -%} Results Area {%- endcomment -%}
+    <main class="search-results-main">
+      
+      {%- comment -%} Toolbar {%- endcomment -%}
+      <div class="results-toolbar">
+        
+        {%- comment -%} View Toggle {%- endcomment -%}
+        <div class="view-toggle">
+          <button type="button" class="view-toggle__btn view-toggle__btn--active" data-view="grid" aria-label="Grid view">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="2" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="12" y="2" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="2" y="12" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="12" y="12" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </button>
+          <button type="button" class="view-toggle__btn" data-view="list" aria-label="List view">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="3" width="16" height="3" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="2" y="9" width="16" height="3" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="2" y="15" width="16" height="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </button>
+        </div>
+
+        {%- comment -%} Sort Dropdown {%- endcomment -%}
+        <div class="sort-dropdown">
+          <label for="sort-select" class="sort-dropdown__label">
+            {%- case request.locale.iso_code | split: '-' | first -%}
+              {%- when 'nl' -%}Sorteren:
+              {%- when 'de' -%}Sortieren:
+              {%- when 'fr' -%}Trier:
+              {%- when 'es' -%}Ordenar:
+              {%- when 'it' -%}Ordina:
+              {%- when 'pt' -%}Ordenar:
+              {%- when 'da' -%}Sorter:
+              {%- else -%}Sort:
+            {%- endcase -%}
+          </label>
+          <select id="sort-select" class="sort-dropdown__select" data-sort-select>
+            <option value="relevance">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Relevantie
+                {%- when 'de' -%}Relevanz
+                {%- when 'fr' -%}Pertinence
+                {%- when 'es' -%}Relevancia
+                {%- when 'it' -%}Rilevanza
+                {%- when 'pt' -%}Relevância
+                {%- when 'da' -%}Relevans
+                {%- else -%}Relevance
+              {%- endcase -%}
+            </option>
+            <option value="price-asc">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Prijs: Laag naar Hoog
+                {%- when 'de' -%}Preis: Niedrig bis Hoch
+                {%- when 'fr' -%}Prix: Bas à Élevé
+                {%- when 'es' -%}Precio: Bajo a Alto
+                {%- when 'it' -%}Prezzo: Basso ad Alto
+                {%- when 'pt' -%}Preço: Baixo a Alto
+                {%- when 'da' -%}Pris: Lav til Høj
+                {%- else -%}Price: Low to High
+              {%- endcase -%}
+            </option>
+            <option value="price-desc">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Prijs: Hoog naar Laag
+                {%- when 'de' -%}Preis: Hoch bis Niedrig
+                {%- when 'fr' -%}Prix: Élevé à Bas
+                {%- when 'es' -%}Precio: Alto a Bajo
+                {%- when 'it' -%}Prezzo: Alto a Basso
+                {%- when 'pt' -%}Preço: Alto a Baixo
+                {%- when 'da' -%}Pris: Høj til Lav
+                {%- else -%}Price: High to Low
+              {%- endcase -%}
+            </option>
+            <option value="newest">
+              {%- case request.locale.iso_code | split: '-' | first -%}
+                {%- when 'nl' -%}Nieuwste
+                {%- when 'de' -%}Neueste
+                {%- when 'fr' -%}Plus récent
+                {%- when 'es' -%}Más reciente
+                {%- when 'it' -%}Più recente
+                {%- when 'pt' -%}Mais recente
+                {%- when 'da' -%}Nyeste
+                {%- else -%}Newest
+              {%- endcase -%}
+            </option>
+          </select>
+        </div>
+
+      </div>
+
+      {%- comment -%} Product Grid {%- endcomment -%}
+      <div class="product-grid" data-product-grid data-view-mode="grid">
+        {%- comment -%} Products will be dynamically loaded here {%- endcomment -%}
+      </div>
+
+      {%- comment -%} Loading State {%- endcomment -%}
+      <div class="loading-state" data-loading-state hidden>
+        <div class="loading-spinner"></div>
+        <p class="loading-text">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Laden...
+            {%- when 'de' -%}Laden...
+            {%- when 'fr' -%}Chargement...
+            {%- when 'es' -%}Cargando...
+            {%- when 'it' -%}Caricamento...
+            {%- when 'pt' -%}Carregando...
+            {%- when 'da' -%}Indlæser...
+            {%- else -%}Loading...
+          {%- endcase -%}
+        </p>
+      </div>
+
+      {%- comment -%} Empty State {%- endcomment -%}
+      <div class="empty-state" data-empty-state hidden>
+        <svg class="empty-state__icon" width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="#E8E8E1" stroke-width="4"/>
+          <path d="M26 26L38 38M38 26L26 38" stroke="#4D4D4D" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <h3 class="empty-state__title">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Geen resultaten gevonden
+            {%- when 'de' -%}Keine Ergebnisse gefunden
+            {%- when 'fr' -%}Aucun résultat trouvé
+            {%- when 'es' -%}No se encontraron resultados
+            {%- when 'it' -%}Nessun risultato trovato
+            {%- when 'pt' -%}Nenhum resultado encontrado
+            {%- when 'da' -%}Ingen resultater fundet
+            {%- else -%}No results found
+          {%- endcase -%}
+        </h3>
+        <p class="empty-state__text">
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Probeer uw zoekopdracht aan te passen of filters te wissen
+            {%- when 'de' -%}Versuchen Sie, Ihre Suche anzupassen oder Filter zu löschen
+            {%- when 'fr' -%}Essayez d'ajuster votre recherche ou d'effacer les filtres
+            {%- when 'es' -%}Intente ajustar su búsqueda o borrar filtros
+            {%- when 'it' -%}Prova ad aggiustare la tua ricerca o cancella i filtri
+            {%- when 'pt' -%}Tente ajustar sua pesquisa ou limpar filtros
+            {%- when 'da' -%}Prøv at justere din søgning eller ryd filtre
+            {%- else -%}Try adjusting your search or clearing filters
+          {%- endcase -%}
+        </p>
+      </div>
+
+      {%- comment -%} Load More Button {%- endcomment -%}
+      <div class="load-more" data-load-more hidden>
+        <button type="button" class="load-more__btn" data-load-more-btn>
+          {%- case request.locale.iso_code | split: '-' | first -%}
+            {%- when 'nl' -%}Meer laden
+            {%- when 'de' -%}Mehr laden
+            {%- when 'fr' -%}Charger plus
+            {%- when 'es' -%}Cargar más
+            {%- when 'it' -%}Carica altro
+            {%- when 'pt' -%}Carregar mais
+            {%- when 'da' -%}Indlæs mere
+            {%- else -%}Load More
+          {%- endcase -%}
+        </button>
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+<style>
+  .search-results-page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .search-header {
+    margin-bottom: 2rem;
+  }
+
+  .search-header__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin: 0 0 0.5rem;
+  }
+
+  .search-header__stats {
+    color: rgba(77, 77, 77, 0.7);
+    font-size: 0.9375rem;
+  }
+
+  .search-results-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    .search-results-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Filters Sidebar */
+  .search-filters {
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+  }
+
+  .active-filters {
+    padding: 1rem;
+    background: rgba(251, 176, 59, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .active-filters__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .active-filters__title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin: 0;
+  }
+
+  .active-filters__clear {
+    background: none;
+    border: none;
+    color: #FBB03B;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .active-filters__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E1;
+    border-radius: 1.25rem;
+    font-size: 0.8125rem;
+    color: #4D4D4D;
+  }
+
+  .filter-chip__remove {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: rgba(77, 77, 77, 0.6);
+    display: flex;
+    align-items: center;
+  }
+
+  /* Filter Groups */
+  .filter-group {
+    border-bottom: 1px solid #E8E8E1;
+  }
+
+  .filter-group__toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .filter-group__title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #4D4D4D;
+  }
+
+  .filter-group__icon {
+    transition: transform 0.2s ease;
+  }
+
+  .filter-group__toggle[aria-expanded="true"] .filter-group__icon {
+    transform: rotate(180deg);
+  }
+
+  .filter-group__content {
+    padding-bottom: 1rem;
+  }
+
+  .filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0;
+    cursor: pointer;
+  }
+
+  .filter-option__checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #E8E8E1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    accent-color: #FBB03B;
+  }
+
+  .filter-option__label {
+    font-size: 0.875rem;
+    color: #4D4D4D;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  .filter-option__count {
+    font-size: 0.75rem;
+    color: rgba(77, 77, 77, 0.6);
+  }
+
+  /* Price Filter */
+  .price-filter__inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .price-filter__input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .price-filter__separator {
+    color: rgba(77, 77, 77, 0.6);
+  }
+
+  /* Toolbar */
+  .results-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .view-toggle {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .view-toggle__btn {
+    padding: 0.5rem;
+    background: none;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #4D4D4D;
+    transition: all 0.2s ease;
+  }
+
+  .view-toggle__btn--active {
+    background: #FBB03B;
+    border-color: #FBB03B;
+    color: #FFFFFF;
+  }
+
+  .sort-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .sort-dropdown__label {
+    font-size: 0.875rem;
+    color: #4D4D4D;
+  }
+
+  .sort-dropdown__select {
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    border: 1px solid #E8E8E1;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .product-grid[data-view-mode="grid"] {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .product-grid[data-view-mode="list"] {
+    grid-template-columns: 1fr;
+  }
+
+  /* States */
+  .loading-state, .empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #E8E8E1;
+    border-top-color: #FBB03B;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .empty-state__icon {
+    margin-bottom: 1rem;
+  }
+
+  .empty-state__title {
+    font-size: 1.5rem;
+    color: #4D4D4D;
+    margin: 0 0 0.5rem;
+  }
+
+  .empty-state__text {
+    color: rgba(77, 77, 77, 0.7);
+    margin: 0;
+  }
+
+  /* Load More */
+  .load-more {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .load-more__btn {
+    padding: 0.875rem 2rem;
+    background: #FFFFFF;
+    border: 2px solid #FBB03B;
+    border-radius: 0.5rem;
+    color: #FBB03B;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .load-more__btn:hover {
+    background: #FBB03B;
+    color: #FFFFFF;
+  }
+</style>
+
+<script src="{{ 'search-filters.js' | asset_url }}" defer></script>
