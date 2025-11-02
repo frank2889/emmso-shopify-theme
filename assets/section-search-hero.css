@@ -30,6 +30,27 @@
   padding: 0;
 }
 
+/* Force main element to have no padding when search hero is present */
+main:has(.search-hero),
+#main-content:has(.search-hero) {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Force the section wrapper itself to be full width */
+#shopify-section-template--2696908737052__search_hero,
+[id*="search_hero"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+}
+
 /* ============================================================================
    Hero Container
    ========================================================================= */
