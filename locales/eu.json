@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Edukira joan",
+      "close": "Itxi",
+      "learn_more": "Gehiago ikasi"
+    },
+    "404": {
+      "title": "Orria ez da aurkitu",
+      "subtext": "Bilatzen ari zaren orria ez dago.",
+      "continue_shopping": "Erosketarekin jarraitu"
+    },
+    "search": {
+      "title": "Bilatu",
+      "placeholder": "Produktuak bilatu...",
+      "no_results": "Ez da emaitzarik aurkitu \"{{ terms }}\" bilaketarako",
+      "results_for": "\"{{ terms }}\" bilaketaren emaitzak",
+      "result_count": {
+        "count_one": "Emaitza {{ count }}",
+        "count_other": "{{ count }} emaitza"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "Helbide elektronikoa",
+      "submit": "Harpidetu"
+    },
+    "social": {
+      "share": "Partekatu",
+      "follow_us": "Jarraitu gaitzazu"
+    }
+  },
+  "filters": {
+    "title": "Iragazi",
+    "active_filters": "Iragazki aktiboak",
+    "clear_all": "Guztiak garbitu",
+    "category": "Kategoria",
+    "brand": "Marka",
+    "price": "Prezioa",
+    "room": "Gela mota",
+    "characteristics": "Ezaugarriak",
+    "price_range": "Prezio tartea",
+    "min_price": "Min",
+    "max_price": "Max",
+    "apply": "Aplikatu"
+  },
+  "comparison": {
+    "title": "Produktuen konparazioa",
+    "compare_products": "Produktuak konparatu",
+    "clear_all": "Guztiak kendu",
+    "remove": "Kendu",
+    "added": "{{ product }} konparaziora gehitu da",
+    "removed": "{{ product }} konparaziotik kendu da",
+    "cleared": "Konparazioa garbitu da",
+    "max_reached": "Gehienez {{ max }} produktu konpara daitezke",
+    "min_required": "Gutxienez {{ min }} produktu hautatu konparatzeko",
+    "price": "Prezioa",
+    "availability": "Eskuragarritasuna",
+    "variants": "Aldaerak",
+    "features": "Ezaugarriak",
+    "in_stock": "Stockean",
+    "out_of_stock": "Agortuta",
+    "products_selected": "{{ count }} produktu hautatuta konparatzeko"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Stockean",
+      "out_of_stock": "Agortuta",
+      "add_to_cart": "Saskira gehitu",
+      "view_details": "Xehetasunak ikusi",
+      "price": {
+        "from": "{{ price }}-tik",
+        "regular": "Ohiko prezioa",
+        "sale": "Eskaintza prezioa"
+      }
+    },
+    "related": {
+      "title": "Hauek ere interesgarriak izan daitezke"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Ez da produkturik aurkitu"
+    },
+    "sorting": {
+      "title": "Ordenatu honen arabera",
+      "featured": "Nabarmenduta",
+      "best_selling": "Salduena",
+      "alphabetically_a_z": "Alfabetikoki, A-Z",
+      "alphabetically_z_a": "Alfabetikoki, Z-A",
+      "price_ascending": "Prezioa gorantz",
+      "price_descending": "Prezioa beherantz",
+      "date_ascending": "Data gorantz",
+      "date_descending": "Data beherantz"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Saskia",
+      "empty": "Zure saskia hutsik dago",
+      "continue_shopping": "Erosketarekin jarraitu",
+      "checkout": "Ordaindu",
+      "subtotal": "Azpitotala",
+      "remove": "Kendu",
+      "quantity": "Kantitatea",
+      "update": "Eguneratu"
+    },
+    "shipping": {
+      "free_shipping": "Bidalketa doakoa",
+      "free_shipping_remaining": "{{ amount }} falta dira bidalketa doakoa izateko"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Nire kontua",
+      "orders": "Eskariak",
+      "addresses": "Helbideak",
+      "logout": "Saioa itxi"
+    },
+    "login": {
+      "title": "Saioa hasi",
+      "email": "E-maila",
+      "password": "Pasahitza",
+      "submit": "Saioa hasi",
+      "forgot_password": "Pasahitza ahaztu duzu?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Bloga",
+      "read_more": "Gehiago irakurri"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Newsletter-a",
+      "description": "Harpidetu eskaintza esklusiboak jasotzeko"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%Y/%B/%d"
+  }
+}

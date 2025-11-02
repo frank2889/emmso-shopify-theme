@@ -97,6 +97,29 @@
   href="{{ canonical_url }}"
 >
 
+{%- # Hreflang tags for international SEO - All 20 supported languages -%}
+{%- if shop.enabled_locales.size > 1 -%}
+  {%- for locale in shop.enabled_locales -%}
+    <link rel="alternate" hreflang="{{ locale.iso_code }}" href="{{ canonical_url | split: '?' | first }}?locale={{ locale.iso_code }}" />
+  {%- endfor -%}
+  
+  {%- # x-default for international users -%}
+  <link rel="alternate" hreflang="x-default" href="{{ canonical_url | split: '?' | first }}" />
+{%- endif -%}
+
+{%- # Language-specific meta tags for better regional SEO -%}
+<meta property="og:locale" content="{{ request.locale.iso_code | replace: '-', '_' }}" />
+{%- if shop.enabled_locales.size > 1 -%}
+  {%- for locale in shop.enabled_locales -%}
+    {%- unless locale.iso_code == request.locale.iso_code -%}
+      <meta property="og:locale:alternate" content="{{ locale.iso_code | replace: '-', '_' }}" />
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- # Regional content language meta tag -%}
+<meta http-equiv="content-language" content="{{ request.locale.iso_code }}" />
+
 {% if page_description %}
   <meta
     name="description"

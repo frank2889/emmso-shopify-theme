@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Saltar al cuntegnu",
+      "close": "Chjude",
+      "learn_more": "Amparà di più"
+    },
+    "404": {
+      "title": "Pagina micca truvata",
+      "subtext": "A pagina chì vo circate ùn esiste micca.",
+      "continue_shopping": "Cuntinuà à cumprà"
+    },
+    "search": {
+      "title": "Circà",
+      "placeholder": "Circà prudutti...",
+      "no_results": "Nisun risultatu truvatu per \"{{ terms }}\"",
+      "results_for": "Risultati per \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} risultatu",
+        "count_other": "{{ count }} risultati"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "Indirizzu email",
+      "submit": "Abbunassi"
+    },
+    "social": {
+      "share": "Sparte",
+      "follow_us": "Seguiteci"
+    }
+  },
+  "filters": {
+    "title": "Filtrà",
+    "active_filters": "Filtri attivi",
+    "clear_all": "Sguassà tuttu",
+    "category": "Categuria",
+    "brand": "Marca",
+    "price": "Prezzu",
+    "room": "Tipu di stanza",
+    "characteristics": "Caratteristiche",
+    "price_range": "Gamma di prezzu",
+    "min_price": "Min",
+    "max_price": "Max",
+    "apply": "Applicà"
+  },
+  "comparison": {
+    "title": "Cunfrontu di prudutti",
+    "compare_products": "Cunfruntà i prudutti",
+    "clear_all": "Caccià tuttu",
+    "remove": "Caccià",
+    "added": "{{ product }} aghjuntu à u cunfrontu",
+    "removed": "{{ product }} cacciatu da u cunfrontu",
+    "cleared": "Cunfrontu sguassatu",
+    "max_reached": "Un massimu di {{ max }} prudutti ponu esse cunfruntati",
+    "min_required": "Selezziunate almenu {{ min }} prudutti per cunfruntà",
+    "price": "Prezzu",
+    "availability": "Dispunibilità",
+    "variants": "Varianti",
+    "features": "Caratteristiche",
+    "in_stock": "In stock",
+    "out_of_stock": "Esauritu",
+    "products_selected": "{{ count }} prudutti selezziunati per cunfruntà"
+  },
+  "products": {
+    "product": {
+      "in_stock": "In stock",
+      "out_of_stock": "Esauritu",
+      "add_to_cart": "Aghjunghje à u carrettu",
+      "view_details": "Vede i dettagli",
+      "price": {
+        "from": "Da {{ price }}",
+        "regular": "Prezzu regulare",
+        "sale": "Prezzu di vendita"
+      }
+    },
+    "related": {
+      "title": "Quessa puderia ancu piacevvi"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Nisun pruduttu truvatu"
+    },
+    "sorting": {
+      "title": "Urdinà per",
+      "featured": "In evidenza",
+      "best_selling": "I più venduti",
+      "alphabetically_a_z": "Alfabeticamente, A-Z",
+      "alphabetically_z_a": "Alfabeticamente, Z-A",
+      "price_ascending": "Prezzu crescente",
+      "price_descending": "Prezzu calante",
+      "date_ascending": "Data crescente",
+      "date_descending": "Data calante"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Carrettu",
+      "empty": "U vostru carrettu hè viotu",
+      "continue_shopping": "Cuntinuà à cumprà",
+      "checkout": "Cunclude l'acquistu",
+      "subtotal": "Subtotale",
+      "remove": "Caccià",
+      "quantity": "Quantità",
+      "update": "Mette à ghjornu"
+    },
+    "shipping": {
+      "free_shipping": "Spedizione gratuita",
+      "free_shipping_remaining": "{{ amount }} in più per a spedizione gratuita"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "U mo contu",
+      "orders": "Ordini",
+      "addresses": "Indirizzi",
+      "logout": "Scunnette"
+    },
+    "login": {
+      "title": "Cunnette",
+      "email": "Email",
+      "password": "Parolla di passu",
+      "submit": "Cunnette",
+      "forgot_password": "Parolla di passu scurdata?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Leghje di più"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Abbunassi per offerte esclusive"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d %B %Y"
+  }
+}

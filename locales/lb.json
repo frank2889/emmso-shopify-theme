@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Wiesselen op den Inhalt",
+      "close": "Zoumaachen",
+      "learn_more": "Méi gewuer ginn"
+    },
+    "404": {
+      "title": "Säit net fonnt",
+      "subtext": "Déi Säit déi Dir sicht gëtt et net.",
+      "continue_shopping": "Weider akafen"
+    },
+    "search": {
+      "title": "Sichen",
+      "placeholder": "Produkter sichen...",
+      "no_results": "Keng Resultater fonnt fir \"{{ terms }}\"",
+      "results_for": "Resultater fir \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} Resultat",
+        "count_other": "{{ count }} Resultater"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "E-Mail-Adress",
+      "submit": "Abonnéieren"
+    },
+    "social": {
+      "share": "Deelen",
+      "follow_us": "Folgt eis"
+    }
+  },
+  "filters": {
+    "title": "Filteren",
+    "active_filters": "Aktiv Filteren",
+    "clear_all": "Alles läschen",
+    "category": "Kategorie",
+    "brand": "Mark",
+    "price": "Präis",
+    "room": "Raumtyp",
+    "characteristics": "Eegeschaften",
+    "price_range": "Präisberäich",
+    "min_price": "Min",
+    "max_price": "Max",
+    "apply": "Uwenden"
+  },
+  "comparison": {
+    "title": "Produktverglächung",
+    "compare_products": "Produkter vergläichen",
+    "clear_all": "Alles ewechhuelen",
+    "remove": "Ewechhuelen",
+    "added": "{{ product }} bei d'Verglächung bäigefüügt",
+    "removed": "{{ product }} aus der Verglächung ewechgeholl",
+    "cleared": "Verglächung geläscht",
+    "max_reached": "Maximal {{ max }} Produkter kënnen verglach ginn",
+    "min_required": "Wielt op d'mannst {{ min }} Produkter fir ze vergläichen",
+    "price": "Präis",
+    "availability": "Verfügbarkeet",
+    "variants": "Varianten",
+    "features": "Eegeschaften",
+    "in_stock": "Op Lager",
+    "out_of_stock": "Net op Lager",
+    "products_selected": "{{ count }} Produkter ausgewielt fir ze vergläichen"
+  },
+  "products": {
+    "product": {
+      "in_stock": "Op Lager",
+      "out_of_stock": "Ausverkaf",
+      "add_to_cart": "An de Warekuerf",
+      "view_details": "Detailer kucken",
+      "price": {
+        "from": "Vun {{ price }}",
+        "regular": "Normalpräis",
+        "sale": "Aktioунspräis"
+      }
+    },
+    "related": {
+      "title": "Dat kéint Iech och interesséieren"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Keng Produkter fonnt"
+    },
+    "sorting": {
+      "title": "Zortéieren no",
+      "featured": "Eraushiewend",
+      "best_selling": "Beschte Verkaf",
+      "alphabetically_a_z": "Alphabetesch, A-Z",
+      "alphabetically_z_a": "Alphabetesch, Z-A",
+      "price_ascending": "Präis eropgoen",
+      "price_descending": "Präis erofgoen",
+      "date_ascending": "Datum eropgoen",
+      "date_descending": "Datum erofgoen"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Warekuerf",
+      "empty": "Äre Warekuerf ass eidel",
+      "continue_shopping": "Weider akafen",
+      "checkout": "Bestellen",
+      "subtotal": "Ënnersumm",
+      "remove": "Ewechhuelen",
+      "quantity": "Quantitéit",
+      "update": "Aktualiséieren"
+    },
+    "shipping": {
+      "free_shipping": "Gratis Liwwerung",
+      "free_shipping_remaining": "Nach {{ amount }} bis zur gratis Liwwerung"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mäi Kont",
+      "orders": "Bestellungen",
+      "addresses": "Adressen",
+      "logout": "Ofmellen"
+    },
+    "login": {
+      "title": "Umellen",
+      "email": "E-Mail",
+      "password": "Passwuert",
+      "submit": "Umellen",
+      "forgot_password": "Passwuert vergiess?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Méi liesen"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Abonnéiert Iech fir exklusiv Offeren"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d. %B %Y"
+  }
+}

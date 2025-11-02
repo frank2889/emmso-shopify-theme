@@ -1,0 +1,142 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Saltar ao contido",
+      "close": "Pechar",
+      "learn_more": "Saber más"
+    },
+    "404": {
+      "title": "Páxina non atopada",
+      "subtext": "A páxina que buscas non existe.",
+      "continue_shopping": "Continuar comprando"
+    },
+    "search": {
+      "title": "Buscar",
+      "placeholder": "Buscar produtos...",
+      "no_results": "Non se atoparon resultados para \"{{ terms }}\"",
+      "results_for": "Resultados para \"{{ terms }}\"",
+      "result_count": {
+        "count_one": "{{ count }} resultado",
+        "count_other": "{{ count }} resultados"
+      }
+    },
+    "newsletter": {
+      "email_placeholder": "Enderezo de correo electrónico",
+      "submit": "Subscribirse"
+    },
+    "social": {
+      "share": "Compartir",
+      "follow_us": "Síguenos"
+    }
+  },
+  "filters": {
+    "title": "Filtrar",
+    "active_filters": "Filtros activos",
+    "clear_all": "Limpar todo",
+    "category": "Categoría",
+    "brand": "Marca",
+    "price": "Prezo",
+    "room": "Tipo de habitación",
+    "characteristics": "Características",
+    "price_range": "Rango de prezos",
+    "min_price": "Mín",
+    "max_price": "Máx",
+    "apply": "Aplicar"
+  },
+  "comparison": {
+    "title": "Comparación de produtos",
+    "compare_products": "Comparar produtos",
+    "clear_all": "Eliminar todo",
+    "remove": "Eliminar",
+    "added": "{{ product }} engadido á comparación",
+    "removed": "{{ product }} eliminado da comparación",
+    "cleared": "Comparación borrada",
+    "max_reached": "Pódense comparar un máximo de {{ max }} produtos",
+    "min_required": "Selecciona polo menos {{ min }} produtos para comparar",
+    "price": "Prezo",
+    "availability": "Dispoñibilidade",
+    "variants": "Variantes",
+    "features": "Características",
+    "in_stock": "En stock",
+    "out_of_stock": "Esgotado",
+    "products_selected": "{{ count }} produtos seleccionados para comparar"
+  },
+  "products": {
+    "product": {
+      "in_stock": "En stock",
+      "out_of_stock": "Esgotado",
+      "add_to_cart": "Engadir ao carriño",
+      "view_details": "Ver detalles",
+      "price": {
+        "from": "Desde {{ price }}",
+        "regular": "Prezo normal",
+        "sale": "Prezo de oferta"
+      }
+    },
+    "related": {
+      "title": "Tamén che pode interesar"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_products": "Non se atoparon produtos"
+    },
+    "sorting": {
+      "title": "Ordenar por",
+      "featured": "Destacados",
+      "best_selling": "Máis vendidos",
+      "alphabetically_a_z": "Alfabeticamente, A-Z",
+      "alphabetically_z_a": "Alfabeticamente, Z-A",
+      "price_ascending": "Prezo ascendente",
+      "price_descending": "Prezo descendente",
+      "date_ascending": "Data ascendente",
+      "date_descending": "Data descendente"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Carriño",
+      "empty": "O teu carriño está baleiro",
+      "continue_shopping": "Continuar comprando",
+      "checkout": "Finalizar compra",
+      "subtotal": "Subtotal",
+      "remove": "Eliminar",
+      "quantity": "Cantidade",
+      "update": "Actualizar"
+    },
+    "shipping": {
+      "free_shipping": "Envío gratuíto",
+      "free_shipping_remaining": "Faltan {{ amount }} para envío gratuíto"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "A miña conta",
+      "orders": "Pedidos",
+      "addresses": "Enderezos",
+      "logout": "Pechar sesión"
+    },
+    "login": {
+      "title": "Iniciar sesión",
+      "email": "Correo electrónico",
+      "password": "Contrasinal",
+      "submit": "Iniciar sesión",
+      "forgot_password": "Esqueciches o contrasinal?"
+    }
+  },
+  "blog": {
+    "general": {
+      "title": "Blog",
+      "read_more": "Ler máis"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Boletín",
+      "description": "Subscríbete para ofertas exclusivas"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%d de %B de %Y"
+  }
+}

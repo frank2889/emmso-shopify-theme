@@ -1,0 +1,246 @@
+{%- comment -%}
+  Language & Region Selector
+  
+  Displays all 20 available languages with proper country flags and names
+  Organized by region for better UX
+  
+  Usage: {% render 'language-selector' %}
+{%- endcomment -%}
+
+{%- if shop.enabled_locales.size > 1 -%}
+  <div class="language-selector">
+    <button class="language-selector__toggle" aria-label="{{ 'general.accessibility.language_selector' | t }}">
+      {%- assign current_locale = request.locale.iso_code -%}
+      <span class="language-selector__current">
+        {%- case current_locale -%}
+          {%- when 'en' -%}🇺🇸 English (US)
+          {%- when 'en-GB' -%}🇬🇧 English (UK)
+          {%- when 'nl' -%}🇳🇱 Nederlands
+          {%- when 'nl-BE' -%}🇧🇪 Nederlands (BE)
+          {%- when 'de' -%}🇩🇪 Deutsch
+          {%- when 'de-AT' -%}🇦🇹 Deutsch (AT)
+          {%- when 'de-BE' -%}🇧🇪 Deutsch (BE)
+          {%- when 'fr' -%}🇫🇷 Français
+          {%- when 'fr-BE' -%}🇧🇪 Français (BE)
+          {%- when 'es' -%}🇪🇸 Español
+          {%- when 'ca' -%}🇪🇸 Català
+          {%- when 'eu' -%}🇪🇸 Euskara
+          {%- when 'gl' -%}🇪🇸 Galego
+          {%- when 'it' -%}🇮🇹 Italiano
+          {%- when 'co' -%}🇫🇷 Corsu
+          {%- when 'pt-PT' -%}🇵🇹 Português
+          {%- when 'da' -%}🇩🇰 Dansk
+          {%- when 'fy' -%}🇳🇱 Frysk
+          {%- when 'ga' -%}🇮🇪 Gaeilge
+          {%- when 'lb' -%}🇱🇺 Lëtzebuergesch
+          {%- else -%}{{ request.locale.endonym_name }}
+        {%- endcase -%}
+      </span>
+      <svg width="12" height="8" aria-hidden="true">
+        <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+    </button>
+
+    <div class="language-selector__dropdown" hidden>
+      <div class="language-selector__group">
+        <div class="language-selector__label">English</div>
+        {%- for locale in shop.enabled_locales -%}
+          {%- if locale.iso_code contains 'en' -%}
+            <a href="{{ request.path }}?locale={{ locale.iso_code }}" 
+               class="language-selector__option{% if locale.iso_code == current_locale %} active{% endif %}"
+               hreflang="{{ locale.iso_code }}"
+               lang="{{ locale.iso_code }}">
+              {%- if locale.iso_code == 'en' -%}🇺🇸 English (US)
+              {%- elsif locale.iso_code == 'en-GB' -%}🇬🇧 English (UK)
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="language-selector__group">
+        <div class="language-selector__label">Benelux</div>
+        {%- for locale in shop.enabled_locales -%}
+          {%- assign iso = locale.iso_code -%}
+          {%- if iso == 'nl' or iso == 'nl-BE' or iso == 'fr-BE' or iso == 'de-BE' or iso == 'fy' or iso == 'lb' -%}
+            <a href="{{ request.path }}?locale={{ iso }}" 
+               class="language-selector__option{% if iso == current_locale %} active{% endif %}"
+               hreflang="{{ iso }}"
+               lang="{{ iso }}">
+              {%- case iso -%}
+                {%- when 'nl' -%}🇳🇱 Nederlands
+                {%- when 'nl-BE' -%}🇧🇪 Vlaams
+                {%- when 'fr-BE' -%}🇧🇪 Français (BE)
+                {%- when 'de-BE' -%}🇧🇪 Deutsch (BE)
+                {%- when 'fy' -%}🇳🇱 Frysk
+                {%- when 'lb' -%}🇱🇺 Lëtzebuergesch
+              {%- endcase -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="language-selector__group">
+        <div class="language-selector__label">DACH Region</div>
+        {%- for locale in shop.enabled_locales -%}
+          {%- assign iso = locale.iso_code -%}
+          {%- if iso == 'de' or iso == 'de-AT' -%}
+            <a href="{{ request.path }}?locale={{ iso }}" 
+               class="language-selector__option{% if iso == current_locale %} active{% endif %}"
+               hreflang="{{ iso }}"
+               lang="{{ iso }}">
+              {%- if iso == 'de' -%}🇩🇪 Deutsch
+              {%- elsif iso == 'de-AT' -%}🇦🇹 Österreich
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="language-selector__group">
+        <div class="language-selector__label">France</div>
+        {%- for locale in shop.enabled_locales -%}
+          {%- assign iso = locale.iso_code -%}
+          {%- if iso == 'fr' or iso == 'co' -%}
+            <a href="{{ request.path }}?locale={{ iso }}" 
+               class="language-selector__option{% if iso == current_locale %} active{% endif %}"
+               hreflang="{{ iso }}"
+               lang="{{ iso }}">
+              {%- if iso == 'fr' -%}🇫🇷 Français
+              {%- elsif iso == 'co' -%}🇫🇷 Corsu
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="language-selector__group">
+        <div class="language-selector__label">España</div>
+        {%- for locale in shop.enabled_locales -%}
+          {%- assign iso = locale.iso_code -%}
+          {%- if iso == 'es' or iso == 'ca' or iso == 'eu' or iso == 'gl' -%}
+            <a href="{{ request.path }}?locale={{ iso }}" 
+               class="language-selector__option{% if iso == current_locale %} active{% endif %}"
+               hreflang="{{ iso }}"
+               lang="{{ iso }}">
+              {%- case iso -%}
+                {%- when 'es' -%}🇪🇸 Español
+                {%- when 'ca' -%}🇪🇸 Català
+                {%- when 'eu' -%}🇪🇸 Euskara
+                {%- when 'gl' -%}🇪🇸 Galego
+              {%- endcase -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="language-selector__group">
+        <div class="language-selector__label">Other</div>
+        {%- for locale in shop.enabled_locales -%}
+          {%- assign iso = locale.iso_code -%}
+          {%- if iso == 'it' or iso == 'pt-PT' or iso == 'da' or iso == 'ga' -%}
+            <a href="{{ request.path }}?locale={{ iso }}" 
+               class="language-selector__option{% if iso == current_locale %} active{% endif %}"
+               hreflang="{{ iso }}"
+               lang="{{ iso }}">
+              {%- case iso -%}
+                {%- when 'it' -%}🇮🇹 Italiano
+                {%- when 'pt-PT' -%}🇵🇹 Português
+                {%- when 'da' -%}🇩🇰 Dansk
+                {%- when 'ga' -%}🇮🇪 Gaeilge
+              {%- endcase -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Language selector functionality
+    const toggle = document.querySelector('.language-selector__toggle');
+    const dropdown = document.querySelector('.language-selector__dropdown');
+    
+    if (toggle && dropdown) {
+      toggle.addEventListener('click', () => {
+        const isHidden = dropdown.hasAttribute('hidden');
+        dropdown.toggleAttribute('hidden');
+        toggle.setAttribute('aria-expanded', isHidden);
+      });
+
+      // Close on outside click
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.language-selector')) {
+          dropdown.setAttribute('hidden', '');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  </script>
+
+  <style>
+    .language-selector {
+      position: relative;
+    }
+
+    .language-selector__toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+
+    .language-selector__dropdown {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      min-width: 200px;
+      max-height: 400px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    .language-selector__group {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .language-selector__group:last-child {
+      border-bottom: none;
+    }
+
+    .language-selector__label {
+      padding: 0.25rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    .language-selector__option {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .language-selector__option:hover {
+      background-color: #f5f5f5;
+    }
+
+    .language-selector__option.active {
+      background-color: #f0f0f0;
+      font-weight: 600;
+    }
+  </style>
+{%- endif -%}
