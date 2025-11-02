@@ -38,14 +38,14 @@
 <title>
   {%- if is_home -%}
     {% case current_lang %}
-      {% when 'nl' %}{{ shop.name }} - Vloeren & Onderhoud | 19 Premium Merken | Gratis Verzending vanaf €75
-      {% when 'de' %}{{ shop.name }} - Böden & Pflege | 19 Premium-Marken | Kostenloser Versand ab €75
-      {% when 'fr' %}{{ shop.name }} - Sols & Entretien | 19 Marques Premium | Livraison Gratuite dès €75
-      {% when 'es' %}{{ shop.name }} - Suelos & Mantenimiento | 19 Marcas Premium | Envío Gratis desde €75
-      {% when 'it' %}{{ shop.name }} - Pavimenti & Manutenzione | 19 Marchi Premium | Spedizione Gratuita da €75
-      {% when 'pt' %}{{ shop.name }} - Pisos & Manutenção | 19 Marcas Premium | Frete Grátis a partir de €75
-      {% when 'da' %}{{ shop.name }} - Gulve & Vedligeholdelse | 19 Premium Mærker | Gratis Forsendelse fra €75
-      {% else %}{{ shop.name }} - Flooring & Maintenance | 19 Premium Brands | Free Shipping from €75
+      {% when 'nl' %}{{ shop.name }} - Bouw & Interieur Producten | 19 Premium Merken | Gratis Verzending vanaf €75
+      {% when 'de' %}{{ shop.name }} - Bau & Interieur Produkte | 19 Premium-Marken | Kostenloser Versand ab €75
+      {% when 'fr' %}{{ shop.name }} - Produits Construction & Intérieur | 19 Marques Premium | Livraison Gratuite dès €75
+      {% when 'es' %}{{ shop.name }} - Productos Construcción & Interior | 19 Marcas Premium | Envío Gratis desde €75
+      {% when 'it' %}{{ shop.name }} - Prodotti Edilizia & Interni | 19 Marchi Premium | Spedizione Gratuita da €75
+      {% when 'pt' %}{{ shop.name }} - Produtos Construção & Interior | 19 Marcas Premium | Frete Grátis a partir de €75
+      {% when 'da' %}{{ shop.name }} - Bygge & Interiør Produkter | 19 Premium Mærker | Gratis Forsendelse fra €75
+      {% else %}{{ shop.name }} - Construction & Interior Products | 19 Premium Brands | Free Shipping from €75
     {% endcase %}
   {%- elsif is_product -%}
     {{ product.title }} | {{ product.vendor }} | {{ shop.name }}
@@ -64,10 +64,10 @@
 <meta name="description" content="
   {%- if is_home -%}
     {% case current_lang %}
-      {% when 'nl' %}Specialist in vloeren en onderhoud voor {{ current_country }}. 19 topmerken zoals Bona, Woca, Lithofin. Snelle levering via Wuunder. Bestel nu!
-      {% when 'de' %}Spezialist für Böden und Pflege in {{ current_country }}. 19 Top-Marken wie Bona, Woca, Lithofin. Schnelle Lieferung über Wuunder. Jetzt bestellen!
-      {% when 'fr' %}Spécialiste en sols et entretien pour {{ current_country }}. 19 grandes marques comme Bona, Woca, Lithofin. Livraison rapide via Wuunder. Commandez maintenant!
-      {% else %}Flooring and maintenance specialist for {{ current_country }}. 19 top brands like Bona, Woca, Lithofin. Fast delivery via Wuunder. Order now!
+      {% when 'nl' %}Specialist in bouw & interieur producten voor {{ current_country }}. Van vloeren tot badkamers, keukens en buitenruimtes. 19 topmerken. Snelle levering via Wuunder. Bestel nu!
+      {% when 'de' %}Spezialist für Bau & Interieur Produkte in {{ current_country }}. Von Böden bis Badezimmer, Küchen und Außenbereiche. 19 Top-Marken. Schnelle Lieferung über Wuunder. Jetzt bestellen!
+      {% when 'fr' %}Spécialiste en produits construction & intérieur pour {{ current_country }}. Des sols aux salles de bains, cuisines et espaces extérieurs. 19 grandes marques. Livraison rapide via Wuunder. Commandez maintenant!
+      {% else %}Construction & interior products specialist for {{ current_country }}. From floors to bathrooms, kitchens and outdoor spaces. 19 top brands. Fast delivery via Wuunder. Order now!
     {% endcase %}
   {%- elsif is_product and product.description -%}
     {{ product.description | strip_html | truncate: 155 }}
@@ -81,10 +81,10 @@
 {%- comment -%} Keywords - Multilingual {%- endcomment -%}
 <meta name="keywords" content="
   {%- case current_lang -%}
-    {%- when 'nl' -%}vloeren, laminaat, vinyl, parket, vloeronderhoud, bona, woca, lithofin, {{ current_country | downcase }}
-    {%- when 'de' -%}böden, laminat, vinyl, parkett, bodenpflege, bona, woca, lithofin, {{ current_country | downcase }}
-    {%- when 'fr' -%}sols, stratifié, vinyle, parquet, entretien des sols, bona, woca, lithofin, {{ current_country | downcase }}
-    {%- else -%}flooring, laminate, vinyl, parquet, floor care, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- when 'nl' -%}bouw, interieur, vloeren, badkamers, keukens, wandpanelen, buitenterras, tegels, sanitair, kranen, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- when 'de' -%}bau, interieur, böden, badezimmer, küchen, wandpaneele, außenbereich, fliesen, sanitär, armaturen, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- when 'fr' -%}construction, intérieur, sols, salles de bains, cuisines, panneaux muraux, terrasse extérieure, carrelage, sanitaire, robinetterie, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- else -%}construction, interior, floors, bathrooms, kitchens, wall panels, outdoor patio, tiles, sanitary, faucets, bona, woca, lithofin, {{ current_country | downcase }}
   {%- endcase -%}
 ">
 
