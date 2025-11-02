@@ -1,0 +1,285 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Zum Inhalt springen",
+      "close_modal": "Schließen (esc)",
+      "close": "Schließen",
+      "learn_more": "Mehr erfahren"
+    },
+    "meta": {
+      "tags": "Markiert \"{{ tags }}\"",
+      "page": "Seite {{ page }}"
+    },
+    "404": {
+      "title": "Seite nicht gefunden",
+      "subtext": "Die gesuchte Seite existiert nicht.",
+      "continue_shopping": "Weiter einkaufen"
+    },
+    "pagination": {
+      "previous": "Zurück",
+      "next": "Weiter",
+      "page": "Seite {{ current }} von {{ total }}"
+    },
+    "breadcrumbs": {
+      "home": "Startseite",
+      "back_to_home": "Zurück zur Startseite"
+    },
+    "search": {
+      "title": "Suche",
+      "placeholder": "Produkte suchen...",
+      "submit": "Suchen",
+      "no_results": "Keine Ergebnisse gefunden",
+      "results_for": "Ergebnisse für \"{{ terms }}\"",
+      "result_count_one": "{{ count }} Ergebnis",
+      "result_count_other": "{{ count }} Ergebnisse",
+      "searching": "Suchen...",
+      "view_all": "Alle Ergebnisse anzeigen",
+      "popular_searches": "Beliebte Suchanfragen",
+      "recent_searches": "Letzte Suchanfragen",
+      "clear_history": "Verlauf löschen",
+      "suggestions": "Meinten Sie",
+      "no_suggestions": "Keine Vorschläge verfügbar"
+    },
+    "newsletter": {
+      "email_placeholder": "E-Mail eingeben",
+      "submit": "Abonnieren",
+      "confirmation": "Danke für Ihr Abonnement!",
+      "error": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+    },
+    "social": {
+      "share": "Teilen",
+      "share_on_facebook": "Auf Facebook teilen",
+      "share_on_twitter": "Auf Twitter teilen",
+      "share_on_pinterest": "Auf Pinterest pinnen"
+    },
+    "currency": {
+      "label": "Währung"
+    },
+    "language": {
+      "label": "Sprache"
+    }
+  },
+  "products": {
+    "general": {
+      "sale": "Sale",
+      "new": "Neu",
+      "sold_out": "Ausverkauft",
+      "unavailable": "Nicht verfügbar",
+      "from_price": "Ab {{ price }}",
+      "view_product": "Produkt ansehen",
+      "quick_view": "Schnellansicht",
+      "add_to_cart": "In den Warenkorb",
+      "adding": "Wird hinzugefügt...",
+      "added": "Hinzugefügt!",
+      "select_options": "Optionen wählen",
+      "more_info": "Weitere Informationen"
+    },
+    "product": {
+      "vendor": "Hersteller",
+      "sku": "SKU",
+      "availability": "Verfügbarkeit",
+      "in_stock": "Auf Lager",
+      "out_of_stock": "Nicht auf Lager",
+      "low_stock": "Wenige auf Lager",
+      "quantity": "Menge",
+      "price": "Preis",
+      "compare_at_price": "War",
+      "you_save": "Sie sparen {{ amount }}",
+      "description": "Beschreibung",
+      "features": "Merkmale",
+      "specifications": "Spezifikationen",
+      "reviews": "Bewertungen",
+      "shipping_info": "Versandinformationen",
+      "return_policy": "Rückgaberecht"
+    },
+    "related": {
+      "title": "Ähnliche Produkte",
+      "you_may_also_like": "Das könnte Ihnen auch gefallen",
+      "customers_also_bought": "Kunden kauften auch",
+      "similar_products": "Ähnliche Produkte"
+    }
+  },
+  "collections": {
+    "general": {
+      "title": "Kollektionen",
+      "all_collections": "Alle Kollektionen",
+      "no_products": "Keine Produkte gefunden",
+      "view_all": "Alle anzeigen",
+      "showing": "{{ from }}-{{ to }} von {{ total }} angezeigt"
+    },
+    "sorting": {
+      "title": "Sortieren nach",
+      "featured": "Empfohlen",
+      "best_selling": "Meistverkauft",
+      "title_ascending": "Alphabetisch, A-Z",
+      "title_descending": "Alphabetisch, Z-A",
+      "price_ascending": "Preis, niedrig bis hoch",
+      "price_descending": "Preis, hoch bis niedrig",
+      "date_ascending": "Datum, alt bis neu",
+      "date_descending": "Datum, neu bis alt"
+    }
+  },
+  "filters": {
+    "title": "Filter",
+    "active_filters": "Aktive Filter",
+    "clear_all": "Alle löschen",
+    "clear": "Löschen",
+    "apply": "Anwenden",
+    "show_results": "{{ count }} Ergebnisse anzeigen",
+    "no_filters": "Keine Filter verfügbar",
+    "category": "Kategorie",
+    "brand": "Marke",
+    "price": "Preis",
+    "price_from": "Von",
+    "price_to": "Bis",
+    "color": "Farbe",
+    "size": "Größe",
+    "material": "Material",
+    "room": "Raum",
+    "characteristics": "Eigenschaften",
+    "availability": "Verfügbarkeit",
+    "in_stock_only": "Nur auf Lager",
+    "on_sale": "Im Angebot",
+    "view_mode": {
+      "grid": "Rasteransicht",
+      "list": "Listenansicht"
+    }
+  },
+  "comparison": {
+    "title": "Produktvergleich",
+    "add_to_compare": "Zum Vergleich hinzufügen",
+    "compare": "Vergleichen",
+    "compare_products": "Produkte vergleichen",
+    "clear_all": "Alle löschen",
+    "remove": "Entfernen",
+    "added": "{{ product }} zum Vergleich hinzugefügt",
+    "removed": "Aus Vergleich entfernt",
+    "cleared": "Vergleich gelöscht",
+    "max_reached": "Maximal {{ max }} Produkte können verglichen werden",
+    "min_required": "Wählen Sie mindestens 2 Produkte zum Vergleichen",
+    "error_loading": "Fehler beim Laden des Produkts",
+    "price": "Preis",
+    "availability": "Verfügbarkeit",
+    "type": "Produkttyp",
+    "variants": "Varianten",
+    "features": "Merkmale",
+    "in_stock": "Auf Lager",
+    "out_of_stock": "Nicht auf Lager",
+    "view_product": "Produkt ansehen",
+    "products_selected": "{{ count }} Produkte zum Vergleich ausgewählt",
+    "keyboard_hint": "Drücken Sie 'C' um Vergleich zu öffnen"
+  },
+  "cart": {
+    "general": {
+      "title": "Ihr Warenkorb",
+      "empty": "Ihr Warenkorb ist leer",
+      "continue_shopping": "Weiter einkaufen",
+      "update": "Warenkorb aktualisieren",
+      "checkout": "Zur Kasse",
+      "subtotal": "Zwischensumme",
+      "total": "Gesamt",
+      "taxes_included": "Inkl. MwSt.",
+      "shipping_at_checkout": "Versandkosten an der Kasse berechnet",
+      "note": "Bestellnotiz",
+      "note_placeholder": "Notiz zur Bestellung hinzufügen",
+      "remove": "Entfernen",
+      "quantity": "Menge",
+      "increase_quantity": "Menge erhöhen",
+      "decrease_quantity": "Menge verringern",
+      "price": "Preis",
+      "item_total": "Artikel gesamt"
+    },
+    "shipping": {
+      "free_shipping": "Kostenloser Versand",
+      "free_shipping_remaining": "Geben Sie noch {{ amount }} aus für kostenlosen Versand",
+      "free_shipping_unlocked": "Sie haben kostenlosen Versand freigeschaltet!",
+      "estimated_shipping": "Geschätzter Versand"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mein Konto",
+      "details": "Kontodetails",
+      "view_orders": "Bestellungen ansehen",
+      "logout": "Abmelden",
+      "welcome": "Willkommen zurück, {{ name }}"
+    },
+    "login": {
+      "title": "Anmelden",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "forgot_password": "Passwort vergessen?",
+      "sign_in": "Anmelden",
+      "create_account": "Konto erstellen",
+      "guest_checkout": "Als Gast fortfahren"
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Konto erstellen",
+      "have_account": "Bereits ein Konto?"
+    },
+    "orders": {
+      "title": "Bestellverlauf",
+      "order_number": "Bestellung #{{ number }}",
+      "date": "Datum",
+      "status": "Status",
+      "total": "Gesamt",
+      "view_order": "Bestellung ansehen",
+      "no_orders": "Sie haben noch keine Bestellungen aufgegeben"
+    }
+  },
+  "blog": {
+    "article": {
+      "read_more": "Weiterlesen",
+      "back_to_blog": "Zurück zu {{ title }}",
+      "tags": "Tags",
+      "share": "Artikel teilen",
+      "posted_on": "Veröffentlicht am {{ date }}",
+      "by_author": "von {{ author }}"
+    },
+    "comments": {
+      "title": "Kommentar hinterlassen",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "post": "Kommentar posten",
+      "success": "Ihr Kommentar wurde erfolgreich gepostet!",
+      "moderated": "Kommentare werden moderiert",
+      "count_one": "{{ count }} Kommentar",
+      "count_other": "{{ count }} Kommentare"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Abonnieren Sie unseren Newsletter",
+      "description": "Erhalten Sie Updates zu neuen Produkten und exklusiven Angeboten"
+    },
+    "social": {
+      "title": "Folgen Sie uns"
+    },
+    "links": {
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "shipping": "Versand & Lieferung",
+      "returns": "Rücksendungen",
+      "privacy": "Datenschutz",
+      "terms": "AGB"
+    }
+  },
+  "forms": {
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "password_min_length": "Passwort muss mindestens 6 Zeichen lang sein",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "success": "Erfolg!"
+  },
+  "date_formats": {
+    "month_day_year": "%d. %B %Y",
+    "month_year": "%B %Y"
+  }
+}
