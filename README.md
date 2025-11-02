@@ -40,11 +40,61 @@ Built from scratch for modern, multilingual e-commerce. Optimized for search-dri
 
 
 
-## ✨ Key Features### 🌍 Markets & Languages
+## ✨ Key Features
 
+### 1. 🌍 Complete Multilingual Coverage - 20 Languages
 
+**🎯 TOTAL LANGUAGE SUPPORT: 20 Languages Across 14 Countries**
 
-### 1. 🔍 Intelligent Search**Active Markets:**
+#### **Major European Languages (9)**
+- 🇺🇸 **English (US)** - `en` - United States, International
+- 🇬🇧 **English (UK)** - `en-GB` - United Kingdom, Ireland, Australia, New Zealand  
+- 🇳🇱 **Dutch** - `nl` - Netherlands
+- 🇩🇪 **German** - `de` - Germany
+- 🇫🇷 **French** - `fr` - France
+- 🇪🇸 **Spanish** - `es` - Spain
+- 🇮🇹 **Italian** - `it` - Italy
+- 🇵🇹 **Portuguese** - `pt-PT` - Portugal
+- 🇩🇰 **Danish** - `da` - Denmark
+
+#### **Regional Variants (5)**
+- 🇧🇪 **Flemish** - `nl-BE` - Belgium (Flanders)
+- 🇧🇪 **Belgian French** - `fr-BE` - Belgium (Wallonia)  
+- 🇧🇪 **Belgian German** - `de-BE` - Belgium (Ostbelgien, 77k speakers)
+- 🇦🇹 **Austrian German** - `de-AT` - Austria ("Zur Kassa" vs "Zur Kasse")
+- 🇪🇸 **Catalan** - `ca` - Catalonia, Valencia, Balearic Islands
+
+#### **Regional/Minority Languages (6)**
+- 🇪🇸 **Basque** - `eu` - Basque Country, Navarre (750k+ speakers)
+- 🇪🇸 **Galician** - `gl` - Galicia (2.4M speakers)
+- 🇫🇷 **Corsican** - `co` - Corsica (150k speakers)
+- 🇱🇺 **Luxembourgish** - `lb` - Luxembourg (national language, 400k speakers)
+- 🇮🇪 **Irish** - `ga` - Ireland (Gaeilge, 1.8M speakers)
+- 🇳🇱 **Frisian** - `fy` - Friesland, Netherlands (470k speakers)
+
+**Complete Country Coverage:**
+| Country | Languages | Locales | Status |
+|---------|-----------|---------|--------|
+| 🇧🇪 Belgium | 3 official | `nl-BE`, `fr-BE`, `de-BE` | **✅ 3/3** |
+| 🇱🇺 Luxembourg | 3 official | `lb`, `de`, `fr` | **✅ 3/3** |
+| 🇪🇸 Spain | 4 major | `es`, `ca`, `eu`, `gl` | **✅ 4/4** |
+| 🇨🇭 Switzerland | 3 of 4 | `de`, `fr`, `it` | **✅ 3/4** |
+| 🇮🇪 Ireland | 2 official | `en-GB`, `ga` | **✅ 2/2** |
+| 🇳🇱 Netherlands | 2 official | `nl`, `fy` | **✅ 2/2** |
+
+**SEO Implementation:**
+- ✅ Perfect hreflang tags for all 20 languages + x-default
+- ✅ Dynamic `og:locale` and `og:locale:alternate` tags
+- ✅ Content-Language HTTP headers
+- ✅ Regional-specific terminology (UK: "basket" vs US: "cart")
+- ✅ Language selector UI with geographic grouping
+- ✅ No duplicate content penalties
+
+**Usage:** `{% render 'language-selector' %}` in header
+
+---
+
+### 2. 🔍 Intelligent Search**Active Markets:**
 
 - **Instant predictive search** with autocomplete (< 200ms response)- 🇳🇱 **Netherlands (NL)** - Primary Market
 
@@ -58,75 +108,36 @@ Built from scratch for modern, multilingual e-commerce. Optimized for search-dri
 
 - **Context-aware** - detects room types, usage characteristics- 🇪🇸 **Spain (ES)**
 
-- **Voice search** support (Web Speech API)- 🇮🇹 **Italy (IT)**
+- **Voice search** support (Web Speech API)
 
-- 🇵🇹 **Portugal (PT)**
+### 3. 🎨 Unified Smart Filters
 
-### 2. 🌍 Multilingual by Design- 🇩🇰 **Denmark (DA)**
-
-- **8 base languages**: EN, NL, DE, FR, ES, IT, PT, DA- 🇮🇪 **Ireland (IE)** - English (EN)
-
-- **13 regional markets**: NL, BE, DE, AT, FR, ES, IT, PT, DA, IE, GB, INT, DK
-
-- **Automatic language detection** from URL, locale, or browser**Total Markets:** 10 European countries
-
-- **Cross-language product matching** for related products
-
-- **Localized UI** - every label translated (buttons, filters, notifications)**Multi-Language Strategy:**
-
-- **Multilingual SEO** - hreflang tags, dynamic meta tags, XML sitemaps- **Powered by:** Translate & Adapt app (Shopify)
-
-- **Unlimited Languages & Nuances:** Can create regional variations (e.g., BE-NL vs NL-NL, BE-FR vs FR-FR)
-
-### 3. 🎨 Unified Smart Filters- **Current Active Languages:** 8 base languages (expandable on demand)
-
-- **Single codebase** for Collections, Products, and Search pages- **Auto-detection:** Via URL path structure (`/en/`, `/de/`, `/nl-be/`, etc.)
-
-- **Dynamic faceted filtering** - Category, Brand, Price, Room, Characteristics- **SEO-Optimized:** Each language version fully indexed separately
-
+- **Single codebase** for Collections, Products, and Search pages
+- **Dynamic faceted filtering** - Category, Brand, Price, Room, Characteristics
 - **Multi-select filters** with AND/OR logic
+- **Instant AJAX updates** - no page reload
+- **URL persistence** - shareable filtered URLs
+- **Active filter chips** - easy removal
+- **Grid/List toggle** with view persistence
+- **Sort options** - Relevance, Price, Newest, Best Selling
 
-- **Instant AJAX updates** - no page reload**Base Languages:**
+### 4. 🔄 Product Comparison Tool
 
-- **URL persistence** - shareable filtered URLs- Dutch (NL) - Netherlands, Belgium
-
-- **Active filter chips** - easy removal- English (EN) - Ireland, UK, International
-
-- **Grid/List toggle** with view persistence- German (DE) - Austria, Germany
-
-- **Sort options** - Relevance, Price, Newest, Best Selling- French (FR) - France, Belgium
-
-- Spanish (ES) - Spain
-
-### 4. 🔄 Product Comparison Tool- Italian (IT) - Italy
-
-- **Side-by-side comparison** of up to 4 products- Portuguese (PT) - Portugal
-
-- **Smart feature analysis** - price, availability, variants, features- Danish (DA) - Denmark
-
+- **Side-by-side comparison** of up to 4 products
+- **Smart feature analysis** - price, availability, variants, features
 - **Best value highlighting** - star badges on lowest prices
-
-- **Persistent storage** - localStorage across sessions**Future Expansion Potential:**
-
-- **Keyboard shortcut** - Press 'C' to open comparison- Regional variations (Swiss German, Austrian German, Belgian Dutch)
-
-- **Mobile responsive** - full-screen modal on mobile- Additional markets (Sweden, Norway, Finland, Poland)
-
-- **Multilingual support** - all labels translated- Dialect-specific content per market
-
-- B2B vs B2C language nuances
+- **Persistent storage** - localStorage across sessions
+- **Keyboard shortcut** - Press 'C' to open comparison
+- **Mobile responsive** - full-screen modal on mobile
+- **Multilingual support** - all labels translated in 20 languages
 
 ### 5. 🧠 Query Normalizer & Deduplication
 
-- **Prevents duplicate collections** from search query variations**Market-Language Matrix:**
-
-- **Quality scoring** (0-1 scale) - filters spam and low-value queries- **Austria:** German (DE)
-
-- **Spam detection** - regex patterns block test queries- **Belgium:** Dutch (NL), French (FR), German (DE)
-
-- **Similarity detection** - 80%+ Levenshtein distance matching- **Denmark:** Danish (DA)
-
-- **Multi-language normalization** - stop word removal for 8 languages- **France:** French (FR)
+- **Prevents duplicate collections** from search query variations
+- **Quality scoring** (0-1 scale) - filters spam and low-value queries
+- **Spam detection** - regex patterns block test queries
+- **Similarity detection** - 80%+ Levenshtein distance matching
+- **Multi-language normalization** - stop word removal for 20 languages
 
 - **Collection matching** - finds existing collections with confidence scores- **Germany:** German (DE)
 
@@ -1054,7 +1065,7 @@ shopify theme publish
 ├── blocks/         # Reusable, nestable UI components (Horizon theme blocks)
 ├── config/         # Global theme settings and customization options
 ├── layout/         # Top-level wrappers (theme.liquid, password.liquid)
-├── locales/        # Translation files (8 languages: NL, EN, DE, FR, ES, IT, PT, DA)
+├── locales/        # Translation files (20 languages: EN, EN-GB, NL, NL-BE, DE, DE-AT, DE-BE, FR, FR-BE, ES, CA, EU, GL, IT, CO, PT-PT, DA, FY, GA, LB)
 ├── sections/       # Modular full-width page components
 ├── snippets/       # Reusable Liquid code fragments
 └── templates/      # JSON templates combining sections for page structures
