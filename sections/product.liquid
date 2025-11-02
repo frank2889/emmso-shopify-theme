@@ -1,10 +1,12 @@
 {% comment %}
-  Product page with Related Products (Unified Filters)
-  Compact filter sidebar for intelligent product recommendations
+  Product Section
+  Following Shopify best practices with external CSS
+  Includes related products with intelligent filters
 {% endcomment %}
 
+{{ 'section-product.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'unified-filters.js' | asset_url }}" defer></script>
-<link rel="stylesheet" href="{{ 'product-card.css' | asset_url }}">
+{{ 'product-card.css' | asset_url | stylesheet_tag }}
 
 <div class="product-page">
   <div class="product-main">
@@ -173,244 +175,102 @@
   </div>
 </div>
 
-{% stylesheet %}
-  .product-page {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-
-  .product-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 4rem;
-  }
-
-  @media (max-width: 768px) {
-    .product-main {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .product-images {
-    display: grid;
-    gap: 1rem;
-  }
-
-  .product-image {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .product-info {
-    position: sticky;
-    top: 2rem;
-    height: fit-content;
-  }
-
-  .product-vendor {
-    font-size: 0.875rem;
-    color: #4D4D4D;
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
-  }
-
-  .product-title {
-    font-size: 2rem;
-    color: #4D4D4D;
-    margin-bottom: 1rem;
-  }
-
-  .product-price {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .product-price__current {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #4D4D4D;
-  }
-
-  .product-price__compare {
-    font-size: 1.25rem;
-    color: #4D4D4D;
-    opacity: 0.5;
-    text-decoration: line-through;
-  }
-
-  .product-description {
-    color: #4D4D4D;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-
-  .product-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .product-variants__select,
-  .product-quantity__input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #E8E8E1;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-
-  .product-form__submit {
-    padding: 1rem 2rem;
-    background: #FBB03B;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .product-form__submit:hover {
-    background: #E29F2A;
-  }
-
-  /* Related Products */
-  .related-products {
-    margin-top: 4rem;
-    padding-top: 3rem;
-    border-top: 2px solid #E8E8E1;
-  }
-
-  .related-products__title {
-    font-size: 1.75rem;
-    color: #4D4D4D;
-    margin-bottom: 2rem;
-  }
-
-  .related-products__main {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    .related-products__main {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .related-products__filters {
-    position: sticky;
-    top: 2rem;
-    height: fit-content;
-  }
-
-  .filter-group--compact {
-    border-bottom: 1px solid #E8E8E1;
-    padding: 0.75rem 0;
-  }
-
-  .filter-group__toggle {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: none;
-    border: none;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #4D4D4D;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  .filter-group__content {
-    margin-top: 0.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .filter-option {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    font-size: 0.875rem;
-  }
-
-  .filter-option__checkbox {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-  }
-
-  .filter-option__label {
-    flex: 1;
-    color: #4D4D4D;
-  }
-
-  .filter-option__count {
-    color: #4D4D4D;
-    opacity: 0.6;
-  }
-
-  .price-range {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .price-range__input {
-    flex: 1;
-    padding: 0.375rem;
-    border: 1px solid #E8E8E1;
-    border-radius: 4px;
-    font-size: 0.875rem;
-  }
-
-  .loading-state,
-  .empty-state {
-    text-align: center;
-    padding: 3rem 2rem;
-    color: #4D4D4D;
-  }
-
-  .loading-spinner {
-    width: 36px;
-    height: 36px;
-    border: 3px solid #E8E8E1;
-    border-top-color: #FBB03B;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 1rem;
-  }
-
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-
-  .hidden {
-    display: none !important;
-  }
-{% endstylesheet %}
-
 {% schema %}
 {
-  "name": "Product with Related",
+  "name": "Product",
+  "tag": "section",
+  "class": "section-product",
   "settings": [
+    {
+      "type": "header",
+      "content": "Product Images"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_image_zoom",
+      "label": "Enable image zoom on hover",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        { "value": "1:1", "label": "Square (1:1)" },
+        { "value": "4:3", "label": "Landscape (4:3)" },
+        { "value": "16:9", "label": "Widescreen (16:9)" }
+      ],
+      "default": "1:1"
+    },
+    {
+      "type": "header",
+      "content": "Product Information"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor/brand",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sku",
+      "label": "Show SKU",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_inventory",
+      "label": "Show inventory count",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Buy Buttons"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dynamic_checkout",
+      "label": "Show dynamic checkout buttons",
+      "default": true,
+      "info": "Shows express checkout buttons (Apple Pay, Google Pay, etc.)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Show quantity selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Related Products"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_related_products",
+      "label": "Show related products",
+      "default": true
+    },
     {
       "type": "range",
       "id": "related_products_count",
-      "label": "Related products to show",
+      "label": "Number of related products",
       "min": 4,
       "max": 20,
       "step": 4,
       "default": 12
+    },
+    {
+      "type": "checkbox",
+      "id": "show_filters",
+      "label": "Show filter sidebar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "related_products_title",
+      "label": "Related products heading",
+      "default": "Related Products"
     }
   ],
   "disabled_on": {
