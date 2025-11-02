@@ -30,6 +30,25 @@
 
     {%- # Search Engine -%}
     <div class="search-hero__search">
+      
+      {%- # Market Category Filters -%}
+      {%- if section.settings.show_categories -%}
+        <div class="search-categories" role="group" aria-label="{{ 'general.search.categories' | t }}">
+          {%- assign categories = section.settings.category_list | split: ',' -%}
+          {%- for category in categories -%}
+            {%- assign cat_clean = category | strip -%}
+            <button 
+              type="button" 
+              class="category-pill" 
+              data-category="{{ cat_clean | handleize }}"
+              aria-label="{{ 'general.search.filter_by' | t }} {{ cat_clean }}"
+            >
+              {{ cat_clean }}
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
       <form action="{{ routes.search_url }}" method="get" class="search-form" role="search" aria-label="{{ 'general.search.title' | t }}">
         
         {%- # Search Input -%}
@@ -170,19 +189,19 @@
       "type": "text",
       "id": "headline",
       "label": "Headline",
-      "default": "Find Your Perfect Floor Solution"
+      "default": "Find Your Perfect Solution"
     },
     {
       "type": "text",
       "id": "subheadline",
       "label": "Subheadline",
-      "default": "Search from thousands of products across 19 premium brands"
+      "default": "Search thousands of products across floors, walls, bathrooms, kitchens & more"
     },
     {
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder text",
-      "default": "Search for products, brands, or categories..."
+      "default": "Search products, brands, categories..."
     },
     {
       "type": "header",
@@ -215,6 +234,20 @@
     },
     {
       "type": "checkbox",
+      "id": "show_categories",
+      "label": "Show category filters",
+      "default": true,
+      "info": "Display market category pills above search"
+    },
+    {
+      "type": "textarea",
+      "id": "category_list",
+      "label": "Category list",
+      "default": "Floors, Walls, Bathrooms, Kitchens, Outdoor, Tools & Adhesives",
+      "info": "Comma-separated list of product categories/markets"
+    },
+    {
+      "type": "checkbox",
       "id": "enable_voice_search",
       "label": "Enable voice search",
       "default": false,
@@ -230,7 +263,7 @@
       "type": "textarea",
       "id": "trending_searches",
       "label": "Trending searches",
-      "default": "laminate flooring, vinyl planks, wood care, tile adhesive, stone sealer",
+      "default": "bathroom tiles, kitchen faucets, wall panels, outdoor pavers, adhesives, sealants",
       "info": "Comma-separated list of trending search terms"
     },
     {
@@ -275,8 +308,8 @@
     {
       "name": "Search Hero",
       "settings": {
-        "headline": "Find Your Perfect Floor Solution",
-        "subheadline": "Search from thousands of products across 19 premium brands"
+        "headline": "Find Your Perfect Solution",
+        "subheadline": "Search thousands of products across floors, walls, bathrooms, kitchens & more"
       }
     }
   ]

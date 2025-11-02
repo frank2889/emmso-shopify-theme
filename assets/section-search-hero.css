@@ -99,10 +99,62 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* ============================================================================
-   Header & Title
+   Market Category Filters
+   ========================================================================= */
+
+.search-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  color: var(--search-hero-text-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.category-pill:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-pill:focus-visible {
+  outline: 2px solid var(--search-hero-text-color);
+  outline-offset: 2px;
+}
+
+.category-pill.is-active {
+  background: var(--search-hero-text-color);
+  color: var(--search-hero-gradient-mid);
+  border-color: var(--search-hero-text-color);
+  font-weight: 600;
+}
+
+/* ============================================================================
+   Header
    ========================================================================= */
 
 .search-hero__header {
@@ -456,6 +508,16 @@
 
   .search-hero__title {
     font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .search-categories {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .category-pill {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
   }
 
   .search-input {
