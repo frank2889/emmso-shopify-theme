@@ -1,4 +1,9 @@
-/** Critical CSS for the theme. This file is included on every page. */
+/**
+ * EMMSO Critical CSS
+ * Essential styles loaded on every page
+ * Version: 2.3
+ * Last Updated: November 2, 2025
+ */
 
 /* Reset styles inspired by https://www.joshwcomeau.com/css/custom-css-reset/ */
 * {
@@ -31,17 +36,17 @@ input,
 textarea,
 select {
   font: inherit;
-  border-radius: var(--style-border-radius-inputs);
+  border-radius: var(--radius-md);
 }
 
 select {
-  background-color: var(--color-background);
-  color: currentcolor;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
 }
 
 dialog {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
 }
 
 p {
@@ -73,9 +78,10 @@ p:empty {
 
 /** Theme styles below */
 body {
-  font-family: var(--font-primary--family);
+  font-family: var(--font-primary);
   background-color: var(--color-background);
-  color: var(--color-foreground);
+  color: var(--color-text-primary);
+  line-height: var(--leading-normal);
 }
 
 /** Section layout utilities */
@@ -93,10 +99,10 @@ body {
  */
 .shopify-section {
   --content-width: min(
-    calc(var(--page-width) - var(--page-margin) * 2),
-    calc(100% - var(--page-margin) * 2)
+    calc(var(--container-max) - var(--space-8) * 2),
+    calc(100% - var(--space-4) * 2)
   );
-  --content-margin: minmax(var(--page-margin), 1fr);
+  --content-margin: minmax(var(--space-4), 1fr);
   --content-grid: var(--content-margin) var(--content-width) var(--content-margin);
 
   /* This is required to make <img> elements work as background images */
@@ -104,6 +110,18 @@ body {
   grid-template-columns: var(--content-grid);
   display: grid;
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .shopify-section {
+    --content-margin: minmax(var(--space-6), 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .shopify-section {
+    --content-margin: minmax(var(--space-8), 1fr);
+  }
 }
 
 /* Child elements, by default, are constrained to the central column of the grid. */
