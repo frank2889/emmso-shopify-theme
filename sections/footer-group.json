@@ -1,20 +1,48 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "footer",
   "name": "t:general.footer",
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "footer-menu-1": {
+          "type": "menu",
+          "settings": {
+            "heading": "Shop",
+            "menu": "footer"
+          }
+        },
+        "footer-menu-2": {
+          "type": "menu",
+          "settings": {
+            "heading": "Customer Service",
+            "menu": "footer"
+          }
+        },
+        "footer-menu-3": {
+          "type": "menu",
+          "settings": {
+            "heading": "Company",
+            "menu": "footer"
+          }
+        },
+        "footer-newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "subtext": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "footer-menu-1",
+        "footer-menu-2",
+        "footer-menu-3",
+        "footer-newsletter"
+      ],
       "settings": {
-        "menu": "",
+        "copyright_text": "",
+        "show_powered_by": false,
         "show_payment_icons": true
       }
     }
