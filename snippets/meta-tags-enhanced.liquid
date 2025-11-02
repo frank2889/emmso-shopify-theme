@@ -64,10 +64,10 @@
 <meta name="description" content="
   {%- if is_home -%}
     {% case current_lang %}
-      {% when 'nl' %}Specialist in bouw & interieur producten voor {{ current_country }}. Van vloeren tot badkamers, keukens en buitenruimtes. 19 topmerken. Snelle levering via Wuunder. Bestel nu!
-      {% when 'de' %}Spezialist für Bau & Interieur Produkte in {{ current_country }}. Von Böden bis Badezimmer, Küchen und Außenbereiche. 19 Top-Marken. Schnelle Lieferung über Wuunder. Jetzt bestellen!
-      {% when 'fr' %}Spécialiste en produits construction & intérieur pour {{ current_country }}. Des sols aux salles de bains, cuisines et espaces extérieurs. 19 grandes marques. Livraison rapide via Wuunder. Commandez maintenant!
-      {% else %}Construction & interior products specialist for {{ current_country }}. From floors to bathrooms, kitchens and outdoor spaces. 19 top brands. Fast delivery via Wuunder. Order now!
+      {% when 'nl' %}Ontdek duizenden premium producten van 19 topmerken voor {{ current_country }}. Professionele kwaliteit, snelle levering via Wuunder. Bestel nu!
+      {% when 'de' %}Entdecken Sie Tausende Premium-Produkte von 19 Top-Marken für {{ current_country }}. Professionelle Qualität, schnelle Lieferung über Wuunder. Jetzt bestellen!
+      {% when 'fr' %}Découvrez des milliers de produits premium de 19 grandes marques pour {{ current_country }}. Qualité professionnelle, livraison rapide via Wuunder. Commandez maintenant!
+      {% else %}Discover thousands of premium products from 19 top brands for {{ current_country }}. Professional quality, fast delivery via Wuunder. Order now!
     {% endcase %}
   {%- elsif is_product and product.description -%}
     {{ product.description | strip_html | truncate: 155 }}
@@ -81,10 +81,10 @@
 {%- comment -%} Keywords - Multilingual {%- endcomment -%}
 <meta name="keywords" content="
   {%- case current_lang -%}
-    {%- when 'nl' -%}bouw, interieur, vloeren, badkamers, keukens, wandpanelen, buitenterras, tegels, sanitair, kranen, bona, woca, lithofin, {{ current_country | downcase }}
-    {%- when 'de' -%}bau, interieur, böden, badezimmer, küchen, wandpaneele, außenbereich, fliesen, sanitär, armaturen, bona, woca, lithofin, {{ current_country | downcase }}
-    {%- when 'fr' -%}construction, intérieur, sols, salles de bains, cuisines, panneaux muraux, terrasse extérieure, carrelage, sanitaire, robinetterie, bona, woca, lithofin, {{ current_country | downcase }}
-    {%- else -%}construction, interior, floors, bathrooms, kitchens, wall panels, outdoor patio, tiles, sanitary, faucets, bona, woca, lithofin, {{ current_country | downcase }}
+    {%- when 'nl' -%}premium producten, professionele kwaliteit, bona, woca, lithofin, mapei, fila, kerakoll, {{ current_country | downcase }}
+    {%- when 'de' -%}premium-produkte, professionelle qualität, bona, woca, lithofin, mapei, fila, kerakoll, {{ current_country | downcase }}
+    {%- when 'fr' -%}produits premium, qualité professionnelle, bona, woca, lithofin, mapei, fila, kerakoll, {{ current_country | downcase }}
+    {%- else -%}premium products, professional quality, bona, woca, lithofin, mapei, fila, kerakoll, {{ current_country | downcase }}
   {%- endcase -%}
 ">
 
