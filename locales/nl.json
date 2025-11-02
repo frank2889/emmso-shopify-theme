@@ -2,7 +2,7 @@
   "general": {
     "search": {
       "title": "Zoeken",
-      "placeholder": "Zoek producten, merken of categorieën...",
+      "placeholder": "Zoek producten, merken, categorieën...",
       "submit": "Zoeken",
       "searching": "Zoeken...",
       "view_all": "Bekijk alle resultaten",
@@ -11,7 +11,7 @@
       "recent": "Recente zoekopdrachten",
       "suggestions": "Suggesties",
       "search_for": "Zoek naar",
-      "description": "Doorzoek onze complete productcatalogus voor alle markten",
+      "description": "Doorzoek onze catalogus voor alle markten",
       "stats": "Statistieken",
       "products": "Producten",
       "brands": "Merken",

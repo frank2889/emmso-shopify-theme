@@ -2,7 +2,7 @@
   "general": {
     "search": {
       "title": "Search",
-      "placeholder": "Search products, brands or categories...",
+      "placeholder": "Search products, brands, categories...",
       "submit": "Search",
       "searching": "Searching...",
       "view_all": "View all results",
@@ -11,7 +11,7 @@
       "recent": "Recent searches",
       "suggestions": "Suggestions",
       "search_for": "Search for",
-      "description": "Search our complete product catalog across all markets",
+      "description": "Search our complete catalog across all markets",
       "stats": "Statistics",
       "products": "Products",
       "brands": "Brands",
