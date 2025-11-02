@@ -1,0 +1,124 @@
+/**
+ * Predictive Search Component
+ * Handles real-time search suggestions
+ */
+
+class PredictiveSearch extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('input[type="search"]');
+    this.resultsContainer = this.querySelector('[data-predictive-search-results]');
+    this.searchForm = this.querySelector('form');
+    
+    if (!this.input) return;
+    
+    this.setupEventListeners();
+  }
+
+  setupEventListeners() {
+    let debounceTimer;
+    
+    this.input.addEventListener('input', (event) => {
+      clearTimeout(debounceTimer);
+      const searchTerm = event.target.value.trim();
+      
+      if (searchTerm.length < 2) {
+        this.close();
+        return;
+      }
+      
+      debounceTimer = setTimeout(() => {
+        this.getSearchResults(searchTerm);
+      }, 300);
+    });
+    
+    // Close on escape
+    this.input.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        this.close();
+      }
+    });
+    
+    // Close when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!this.contains(event.target)) {
+        this.close();
+      }
+    });
+  }
+
+  getSearchResults(searchTerm) {
+    const url = `${window.Shopify.routes.root}search/suggest.json?q=${encodeURIComponent(searchTerm)}&resources[type]=product&resources[limit]=6`;
+    
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        this.renderResults(data.resources.results);
+      })
+      .catch(error => {
+        console.error('Predictive search error:', error);
+      });
+  }
+
+  renderResults(results) {
+    if (!results || !results.products || results.products.length === 0) {
+      this.close();
+      return;
+    }
+
+    const products = results.products;
+    
+    let html = '<div class="predictive-search__results">';
+    
+    products.forEach(product => {
+      const imageUrl = product.featured_image ? product.featured_image : '';
+      const price = this.formatMoney(product.price);
+      
+      html += `
+        <a href="${product.url}" class="predictive-search__item">
+          ${imageUrl ? `<img src="${imageUrl}" alt="${product.title}" class="predictive-search__image" loading="lazy">` : ''}
+          <div class="predictive-search__content">
+            <div class="predictive-search__title">${product.title}</div>
+            ${product.vendor ? `<div class="predictive-search__vendor">${product.vendor}</div>` : ''}
+            <div class="predictive-search__price">${price}</div>
+          </div>
+        </a>
+      `;
+    });
+    
+    html += `
+      <div class="predictive-search__footer">
+        <a href="${window.Shopify.routes.root}search?q=${encodeURIComponent(this.input.value)}" class="predictive-search__view-all">
+          Bekijk alle resultaten
+        </a>
+      </div>
+    `;
+    
+    html += '</div>';
+    
+    if (this.resultsContainer) {
+      this.resultsContainer.innerHTML = html;
+      this.open();
+    }
+  }
+
+  formatMoney(cents) {
+    return '€' + (cents / 100).toFixed(2).replace('.', ',');
+  }
+
+  open() {
+    if (this.resultsContainer) {
+      this.resultsContainer.classList.add('is-visible');
+      this.resultsContainer.removeAttribute('hidden');
+    }
+  }
+
+  close() {
+    if (this.resultsContainer) {
+      this.resultsContainer.classList.remove('is-visible');
+      this.resultsContainer.setAttribute('hidden', '');
+    }
+  }
+}
+
+customElements.define('predictive-search', PredictiveSearch);

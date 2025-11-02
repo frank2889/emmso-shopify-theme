@@ -6,6 +6,8 @@
 {% endcomment %}
 
 {{ 'section-search-hero.css' | asset_url | stylesheet_tag }}
+{{ 'component-predictive-search.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'search-hero.js' | asset_url }}" defer></script>
 
 {%- # Set CSS custom properties from section settings -%}
@@ -52,23 +54,23 @@
 
       <form action="{{ routes.search_url }}" method="get" class="search-form" role="search" aria-label="{{ 'general.search.title' | t }}">
         
-        {%- # Search Input -%}
-        <div class="search-input-wrapper">
-          <label for="search-hero-input" class="visually-hidden">{{ 'general.search.placeholder' | t }}</label>
-          <input 
-            type="search" 
-            name="q" 
-            id="search-hero-input"
-            class="search-input"
-            placeholder="{{ section.settings.search_placeholder }}"
-            autocomplete="off"
-            autocapitalize="off"
-            spellcheck="false"
-            aria-label="{{ 'general.search.placeholder' | t }}"
-            aria-describedby="search-hero-desc"
-            data-predictive-search-input
-          >
-          <span id="search-hero-desc" class="visually-hidden">{{ 'general.search.description' | t }}</span>
+        <predictive-search>
+          {%- # Search Input -%}
+          <div class="search-input-wrapper">
+            <label for="search-hero-input" class="visually-hidden">{{ 'general.search.placeholder' | t }}</label>
+            <input 
+              type="search" 
+              name="q" 
+              id="search-hero-input"
+              class="search-input"
+              placeholder="{{ section.settings.search_placeholder }}"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-label="{{ 'general.search.placeholder' | t }}"
+              aria-describedby="search-hero-desc"
+            >
+            <span id="search-hero-desc" class="visually-hidden">{{ 'general.search.description' | t }}</span>
           
           {%- # Search Icon -%}
           <button type="submit" class="search-submit" aria-label="{{ 'general.search.submit' | t }}">
@@ -95,32 +97,8 @@
         </div>
 
         {%- # Predictive Search Results -%}
-        <div class="search-results" id="search-results-{{ section.id }}" role="listbox" aria-label="{{ 'general.search.suggestions' | t }}" hidden data-predictive-search-results>
-          <div class="search-results__inner">
-            
-            {%- # Loading State -%}
-            <div class="search-loading" data-search-loading hidden>
-              <div class="search-loading__spinner" role="status">
-                <span class="visually-hidden">{{ 'general.search.searching' | t }}</span>
-              </div>
-              <p>{{ 'general.search.searching' | t }}...</p>
-            </div>
-
-            {%- # Results Container -%}
-            <div class="search-results__container" data-search-results-container>
-              {%- # Populated via JavaScript -%}
-            </div>
-
-            {%- # View All Results Link -%}
-            <div class="search-results__footer" data-search-footer hidden>
-              <a href="{{ routes.search_url }}" class="search-results__view-all" data-search-view-all>
-                {{ 'general.search.view_all' | t }}
-              </a>
-            </div>
-
-          </div>
-        </div>
-
+        <div class="search-results" data-predictive-search-results hidden></div>
+      </predictive-search>
       </form>
 
       {%- # Search Suggestions (Trending/Recent) -%}
