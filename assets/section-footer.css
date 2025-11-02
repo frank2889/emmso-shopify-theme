@@ -20,6 +20,8 @@
   color: var(--footer-text);
   border-top: 1px solid var(--footer-border);
   margin-top: auto;
+  min-height: 200px;
+  padding: 2rem 0;
 }
 
 .footer__content {

@@ -10,12 +10,22 @@
       "trending": "Trending searches",
       "recent": "Recent searches",
       "suggestions": "Suggestions",
+      "search_for": "Search for",
+      "description": "Search our product catalog",
+      "stats": "Statistics",
       "products": "Products",
       "brands": "Brands",
       "markets": "Markets",
       "clear": "Clear",
       "voice": "Voice search"
     },
+    "newsletter_form": {
+      "email_placeholder": "Email address",
+      "submit": "Subscribe",
+      "confirmation": "Thanks for subscribing!"
+    },
+    "header": "Header",
+    "footer": "Footer",
     "cart": {
       "title": "Cart"
     },
