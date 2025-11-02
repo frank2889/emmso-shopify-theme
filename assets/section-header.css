@@ -1,0 +1,262 @@
+/* ============================================================================
+   Header Section Styles
+   Following Shopify Dawn theme patterns
+   Mobile-first, accessible, performant
+   ========================================================================= */
+
+/* CSS Variables - Override in theme settings if needed */
+:root {
+  --header-height: 72px;
+  --header-height-mobile: 60px;
+  --header-border-color: var(--color-primary, #FBB03B);
+  --header-bg: var(--color-white, #FFFFFF);
+  --logo-height: 48px;
+  --logo-height-mobile: 36px;
+}
+
+/* ============================================================================
+   Header Container
+   ========================================================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--header-bg);
+  border-bottom: 2px solid var(--header-border-color);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(251, 176, 59, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.site-header.sticky-header--hidden {
+  transform: translateY(-100%);
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: var(--header-height);
+}
+
+/* ============================================================================
+   Logo
+   ========================================================================= */
+
+.site-header__logo {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.logo-link:focus-visible {
+  outline: 2px solid var(--header-border-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.logo-image {
+  height: var(--logo-height);
+  width: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #FBB03B, #FF8C42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+/* ============================================================================
+   Language Selector
+   ========================================================================= */
+
+.site-header__language {
+  flex-shrink: 0;
+}
+
+/* ============================================================================
+   Navigation Icons
+   ========================================================================= */
+
+.site-header__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: var(--color-text, #4D4D4D);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.icon-button:hover {
+  background-color: rgba(251, 176, 59, 0.1);
+  transform: scale(1.05);
+}
+
+.icon-button:focus-visible {
+  outline: 2px solid var(--header-border-color);
+  outline-offset: 2px;
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
+
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Cart Badge */
+.icon-button--cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF8C42;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 5px;
+  box-shadow: 0 2px 8px rgba(255, 140, 66, 0.4);
+  line-height: 1;
+}
+
+/* ============================================================================
+   Responsive Utilities
+   ========================================================================= */
+
+.hide-mobile {
+  display: block;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+/* ============================================================================
+   Mobile Styles (max-width: 768px)
+   ========================================================================= */
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: var(--header-height-mobile);
+    --logo-height: var(--logo-height-mobile);
+  }
+
+  .site-header__container {
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .site-header__icons {
+    gap: 0.5rem;
+  }
+
+  .icon-button {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .icon-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+}
+
+/* ============================================================================
+   Tablet Styles (max-width: 1024px)
+   ========================================================================= */
+
+@media (max-width: 1024px) {
+  .site-header__container {
+    gap: 1.25rem;
+  }
+}
+
+/* ============================================================================
+   Reduced Motion Support
+   ========================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+
+  .icon-button {
+    transition: none;
+  }
+
+  .icon-button:hover,
+  .icon-button:active {
+    transform: none;
+  }
+}
+
+/* ============================================================================
+   Print Styles
+   ========================================================================= */
+
+@media print {
+  .site-header {
+    position: static;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+  }
+
+  .site-header__icons {
+    display: none;
+  }
+}
