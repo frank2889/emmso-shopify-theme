@@ -15,40 +15,19 @@
 
 /* ============================================================================
    Shopify Section Wrapper Override
-   Ensure no padding/margin on the section wrapper
+   Make search hero full-width while keeping other sections normal
    ========================================================================= */
 
-.shopify-section.section-search-hero,
-[id^="shopify-section-"][id*="search"] .search-hero {
-  margin: 0 !important;
-  padding: 0 !important;
-  max-width: none !important;
-}
-
-.shopify-section {
-  margin: 0;
-  padding: 0;
-}
-
-/* Force main element to have no padding when search hero is present */
-main:has(.search-hero),
-#main-content:has(.search-hero) {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Force the section wrapper itself to be full width */
-#shopify-section-template--2696908737052__search_hero,
-[id*="search_hero"] {
-  margin: 0 !important;
-  padding: 0 !important;
-  max-width: none !important;
-  width: 100vw !important;
+/* Only target the search hero section wrapper specifically */
+.section-search-hero,
+#shopify-section-template--2696908737052__search_hero {
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0;
 }
 
 /* ============================================================================
