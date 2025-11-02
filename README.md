@@ -23,23 +23,27 @@ Custom Shopify theme for EMMSO - A pan-European flooring and pet products specia
 
 **Active Markets:**
 - 🇳🇱 **Netherlands (NL)** - Primary Market
-- 🇪 **Belgium** - Dutch (NL) & French (FR)
+- ��🇪 **Belgium** - Dutch (NL) & French (FR)
 - 🇩🇪 **Germany (DE)**
+- 🇦🇹 **Austria (AT)** - German (DE)
 - 🇫🇷 **France (FR)**
 - 🇪🇸 **Spain (ES)**
 - 🇮🇹 **Italy (IT)**
 - 🇵🇹 **Portugal (PT)**
-- �� **Denmark (DA)**
+- 🇩🇰 **Denmark (DA)**
+- 🇮🇪 **Ireland (IE)** - English (EN)
+
+**Total Markets:** 10 European countries
 
 **Supported Languages:** 8 Languages
-- Dutch (NL) - Primary
-- English (EN) - International
-- German (DE)
-- French (FR)
-- Spanish (ES)
-- Italian (IT)
-- Portuguese (PT)
-- Danish (DA)
+- Dutch (NL) - Primary (Netherlands, Belgium)
+- English (EN) - International (Ireland, UK)
+- German (DE) - Germany, Austria
+- French (FR) - France, Belgium
+- Spanish (ES) - Spain
+- Italian (IT) - Italy
+- Portuguese (PT) - Portugal
+- Danish (DA) - Denmark
 
 **Language Detection:** Automatic via URL path (`/en/`, `/de/`, `/fr/`, etc.)
 
@@ -240,11 +244,21 @@ shopify theme publish
 
 ### Multi-Language Support
 
-This theme supports **8 European markets** with dedicated:
+This theme supports **10 European markets** with **8 languages**:
 - **Sitemaps** for each language (SEO optimization)
 - **Product feeds** for Google Shopping integration
 - **Blog content** for content marketing
 - **Locale files** for UI translations
+
+**Market-Language Mapping:**
+- Netherlands, Belgium → Dutch (NL)
+- Ireland, International → English (EN)
+- Germany, Austria → German (DE)
+- France, Belgium → French (FR)
+- Spain → Spanish (ES)
+- Italy → Italian (IT)
+- Portugal → Portuguese (PT)
+- Denmark → Danish (DA)
 
 ### Key Features
 
@@ -255,6 +269,7 @@ This theme supports **8 European markets** with dedicated:
 - Theme editor integration
 
 ✅ **Multi-Market Optimization**
+- 10 markets across Europe (NL, BE, DE, AT, FR, ES, IT, PT, DK, IE)
 - 8-language support (NL, EN, DE, FR, ES, IT, PT, DA)
 - SEO-optimized sitemaps per market
 - Google Shopping feeds per language
@@ -430,7 +445,7 @@ git push origin main
 ### EMMSO-Specific
 - **Repository:** https://github.com/frank2889/emmso-shopify-theme
 - **Store:** vloerproducten.myshopify.com
-- **Markets:** 8 European countries
+- **Markets:** 10 European countries (NL, BE, DE, AT, FR, ES, IT, PT, DK, IE)
 - **Languages:** NL, EN, DE, FR, ES, IT, PT, DA
 
 ---
