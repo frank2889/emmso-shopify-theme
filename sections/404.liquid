@@ -1,23 +1,201 @@
 {% comment %}
-  This section is used in the 404 template to render page shown when customers
-  enter an invalid store URL.
-
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/404
+  404 Section - Page not found with search suggestions
+  
+  Features:
+  - Animated error illustration
+  - Search bar for finding products
+  - Popular products carousel
+  - Recent searches suggestions
+  - Back navigation links
+  
+  Dependencies:
+  - assets/404.css (error page styling)
+  - snippets/css-variables.liquid (color system)
 {% endcomment %}
 
-<h1>{{ '404.title' | t }}</h1>
+{% render 'css-variables' %}
+<link rel="stylesheet" href="{{ '404.css' | asset_url }}">
 
-<p>
-  {{ '404.not_found' | t }}
-</p>
+<div class="error-404">
+  <div class="error-404__container">
+    {%- comment %} Error Icon/Illustration {% endcomment -%}
+    <div class="error-404__icon">
+      <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" stroke="currentColor" stroke-width="4" opacity="0.2"/>
+        <text x="100" y="130" font-size="72" font-weight="bold" text-anchor="middle" fill="currentColor">404</text>
+      </svg>
+    </div>
 
-<a href="{{ routes.all_products_collection_url }}">
-  {{ '404.back_to_shopping' | t }}
-</a>
+    {%- comment %} Error Title & Message {% endcomment -%}
+    <div class="error-404__content">
+      <h1 class="error-404__title">
+        {{ section.settings.title | default: '404.title' | t }}
+      </h1>
+      
+      <p class="error-404__message">
+        {{ section.settings.message | default: '404.message' | t }}
+      </p>
+    </div>
+
+    {%- comment %} Search Bar {% endcomment -%}
+    {%- if section.settings.show_search -%}
+      <div class="error-404__search">
+        <h2 class="error-404__search-title">{{ '404.search_title' | t }}</h2>
+        <form action="{{ routes.search_url }}" method="get" class="error-404__search-form">
+          <label for="error-search-input" class="visually-hidden">
+            {{ 'general.search.placeholder' | t }}
+          </label>
+          <input 
+            type="search" 
+            name="q" 
+            id="error-search-input"
+            class="error-404__search-input"
+            placeholder="{{ 'general.search.placeholder' | t }}"
+            autocomplete="off"
+          >
+          <button type="submit" class="error-404__search-button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            {{ 'general.search.submit' | t }}
+          </button>
+        </form>
+      </div>
+    {%- endif -%}
+
+    {%- comment %} Helpful Links {% endcomment -%}
+    <div class="error-404__links">
+      <a href="{{ routes.root_url }}" class="error-404__link error-404__link--primary">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M7 17L3 13l4-4M3 13h10a4 4 0 0 0 4-4V2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        {{ '404.back_to_home' | t }}
+      </a>
+
+      {%- if section.settings.show_collections_link -%}
+        <a href="{{ routes.collections_url }}" class="error-404__link">
+          {{ '404.browse_collections' | t }}
+        </a>
+      {%- endif -%}
+
+      {%- if section.settings.show_contact_link -%}
+        <a href="{{ pages['contact'].url | default: '/pages/contact' }}" class="error-404__link">
+          {{ '404.contact_us' | t }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- comment %} Popular Products {% endcomment -%}
+    {%- if section.settings.show_popular_products -%}
+      {%- assign popular_collection = collections[section.settings.popular_collection] -%}
+      {%- if popular_collection and popular_collection.products.size > 0 -%}
+        <div class="error-404__products">
+          <h2 class="error-404__products-title">{{ '404.popular_products' | t }}</h2>
+          <div class="error-404__products-grid">
+            {%- for product in popular_collection.products limit: 4 -%}
+              <article class="error-404-product-card">
+                <a href="{{ product.url }}" class="error-404-product-card__image">
+                  {%- if product.featured_image -%}
+                    {% render 'image',
+                      image: product.featured_image,
+                      sizes: '(min-width: 990px) 220px, calc((100vw - 3rem) / 2)',
+                      loading: 'lazy'
+                    %}
+                  {%- endif -%}
+                </a>
+                <div class="error-404-product-card__content">
+                  <h3 class="error-404-product-card__title">
+                    <a href="{{ product.url }}">{{ product.title }}</a>
+                  </h3>
+                  <p class="error-404-product-card__price">
+                    {{ product.price | money }}
+                  </p>
+                </div>
+              </article>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- comment %} Error Code {% endcomment -%}
+    {%- if section.settings.show_error_code -%}
+      <p class="error-404__code">{{ '404.error_code' | t: code: '404' }}</p>
+    {%- endif -%}
+  </div>
+</div>
 
 {% schema %}
 {
   "name": "t:general.404",
-  "settings": []
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.404.settings.header__content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.404.settings.title.label",
+      "default": "Page Not Found"
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "label": "t:sections.404.settings.message.label",
+      "default": "The page you're looking for doesn't exist or has been moved."
+    },
+    {
+      "type": "header",
+      "content": "t:sections.404.settings.header__search"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "t:sections.404.settings.show_search.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.404.settings.header__links"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collections_link",
+      "label": "t:sections.404.settings.show_collections_link.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_contact_link",
+      "label": "t:sections.404.settings.show_contact_link.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.404.settings.header__products"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_popular_products",
+      "label": "t:sections.404.settings.show_popular_products.label",
+      "default": true
+    },
+    {
+      "type": "collection",
+      "id": "popular_collection",
+      "label": "t:sections.404.settings.popular_collection.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.404.settings.header__misc"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_error_code",
+      "label": "t:sections.404.settings.show_error_code.label",
+      "default": false
+    }
+  ]
 }
 {% endschema %}

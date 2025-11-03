@@ -69,12 +69,55 @@
     },
     "404": {
       "title": "Page Not Found",
-      "subtext": "The page you were looking for does not exist."
+      "subtext": "The page you were looking for does not exist.",
+      "message": "The page you're looking for doesn't exist or has been moved.",
+      "search_title": "Try searching for what you need",
+      "back_to_home": "Back to Home",
+      "browse_collections": "Browse Collections",
+      "contact_us": "Contact Us",
+      "popular_products": "Popular Products",
+      "error_code": "Error Code: {{ code }}",
+      "back_to_shopping": "Back to Shopping"
     },
     "article": "Article",
     "product": "Product",
     "collection": "Collection",
-    "blog": "Blog"
+    "blog": "Blog",
+    "page": "Page",
+    "password": "Password"
+  },
+  "page": {
+    "updated": "Last updated",
+    "table_of_contents": "Table of Contents",
+    "loading_toc": "Loading table of contents...",
+    "no_headings": "No headings found in this page.",
+    "contact_form_title": "Send us a message",
+    "contact_success": "Thank you for contacting us. We'll get back to you soon!",
+    "contact_name": "Name",
+    "contact_email": "Email",
+    "contact_phone": "Phone (optional)",
+    "contact_message": "Message",
+    "contact_submit": "Send Message",
+    "related_pages": "Related Pages"
+  },
+  "password": {
+    "title": "Password Protected",
+    "heading": "Opening Soon",
+    "coming_soon": "Coming Soon",
+    "password": "Password",
+    "password_placeholder": "Enter password",
+    "enter": "Enter",
+    "enter_using_password": "Enter using password",
+    "notify_me": "Get notified when we launch",
+    "email_placeholder": "Enter your email",
+    "notify_submit": "Notify Me",
+    "notify_success": "Thanks! We'll notify you when we launch.",
+    "store_owner": "Are you the store owner? Log in here",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "launched": "We're Live!"
   },
   "blog": {
     "article_count": {

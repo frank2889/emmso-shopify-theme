@@ -1,17 +1,321 @@
 {% comment %}
-  This section is used in the page template to render store pages like About us
-  or Contact us.
-
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/page
+  Page Section - Flexible content pages (About, Contact, FAQ, etc.)
+  
+  Features:
+  - Hero image option
+  - Reading-optimized typography
+  - Table of contents (auto-generated from H2 tags)
+  - Breadcrumb navigation
+  - Related pages
+  - Contact form integration
+  
+  Dependencies:
+  - assets/page.css (page styling)
+  - snippets/css-variables.liquid (color system)
 {% endcomment %}
 
-<h1>{{ page.title }}</h1>
+{% render 'css-variables' %}
+<link rel="stylesheet" href="{{ 'page.css' | asset_url }}">
 
-{{ page.content }}
+<article class="page" data-page-handle="{{ page.handle }}">
+  {%- comment %} Hero Image {% endcomment -%}
+  {%- if section.settings.show_hero_image and page.image -%}
+    <div class="page__hero">
+      {% render 'image',
+        image: page.image,
+        sizes: '100vw',
+        loading: 'eager'
+      %}
+    </div>
+  {%- endif -%}
+
+  <div class="page__container">
+    {%- comment %} Breadcrumb {% endcomment -%}
+    {%- if section.settings.show_breadcrumb -%}
+      <nav class="page__breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+        <span class="page__breadcrumb-separator">/</span>
+        <span>{{ page.title }}</span>
+      </nav>
+    {%- endif -%}
+
+    {%- comment %} Page Header {% endcomment -%}
+    <header class="page__header">
+      <h1 class="page__title">{{ page.title }}</h1>
+      
+      {%- if section.settings.show_published_date and page.published_at -%}
+        <time datetime="{{ page.published_at | date: '%Y-%m-%d' }}" class="page__date">
+          {{ 'page.updated' | t }}: {{ page.published_at | date: format: 'abbreviated_date' }}
+        </time>
+      {%- endif -%}
+    </header>
+
+    <div class="page__layout">
+      {%- comment %} Table of Contents (if enabled) {% endcomment -%}
+      {%- if section.settings.show_table_of_contents -%}
+        <aside class="page__toc">
+          <div class="page__toc-sticky">
+            <h2 class="page__toc-title">{{ 'page.table_of_contents' | t }}</h2>
+            <nav class="page__toc-nav" id="page-toc">
+              {%- comment %} TOC will be populated via JavaScript {% endcomment -%}
+              <p class="page__toc-loading">{{ 'page.loading_toc' | t }}</p>
+            </nav>
+          </div>
+        </aside>
+      {%- endif -%}
+
+      {%- comment %} Page Content {% endcomment -%}
+      <div class="page__content">
+        <div class="page__body rte">
+          {{ page.content }}
+        </div>
+
+        {%- comment %} Contact Form (if page handle is 'contact') {% endcomment -%}
+        {%- if page.handle == 'contact' and section.settings.show_contact_form -%}
+          <div class="page__contact-form">
+            <h2>{{ 'page.contact_form_title' | t }}</h2>
+            
+            {% form 'contact' %}
+              {%- if form.posted_successfully? -%}
+                <div class="page__form-success" role="status">
+                  {{ 'page.contact_success' | t }}
+                </div>
+              {%- endif -%}
+
+              {{ form.errors | default_errors }}
+
+              <div class="page__form-row">
+                <div class="page__form-field">
+                  <label for="contact-name">
+                    {{ 'page.contact_name' | t }}
+                    <span class="required">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    name="contact[name]" 
+                    id="contact-name"
+                    value="{{ form.name }}"
+                    required
+                    autocomplete="name"
+                  >
+                </div>
+
+                <div class="page__form-field">
+                  <label for="contact-email">
+                    {{ 'page.contact_email' | t }}
+                    <span class="required">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    name="contact[email]" 
+                    id="contact-email"
+                    value="{{ form.email }}"
+                    required
+                    autocomplete="email"
+                  >
+                </div>
+              </div>
+
+              <div class="page__form-field">
+                <label for="contact-phone">
+                  {{ 'page.contact_phone' | t }}
+                </label>
+                <input 
+                  type="tel" 
+                  name="contact[phone]" 
+                  id="contact-phone"
+                  value="{{ form.phone }}"
+                  autocomplete="tel"
+                >
+              </div>
+
+              <div class="page__form-field">
+                <label for="contact-message">
+                  {{ 'page.contact_message' | t }}
+                  <span class="required">*</span>
+                </label>
+                <textarea 
+                  name="contact[body]" 
+                  id="contact-message"
+                  rows="6"
+                  required
+                >{{ form.body }}</textarea>
+              </div>
+
+              <button type="submit" class="page__form-submit">
+                {{ 'page.contact_submit' | t }}
+              </button>
+            {% endform %}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- comment %} Related Pages {% endcomment -%}
+    {%- if section.settings.show_related_pages and section.blocks.size > 0 -%}
+      <div class="page__related">
+        <h2 class="page__related-title">{{ 'page.related_pages' | t }}</h2>
+        <div class="page__related-grid">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'related_page' -%}
+                {%- assign related_page = pages[block.settings.page] -%}
+                {%- if related_page -%}
+                  <a href="{{ related_page.url }}" class="page-card" {{ block.shopify_attributes }}>
+                    {%- if block.settings.show_image and related_page.image -%}
+                      <div class="page-card__image">
+                        {% render 'image',
+                          image: related_page.image,
+                          sizes: '(min-width: 990px) 300px, calc((100vw - 3rem) / 2)',
+                          loading: 'lazy'
+                        %}
+                      </div>
+                    {%- endif -%}
+                    <div class="page-card__content">
+                      <h3 class="page-card__title">{{ related_page.title }}</h3>
+                      {%- if block.settings.show_excerpt -%}
+                        <p class="page-card__excerpt">{{ related_page.content | strip_html | truncate: 120 }}</p>
+                      {%- endif -%}
+                    </div>
+                  </a>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</article>
+
+{%- comment %} Table of Contents Script {% endcomment -%}
+{%- if section.settings.show_table_of_contents -%}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const content = document.querySelector('.page__body');
+      const toc = document.getElementById('page-toc');
+      
+      if (!content || !toc) return;
+      
+      const headings = content.querySelectorAll('h2, h3');
+      
+      if (headings.length === 0) {
+        toc.innerHTML = '<p class="page__toc-empty">{{ 'page.no_headings' | t }}</p>';
+        return;
+      }
+      
+      const tocList = document.createElement('ul');
+      tocList.className = 'page__toc-list';
+      
+      headings.forEach((heading, index) => {
+        const id = heading.id || 'heading-' + index;
+        heading.id = id;
+        
+        const li = document.createElement('li');
+        li.className = 'page__toc-item page__toc-item--' + heading.tagName.toLowerCase();
+        
+        const link = document.createElement('a');
+        link.href = '#' + id;
+        link.textContent = heading.textContent;
+        link.className = 'page__toc-link';
+        
+        li.appendChild(link);
+        tocList.appendChild(li);
+      });
+      
+      toc.innerHTML = '';
+      toc.appendChild(tocList);
+    });
+  </script>
+{%- endif -%}
 
 {% schema %}
 {
   "name": "t:general.page",
-  "settings": []
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.page.settings.header__hero"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hero_image",
+      "label": "t:sections.page.settings.show_hero_image.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.page.settings.header__navigation"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumb",
+      "label": "t:sections.page.settings.show_breadcrumb.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_table_of_contents",
+      "label": "t:sections.page.settings.show_table_of_contents.label",
+      "info": "t:sections.page.settings.show_table_of_contents.info",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.page.settings.header__meta"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_published_date",
+      "label": "t:sections.page.settings.show_published_date.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.page.settings.header__contact"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_contact_form",
+      "label": "t:sections.page.settings.show_contact_form.label",
+      "info": "t:sections.page.settings.show_contact_form.info",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.page.settings.header__related"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_related_pages",
+      "label": "t:sections.page.settings.show_related_pages.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "related_page",
+      "name": "t:sections.page.blocks.related_page.name",
+      "settings": [
+        {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.page.blocks.related_page.settings.page.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image",
+          "label": "t:sections.page.blocks.related_page.settings.show_image.label",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_excerpt",
+          "label": "t:sections.page.blocks.related_page.settings.show_excerpt.label",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6
 }
 {% endschema %}
