@@ -6,7 +6,7 @@ Collection of specialized AI analysts for comprehensive Shopify theme analysis.
 """
 
 from .sarah import SarahSEOAnalyst
-from .eva import EvaAnalyticsAnalyst
+# from .eva import EvaAnalyticsAnalyst  # Temporarily disabled - Google Analytics dependency
 from .mike import MikeConversionAnalyst
 
 # Placeholder imports for other analysts (to be implemented)
@@ -15,9 +15,10 @@ try:
 except ImportError:
     MarcusPerformanceAnalyst = None
 
-try:
-    from .jessica import JessicaUXAnalyst
-except ImportError:
+# Disabled due to Google Analytics dependency
+# try:
+#     from .jessica import JessicaUXAnalyst
+# except ImportError:
     JessicaUXAnalyst = None
 
 try:

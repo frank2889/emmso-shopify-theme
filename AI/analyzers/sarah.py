@@ -17,10 +17,13 @@ class SarahSEOAnalyst:
         self.specialty = "SEO"
     
     def analyze(self, site_data):
-        print(f"    Sarah: KRITISCHE SEO analyse - Preview URL + Theme Files")
+        print(f"    Sarah: KRITISCHE SEO analyse - Preview URL + Theme Files + Project Goals")
         
         # Get preview URL from site_data
         preview_url = site_data.get('shopify_preview_url', 'https://vloerproducten.myshopify.com/?preview_theme_id=main')
+        
+        # Get project goals
+        project_goals = site_data.get('project_goals', {})
         
         # Haal echte PageSpeed data op van preview URL
         pagespeed_data = self._get_pagespeed_insights(preview_url)
@@ -31,11 +34,14 @@ class SarahSEOAnalyst:
         # Analyseer theme files voor SEO
         theme_seo_analysis = self._analyze_theme_seo_files(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO'))
         
-        # Bereken kritische score (nu met theme analysis)
-        score = self._calculate_critical_score(pagespeed_data, technical_audit, theme_seo_analysis)
+        # CHECK PROJECT GOALS IMPLEMENTATION
+        goals_check = self._check_project_goals(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO'), project_goals)
+        
+        # Bereken kritische score (nu met theme analysis EN goals)
+        score = self._calculate_critical_score(pagespeed_data, technical_audit, theme_seo_analysis, goals_check)
         
         # Genereer harde aanbevelingen
-        recommendations = self._generate_critical_recommendations(pagespeed_data, technical_audit, theme_seo_analysis)
+        recommendations = self._generate_critical_recommendations(pagespeed_data, technical_audit, theme_seo_analysis, goals_check)
         
         return {
             'analyst': self.name,
@@ -47,11 +53,12 @@ class SarahSEOAnalyst:
                 'pagespeed_performance': pagespeed_data,
                 'technical_audit': technical_audit,
                 'theme_seo_analysis': theme_seo_analysis,
-                'critical_issues': self._identify_critical_issues(pagespeed_data, technical_audit, theme_seo_analysis)
+                'project_goals_check': goals_check,
+                'critical_issues': self._identify_critical_issues(pagespeed_data, technical_audit, theme_seo_analysis, goals_check)
             },
             'recommendations': recommendations,
             # DIRECTED OUTPUT DOCUMENT (d.o.d) FORMAT
-            'deliverable': self._generate_directed_output_document(score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations)
+            'deliverable': self._generate_directed_output_document(score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations, goals_check)
         }
     
     def _get_pagespeed_insights(self, url="https://emmso.com"):
@@ -140,14 +147,26 @@ class SarahSEOAnalyst:
             # Check templates directory
             templates_path = os.path.join(theme_path, 'templates')
             if os.path.exists(templates_path):
-                template_files = [f for f in os.listdir(templates_path) if f.endswith('.liquid')]
-                analysis['template_analysis']['template_count'] = len(template_files)
-                analysis['template_analysis']['files'] = template_files
+                # Shopify 2.0 uses .json templates, old themes use .liquid
+                json_template_files = [f for f in os.listdir(templates_path) if f.endswith('.json')]
+                liquid_template_files = [f for f in os.listdir(templates_path) if f.endswith('.liquid')]
+                all_template_files = json_template_files + liquid_template_files
                 
-                # Check for key SEO templates
-                seo_critical_templates = ['product.liquid', 'collection.liquid', 'index.liquid', 'blog.liquid']
-                missing_templates = [t for t in seo_critical_templates if t not in template_files]
-                analysis['missing_seo_elements'].extend([f"Missing {t}" for t in missing_templates])
+                analysis['template_analysis']['template_count'] = len(all_template_files)
+                analysis['template_analysis']['files'] = all_template_files
+                analysis['template_analysis']['json_templates'] = len(json_template_files)
+                analysis['template_analysis']['liquid_templates'] = len(liquid_template_files)
+                
+                # Check for key SEO templates (Shopify 2.0 uses .json format)
+                seo_critical_templates = ['product', 'collection', 'index', 'blog']
+                missing_templates = []
+                for template_name in seo_critical_templates:
+                    # Check both .json and .liquid formats
+                    if f"{template_name}.json" not in all_template_files and f"{template_name}.liquid" not in all_template_files:
+                        missing_templates.append(f"{template_name}.json or {template_name}.liquid")
+                
+                if missing_templates:
+                    analysis['missing_seo_elements'].extend([f"Missing {t}" for t in missing_templates])
             
             # Check snippets for SEO components
             snippets_path = os.path.join(theme_path, 'snippets')
@@ -162,10 +181,14 @@ class SarahSEOAnalyst:
             # Check config for SEO settings
             config_path = os.path.join(theme_path, 'config', 'settings_schema.json')
             if os.path.exists(config_path):
-                with open(config_path, 'r') as f:
+                with open(config_path, 'r', encoding='utf-8') as f:
                     config_content = f.read()
-                    seo_settings = 'seo' in config_content.lower() or 'meta' in config_content.lower()
+                    # Check for comprehensive SEO settings
+                    seo_indicators = ['seo', 'meta', 'open graph', 'og_', 'twitter', 'schema']
+                    seo_count = sum(1 for indicator in seo_indicators if indicator in config_content.lower())
+                    seo_settings = seo_count >= 2  # At least 2 SEO-related settings
                     analysis['seo_elements_found']['seo_settings'] = seo_settings
+                    analysis['seo_elements_found']['seo_settings_count'] = seo_count
                     
                     if not seo_settings:
                         analysis['missing_seo_elements'].append("No SEO settings in theme config")
@@ -180,52 +203,145 @@ class SarahSEOAnalyst:
             analysis['theme_seo_score'] = 0
         
         return analysis
-    def _calculate_critical_score(self, pagespeed_data, technical_audit, theme_seo_analysis=None):
-        """Bereken MEEDOGENLOOS KRITISCHE SEO score - now includes theme analysis"""
+    
+    def _check_project_goals(self, theme_path, project_goals):
+        """Check if theme implements the documented project goals"""
+        check = {
+            'vision_score': 0,
+            'search_first_implemented': False,
+            'languages_found': 0,
+            'voice_search_found': False,
+            'mobile_first_found': False,
+            'violations': []
+        }
+        
+        try:
+            # CHECK 1: Search-First Interface
+            # Look for search bars, search sections, search hero
+            assets_path = os.path.join(theme_path, 'assets')
+            sections_path = os.path.join(theme_path, 'sections')
+            
+            search_files = []
+            if os.path.exists(assets_path):
+                search_files.extend([f for f in os.listdir(assets_path) if 'search' in f.lower()])
+            if os.path.exists(sections_path):
+                search_files.extend([f for f in os.listdir(sections_path) if 'search' in f.lower()])
+            
+            if len(search_files) >= 3:  # Expect search-hero, search-results, search-intelligence, etc.
+                check['search_first_implemented'] = True
+                check['vision_score'] += 25
+            else:
+                check['violations'].append(f"GOAL MISS: Only {len(search_files)} search files found - Project requires search-first interface")
+            
+            # CHECK 2: 20 Languages across 14 countries
+            locales_path = os.path.join(theme_path, 'locales')
+            if os.path.exists(locales_path):
+                locale_files = [f for f in os.listdir(locales_path) if f.endswith('.json')]
+                check['languages_found'] = len(locale_files)
+                
+                if len(locale_files) >= 20:
+                    check['vision_score'] += 25
+                elif len(locale_files) >= 15:
+                    check['vision_score'] += 20
+                    check['violations'].append(f"GOAL MISS: {len(locale_files)}/20 languages - Target is 20 languages")
+                elif len(locale_files) >= 10:
+                    check['vision_score'] += 15
+                    check['violations'].append(f"GOAL MISS: {len(locale_files)}/20 languages - Target is 20 languages")
+                else:
+                    check['violations'].append(f"CRITICAL: Only {len(locale_files)}/20 languages - Project requires 20 languages")
+            
+            # CHECK 3: Voice Search (Web Speech API)
+            voice_search_indicators = ['speech', 'voice', 'webkitspeech', 'recognition']
+            if os.path.exists(assets_path):
+                for file in os.listdir(assets_path):
+                    if file.endswith('.js'):
+                        file_path = os.path.join(assets_path, file)
+                        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                            content = f.read().lower()
+                            if any(indicator in content for indicator in voice_search_indicators):
+                                check['voice_search_found'] = True
+                                check['vision_score'] += 25
+                                break
+            
+            if not check['voice_search_found']:
+                check['violations'].append("GOAL MISS: No voice search implementation - Project requires voice-first search")
+            
+            # CHECK 4: Mobile-First Design (responsive CSS, mobile meta tags)
+            mobile_indicators = ['viewport', 'mobile', 'responsive', '@media', 'touch']
+            mobile_score = 0
+            
+            if os.path.exists(assets_path):
+                for file in os.listdir(assets_path):
+                    if file.endswith('.css'):
+                        file_path = os.path.join(assets_path, file)
+                        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                            content = f.read().lower()
+                            mobile_count = sum(1 for indicator in mobile_indicators if indicator in content)
+                            if mobile_count >= 3:
+                                mobile_score += 1
+            
+            if mobile_score >= 5:  # At least 5 CSS files with mobile-first patterns
+                check['mobile_first_found'] = True
+                check['vision_score'] += 25
+            else:
+                check['violations'].append(f"GOAL MISS: Limited mobile-first CSS - Project requires mobile-obsessed design")
+            
+            # Summary
+            check['goal_alignment'] = f"{check['vision_score']}/100"
+            
+        except Exception as e:
+            check['error'] = str(e)
+        
+        return check
+    
+    def _calculate_critical_score(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None):
+        """Bereken MEEDOGENLOOS KRITISCHE SEO score - now includes theme analysis AND project goals"""
         score = 0
         
-        # NO PAGESPEED DATA = IMMEDIATE FAIL
-        if not pagespeed_data or pagespeed_data.get('error'):
-            return 0  # UNACCEPTABLE - Must have performance data
+        # PERFORMANCE SCORE - STRENGERE EISEN (20 points)
+        if pagespeed_data and 'error' not in pagespeed_data:
+            perf_score = pagespeed_data.get('performance_score', 0)
+            if perf_score >= 90:
+                score += 20  # EXCELLENT
+            elif perf_score >= 75:
+                score += 17  # GOOD
+            elif perf_score >= 60:
+                score += 13  # ACCEPTABLE
+            elif perf_score >= 40:
+                score += 7   # POOR
+            else:
+                score += 0   # DISASTER
+        # ELSE: PageSpeed not available, skip this section (theme/goals still valuable)
         
-        # PERFORMANCE SCORE - STRENGERE EISEN (30 points, reduced for theme analysis)
-        perf_score = pagespeed_data.get('performance_score', 0)
-        if perf_score >= 90:
-            score += 30  # EXCELLENT
-        elif perf_score >= 75:
-            score += 25  # GOOD
-        elif perf_score >= 60:
-            score += 20  # ACCEPTABLE
-        elif perf_score >= 40:
-            score += 10  # POOR
-        else:
-            score += 0   # DISASTER
+        # SEO SCORE - PERFECTIE VEREIST (20 points)
+        if pagespeed_data and 'error' not in pagespeed_data:
+            seo_score = pagespeed_data.get('seo_score', 0)
+            if seo_score >= 95:
+                score += 20  # NEAR PERFECT REQUIRED
+            elif seo_score >= 90:
+                score += 17  # GOOD
+            elif seo_score >= 85:
+                score += 13  # ACCEPTABLE
+            elif seo_score >= 80:
+                score += 10  # POOR
+            else:
+                score += 0   # FAIL
+        # ELSE: PageSpeed not available, skip this section
         
-        # SEO SCORE - PERFECTIE VEREIST (30 points, reduced for theme analysis)
-        seo_score = pagespeed_data.get('seo_score', 0)
-        if seo_score >= 95:
-            score += 30  # NEAR PERFECT REQUIRED
-        elif seo_score >= 90:
-            score += 25  # GOOD
-        elif seo_score >= 85:
-            score += 20  # ACCEPTABLE
-        elif seo_score >= 80:
-            score += 15  # POOR
-        else:
-            score += 0   # FAIL
+        # TECHNICAL SEO PERFECTION (20 points)
+        if technical_audit and 'error' not in technical_audit:
+            tech_score = technical_audit.get('overall_score', 0)
+            if tech_score >= 95:
+                score += 20  # TECHNICAL EXCELLENCE
+            elif tech_score >= 90:
+                score += 15  # GOOD
+            elif tech_score >= 85:
+                score += 10  # ACCEPTABLE
+            else:
+                score += 0   # FAIL
+        # ELSE: Technical audit not available, skip
         
-        # TECHNICAL SEO PERFECTION (20 points, reduced for theme analysis)
-        tech_score = technical_audit.get('overall_score', 0)
-        if tech_score >= 95:
-            score += 20  # TECHNICAL EXCELLENCE
-        elif tech_score >= 90:
-            score += 15  # GOOD
-        elif tech_score >= 85:
-            score += 10  # ACCEPTABLE
-        else:
-            score += 0   # FAIL
-        
-        # THEME SEO ANALYSIS - NEW (20 points)
+        # THEME SEO ANALYSIS (20 points)
         if theme_seo_analysis and 'theme_seo_score' in theme_seo_analysis:
             theme_score = theme_seo_analysis['theme_seo_score']
             if theme_score >= 90:
@@ -241,9 +357,29 @@ class SarahSEOAnalyst:
         else:
             score += 0  # NO THEME ANALYSIS = PENALTY
         
+        # PROJECT GOALS ALIGNMENT - NEW! (20 points)
+        if goals_check and 'vision_score' in goals_check:
+            goals_score = goals_check['vision_score']
+            # Convert string to int if needed
+            if isinstance(goals_score, str) and '/' in goals_score:
+                goals_score = int(goals_score.split('/')[0])
+            
+            if goals_score >= 90:
+                score += 20  # GOALS FULLY IMPLEMENTED
+            elif goals_score >= 75:
+                score += 15  # GOALS MOSTLY IMPLEMENTED
+            elif goals_score >= 50:
+                score += 10  # GOALS PARTIALLY IMPLEMENTED
+            elif goals_score >= 25:
+                score += 5   # GOALS BARELY STARTED
+            else:
+                score += 0   # GOALS NOT IMPLEMENTED
+        else:
+            score += 0  # NO GOALS CHECK = PENALTY
+        
         return min(max(score, 0), 100)
     
-    def _generate_critical_recommendations(self, pagespeed_data, technical_audit, theme_seo_analysis=None):
+    def _generate_critical_recommendations(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None):
         """Genereer kritische aanbevelingen - now includes theme recommendations"""
         recommendations = []
         
@@ -272,9 +408,29 @@ class SarahSEOAnalyst:
             if theme_seo_analysis.get('theme_seo_score', 0) < 70:
                 recommendations.append("THEME: SEO infrastructure incomplete - Implement structured data snippets")
         
+        # PROJECT GOALS recommendations - NEW!
+        if goals_check:
+            violations = goals_check.get('violations', [])
+            for violation in violations:
+                recommendations.append(f"GOAL: {violation}")
+            
+            # Specific goal recommendations
+            if not goals_check.get('search_first_implemented'):
+                recommendations.append("CRITICAL GOAL: Implement search-first interface - Core project vision missing")
+            
+            languages_found = goals_check.get('languages_found', 0)
+            if languages_found < 20:
+                recommendations.append(f"GOAL: Add {20 - languages_found} more languages to reach 20-language target")
+            
+            if not goals_check.get('voice_search_found'):
+                recommendations.append("GOAL: Implement voice search (Web Speech API) - Required for voice-first vision")
+            
+            if not goals_check.get('mobile_first_found'):
+                recommendations.append("GOAL: Enhance mobile-first CSS patterns - Mobile-obsessed design required")
+        
         return recommendations
     
-    def _identify_critical_issues(self, pagespeed_data, technical_audit, theme_seo_analysis=None):
+    def _identify_critical_issues(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None):
         """Identificeer kritieke problemen"""
         critical_issues = []
         
@@ -286,9 +442,17 @@ class SarahSEOAnalyst:
             if not technical_audit.get('meta_title_present', False):
                 critical_issues.append('BLOCKER: Geen meta titles - onvindbaar in Google')
         
+        # PROJECT GOALS critical issues
+        if goals_check:
+            if not goals_check.get('search_first_implemented'):
+                critical_issues.append('BLOCKER: Search-first interface not implemented - Core vision missing')
+            
+            if goals_check.get('languages_found', 0) < 10:
+                critical_issues.append(f"CRITICAL: Only {goals_check['languages_found']}/20 languages - Far from multilingual goal")
+        
         return critical_issues
     
-    def _generate_directed_output_document(self, score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations):
+    def _generate_directed_output_document(self, score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations, goals_check=None):
         """
         Generate DIRECTED OUTPUT DOCUMENT (d.o.d) format for Captain integration
         

@@ -19,7 +19,7 @@
         "id": "type_primary_font",
         "default": "work_sans_n4",
         "label": "t:general.primary"
-      },
+      }
     ]
   },
   {
@@ -77,6 +77,129 @@
         "unit": "px",
         "label": "t:labels.input_corner_radius",
         "default": 4
+      }
+    ]
+  },
+  {
+    "name": "SEO & Metadata",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Search Engine Optimization"
+      },
+      {
+        "type": "text",
+        "id": "seo_title",
+        "label": "Default SEO Title",
+        "info": "Used as fallback when page-specific title is not set",
+        "default": "EMMSO - Premium European Products"
+      },
+      {
+        "type": "textarea",
+        "id": "seo_description",
+        "label": "Default SEO Description",
+        "info": "Used as fallback meta description (max 160 characters recommended)",
+        "default": "Discover premium products across 20 European languages. Search-first shopping experience with voice search, instant results, and multilingual support."
+      },
+      {
+        "type": "text",
+        "id": "seo_keywords",
+        "label": "Default SEO Keywords",
+        "info": "Comma-separated keywords for search engines",
+        "default": "premium products, european shopping, multilingual ecommerce, voice search"
+      },
+      {
+        "type": "header",
+        "content": "Social Media & Open Graph"
+      },
+      {
+        "type": "image_picker",
+        "id": "og_image",
+        "label": "Default Open Graph Image",
+        "info": "Used when sharing on social media (1200x630px recommended)"
+      },
+      {
+        "type": "text",
+        "id": "og_site_name",
+        "label": "Site Name",
+        "default": "EMMSO"
+      },
+      {
+        "type": "select",
+        "id": "og_type",
+        "label": "Open Graph Type",
+        "options": [
+          {
+            "value": "website",
+            "label": "Website"
+          },
+          {
+            "value": "product",
+            "label": "Product"
+          }
+        ],
+        "default": "website"
+      },
+      {
+        "type": "header",
+        "content": "Twitter Card Settings"
+      },
+      {
+        "type": "select",
+        "id": "twitter_card_type",
+        "label": "Twitter Card Type",
+        "options": [
+          {
+            "value": "summary",
+            "label": "Summary"
+          },
+          {
+            "value": "summary_large_image",
+            "label": "Summary with Large Image"
+          }
+        ],
+        "default": "summary_large_image"
+      },
+      {
+        "type": "text",
+        "id": "twitter_site",
+        "label": "Twitter Username",
+        "info": "Your Twitter handle (e.g., @emmso)",
+        "placeholder": "@emmso"
+      },
+      {
+        "type": "header",
+        "content": "Structured Data"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_schema_org",
+        "label": "Enable Schema.org Structured Data",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_breadcrumbs_schema",
+        "label": "Enable Breadcrumbs Schema",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_organization_schema",
+        "label": "Enable Organization Schema",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "organization_name",
+        "label": "Organization Name",
+        "default": "EMMSO"
+      },
+      {
+        "type": "image_picker",
+        "id": "organization_logo",
+        "label": "Organization Logo",
+        "info": "Used in structured data (square format recommended)"
       }
     ]
   }

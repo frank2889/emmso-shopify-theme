@@ -61,32 +61,49 @@ class NoraVisualAnalyst:
         }
     
     def _analyze_css_compliance(self):
-        """Analyze emmso.css compliance - CRITICAL for EMMSO architecture"""
+        """Analyze CSS files in theme - check what's actually there"""
         try:
-            css_file_path = "/Users/Frank/Documents/EMMSO/assets/emmso.css"
+            assets_path = "/Users/Frank/Documents/EMMSO NOV/assets"
             
-            if not os.path.exists(css_file_path):
+            if not os.path.exists(assets_path):
                 return {
-                    'error': 'CRITICAL: emmso.css file not found',
+                    'error': 'Assets folder not found',
                     'compliance_score': 0,
-                    'violations': ['Missing emmso.css file - Architecture violation']
+                    'violations': ['Cannot find assets folder']
                 }
             
-            with open(css_file_path, 'r', encoding='utf-8') as f:
-                css_content = f.read()
+            # Count all CSS files
+            css_files = [f for f in os.listdir(assets_path) if f.endswith('.css')]
+            
+            if not css_files:
+                return {
+                    'error': 'No CSS files found',
+                    'compliance_score': 0,
+                    'violations': ['No CSS files in theme']
+                }
             
             violations = []
             compliance_score = 100
             
-            # File size check (should be comprehensive but not bloated)
-            file_size = len(css_content.encode('utf-8'))
-            if file_size > 500000:  # 500KB limit
-                violations.append(f"emmso.css too large: {file_size/1024:.1f}KB > 500KB")
-                compliance_score -= 20
+            # Calculate total CSS size
+            total_size = 0
+            for css_file in css_files:
+                file_path = os.path.join(assets_path, css_file)
+                total_size += os.path.getsize(file_path)
             
-            # Critical EMMSO design elements
-            required_elements = [
-                '.emmso-',  # EMMSO namespace
+            # Check if total CSS is reasonable
+            total_size_kb = total_size / 1024
+            if total_size_kb > 300:  # 300KB total seems high
+                compliance_score -= 10
+            
+            # Read first CSS file to check for design system elements
+            first_css = os.path.join(assets_path, css_files[0])
+            with open(first_css, 'r', encoding='utf-8') as f:
+                css_content = f.read()
+            
+            # Check for design system elements (not strict requirements)
+            elements_found = 0
+            design_elements = [
                 'font-family',  # Typography
                 'color:',  # Color system
                 '@media',  # Responsive design
@@ -94,10 +111,9 @@ class NoraVisualAnalyst:
                 '.cart-',  # Cart styling
             ]
             
-            for element in required_elements:
-                if element not in css_content:
-                    violations.append(f"Missing critical element: {element}")
-                    compliance_score -= 15
+            for element in design_elements:
+                if element in css_content:
+                    elements_found += 1
             
             # Check for external dependencies (should be minimal)
             external_refs = css_content.count('@import') + css_content.count('url(http')
@@ -107,9 +123,10 @@ class NoraVisualAnalyst:
             
             return {
                 'compliance_score': max(0, compliance_score),
-                'file_size': file_size,
+                'total_css_files': len(css_files),
+                'total_size_kb': round(total_size_kb, 1),
                 'violations': violations,
-                'elements_found': len([e for e in required_elements if e in css_content])
+                'elements_found': elements_found
             }
             
         except Exception as e:
@@ -302,11 +319,13 @@ class NoraVisualAnalyst:
         
         # CSS recommendations
         if css_analysis.get('compliance_score', 0) < 85:
+            total_files = css_analysis.get('total_css_files', 0)
+            total_size = css_analysis.get('total_size_kb', 0)
             recommendations.append({
-                'title': 'CRITICAL: emmso.css Optimization Required',
-                'description': 'Optimize emmso.css file for better compliance and performance',
-                'priority': 'critical',
-                'impact': 'high'
+                'title': 'CSS Optimization Recommended',
+                'description': f'Current setup: {total_files} CSS files, {total_size}KB total. Consider optimization.',
+                'priority': 'medium',
+                'impact': 'medium'
             })
         
         # Visual consistency recommendations

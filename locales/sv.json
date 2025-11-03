@@ -1,0 +1,166 @@
+{
+  "general": {
+    "search": {
+      "title": "Sök",
+      "placeholder": "Sök produkter, varumärken, kategorier...",
+      "submit": "Sök",
+      "searching": "Söker...",
+      "view_all": "Visa alla resultat",
+      "no_results": "Inga resultat hittades",
+      "trending": "Populära sökningar",
+      "recent": "Senaste sökningar",
+      "suggestions": "Förslag",
+      "search_for": "Sök efter",
+      "description": "Sök i vår kompletta katalog av premiumprodukter",
+      "stats": "Statistik",
+      "products": "Produkter",
+      "brands": "Varumärken",
+      "markets": "Marknader",
+      "categories": "Produktkategorier",
+      "filter_by": "Filtrera efter",
+      "clear": "Rensa",
+      "voice": "Röstsökning"
+    },
+    "newsletter_form": {
+      "email_placeholder": "E-postadress",
+      "submit": "Prenumerera",
+      "confirmation": "Tack för din prenumeration!"
+    },
+    "header": "Rubrik",
+    "footer": "Sidfot",
+    "cart": {
+      "title": "Varukorg",
+      "item_count": {
+        "one": "{{ count }} vara",
+        "other": "{{ count }} varor"
+      },
+      "subtotal": "Delsumma",
+      "shipping_at_checkout": "Frakt, skatter och rabatter beräknas vid kassan",
+      "checkout": "Till kassan",
+      "continue_shopping": "Fortsätt handla",
+      "update": "Uppdatera",
+      "remove": "Ta bort",
+      "quantity": "Antal",
+      "increase_quantity": "Öka antal",
+      "decrease_quantity": "Minska antal",
+      "note": "Ordernoteringar (valfritt)",
+      "note_placeholder": "Specialinstruktioner för din order...",
+      "free_shipping_remaining": "Lägg till {{ amount }} mer för fri frakt!",
+      "free_shipping_eligible": "Du kvalificerar för fri frakt!",
+      "empty_title": "Din varukorg är tom",
+      "empty_message": "Det verkar som att du inte har lagt till några varor än.",
+      "empty_button": "Börja handla"
+    },
+    "product": {
+      "price": "Pris",
+      "add_to_cart": "Lägg i varukorgen",
+      "sold_out": "Slutsåld",
+      "unavailable": "Ej tillgänglig",
+      "quantity": "Antal",
+      "compare": "Jämför",
+      "view_details": "Visa detaljer",
+      "specifications": "Specifikationer",
+      "reviews": "Recensioner",
+      "shipping_info": "Fraktinformation",
+      "in_stock": "I lager",
+      "low_stock": "Lågt lager",
+      "preorder": "Förbeställning"
+    },
+    "404": {
+      "title": "404 - Sidan hittades inte",
+      "message": "Sidan du söker finns inte.",
+      "back_home": "Tillbaka till startsidan"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Hoppa till innehåll",
+    "close": "Stäng",
+    "menu": "Meny",
+    "open_menu": "Öppna meny",
+    "close_menu": "Stäng meny"
+  },
+  "sections": {
+    "header": {
+      "announcement": "Meddelande"
+    },
+    "footer": {
+      "newsletter_title": "Prenumerera på vårt nyhetsbrev",
+      "payment_methods": "Betalningsmetoder",
+      "social_media": "Följ oss"
+    }
+  },
+  "blogs": {
+    "article": {
+      "read_more": "Läs mer",
+      "view_all": "Visa alla artiklar",
+      "comments": "Kommentarer",
+      "comment_posted": "Din kommentar har publicerats",
+      "author": "Författare",
+      "published_at": "Publicerad",
+      "tags": "Taggar",
+      "share": "Dela"
+    }
+  },
+  "collections": {
+    "general": {
+      "view_all": "Visa alla",
+      "no_products": "Inga produkter hittades",
+      "items": "varor",
+      "sort_by": "Sortera efter",
+      "filters": "Filter",
+      "apply": "Använd",
+      "clear_all": "Rensa alla",
+      "showing_count": "Visar {{ count }} av {{ total }} produkter"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mitt konto",
+      "logout": "Logga ut"
+    },
+    "login": {
+      "title": "Logga in",
+      "email": "E-post",
+      "password": "Lösenord",
+      "submit": "Logga in",
+      "forgot_password": "Glömt lösenord?",
+      "guest_title": "Fortsätt som gäst",
+      "guest_continue": "Fortsätt"
+    },
+    "orders": {
+      "title": "Orderhistorik",
+      "order_number": "Ordernummer",
+      "date": "Datum",
+      "status": "Status",
+      "total": "Totalt",
+      "view": "Visa order"
+    },
+    "addresses": {
+      "title": "Adresser",
+      "default": "Standard",
+      "add_new": "Lägg till ny adress",
+      "edit": "Redigera",
+      "delete": "Ta bort",
+      "first_name": "Förnamn",
+      "last_name": "Efternamn",
+      "company": "Företag",
+      "address1": "Adress",
+      "address2": "Lägenhet, svit, etc.",
+      "city": "Stad",
+      "country": "Land",
+      "province": "Region",
+      "zip": "Postnummer",
+      "phone": "Telefon",
+      "set_default": "Ange som standardadress",
+      "add": "Lägg till adress",
+      "update": "Uppdatera adress",
+      "cancel": "Avbryt"
+    }
+  },
+  "localization": {
+    "country_label": "Land/Region",
+    "language_label": "Språk",
+    "update_country": "Uppdatera land",
+    "update_language": "Uppdatera språk"
+  }
+}

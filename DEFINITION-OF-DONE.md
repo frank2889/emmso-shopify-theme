@@ -6844,3 +6844,9623 @@ performance.measure('search-duration', 'search-start', 'search-end');
 ---
 
 **End of Document** | Last Updated: November 3, 2025 | Version 2.0
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 11:12:10
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 0/100
+
+#### Findings
+
+
+
+#### Action Items
+
+
+
+#### Status
+- ✅ Analysis complete
+- 📋 0 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 11:12:43
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 0/100
+
+#### Findings
+
+
+
+#### Action Items
+
+
+
+#### Status
+- ✅ Analysis complete
+- 📋 0 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:35:09
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 17/100
+
+#### Findings
+
+### Sarah (0/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (0/100)
+
+{
+  "css_js_constraints": {
+    "css_rule": "Unknown",
+    "js_rule": "Unknown",
+    "violations": [
+      "CRITICAL: Unauthorized CSS files found: product-card.css, section-search-hero.css, comparison.css, animations.css, product-comparison.css, search.css, 404.css, component-predictive-search.css, filters.css, cart.css, section-search-results.css, page.css, critical.css, article.css, design-tokens.css, section-collection.css, forms.css, search-results.css, section-header.css, buttons.css, section-product.css, password.css, utilities.css, blog.css, base.css, section-footer.css",
+      "CRITICAL: Unauthorized JS files found: query-normalizer.js, search-intelligence.js, search-hero.js, product-comparison.js, search-engine.js, cart.js, predictive-search.js, unified-filters.js, related-products.js"
+    ]
+  },
+  "theme_file_analysis": {
+    "violations": [
+      "CRITICAL: Unauthorized CSS files found: product-card.css, section-search-hero.css, comparison.css, animations.css, product-comparison.css, search.css, 404.css, component-predictive-search.css, filters.css, cart.css, section-search-results.css, page.css, critical.css, article.css, design-tokens.css, section-collection.css, forms.css, search-results.css, section-header.css, buttons.css, section-product.css, password.css, utilities.css, blog.css, base.css, section-footer.css",
+      "CRITICAL: Unauthorized JS files found: query-normalizer.js, search-intelligence.js, search-hero.js, product-comparison.js, search-engine.js, cart.js, predictive-search.js, unified-filters.js, related-products.js"
+    ],
+    "compliance_score": 40,
+    "css_files_found": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files_found": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ],
+    "unauthorized_css": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "unauthorized_js": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 344.74,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "constraint_compliance": 40
+}
+### Nora (15/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 85,
+    "file_size": 67208,
+    "violations": [
+      "Missing critical element: .emmso-"
+    ],
+    "elements_found": 5
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "CSS: Missing critical element: .emmso-",
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: CRITICAL: Consolidate all CSS into emmso.css - remove unauthorized CSS files
+**Marcus**: CRITICAL: Consolidate all JavaScript into emmso.js - remove unauthorized JS files
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 12 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:37:50
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 0/100
+
+#### Findings
+
+
+
+#### Action Items
+
+
+
+#### Status
+- ✅ Analysis complete
+- 📋 0 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:39:22
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 35/100
+
+#### Findings
+
+### Sarah (0/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 264.82,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (15/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 85,
+    "file_size": 67208,
+    "violations": [
+      "Missing critical element: .emmso-"
+    ],
+    "elements_found": 5
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "CSS: Missing critical element: .emmso-",
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 12 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:40:49
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 39/100
+
+#### Findings
+
+### Sarah (0/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 276.9,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 12 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:43:38
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 39/100
+
+#### Findings
+
+### Sarah (0/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 500"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 268.61,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 12 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:45:49
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 39/100
+
+#### Findings
+
+### Sarah (0/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "project_goals_check": {
+    "vision_score": 95,
+    "search_first_implemented": true,
+    "languages_found": 19,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [
+      "GOAL MISS: 19/20 languages - Target is 20 languages"
+    ],
+    "goal_alignment": "95/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 309.64,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Sarah**: GOAL: GOAL MISS: 19/20 languages - Target is 20 languages
+**Sarah**: GOAL: Add 1 more languages to reach 20-language target
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 14 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:47:48
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 45/100
+
+#### Findings
+
+### Sarah (25/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "project_goals_check": {
+    "vision_score": 95,
+    "search_first_implemented": true,
+    "languages_found": 19,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [
+      "GOAL MISS: 19/20 languages - Target is 20 languages"
+    ],
+    "goal_alignment": "95/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 302.63,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Sarah**: GOAL: GOAL MISS: 19/20 languages - Target is 20 languages
+**Sarah**: GOAL: Add 1 more languages to reach 20-language target
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 14 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:48:23
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 45/100
+
+#### Findings
+
+### Sarah (25/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "project_goals_check": {
+    "vision_score": 95,
+    "search_first_implemented": true,
+    "languages_found": 19,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [
+      "GOAL MISS: 19/20 languages - Target is 20 languages"
+    ],
+    "goal_alignment": "95/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 269.41,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Sarah**: GOAL: GOAL MISS: 19/20 languages - Target is 20 languages
+**Sarah**: GOAL: Add 1 more languages to reach 20-language target
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 14 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:50:51
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 45/100
+
+#### Findings
+
+### Sarah (25/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": false
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid",
+      "No SEO settings in theme config"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 50
+  },
+  "project_goals_check": {
+    "vision_score": 95,
+    "search_first_implemented": true,
+    "languages_found": 19,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [
+      "GOAL MISS: 19/20 languages - Target is 20 languages"
+    ],
+    "goal_alignment": "95/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 364.18,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: No SEO settings in theme config - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Sarah**: GOAL: GOAL MISS: 19/20 languages - Target is 20 languages
+**Sarah**: GOAL: Add 1 more languages to reach 20-language target
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 14 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🚨 Phase 1: CRITICAL - Immediate Action Required
+
+**Priority**: BLOCKER - Must fix before launch
+**Timeline**: This week
+
+- [ ] **Sarah** (Score: 25/100): THEME: Missing product.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 25/100): THEME: Missing collection.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 25/100): THEME: Missing index.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 25/100): THEME: Missing blog.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 25/100): THEME: No SEO settings in theme config - Add to Shopify theme files
+- [ ] **Sarah** (Score: 25/100): THEME: SEO infrastructure incomplete - Implement structured data snippets
+- [ ] **Sarah** (Score: 25/100): GOAL: GOAL MISS: 19/20 languages - Target is 20 languages
+- [ ] **Sarah** (Score: 25/100): GOAL: Add 1 more languages to reach 20-language target
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 53/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 261.9KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 8 tasks
+- 🔥 High: 4 tasks  
+- ⚡ Medium: 2 tasks
+- 💡 Low: 0 tasks
+- **Total**: 14 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:54:37
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 47/100
+
+#### Findings
+
+### Sarah (30/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true
+    },
+    "missing_seo_elements": [
+      "Missing product.liquid",
+      "Missing collection.liquid",
+      "Missing index.liquid",
+      "Missing blog.liquid"
+    ],
+    "template_analysis": {
+      "template_count": 27,
+      "files": [
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ]
+    },
+    "theme_seo_score": 66
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 296.74,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Sarah**: THEME: Missing product.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing collection.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing index.liquid - Add to Shopify theme files
+**Sarah**: THEME: Missing blog.liquid - Add to Shopify theme files
+**Sarah**: THEME: SEO infrastructure incomplete - Implement structured data snippets
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 11 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Sarah** (Score: 30/100): THEME: Missing product.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 30/100): THEME: Missing collection.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 30/100): THEME: Missing index.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 30/100): THEME: Missing blog.liquid - Add to Shopify theme files
+- [ ] **Sarah** (Score: 30/100): THEME: SEO infrastructure incomplete - Implement structured data snippets
+- [ ] **Alex** (Score: 53/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 261.9KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 0 tasks
+- 🔥 High: 9 tasks  
+- ⚡ Medium: 2 tasks
+- 💡 Low: 0 tasks
+- **Total**: 11 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:55:36
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 49/100
+
+#### Findings
+
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 277.6,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 6 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 53/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 261.9KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 0 tasks
+- 🔥 High: 4 tasks  
+- ⚡ Medium: 2 tasks
+- 💡 Low: 0 tasks
+- **Total**: 6 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 12:55:47
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 49/100
+
+#### Findings
+
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "critical_issues": []
+}
+### Alex (53/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 58,
+      "sections": 37,
+      "snippets": 90,
+      "assets": 37
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 16,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.modal.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.full-width.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.contact.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.about.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.collection-landing.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 37,
+    "critical_sections_present": 3,
+    "sections_details": {
+      "blog-posts.liquid": {
+        "file_size": 6286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 46,
+        "performance_rating": 90
+      },
+      "predictive-search.liquid": {
+        "file_size": 2935,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "slideshow.liquid": {
+        "file_size": 18381,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 92,
+        "performance_rating": 75
+      },
+      "logo-list.liquid": {
+        "file_size": 3286,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "blog-related-homepage.liquid": {
+        "file_size": 6836,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 90
+      },
+      "custom-menu-section.liquid": {
+        "file_size": 738,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 3,
+        "performance_rating": 100
+      },
+      "blog-related-collections.liquid": {
+        "file_size": 3535,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 100
+      },
+      "main-cart.liquid": {
+        "file_size": 4562,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 32,
+        "performance_rating": 100
+      },
+      "featured-collections.liquid": {
+        "file_size": 6549,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 27,
+        "performance_rating": 90
+      },
+      "text-columns.liquid": {
+        "file_size": 6154,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "list-collections-template.liquid": {
+        "file_size": 4971,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 29,
+        "performance_rating": 100
+      },
+      "product-full-width.liquid": {
+        "file_size": 6841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 52,
+        "performance_rating": 75
+      },
+      "featured-collection.liquid": {
+        "file_size": 5135,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "contact-form.liquid": {
+        "file_size": 3774,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 100
+      },
+      "main-search.liquid": {
+        "file_size": 1565,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 5,
+        "performance_rating": 100
+      },
+      "apps.liquid": {
+        "file_size": 834,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "header.liquid": {
+        "file_size": 7905,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "rich-text.liquid": {
+        "file_size": 3841,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 100
+      },
+      "map.liquid": {
+        "file_size": 5607,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 19,
+        "performance_rating": 90
+      },
+      "blog-related-posts.liquid": {
+        "file_size": 1993,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      },
+      "store-availability.liquid": {
+        "file_size": 6009,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 30,
+        "performance_rating": 90
+      },
+      "main-page.liquid": {
+        "file_size": 329,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer-advanced-content.liquid": {
+        "file_size": 3397,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 33,
+        "performance_rating": 100
+      },
+      "collection-description.liquid": {
+        "file_size": 441,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": true,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "footer-promotions.liquid": {
+        "file_size": 7487,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "password-header.liquid": {
+        "file_size": 3903,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "featured-product.liquid": {
+        "file_size": 10379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 8,
+        "performance_rating": 90
+      },
+      "blog-template.liquid": {
+        "file_size": 2660,
+        "is_critical": false,
+        "has_schema": false,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 23,
+        "performance_rating": 100
+      },
+      "main-page-full-width.liquid": {
+        "file_size": 322,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "footer.liquid": {
+        "file_size": 12970,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 59,
+        "performance_rating": 75
+      },
+      "collections-navigation.liquid": {
+        "file_size": 4137,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      },
+      "main-404.liquid": {
+        "file_size": 368,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 2,
+        "performance_rating": 100
+      },
+      "main-product.liquid": {
+        "file_size": 11474,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": true,
+        "liquid_tags_count": 17,
+        "performance_rating": 90
+      },
+      "main-collection.liquid": {
+        "file_size": 5362,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 28,
+        "performance_rating": 90
+      },
+      "article-template.liquid": {
+        "file_size": 10032,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 65,
+        "performance_rating": 75
+      },
+      "product-recommendations.liquid": {
+        "file_size": 13950,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 163,
+        "performance_rating": 75
+      },
+      "video-banner.liquid": {
+        "file_size": 2923,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 17,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 93.37837837837837
+  },
+  "assets_optimization": {
+    "total_assets": 37,
+    "total_size_mb": 1.16,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "emmso.css",
+          "size": 67208,
+          "size_mb": 0.06
+        }
+      ],
+      "js_files": [
+        {
+          "name": "emmso.js",
+          "size": 55413,
+          "size_mb": 0.05
+        }
+      ],
+      "images": [
+        {
+          "name": "fevad-trustmark.webp",
+          "size": 10348,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "DPD.webp",
+          "size": 2812,
+          "size_mb": 0.0
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags-40.png",
+          "size": 82048,
+          "size_mb": 0.08
+        },
+        {
+          "name": "vloer-icon.svg",
+          "size": 250685,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow.png",
+          "size": 312,
+          "size_mb": 0.0
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "vloerwhite.png",
+          "size": 111834,
+          "size_mb": 0.11
+        },
+        {
+          "name": "arrow-left-circle.svg",
+          "size": 352,
+          "size_mb": 0.0
+        },
+        {
+          "name": "download.svg",
+          "size": 363,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shopping-cart-icon.png",
+          "size": 1795,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password-page-background.jpg",
+          "size": 148220,
+          "size_mb": 0.14
+        },
+        {
+          "name": "arrow-right-circle.svg",
+          "size": 354,
+          "size_mb": 0.0
+        },
+        {
+          "name": "blankimage.png",
+          "size": 11399,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "button-arrow-black-2x.png",
+          "size": 509,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-2x.png",
+          "size": 479,
+          "size_mb": 0.0
+        },
+        {
+          "name": "button-arrow-black.png",
+          "size": 295,
+          "size_mb": 0.0
+        },
+        {
+          "name": "fallback.webp",
+          "size": 250004,
+          "size_mb": 0.24
+        },
+        {
+          "name": "button-arrow-orange.webp",
+          "size": 4714,
+          "size_mb": 0.0
+        },
+        {
+          "name": "secure-ssl.webp",
+          "size": 14760,
+          "size_mb": 0.01
+        },
+        {
+          "name": "netcomm-trustmark.webp",
+          "size": 16243,
+          "size_mb": 0.02
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": [
+        {
+          "name": "ico-select-menu.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-footer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "ico-select-white.svg.liquid",
+          "size": 837,
+          "size_mb": 0.0
+        },
+        {
+          "name": "futura.woff2",
+          "size": 15991,
+          "size_mb": 0.02
+        },
+        {
+          "name": "futura.woff",
+          "size": 22097,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select-drawer.svg.liquid",
+          "size": 865,
+          "size_mb": 0.0
+        },
+        {
+          "name": "country-flags.css.liquid",
+          "size": 20481,
+          "size_mb": 0.02
+        },
+        {
+          "name": "ico-select.svg.liquid",
+          "size": 863,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    "emmso_architecture": {
+      "emmso_css_present": true,
+      "emmso_js_present": true,
+      "single_file_architecture": true
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 343.68,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 6 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 53/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 261.9KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 0 tasks
+- 🔥 High: 4 tasks  
+- ⚡ Medium: 2 tasks
+- 💡 Low: 0 tasks
+- **Total**: 6 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
