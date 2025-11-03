@@ -121,6 +121,16 @@
   
   
   /* ========================================
+     TOUCH TARGETS (WCAG 2.5.5 AAA)
+     Mobile-first design requires minimum 44x44px
+     ======================================== */
+  
+  --touch-target-min: 2.75rem;  /* 44px - WCAG AAA minimum */
+  --touch-target-comfortable: 3rem; /* 48px - Comfortable target */
+  --touch-target-large: 3.5rem; /* 56px - Large/prominent targets */
+  
+  
+  /* ========================================
      BORDER RADIUS
      ======================================== */
   

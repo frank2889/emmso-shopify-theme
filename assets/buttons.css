@@ -28,12 +28,18 @@
   white-space: nowrap;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  min-height: var(--touch-target-min);
+  min-height: var(--touch-target-min); /* WCAG 2.5.5 AAA: 44px minimum */
+  min-width: var(--touch-target-min); /* WCAG 2.5.5 AAA: 44px minimum */
 }
 
 .btn:focus {
   outline: none;
   box-shadow: var(--shadow-focus);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary); /* WCAG 2.4.7: Enhanced focus indicator */
+  outline-offset: 2px;
 }
 
 .btn:active {
