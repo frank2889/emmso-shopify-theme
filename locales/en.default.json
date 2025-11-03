@@ -29,7 +29,29 @@
     "header": "Header",
     "footer": "Footer",
     "cart": {
-      "title": "Cart"
+      "title": "Shopping Cart",
+      "item_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} items"
+      },
+      "subtotal": "Subtotal",
+      "shipping_at_checkout": "Shipping, taxes, and discounts calculated at checkout",
+      "checkout": "Checkout",
+      "continue_shopping": "Continue shopping",
+      "update": "Update",
+      "remove": "Remove",
+      "quantity": "Quantity",
+      "increase_quantity": "Increase quantity",
+      "decrease_quantity": "Decrease quantity",
+      "note": "Order notes (optional)",
+      "note_placeholder": "Special instructions for your order...",
+      "free_shipping_remaining": "Add {{ amount }} more for free shipping!",
+      "free_shipping_eligible": "You qualify for free shipping!",
+      "empty_title": "Your cart is empty",
+      "empty_message": "Start searching for products to add to your cart",
+      "empty_search_prompt": "Not sure what you're looking for?",
+      "start_searching": "Start Searching",
+      "popular_products": "Popular Products"
     },
     "compare": {
       "title": "Compare"
