@@ -250,12 +250,19 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
         return base_prompt
     
     def _parse_vision_response(self, response_text, screen_name):
-        """Parse Vision API response into structured data"""
+        """Parse Vision API response into structured data for sharing with other analysts"""
         
         analysis = {
             'screen': screen_name,
             'raw_analysis': response_text,
-            'scores': {},
+            'scores': {
+                'visual_hierarchy': 0,
+                'search_first': 0,
+                'mobile_first': 0,
+                'brutalist_simplicity': 0,
+                'accessibility': 0,
+                'brand_consistency': 0
+            },
             'issues': [],
             'recommendations': [],
             'highlights': []
@@ -267,11 +274,30 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
         for line in lines:
             line = line.strip()
             
-            # Parse scores
-            if 'OVERALL:' in line and '/100' in line:
+            # Parse individual scores
+            if ':' in line and '/100' in line:
                 try:
-                    score_str = line.split(':')[1].strip().split('/')[0].strip()
-                    analysis['score'] = int(score_str)
+                    parts = line.split(':')
+                    if len(parts) >= 2:
+                        label = parts[0].strip('*- ').lower()
+                        score_str = parts[1].strip().split('/')[0].strip()
+                        score = int(score_str)
+                        
+                        # Map to score keys
+                        if 'visual hierarchy' in label:
+                            analysis['scores']['visual_hierarchy'] = score
+                        elif 'search' in label and 'first' in label:
+                            analysis['scores']['search_first'] = score
+                        elif 'mobile' in label:
+                            analysis['scores']['mobile_first'] = score
+                        elif 'brutalist' in label or 'simplicity' in label:
+                            analysis['scores']['brutalist_simplicity'] = score
+                        elif 'accessibility' in label:
+                            analysis['scores']['accessibility'] = score
+                        elif 'brand' in label:
+                            analysis['scores']['brand_consistency'] = score
+                        elif 'overall' in label:
+                            analysis['score'] = score
                 except:
                     pass
             
@@ -293,9 +319,10 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
                 elif current_section == 'highlights':
                     analysis['highlights'].append(item)
         
-        # Default score if not found
+        # Calculate overall score from sub-scores if not found
         if 'score' not in analysis:
-            analysis['score'] = 50  # Neutral score if parsing failed
+            subscores = [s for s in analysis['scores'].values() if s > 0]
+            analysis['score'] = int(sum(subscores) / len(subscores)) if subscores else 50
         
         return analysis
     
