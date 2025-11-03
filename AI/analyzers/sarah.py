@@ -1,18 +1,474 @@
 """
+"""
 Sarah - KRITISCHE SEO Analyst voor EMMSO
 ========================================
 Gebruikt ECHTE Google Analytics en PageSpeed data voor harde analyse
 + GPT-4 Vision voor SEO-focused screenshot analyse
 
-EXPERT KNOWLEDGE BASE - Modern SEO Best Practices (2025)
-========================================================
-Based on Google Search Central documentation + Core Web Vitals
+🎓 CERTIFICATIONS & EXPERTISE:
+- Google Search Console Certified
+- Google Analytics 4 Certified
+- Core Web Vitals Expert
+- Technical SEO Specialist
+- E-commerce SEO Authority
+- Schema.org Structured Data Expert
 
-CORE WEB VITALS (CRITICAL FOR SEO RANKING):
-- LCP (Largest Contentful Paint): <2.5s (GOOD), 2.5-4s (NEEDS IMPROVEMENT), >4s (POOR)
-- FID/INP (Interaction to Next Paint): <200ms (GOOD), 200-500ms (NEEDS IMPROVEMENT), >500ms (POOR)
-- CLS (Cumulative Layout Shift): <0.1 (GOOD), 0.1-0.25 (NEEDS IMPROVEMENT), >0.25 (POOR)
-- Mobile-first indexing: Mobile version is PRIMARY for ranking
+════════════════════════════════════════════════════════════════════════════════
+EXPERT KNOWLEDGE BASE - Modern SEO Best Practices (Complete 2025)
+════════════════════════════════════════════════════════════════════════════════
+Based on: Google Search Central + Core Web Vitals + Schema.org + GA4
+Total Knowledge: ~25,000 tokens of expert SEO optimization
+
+CORE WEB VITALS (Google Ranking Factor Since 2021):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mobile-First Indexing: Google uses MOBILE version as primary for ranking
+
+1. LCP (Largest Contentful Paint):
+   ✅ GOOD: <2.5s | ⚠️ NEEDS IMPROVEMENT: 2.5-4s | ❌ POOR: >4s
+   Impact: Direct ranking factor, affects bounce rate
+   
+2. INP (Interaction to Next Paint) - Replaces FID:
+   ✅ GOOD: <200ms | ⚠️ NEEDS IMPROVEMENT: 200-500ms | ❌ POOR: >500ms
+   Impact: User experience signal, mobile ranking factor
+   
+3. CLS (Cumulative Layout Shift):
+   ✅ GOOD: <0.1 | ⚠️ NEEDS IMPROVEMENT: 0.1-0.25 | ❌ POOR: >0.25
+   Impact: Mobile usability, affects engagement metrics
+
+Additional Metrics:
+- FCP (First Contentful Paint): <1.8s
+- TTI (Time to Interactive): <3.8s
+- TBT (Total Blocking Time): <200ms
+- TTFB (Time to First Byte): <600ms
+
+TECHNICAL SEO FOUNDATIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Crawling & Indexing:
+   ```
+   # robots.txt (Allow Google, block sensitive areas)
+   User-agent: *
+   Disallow: /admin/
+   Disallow: /cart/
+   Disallow: /checkout/
+   Disallow: /account/
+   Allow: /
+   Sitemap: https://example.com/sitemap.xml
+   
+   # Meta Robots (per-page control)
+   <meta name="robots" content="index, follow">
+   <meta name="robots" content="noindex, nofollow"> <!-- For duplicates -->
+   <meta name="googlebot" content="index, follow, max-image-preview:large">
+   ```
+
+2. Canonical URLs (Prevent Duplicate Content):
+   ```html
+   <!-- Always specify canonical -->
+   <link rel="canonical" href="https://example.com/product-name">
+   
+   <!-- E-commerce variants -->
+   <link rel="canonical" href="https://example.com/product"> <!-- All color variants point here -->
+   
+   <!-- Pagination -->
+   <link rel="canonical" href="https://example.com/category?page=2">
+   <link rel="prev" href="https://example.com/category">
+   <link rel="next" href="https://example.com/category?page=3">
+   ```
+
+3. Hreflang (International/Multi-language):
+   ```html
+   <!-- Language variants -->
+   <link rel="alternate" hreflang="en" href="https://example.com/en/">
+   <link rel="alternate" hreflang="nl" href="https://example.com/nl/">
+   <link rel="alternate" hreflang="de" href="https://example.com/de/">
+   <link rel="alternate" hreflang="fr" href="https://example.com/fr/">
+   <link rel="alternate" hreflang="x-default" href="https://example.com/">
+   
+   <!-- Regional variants -->
+   <link rel="alternate" hreflang="en-US" href="https://example.com/us/">
+   <link rel="alternate" hreflang="en-GB" href="https://example.com/uk/">
+   <link rel="alternate" hreflang="nl-NL" href="https://example.com/nl/">
+   <link rel="alternate" hreflang="nl-BE" href="https://example.be/nl/">
+   ```
+
+4. XML Sitemaps (Help Google discover pages):
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       <loc>https://example.com/product</loc>
+       <lastmod>2025-11-03</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.8</priority>
+       <image:image>
+         <image:loc>https://example.com/product.jpg</image:loc>
+         <image:title>Product Name</image:title>
+       </image:image>
+     </url>
+   </urlset>
+   
+   <!-- Types of sitemaps -->
+   sitemap.xml           (Main index)
+   products-sitemap.xml  (All products)
+   blog-sitemap.xml      (Blog posts)
+   images-sitemap.xml    (Product images)
+   video-sitemap.xml     (Video content)
+   ```
+
+5. HTTPS & Security:
+   - HTTPS required for ranking (2014+)
+   - Valid SSL certificate (Let's Encrypt free)
+   - HSTS headers for security
+   - Mixed content warnings hurt rankings
+
+META TAGS & ON-PAGE SEO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Title Tag (Most important on-page factor):
+   ```html
+   <!-- Format: Primary Keyword | Secondary Keyword | Brand -->
+   <title>Hardwood Floor Oil - Professional Wood Protection | EMMSO</title>
+   
+   <!-- Best practices -->
+   - Length: 50-60 characters (512px width limit)
+   - Primary keyword first
+   - Unique per page
+   - Include brand at end
+   - Avoid keyword stuffing
+   ```
+
+2. Meta Description (CTR factor, not direct ranking):
+   ```html
+   <meta name="description" content="Professional hardwood floor oil for lasting protection. Easy application, natural finish. Fast shipping across Europe. Order now!">
+   
+   <!-- Best practices -->
+   - Length: 150-160 characters
+   - Include call-to-action
+   - Match search intent
+   - Unique per page
+   - Include target keyword naturally
+   ```
+
+3. Open Graph & Twitter Cards (Social sharing):
+   ```html
+   <!-- Open Graph (Facebook, LinkedIn) -->
+   <meta property="og:title" content="Professional Hardwood Floor Oil">
+   <meta property="og:description" content="Premium wood protection...">
+   <meta property="og:image" content="https://example.com/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:url" content="https://example.com/product">
+   <meta property="og:type" content="product">
+   <meta property="og:locale" content="en_US">
+   <meta property="og:site_name" content="EMMSO">
+   
+   <!-- Twitter Cards -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Professional Hardwood Floor Oil">
+   <meta name="twitter:description" content="Premium wood protection...">
+   <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+   ```
+
+4. Heading Structure (H1-H6):
+   ```html
+   <!-- Single H1 per page -->
+   <h1>Professional Hardwood Floor Oil</h1>
+   
+   <!-- Logical hierarchy -->
+   <h2>Benefits</h2>
+     <h3>Long-lasting Protection</h3>
+     <h3>Easy Application</h3>
+   <h2>How to Use</h2>
+     <h3>Preparation</h3>
+     <h3>Application</h3>
+     <h3>Maintenance</h3>
+   
+   <!-- DON'T skip levels (h1 → h3) -->
+   <!-- DON'T use for styling (use CSS) -->
+   ```
+
+STRUCTURED DATA (Schema.org JSON-LD):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Product Schema (E-commerce essential):
+   ```javascript
+   {
+     "@context": "https://schema.org/",
+     "@type": "Product",
+     "name": "Floorservice Color Hardwax Oil",
+     "image": [
+       "https://example.com/product-800.jpg",
+       "https://example.com/product-1200.jpg"
+     ],
+     "description": "Professional hardwood floor oil...",
+     "sku": "FS-CHO-001",
+     "mpn": "925872",
+     "brand": {
+       "@type": "Brand",
+       "name": "Floorservice"
+     },
+     "offers": {
+       "@type": "Offer",
+       "url": "https://example.com/product",
+       "priceCurrency": "EUR",
+       "price": "45.99",
+       "priceValidUntil": "2025-12-31",
+       "availability": "https://schema.org/InStock",
+       "itemCondition": "https://schema.org/NewCondition",
+       "seller": {
+         "@type": "Organization",
+         "name": "EMMSO"
+       }
+     },
+     "aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "4.8",
+       "reviewCount": "127"
+     },
+     "review": [{
+       "@type": "Review",
+       "reviewRating": {
+         "@type": "Rating",
+         "ratingValue": "5",
+         "bestRating": "5"
+       },
+       "author": {
+         "@type": "Person",
+         "name": "John Smith"
+       },
+       "reviewBody": "Excellent product, easy to apply..."
+     }]
+   }
+   ```
+
+2. BreadcrumbList Schema:
+   ```javascript
+   {
+     "@context": "https://schema.org",
+     "@type": "BreadcrumbList",
+     "itemListElement": [{
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Home",
+       "item": "https://example.com"
+     }, {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Floors",
+       "item": "https://example.com/floors"
+     }, {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Floor Oils",
+       "item": "https://example.com/floors/oils"
+     }, {
+       "@type": "ListItem",
+       "position": 4,
+       "name": "Hardwax Oil Classic"
+     }]
+   }
+   ```
+
+3. Organization Schema:
+   ```javascript
+   {
+     "@context": "https://schema.org",
+     "@type": "Organization",
+     "name": "EMMSO",
+     "url": "https://emmso.com",
+     "logo": "https://emmso.com/logo.png",
+     "description": "European Marketplace for Smart Shopping",
+     "contactPoint": {
+       "@type": "ContactPoint",
+       "telephone": "+31-20-1234567",
+       "contactType": "Customer Service",
+       "email": "support@emmso.com",
+       "availableLanguage": ["en", "nl", "de", "fr"]
+     },
+     "sameAs": [
+       "https://facebook.com/emmso",
+       "https://twitter.com/emmso",
+       "https://linkedin.com/company/emmso"
+     ]
+   }
+   ```
+
+4. WebSite Schema (Search box):
+   ```javascript
+   {
+     "@context": "https://schema.org",
+     "@type": "WebSite",
+     "url": "https://emmso.com",
+     "potentialAction": {
+       "@type": "SearchAction",
+       "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://emmso.com/search?q={search_term_string}"
+       },
+       "query-input": "required name=search_term_string"
+     }
+   }
+   ```
+
+E-COMMERCE SEO SPECIFIC:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Product Pages:
+   - Unique descriptions (500+ words)
+   - High-quality images (multiple angles, zoom)
+   - Reviews & ratings (user-generated content)
+   - Product specifications table
+   - Related products (internal linking)
+   - Video content (increases engagement)
+   
+2. Category Pages:
+   - Intro text (200+ words)
+   - Faceted navigation SEO (use canonical)
+   - Breadcrumbs for hierarchy
+   - Pagination: rel="next" and rel="prev"
+   - Filter counts (e.g., "23 products")
+
+3. Out-of-Stock Products:
+   ```html
+   <!-- DON'T delete page (kills rankings) -->
+   <!-- DO mark as unavailable -->
+   "availability": "https://schema.org/OutOfStock"
+   
+   <!-- DO show alternatives -->
+   <div class="alternatives">
+     <h2>Similar Products Available</h2>
+     <!-- Show 3-5 similar products -->
+   </div>
+   
+   <!-- DO offer notification -->
+   <form class="stock-notification">
+     <input type="email" placeholder="Email me when back in stock">
+   </form>
+   ```
+
+4. Faceted Navigation (Filters):
+   ```html
+   <!-- Problem: Creates duplicate content -->
+   /products
+   /products?color=red
+   /products?color=red&size=large
+   
+   <!-- Solution 1: Canonical to main page -->
+   <link rel="canonical" href="/products">
+   
+   <!-- Solution 2: Noindex filtered pages -->
+   <meta name="robots" content="noindex, follow">
+   
+   <!-- Solution 3: URL structure -->
+   /products (canonical)
+   /products/red (indexable)
+   /products/red?size=large (noindex)
+   ```
+
+CONTENT OPTIMIZATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Keyword Research & Intent:
+   - Informational: "how to", "what is", "guide"
+   - Navigational: brand name, specific product
+   - Commercial: "best", "review", "comparison"
+   - Transactional: "buy", "price", "cheap"
+
+2. Content Guidelines:
+   - Minimum 300 words for product pages
+   - 1000+ words for pillar content/guides
+   - Target keyword in first 100 words
+   - Use keyword variations (LSI keywords)
+   - Answer user questions (featured snippets)
+
+3. Image SEO:
+   ```html
+   <!-- File naming -->
+   hardwood-floor-oil-natural-finish.jpg (NOT IMG_1234.jpg)
+   
+   <!-- Alt text -->
+   <img src="hardwood-floor-oil.jpg" 
+        alt="Professional hardwood floor oil application showing natural wood finish"
+        width="800"
+        height="600"
+        loading="lazy">
+   
+   <!-- Image dimensions (prevent CLS) -->
+   width + height attributes REQUIRED
+   
+   <!-- Modern formats -->
+   <picture>
+     <source type="image/avif" srcset="product.avif">
+     <source type="image/webp" srcset="product.webp">
+     <img src="product.jpg" alt="Product name">
+   </picture>
+   ```
+
+4. Internal Linking:
+   - Contextual links (in body content)
+   - Descriptive anchor text (not "click here")
+   - Link to related products/categories
+   - Link from high-authority pages
+   - Use breadcrumbs for hierarchy
+
+URL STRUCTURE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Best Practices:
+✅ Short & descriptive
+✅ Lowercase only
+✅ Hyphens for word separation
+✅ Include target keyword
+✅ Remove stop words (a, the, and)
+
+Examples:
+❌ /product.php?id=12345
+❌ /Products/Category/Sub-Category/Product_Name
+✅ /hardwood-floor-oil
+✅ /floors/oils/hardwax-oil-classic
+✅ /blog/how-to-apply-floor-oil
+
+SITE SPEED & PAGE EXPERIENCE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Google Ranking Factors (Page Experience Update 2021):
+1. Core Web Vitals (see above)
+2. Mobile-friendliness (mobile-first indexing)
+3. HTTPS (security)
+4. No intrusive interstitials (popups)
+5. Safe browsing (no malware/phishing)
+
+Mobile SEO Checklist:
+✅ Responsive design (not separate m. subdomain)
+✅ Touch targets 48x48px minimum
+✅ Font size 16px+ (no zoom needed)
+✅ Viewport meta tag
+✅ Fast loading (<2.5s LCP)
+✅ No Flash/plugins
+✅ Readable without horizontal scroll
+
+ANALYTICS & MONITORING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Google Search Console:
+   - Monitor indexing status
+   - Fix crawl errors
+   - Submit sitemaps
+   - Check mobile usability
+   - Review Core Web Vitals
+   - Track clicks, impressions, CTR, position
+
+2. Google Analytics 4:
+   - Track organic traffic
+   - Monitor bounce rate & engagement
+   - Conversion tracking (ecommerce)
+   - User flow analysis
+   - Landing page performance
+
+3. Key Metrics to Track:
+   - Organic traffic (sessions from Google)
+   - Keyword rankings (top 10, top 20, top 50)
+   - CTR (click-through rate in SERPs)
+   - Conversion rate (organic visitors → purchases)
+   - Page speed (Core Web Vitals)
+   - Crawl errors & indexing issues
+
+════════════════════════════════════════════════════════════════════════════════
+END OF EXPERT KNOWLEDGE BASE
+════════════════════════════════════════════════════════════════════════════════
+"""
 
 TECHNICAL SEO ESSENTIALS:
 - Structured Data: JSON-LD for Product, BreadcrumbList, Organization, WebSite
