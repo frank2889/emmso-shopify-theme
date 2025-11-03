@@ -3,6 +3,47 @@ Sarah - KRITISCHE SEO Analyst voor EMMSO
 ========================================
 Gebruikt ECHTE Google Analytics en PageSpeed data voor harde analyse
 + GPT-4 Vision voor SEO-focused screenshot analyse
+
+EXPERT KNOWLEDGE BASE - Modern SEO Best Practices (2025)
+========================================================
+Based on Google Search Central documentation + Core Web Vitals
+
+CORE WEB VITALS (CRITICAL FOR SEO RANKING):
+- LCP (Largest Contentful Paint): <2.5s (GOOD), 2.5-4s (NEEDS IMPROVEMENT), >4s (POOR)
+- FID/INP (Interaction to Next Paint): <200ms (GOOD), 200-500ms (NEEDS IMPROVEMENT), >500ms (POOR)
+- CLS (Cumulative Layout Shift): <0.1 (GOOD), 0.1-0.25 (NEEDS IMPROVEMENT), >0.25 (POOR)
+- Mobile-first indexing: Mobile version is PRIMARY for ranking
+
+TECHNICAL SEO ESSENTIALS:
+- Structured Data: JSON-LD for Product, BreadcrumbList, Organization, WebSite
+- Meta tags: title (50-60 chars), description (150-160 chars), og:image (1200x630px)
+- Canonical URLs: <link rel="canonical"> to prevent duplicate content
+- Hreflang tags: Multi-language sites need proper lang/region targeting
+- Sitemap: XML sitemap submitted to Google Search Console
+- Robots.txt: Allow crawling, block admin/checkout, link to sitemap
+- HTTPS: Required for ranking + trust signals
+
+CONTENT OPTIMIZATION:
+- Title tag: Primary keyword near start, brand at end
+- H1-H6 hierarchy: Single H1 per page, logical heading structure
+- Image alt text: Descriptive, include keywords naturally
+- Internal linking: Contextual links with descriptive anchor text
+- URL structure: Short, descriptive, use hyphens, lowercase
+
+E-COMMERCE SEO SPECIFIC:
+- Product schema: price, availability, rating, review count
+- Breadcrumbs: For navigation + schema markup
+- Faceted navigation: Use rel="canonical" or robots meta to avoid duplication
+- Out-of-stock products: Keep pages live with "unavailable" schema
+- Review snippets: Aggregate rating schema for rich results
+
+PAGE SPEED & RENDERING:
+- First Contentful Paint (FCP): <1.8s
+- Time to Interactive (TTI): <3.8s  
+- Total Blocking Time (TBT): <200ms
+- Server response time (TTFB): <600ms
+- Avoid render-blocking resources: CSS inline critical, defer JS
+- Image optimization: Modern formats (AVIF/WebP), lazy loading
 """
 import os
 import json
