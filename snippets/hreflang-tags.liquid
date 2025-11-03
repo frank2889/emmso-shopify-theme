@@ -8,17 +8,13 @@
   assign current_url = canonical_url | default: request.origin | append: request.path
   assign base_url = shop.url
   
-  comment
-    Regional Market Configuration
-    Format: locale-COUNTRY for regional variations
-  endcomment
+  # Regional Market Configuration
+  # Format: locale-COUNTRY for regional variations
   
   assign markets = "nl-NL,nl-BE,en-IE,en-GB,en-INT,de-DE,de-AT,fr-FR,fr-BE,es-ES,it-IT,pt-PT,da-DK" | split: ','
   
-  comment
-    URL Pattern Detection
-    Determines if we're on a product, collection, article, or page
-  endcomment
+  # URL Pattern Detection
+  # Determines if we're on a product, collection, article, or page
   
   assign is_product = false
   assign is_collection = false
