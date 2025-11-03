@@ -107,3 +107,69 @@ Vision AI will automatically analyze all images in this folder on each captain.p
 - ❌ No browser UI (address bar, bookmarks)
 - ❌ No dev tools visible
 - ❌ No overlays or popups (unless testing that feature)
+
+---
+
+## 📋 RECOMMENDED ADDITIONAL SCREENSHOTS
+
+### 🔴 HIGH PRIORITY (Next Analysis Cycle)
+
+| Screenshot | Suggested URL | Purpose | Business Impact |
+|-----------|---------------|---------|-----------------|
+| `cart-desktop.png` | `https://emmso.eu/en/cart` | Shopping cart page | **CRITICAL** - Checkout flow, conversion optimization |
+| `cart-mobile.png` | `https://emmso.eu/en/cart` | Mobile cart | **CRITICAL** - Mobile revenue 40%→65% goal |
+| `blog-article-desktop.png` | `https://emmso.eu/en/blogs/news/[article]` | Blog post layout | **HIGH** - Content marketing, SEO, bounce rate |
+| `404-error-desktop.png` | `https://emmso.eu/en/404` | Error page | **HIGH** - User retention, professional UX |
+| `search-no-results-desktop.png` | `https://emmso.eu/en/search?q=xyz123notfound` | No results state | **HIGH** - Search-first vision, fallback UX |
+
+**Expected Impact:**
+- Cart analysis: Identifies friction in checkout flow (conversion 3.5%→6%)
+- Blog: Content SEO optimization
+- 404: Professional error handling reduces bounce rate
+- No results: Search experience completeness (25%→75% usage goal)
+
+### 🟡 MEDIUM PRIORITY (Enhanced Coverage)
+
+| Screenshot | Suggested URL | Purpose | Business Impact |
+|-----------|---------------|---------|-----------------|
+| `mobile-nav-expanded.png` | `https://emmso.eu/en/` (tap menu) | Mobile navigation open | **MEDIUM** - Mobile UX, navigation accessibility |
+| `collection-filters-active.png` | `https://emmso.eu/en/collections/all?filter.p.vendor=Brand` | Active filters | **MEDIUM** - Filter UX, search experience |
+| `product-comparison.png` | `https://emmso.eu/en/pages/compare` | Comparison feature | **MEDIUM** - Product comparison UX |
+| `account-login.png` | `https://emmso.eu/en/account/login` | Login page | **MEDIUM** - Customer account experience |
+
+### 🟢 NICE TO HAVE (Edge Cases)
+
+| Screenshot | Suggested URL | Purpose | Business Impact |
+|-----------|---------------|---------|-----------------|
+| `product-out-of-stock.png` | Find out-of-stock product | Inventory messaging | **LOW** - Edge case handling |
+| `search-voice-active.png` | `https://emmso.eu/en/` (activate voice) | Voice search UI | **LOW** - Future feature validation |
+| `loading-state.png` | Slow connection simulation | Loading indicators | **LOW** - Performance perception |
+
+---
+
+## 🎯 IMPLEMENTATION PLAN
+
+### Phase 1 - Next Analysis (November 10, 2025)
+Add these 5 screenshots before running Captain:
+1. ✅ `cart-desktop.png`
+2. ✅ `cart-mobile.png`
+3. ✅ `blog-article-desktop.png`
+4. ✅ `404-error-desktop.png`
+5. ✅ `search-no-results-desktop.png`
+
+**Why:** These cover critical user flows (cart, content, errors) that directly impact business metrics.
+
+### Phase 2 - After Major Features
+Add mobile navigation and filters when implementing navigation improvements.
+
+### Phase 3 - Complete Coverage
+Add edge cases once core experience is optimized.
+
+---
+
+## 📊 COVERAGE METRICS
+
+**Current:** 10 screenshots covering 6 core page types
+**Target:** 15-20 screenshots covering all user flows
+**Priority Focus:** Checkout flow (cart) + Content (blog) + Error handling (404/no-results)
+

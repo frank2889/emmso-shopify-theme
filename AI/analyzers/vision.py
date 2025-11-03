@@ -188,39 +188,49 @@ class VisionAIAnalyst:
         base_prompt = f"""Analyze this screenshot of the {screen_name} page/section of an e-commerce website.
 
 PROJECT GOALS:
-- Vision: {project_goals.get('vision', 'Search-first e-commerce')}
+- Vision: {project_goals.get('vision', 'Search-first e-commerce marketplace')}
 - Design: {project_goals.get('design_principle', 'Brutalist Simplicity - Function over decoration')}
 - Mobile: {project_goals.get('mobile_first', 'Thumb-optimized, 44px touch targets')}
 - Accessibility: {project_goals.get('accessibility', 'WCAG 2.1 AA compliance')}
 
+CRITICAL: This is an **E-COMMERCE PLATFORM** (online shopping). Look for shopping cart indicators!
+
 EVALUATE THE FOLLOWING (Score 0-100 for each):
 
-1. **Visual Hierarchy** (0-100)
+1. **E-Commerce Visibility** (0-100) **[NEW - CRITICAL]**
+   - Is there a visible shopping cart icon/button in the header?
+   - Can you see product pricing clearly displayed?
+   - Are there "Add to Cart" or "Buy Now" buttons visible?
+   - Does the design communicate "this is a shop" immediately?
+   - Is the cart count badge visible (if items in cart)?
+   - **Score 0 if no cart icon visible, even if other e-commerce elements present**
+
+2. **Visual Hierarchy** (0-100)
    - Is the most important content immediately visible?
    - Clear focal points and visual flow?
    - Proper use of size, contrast, and spacing?
 
-2. **Search-First Design** (0-100)
+3. **Search-First Design** (0-100)
    - Is search prominent and easy to find?
    - Does it feel like a search-focused experience?
    - Voice search visible/accessible?
 
-3. **Mobile-First/Responsive** (0-100)
+4. **Mobile-First/Responsive** (0-100)
    - Touch-friendly targets (44px minimum)?
    - Thumb-reachable navigation?
    - Readable text sizes (16px+ for body)?
 
-4. **Brutalist Simplicity** (0-100)
+5. **Brutalist Simplicity** (0-100)
    - Function over decoration?
    - Clean, minimal design?
    - No unnecessary visual clutter?
 
-5. **Accessibility** (0-100)
+6. **Accessibility** (0-100)
    - Sufficient color contrast (4.5:1 for text)?
    - Clear visual states (hover, focus)?
    - Readable typography?
 
-6. **Brand Consistency** (0-100)
+7. **Brand Consistency** (0-100)
    - Consistent colors and typography?
    - Professional appearance?
    - EMMSO brand visible/clear?
@@ -228,6 +238,7 @@ EVALUATE THE FOLLOWING (Score 0-100 for each):
 PROVIDE YOUR ANALYSIS IN THIS FORMAT:
 
 **SCORES:**
+- E-Commerce Visibility: X/100 (CRITICAL - Must see cart icon!)
 - Visual Hierarchy: X/100
 - Search-First Design: X/100
 - Mobile-First: X/100
@@ -236,16 +247,25 @@ PROVIDE YOUR ANALYSIS IN THIS FORMAT:
 - Brand Consistency: X/100
 - OVERALL: X/100
 
+**E-COMMERCE CHECK:**
+- Cart icon visible? YES/NO (describe location and size)
+- Pricing visible? YES/NO
+- Add to Cart buttons? YES/NO
+- Shopping intent clear? YES/NO
+
 **ISSUES FOUND:**
 - [List specific visual problems you see]
+- [Flag if cart icon is missing or too small to notice]
 
 **RECOMMENDATIONS:**
 - [Specific actionable improvements]
+- [If cart not visible: "Make shopping cart icon more prominent (increase size, add animation, ensure visibility)"]
 
 **HIGHLIGHTS:**
 - [What works well visually]
 
-Be critical and specific. Focus on what you can actually SEE in the screenshot."""
+Be critical and specific. Focus on what you can actually SEE in the screenshot. 
+If you cannot see a shopping cart icon in the header, FLAG THIS IMMEDIATELY as critical issue."""
 
         return base_prompt
     
@@ -256,12 +276,19 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
             'screen': screen_name,
             'raw_analysis': response_text,
             'scores': {
+                'ecommerce_visibility': 0,  # NEW - CRITICAL
                 'visual_hierarchy': 0,
                 'search_first': 0,
                 'mobile_first': 0,
                 'brutalist_simplicity': 0,
                 'accessibility': 0,
                 'brand_consistency': 0
+            },
+            'ecommerce_check': {
+                'cart_icon_visible': False,
+                'pricing_visible': False,
+                'add_to_cart_buttons': False,
+                'shopping_intent_clear': False
             },
             'issues': [],
             'recommendations': [],
@@ -274,6 +301,16 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
         for line in lines:
             line = line.strip()
             
+            # Parse E-COMMERCE CHECK section
+            if 'cart icon visible?' in line.lower():
+                analysis['ecommerce_check']['cart_icon_visible'] = 'yes' in line.lower()
+            elif 'pricing visible?' in line.lower():
+                analysis['ecommerce_check']['pricing_visible'] = 'yes' in line.lower()
+            elif 'add to cart buttons?' in line.lower():
+                analysis['ecommerce_check']['add_to_cart_buttons'] = 'yes' in line.lower()
+            elif 'shopping intent clear?' in line.lower():
+                analysis['ecommerce_check']['shopping_intent_clear'] = 'yes' in line.lower()
+            
             # Parse individual scores
             if ':' in line and '/100' in line:
                 try:
@@ -284,7 +321,9 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
                         score = int(score_str)
                         
                         # Map to score keys
-                        if 'visual hierarchy' in label:
+                        if 'e-commerce' in label or 'ecommerce' in label:
+                            analysis['scores']['ecommerce_visibility'] = score
+                        elif 'visual hierarchy' in label:
                             analysis['scores']['visual_hierarchy'] = score
                         elif 'search' in label and 'first' in label:
                             analysis['scores']['search_first'] = score
@@ -323,6 +362,12 @@ Be critical and specific. Focus on what you can actually SEE in the screenshot."
         if 'score' not in analysis:
             subscores = [s for s in analysis['scores'].values() if s > 0]
             analysis['score'] = int(sum(subscores) / len(subscores)) if subscores else 50
+        
+        # Flag critical issue if cart not visible
+        if not analysis['ecommerce_check']['cart_icon_visible']:
+            critical_rec = f"{screen_name}: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce."
+            if critical_rec not in analysis['recommendations']:
+                analysis['recommendations'].insert(0, critical_rec)
         
         return analysis
     
