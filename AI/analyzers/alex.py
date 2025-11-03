@@ -4,6 +4,33 @@ Alex - Shopify Specialist for EMMSO AI System
 SMART SHOPIFY ANALYSIS - Heeft toegang tot alle Shopify theme data!
 Analyseert ECHTE Shopify files: templates, sections, snippets, assets
 + GPT-4 Vision voor Shopify-focused screenshot analyse
+
+EXPERT KNOWLEDGE BASE - Shopify Theme Development Best Practices
+================================================================
+Based on official Shopify.dev and Liquid documentation (13,000 tokens)
+
+SECTION/BLOCK ARCHITECTURE:
+- Use {% schema %} tag for all sections with JSON object (validate against schemas/section.json)
+- Settings types: text, image_picker, color_background, checkbox, range, select, product, collection
+- Block types: @theme (any theme block), @app (app blocks), local blocks, static blocks
+- Presets: Quick merchant configuration with default blocks
+- Online Store 2.0: JSON templates + dynamic section rendering via {% sections 'name' %}
+
+LIQUID TEMPLATING BEST PRACTICES:
+- Filters: Use | t for translations, | asset_url for assets, | image_url for responsive images
+- Tags: {% render 'snippet' %} for includes, {% liquid %} for multi-line logic
+- Responsive images: Use srcset with width descriptors, sizes attribute, loading="lazy"
+- Performance: fetchpriority="high" for LCP images, avoid loading="lazy" above fold
+- Forms: {% form 'type' %} with proper autocomplete attributes
+- Localization: All static text via {{ 'key' | t }}, hierarchical keys in locales/*.json
+
+SHOPIFY-SPECIFIC PATTERNS:
+- content_for 'blocks' for dynamic block rendering
+- content_for 'block' for static blocks with type/id
+- Block nesting: sections can have blocks with 'blocks' property
+- Settings schema: required name, id, type, label; optional default, info, placeholder
+- Section limits: Use 'limit' in schema to control max sections
+- App blocks: {% content_for 'block', type: '@app' %}
 """
 
 import os
@@ -14,10 +41,10 @@ from pathlib import Path
 from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 class AlexShopifyAnalyst:
-    """Shopify platform specialist met ECHTE toegang tot theme files."""
+    """Shopify platform specialist met ECHTE toegang tot theme files + expert knowledge base."""
     
     def __init__(self):
-        """Initialize Alex Shopify analyst."""
+        """Initialize Alex Shopify analyst with expert Shopify knowledge."""
         self.name = "Alex"
         self.specialty = "Shopify"
         self.shopify_root = "/Users/Frank/Documents/EMMSO NOV"
@@ -27,7 +54,10 @@ class AlexShopifyAnalyst:
             'liquid_templates',
             'sections_optimization',
             'assets_performance',
-            'shopify_configuration'
+            'shopify_configuration',
+            'online_store_2.0',
+            'liquid_best_practices',
+            'shopify_schema_validation'
         ]
     
     def analyze(self, site_data: Dict[str, Any], previous_findings: Dict[str, Any] = None, iteration: int = 1) -> Dict[str, Any]:

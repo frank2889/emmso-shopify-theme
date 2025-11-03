@@ -10,6 +10,40 @@ Specializes in:
 - Caching strategies
 - Mobile performance
 + GPT-4 Vision voor Performance-focused screenshot analyse
+
+EXPERT KNOWLEDGE BASE - Web Performance Optimization
+====================================================
+Based on Web.dev Learn Performance documentation (8,000 tokens)
+
+CORE WEB VITALS:
+- LCP (Largest Contentful Paint): Target <2.5s. Optimize hero images with fetchpriority="high", avoid loading="lazy" above fold
+- CLS (Cumulative Layout Shift): Target <0.1. Set width/height on images, reserve space for ads, avoid layout-shifting animations
+- FID/INP (First Input Delay/Interaction to Next Paint): Target <200ms. Minimize JavaScript execution, use web workers for heavy computation
+- TTFB (Time to First Byte): Target <600ms. Optimize server response, use CDN, implement proper caching headers
+
+IMAGE OPTIMIZATION:
+- Use fetchpriority="high" for LCP images (hero images, above-fold content)
+- Apply loading="lazy" for below-fold images only
+- Implement responsive images: <picture> with <source> for art direction, srcset for resolution switching
+- Formats: WebP/AVIF with JPEG fallback, use image_url filter with width/height params
+- Preload critical images: <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
+
+RESOURCE LOADING:
+- CSS: Inline critical CSS in <head>, load non-critical async, avoid @import (blocks parallel downloads)
+- JavaScript: Use defer for scripts, async for analytics, avoid render-blocking JS
+- Fonts: Preconnect to font domains, use font-display: swap, subset fonts
+- Code splitting: Dynamic import() for deferred code loading, webpack for chunking
+
+CACHING STRATEGIES:
+- Cache First: Serve from cache, fallback to network (for static assets)
+- Network First: Try network, fallback to cache (for dynamic content)
+- Stale-While-Revalidate: Serve cached, update in background
+- Service Workers: Implement proper caching strategies with workbox
+
+PERFORMANCE API:
+- Navigation Timing: performance.getEntriesByType('navigation') for page load metrics
+- Resource Timing: Track individual resource load times
+- Custom marks: performance.mark() and performance.measure() for custom timing
 """
 
 from typing import Dict, List, Any, Optional
@@ -17,10 +51,10 @@ from datetime import datetime
 from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 class MarcusPerformanceAnalyst:
-    """Performance optimization specialist."""
+    """Performance optimization specialist with Core Web Vitals expertise."""
     
     def __init__(self):
-        """Initialize Marcus Performance analyst."""
+        """Initialize Marcus Performance analyst with expert performance knowledge."""
         self.name = "Marcus"
         self.specialty = "Performance"
         self.screenshot_analyzer = ScreenshotAnalyzer()
@@ -30,7 +64,11 @@ class MarcusPerformanceAnalyst:
             'lighthouse_audits',
             'resource_optimization',
             'caching',
-            'mobile_performance'
+            'mobile_performance',
+            'lcp_optimization',
+            'cls_prevention',
+            'image_performance',
+            'code_splitting'
         ]
     
     def analyze(self, site_data: Dict[str, Any], previous_findings: Dict[str, Any] = None, iteration: int = 1) -> Dict[str, Any]:
