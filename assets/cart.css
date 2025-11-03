@@ -414,10 +414,20 @@
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart__upsell-product:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart__upsell-link {
+  text-decoration: none;
+  color: var(--color-text);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart__upsell-product a {
@@ -437,10 +447,67 @@
   margin: 0 0 var(--spacing-xs);
 }
 
+.cart__upsell-price {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm);
+  font-size: 1.125rem;
+}
+
 .cart__upsell-product p {
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
   margin: 0;
+}
+
+/* Upsell Add to Cart Button */
+.cart__upsell-add-to-cart {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: var(--spacing-sm);
+  padding: 0.75rem 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cart__upsell-add-to-cart:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 176, 59, 0.4);
+}
+
+.cart__upsell-add-to-cart:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.cart__upsell-add-to-cart svg {
+  flex-shrink: 0;
+}
+
+.cart__upsell-add-to-cart.is-adding {
+  background-color: var(--color-warning);
+  animation: button-pulse 0.6s ease infinite;
+}
+
+.cart__upsell-add-to-cart.is-added {
+  background-color: var(--color-success);
+}
+
+@media (max-width: 768px) {
+  .cart__upsell-add-to-cart {
+    min-height: 48px;
+    font-size: 0.9rem;
+  }
 }
 
 /* ==========================================================================
@@ -514,10 +581,20 @@
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart__popular-product:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart__popular-link {
+  text-decoration: none;
+  color: var(--color-text);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart__popular-product a {
@@ -537,10 +614,67 @@
   margin: 0 0 var(--spacing-xs);
 }
 
+.cart__popular-price {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm);
+  font-size: 1.125rem;
+}
+
 .cart__popular-product p {
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
   margin: 0;
+}
+
+/* Popular Products Add to Cart Button */
+.cart__popular-add-to-cart {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: var(--spacing-sm);
+  padding: 0.75rem 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cart__popular-add-to-cart:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 176, 59, 0.4);
+}
+
+.cart__popular-add-to-cart:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.cart__popular-add-to-cart svg {
+  flex-shrink: 0;
+}
+
+.cart__popular-add-to-cart.is-adding {
+  background-color: var(--color-warning);
+  animation: button-pulse 0.6s ease infinite;
+}
+
+.cart__popular-add-to-cart.is-added {
+  background-color: var(--color-success);
+}
+
+@media (max-width: 768px) {
+  .cart__popular-add-to-cart {
+    min-height: 48px;
+    font-size: 0.9rem;
+  }
 }
 
 /* ==========================================================================

@@ -293,15 +293,30 @@
 /* Cart Icon - Enhanced for e-commerce visibility */
 .icon-button--cart {
   position: relative;
+  animation: cart-icon-subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes cart-icon-subtle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 
 .icon-button--cart svg {
   width: var(--cart-icon-size, 28px);
   height: var(--cart-icon-size, 28px);
+  stroke: var(--color-primary);
+  stroke-width: 2.5;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon-button--cart:hover {
+  animation: none;
 }
 
 .icon-button--cart:hover svg {
-  transform: scale(1.15);
+  transform: scale(1.2) rotate(5deg);
+  stroke: var(--color-primary-hover);
+  filter: drop-shadow(0 4px 8px rgba(251, 176, 59, 0.4));
 }
 
 .cart-count {

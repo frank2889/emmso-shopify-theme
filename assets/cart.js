@@ -29,6 +29,7 @@ class Cart {
   init() {
     this.bindEvents();
     this.updateShippingProgress();
+    this.bindUpsellButtons();
   }
 
   bindEvents() {
@@ -278,6 +279,118 @@ class Cart {
       clearTimeout(timeout);
       timeout = setTimeout(later, wait);
     };
+  }
+
+  /**
+   * Bind Add to Cart buttons for upsell/popular products
+   */
+  bindUpsellButtons() {
+    // Upsell products
+    const upsellButtons = document.querySelectorAll('.cart__upsell-add-to-cart');
+    upsellButtons.forEach(button => {
+      button.addEventListener('click', (e) => this.handleUpsellAddToCart(e));
+    });
+
+    // Popular products (empty cart)
+    const popularButtons = document.querySelectorAll('.cart__popular-add-to-cart');
+    popularButtons.forEach(button => {
+      button.addEventListener('click', (e) => this.handleUpsellAddToCart(e));
+    });
+  }
+
+  /**
+   * Handle Add to Cart for upsell/popular products
+   */
+  async handleUpsellAddToCart(event) {
+    const button = event.currentTarget;
+    const variantId = button.dataset.variantId;
+    const productId = button.dataset.productId;
+
+    if (!variantId) {
+      console.error('No variant ID found');
+      return;
+    }
+
+    // Visual feedback
+    button.classList.add('is-adding');
+    button.disabled = true;
+    const originalText = button.querySelector('span').textContent;
+    button.querySelector('span').textContent = 'Adding...';
+
+    try {
+      const response = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          items: [{
+            id: variantId,
+            quantity: 1
+          }]
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to add to cart');
+      }
+
+      const result = await response.json();
+
+      // Success state
+      button.classList.remove('is-adding');
+      button.classList.add('is-added');
+      button.querySelector('span').textContent = 'Added!';
+
+      // Update cart count in header
+      this.updateCartCount();
+
+      // Reload page after short delay to show updated cart
+      setTimeout(() => {
+        window.location.reload();
+      }, 800);
+
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+      
+      // Error state
+      button.classList.remove('is-adding');
+      button.querySelector('span').textContent = 'Error!';
+      
+      // Reset button after 2 seconds
+      setTimeout(() => {
+        button.querySelector('span').textContent = originalText;
+        button.disabled = false;
+      }, 2000);
+    }
+  }
+
+  /**
+   * Update cart count badge in header
+   */
+  async updateCartCount() {
+    try {
+      const response = await fetch('/cart.js');
+      const cart = await response.json();
+      
+      // Update cart count badge
+      const cartCountElements = document.querySelectorAll('.cart-count');
+      cartCountElements.forEach(el => {
+        el.textContent = cart.item_count;
+        if (cart.item_count > 0) {
+          el.style.display = 'flex';
+        }
+      });
+
+      // Update cart icon aria-label
+      const cartLinks = document.querySelectorAll('[aria-label*="Cart"]');
+      cartLinks.forEach(link => {
+        link.setAttribute('aria-label', `Cart (${cart.item_count})`);
+      });
+
+    } catch (error) {
+      console.error('Error updating cart count:', error);
+    }
   }
 }
 

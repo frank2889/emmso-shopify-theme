@@ -146,11 +146,11 @@ class MarcusPerformanceAnalyst:
             
             return {
                 'css_count': len(css_files),
-                'js_count': len(js_files),
-                'total_css_size_kb': round(total_css_size / 1024, 1),
-                'total_js_size_kb': round(total_js_size / 1024, 1),
                 'css_files': css_files,
-                'js_files': js_files
+                'total_css_size_kb': round(total_css_size / 1024, 1),
+                'js_count': len(js_files),
+                'js_files': js_files,
+                'total_js_size_kb': round(total_js_size / 1024, 1)
             }
             
         except Exception as e:
@@ -224,29 +224,50 @@ class MarcusPerformanceAnalyst:
         return max(0, score)
     
     def _generate_recommendations(self, theme_analysis, preview_performance, screenshot_analysis=None):
-        """Generate recommendations based on findings"""
+        """
+        Generate modern 2025 performance recommendations
+        
+        NOTE: CSS/JS consolidation is DEPRECATED (2024+)
+        - HTTP/2 parallel loading makes multiple files FASTER
+        - Better caching: small file changes don't invalidate entire bundle
+        - Better code splitting and lazy loading opportunities
+        - Critical CSS strategy requires separation anyway
+        """
         recommendations = []
         
         if 'error' not in theme_analysis:
-            css_count = theme_analysis.get('css_count', 0)
-            if css_count > 15:
-                recommendations.append(f"Consider consolidating {css_count} CSS files for better performance")
-            
-            js_count = theme_analysis.get('js_count', 0)
-            if js_count > 10:
-                recommendations.append(f"Consider consolidating {js_count} JS files")
-            
             total_css_kb = theme_analysis.get('total_css_size_kb', 0)
-            if total_css_kb > 150:
-                recommendations.append(f"Total CSS size is {total_css_kb}KB - consider optimization")
+            css_count = theme_analysis.get('css_count', 0)
+            
+            # Modern CSS optimization (NOT consolidation)
+            if total_css_kb > 200:
+                recommendations.append(f"Total CSS {total_css_kb}KB - minify and enable gzip/brotli compression")
+            
+            # Check for critical CSS separation
+            has_critical_css = any('critical' in f for f in theme_analysis.get('css_files', []))
+            if not has_critical_css and css_count > 10:
+                recommendations.append("Implement critical CSS inline strategy for faster first paint")
+            
+            # JavaScript optimization
+            js_count = theme_analysis.get('js_count', 0)
+            total_js_kb = theme_analysis.get('total_js_size_kb', 0)
+            
+            if total_js_kb > 150:
+                recommendations.append(f"Total JS {total_js_kb}KB - consider code splitting and lazy loading")
+            
+            # Check for proper defer/async usage
+            if js_count > 15:
+                recommendations.append("Ensure all non-critical JS uses defer attribute for better parsing performance")
         
         if 'error' not in preview_performance:
             response_time = preview_performance.get('response_time', 0)
             if response_time > 2000:
-                recommendations.append(f"Page load time is {response_time}ms - optimize")
+                recommendations.append(f"Page load time {response_time}ms - optimize TTFB with CDN and caching")
+            elif response_time > 1000:
+                recommendations.append(f"Page load time {response_time}ms - consider preconnect hints for external resources")
         
         if not recommendations:
-            recommendations.append("Performance looks good")
+            recommendations.append("Performance is well-optimized for modern HTTP/2 delivery")
         
         return recommendations
     

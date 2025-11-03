@@ -147,7 +147,7 @@ def should_capture_new_screenshots():
     print(f"📅 Last deployment: {commit_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"⏱️  Time since deployment: {minutes_since_commit:.1f} minutes")
     
-    # Check if we already have recent screenshots
+    # Check if we already have screenshots from this deployment
     latest_deployment = get_latest_screenshot_deployment()
     
     if latest_deployment:
@@ -156,8 +156,9 @@ def should_capture_new_screenshots():
         
         # If screenshots are from this deployment or newer, reuse them
         if folder_timestamp >= last_commit_time:
-            print(f"✅ Recent screenshots found: {latest_deployment.name}")
-            print(f"📁 Reusing existing screenshots (captured after current deployment)")
+            print(f"✅ Screenshots already exist for this deployment: {latest_deployment.name}")
+            print(f"📁 Reusing existing screenshots (no new deployment since last capture)")
+            print(f"💡 Make code changes + git push to trigger new deployment + screenshots")
             return False, None
     
     # Check if we need to wait longer for Shopify to deploy

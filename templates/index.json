@@ -24,10 +24,22 @@
         "brand_count": "19",
         "market_count": "10"
       }
+    },
+    "featured_products": {
+      "type": "featured-products",
+      "settings": {
+        "title": "Featured Products",
+        "collection": "",
+        "products_to_show": 8,
+        "show_vendor": true,
+        "show_add_to_cart": true,
+        "button_label": "Add to Cart"
+      }
     }
   },
   "order": [
-    "search_hero"
+    "search_hero",
+    "featured_products"
   ]
 }
 
