@@ -30,6 +30,13 @@
 16. [Feature-Specific DoD](#-feature-specific-dod)
 17. [Continuous Improvement](#-continuous-improvement)
 
+### PART III: TECHNICAL REFERENCE
+18. [Technical Stack](#6-technical-stack)
+19. [Implementation Status](#7-implementation-status)
+20. [File Structure](#8-file-structure)
+21. [Best Practices](#9-best-practices)
+22. [Troubleshooting](#10-troubleshooting)
+
 ---
 
 # PART I: BUSINESS & STRATEGY
@@ -5561,3 +5568,676 @@ Each major change will be committed separately:
 - Only architecture improved
 - Theme editor now fully functional
 - Performance significantly improved
+
+---
+
+# PART III: TECHNICAL REFERENCE
+
+## 6. TECHNICAL STACK
+
+### Core Technologies
+- **Platform:** Shopify (Liquid templating)
+- **Languages:** HTML5, CSS3 (Modern), JavaScript ES6+
+- **Version Control:** Git + GitHub
+- **Package Management:** None (vanilla, no build tools)
+- **Deployment:** Shopify Theme Kit / GitHub integration
+
+### Frontend Stack
+**CSS:**
+- Modern CSS (Grid, Flexbox, Custom Properties)
+- No preprocessors (SASS/LESS)
+- BEM naming convention
+- Mobile-first responsive design
+- CSS custom properties for theming
+
+**JavaScript:**
+- Vanilla JavaScript ES6+
+- No frameworks (React/Vue)
+- No jQuery dependency
+- Web Components (for predictive search)
+- Async/defer loading strategy
+
+**APIs:**
+- Shopify Storefront API
+- Shopify Search Suggest API
+- Web Speech API (voice search)
+- LocalStorage API (caching, comparison)
+- IntersectionObserver API (lazy loading)
+
+### Shopify Features
+- **Sections:** Theme editor customization
+- **Blocks:** Modular content blocks
+- **Schema:** JSON settings for sections
+- **Metafields:** Extended product data
+- **Filters:** Dynamic faceted filtering
+- **Translation:** i18n via locale files
+
+### Third-Party Integrations
+- **Google Search Console:** SEO monitoring
+- **Shopify Apps:**
+  * Translate & Adapt (multilingual)
+  * Instaindex (SEO indexing)
+  * Wuunder Shipping (logistics)
+
+---
+
+## 7. IMPLEMENTATION STATUS
+
+### Current Progress: Phase 6/11 (54%)
+
+#### ✅ COMPLETED PHASES
+
+**Phase 1: Header Section** (Commit 77c0739)
+- 147 lines inline CSS → 260+ lines external (`section-header.css`)
+- 15 schema settings (logo, sticky, colors, spacing)
+- Responsive logo with srcset (1x, 1.5x, 2x)
+- Sticky header with IntersectionObserver
+- ARIA labels, 44px touch targets
+- Language selector integration
+
+**Phase 2: Search Hero Section** (Commits: c5f988a, e20fd95, 45bb716, 4c97100, 858d2b8, 0c25fd1, e814ae6, c85486c, fc3546e, 7cc8749, f7c1609)
+- 350+ lines inline CSS → 660+ lines external (`section-search-hero.css`)
+- 22 schema settings (content, gradients, features, stats)
+- Multi-market transformation (6 market categories)
+- Predictive search integration (web component)
+- SEO multi-market updates (8 languages)
+- Glassmorphism design (backdrop-filter)
+- CRO testing system (debug mode, data attributes)
+- Timeless, product-agnostic messaging
+- Reduced shadow intensity
+
+**Phase 3: Footer Section** (Commit d338409)
+- 30 lines inline CSS → 500+ lines external (`section-footer.css`)
+- Blocks system (4 types: menu, newsletter, social, text)
+- Newsletter form with Shopify customer API
+- Social media SVG sprite (5 platforms)
+- Responsive grid → single column mobile
+- role="contentinfo" for accessibility
+
+**Phase 4: Product Section** (Commit 18fe2a8)
+- 244 lines inline CSS → 440+ lines external (`section-product.css`)
+- 17 schema settings
+- Image gallery with hover zoom
+- Variant selector dropdown
+- Related products with filters
+- unified-filters.js integration
+- Dynamic checkout (payment_button)
+
+**Phase 5: Collection Section** (Commit 916f63e)
+- 261 lines {% stylesheet %} → 550+ lines external (`section-collection.css`)
+- 14 schema settings
+- BEM naming convention
+- Sticky sidebar filters
+- Active filters display
+- Grid/list view toggle
+- Infinite scroll support
+- Load more button
+
+**Phase 6: Search Results Section** (Commit 660a01b)
+- 290 lines inline CSS → 680+ lines external (`section-search-results.css`)
+- 19 schema settings
+- Smart filters sidebar (sticky, collapsible groups)
+- Active filters with removable chips
+- Grid/list view toggle with localStorage
+- Sort dropdown (4 options)
+- 3 pagination types
+- Loading/empty states
+- Product comparison integration
+
+#### 📊 REFACTORING STATISTICS
+
+**Files Refactored:** 6 of 16 sections (37.5%)
+- ✅ sections/header.liquid
+- ✅ sections/search-hero.liquid
+- ✅ sections/footer.liquid
+- ✅ sections/product.liquid
+- ✅ sections/collection.liquid
+- ✅ sections/search-results.liquid
+
+**CSS Externalized:**
+- section-header.css (260+ lines)
+- section-search-hero.css (660+ lines)
+- section-footer.css (500+ lines)
+- section-product.css (440+ lines)
+- section-collection.css (550+ lines)
+- section-search-results.css (680+ lines)
+- **Total:** ~3,090 lines external CSS
+
+**Schema Settings Added:**
+- Header: 15 settings
+- Search Hero: 22 settings
+- Footer: 4 settings + blocks
+- Product: 17 settings
+- Collection: 14 settings
+- Search Results: 19 settings
+- **Total:** 91 settings + blocks
+
+#### ⏳ REMAINING WORK
+
+**Phase 7: Cart Section**
+- sections/cart.liquid
+- Externalize CSS, add schema
+- Mini-cart drawer
+- Cart recommendations
+- Shipping calculator
+
+**Phase 8: Blog/Article Sections**
+- sections/blog.liquid
+- sections/article.liquid
+- Author profiles
+- Related articles
+- Social sharing
+
+**Phase 9: Utility Sections**
+- sections/404.liquid
+- sections/page.liquid
+- sections/password.liquid
+- Error messaging
+- Offline support
+
+**Phase 10: Snippets Audit**
+- snippets/image.liquid (AVIF/WebP)
+- snippets/css-variables.liquid
+- All structured-data snippets
+- Verify Schema.org markup
+
+**Phase 11: Template JSON Review**
+- Verify all template configurations
+- Ensure schema settings work
+- Test theme editor
+- Final QA pass
+
+### JavaScript Files Status
+
+**8 Core Files (All Functional):**
+1. ✅ predictive-search.js (NEW - web component, Shopify API)
+2. ✅ product-comparison.js (500+ lines comparison tool)
+3. ✅ query-normalizer.js (500+ lines normalization)
+4. ✅ related-products.js (cross-language matching)
+5. ✅ search-engine.js (predictive search)
+6. ✅ search-hero.js (NEW - CRO tracking, localStorage)
+7. ✅ search-intelligence.js (NLP, synonyms, intent)
+8. ✅ unified-filters.js (1029 lines filtering)
+
+---
+
+## 8. FILE STRUCTURE
+
+```
+emmso-shopify-theme/
+├── assets/
+│   ├── CSS Files (18 total)
+│   │   ├── section-header.css ✅ (260+ lines)
+│   │   ├── section-search-hero.css ✅ (660+ lines)
+│   │   ├── section-footer.css ✅ (500+ lines)
+│   │   ├── section-product.css ✅ (440+ lines)
+│   │   ├── section-collection.css ✅ (550+ lines)
+│   │   ├── section-search-results.css ✅ (680+ lines)
+│   │   ├── component-predictive-search.css ✅
+│   │   ├── product-card.css ✅
+│   │   ├── critical.css ✅
+│   │   └── ... (9 more CSS files)
+│   │
+│   ├── JavaScript Files (8 total)
+│   │   ├── predictive-search.js ✅
+│   │   ├── product-comparison.js ✅
+│   │   ├── query-normalizer.js ✅
+│   │   ├── related-products.js ✅
+│   │   ├── search-engine.js ✅
+│   │   ├── search-hero.js ✅
+│   │   ├── search-intelligence.js ✅
+│   │   └── unified-filters.js ✅
+│   │
+│   └── Images & Fonts
+│
+├── blocks/
+│   ├── group.liquid
+│   └── text.liquid
+│
+├── config/
+│   ├── settings_data.json
+│   └── settings_schema.json
+│
+├── layout/
+│   ├── password.liquid
+│   └── theme.liquid
+│
+├── locales/ (20 languages)
+│   ├── en.default.json
+│   ├── en.default.schema.json
+│   ├── nl.json
+│   ├── de.json
+│   ├── fr.json
+│   ├── es.json
+│   ├── it.json
+│   ├── pt-PT.json
+│   ├── da.json
+│   └── ... (12 more)
+│
+├── sections/ (16 total)
+│   ├── header.liquid ✅ REFACTORED
+│   ├── search-hero.liquid ✅ REFACTORED
+│   ├── footer.liquid ✅ REFACTORED
+│   ├── product.liquid ✅ REFACTORED
+│   ├── collection.liquid ✅ REFACTORED
+│   ├── search-results.liquid ✅ REFACTORED
+│   ├── cart.liquid ⏳ PENDING
+│   ├── blog.liquid ⏳ PENDING
+│   ├── article.liquid ⏳ PENDING
+│   ├── 404.liquid ⏳ PENDING
+│   ├── page.liquid ⏳ PENDING
+│   └── ... (5 more)
+│
+├── snippets/ (20+ total)
+│   ├── comparison-bar.liquid
+│   ├── comparison-checkbox.liquid
+│   ├── css-variables.liquid
+│   ├── image.liquid
+│   ├── language-selector.liquid
+│   ├── meta-tags-enhanced.liquid
+│   ├── mobile-nav.liquid
+│   ├── search-bar-compact.liquid
+│   └── ... (12+ more)
+│
+├── templates/ (13 JSON + 1 Liquid)
+│   ├── 404.json
+│   ├── article.json
+│   ├── blog.json
+│   ├── cart.json
+│   ├── collection.json
+│   ├── index.json
+│   ├── list-collections.json
+│   ├── page.json
+│   ├── password.json
+│   ├── product.json
+│   ├── search.json
+│   └── gift_card.liquid
+│
+└── Documentation/
+    ├── DEFINITION-OF-DONE.md ✅ (single source of truth)
+    ├── DESIGN-SYSTEM.md ✅ (visual design specs)
+    └── README.md ✅ (GitHub redirect)
+```
+
+---
+
+## 9. BEST PRACTICES
+
+### CSS Architecture
+
+**1. BEM Naming Convention**
+```css
+/* Block */
+.search-hero { }
+
+/* Element */
+.search-hero__title { }
+.search-hero__input { }
+
+/* Modifier */
+.search-hero--compact { }
+.search-hero__button--primary { }
+```
+
+**2. CSS Custom Properties**
+```css
+:root {
+  --color-primary: #FBB03B;
+  --color-text: #4D4D4D;
+  --spacing-unit: 1rem;
+  --border-radius: 0.5rem;
+}
+
+.button {
+  background: var(--color-primary);
+  padding: var(--spacing-unit);
+  border-radius: var(--border-radius);
+}
+```
+
+**3. Mobile-First Responsive**
+```css
+/* Mobile first (320px+) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+```
+
+**4. Performance Optimizations**
+```css
+/* GPU acceleration for animations */
+.animated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Efficient animations (transform/opacity only) */
+.fade {
+  transition: opacity 0.3s ease;
+}
+
+.slide {
+  transition: transform 0.3s ease;
+}
+```
+
+### JavaScript Patterns
+
+**1. Vanilla JavaScript (No jQuery)**
+```javascript
+// ❌ Don't use jQuery
+$('.button').click(function() { });
+
+// ✅ Use vanilla JavaScript
+document.querySelectorAll('.button').forEach(btn => {
+  btn.addEventListener('click', handleClick);
+});
+```
+
+**2. Debouncing Expensive Operations**
+```javascript
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+// Usage: debounce search input
+const searchInput = document.querySelector('#search');
+searchInput.addEventListener('input', debounce(performSearch, 300));
+```
+
+**3. Event Delegation**
+```javascript
+// ❌ Don't add listeners to many elements
+document.querySelectorAll('.filter-option').forEach(option => {
+  option.addEventListener('click', handleFilter);
+});
+
+// ✅ Use event delegation
+document.querySelector('.filter-group').addEventListener('click', (e) => {
+  if (e.target.classList.contains('filter-option')) {
+    handleFilter(e);
+  }
+});
+```
+
+**4. Error Handling**
+```javascript
+async function fetchProducts() {
+  try {
+    const response = await fetch('/search/suggest.json?q=' + query);
+    if (!response.ok) throw new Error('Network response was not ok');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    showErrorMessage('Unable to load products. Please try again.');
+    return null;
+  }
+}
+```
+
+### Liquid Best Practices
+
+**1. Translation Keys (No Hardcoded Text)**
+```liquid
+{%- comment -%} ❌ Don't hardcode text {%- endcomment -%}
+<h1>Search Results</h1>
+
+{%- comment -%} ✅ Use translation keys {%- endcomment -%}
+<h1>{{ 'search.results.title' | t }}</h1>
+```
+
+**2. Safe Liquid Operations**
+```liquid
+{%- comment -%} Always check for nil {%- endcomment -%}
+{% if product.featured_image %}
+  {{ product.featured_image | image_url: width: 800 | image_tag }}
+{% else %}
+  <img src="{{ 'placeholder.png' | asset_url }}" alt="No image">
+{% endif %}
+```
+
+**3. Schema Settings**
+```json
+{
+  "name": "Search Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Find your perfect product"
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "min": 400,
+      "max": 800,
+      "step": 50,
+      "default": 600,
+      "unit": "px",
+      "label": "Section height"
+    }
+  ]
+}
+```
+
+### Accessibility Guidelines
+
+**1. Semantic HTML**
+```html
+<!-- ✅ Use semantic tags -->
+<header>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h1>Product Title</h1>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2025 EMMSO</p>
+</footer>
+```
+
+**2. ARIA Labels**
+```html
+<!-- Icon buttons need labels -->
+<button aria-label="Close dialog">
+  <svg>...</svg>
+</button>
+
+<!-- Form inputs need labels -->
+<label for="email">Email address</label>
+<input type="email" id="email" name="email">
+
+<!-- Live regions for dynamic content -->
+<div aria-live="polite" aria-atomic="true">
+  <p>5 products found</p>
+</div>
+```
+
+**3. Keyboard Navigation**
+```javascript
+// Trap focus in modal
+const modal = document.querySelector('.modal');
+const focusableElements = modal.querySelectorAll(
+  'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+);
+
+const firstElement = focusableElements[0];
+const lastElement = focusableElements[focusableElements.length - 1];
+
+modal.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    if (e.shiftKey && document.activeElement === firstElement) {
+      e.preventDefault();
+      lastElement.focus();
+    } else if (!e.shiftKey && document.activeElement === lastElement) {
+      e.preventDefault();
+      firstElement.focus();
+    }
+  }
+});
+```
+
+---
+
+## 10. TROUBLESHOOTING
+
+### Common Issues & Solutions
+
+#### Issue: Predictive Search Not Working
+
+**Symptoms:**
+- Search suggestions don't appear
+- Console error: "fetch is not defined"
+
+**Solutions:**
+1. Check JavaScript is loaded: `<script src="{{ 'predictive-search.js' | asset_url }}" defer></script>`
+2. Verify Shopify Search Suggest API is enabled in Settings → Apps
+3. Check browser console for CORS errors
+4. Ensure input has correct data attribute: `data-predictive-search-input`
+
+#### Issue: Filters Not Updating
+
+**Symptoms:**
+- Clicking filters doesn't update products
+- URL params don't change
+
+**Solutions:**
+1. Verify unified-filters.js is loaded
+2. Check data attributes on filter elements: `data-filter-group`, `data-filter-content`
+3. Inspect AJAX request in Network tab
+4. Ensure collection template includes filter hooks
+
+#### Issue: Language Selector Not Showing
+
+**Symptoms:**
+- Language dropdown is empty
+- Only one language appears
+
+**Solutions:**
+1. Check Shopify Markets are enabled (Settings → Markets)
+2. Verify hreflang tags in `meta-tags-enhanced.liquid`
+3. Ensure locales exist in `/locales/` directory
+4. Check if Translate & Adapt app is installed
+
+#### Issue: CSS Not Loading
+
+**Symptoms:**
+- Styles look broken
+- 404 errors for CSS files
+
+**Solutions:**
+1. Verify file exists in `/assets/` directory
+2. Check filename matches exactly: `{{ 'section-header.css' | asset_url | stylesheet_tag }}`
+3. Clear Shopify theme cache
+4. Check for typos in asset_url filter
+
+#### Issue: Performance Issues
+
+**Symptoms:**
+- Slow page load
+- Low Lighthouse scores
+
+**Solutions:**
+1. **Images:**
+   - Use responsive images with srcset
+   - Lazy load below-fold images: `loading="lazy"`
+   - Compress images (TinyPNG, ImageOptim)
+
+2. **JavaScript:**
+   - Defer non-critical scripts: `defer` attribute
+   - Debounce scroll/resize/input handlers
+   - Remove unused code
+
+3. **CSS:**
+   - Minimize @import statements
+   - Use critical CSS inline in `<head>`
+   - Remove unused styles
+
+#### Issue: Mobile Layout Breaking
+
+**Symptoms:**
+- Content overflows viewport
+- Touch targets too small
+- Horizontal scrolling
+
+**Solutions:**
+1. Add viewport meta tag: `<meta name="viewport" content="width=device-width, initial-scale=1">`
+2. Use `max-width: 100%` on images
+3. Ensure touch targets are 44px minimum
+4. Test on real devices (iPhone, Android)
+
+### Debug Mode
+
+**Enable Debug Logging:**
+```javascript
+// In browser console
+localStorage.setItem('debugMode', 'true');
+location.reload();
+
+// View search intelligence logs
+console.log(searchIntelligence.getDebugInfo());
+```
+
+**Check Filter State:**
+```javascript
+// View active filters
+console.log(unifiedFilters.getActiveFilters());
+
+// View filter configuration
+console.log(unifiedFilters.config);
+```
+
+**Monitor Performance:**
+```javascript
+// Measure paint timing
+performance.getEntriesByType('paint').forEach(entry => {
+  console.log(`${entry.name}: ${entry.startTime}ms`);
+});
+
+// Measure custom metrics
+performance.mark('search-start');
+// ... perform search ...
+performance.mark('search-end');
+performance.measure('search-duration', 'search-start', 'search-end');
+```
+
+### Support & Resources
+
+- **GitHub Issues:** [github.com/frank2889/emmso-shopify-theme/issues](https://github.com/frank2889/emmso-shopify-theme/issues)
+- **Shopify Documentation:** [shopify.dev/themes](https://shopify.dev/themes)
+- **Design System:** See DESIGN-SYSTEM.md
+- **Email Support:** emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com
+
+---
+
+**End of Document** | Last Updated: November 3, 2025 | Version 2.0
