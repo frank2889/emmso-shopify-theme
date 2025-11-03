@@ -130,6 +130,40 @@ Refactoring EMMSO theme to follow Shopify best practices while preserving the or
   * Load more button
 - Responsive: Sidebar + grid → stacked on mobile
 - Performance: Sticky positioning, smooth animations, reduced motion support
+- **Commit:** 916f63e
+
+---
+
+### Phase 6: Search Results Section ✅ COMPLETE
+**File:** `sections/search-results.liquid`
+
+#### Issues Fixed:
+1. ✅ Moved ~290 lines inline CSS to assets/section-search-results.css
+2. ✅ Added comprehensive schema (19 settings)
+3. ✅ Unified filters integration with smart sidebar
+4. ✅ Grid/list view toggle with proper ARIA labels
+5. ✅ Loading and empty states with accessibility
+6. ✅ Active filters display with remove chips
+
+#### Results:
+- External CSS file: `assets/section-search-results.css` (680+ lines)
+- Schema settings: 19 total (layout, filters, display, pagination, product card)
+- Features:
+  * Smart filters sidebar (sticky positioning)
+  * Filter groups: Category, Brand, Price, Room Type, Characteristics
+  * Active filters with removable chips
+  * Grid/list view toggle (localStorage persistence)
+  * Sort dropdown: Relevance, Price (asc/desc), Newest
+  * Pagination types: Load More, Infinite Scroll, Page Numbers
+  * Loading spinner with animation
+  * Empty state with helpful message
+  * Product comparison integration
+- CSS Variables: Full customization (colors, spacing, borders, radii)
+- Accessibility: WCAG 2.1 AA (ARIA labels, keyboard nav, focus states, sr-only text)
+- Responsive: Sidebar → mobile stack @ 1024px, grid adjusts per breakpoint
+- JavaScript: unified-filters.js, query-normalizer.js integration
+- Multilingual: 8 languages (EN, NL, DE, FR, ES, IT, PT, DA)
+- Performance: Reduced motion support, print styles, GPU-accelerated animations
 - **Commit:** Pending
 
 ---
