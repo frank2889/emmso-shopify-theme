@@ -14,11 +14,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    {%- # Preconnect to critical domains -%}
+    {%- # Preconnect to critical domains for faster resource loading -%}
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.shopify.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     
-    {%- # Inlined CSS Variables -%}
+    {%- # Inlined CSS Variables for instant availability -%}
     {% render 'css-variables' %}
 
     {%- # BASE CSS - MUST LOAD FIRST -%}

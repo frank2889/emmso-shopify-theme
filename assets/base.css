@@ -71,31 +71,82 @@ body {
 }
 
 /* ============================================
-   TYPOGRAPHY
+   TYPOGRAPHY - STANDARDIZED SCALE
+   Brutalist design with clear hierarchy
    ============================================ */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.75rem;
+  color: var(--color-text-primary, #2D2D2D);
+  letter-spacing: -0.02em; /* Tighter tracking for headings */
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+/* Desktop Typography Scale */
+h1 { 
+  font-size: 2.5rem;  /* 40px */
+  font-weight: 900;   /* Extra bold for h1 */
+  line-height: 1.1;
+}
 
+h2 { 
+  font-size: 2rem;    /* 32px */
+  line-height: 1.15;
+}
+
+h3 { 
+  font-size: 1.5rem;  /* 24px */
+  line-height: 1.2;
+}
+
+h4 { 
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;   /* Semi-bold for smaller headings */
+}
+
+h5 { 
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+}
+
+h6 { 
+  font-size: 1rem;    /* 16px */
+  font-weight: 600;
+  letter-spacing: 0;  /* Normal tracking for smallest heading */
+}
+
+/* Mobile Typography Scale - Optimized for readability */
 @media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.25rem; }
+  h1 { 
+    font-size: 2rem;    /* 32px on mobile */
+    line-height: 1.15;
+  }
+  h2 { 
+    font-size: 1.75rem; /* 28px on mobile */
+  }
+  h3 { 
+    font-size: 1.5rem;  /* 24px on mobile */
+  }
+  h4 { 
+    font-size: 1.25rem; /* 20px on mobile */
+  }
+  h5, h6 {
+    font-size: 1rem;    /* 16px on mobile */
+  }
 }
 
+/* Body Text */
 p {
   margin-bottom: 1rem;
+  line-height: 1.6;   /* Enhanced: Better readability */
+  color: var(--color-text-secondary, #4A4A4A);
+}
+
+/* Small Text */
+small {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
 }
 
 a {
