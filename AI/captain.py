@@ -329,8 +329,8 @@ class EMMSOCaptain:
                 mission_results['vision'] = vision_result
                 
                 # Extract screenshot analysis for sharing
-                if 'findings' in vision_result and 'screenshot_analyses' in vision_result['findings']:
-                    screenshot_data = vision_result['findings']['screenshot_analyses']
+                if 'findings' in vision_result and 'visual_analysis' in vision_result['findings']:
+                    screenshot_data = vision_result['findings']['visual_analysis']
                     print(f"         ✅ {len(screenshot_data)} screenshots analyzed and ready to share")
                 
                 score = vision_result.get('score', 0)
