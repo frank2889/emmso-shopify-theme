@@ -21,12 +21,17 @@ CORE WEB VITALS:
 - FID/INP (First Input Delay/Interaction to Next Paint): Target <200ms. Minimize JavaScript execution, use web workers for heavy computation
 - TTFB (Time to First Byte): Target <600ms. Optimize server response, use CDN, implement proper caching headers
 
-IMAGE OPTIMIZATION:
-- Use fetchpriority="high" for LCP images (hero images, above-fold content)
-- Apply loading="lazy" for below-fold images only
-- Implement responsive images: <picture> with <source> for art direction, srcset for resolution switching
-- Formats: WebP/AVIF with JPEG fallback, use image_url filter with width/height params
+IMAGE OPTIMIZATION (MODERN BEST PRACTICES):
+- Use fetchpriority="high" + loading="eager" for LCP images (hero, above-fold)
+- Apply loading="lazy" for below-fold images only (saves bandwidth)
+- Modern responsive images with <picture> element:
+  * Format switching: <source type="image/avif"> → <source type="image/webp"> → <img src="fallback.jpg">
+  * Art direction: Different crops per breakpoint via media queries on <source>
+  * Resolution switching: srcset with width descriptors (800w, 1200w, 1600w) + sizes attribute
+  * Always set width/height on <img> to prevent CLS (Cumulative Layout Shift)
+- Legacy <img srcset=""> acceptable only for simple resolution switching
 - Preload critical images: <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
+- Image formats priority: AVIF (best compression) > WebP (good support) > JPEG (universal fallback)
 
 RESOURCE LOADING:
 - CSS: Inline critical CSS in <head>, load non-critical async, avoid @import (blocks parallel downloads)

@@ -19,8 +19,12 @@ SECTION/BLOCK ARCHITECTURE:
 LIQUID TEMPLATING BEST PRACTICES:
 - Filters: Use | t for translations, | asset_url for assets, | image_url for responsive images
 - Tags: {% render 'snippet' %} for includes, {% liquid %} for multi-line logic
-- Responsive images: Use srcset with width descriptors, sizes attribute, loading="lazy"
-- Performance: fetchpriority="high" for LCP images, avoid loading="lazy" above fold
+- Responsive images (MODERN): Use <picture> with <source> elements for art direction + format switching
+  * <picture> → <source type="image/avif"> → <source type="image/webp"> → <img> fallback
+  * Add srcset with width descriptors (400w, 800w, 1200w) per source
+  * Use sizes attribute for responsive sizing: sizes="(min-width: 768px) 50vw, 100vw"
+  * Legacy: Plain <img srcset=""> for simple resolution switching only
+- Performance: fetchpriority="high" for LCP images, loading="eager" above fold, loading="lazy" below
 - Forms: {% form 'type' %} with proper autocomplete attributes
 - Localization: All static text via {{ 'key' | t }}, hierarchical keys in locales/*.json
 
