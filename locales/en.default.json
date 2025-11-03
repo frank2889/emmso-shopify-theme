@@ -70,7 +70,46 @@
     "404": {
       "title": "Page Not Found",
       "subtext": "The page you were looking for does not exist."
-    }
+    },
+    "article": "Article",
+    "product": "Product",
+    "collection": "Collection",
+    "blog": "Blog"
+  },
+  "blog": {
+    "article_count": {
+      "one": "{{ count }} article",
+      "other": "{{ count }} articles"
+    },
+    "search_placeholder": "Search articles...",
+    "filter_by_tag": "Filter by tag:",
+    "all_tags": "All",
+    "read_more": "Read more",
+    "reading_time": "{{ minutes }} min read",
+    "by_author": "by {{ author }}",
+    "back_to_blog": "Back to {{ blog_title }}",
+    "share_article": "Share this article",
+    "no_articles_title": "No articles found",
+    "no_articles_message": "There are no articles to display at this time.",
+    "browse_all": "Browse all articles",
+    "related_articles": "Related Articles",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page_of": "Page {{ current }} of {{ total }}"
+    },
+    "comments_title": {
+      "one": "{{ count }} comment",
+      "other": "{{ count }} comments"
+    },
+    "comment_form_title": "Leave a comment",
+    "comment_form_name": "Name",
+    "comment_form_email": "Email",
+    "comment_form_body": "Comment",
+    "comment_form_submit": "Post comment",
+    "comment_posted": "Your comment was posted successfully!",
+    "comment_moderated": "Your comment has been submitted and will be published after moderation.",
+    "article_metadata_html": "Published on {{ date }} by {{ author }}"
   },
   "customer": {
     "account": {
