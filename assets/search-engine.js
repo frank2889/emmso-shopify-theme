@@ -59,6 +59,18 @@ class SearchEngine {
         this.hideResults();
       }
     });
+    
+    // Add to Cart button handler (event delegation)
+    if (this.resultsContainer) {
+      this.resultsContainer.addEventListener('click', (e) => {
+        const addToCartBtn = e.target.closest('.search-result-item__add-to-cart');
+        if (addToCartBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          this.handleAddToCart(addToCartBtn);
+        }
+      });
+    }
 
     // Show recent searches on focus
     this.showRecentSearches();
@@ -277,31 +289,49 @@ class SearchEngine {
       const relevanceScore = product.relevanceScore || 0;
 
       html += `
-        <a href="${product.url}" class="search-result-item" ${relevanceScore > 0 ? `data-score="${relevanceScore}"` : ''}>
-          <div class="search-result-item__image">
-            ${image ? `
-              <img 
-                src="${image}" 
-                alt="${this.escapeHtml(product.title)}"
-                loading="lazy"
-                width="80"
-                height="80"
-              >
-            ` : `
-              <div class="search-result-item__placeholder"></div>
-            `}
-            ${relevanceScore >= 100 ? '<span class="search-result-item__match-badge">Best Match</span>' : ''}
-          </div>
-          <div class="search-result-item__details">
-            <h3 class="search-result-item__title">${this.highlightQuery(product.title, query)}</h3>
-            ${product.vendor ? `<p class="search-result-item__vendor">${this.escapeHtml(product.vendor)}</p>` : ''}
-            <div class="search-result-item__price">
-              ${comparePrice ? `<span class="search-result-item__compare-price">${comparePrice}</span>` : ''}
-              <span class="search-result-item__final-price ${comparePrice ? 'on-sale' : ''}">${price}</span>
+        <div class="search-result-item" data-product-id="${product.id}" ${relevanceScore > 0 ? `data-score="${relevanceScore}"` : ''}>
+          <a href="${product.url}" class="search-result-item__link">
+            <div class="search-result-item__image">
+              ${image ? `
+                <img 
+                  src="${image}" 
+                  alt="${this.escapeHtml(product.title)}"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                >
+              ` : `
+                <div class="search-result-item__placeholder"></div>
+              `}
+              ${relevanceScore >= 100 ? '<span class="search-result-item__match-badge">Best Match</span>' : ''}
             </div>
-            ${!available ? '<span class="search-result-item__badge badge-out-of-stock">Out of Stock</span>' : ''}
-          </div>
-        </a>
+            <div class="search-result-item__details">
+              <h3 class="search-result-item__title">${this.highlightQuery(product.title, query)}</h3>
+              ${product.vendor ? `<p class="search-result-item__vendor">${this.escapeHtml(product.vendor)}</p>` : ''}
+              <div class="search-result-item__price">
+                ${comparePrice ? `<span class="search-result-item__compare-price">${comparePrice}</span>` : ''}
+                <span class="search-result-item__final-price ${comparePrice ? 'on-sale' : ''}">${price}</span>
+              </div>
+              ${!available ? '<span class="search-result-item__badge badge-out-of-stock">Out of Stock</span>' : ''}
+            </div>
+          </a>
+          ${available ? `
+            <button 
+              type="button" 
+              class="search-result-item__add-to-cart" 
+              data-product-id="${product.id}"
+              data-variant-id="${product.variants ? product.variants[0]?.id : product.id}"
+              aria-label="Add ${this.escapeHtml(product.title)} to cart"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span>Add to Cart</span>
+            </button>
+          ` : ''}
+        </div>
       `;
     });
 
@@ -560,6 +590,81 @@ class SearchEngine {
     }
 
     return matrix[str2.length][str1.length];
+  }
+  
+  async handleAddToCart(button) {
+    const variantId = button.dataset.variantId;
+    const productId = button.dataset.productId;
+    
+    if (!variantId) {
+      console.error('No variant ID found for Add to Cart');
+      return;
+    }
+    
+    // Visual feedback
+    button.disabled = true;
+    button.classList.add('adding');
+    const originalText = button.querySelector('span').textContent;
+    button.querySelector('span').textContent = 'Adding...';
+    
+    try {
+      // Add to cart via Shopify AJAX API
+      const response = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: variantId,
+          quantity: 1
+        })
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to add to cart');
+      }
+      
+      const item = await response.json();
+      
+      // Success feedback
+      button.classList.remove('adding');
+      button.classList.add('added');
+      button.querySelector('span').textContent = 'Added!';
+      
+      // Update cart count in header
+      this.updateCartCount();
+      
+      // Reset button after 2s
+      setTimeout(() => {
+        button.classList.remove('added');
+        button.querySelector('span').textContent = originalText;
+        button.disabled = false;
+      }, 2000);
+      
+    } catch (error) {
+      console.error('Add to cart error:', error);
+      button.classList.remove('adding');
+      button.querySelector('span').textContent = 'Error';
+      
+      setTimeout(() => {
+        button.querySelector('span').textContent = originalText;
+        button.disabled = false;
+      }, 2000);
+    }
+  }
+  
+  updateCartCount() {
+    // Update cart count badge in header
+    fetch('/cart.js')
+      .then(res => res.json())
+      .then(cart => {
+        const cartCount = document.querySelector('.cart-count');
+        if (cartCount) {
+          cartCount.textContent = cart.item_count;
+          cartCount.hidden = cart.item_count === 0;
+        }
+      })
+      .catch(err => console.error('Cart count update failed:', err));
   }
 }
 
