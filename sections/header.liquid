@@ -1,6 +1,11 @@
 {{ 'section-header.css' | asset_url | stylesheet_tag }}
 
-<header class="site-header" id="shopify-section-header" data-section-id="{{ section.id }}" data-sticky="{{ section.settings.enable_sticky_header }}">
+{%- comment -%}
+  🕐 LIVE VERSION TIMESTAMP: {{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}
+  Deployed: {{ 'now' | date: '%Y-%m-%d at %H:%M:%S UTC' }}
+{%- endcomment -%}
+
+<header class="site-header" id="shopify-section-header" data-section-id="{{ section.id }}" data-sticky="{{ section.settings.enable_sticky_header }}" data-version="{{ 'now' | date: '%Y%m%d-%H%M%S' }}">
   <div class="site-header__container container">
     {%- # Logo -%}
     {%- if section.settings.show_logo -%}

@@ -167,6 +167,11 @@
       </div>
     </div>
   </div>
+  
+  {%- comment -%} Live Version Timestamp - Hidden but inspectable {%- endcomment -%}
+  <div style="display: none;" data-theme-version="{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}" data-build="{{ 'now' | date: '%Y%m%d%H%M%S' }}">
+    EMMSO Theme v{{ 'now' | date: '%Y.%m.%d-%H%M' }}
+  </div>
 </footer>
 
 {%- comment -%} SVG Icons Sprite {%- endcomment -%}
