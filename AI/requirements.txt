@@ -1,0 +1,14 @@
+# EMMSO AI Captain Dependencies
+# ==============================
+
+# Core
+python-dotenv>=1.0.0
+
+# OpenAI (for Vision AI)
+openai>=1.3.0
+
+# Screenshot capture
+playwright>=1.40.0
+
+# Data analysis
+requests>=2.31.0
