@@ -56,4 +56,54 @@ Vision AI will automatically analyze all images in this folder on each captain.p
 
 ## Current Screenshots
 
-_(Add screenshots after each deployment)_
+**Last Updated:** November 3, 2025
+
+### Desktop Screenshots (1920x1080+)
+
+| Screenshot | URL Used | Purpose |
+|-----------|----------|---------|
+| `homepage-desktop.png` | `https://emmso.eu/en/` | Homepage with search hero |
+| `search-results-desktop.png` | `https://emmso.eu/en/search?q=Floors` | Search results page |
+| `product-page-desktop.png` | `https://emmso.eu/en/products/floorservice-color-hardwax-oil-classic` | Product detail page |
+| `collection-page-desktop.png` | `https://emmso.eu/en/collections/all` | Collection/category page |
+| `header-navigation.png` | `https://emmso.eu/en/` (cropped) | Header close-up |
+
+### Mobile Screenshots (375-438px width)
+
+| Screenshot | URL Used | Purpose |
+|-----------|----------|---------|
+| `homepage-mobile.png` | `https://emmso.eu/en/` | Mobile homepage |
+| `search-results-mobile.png` | `https://emmso.eu/en/search?q=Floors` | Mobile search results |
+| `product-page-mobile.png` | `https://emmso.eu/en/products/floorservice-color-hardwax-oil-classic` | Mobile product page |
+| `collection-page-mobile.png` | `https://emmso.eu/en/collections/all` | Mobile collection |
+
+### Component Screenshots
+
+| Screenshot | URL Used | Purpose |
+|-----------|----------|---------|
+| `footer-section.png` | `https://emmso.eu/en/` (footer only) | Footer section detail |
+
+### Screenshot Guidelines
+
+**When to Update:**
+- After implementing major UI changes
+- Before running Captain analysis
+- After deploying to production
+- Weekly during active development
+
+**How to Capture:**
+1. Open URL in browser (Chrome recommended)
+2. Desktop: Set viewport to 1920x1080
+3. Mobile: Use DevTools device emulation (iPhone 12 Pro, 390x844)
+4. Wait for full page load (all images, fonts)
+5. Take full-page screenshot (Chrome: Cmd+Shift+P → "Capture full size screenshot")
+6. Save to this folder with correct filename
+
+**Quality Requirements:**
+- ✅ Full viewport - no cropping
+- ✅ Real content - no placeholders
+- ✅ All assets loaded - no broken images
+- ✅ Realistic state - search query entered, products visible
+- ❌ No browser UI (address bar, bookmarks)
+- ❌ No dev tools visible
+- ❌ No overlays or popups (unless testing that feature)
