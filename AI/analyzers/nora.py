@@ -1,40 +1,25 @@
 """
 Nora - Visual Design Analyst for EMMSO AI System
 MEEDOGENLOOS STRENGE visual design evaluation
++ GPT-4 Vision voor Design-focused screenshot analyse
 """
 import requests
 import os
 from datetime import datetime
+from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 class NoraVisualAnalyst:
     def __init__(self):
         self.name = "Nora"
         self.specialty = "Visual Design"
-        self.technical_docs = {}
-        self._load_technical_documentation()
-    
-    def _load_technical_documentation(self):
-        """Load technical documentation for context-aware analysis"""
-        try:
-            docs_path = "/Users/Frank/Documents/EMMSO/docs"
-            
-            # CSS.md - Critical for emmso.css compliance
-            css_doc_path = os.path.join(docs_path, "CSS.md")
-            if os.path.exists(css_doc_path):
-                with open(css_doc_path, 'r', encoding='utf-8') as f:
-                    self.technical_docs['css'] = f.read()
-            
-            # DESIGN.MD - Design system standards
-            design_doc_path = os.path.join(docs_path, "DESIGN.MD")
-            if os.path.exists(design_doc_path):
-                with open(design_doc_path, 'r', encoding='utf-8') as f:
-                    self.technical_docs['design'] = f.read()
-                    
-        except Exception as e:
-            print(f"⚠️  Nora: Could not load technical docs: {e}")
+        self.theme_root = "/Users/Frank/Documents/EMMSO NOV"
+        self.screenshot_analyzer = ScreenshotAnalyzer()
     
     def analyze(self, site_data):
         print(f"    🎨 Nora: MEEDOGENLOOS STRENGE visual design analysis for {site_data.get('domain', 'emmso.com')}")
+        
+        # Get project goals
+        project_goals = site_data.get('project_goals', {})
         
         # Comprehensive visual analysis
         css_analysis = self._analyze_css_compliance()
@@ -42,8 +27,11 @@ class NoraVisualAnalyst:
         brand_analysis = self._analyze_brand_implementation()
         responsive_analysis = self._analyze_responsive_design()
         
+        # Analyze screenshots from Design perspective (GPT-4 Vision)
+        screenshot_analysis = self._analyze_screenshots_design(site_data, project_goals)
+        
         # Calculate STRENGE score
-        score = self._calculate_visual_score(css_analysis, visual_analysis, brand_analysis, responsive_analysis)
+        score = self._calculate_visual_score(css_analysis, visual_analysis, brand_analysis, responsive_analysis, screenshot_analysis)
         
         return {
             'analyst': self.name,
@@ -55,9 +43,10 @@ class NoraVisualAnalyst:
                 'visual_consistency': visual_analysis,
                 'brand_implementation': brand_analysis,
                 'responsive_design': responsive_analysis,
-                'critical_violations': self._identify_critical_violations(css_analysis, visual_analysis, brand_analysis)
+                'screenshot_design_analysis': screenshot_analysis,
+                'critical_violations': self._identify_critical_violations(css_analysis, visual_analysis, brand_analysis, screenshot_analysis)
             },
-            'recommendations': self._generate_design_recommendations(css_analysis, visual_analysis, brand_analysis, responsive_analysis)
+            'recommendations': self._generate_design_recommendations(css_analysis, visual_analysis, brand_analysis, responsive_analysis, screenshot_analysis)
         }
     
     def _analyze_css_compliance(self):
@@ -220,7 +209,7 @@ class NoraVisualAnalyst:
             'devices_tested': ['mobile', 'tablet', 'desktop']
         }
     
-    def _calculate_visual_score(self, css_analysis, visual_analysis, brand_analysis, responsive_analysis):
+    def _calculate_visual_score(self, css_analysis, visual_analysis, brand_analysis, responsive_analysis, screenshot_analysis=None):
         """Calculate MEEDOGENLOOS STRENGE visual design score"""
         score = 0
         violations = []
@@ -295,7 +284,7 @@ class NoraVisualAnalyst:
         
         return min(max(score, 0), 100)
     
-    def _identify_critical_violations(self, css_analysis, visual_analysis, brand_analysis):
+    def _identify_critical_violations(self, css_analysis, visual_analysis, brand_analysis, screenshot_analysis=None):
         """Identify critical visual design violations"""
         violations = []
         
@@ -313,7 +302,7 @@ class NoraVisualAnalyst:
         
         return violations
     
-    def _generate_design_recommendations(self, css_analysis, visual_analysis, brand_analysis, responsive_analysis):
+    def _generate_design_recommendations(self, css_analysis, visual_analysis, brand_analysis, responsive_analysis, screenshot_analysis=None):
         """Generate design improvement recommendations"""
         recommendations = []
         
@@ -357,3 +346,91 @@ class NoraVisualAnalyst:
             })
         
         return recommendations
+    
+    def _analyze_screenshots_design(self, site_data, project_goals):
+        """
+        Analyze screenshots from Design perspective using GPT-4 Vision
+        
+        Focus on:
+        - Brand consistency (logo, colors, typography)
+        - Design system compliance
+        - Visual hierarchy & balance
+        - Whitespace & layout
+        - Component consistency
+        """
+        screenshots = self.screenshot_analyzer.get_screenshots(site_data)
+        
+        if not screenshots:
+            return {
+                'screenshots_analyzed': 0,
+                'design_score': 0,
+                'issues': ['No screenshots available for design analysis']
+            }
+        
+        # Design-focused analysis prompt
+        design_prompt = """Analyze this website screenshot from a Visual Design perspective.
+
+FOCUS AREAS:
+1. **Brand Consistency** (0-100): Are logo, colors, and typography consistent with brand?
+2. **Visual Hierarchy** (0-100): Is information hierarchy clear and effective?
+3. **Typography** (0-100): Are fonts readable, well-sized, and consistent?
+4. **Color Usage** (0-100): Is color palette harmonious and purposeful?
+5. **Whitespace & Layout** (0-100): Is whitespace used effectively? Is layout balanced?
+6. **Component Consistency** (0-100): Are buttons, cards, and UI elements consistent?
+
+PROVIDE:
+**SCORES:**
+- Brand Consistency: X/100
+- Visual Hierarchy: X/100
+- Typography: X/100
+- Color Usage: X/100
+- Whitespace & Layout: X/100
+- Component Consistency: X/100
+- OVERALL: X/100
+
+**ISSUES FOUND:**
+- List specific design issues or inconsistencies
+
+**RECOMMENDATIONS:**
+- Provide actionable design improvements
+
+**HIGHLIGHTS:**
+- What design elements are working well"""
+        
+        # Analyze screenshots
+        analyses = {}
+        all_scores = []
+        all_recommendations = []
+        all_issues = []
+        
+        for screenshot_name, screenshot_path in screenshots.items():
+            print(f"      📸 Design Analysis: {screenshot_name}")
+            
+            analysis = self.screenshot_analyzer.analyze_screenshot(
+                screenshot_path,
+                screenshot_name,
+                design_prompt,
+                project_goals
+            )
+            
+            analyses[screenshot_name] = analysis
+            
+            if 'score' in analysis:
+                all_scores.append(analysis['score'])
+            
+            if 'recommendations' in analysis:
+                all_recommendations.extend(analysis['recommendations'])
+            
+            if 'issues' in analysis:
+                all_issues.extend([f"{screenshot_name}: {issue}" for issue in analysis['issues']])
+        
+        # Calculate overall Design screenshot score
+        avg_score = int(sum(all_scores) / len(all_scores)) if all_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(screenshots),
+            'design_score': avg_score,
+            'analyses': analyses,
+            'recommendations': all_recommendations,
+            'issues': all_issues
+        }

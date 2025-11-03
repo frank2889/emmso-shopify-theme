@@ -9,10 +9,12 @@ Specializes in:
 - Resource optimization
 - Caching strategies
 - Mobile performance
++ GPT-4 Vision voor Performance-focused screenshot analyse
 """
 
 from typing import Dict, List, Any, Optional
 from datetime import datetime
+from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 class MarcusPerformanceAnalyst:
     """Performance optimization specialist."""
@@ -21,6 +23,7 @@ class MarcusPerformanceAnalyst:
         """Initialize Marcus Performance analyst."""
         self.name = "Marcus"
         self.specialty = "Performance"
+        self.screenshot_analyzer = ScreenshotAnalyzer()
         self.expertise_areas = [
             'site_speed',
             'core_web_vitals',
@@ -35,17 +38,23 @@ class MarcusPerformanceAnalyst:
         
         print(f"  ⚡ Marcus: Analyzing current website performance...")
         
+        # Get project goals
+        project_goals = site_data.get('project_goals', {})
+        
         # Analyze theme files
         theme_analysis = self._analyze_theme_files(site_data.get('shopify_theme_path'))
         
         # Test preview URL performance
         preview_performance = self._test_preview_performance(site_data.get('shopify_preview_url'))
         
+        # Analyze screenshots from Performance perspective (GPT-4 Vision)
+        screenshot_analysis = self._analyze_screenshots_performance(site_data, project_goals)
+        
         # Calculate score
-        score = self._calculate_performance_score(theme_analysis, preview_performance)
+        score = self._calculate_performance_score(theme_analysis, preview_performance, screenshot_analysis)
         
         # Generate recommendations
-        recommendations = self._generate_recommendations(theme_analysis, preview_performance)
+        recommendations = self._generate_recommendations(theme_analysis, preview_performance, screenshot_analysis)
         
         analysis_result = {
             'analyst': self.name,
@@ -55,7 +64,8 @@ class MarcusPerformanceAnalyst:
             'score': score,
             'findings': {
                 'theme_file_analysis': theme_analysis,
-                'preview_performance': preview_performance
+                'preview_performance': preview_performance,
+                'screenshot_performance_analysis': screenshot_analysis
             },
             'recommendations': recommendations
         }
@@ -122,7 +132,7 @@ class MarcusPerformanceAnalyst:
         except Exception as e:
             return {'error': str(e), 'url': preview_url}
     
-    def _calculate_performance_score(self, theme_analysis, preview_performance):
+    def _calculate_performance_score(self, theme_analysis, preview_performance, screenshot_analysis=None):
         """Calculate performance score based on current state"""
         score = 100
         
@@ -164,7 +174,7 @@ class MarcusPerformanceAnalyst:
         
         return max(0, score)
     
-    def _generate_recommendations(self, theme_analysis, preview_performance):
+    def _generate_recommendations(self, theme_analysis, preview_performance, screenshot_analysis=None):
         """Generate recommendations based on findings"""
         recommendations = []
         
@@ -190,3 +200,89 @@ class MarcusPerformanceAnalyst:
             recommendations.append("Performance looks good")
         
         return recommendations
+    
+    def _analyze_screenshots_performance(self, site_data, project_goals):
+        """
+        Analyze screenshots from Performance & UX perspective using GPT-4 Vision
+        
+        Focus on:
+        - Visual layout shifts
+        - Loading indicators present
+        - Progressive enhancement visible
+        - Image optimization (blur-up effects)
+        - Core Web Vitals impact
+        """
+        screenshots = self.screenshot_analyzer.get_screenshots(site_data)
+        
+        if not screenshots:
+            return {
+                'screenshots_analyzed': 0,
+                'performance_score': 0,
+                'issues': ['No screenshots available for performance analysis']
+            }
+        
+        # Performance-focused analysis prompt
+        performance_prompt = """Analyze this website screenshot from a Performance & UX perspective.
+
+FOCUS AREAS:
+1. **Visual Stability** (0-100): Are there signs of layout shifts (CLS)? Is content stable?
+2. **Loading UX** (0-100): Are loading indicators present? Is progressive enhancement visible?
+3. **Image Optimization** (0-100): Do images appear optimized? Any blur-up effects?
+4. **Content Prioritization** (0-100): Is above-the-fold content prioritized?
+5. **Performance Indicators** (0-100): Any visible performance issues (render blocking, etc)?
+
+PROVIDE:
+**SCORES:**
+- Visual Stability: X/100
+- Loading UX: X/100
+- Image Optimization: X/100
+- Content Prioritization: X/100
+- Performance Indicators: X/100
+- OVERALL: X/100
+
+**ISSUES FOUND:**
+- List specific performance or UX issues visible in the screenshot
+
+**RECOMMENDATIONS:**
+- Provide actionable recommendations to improve performance
+
+**HIGHLIGHTS:**
+- What performance best practices are visible"""
+        
+        # Analyze screenshots
+        analyses = {}
+        all_scores = []
+        all_recommendations = []
+        all_issues = []
+        
+        for screenshot_name, screenshot_path in screenshots.items():
+            print(f"      📸 Performance Analysis: {screenshot_name}")
+            
+            analysis = self.screenshot_analyzer.analyze_screenshot(
+                screenshot_path,
+                screenshot_name,
+                performance_prompt,
+                project_goals
+            )
+            
+            analyses[screenshot_name] = analysis
+            
+            if 'score' in analysis:
+                all_scores.append(analysis['score'])
+            
+            if 'recommendations' in analysis:
+                all_recommendations.extend(analysis['recommendations'])
+            
+            if 'issues' in analysis:
+                all_issues.extend([f"{screenshot_name}: {issue}" for issue in analysis['issues']])
+        
+        # Calculate overall Performance screenshot score
+        avg_score = int(sum(all_scores) / len(all_scores)) if all_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(screenshots),
+            'performance_score': avg_score,
+            'analyses': analyses,
+            'recommendations': all_recommendations,
+            'issues': all_issues
+        }

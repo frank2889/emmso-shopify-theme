@@ -3,6 +3,7 @@ Alex - Shopify Specialist for EMMSO AI System
 =============================================
 SMART SHOPIFY ANALYSIS - Heeft toegang tot alle Shopify theme data!
 Analyseert ECHTE Shopify files: templates, sections, snippets, assets
++ GPT-4 Vision voor Shopify-focused screenshot analyse
 """
 
 import os
@@ -10,6 +11,7 @@ import json
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 from pathlib import Path
+from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 class AlexShopifyAnalyst:
     """Shopify platform specialist met ECHTE toegang tot theme files."""
@@ -18,7 +20,8 @@ class AlexShopifyAnalyst:
         """Initialize Alex Shopify analyst."""
         self.name = "Alex"
         self.specialty = "Shopify"
-        self.shopify_root = "/Users/Frank/Documents/EMMSO"
+        self.shopify_root = "/Users/Frank/Documents/EMMSO NOV"
+        self.screenshot_analyzer = ScreenshotAnalyzer()
         self.expertise_areas = [
             'shopify_theme_analysis',
             'liquid_templates',
@@ -31,6 +34,9 @@ class AlexShopifyAnalyst:
         """Perform SMART Shopify analysis met echte data."""
         
         print(f"  🛍️ Alex (Shopify): SMART analyse van ECHTE Shopify theme...")
+        
+        # Get project goals
+        project_goals = site_data.get('project_goals', {})
         
         # Analyseer echte Shopify structure
         theme_analysis = self._analyze_theme_structure()
@@ -47,8 +53,11 @@ class AlexShopifyAnalyst:
         # Shopify config analysis
         config_analysis = self._analyze_shopify_config()
         
+        # Analyze screenshots from Shopify perspective (GPT-4 Vision)
+        screenshot_analysis = self._analyze_screenshots_shopify(site_data, project_goals)
+        
         # Calculate smart score
-        score = self._calculate_shopify_score(theme_analysis, template_analysis, sections_analysis, assets_analysis)
+        score = self._calculate_shopify_score(theme_analysis, template_analysis, sections_analysis, assets_analysis, screenshot_analysis)
         
         return {
             'analyst': self.name,
@@ -62,9 +71,10 @@ class AlexShopifyAnalyst:
                 'sections_performance': sections_analysis,
                 'assets_optimization': assets_analysis,
                 'shopify_config': config_analysis,
+                'screenshot_shopify_analysis': screenshot_analysis,
                 'multi_brand_support': self._check_multi_brand_support()
             },
-            'recommendations': self._generate_smart_recommendations(theme_analysis, template_analysis, sections_analysis, assets_analysis)
+            'recommendations': self._generate_smart_recommendations(theme_analysis, template_analysis, sections_analysis, assets_analysis, screenshot_analysis)
         }
     
     def _analyze_theme_structure(self):
@@ -280,7 +290,7 @@ class AlexShopifyAnalyst:
         except Exception as e:
             return {'error': f"Multi-brand check failed: {e}"}
     
-    def _calculate_shopify_score(self, theme_analysis, template_analysis, sections_analysis, assets_analysis):
+    def _calculate_shopify_score(self, theme_analysis, template_analysis, sections_analysis, assets_analysis, screenshot_analysis=None):
         """Calculate MEEDOGENLOOS STRENGE Shopify score - ZERO TOLERANCE voor mediocrity"""
         score = 0
         
@@ -468,7 +478,7 @@ class AlexShopifyAnalyst:
         
         return max(0, min(100, score))
     
-    def _generate_smart_recommendations(self, theme_analysis, template_analysis, sections_analysis, assets_analysis):
+    def _generate_smart_recommendations(self, theme_analysis, template_analysis, sections_analysis, assets_analysis, screenshot_analysis=None):
         """Generate smart Shopify recommendations"""
         recommendations = []
         
@@ -521,4 +531,91 @@ class AlexShopifyAnalyst:
                 'impact': 'high'
             })
         
+        return recommendations
+    
+    def _analyze_screenshots_shopify(self, site_data, project_goals):
+        """
+        Analyze screenshots from Shopify platform perspective using GPT-4 Vision
+        
+        Focus on:
+        - Shopify sections rendering correctly
+        - Cart icon & functionality visible
+        - Navigation structure clear
+        - E-commerce best practices
+        - Product display optimization
+        """
+        screenshots = self.screenshot_analyzer.get_screenshots(site_data)
+        
+        if not screenshots:
+            return {
+                'screenshots_analyzed': 0,
+                'shopify_score': 0,
+                'issues': ['No screenshots available for Shopify analysis']
+            }
+        
+        # Shopify-focused analysis prompt
+        shopify_prompt = """Analyze this Shopify e-commerce website screenshot from a Shopify platform perspective.
+
+FOCUS AREAS:
+1. **Shopify Sections** (0-100): Are sections rendering correctly? Is the layout modular?
+2. **Cart & Checkout** (0-100): Is the cart icon visible? Are checkout flows clear?
+3. **Navigation** (0-100): Is the menu structure intuitive? Is mobile navigation accessible?
+4. **Product Display** (0-100): Are products displayed optimally for conversions?
+5. **E-commerce UX** (0-100): Does it follow Shopify e-commerce best practices?
+
+PROVIDE:
+**SCORES:**
+- Shopify Sections: X/100
+- Cart & Checkout: X/100
+- Navigation: X/100
+- Product Display: X/100
+- E-commerce UX: X/100
+- OVERALL: X/100
+
+**ISSUES FOUND:**
+- List specific Shopify platform or e-commerce issues
+
+**RECOMMENDATIONS:**
+- Provide actionable recommendations to improve Shopify theme quality
+
+**HIGHLIGHTS:**
+- What Shopify best practices are being followed well"""
+        
+        # Analyze screenshots
+        analyses = {}
+        all_scores = []
+        all_recommendations = []
+        all_issues = []
+        
+        for screenshot_name, screenshot_path in screenshots.items():
+            print(f"      📸 Shopify Analysis: {screenshot_name}")
+            
+            analysis = self.screenshot_analyzer.analyze_screenshot(
+                screenshot_path,
+                screenshot_name,
+                shopify_prompt,
+                project_goals
+            )
+            
+            analyses[screenshot_name] = analysis
+            
+            if 'score' in analysis:
+                all_scores.append(analysis['score'])
+            
+            if 'recommendations' in analysis:
+                all_recommendations.extend(analysis['recommendations'])
+            
+            if 'issues' in analysis:
+                all_issues.extend([f"{screenshot_name}: {issue}" for issue in analysis['issues']])
+        
+        # Calculate overall Shopify screenshot score
+        avg_score = int(sum(all_scores) / len(all_scores)) if all_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(screenshots),
+            'shopify_score': avg_score,
+            'analyses': analyses,
+            'recommendations': all_recommendations,
+            'issues': all_issues
+        }
         return recommendations

@@ -2,11 +2,13 @@
 Sarah - KRITISCHE SEO Analyst voor EMMSO
 ========================================
 Gebruikt ECHTE Google Analytics en PageSpeed data voor harde analyse
++ GPT-4 Vision voor SEO-focused screenshot analyse
 """
 import os
 import json
 import requests
 from datetime import datetime
+from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 # Google PageSpeed API key
 PAGESPEED_API_KEY = "AIzaSyDUVxUrmf8lbUn2eO6_WTk5ZBOOdE_fAGk"
@@ -15,6 +17,7 @@ class SarahSEOAnalyst:
     def __init__(self):
         self.name = "Sarah"
         self.specialty = "SEO"
+        self.screenshot_analyzer = ScreenshotAnalyzer()
     
     def analyze(self, site_data):
         print(f"    Sarah: KRITISCHE SEO analyse - Preview URL + Theme Files + Project Goals")
@@ -32,16 +35,19 @@ class SarahSEOAnalyst:
         technical_audit = self._technical_seo_audit(preview_url)
         
         # Analyseer theme files voor SEO
-        theme_seo_analysis = self._analyze_theme_seo_files(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO'))
+        theme_seo_analysis = self._analyze_theme_seo_files(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV'))
         
-        # CHECK PROJECT GOALS IMPLEMENTATION
-        goals_check = self._check_project_goals(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO'), project_goals)
+        # Check project goals alignment
+        goals_check = self._check_project_goals(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV'), project_goals)
         
-        # Bereken kritische score (nu met theme analysis EN goals)
-        score = self._calculate_critical_score(pagespeed_data, technical_audit, theme_seo_analysis, goals_check)
+        # Analyze screenshots from SEO perspective (GPT-4 Vision)
+        screenshot_analysis = self._analyze_screenshots_seo(site_data, project_goals)
+        
+        # Bereken kritische score (nu met theme analysis EN goals EN screenshots)
+        score = self._calculate_critical_score(pagespeed_data, technical_audit, theme_seo_analysis, goals_check, screenshot_analysis)
         
         # Genereer harde aanbevelingen
-        recommendations = self._generate_critical_recommendations(pagespeed_data, technical_audit, theme_seo_analysis, goals_check)
+        recommendations = self._generate_critical_recommendations(pagespeed_data, technical_audit, theme_seo_analysis, goals_check, screenshot_analysis)
         
         return {
             'analyst': self.name,
@@ -54,11 +60,12 @@ class SarahSEOAnalyst:
                 'technical_audit': technical_audit,
                 'theme_seo_analysis': theme_seo_analysis,
                 'project_goals_check': goals_check,
-                'critical_issues': self._identify_critical_issues(pagespeed_data, technical_audit, theme_seo_analysis, goals_check)
+                'screenshot_seo_analysis': screenshot_analysis,
+                'critical_issues': self._identify_critical_issues(pagespeed_data, technical_audit, theme_seo_analysis, goals_check, screenshot_analysis)
             },
             'recommendations': recommendations,
             # DIRECTED OUTPUT DOCUMENT (d.o.d) FORMAT
-            'deliverable': self._generate_directed_output_document(score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations, goals_check)
+            'deliverable': self._generate_directed_output_document(score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations, goals_check, screenshot_analysis)
         }
     
     def _get_pagespeed_insights(self, url="https://emmso.com"):
@@ -294,7 +301,7 @@ class SarahSEOAnalyst:
         
         return check
     
-    def _calculate_critical_score(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None):
+    def _calculate_critical_score(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None, screenshot_analysis=None):
         """Bereken MEEDOGENLOOS KRITISCHE SEO score - now includes theme analysis AND project goals"""
         score = 0
         
@@ -379,7 +386,7 @@ class SarahSEOAnalyst:
         
         return min(max(score, 0), 100)
     
-    def _generate_critical_recommendations(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None):
+    def _generate_critical_recommendations(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None, screenshot_analysis=None):
         """Genereer kritische aanbevelingen - now includes theme recommendations"""
         recommendations = []
         
@@ -430,7 +437,7 @@ class SarahSEOAnalyst:
         
         return recommendations
     
-    def _identify_critical_issues(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None):
+    def _identify_critical_issues(self, pagespeed_data, technical_audit, theme_seo_analysis=None, goals_check=None, screenshot_analysis=None):
         """Identificeer kritieke problemen"""
         critical_issues = []
         
@@ -452,7 +459,7 @@ class SarahSEOAnalyst:
         
         return critical_issues
     
-    def _generate_directed_output_document(self, score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations, goals_check=None):
+    def _generate_directed_output_document(self, score, pagespeed_data, technical_audit, theme_seo_analysis, recommendations, goals_check=None, screenshot_analysis=None):
         """
         Generate DIRECTED OUTPUT DOCUMENT (d.o.d) format for Captain integration
         
@@ -595,6 +602,102 @@ class SarahSEOAnalyst:
         improvement_potential = (100 - current_score) / 100
         
         # SEO typically delivers 15-25% traffic increase when optimized
+        traffic_increase = improvement_potential * 0.20  # 20% average
+        
+        monthly_impact = base_monthly_value * traffic_increase
+        
+        return {
+            'current_monthly_value': base_monthly_value,
+            'potential_monthly_increase': int(monthly_impact),
+            'potential_annual_increase': int(monthly_impact * 12),
+            'improvement_potential_pct': int(improvement_potential * 100)
+        }
+    
+    def _analyze_screenshots_seo(self, site_data, project_goals):
+        """
+        Analyze screenshots from SEO & UX perspective using GPT-4 Vision
+        
+        Focus on:
+        - Search bar visibility & prominence
+        - H1/heading hierarchy
+        - Call-to-action clarity
+        - Mobile-first design (thumb zones)
+        - Conversion-focused layout
+        """
+        screenshots = self.screenshot_analyzer.get_screenshots(site_data)
+        
+        if not screenshots:
+            return {
+                'screenshots_analyzed': 0,
+                'seo_score': 0,
+                'issues': ['No screenshots available for SEO analysis']
+            }
+        
+        # SEO-focused analysis prompt
+        seo_prompt = """Analyze this e-commerce website screenshot from an SEO & UX perspective.
+
+FOCUS AREAS:
+1. **Search Bar Visibility** (0-100): Is the search functionality prominent and easy to find?
+2. **Visual Hierarchy** (0-100): Are H1 headings, CTAs, and important elements clearly visible?
+3. **Mobile UX** (0-100): Are touch targets 44px+? Is navigation thumb-friendly?
+4. **Conversion Focus** (0-100): Is the layout optimized for conversions (clear CTAs, reduced friction)?
+5. **SEO Elements** (0-100): Are key SEO elements visible (breadcrumbs, product titles, descriptions)?
+
+PROVIDE:
+**SCORES:**
+- Search Bar Visibility: X/100
+- Visual Hierarchy: X/100
+- Mobile UX: X/100
+- Conversion Focus: X/100
+- SEO Elements: X/100
+- OVERALL: X/100
+
+**ISSUES FOUND:**
+- List specific SEO/UX issues you see
+
+**RECOMMENDATIONS:**
+- Provide actionable recommendations to improve SEO visibility and conversions
+
+**HIGHLIGHTS:**
+- What's working well from an SEO/UX perspective"""
+        
+        # Analyze screenshots
+        analyses = {}
+        all_scores = []
+        all_recommendations = []
+        all_issues = []
+        
+        for screenshot_name, screenshot_path in screenshots.items():
+            print(f"      📸 SEO Analysis: {screenshot_name}")
+            
+            analysis = self.screenshot_analyzer.analyze_screenshot(
+                screenshot_path,
+                screenshot_name,
+                seo_prompt,
+                project_goals
+            )
+            
+            analyses[screenshot_name] = analysis
+            
+            if 'score' in analysis:
+                all_scores.append(analysis['score'])
+            
+            if 'recommendations' in analysis:
+                all_recommendations.extend(analysis['recommendations'])
+            
+            if 'issues' in analysis:
+                all_issues.extend([f"{screenshot_name}: {issue}" for issue in analysis['issues']])
+        
+        # Calculate overall SEO screenshot score
+        avg_score = int(sum(all_scores) / len(all_scores)) if all_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(screenshots),
+            'seo_score': avg_score,
+            'analyses': analyses,
+            'recommendations': all_recommendations,
+            'issues': all_issues
+        }
         seo_traffic_multiplier = 0.20  # 20% average
         
         # Calculate potential monthly impact
