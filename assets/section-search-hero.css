@@ -239,26 +239,27 @@
 
 .search-input {
   width: 100%;
-  padding: 1.5rem 8rem 1.5rem 2rem;
-  font-size: 1.25rem;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem 10rem 2rem 2.5rem; /* INCREASED: Larger padding for prominence */
+  font-size: 1.5rem; /* INCREASED: From 1.25rem to 1.5rem for better visibility */
+  border: 4px solid rgba(255, 255, 255, 0.5); /* INCREASED: Thicker border for prominence */
   border-radius: 60px;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 255, 255, 1); /* INCREASED: Full opacity for better contrast */
   transition: all 0.3s ease;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 600; /* INCREASED: From 500 to 600 for better readability */
   color: var(--color-text, #4D4D4D);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* ADDED: Subtle shadow for depth */
 }
 
 .search-input::placeholder {
-  color: rgba(77, 77, 77, 0.5);
+  color: rgba(77, 77, 77, 0.6); /* INCREASED: From 0.5 to 0.6 for better contrast */
 }
 
 .search-input:focus {
   outline: none;
   border-color: #FFFFFF;
   background: #FFFFFF;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5), 0 8px 24px rgba(0, 0, 0, 0.15); /* ENHANCED: Better focus indicator */
 }
 
 /* Search Buttons */
@@ -266,7 +267,7 @@
 .search-voice,
 .search-clear {
   position: absolute;
-  padding: 0.75rem;
+  padding: 1rem; /* INCREASED: From 0.75rem to 1rem */
   background: var(--color-primary, #FBB03B);
   border: none;
   color: #FFFFFF;
@@ -276,10 +277,11 @@
   justify-content: center;
   transition: all 0.3s ease;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 56px; /* INCREASED: From 48px to 56px for 44px+ touch target */
+  height: 56px; /* INCREASED: From 48px to 56px for 44px+ touch target */
   top: 50%;
   transform: translateY(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* ADDED: Better visibility */
 }
 
 .search-submit:hover,
@@ -287,13 +289,14 @@
 .search-clear:hover {
   background: var(--color-secondary, #FF8C42);
   transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ENHANCED: Better hover feedback */
 }
 
 .search-submit:focus-visible,
 .search-voice:focus-visible,
 .search-clear:focus-visible {
-  outline: 2px solid #FFFFFF;
-  outline-offset: 2px;
+  outline: 3px solid #FFFFFF; /* INCREASED: From 2px to 3px for WCAG compliance */
+  outline-offset: 3px; /* INCREASED: From 2px to 3px */
 }
 
 .search-submit:active,
@@ -303,15 +306,32 @@
 }
 
 .search-submit {
-  right: 1.25rem;
+  right: 1.5rem; /* ADJUSTED: For larger button */
 }
 
 .search-voice {
-  right: 5rem;
+  right: 5.5rem; /* ADJUSTED: For larger buttons */
+  background: rgba(255, 255, 255, 0.3); /* UPDATED: More visible voice search */
+  backdrop-filter: blur(10px);
+}
+
+.search-voice:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.search-voice svg {
+  width: 24px; /* INCREASED: From 20px to 24px */
+  height: 24px; /* INCREASED: From 20px to 24px */
+}
+
+.search-submit svg {
+  width: 24px; /* INCREASED: From 20px to 24px */
+  height: 24px; /* INCREASED: From 20px to 24px */
 }
 
 .search-clear {
-  right: 8.75rem;
+  right: 10rem; /* ADJUSTED: For larger buttons */
   display: none;
 }
 
