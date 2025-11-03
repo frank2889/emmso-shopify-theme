@@ -3,14 +3,25 @@
 Screenshot Capture Tool for EMMSO Theme
 ========================================
 Automatically captures screenshots of all important pages for Vision AI analysis
+
+SMART DEPLOYMENT-AWARE LOGIC:
+- Only capture NEW screenshots 5+ minutes after latest git deployment
+- Reuse existing screenshots if recent (< 5 min since last commit)
+- Store screenshots in deployment-specific folders with timestamps
+- Use symlink 'latest/' pointing to most recent deployment
 """
 import os
 import sys
+import subprocess
+from pathlib import Path
 from playwright.sync_api import sync_playwright
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Shopify preview URL
 PREVIEW_URL = "https://y0hnl2y5cksklmw7-63663472878.shopifypreview.com"
+
+# Wait time after deployment before capturing (Shopify needs time to build)
+DEPLOYMENT_WAIT_MINUTES = 5
 
 # Pages to capture
 PAGES_TO_CAPTURE = [
@@ -28,15 +39,15 @@ PAGES_TO_CAPTURE = [
     },
     {
         'name': 'search-results-desktop',
-        'url': f"{PREVIEW_URL}/search?q=Floors",
+        'url': f"{PREVIEW_URL}/search?q=floor",
         'viewport': {'width': 1920, 'height': 1080},
-        'description': 'Search results page - test search functionality'
+        'description': 'Search results page - test search functionality + Add to Cart buttons'
     },
     {
         'name': 'search-results-mobile',
-        'url': f"{PREVIEW_URL}/search?q=Floors",
+        'url': f"{PREVIEW_URL}/search?q=floor",
         'viewport': {'width': 390, 'height': 844},
-        'description': 'Search results mobile'
+        'description': 'Search results mobile + Add to Cart buttons'
     },
     {
         'name': 'product-page-desktop',
@@ -90,16 +101,113 @@ PAGES_TO_CAPTURE = [
     }
 ]
 
-def capture_screenshots(output_dir='screenshots'):
-    """Capture all screenshots using Playwright"""
+def get_last_deployment_time():
+    """Get timestamp of last git commit (deployment trigger)"""
+    try:
+        result = subprocess.run(
+            ['git', 'log', '-1', '--format=%ct'],
+            cwd='/Users/Frank/Documents/EMMSO NOV',
+            capture_output=True,
+            text=True
+        )
+        if result.returncode == 0:
+            return int(result.stdout.strip())
+        return None
+    except Exception as e:
+        print(f"⚠️  Could not get git commit time: {e}")
+        return None
+
+def get_latest_screenshot_deployment():
+    """Get the most recent screenshot deployment folder"""
+    screenshots_base = Path('/Users/Frank/Documents/EMMSO NOV/screenshots')
+    if not screenshots_base.exists():
+        return None
     
-    # Ensure output directory exists
-    screenshots_path = os.path.join('/Users/Frank/Documents/EMMSO NOV', output_dir)
-    os.makedirs(screenshots_path, exist_ok=True)
+    deployment_folders = [
+        d for d in screenshots_base.iterdir() 
+        if d.is_dir() and d.name.startswith('deployment-')
+    ]
+    
+    if not deployment_folders:
+        return None
+    
+    # Sort by timestamp in folder name
+    deployment_folders.sort(key=lambda x: x.name, reverse=True)
+    return deployment_folders[0]
+
+def should_capture_new_screenshots():
+    """
+    Determine if new screenshots are needed based on:
+    1. Last git commit time (deployment)
+    2. Time since last screenshot capture
+    3. Minimum 5-minute wait for Shopify deployment
+    """
+    last_commit_time = get_last_deployment_time()
+    
+    if not last_commit_time:
+        print("⚠️  No git commit found - will capture new screenshots")
+        return True, None
+    
+    commit_datetime = datetime.fromtimestamp(last_commit_time)
+    minutes_since_commit = (datetime.now() - commit_datetime).total_seconds() / 60
+    
+    print(f"📅 Last deployment: {commit_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"⏱️  Time since deployment: {minutes_since_commit:.1f} minutes")
+    
+    # Check if we need to wait longer for Shopify to deploy
+    if minutes_since_commit < DEPLOYMENT_WAIT_MINUTES:
+        wait_more = DEPLOYMENT_WAIT_MINUTES - minutes_since_commit
+        print(f"⏳ Waiting for Shopify deployment... {wait_more:.1f} more minutes")
+        print(f"💡 Shopify needs ~{DEPLOYMENT_WAIT_MINUTES} min to build and deploy theme")
+        return False, None
+    
+    # Check if we already have recent screenshots
+    latest_deployment = get_latest_screenshot_deployment()
+    
+    if latest_deployment:
+        # Extract timestamp from folder name: deployment-1730649600
+        folder_timestamp = int(latest_deployment.name.split('-')[1])
+        
+        # If screenshots are from this deployment or newer, reuse them
+        if folder_timestamp >= last_commit_time:
+            print(f"✅ Recent screenshots found: {latest_deployment.name}")
+            print(f"📁 Reusing existing screenshots (captured after current deployment)")
+            return False, latest_deployment
+    
+    print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
+    print(f"📸 Will capture NEW screenshots for this deployment")
+    return True, last_commit_time
+
+def capture_screenshots(output_dir='screenshots'):
+    """
+    Capture screenshots with smart deployment awareness.
+    Only captures new screenshots when needed (5+ min after deployment).
+    """
     
     print("🚀 EMMSO Screenshot Capture Tool")
+    print("=" * 60)
+    
+    # Check if we need new screenshots
+    should_capture, deployment_info = should_capture_new_screenshots()
+    
+    if not should_capture:
+        if deployment_info:
+            print(f"\n✅ Using existing screenshots from: {deployment_info}")
+            return str(deployment_info)
+        else:
+            print(f"\n⏸️  Skipping screenshot capture - waiting for deployment")
+            return None
+    
+    # Create deployment-specific folder
+    deployment_timestamp = deployment_info if isinstance(deployment_info, int) else int(datetime.now().timestamp())
+    screenshots_base = Path('/Users/Frank/Documents/EMMSO NOV') / output_dir
+    deployment_folder = screenshots_base / f"deployment-{deployment_timestamp}"
+    
+    deployment_folder.mkdir(parents=True, exist_ok=True)
+    
+    print(f"\n� Output folder: {deployment_folder.name}")
     print(f"📸 Capturing {len(PAGES_TO_CAPTURE)} screenshots...")
-    print(f"📁 Output: {screenshots_path}\n")
+    print("=" * 60 + "\n")
     
     with sync_playwright() as p:
         # Launch browser
@@ -128,14 +236,14 @@ def capture_screenshots(output_dir='screenshots'):
                     page.wait_for_timeout(1000)
                 
                 # Take screenshot
-                screenshot_path = os.path.join(screenshots_path, f"{page_config['name']}.png")
+                screenshot_path = deployment_folder / f"{page_config['name']}.png"
                 
                 if 'clip' in page_config:
                     # Partial screenshot (e.g., header only)
-                    page.screenshot(path=screenshot_path, clip=page_config['clip'])
+                    page.screenshot(path=str(screenshot_path), clip=page_config['clip'])
                 else:
                     # Full page screenshot
-                    page.screenshot(path=screenshot_path, full_page=True)
+                    page.screenshot(path=str(screenshot_path), full_page=True)
                 
                 print(f"    ✅ Saved to {page_config['name']}.png")
                 
@@ -146,17 +254,31 @@ def capture_screenshots(output_dir='screenshots'):
         
         browser.close()
     
+    # Create/update 'latest' symlink
+    latest_link = screenshots_base / 'latest'
+    if latest_link.exists() or latest_link.is_symlink():
+        latest_link.unlink()
+    
+    latest_link.symlink_to(deployment_folder.name, target_is_directory=True)
+    
     print(f"\n✅ Screenshot capture complete!")
-    print(f"📁 {len(PAGES_TO_CAPTURE)} screenshots saved to: {screenshots_path}")
+    print(f"📁 {len(PAGES_TO_CAPTURE)} screenshots saved to: {deployment_folder.name}")
+    print(f"🔗 Symlink updated: screenshots/latest -> {deployment_folder.name}")
     print(f"\n🎯 Next steps:")
-    print(f"   1. Review screenshots in {screenshots_path}")
+    print(f"   1. Review screenshots in screenshots/{deployment_folder.name}")
     print(f"   2. Run: cd AI && python3 captain.py")
-    print(f"   3. Vision AI will analyze all screenshots automatically")
+    print(f"   3. Vision AI will analyze screenshots from latest deployment")
+    
+    return str(deployment_folder)
 
 def main():
     """Main entry point"""
     try:
-        capture_screenshots()
+        result = capture_screenshots()
+        if result:
+            print(f"\n✅ Screenshots ready for analysis")
+        else:
+            print(f"\n⏸️  Waiting for deployment to complete")
     except Exception as e:
         print(f"\n❌ Error: {e}")
         print("\n💡 Make sure Playwright is installed:")

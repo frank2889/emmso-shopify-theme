@@ -107,11 +107,23 @@ class VisionAIAnalyst:
         }
     
     def _get_screenshots(self, site_data):
-        """Get available screenshots from screenshots folder"""
-        screenshots_dir = os.path.join(
-            site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV'),
-            'screenshots'
-        )
+        """
+        Get screenshots from latest deployment folder.
+        Uses screenshots/latest/ symlink to automatically use most recent deployment.
+        """
+        base_path = site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV')
+        
+        # Try 'latest' symlink first (new deployment-aware structure)
+        latest_dir = os.path.join(base_path, 'screenshots', 'latest')
+        
+        if os.path.exists(latest_dir) and os.path.islink(latest_dir):
+            screenshots_dir = latest_dir
+            print(f"      📁 Using deployment folder: {os.readlink(latest_dir)}")
+        else:
+            # Fallback to old flat structure
+            screenshots_dir = os.path.join(base_path, 'screenshots')
+            if os.path.exists(screenshots_dir):
+                print(f"      📁 Using screenshots folder (legacy structure)")
         
         screenshots = {}
         
