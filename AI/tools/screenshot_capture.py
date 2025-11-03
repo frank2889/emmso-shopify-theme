@@ -13,6 +13,7 @@ SMART DEPLOYMENT-AWARE LOGIC:
 import os
 import sys
 import subprocess
+import time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from datetime import datetime, timedelta
@@ -129,25 +130,22 @@ def should_capture_new_screenshots():
     1. Last git commit time (deployment)
     2. Time since last screenshot capture
     3. Minimum 5-minute wait for Shopify deployment
+    
+    Returns: (should_wait_and_capture, deployment_timestamp)
+    - should_wait_and_capture: True if need to wait then capture
+    - deployment_timestamp: Timestamp to use for folder name
     """
     last_commit_time = get_last_deployment_time()
     
     if not last_commit_time:
         print("⚠️  No git commit found - will capture new screenshots")
-        return True, None
+        return True, int(datetime.now().timestamp())
     
     commit_datetime = datetime.fromtimestamp(last_commit_time)
     minutes_since_commit = (datetime.now() - commit_datetime).total_seconds() / 60
     
     print(f"📅 Last deployment: {commit_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"⏱️  Time since deployment: {minutes_since_commit:.1f} minutes")
-    
-    # Check if we need to wait longer for Shopify to deploy
-    if minutes_since_commit < DEPLOYMENT_WAIT_MINUTES:
-        wait_more = DEPLOYMENT_WAIT_MINUTES - minutes_since_commit
-        print(f"⏳ Waiting for Shopify deployment... {wait_more:.1f} more minutes")
-        print(f"💡 Shopify needs ~{DEPLOYMENT_WAIT_MINUTES} min to build and deploy theme")
-        return False, None
     
     # Check if we already have recent screenshots
     latest_deployment = get_latest_screenshot_deployment()
@@ -160,9 +158,29 @@ def should_capture_new_screenshots():
         if folder_timestamp >= last_commit_time:
             print(f"✅ Recent screenshots found: {latest_deployment.name}")
             print(f"📁 Reusing existing screenshots (captured after current deployment)")
-            return False, latest_deployment
+            return False, None
     
-    print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
+    # Check if we need to wait longer for Shopify to deploy
+    if minutes_since_commit < DEPLOYMENT_WAIT_MINUTES:
+        wait_seconds = int((DEPLOYMENT_WAIT_MINUTES - minutes_since_commit) * 60)
+        print(f"\n⏳ WAITING FOR SHOPIFY DEPLOYMENT...")
+        print(f"   Deployment: {commit_datetime.strftime('%H:%M:%S')}")
+        print(f"   Wait time: {wait_seconds // 60} min {wait_seconds % 60} sec")
+        print(f"   💡 Shopify needs ~{DEPLOYMENT_WAIT_MINUTES} min to build theme")
+        print(f"\n   Sleeping {wait_seconds}s then auto-capturing screenshots...")
+        
+        # Sleep with progress updates every 30 seconds
+        for elapsed in range(0, wait_seconds, 30):
+            remaining = wait_seconds - elapsed
+            if remaining > 0:
+                time.sleep(min(30, remaining))
+                if remaining > 30:
+                    print(f"   ⏰ {remaining // 60} min {remaining % 60} sec remaining...")
+        
+        print(f"\n✅ Deployment wait complete! Starting screenshot capture...")
+    else:
+        print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
+    
     print(f"📸 Will capture NEW screenshots for this deployment")
     return True, last_commit_time
 
@@ -264,9 +282,11 @@ def main():
     try:
         result = capture_screenshots()
         if result:
-            print(f"\n✅ Screenshots ready for analysis")
+            print(f"\n✅ Screenshots ready for Vision AI analysis")
+            return str(result)
         else:
-            print(f"\n⏸️  Waiting for deployment to complete")
+            print(f"\n⏸️  No new screenshots needed")
+            return None
     except Exception as e:
         print(f"\n❌ Error: {e}")
         print("\n💡 Make sure Playwright is installed:")
