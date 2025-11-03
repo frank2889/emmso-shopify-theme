@@ -12,6 +12,10 @@
   --header-bg: var(--color-white, #FFFFFF);
   --logo-height: 56px; /* INCREASED: From 48px for better brand visibility */
   --logo-height-mobile: 44px; /* INCREASED: From 36px for mobile prominence */
+  
+  /* Cart Icon Sizes - Vision AI CRITICAL: Must be prominent for e-commerce visibility */
+  --cart-icon-size: 28px; /* INCREASED: From 24px for desktop visibility */
+  --cart-icon-size-mobile: 32px; /* INCREASED: Mobile-first prominence */
 }
 
 /* ============================================================================
@@ -131,22 +135,32 @@
 }
 
 .icon-button svg {
-  width: 24px;
-  height: 24px;
+  width: var(--cart-icon-size, 28px);
+  height: var(--cart-icon-size, 28px);
   display: block;
+  transition: transform 0.3s ease;
 }
 
-/* Cart Badge */
+/* Cart Icon - Enhanced for e-commerce visibility */
 .icon-button--cart {
   position: relative;
 }
 
+.icon-button--cart svg {
+  width: var(--cart-icon-size, 28px);
+  height: var(--cart-icon-size, 28px);
+}
+
+.icon-button--cart:hover svg {
+  transform: scale(1.15);
+}
+
 .cart-count {
   position: absolute;
-  top: 4px;
-  right: 4px;
-  min-width: 20px;
-  height: 20px;
+  top: 2px;
+  right: 2px;
+  min-width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,10 +168,16 @@
   color: #FFFFFF;
   font-size: 0.75rem;
   font-weight: 700;
-  border-radius: 10px;
-  padding: 0 5px;
+  border-radius: 11px;
+  padding: 0 6px;
   box-shadow: 0 2px 8px rgba(255, 140, 66, 0.4);
   line-height: 1;
+  animation: cart-badge-pulse 0.3s ease;
+}
+
+@keyframes cart-badge-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }
 
 /* ============================================================================
@@ -180,6 +200,7 @@
   :root {
     --header-height: var(--header-height-mobile);
     --logo-height: var(--logo-height-mobile);
+    --cart-icon-size: var(--cart-icon-size-mobile, 32px); /* MOBILE-FIRST: Larger on mobile */
   }
 
   .site-header__container {
@@ -197,14 +218,20 @@
   }
 
   .icon-button {
-    width: 44px;
-    height: 44px;
+    width: 48px; /* INCREASED: From 44px for better mobile touch */
+    height: 48px;
     padding: 10px;
+  }
+  
+  /* Mobile cart icon - CRITICAL for e-commerce visibility */
+  .icon-button--cart svg {
+    width: var(--cart-icon-size-mobile, 32px);
+    height: var(--cart-icon-size-mobile, 32px);
   }
 
   .icon-button svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 
   .hide-mobile {
