@@ -32,9 +32,14 @@ except ImportError:
     AlexShopifyAnalyst = None
 
 try:
-    from .nora import NoraVisualDesignAnalyst
+    from .nora import NoraVisualAnalyst
 except ImportError:
-    NoraVisualDesignAnalyst = None
+    NoraVisualAnalyst = None
+
+try:
+    from .vision import VisionAIAnalyst
+except ImportError:
+    VisionAIAnalyst = None
 
 __all__ = [
     'SarahSEOAnalyst',
@@ -44,5 +49,6 @@ __all__ = [
     'JessicaUXAnalyst',
     'RachelContentAnalyst',
     'AlexShopifyAnalyst',
-    'NoraVisualDesignAnalyst'
+    'NoraVisualDesignAnalyst',
+    'VisionAIAnalyst'
 ]

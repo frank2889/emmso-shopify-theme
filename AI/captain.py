@@ -268,6 +268,7 @@ class EMMSOCaptain:
             ('alex', 'AlexShopifyAnalyst', 'Shopify Platform & E-commerce'),
             ('marcus', 'MarcusPerformanceAnalyst', 'Site Performance & Speed'),
             ('nora', 'NoraVisualAnalyst', 'Visual Design & Branding'),
+            ('vision', 'VisionAIAnalyst', '👁️  Visual Screenshot Analysis (GPT-4 Vision)'),
             # ('rachel', 'RachelContentAnalyst', 'Content Strategy & Structured Data'),  # Disabled - hangs on OpenAI
         ]
         
