@@ -47,11 +47,11 @@
     <source
       type="image/avif"
       srcset="
-        {{ image | image_url: width: 320, format: 'pjpg' }} 320w,
-        {{ image | image_url: width: 640, format: 'pjpg' }} 640w,
-        {{ image | image_url: width: 960, format: 'pjpg' }} 960w,
-        {{ image | image_url: width: 1280, format: 'pjpg' }} 1280w,
-        {{ image | image_url: width: 1920, format: 'pjpg' }} 1920w
+        {{ image | image_url: width: 320 }} 320w,
+        {{ image | image_url: width: 640 }} 640w,
+        {{ image | image_url: width: 960 }} 960w,
+        {{ image | image_url: width: 1280 }} 1280w,
+        {{ image | image_url: width: 1920 }} 1920w
       "
       sizes="{{ image_sizes }}"
     >
@@ -60,24 +60,24 @@
     <source
       type="image/webp"
       srcset="
-        {{ image | image_url: width: 320, format: 'pjpg' }} 320w,
-        {{ image | image_url: width: 640, format: 'pjpg' }} 640w,
-        {{ image | image_url: width: 960, format: 'pjpg' }} 960w,
-        {{ image | image_url: width: 1280, format: 'pjpg' }} 1280w,
-        {{ image | image_url: width: 1920, format: 'pjpg' }} 1920w
+        {{ image | image_url: width: 320 }} 320w,
+        {{ image | image_url: width: 640 }} 640w,
+        {{ image | image_url: width: 960 }} 960w,
+        {{ image | image_url: width: 1280 }} 1280w,
+        {{ image | image_url: width: 1920 }} 1920w
       "
       sizes="{{ image_sizes }}"
     >
     
     {%- comment -%} Fallback JPEG/PNG (legacy browsers) {%- endcomment -%}
     <img
-      src="{{ image | image_url: width: 960, format: 'pjpg' }}"
+      src="{{ image | image_url: width: 960 }}"
       srcset="
-        {{ image | image_url: width: 320, format: 'pjpg' }} 320w,
-        {{ image | image_url: width: 640, format: 'pjpg' }} 640w,
-        {{ image | image_url: width: 960, format: 'pjpg' }} 960w,
-        {{ image | image_url: width: 1280, format: 'pjpg' }} 1280w,
-        {{ image | image_url: width: 1920, format: 'pjpg' }} 1920w
+        {{ image | image_url: width: 320 }} 320w,
+        {{ image | image_url: width: 640 }} 640w,
+        {{ image | image_url: width: 960 }} 960w,
+        {{ image | image_url: width: 1280 }} 1280w,
+        {{ image | image_url: width: 1920 }} 1920w
       "
       sizes="{{ image_sizes }}"
       alt="{{ image.alt | escape }}"
