@@ -7,11 +7,11 @@
 /* CSS Variables - Override in theme settings if needed */
 :root {
   --header-height: 72px;
-  --header-height-mobile: 60px;
+  --header-height-mobile: 64px; /* INCREASED: From 60px for better logo space */
   --header-border-color: var(--color-primary, #FBB03B);
   --header-bg: var(--color-white, #FFFFFF);
-  --logo-height: 48px;
-  --logo-height-mobile: 36px;
+  --logo-height: 56px; /* INCREASED: From 48px for better brand visibility */
+  --logo-height-mobile: 44px; /* INCREASED: From 36px for mobile prominence */
 }
 
 /* ============================================================================

@@ -101,11 +101,22 @@ p {
 a {
   color: #FBB03B;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 a:hover {
   color: #e09a25;
+  text-decoration: underline; /* Enhanced: Visible hover feedback */
+}
+
+a:focus-visible {
+  outline: 3px solid #FBB03B; /* WCAG 2.4.7: Enhanced focus indicator */
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a:active {
+  color: #FF8C42; /* Enhanced: Active state feedback */
 }
 
 /* ============================================
