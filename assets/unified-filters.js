@@ -671,6 +671,7 @@ class UnifiedFilters {
   renderProductCard(product) {
     const price = product.price / 100;
     const inStock = product.available !== false;
+    const variantId = product.variants && product.variants[0] ? product.variants[0].id : product.id;
     
     // Context-specific card rendering
     const cardClass = this.context === 'product' ? 'related-product-card' : 'product-card';
@@ -716,6 +717,23 @@ class UnifiedFilters {
             </span>
           </div>
         </a>
+        
+        ${inStock ? `
+          <button 
+            type="button" 
+            class="product-card__add-to-cart" 
+            data-product-id="${product.id}"
+            data-variant-id="${variantId}"
+            aria-label="Add ${product.title} to cart"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span>Add to Cart</span>
+          </button>
+        ` : ''}
       </article>
     `;
   }
@@ -1102,6 +1120,15 @@ class UnifiedFilters {
     if (this.config.enableInfiniteScroll) {
       window.addEventListener('scroll', () => this.handleScroll());
     }
+
+    // Add to Cart buttons (event delegation)
+    this.productGrid?.addEventListener('click', (e) => {
+      const addToCartBtn = e.target.closest('.product-card__add-to-cart');
+      if (addToCartBtn) {
+        e.preventDefault();
+        this.handleAddToCart(addToCartBtn);
+      }
+    });
   }
 
   /**
@@ -1114,6 +1141,84 @@ class UnifiedFilters {
     
     toggle.setAttribute('aria-expanded', !isExpanded);
     content.hidden = isExpanded;
+  }
+
+  /**
+   * Handle Add to Cart button click
+   */
+  async handleAddToCart(button) {
+    const variantId = button.dataset.variantId;
+    const productId = button.dataset.productId;
+    
+    // Disable button and show loading state
+    button.disabled = true;
+    button.classList.add('adding');
+    const originalText = button.querySelector('span').textContent;
+    button.querySelector('span').textContent = 'Adding...';
+    
+    try {
+      // Add to cart via Shopify AJAX API
+      const response = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: variantId,
+          quantity: 1
+        })
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to add to cart');
+      }
+      
+      // Success state
+      button.classList.remove('adding');
+      button.classList.add('added');
+      button.querySelector('span').textContent = 'Added!';
+      
+      // Update cart count in header
+      this.updateCartCount();
+      
+      // Reset button after 2 seconds
+      setTimeout(() => {
+        button.classList.remove('added');
+        button.disabled = false;
+        button.querySelector('span').textContent = originalText;
+      }, 2000);
+      
+    } catch (error) {
+      console.error('Add to cart error:', error);
+      
+      // Error state
+      button.classList.remove('adding');
+      button.querySelector('span').textContent = 'Error';
+      
+      // Reset button after 2 seconds
+      setTimeout(() => {
+        button.disabled = false;
+        button.querySelector('span').textContent = originalText;
+      }, 2000);
+    }
+  }
+
+  /**
+   * Update cart count badge in header
+   */
+  async updateCartCount() {
+    try {
+      const response = await fetch('/cart.js');
+      const cart = await response.json();
+      
+      const cartCountElement = document.querySelector('.cart-count');
+      if (cartCountElement) {
+        cartCountElement.textContent = cart.item_count;
+        cartCountElement.hidden = cart.item_count === 0;
+      }
+    } catch (error) {
+      console.error('Cart count update error:', error);
+    }
   }
 }
 
