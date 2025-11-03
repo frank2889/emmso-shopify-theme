@@ -38,40 +38,28 @@ PAGES_TO_CAPTURE = [
         'description': 'Homepage mobile view'
     },
     {
-        'name': 'search-results-desktop',
-        'url': f"{PREVIEW_URL}/search?q=floor",
+        'name': 'collection-page-desktop',
+        'url': f"{PREVIEW_URL}/collections/all",
         'viewport': {'width': 1920, 'height': 1080},
-        'description': 'Search results page - test search functionality + Add to Cart buttons'
+        'description': 'Collection page - Products with Add to Cart buttons'
     },
     {
-        'name': 'search-results-mobile',
-        'url': f"{PREVIEW_URL}/search?q=floor",
+        'name': 'collection-page-mobile',
+        'url': f"{PREVIEW_URL}/collections/all",
         'viewport': {'width': 390, 'height': 844},
-        'description': 'Search results mobile + Add to Cart buttons'
+        'description': 'Collection page mobile - Add to Cart buttons visible'
     },
     {
         'name': 'product-page-desktop',
         'url': f"{PREVIEW_URL}/products/floorservice-color-hardwax-oil-classic",
         'viewport': {'width': 1920, 'height': 1080},
-        'description': 'Product detail page'
+        'description': 'Product detail page - Full product view'
     },
     {
         'name': 'product-page-mobile',
         'url': f"{PREVIEW_URL}/products/floorservice-color-hardwax-oil-classic",
         'viewport': {'width': 390, 'height': 844},
         'description': 'Product detail page mobile'
-    },
-    {
-        'name': 'collection-page-desktop',
-        'url': f"{PREVIEW_URL}/collections/all",
-        'viewport': {'width': 1920, 'height': 1080},
-        'description': 'Collection page with products'
-    },
-    {
-        'name': 'collection-page-mobile',
-        'url': f"{PREVIEW_URL}/collections/all",
-        'viewport': {'width': 390, 'height': 844},
-        'description': 'Collection page mobile'
     },
     {
         'name': 'cart-desktop',
@@ -90,7 +78,7 @@ PAGES_TO_CAPTURE = [
         'url': PREVIEW_URL,
         'viewport': {'width': 1920, 'height': 1080},
         'clip': {'x': 0, 'y': 0, 'width': 1920, 'height': 200},
-        'description': 'Header with cart icon - e-commerce visibility check'
+        'description': 'Header with cart icon + predictive search'
     },
     {
         'name': 'footer-section',
