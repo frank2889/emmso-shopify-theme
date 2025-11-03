@@ -27,6 +27,11 @@
     "social": {
       "share": "Roinn",
       "follow_us": "Lean muid"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Seoladh ríomhphoist",
+      "submit": "Liostáil",
+      "confirmation": "Go raibh maith agat as síntiús a fháil!"
     }
   },
   "filters": {

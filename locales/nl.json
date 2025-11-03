@@ -21,6 +21,11 @@
       "clear": "Wissen",
       "voice": "Spraakzoeken"
     },
+    "newsletter_form": {
+      "email_placeholder": "E-mailadres",
+      "submit": "Abonneren",
+      "confirmation": "Bedankt voor je inschrijving!"
+    },
     "cart": {
       "title": "Winkelwagen"
     },

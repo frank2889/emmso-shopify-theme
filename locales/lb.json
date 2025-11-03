@@ -27,6 +27,11 @@
     "social": {
       "share": "Deelen",
       "follow_us": "Folgt eis"
+    },
+    "newsletter_form": {
+      "email_placeholder": "E-Mail-Adress",
+      "submit": "Abonnéieren",
+      "confirmation": "Merci fir Är Umeldung!"
     }
   },
   "filters": {

@@ -27,6 +27,11 @@
     "social": {
       "share": "Compartir",
       "follow_us": "Síguenos"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Enderezo de correo electrónico",
+      "submit": "Subscribirse",
+      "confirmation": "Grazas por subscribirte!"
     }
   },
   "filters": {

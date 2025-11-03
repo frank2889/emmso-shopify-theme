@@ -57,6 +57,11 @@
     },
     "language": {
       "label": "Langue"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Adresse e-mail",
+      "submit": "S'abonner",
+      "confirmation": "Merci de vous être abonné !"
     }
   },
   "products": {

@@ -27,6 +27,11 @@
     "social": {
       "share": "Diele",
       "follow_us": "Folgje ús"
+    },
+    "newsletter_form": {
+      "email_placeholder": "E-mailadres",
+      "submit": "Abonnearje",
+      "confirmation": "Tank foar jo ynskriuwing!"
     }
   },
   "filters": {

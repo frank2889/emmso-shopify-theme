@@ -27,6 +27,11 @@
     "social": {
       "share": "Comparteix",
       "follow_us": "Segueix-nos"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Adreça de correu electrònic",
+      "submit": "Subscriure's",
+      "confirmation": "Gràcies per subscriure't!"
     }
   },
   "filters": {

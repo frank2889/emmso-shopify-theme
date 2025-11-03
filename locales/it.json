@@ -18,6 +18,11 @@
       "results_for": "Risultati per \"{{ terms }}\"",
       "result_count_one": "{{ count }} risultato",
       "result_count_other": "{{ count }} risultati"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Indirizzo e-mail",
+      "submit": "Iscriviti",
+      "confirmation": "Grazie per esserti iscritto!"
     }
   },
   "filters": {

@@ -18,6 +18,11 @@
       "results_for": "Resultater for \"{{ terms }}\"",
       "result_count_one": "{{ count }} resultat",
       "result_count_other": "{{ count }} resultater"
+    },
+    "newsletter_form": {
+      "email_placeholder": "E-mailadresse",
+      "submit": "Tilmeld",
+      "confirmation": "Tak for din tilmelding!"
     }
   },
   "filters": {

@@ -27,6 +27,11 @@
     "social": {
       "share": "Partekatu",
       "follow_us": "Jarraitu gaitzazu"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Helbide elektronikoa",
+      "submit": "Harpidetu",
+      "confirmation": "Eskerrik asko harpidetzearren!"
     }
   },
   "filters": {

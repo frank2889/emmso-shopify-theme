@@ -37,6 +37,11 @@
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",
       "page": "Page {{ page }}"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Email address",
+      "submit": "Subscribe",
+      "confirmation": "Thanks for subscribing!"
     }
   },
   "filters": {
