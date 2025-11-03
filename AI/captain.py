@@ -320,7 +320,17 @@ class EMMSOCaptain:
         
         print("   🔍 Analysis in progress...")
         
-        # STEP 1: Vision AI analyzes screenshots first (if available)
+        # STEP 0: Capture fresh screenshots BEFORE Vision AI analysis
+        print(f"      📸 Capturing fresh screenshots...")
+        try:
+            from tools.screenshot_capture import capture_screenshots
+            capture_screenshots()
+            print(f"         ✅ Screenshots captured successfully")
+        except Exception as e:
+            print(f"         ⚠️  Screenshot capture skipped: {e}")
+            print(f"         💡 Install Playwright: pip install playwright && playwright install chromium")
+        
+        # STEP 1: Vision AI analyzes screenshots (now with fresh captures)
         screenshot_data = None
         if 'vision' in self.ai_team:
             try:

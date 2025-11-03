@@ -18,25 +18,37 @@ PAGES_TO_CAPTURE = [
         'name': 'homepage-desktop',
         'url': PREVIEW_URL,
         'viewport': {'width': 1920, 'height': 1080},
-        'description': 'Homepage desktop view - Search hero'
+        'description': 'Homepage desktop view - Search hero + dark footer'
     },
     {
         'name': 'homepage-mobile',
         'url': PREVIEW_URL,
-        'viewport': {'width': 375, 'height': 812},  # iPhone X
+        'viewport': {'width': 390, 'height': 844},  # iPhone 12 Pro
         'description': 'Homepage mobile view'
     },
     {
         'name': 'search-results-desktop',
-        'url': f"{PREVIEW_URL}/search?q=flooring",
+        'url': f"{PREVIEW_URL}/search?q=Floors",
         'viewport': {'width': 1920, 'height': 1080},
         'description': 'Search results page - test search functionality'
     },
     {
         'name': 'search-results-mobile',
-        'url': f"{PREVIEW_URL}/search?q=flooring",
-        'viewport': {'width': 375, 'height': 812},
+        'url': f"{PREVIEW_URL}/search?q=Floors",
+        'viewport': {'width': 390, 'height': 844},
         'description': 'Search results mobile'
+    },
+    {
+        'name': 'product-page-desktop',
+        'url': f"{PREVIEW_URL}/products/floorservice-color-hardwax-oil-classic",
+        'viewport': {'width': 1920, 'height': 1080},
+        'description': 'Product detail page'
+    },
+    {
+        'name': 'product-page-mobile',
+        'url': f"{PREVIEW_URL}/products/floorservice-color-hardwax-oil-classic",
+        'viewport': {'width': 390, 'height': 844},
+        'description': 'Product detail page mobile'
     },
     {
         'name': 'collection-page-desktop',
@@ -47,34 +59,34 @@ PAGES_TO_CAPTURE = [
     {
         'name': 'collection-page-mobile',
         'url': f"{PREVIEW_URL}/collections/all",
-        'viewport': {'width': 375, 'height': 812},
+        'viewport': {'width': 390, 'height': 844},
         'description': 'Collection page mobile'
     },
     {
-        'name': 'product-page-desktop',
-        'url': f"{PREVIEW_URL}/products/example-product",
+        'name': 'cart-desktop',
+        'url': f"{PREVIEW_URL}/cart",
         'viewport': {'width': 1920, 'height': 1080},
-        'description': 'Product detail page'
+        'description': 'Shopping cart page - CRITICAL for e-commerce visibility'
     },
     {
-        'name': 'product-page-mobile',
-        'url': f"{PREVIEW_URL}/products/example-product",
-        'viewport': {'width': 375, 'height': 812},
-        'description': 'Product detail page mobile'
+        'name': 'cart-mobile',
+        'url': f"{PREVIEW_URL}/cart",
+        'viewport': {'width': 390, 'height': 844},
+        'description': 'Shopping cart mobile - CRITICAL'
     },
     {
         'name': 'header-navigation',
         'url': PREVIEW_URL,
         'viewport': {'width': 1920, 'height': 1080},
         'clip': {'x': 0, 'y': 0, 'width': 1920, 'height': 200},
-        'description': 'Header and navigation bar closeup'
+        'description': 'Header with cart icon - e-commerce visibility check'
     },
     {
         'name': 'footer-section',
         'url': PREVIEW_URL,
-        'viewport': {'width': 1920, 'height': 1080},
+        'viewport': {'width': 2000, 'height': 1080},
         'scroll_to_bottom': True,
-        'description': 'Footer section'
+        'description': 'Dark footer with brand colors'
     }
 ]
 
