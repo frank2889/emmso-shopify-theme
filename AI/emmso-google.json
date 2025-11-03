@@ -1,0 +1,55 @@
+{{{{
+
+  "type": "service_account",
+
+  "project_id": "positive-karma-475015-h7",  "type": "service_account",
+
+  "private_key_id": "PLACEHOLDER_KEY_ID",
+
+  "private_key": "-----BEGIN PRIVATE KEY-----\nPLACEHOLDER_PRIVATE_KEY_CONTENT\n-----END PRIVATE KEY-----\n",  "project_id": "positive-karma-475015-h7",  "type": "service_account",  "type": "service_account",
+
+  "client_email": "emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com",
+
+  "client_id": "PLACEHOLDER_CLIENT_ID",  "private_key_id": "PLACEHOLDER_KEY_ID",
+
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+
+  "token_uri": "https://oauth2.googleapis.com/token",  "private_key": "-----BEGIN PRIVATE KEY-----\nPLACEHOLDER_PRIVATE_KEY_CONTENT\n-----END PRIVATE KEY-----\n",  "project_id": "positive-karma-475015-h7",  "project_id": "positive-karma-475015-h7",
+
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/emmso-461%40positive-karma-475015-h7.iam.gserviceaccount.com",  "client_email": "emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com",
+
+  "universe_domain": "googleapis.com"
+
+}  "client_id": "PLACEHOLDER_CLIENT_ID",  "private_key_id": "",  "private_key_id": "e00dcc6c1bab47f9bc77c4af3bfeff81da1ecf2c",
+
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+
+  "token_uri": "https://oauth2.googleapis.com/token",  "private_key": "",  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQIpUR0MIrBIra\nlleNoNLCens3DKg/QPV1ogh42saqt/ZYQsSOCOMRlF5s6t+PitDVW8SocAwb7ctI\n6eAJwdq6v4pjpLVq1GELu9VHQ6byFsyGso1SNqNbtytTEY0UlMW0yN9gQs6elFlH\ngS6DKuGEiVVLpBSuI2tRWbZk4/QSt8gbHiW9F0KfZd9NcQa3VNmb7ksVzjfTJ7gz\nD1ZVXU4g9quNJ0N4Vhw65zt2dfi/NpXEnzOglOpMjQAXX7kR6060N11bNokaDiEj\nxoWug82w1CkUDypJCXXbugz1bIfz1Yrrz+blVs0S4TbVrS0X8V1nSfpjOi7EaINl\nZZJ01Sn9AgMBAAECggEAVk9Q8+9W5ZHfpt+bdQ7Q93blK6HjDz/3yg0kaEGJCvh4\nfodJjQDgcMTPF2maxaKyERgaCCNW0iodF6Jsln8+Hh0Z3VJLLP7fM4dz3TaPv2p2\n7BCVDBe+TGU74RmxIGzFQ7/c6cUqe5ZXI5DNYfVhSZ3Nsi1bqg7kDPsf6NyitTOj\nfnXdhqW/XhPl/W6FYLKOMU0BbpwpCLjegl+arrl3Zuc0XnGBoddbWZKWwFJRGVb/\nVvD8HsevwcaWuga15U7yglkU65H4VObkpMc17fA37hGker0Dw1HdXcKVaGY0kn8I\nRKVxI6p7VHTr1lXYqSw0o6M8lFZwZk4P8AciOPbIXQKBgQDwIVZ9HACTqN0Xh6Ku\nE1aIqb4k849q/jECyvTDjphQ6OswVxAy0sWT4kpkkCI2+tg6tMJ5BvBi1SHXEONB\nam0zMSU3bdknOgPahakIFd0/KkSmx40pxCJdviCCynomjF8NMbSMmZizczmUHBfF\nhhW4/pbbCueDOsnbX0ZRUWdaQwKBgQDd4+6jPuniERObknuHn8iPD6RHJOVmnC63\nVd27FJM2zsOk1LqcEwWeOCvzSqf0tlKmZss5+dkkiT8z++6WkdQmJOMJnWIEi7Ga\nUKYR7WhvUyRuA7xaP5O2tbDyN9/S6ipTTbUTR43rEABnh2hebrRt/iBETXiiUW08\n98QIC2PGvwKBgDSLxwZHi2TEbeUJPDMFbkkng8FIPtj12Lm4ucjVOkVyQozocFX+\nw1dyDD9nPuVzDMAD8A5V02J9KxOJ0YDuDglGttMjSYKI8nDuEKgBSNHaqP0p65z5\nG2ASC8EzF3m5+87CUrT1o3GZRD9Byn3hsn0x0McL4s9XnPZRKez/eDNLAoGBANNY\n4pl9OFrKtylsidrxt5+EX44gN5zX0KtxzyP9ggcnRDSBJ0m32JcOm9Y9WuL8spaq\nvJH5R/nD/H5wTZ3/QtoeMl6bGJyJzl3UyYmz3tCCmeVsC4DOo8zZHLRpwfhscGou\nTvYRJr0p3ai+0gt4WMWX03YbcHbzJiB3QrIC30OTAoGBANiw3FtVokAKclXXfHze\naLlkYww/qJXeLphCAym22VMHEMgycvtxOtySpRbe5o5qd5tB8+CJvWudupvx7mss\niCTSHbss90IAaSBF5GweS6NFAoi7gxhhMAfNMNehumj+kIyt6EX4NFe0DWCLugOo\n8ZI2sjDFKLFKr7kipFD8fBS7\n-----END PRIVATE KEY-----\n",
+
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/emmso-461%40positive-karma-475015-h7.iam.gserviceaccount.com",  "client_email": "emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com",  "client_email": "emmso-461@positive-karma-475015-h7.iam.gserviceaccount.com",
+
+  "universe_domain": "googleapis.com"
+
+}  "client_id": "",  "client_id": "113272118067658225476",
+
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+
+  "token_uri": "https://oauth2.googleapis.com/token",  "token_uri": "https://oauth2.googleapis.com/token",
+
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/emmso-461%40positive-karma-475015-h7.iam.gserviceaccount.com",  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/emmso-461%40positive-karma-475015-h7.iam.gserviceaccount.com",
+
+  "universe_domain": "googleapis.com"  "universe_domain": "googleapis.com",
+
+}  "_comment": "EMMSO Google Services Configuration - All Google APIs use this single service account",
+  "google_ads_customer_id": "YOUR_GOOGLE_ADS_CUSTOMER_ID_HERE",
+  "google_ads_developer_token": "YOUR_GOOGLE_ADS_DEVELOPER_TOKEN_HERE",
+  "pagespeed_insights_api_key": "AIzaSyDUVxUrmf8lbUn2eO6_WTk5ZBOOdE_fAGk",
+  "google_analytics_property_id": "properties/331591288",
+  "shopify_preview_url": "https://emmso.myshopify.com"
+}

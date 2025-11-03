@@ -50,7 +50,7 @@
     assign lang = market_parts[0]
     assign country = market_parts[1]
     
-    comment Build URL for this market endcomment
+    # Build URL for this market
     if is_product
       assign market_url = base_url | append: '/' | append: lang | append: '/products/' | append: resource_handle
     elsif is_collection
@@ -63,7 +63,7 @@
       assign market_url = base_url | append: '/' | append: lang | append: request.path
     endif
     
-    comment Clean up double slashes endcomment
+    # Clean up double slashes
     assign market_url = market_url | replace: '//', '/' | replace: 'https:/', 'https://' | replace: 'http:/', 'http://'
   -%}
   

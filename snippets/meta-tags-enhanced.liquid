@@ -8,7 +8,7 @@
   assign current_lang = current_locale | split: '-' | first
   assign current_country = current_locale | split: '-' | last
   
-  comment Determine page type endcomment
+  # Determine page type
   assign is_home = false
   assign is_product = false
   assign is_collection = false
