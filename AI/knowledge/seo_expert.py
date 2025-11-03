@@ -756,3 +756,35 @@ def get_recommendation(topic, current_score):
     }
     
     return recommendations.get(topic, [])
+
+
+def get_expert_knowledge():
+    """
+    Returns complete SEO expert knowledge as single string
+    
+    Use this for AI/LLM context when generating SEO recommendations.
+    Contains complete Google certification-level knowledge covering:
+    - Google Search Essentials
+    - Core Web Vitals
+    - Google Search Console
+    - Structured Data
+    - On-Page SEO
+    - Technical SEO
+    - E-commerce SEO (Shopify)
+    
+    Returns:
+        str: Complete knowledge base
+    """
+    return "\n\n".join([
+        "SEO EXPERT KNOWLEDGE BASE - GOOGLE CERTIFICATION",
+        "=" * 80,
+        GOOGLE_SEARCH_ESSENTIALS,
+        CORE_WEB_VITALS,
+        GOOGLE_SEARCH_CONSOLE,
+        STRUCTURED_DATA,
+        ON_PAGE_SEO,
+        TECHNICAL_SEO_COMPLETE,
+        ECOMMERCE_SEO_SHOPIFY
+    ])
+
+
