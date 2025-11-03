@@ -623,13 +623,13 @@ class SarahSEOAnalyst:
     
     def _process_vision_screenshots_for_seo(self, vision_data, project_goals):
         """
-        Process Vision AI's screenshot analysis from SEO perspective
+        Process Vision AI's screenshot analysis from SEO & UX perspective
         
-        Takes Vision's general visual analysis and extracts SEO-relevant insights:
-        - Search visibility
-        - CTA prominence
-        - Mobile usability
-        - Conversion optimization
+        Uses Vision's detailed scores to evaluate:
+        - Search visibility (search_first score)
+        - Mobile UX (mobile_first score)
+        - Accessibility (accessibility score)
+        - Visual hierarchy for CTAs
         """
         if not vision_data:
             return {
@@ -638,34 +638,113 @@ class SarahSEOAnalyst:
                 'issues': ['No Vision AI data available']
             }
         
+        print("      📸 Using Vision AI screenshot data")
+        
         seo_issues = []
         seo_recommendations = []
-        seo_scores = []
+        detailed_analyses = {}
+        
+        # SEO-focused scoring based on Vision's detailed scores
+        search_scores = []
+        mobile_scores = []
+        accessibility_scores = []
+        hierarchy_scores = []
         
         for screenshot_name, vision_analysis in vision_data.items():
-            # Extract SEO-relevant issues from Vision's analysis
+            if 'error' in vision_analysis:
+                continue
+            
+            # Extract Vision's detailed scores
+            scores = vision_analysis.get('scores', {})
+            search_first = scores.get('search_first', 0)
+            mobile_first = scores.get('mobile_first', 0)
+            accessibility = scores.get('accessibility', 0)
+            visual_hierarchy = scores.get('visual_hierarchy', 0)
+            
+            # Track scores for SEO calculation
+            if search_first > 0:
+                search_scores.append(search_first)
+            if mobile_first > 0:
+                mobile_scores.append(mobile_first)
+            if accessibility > 0:
+                accessibility_scores.append(accessibility)
+            if visual_hierarchy > 0:
+                hierarchy_scores.append(visual_hierarchy)
+            
+            # Generate SEO-specific insights based on Vision's scores
+            screenshot_issues = []
+            screenshot_recs = []
+            
+            if search_first < 70:
+                screenshot_issues.append(f"Search not prominent enough (score: {search_first}/100)")
+                screenshot_recs.append("Make search bar larger and more visually prominent")
+            
+            if mobile_first < 70:
+                screenshot_issues.append(f"Mobile UX issues (score: {mobile_first}/100)")
+                screenshot_recs.append("Ensure touch targets are 44px+ and thumb-reachable")
+            
+            if accessibility < 70:
+                screenshot_issues.append(f"Accessibility concerns (score: {accessibility}/100)")
+                screenshot_recs.append("Improve color contrast to WCAG 2.1 AA standards")
+            
+            if visual_hierarchy < 70:
+                screenshot_issues.append(f"Weak visual hierarchy (score: {visual_hierarchy}/100)")
+                screenshot_recs.append("Strengthen CTA prominence and focal points")
+            
+            # Add Vision's original issues/recommendations if SEO-relevant
             if 'issues' in vision_analysis:
                 for issue in vision_analysis['issues']:
-                    # Filter for SEO-relevant issues
-                    if any(keyword in issue.lower() for keyword in ['search', 'cta', 'button', 'navigation', 'mobile', 'accessibility', 'contrast', 'touch']):
-                        seo_issues.append(f"{screenshot_name}: {issue}")
+                    if any(kw in issue.lower() for kw in ['search', 'cta', 'button', 'navigation', 'mobile', 'accessibility', 'contrast', 'touch', 'conversion']):
+                        screenshot_issues.append(issue)
             
-            # Extract SEO-relevant recommendations
             if 'recommendations' in vision_analysis:
                 for rec in vision_analysis['recommendations']:
-                    if any(keyword in rec.lower() for keyword in ['search', 'cta', 'conversion', 'mobile', 'accessibility', 'usability']):
-                        seo_recommendations.append(f"{screenshot_name}: {rec}")
+                    if any(kw in rec.lower() for kw in ['search', 'cta', 'conversion', 'mobile', 'accessibility', 'usability']):
+                        # Remove screenshot name prefix if present (Vision already adds it)
+                        clean_rec = rec.replace(f"{screenshot_name}: ", "")
+                        screenshot_recs.append(clean_rec)
             
-            # Use Vision's score as baseline for SEO assessment
-            if 'score' in vision_analysis:
-                seo_scores.append(vision_analysis['score'])
+            # Store detailed analysis for this screenshot
+            detailed_analyses[screenshot_name] = {
+                'seo_scores': {
+                    'search_visibility': search_first,
+                    'mobile_ux': mobile_first,
+                    'accessibility': accessibility,
+                    'cta_hierarchy': visual_hierarchy
+                },
+                'issues': screenshot_issues,
+                'recommendations': screenshot_recs
+            }
+            
+            # Add to global lists with context
+            for issue in screenshot_issues:
+                seo_issues.append(f"{screenshot_name}: {issue}")
+            for rec in screenshot_recs:
+                seo_recommendations.append(f"{screenshot_name}: {rec}")
         
-        avg_score = int(sum(seo_scores) / len(seo_scores)) if seo_scores else 0
+        # Calculate SEO-focused overall score (weighted)
+        # Search = 35%, Mobile = 25%, Accessibility = 25%, Hierarchy = 15%
+        seo_score = 0
+        if search_scores:
+            seo_score += int(sum(search_scores) / len(search_scores) * 0.35)
+        if mobile_scores:
+            seo_score += int(sum(mobile_scores) / len(mobile_scores) * 0.25)
+        if accessibility_scores:
+            seo_score += int(sum(accessibility_scores) / len(accessibility_scores) * 0.25)
+        if hierarchy_scores:
+            seo_score += int(sum(hierarchy_scores) / len(hierarchy_scores) * 0.15)
         
         return {
             'screenshots_analyzed': len(vision_data),
-            'seo_score': avg_score,
-            'source': 'vision_ai_processed',
+            'seo_score': seo_score,
+            'source': 'vision_ai_processed_seo',
+            'detailed_analyses': detailed_analyses,
+            'avg_scores': {
+                'search_visibility': int(sum(search_scores) / len(search_scores)) if search_scores else 0,
+                'mobile_ux': int(sum(mobile_scores) / len(mobile_scores)) if mobile_scores else 0,
+                'accessibility': int(sum(accessibility_scores) / len(accessibility_scores)) if accessibility_scores else 0,
+                'cta_hierarchy': int(sum(hierarchy_scores) / len(hierarchy_scores)) if hierarchy_scores else 0
+            },
             'issues': seo_issues,
             'recommendations': seo_recommendations
         }

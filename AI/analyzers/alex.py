@@ -543,11 +543,11 @@ class AlexShopifyAnalyst:
         """
         Process Vision AI's screenshot analysis from Shopify platform perspective
         
-        Extracts Shopify-specific insights:
+        Uses Vision's detailed scores to evaluate:
+        - E-commerce UX patterns
         - Section rendering quality
         - Cart/checkout visibility
-        - E-commerce UX patterns
-        - Navigation structure
+        - Product display effectiveness
         """
         if not vision_data:
             return {
@@ -556,31 +556,94 @@ class AlexShopifyAnalyst:
                 'issues': ['No Vision AI data available']
             }
         
+        print("      📸 Using Vision AI screenshot data")
+        
         shopify_issues = []
         shopify_recommendations = []
-        shopify_scores = []
+        detailed_analyses = {}
+        
+        # Shopify-focused scoring
+        brand_scores = []
+        hierarchy_scores = []
+        mobile_scores = []
         
         for screenshot_name, vision_analysis in vision_data.items():
+            if 'error' in vision_analysis:
+                continue
+            
+            # Extract Vision's detailed scores
+            scores = vision_analysis.get('scores', {})
+            brand_consistency = scores.get('brand_consistency', 0)
+            visual_hierarchy = scores.get('visual_hierarchy', 0)
+            mobile_first = scores.get('mobile_first', 0)
+            
+            # Track scores
+            if brand_consistency > 0:
+                brand_scores.append(brand_consistency)
+            if visual_hierarchy > 0:
+                hierarchy_scores.append(visual_hierarchy)
+            if mobile_first > 0:
+                mobile_scores.append(mobile_first)
+            
+            # Generate Shopify-specific insights
+            screenshot_issues = []
+            screenshot_recs = []
+            
+            if brand_consistency < 70:
+                screenshot_issues.append(f"Brand inconsistency (score: {brand_consistency}/100)")
+                screenshot_recs.append("Standardize logo, colors, and typography across sections")
+            
+            if 'product' in screenshot_name.lower() or 'collection' in screenshot_name.lower():
+                if visual_hierarchy < 70:
+                    screenshot_issues.append(f"Product display hierarchy weak (score: {visual_hierarchy}/100)")
+                    screenshot_recs.append("Improve product title/price/CTA prominence")
+            
+            # Filter Vision's issues for Shopify-relevance
             if 'issues' in vision_analysis:
                 for issue in vision_analysis['issues']:
-                    # Filter for Shopify-relevant issues
-                    if any(keyword in issue.lower() for keyword in ['cart', 'checkout', 'product', 'collection', 'navigation', 'section', 'shopify']):
-                        shopify_issues.append(f"{screenshot_name}: {issue}")
+                    if any(kw in issue.lower() for kw in ['cart', 'checkout', 'product', 'collection', 'navigation', 'section', 'shopify', 'brand', 'logo']):
+                        screenshot_issues.append(issue)
             
             if 'recommendations' in vision_analysis:
                 for rec in vision_analysis['recommendations']:
-                    if any(keyword in rec.lower() for keyword in ['cart', 'checkout', 'product', 'collection', 'navigation', 'e-commerce']):
-                        shopify_recommendations.append(f"{screenshot_name}: {rec}")
+                    if any(kw in rec.lower() for kw in ['cart', 'checkout', 'product', 'collection', 'navigation', 'e-commerce', 'brand', 'section']):
+                        clean_rec = rec.replace(f"{screenshot_name}: ", "")
+                        screenshot_recs.append(clean_rec)
             
-            if 'score' in vision_analysis:
-                shopify_scores.append(vision_analysis['score'])
+            detailed_analyses[screenshot_name] = {
+                'shopify_scores': {
+                    'brand_consistency': brand_consistency,
+                    'section_hierarchy': visual_hierarchy,
+                    'mobile_commerce': mobile_first
+                },
+                'issues': screenshot_issues,
+                'recommendations': screenshot_recs
+            }
+            
+            for issue in screenshot_issues:
+                shopify_issues.append(f"{screenshot_name}: {issue}")
+            for rec in screenshot_recs:
+                shopify_recommendations.append(f"{screenshot_name}: {rec}")
         
-        avg_score = int(sum(shopify_scores) / len(shopify_scores)) if shopify_scores else 0
+        # Calculate Shopify-focused score (Brand=40%, Hierarchy=30%, Mobile=30%)
+        shopify_score = 0
+        if brand_scores:
+            shopify_score += int(sum(brand_scores) / len(brand_scores) * 0.40)
+        if hierarchy_scores:
+            shopify_score += int(sum(hierarchy_scores) / len(hierarchy_scores) * 0.30)
+        if mobile_scores:
+            shopify_score += int(sum(mobile_scores) / len(mobile_scores) * 0.30)
         
         return {
             'screenshots_analyzed': len(vision_data),
-            'shopify_score': avg_score,
-            'source': 'vision_ai_processed',
+            'shopify_score': shopify_score,
+            'source': 'vision_ai_processed_shopify',
+            'detailed_analyses': detailed_analyses,
+            'avg_scores': {
+                'brand_consistency': int(sum(brand_scores) / len(brand_scores)) if brand_scores else 0,
+                'section_hierarchy': int(sum(hierarchy_scores) / len(hierarchy_scores)) if hierarchy_scores else 0,
+                'mobile_commerce': int(sum(mobile_scores) / len(mobile_scores)) if mobile_scores else 0
+            },
             'issues': shopify_issues,
             'recommendations': shopify_recommendations
         }

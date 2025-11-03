@@ -357,12 +357,12 @@ class NoraVisualAnalyst:
         """
         Process Vision AI's screenshot analysis from Design perspective
         
-        Extracts design-specific insights:
-        - Brand consistency
-        - Typography quality
-        - Color usage
-        - Visual hierarchy
-        - Layout & spacing
+        Uses Vision's detailed scores for:
+        - Brand consistency evaluation
+        - Typography quality assessment
+        - Color usage analysis
+        - Visual hierarchy strength
+        - Layout & spacing quality
         """
         if not vision_data:
             return {
@@ -371,31 +371,108 @@ class NoraVisualAnalyst:
                 'issues': ['No Vision AI data available']
             }
         
+        print("      📸 Using Vision AI screenshot data")
+        
         design_issues = []
         design_recommendations = []
-        design_scores = []
+        detailed_analyses = {}
+        
+        # Design-focused scoring
+        brand_scores = []
+        hierarchy_scores = []
+        accessibility_scores = []
+        simplicity_scores = []
         
         for screenshot_name, vision_analysis in vision_data.items():
+            if 'error' in vision_analysis:
+                continue
+            
+            # Extract ALL design-relevant scores from Vision
+            scores = vision_analysis.get('scores', {})
+            brand_consistency = scores.get('brand_consistency', 0)
+            visual_hierarchy = scores.get('visual_hierarchy', 0)
+            accessibility = scores.get('accessibility', 0)
+            brutalist_simplicity = scores.get('brutalist_simplicity', 0)
+            
+            if brand_consistency > 0:
+                brand_scores.append(brand_consistency)
+            if visual_hierarchy > 0:
+                hierarchy_scores.append(visual_hierarchy)
+            if accessibility > 0:
+                accessibility_scores.append(accessibility)
+            if brutalist_simplicity > 0:
+                simplicity_scores.append(brutalist_simplicity)
+            
+            # Generate design-specific insights
+            screenshot_issues = []
+            screenshot_recs = []
+            
+            if brand_consistency < 70:
+                screenshot_issues.append(f"Brand inconsistency detected (score: {brand_consistency}/100)")
+                screenshot_recs.append("Standardize logo size, color palette, and typography")
+            
+            if visual_hierarchy < 70:
+                screenshot_issues.append(f"Weak visual hierarchy (score: {visual_hierarchy}/100)")
+                screenshot_recs.append("Strengthen focal points using size and contrast")
+            
+            if accessibility < 70:
+                screenshot_issues.append(f"Accessibility/contrast issues (score: {accessibility}/100)")
+                screenshot_recs.append("Improve text contrast and color accessibility")
+            
+            if brutalist_simplicity < 60:
+                screenshot_issues.append(f"Design not brutalist enough (score: {brutalist_simplicity}/100)")
+                screenshot_recs.append("Simplify design - remove decorative elements")
+            
+            # Filter Vision's original issues for design-relevance
             if 'issues' in vision_analysis:
                 for issue in vision_analysis['issues']:
-                    # Filter for design-relevant issues
-                    if any(keyword in issue.lower() for keyword in ['brand', 'color', 'typography', 'font', 'spacing', 'layout', 'hierarchy', 'consistency', 'visual']):
-                        design_issues.append(f"{screenshot_name}: {issue}")
+                    if any(kw in issue.lower() for kw in ['brand', 'color', 'typography', 'font', 'spacing', 'layout', 'hierarchy', 'consistency', 'visual', 'contrast', 'align']):
+                        screenshot_issues.append(issue)
             
             if 'recommendations' in vision_analysis:
                 for rec in vision_analysis['recommendations']:
-                    if any(keyword in rec.lower() for keyword in ['brand', 'color', 'typography', 'font', 'spacing', 'layout', 'hierarchy', 'consistency', 'design']):
-                        design_recommendations.append(f"{screenshot_name}: {rec}")
+                    if any(kw in rec.lower() for kw in ['brand', 'color', 'typography', 'font', 'spacing', 'layout', 'hierarchy', 'consistency', 'design', 'visual']):
+                        clean_rec = rec.replace(f"{screenshot_name}: ", "")
+                        screenshot_recs.append(clean_rec)
             
-            if 'score' in vision_analysis:
-                design_scores.append(vision_analysis['score'])
+            detailed_analyses[screenshot_name] = {
+                'design_scores': {
+                    'brand_consistency': brand_consistency,
+                    'visual_hierarchy': visual_hierarchy,
+                    'accessibility': accessibility,
+                    'brutalist_simplicity': brutalist_simplicity
+                },
+                'issues': screenshot_issues,
+                'recommendations': screenshot_recs
+            }
+            
+            for issue in screenshot_issues:
+                design_issues.append(f"{screenshot_name}: {issue}")
+            for rec in screenshot_recs:
+                design_recommendations.append(f"{screenshot_name}: {rec}")
         
-        avg_score = int(sum(design_scores) / len(design_scores)) if design_scores else 0
+        # Calculate design-focused score (Brand=30%, Hierarchy=25%, Accessibility=25%, Simplicity=20%)
+        design_score = 0
+        if brand_scores:
+            design_score += int(sum(brand_scores) / len(brand_scores) * 0.30)
+        if hierarchy_scores:
+            design_score += int(sum(hierarchy_scores) / len(hierarchy_scores) * 0.25)
+        if accessibility_scores:
+            design_score += int(sum(accessibility_scores) / len(accessibility_scores) * 0.25)
+        if simplicity_scores:
+            design_score += int(sum(simplicity_scores) / len(simplicity_scores) * 0.20)
         
         return {
             'screenshots_analyzed': len(vision_data),
-            'design_score': avg_score,
-            'source': 'vision_ai_processed',
+            'design_score': design_score,
+            'source': 'vision_ai_processed_design',
+            'detailed_analyses': detailed_analyses,
+            'avg_scores': {
+                'brand_consistency': int(sum(brand_scores) / len(brand_scores)) if brand_scores else 0,
+                'visual_hierarchy': int(sum(hierarchy_scores) / len(hierarchy_scores)) if hierarchy_scores else 0,
+                'accessibility': int(sum(accessibility_scores) / len(accessibility_scores)) if accessibility_scores else 0,
+                'brutalist_simplicity': int(sum(simplicity_scores) / len(simplicity_scores)) if simplicity_scores else 0
+            },
             'issues': design_issues,
             'recommendations': design_recommendations
         }

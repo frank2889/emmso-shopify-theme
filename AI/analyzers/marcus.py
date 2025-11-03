@@ -211,11 +211,11 @@ class MarcusPerformanceAnalyst:
         """
         Process Vision AI's screenshot analysis from Performance perspective
         
-        Extracts performance-specific insights:
-        - Visual stability (CLS issues)
-        - Loading UX indicators
-        - Image optimization quality
-        - Layout efficiency
+        Uses Vision's scores to detect:
+        - Visual layout shifts (CLS indicators)
+        - Loading UX quality
+        - Image optimization hints
+        - Performance-impacting design choices
         """
         if not vision_data:
             return {
@@ -224,31 +224,92 @@ class MarcusPerformanceAnalyst:
                 'issues': ['No Vision AI data available']
             }
         
+        print("      📸 Using Vision AI screenshot data")
+        
         perf_issues = []
         perf_recommendations = []
-        perf_scores = []
+        detailed_analyses = {}
+        
+        # Performance-related scores
+        hierarchy_scores = []  # Stable hierarchy = low CLS
+        mobile_scores = []     # Good mobile = optimized assets
+        simplicity_scores = [] # Brutalist = less bloat
         
         for screenshot_name, vision_analysis in vision_data.items():
+            if 'error' in vision_analysis:
+                continue
+            
+            scores = vision_analysis.get('scores', {})
+            visual_hierarchy = scores.get('visual_hierarchy', 0)
+            mobile_first = scores.get('mobile_first', 0)
+            brutalist_simplicity = scores.get('brutalist_simplicity', 0)
+            
+            if visual_hierarchy > 0:
+                hierarchy_scores.append(visual_hierarchy)
+            if mobile_first > 0:
+                mobile_scores.append(mobile_first)
+            if brutalist_simplicity > 0:
+                simplicity_scores.append(brutalist_simplicity)
+            
+            screenshot_issues = []
+            screenshot_recs = []
+            
+            # High hierarchy score = stable layout = low CLS risk
+            if visual_hierarchy < 70:
+                screenshot_issues.append(f"Layout stability concerns (hierarchy: {visual_hierarchy}/100)")
+                screenshot_recs.append("Stabilize layout to prevent Cumulative Layout Shift")
+            
+            # Low simplicity = potential bloat
+            if brutalist_simplicity < 60:
+                screenshot_issues.append(f"Visual complexity may impact performance (simplicity: {brutalist_simplicity}/100)")
+                screenshot_recs.append("Reduce visual elements to improve loading speed")
+            
+            # Filter Vision's issues for performance-relevance
             if 'issues' in vision_analysis:
                 for issue in vision_analysis['issues']:
-                    # Filter for performance-relevant issues
-                    if any(keyword in issue.lower() for keyword in ['layout', 'shift', 'loading', 'image', 'optimization', 'speed', 'cls', 'lcp']):
-                        perf_issues.append(f"{screenshot_name}: {issue}")
+                    if any(kw in issue.lower() for kw in ['layout', 'shift', 'loading', 'image', 'optimization', 'speed', 'cls', 'lcp', 'large', 'heavy']):
+                        screenshot_issues.append(issue)
             
             if 'recommendations' in vision_analysis:
                 for rec in vision_analysis['recommendations']:
-                    if any(keyword in rec.lower() for keyword in ['performance', 'optimize', 'loading', 'image', 'compress', 'lazy']):
-                        perf_recommendations.append(f"{screenshot_name}: {rec}")
+                    if any(kw in rec.lower() for kw in ['performance', 'optimize', 'loading', 'image', 'compress', 'lazy', 'speed', 'fast']):
+                        clean_rec = rec.replace(f"{screenshot_name}: ", "")
+                        screenshot_recs.append(clean_rec)
             
-            if 'score' in vision_analysis:
-                perf_scores.append(vision_analysis['score'])
+            detailed_analyses[screenshot_name] = {
+                'performance_indicators': {
+                    'layout_stability': visual_hierarchy,
+                    'asset_optimization': mobile_first,
+                    'design_efficiency': brutalist_simplicity
+                },
+                'issues': screenshot_issues,
+                'recommendations': screenshot_recs
+            }
+            
+            for issue in screenshot_issues:
+                perf_issues.append(f"{screenshot_name}: {issue}")
+            for rec in screenshot_recs:
+                perf_recommendations.append(f"{screenshot_name}: {rec}")
         
-        avg_score = int(sum(perf_scores) / len(perf_scores)) if perf_scores else 0
+        # Performance score (Hierarchy=40%, Simplicity=35%, Mobile=25%)
+        perf_score = 0
+        if hierarchy_scores:
+            perf_score += int(sum(hierarchy_scores) / len(hierarchy_scores) * 0.40)
+        if simplicity_scores:
+            perf_score += int(sum(simplicity_scores) / len(simplicity_scores) * 0.35)
+        if mobile_scores:
+            perf_score += int(sum(mobile_scores) / len(mobile_scores) * 0.25)
         
         return {
             'screenshots_analyzed': len(vision_data),
-            'performance_score': avg_score,
-            'source': 'vision_ai_processed',
+            'performance_score': perf_score,
+            'source': 'vision_ai_processed_performance',
+            'detailed_analyses': detailed_analyses,
+            'avg_scores': {
+                'layout_stability': int(sum(hierarchy_scores) / len(hierarchy_scores)) if hierarchy_scores else 0,
+                'design_efficiency': int(sum(simplicity_scores) / len(simplicity_scores)) if simplicity_scores else 0,
+                'asset_optimization': int(sum(mobile_scores) / len(mobile_scores)) if mobile_scores else 0
+            },
             'issues': perf_issues,
             'recommendations': perf_recommendations
         }
