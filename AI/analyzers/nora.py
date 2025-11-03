@@ -27,8 +27,14 @@ class NoraVisualAnalyst:
         brand_analysis = self._analyze_brand_implementation()
         responsive_analysis = self._analyze_responsive_design()
         
-        # Analyze screenshots from Design perspective (GPT-4 Vision)
-        screenshot_analysis = self._analyze_screenshots_design(site_data, project_goals)
+        # Get screenshot analysis from Vision AI (shared data) or analyze ourselves
+        screenshot_analysis = None
+        if 'vision_screenshot_analysis' in site_data:
+            screenshot_analysis = self._process_vision_screenshots_for_design(site_data['vision_screenshot_analysis'], project_goals)
+            print("      📸 Using Vision AI screenshot data")
+        else:
+            screenshot_analysis = self._analyze_screenshots_design(site_data, project_goals)
+            print("      📸 Design Analysis: analyzing screenshots independently")
         
         # Calculate STRENGE score
         score = self._calculate_visual_score(css_analysis, visual_analysis, brand_analysis, responsive_analysis, screenshot_analysis)
@@ -346,6 +352,53 @@ class NoraVisualAnalyst:
             })
         
         return recommendations
+    
+    def _process_vision_screenshots_for_design(self, vision_data, project_goals):
+        """
+        Process Vision AI's screenshot analysis from Design perspective
+        
+        Extracts design-specific insights:
+        - Brand consistency
+        - Typography quality
+        - Color usage
+        - Visual hierarchy
+        - Layout & spacing
+        """
+        if not vision_data:
+            return {
+                'screenshots_analyzed': 0,
+                'design_score': 0,
+                'issues': ['No Vision AI data available']
+            }
+        
+        design_issues = []
+        design_recommendations = []
+        design_scores = []
+        
+        for screenshot_name, vision_analysis in vision_data.items():
+            if 'issues' in vision_analysis:
+                for issue in vision_analysis['issues']:
+                    # Filter for design-relevant issues
+                    if any(keyword in issue.lower() for keyword in ['brand', 'color', 'typography', 'font', 'spacing', 'layout', 'hierarchy', 'consistency', 'visual']):
+                        design_issues.append(f"{screenshot_name}: {issue}")
+            
+            if 'recommendations' in vision_analysis:
+                for rec in vision_analysis['recommendations']:
+                    if any(keyword in rec.lower() for keyword in ['brand', 'color', 'typography', 'font', 'spacing', 'layout', 'hierarchy', 'consistency', 'design']):
+                        design_recommendations.append(f"{screenshot_name}: {rec}")
+            
+            if 'score' in vision_analysis:
+                design_scores.append(vision_analysis['score'])
+        
+        avg_score = int(sum(design_scores) / len(design_scores)) if design_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(vision_data),
+            'design_score': avg_score,
+            'source': 'vision_ai_processed',
+            'issues': design_issues,
+            'recommendations': design_recommendations
+        }
     
     def _analyze_screenshots_design(self, site_data, project_goals):
         """

@@ -53,8 +53,14 @@ class AlexShopifyAnalyst:
         # Shopify config analysis
         config_analysis = self._analyze_shopify_config()
         
-        # Analyze screenshots from Shopify perspective (GPT-4 Vision)
-        screenshot_analysis = self._analyze_screenshots_shopify(site_data, project_goals)
+        # Get screenshot analysis from Vision AI (shared data) or analyze ourselves
+        screenshot_analysis = None
+        if 'vision_screenshot_analysis' in site_data:
+            screenshot_analysis = self._process_vision_screenshots_for_shopify(site_data['vision_screenshot_analysis'], project_goals)
+            print("      📸 Using Vision AI screenshot data")
+        else:
+            screenshot_analysis = self._analyze_screenshots_shopify(site_data, project_goals)
+            print("      📸 Shopify Analysis: analyzing screenshots independently")
         
         # Calculate smart score
         score = self._calculate_shopify_score(theme_analysis, template_analysis, sections_analysis, assets_analysis, screenshot_analysis)
@@ -532,6 +538,52 @@ class AlexShopifyAnalyst:
             })
         
         return recommendations
+    
+    def _process_vision_screenshots_for_shopify(self, vision_data, project_goals):
+        """
+        Process Vision AI's screenshot analysis from Shopify platform perspective
+        
+        Extracts Shopify-specific insights:
+        - Section rendering quality
+        - Cart/checkout visibility
+        - E-commerce UX patterns
+        - Navigation structure
+        """
+        if not vision_data:
+            return {
+                'screenshots_analyzed': 0,
+                'shopify_score': 0,
+                'issues': ['No Vision AI data available']
+            }
+        
+        shopify_issues = []
+        shopify_recommendations = []
+        shopify_scores = []
+        
+        for screenshot_name, vision_analysis in vision_data.items():
+            if 'issues' in vision_analysis:
+                for issue in vision_analysis['issues']:
+                    # Filter for Shopify-relevant issues
+                    if any(keyword in issue.lower() for keyword in ['cart', 'checkout', 'product', 'collection', 'navigation', 'section', 'shopify']):
+                        shopify_issues.append(f"{screenshot_name}: {issue}")
+            
+            if 'recommendations' in vision_analysis:
+                for rec in vision_analysis['recommendations']:
+                    if any(keyword in rec.lower() for keyword in ['cart', 'checkout', 'product', 'collection', 'navigation', 'e-commerce']):
+                        shopify_recommendations.append(f"{screenshot_name}: {rec}")
+            
+            if 'score' in vision_analysis:
+                shopify_scores.append(vision_analysis['score'])
+        
+        avg_score = int(sum(shopify_scores) / len(shopify_scores)) if shopify_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(vision_data),
+            'shopify_score': avg_score,
+            'source': 'vision_ai_processed',
+            'issues': shopify_issues,
+            'recommendations': shopify_recommendations
+        }
     
     def _analyze_screenshots_shopify(self, site_data, project_goals):
         """

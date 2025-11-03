@@ -47,8 +47,14 @@ class MarcusPerformanceAnalyst:
         # Test preview URL performance
         preview_performance = self._test_preview_performance(site_data.get('shopify_preview_url'))
         
-        # Analyze screenshots from Performance perspective (GPT-4 Vision)
-        screenshot_analysis = self._analyze_screenshots_performance(site_data, project_goals)
+        # Get screenshot analysis from Vision AI (shared data) or analyze ourselves
+        screenshot_analysis = None
+        if 'vision_screenshot_analysis' in site_data:
+            screenshot_analysis = self._process_vision_screenshots_for_performance(site_data['vision_screenshot_analysis'], project_goals)
+            print("      📸 Using Vision AI screenshot data")
+        else:
+            screenshot_analysis = self._analyze_screenshots_performance(site_data, project_goals)
+            print("      📸 Performance Analysis: analyzing screenshots independently")
         
         # Calculate score
         score = self._calculate_performance_score(theme_analysis, preview_performance, screenshot_analysis)
@@ -200,6 +206,52 @@ class MarcusPerformanceAnalyst:
             recommendations.append("Performance looks good")
         
         return recommendations
+    
+    def _process_vision_screenshots_for_performance(self, vision_data, project_goals):
+        """
+        Process Vision AI's screenshot analysis from Performance perspective
+        
+        Extracts performance-specific insights:
+        - Visual stability (CLS issues)
+        - Loading UX indicators
+        - Image optimization quality
+        - Layout efficiency
+        """
+        if not vision_data:
+            return {
+                'screenshots_analyzed': 0,
+                'performance_score': 0,
+                'issues': ['No Vision AI data available']
+            }
+        
+        perf_issues = []
+        perf_recommendations = []
+        perf_scores = []
+        
+        for screenshot_name, vision_analysis in vision_data.items():
+            if 'issues' in vision_analysis:
+                for issue in vision_analysis['issues']:
+                    # Filter for performance-relevant issues
+                    if any(keyword in issue.lower() for keyword in ['layout', 'shift', 'loading', 'image', 'optimization', 'speed', 'cls', 'lcp']):
+                        perf_issues.append(f"{screenshot_name}: {issue}")
+            
+            if 'recommendations' in vision_analysis:
+                for rec in vision_analysis['recommendations']:
+                    if any(keyword in rec.lower() for keyword in ['performance', 'optimize', 'loading', 'image', 'compress', 'lazy']):
+                        perf_recommendations.append(f"{screenshot_name}: {rec}")
+            
+            if 'score' in vision_analysis:
+                perf_scores.append(vision_analysis['score'])
+        
+        avg_score = int(sum(perf_scores) / len(perf_scores)) if perf_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(vision_data),
+            'performance_score': avg_score,
+            'source': 'vision_ai_processed',
+            'issues': perf_issues,
+            'recommendations': perf_recommendations
+        }
     
     def _analyze_screenshots_performance(self, site_data, project_goals):
         """

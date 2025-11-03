@@ -40,8 +40,16 @@ class SarahSEOAnalyst:
         # Check project goals alignment
         goals_check = self._check_project_goals(site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV'), project_goals)
         
-        # Analyze screenshots from SEO perspective (GPT-4 Vision)
-        screenshot_analysis = self._analyze_screenshots_seo(site_data, project_goals)
+        # Get screenshot analysis from Vision AI (shared data) or analyze ourselves
+        screenshot_analysis = None
+        if 'vision_screenshot_analysis' in site_data:
+            # Use Vision AI's screenshot analysis
+            screenshot_analysis = self._process_vision_screenshots_for_seo(site_data['vision_screenshot_analysis'], project_goals)
+            print("      📸 Using Vision AI screenshot data")
+        else:
+            # Fallback: analyze screenshots ourselves (slower)
+            screenshot_analysis = self._analyze_screenshots_seo(site_data, project_goals)
+            print("      📸 SEO Analysis: analyzing screenshots independently")
         
         # Bereken kritische score (nu met theme analysis EN goals EN screenshots)
         score = self._calculate_critical_score(pagespeed_data, technical_audit, theme_seo_analysis, goals_check, screenshot_analysis)
@@ -538,7 +546,7 @@ class SarahSEOAnalyst:
                 'WHAT': self._extract_specific_actions(recommendations),
                 'WHERE': self._identify_implementation_locations(target_files),
                 'WHEN': timeline,
-                'WHY': f"SEO optimization can generate €{revenue_impact:,}/month additional revenue"
+                'WHY': f"SEO optimization can generate €{revenue_impact['potential_monthly_increase']:,}/month additional revenue"
             },
             'captain_instructions': {
                 'deployment_order': self._generate_deployment_sequence(target_files),
@@ -556,7 +564,7 @@ class SarahSEOAnalyst:
             },
             'business_context': {
                 'okr_impact': 'AI Quality Score ≥ 90/100',
-                'revenue_potential': f"€{revenue_impact:,}/month",
+                'revenue_potential': f"€{revenue_impact['potential_monthly_increase']:,}/month",
                 'market_coverage': 'Nederland, Denemarken, België, Duitsland'
             }
         }
@@ -611,6 +619,55 @@ class SarahSEOAnalyst:
             'potential_monthly_increase': int(monthly_impact),
             'potential_annual_increase': int(monthly_impact * 12),
             'improvement_potential_pct': int(improvement_potential * 100)
+        }
+    
+    def _process_vision_screenshots_for_seo(self, vision_data, project_goals):
+        """
+        Process Vision AI's screenshot analysis from SEO perspective
+        
+        Takes Vision's general visual analysis and extracts SEO-relevant insights:
+        - Search visibility
+        - CTA prominence
+        - Mobile usability
+        - Conversion optimization
+        """
+        if not vision_data:
+            return {
+                'screenshots_analyzed': 0,
+                'seo_score': 0,
+                'issues': ['No Vision AI data available']
+            }
+        
+        seo_issues = []
+        seo_recommendations = []
+        seo_scores = []
+        
+        for screenshot_name, vision_analysis in vision_data.items():
+            # Extract SEO-relevant issues from Vision's analysis
+            if 'issues' in vision_analysis:
+                for issue in vision_analysis['issues']:
+                    # Filter for SEO-relevant issues
+                    if any(keyword in issue.lower() for keyword in ['search', 'cta', 'button', 'navigation', 'mobile', 'accessibility', 'contrast', 'touch']):
+                        seo_issues.append(f"{screenshot_name}: {issue}")
+            
+            # Extract SEO-relevant recommendations
+            if 'recommendations' in vision_analysis:
+                for rec in vision_analysis['recommendations']:
+                    if any(keyword in rec.lower() for keyword in ['search', 'cta', 'conversion', 'mobile', 'accessibility', 'usability']):
+                        seo_recommendations.append(f"{screenshot_name}: {rec}")
+            
+            # Use Vision's score as baseline for SEO assessment
+            if 'score' in vision_analysis:
+                seo_scores.append(vision_analysis['score'])
+        
+        avg_score = int(sum(seo_scores) / len(seo_scores)) if seo_scores else 0
+        
+        return {
+            'screenshots_analyzed': len(vision_data),
+            'seo_score': avg_score,
+            'source': 'vision_ai_processed',
+            'issues': seo_issues,
+            'recommendations': seo_recommendations
         }
     
     def _analyze_screenshots_seo(self, site_data, project_goals):

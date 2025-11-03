@@ -320,7 +320,44 @@ class EMMSOCaptain:
         
         print("   🔍 Analysis in progress...")
         
+        # STEP 1: Vision AI analyzes screenshots first (if available)
+        screenshot_data = None
+        if 'vision' in self.ai_team:
+            try:
+                print(f"      👁️  Vision AI: Creating & analyzing screenshots...")
+                vision_result = self.ai_team['vision'].analyze(site_data)
+                mission_results['vision'] = vision_result
+                
+                # Extract screenshot analysis for sharing
+                if 'findings' in vision_result and 'screenshot_analyses' in vision_result['findings']:
+                    screenshot_data = vision_result['findings']['screenshot_analyses']
+                    print(f"         ✅ {len(screenshot_data)} screenshots analyzed and ready to share")
+                
+                score = vision_result.get('score', 0)
+                print(f"         Score: {score}/100")
+                
+                # Collect Vision's recommendations
+                if 'recommendations' in vision_result:
+                    for rec in vision_result['recommendations']:
+                        all_recommendations.append(f"**Vision**: {rec}")
+                
+                # Collect Vision's findings
+                all_findings.append(f"### Vision ({score}/100)\n\n" + json.dumps(vision_result['findings'], indent=2))
+                
+            except Exception as e:
+                print(f"         ❌ Vision analysis failed: {e}")
+                mission_results['vision'] = {'error': str(e), 'score': 0}
+        
+        # Add screenshot data to site_data for other analysts
+        if screenshot_data:
+            site_data['vision_screenshot_analysis'] = screenshot_data
+            print(f"      📸 Screenshot data added to site_data for other analysts")
+        
+        # STEP 2: Other analysts analyze code + use Vision's screenshot insights
         for name, analyst in self.ai_team.items():
+            if name == 'vision':  # Already analyzed
+                continue
+                
             try:
                 print(f"      👤 {name.title()}: Analyzing...")
                 
