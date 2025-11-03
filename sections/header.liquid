@@ -1,4 +1,5 @@
 {{ 'section-header.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'search-engine.js' | asset_url }}" defer></script>
 
 {%- comment -%}
   🕐 LIVE VERSION TIMESTAMP: {{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}
@@ -59,6 +60,12 @@
     {%- # Spacer to push icons right -%}
     <div style="flex: 1;"></div>
 
+    {%- # Search Bar -%}
+    {%- if section.settings.show_search_bar -%}
+      <div class="site-header__search">
+        {% render 'search-bar-compact' %}
+      </div>
+    {%- endif -%}
 
     {%- # Language Selector -%}
     {%- if section.settings.show_language_selector -%}
@@ -217,6 +224,12 @@
       "type": "checkbox",
       "id": "show_cart_icon",
       "label": "Show cart icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search_bar",
+      "label": "Show search bar",
       "default": true
     },
     {

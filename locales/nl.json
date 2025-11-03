@@ -27,7 +27,26 @@
       "confirmation": "Bedankt voor je inschrijving!"
     },
     "cart": {
-      "title": "Winkelwagen"
+      "title": "Winkelwagen",
+      "item_count": {
+        "one": "{{ count }} artikel",
+        "other": "{{ count }} artikelen"
+      },
+      "subtotal": "Subtotaal",
+      "shipping_at_checkout": "Verzending, belasting en kortingen worden berekend bij het afrekenen",
+      "checkout": "Afrekenen",
+      "continue_shopping": "Verder winkelen",
+      "update": "Bijwerken",
+      "remove": "Verwijderen",
+      "quantity": "Aantal",
+      "increase_quantity": "Aantal verhogen",
+      "decrease_quantity": "Aantal verlagen",
+      "note": "Opmerkingen bij bestelling (optioneel)",
+      "note_placeholder": "Speciale instructies voor uw bestelling...",
+      "free_shipping_remaining": "Voeg nog {{ amount }} toe voor gratis verzending!",
+      "free_shipping_eligible": "U komt in aanmerking voor gratis verzending!",
+      "empty_title": "Uw winkelwagen is leeg",
+      "empty_text": "Begin met winkelen om artikelen toe te voegen"
     },
     "compare": {
       "title": "Vergelijken"

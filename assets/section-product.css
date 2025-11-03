@@ -181,6 +181,11 @@
 }
 
 .product-form__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 44px;
   padding: 1.125rem 2rem;
   background: var(--color-primary, #FBB03B);
   color: #FFFFFF;
@@ -191,6 +196,22 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(251, 176, 59, 0.3);
+}
+
+.product-form__submit svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.product-form__submit:hover svg {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .product-form__submit {
+    min-height: 48px;
+    font-size: 1rem;
+  }
 }
 
 .product-form__submit:hover {

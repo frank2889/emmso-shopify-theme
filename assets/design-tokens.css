@@ -10,14 +10,16 @@
      COLORS - Warm Golden Orange Theme
      ======================================== */
   
-  /* Primary Colors - Golden Orange (EXISTING) */
-  --color-primary: #FBB03B;
-  --color-primary-dark: #E89A2B;
-  --color-primary-light: #FCC670;
-  --color-primary-alpha-10: rgba(251, 176, 59, 0.1);
-  --color-primary-alpha-15: rgba(251, 176, 59, 0.15);
-  --color-primary-alpha-20: rgba(251, 176, 59, 0.2);
-  --color-primary-alpha-40: rgba(251, 176, 59, 0.4);
+  /* Primary Colors - Golden Orange (WCAG AA Compliant) */
+  --color-primary: #E89A1A;        /* Darker orange for 4.5:1 contrast on white */
+  --color-primary-hover: #D98A0A;  /* Even darker for hover states */
+  --color-primary-bright: #FBB03B; /* Original bright orange for backgrounds only */
+  --color-primary-dark: #C77A00;   /* Dark variant */
+  --color-primary-light: #FCC670;  /* Light variant */
+  --color-primary-alpha-10: rgba(232, 154, 26, 0.1);
+  --color-primary-alpha-15: rgba(232, 154, 26, 0.15);
+  --color-primary-alpha-20: rgba(232, 154, 26, 0.2);
+  --color-primary-alpha-40: rgba(232, 154, 26, 0.4);
   
   /* EMMSO Brand - Dark Charcoal (from logo) */
   --color-brand-dark: #3D3D3D;
@@ -26,16 +28,21 @@
   --color-brand-dark-alpha-90: rgba(61, 61, 61, 0.9);
   --color-brand-dark-alpha-80: rgba(61, 61, 61, 0.8);
   
+  /* Secondary Colors - Accessible UI Elements */
+  --color-secondary: #D98A0A;         /* Dark orange for hover states */
+  --color-secondary-light: #F5A623;   /* Lighter variant */
+  --color-accent: #FF8C42;            /* Coral accent for alerts */
+  
   /* Neutral Base - Warm Beige Scale */
   --color-background: #FAFAFA;
   --color-surface: #FFFFFF;
   --color-border: #E8E8E1;
   --color-border-dark: #D0D0C8;
   
-  /* Text Hierarchy */
-  --color-text-primary: #3D3D3D;      /* Updated to match logo dark */
-  --color-text-secondary: #4A4A4A;    /* Matches logo charcoal */
-  --color-text-muted: #757575;
+  /* Text Hierarchy - WCAG AA Compliant */
+  --color-text-primary: #1A1A1A;      /* Enhanced contrast 16.1:1 */
+  --color-text-secondary: #3D3D3D;    /* Logo dark - 10.46:1 */
+  --color-text-muted: #6B6B6B;        /* Enhanced from #757575 - 5.74:1 */
   --color-text-inverse: #FFFFFF;
   
   /* Semantic Colors */

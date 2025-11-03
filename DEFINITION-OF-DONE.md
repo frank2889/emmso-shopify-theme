@@ -18679,3 +18679,13569 @@ performance.measure('search-duration', 'search-start', 'search-end');
 **Next Action**: Start with Phase 1 critical tasks
 
 
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 15:10:10
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 50/100
+
+#### Findings
+
+### Vision (68/100)
+
+{
+  "visual_analysis": {
+    "search-results-desktop": {
+      "screen": "search-results-desktop",
+      "raw_analysis": "**SCORES:**\n\n- Visual Hierarchy: 60/100\n- Search-First Design: 70/100\n- Mobile-First: 50/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 55/100\n- Brand Consistency: 65/100\n- OVERALL: 63/100\n\n**ISSUES FOUND:**\n\n- The search bar is not prominent enough; it blends into the background.\n- Translation errors are visible, which can confuse users.\n- The visual hierarchy is weak; there's no clear focal point.\n- Text sizes and touch targets may not be optimized for mobile.\n- Color contrast may not meet accessibility standards.\n- Inconsistent typography and spacing.\n\n**RECOMMENDATIONS:**\n\n- Increase the prominence of the search bar with a contrasting color or larger size.\n- Fix translation errors to improve clarity and user experience.\n- Enhance the visual hierarchy by using size and contrast to guide the user's attention.\n- Ensure touch targets are at least 44px and text sizes are readable on mobile.\n- Check and adjust color contrast to meet WCAG 2.1 AA standards.\n- Standardize typography and spacing for a more consistent brand appearance.\n\n**HIGHLIGHTS:**\n\n- The design leans towards simplicity, aligning with the brutalist approach.\n- The footer is well-organized, providing clear navigation options.\n- The layout is clean and minimal, reducing unnecessary clutter.",
+      "scores": {
+        "visual_hierarchy": 60,
+        "search_first": 70,
+        "mobile_first": 50,
+        "brutalist_simplicity": 75,
+        "accessibility": 55,
+        "brand_consistency": 65
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The search bar is not prominent enough; it blends into the background.",
+        "Translation errors are visible, which can confuse users.",
+        "The visual hierarchy is weak; there's no clear focal point.",
+        "Text sizes and touch targets may not be optimized for mobile.",
+        "Color contrast may not meet accessibility standards.",
+        "Inconsistent typography and spacing."
+      ],
+      "recommendations": [
+        "search-results-desktop: *RECOMMENDATIONS:**",
+        "search-results-desktop: Increase the prominence of the search bar with a contrasting color or larger size.",
+        "search-results-desktop: Fix translation errors to improve clarity and user experience.",
+        "search-results-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention.",
+        "search-results-desktop: Ensure touch targets are at least 44px and text sizes are readable on mobile.",
+        "search-results-desktop: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+        "search-results-desktop: Standardize typography and spacing for a more consistent brand appearance."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design leans towards simplicity, aligning with the brutalist approach.",
+        "The footer is well-organized, providing clear navigation options.",
+        "The layout is clean and minimal, reducing unnecessary clutter."
+      ],
+      "score": 63
+    },
+    "homepage-desktop": {
+      "screen": "homepage-desktop",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 80/100\n\n**ISSUES FOUND:**\n- The search bar is prominent but lacks a voice search option.\n- The footer text is small and may not meet accessibility standards.\n- The newsletter section has missing translations, affecting usability and professionalism.\n- Touch targets may not meet the 44px minimum for mobile optimization.\n\n**RECOMMENDATIONS:**\n- Add a voice search option to enhance the search-first experience.\n- Increase footer text size for better readability and accessibility.\n- Fix translation issues in the newsletter section to improve user experience.\n- Ensure touch targets are at least 44px for mobile users.\n\n**HIGHLIGHTS:**\n- The search bar is prominently placed and easy to find, supporting the search-first goal.\n- The design is clean and minimal, aligning with the brutalist simplicity vision.\n- The color scheme is consistent and visually appealing, enhancing brand recognition.\n- The main call-to-action and product categories are clearly visible and well-organized.",
+      "scores": {
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 70,
+        "brutalist_simplicity": 80,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The search bar is prominent but lacks a voice search option.",
+        "The footer text is small and may not meet accessibility standards.",
+        "The newsletter section has missing translations, affecting usability and professionalism.",
+        "Touch targets may not meet the 44px minimum for mobile optimization."
+      ],
+      "recommendations": [
+        "homepage-desktop: *RECOMMENDATIONS:**",
+        "homepage-desktop: Add a voice search option to enhance the search-first experience.",
+        "homepage-desktop: Increase footer text size for better readability and accessibility.",
+        "homepage-desktop: Fix translation issues in the newsletter section to improve user experience.",
+        "homepage-desktop: Ensure touch targets are at least 44px for mobile users."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominently placed and easy to find, supporting the search-first goal.",
+        "The design is clean and minimal, aligning with the brutalist simplicity vision.",
+        "The color scheme is consistent and visually appealing, enhancing brand recognition.",
+        "The main call-to-action and product categories are clearly visible and well-organized."
+      ],
+      "score": 80
+    },
+    "header-navigation": {
+      "screen": "header-navigation",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 60/100\n- Search-First Design: 30/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 65/100\n- Brand Consistency: 75/100\n- OVERALL: 63/100\n\n**ISSUES FOUND:**\n- The search bar is not visible, which undermines the search-first design goal.\n- The header lacks clear focal points; the logo and icons are small and not prominent.\n- The color contrast for text and icons may not meet accessibility standards.\n- The language selector and icons might be too small for touch targets.\n\n**RECOMMENDATIONS:**\n- Add a prominent search bar to align with the search-first design goal.\n- Increase the size of the logo and icons for better visual hierarchy and touch accessibility.\n- Ensure color contrast meets WCAG 2.1 AA standards.\n- Verify that all interactive elements meet the 44px touch target requirement.\n\n**HIGHLIGHTS:**\n- The design is clean and minimal, aligning with the brutalist simplicity goal.\n- The brand name is clearly visible, maintaining brand consistency.\n- The layout is simple and uncluttered, which is visually appealing.",
+      "scores": {
+        "visual_hierarchy": 60,
+        "search_first": 30,
+        "mobile_first": 70,
+        "brutalist_simplicity": 80,
+        "accessibility": 65,
+        "brand_consistency": 75
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The search bar is not visible, which undermines the search-first design goal.",
+        "The header lacks clear focal points; the logo and icons are small and not prominent.",
+        "The color contrast for text and icons may not meet accessibility standards.",
+        "The language selector and icons might be too small for touch targets."
+      ],
+      "recommendations": [
+        "header-navigation: *RECOMMENDATIONS:**",
+        "header-navigation: Add a prominent search bar to align with the search-first design goal.",
+        "header-navigation: Increase the size of the logo and icons for better visual hierarchy and touch accessibility.",
+        "header-navigation: Ensure color contrast meets WCAG 2.1 AA standards.",
+        "header-navigation: Verify that all interactive elements meet the 44px touch target requirement."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design is clean and minimal, aligning with the brutalist simplicity goal.",
+        "The brand name is clearly visible, maintaining brand consistency.",
+        "The layout is simple and uncluttered, which is visually appealing."
+      ],
+      "score": 63
+    },
+    "collection-page-mobile": {
+      "screen": "collection-page-mobile",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 65/100\n- Brand Consistency: 70/100\n- OVERALL: 70/100\n\n**ISSUES FOUND:**\n- The search bar is not prominently visible, reducing the search-first experience.\n- Text contrast may not meet accessibility standards, particularly in the footer.\n- Translation errors in the newsletter subscription section.\n- Lack of clear visual states for interactive elements.\n- The navigation and filter options are not immediately thumb-friendly.\n- Brand visibility is limited to the logo, with no clear brand messaging.\n\n**RECOMMENDATIONS:**\n- Make the search bar more prominent and consider adding a voice search option.\n- Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.\n- Fix translation errors in the newsletter section to enhance user experience.\n- Ensure interactive elements have clear hover and focus states.\n- Optimize navigation and filter options for thumb reachability.\n- Enhance brand messaging throughout the page for better brand consistency.\n\n**HIGHLIGHTS:**\n- The design follows a clean and minimalistic approach, aligning with brutalist simplicity.\n- The layout is generally mobile-friendly, with adequate touch target sizes.\n- Consistent use of typography and color scheme contributes to a cohesive design.",
+      "scores": {
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 75,
+        "brutalist_simplicity": 80,
+        "accessibility": 65,
+        "brand_consistency": 70
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The search bar is not prominently visible, reducing the search-first experience.",
+        "Text contrast may not meet accessibility standards, particularly in the footer.",
+        "Translation errors in the newsletter subscription section.",
+        "Lack of clear visual states for interactive elements.",
+        "The navigation and filter options are not immediately thumb-friendly.",
+        "Brand visibility is limited to the logo, with no clear brand messaging."
+      ],
+      "recommendations": [
+        "collection-page-mobile: *RECOMMENDATIONS:**",
+        "collection-page-mobile: Make the search bar more prominent and consider adding a voice search option.",
+        "collection-page-mobile: Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+        "collection-page-mobile: Fix translation errors in the newsletter section to enhance user experience.",
+        "collection-page-mobile: Ensure interactive elements have clear hover and focus states.",
+        "collection-page-mobile: Optimize navigation and filter options for thumb reachability.",
+        "collection-page-mobile: Enhance brand messaging throughout the page for better brand consistency."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design follows a clean and minimalistic approach, aligning with brutalist simplicity.",
+        "The layout is generally mobile-friendly, with adequate touch target sizes.",
+        "Consistent use of typography and color scheme contributes to a cohesive design."
+      ],
+      "score": 70
+    },
+    "product-page-mobile": {
+      "screen": "product-page-mobile",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 60/100\n- Search-First Design: 50/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 60/100\n- Brand Consistency: 65/100\n- OVERALL: 63/100\n\n**ISSUES FOUND:**\n- Translation errors are visible, disrupting the user experience.\n- Search bar is not prominently highlighted as a focal point.\n- Some text elements might not meet the minimum size for readability.\n- Color contrast might not be sufficient for all text elements.\n- Lack of clear visual states for interactive elements.\n- The brand logo is small and not very prominent.\n\n**RECOMMENDATIONS:**\n- Fix translation errors to improve clarity and professionalism.\n- Increase the prominence of the search bar, possibly by using a contrasting color or larger size.\n- Ensure all text meets the minimum size for readability, especially on mobile.\n- Check and adjust color contrast to meet WCAG 2.1 AA standards.\n- Implement clear visual states for buttons and links (e.g., hover and focus states).\n- Consider enlarging the brand logo or placing it in a more prominent position.\n\n**HIGHLIGHTS:**\n- The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.\n- The layout is generally thumb-friendly and responsive.\n- The footer is well-organized with clear sections for navigation.",
+      "scores": {
+        "visual_hierarchy": 60,
+        "search_first": 50,
+        "mobile_first": 70,
+        "brutalist_simplicity": 75,
+        "accessibility": 60,
+        "brand_consistency": 65
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Translation errors are visible, disrupting the user experience.",
+        "Search bar is not prominently highlighted as a focal point.",
+        "Some text elements might not meet the minimum size for readability.",
+        "Color contrast might not be sufficient for all text elements.",
+        "Lack of clear visual states for interactive elements.",
+        "The brand logo is small and not very prominent."
+      ],
+      "recommendations": [
+        "product-page-mobile: *RECOMMENDATIONS:**",
+        "product-page-mobile: Fix translation errors to improve clarity and professionalism.",
+        "product-page-mobile: Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+        "product-page-mobile: Ensure all text meets the minimum size for readability, especially on mobile.",
+        "product-page-mobile: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+        "product-page-mobile: Implement clear visual states for buttons and links (e.g., hover and focus states).",
+        "product-page-mobile: Consider enlarging the brand logo or placing it in a more prominent position."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.",
+        "The layout is generally thumb-friendly and responsive.",
+        "The footer is well-organized with clear sections for navigation."
+      ],
+      "score": 63
+    },
+    "homepage-mobile": {
+      "screen": "homepage-mobile",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 80/100\n- Search-First Design: 85/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 80/100\n\n**ISSUES FOUND:**\n- The search bar, while prominent, lacks a voice search option.\n- Some text elements may not meet the minimum size for readability on mobile.\n- Color contrast for some text against the orange background may not meet accessibility standards.\n- Translation errors in the newsletter section.\n- Touch targets for navigation links in the footer might be smaller than 44px.\n\n**RECOMMENDATIONS:**\n- Add a voice search option to enhance the search-first experience.\n- Ensure all text meets the minimum size for readability (16px+).\n- Improve color contrast for better accessibility, especially on orange backgrounds.\n- Fix translation errors in the newsletter section.\n- Increase touch target sizes in the footer for better mobile usability.\n\n**HIGHLIGHTS:**\n- The search bar is centrally placed and easy to find, supporting the search-first goal.\n- The design is clean and minimal, aligning well with brutalist simplicity.\n- The layout is straightforward with a clear visual flow from top to bottom.\n- Consistent branding with the EMMSO logo and color scheme.",
+      "scores": {
+        "visual_hierarchy": 80,
+        "search_first": 85,
+        "mobile_first": 75,
+        "brutalist_simplicity": 90,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The search bar, while prominent, lacks a voice search option.",
+        "Some text elements may not meet the minimum size for readability on mobile.",
+        "Color contrast for some text against the orange background may not meet accessibility standards.",
+        "Translation errors in the newsletter section.",
+        "Touch targets for navigation links in the footer might be smaller than 44px."
+      ],
+      "recommendations": [
+        "homepage-mobile: *RECOMMENDATIONS:**",
+        "homepage-mobile: Add a voice search option to enhance the search-first experience.",
+        "homepage-mobile: Ensure all text meets the minimum size for readability (16px+).",
+        "homepage-mobile: Improve color contrast for better accessibility, especially on orange backgrounds.",
+        "homepage-mobile: Fix translation errors in the newsletter section.",
+        "homepage-mobile: Increase touch target sizes in the footer for better mobile usability."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is centrally placed and easy to find, supporting the search-first goal.",
+        "The design is clean and minimal, aligning well with brutalist simplicity.",
+        "The layout is straightforward with a clear visual flow from top to bottom.",
+        "Consistent branding with the EMMSO logo and color scheme."
+      ],
+      "score": 80
+    },
+    "product-page-desktop": {
+      "screen": "product-page-desktop",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 60/100\n- Search-First Design: 70/100\n- Mobile-First: 50/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 50/100\n- Brand Consistency: 60/100\n- OVERALL: 62/100\n\n**ISSUES FOUND:**\n- The page displays a \"404 Page Not Found\" error with missing translations, which disrupts the user experience.\n- The search bar is present but not prominently highlighted as a primary feature.\n- Lack of clear visual hierarchy due to missing content and translation errors.\n- Accessibility issues with potential insufficient color contrast and missing visual states.\n- Brand elements are minimal and not very prominent.\n\n**RECOMMENDATIONS:**\n- Fix translation issues to ensure all text is displayed correctly.\n- Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.\n- Ensure all interactive elements have clear visual states for hover and focus.\n- Improve accessibility by checking color contrast ratios and ensuring all text is readable.\n- Strengthen brand visibility by incorporating consistent brand colors and typography.\n\n**HIGHLIGHTS:**\n- The design adheres to a minimalist, brutalist style with a focus on function over decoration.\n- The layout is clean and uncluttered, aligning with the project's design goals.",
+      "scores": {
+        "visual_hierarchy": 60,
+        "search_first": 70,
+        "mobile_first": 50,
+        "brutalist_simplicity": 80,
+        "accessibility": 50,
+        "brand_consistency": 60
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The page displays a \"404 Page Not Found\" error with missing translations, which disrupts the user experience.",
+        "The search bar is present but not prominently highlighted as a primary feature.",
+        "Lack of clear visual hierarchy due to missing content and translation errors.",
+        "Accessibility issues with potential insufficient color contrast and missing visual states.",
+        "Brand elements are minimal and not very prominent."
+      ],
+      "recommendations": [
+        "product-page-desktop: *RECOMMENDATIONS:**",
+        "product-page-desktop: Fix translation issues to ensure all text is displayed correctly.",
+        "product-page-desktop: Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.",
+        "product-page-desktop: Ensure all interactive elements have clear visual states for hover and focus.",
+        "product-page-desktop: Improve accessibility by checking color contrast ratios and ensuring all text is readable.",
+        "product-page-desktop: Strengthen brand visibility by incorporating consistent brand colors and typography."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design adheres to a minimalist, brutalist style with a focus on function over decoration.",
+        "The layout is clean and uncluttered, aligning with the project's design goals."
+      ],
+      "score": 62
+    },
+    "collection-page-desktop": {
+      "screen": "collection-page-desktop",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 50/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 65/100\n- Brand Consistency: 75/100\n- OVERALL: 67/100\n\n**ISSUES FOUND:**\n- The search bar is not prominently visible, which detracts from a search-first experience.\n- Touch targets for mobile are not clearly visible; potential issues with thumb reachability.\n- Some text may not meet the minimum size for readability on mobile.\n- The color contrast for certain elements may not meet WCAG 2.1 AA standards.\n- The footer has a \"Translation missing\" error, which affects professionalism and accessibility.\n- The visual hierarchy could be improved to better highlight key elements.\n\n**RECOMMENDATIONS:**\n- Make the search bar more prominent and consider adding voice search functionality.\n- Ensure all interactive elements have a minimum touch target size of 44px.\n- Increase text size for better readability on mobile devices.\n- Review and adjust color contrast to meet accessibility standards.\n- Fix the translation error in the footer to maintain professionalism.\n- Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements.\n\n**HIGHLIGHTS:**\n- The design adheres to a brutalist simplicity, focusing on function over decoration.\n- The layout is clean and minimal, reducing visual clutter.\n- Brand colors and typography are consistent, supporting brand recognition.",
+      "scores": {
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 50,
+        "brutalist_simplicity": 80,
+        "accessibility": 65,
+        "brand_consistency": 75
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "The search bar is not prominently visible, which detracts from a search-first experience.",
+        "Touch targets for mobile are not clearly visible; potential issues with thumb reachability.",
+        "Some text may not meet the minimum size for readability on mobile.",
+        "The color contrast for certain elements may not meet WCAG 2.1 AA standards.",
+        "The footer has a \"Translation missing\" error, which affects professionalism and accessibility.",
+        "The visual hierarchy could be improved to better highlight key elements."
+      ],
+      "recommendations": [
+        "collection-page-desktop: *RECOMMENDATIONS:**",
+        "collection-page-desktop: Make the search bar more prominent and consider adding voice search functionality.",
+        "collection-page-desktop: Ensure all interactive elements have a minimum touch target size of 44px.",
+        "collection-page-desktop: Increase text size for better readability on mobile devices.",
+        "collection-page-desktop: Review and adjust color contrast to meet accessibility standards.",
+        "collection-page-desktop: Fix the translation error in the footer to maintain professionalism.",
+        "collection-page-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design adheres to a brutalist simplicity, focusing on function over decoration.",
+        "The layout is clean and minimal, reducing visual clutter.",
+        "Brand colors and typography are consistent, supporting brand recognition."
+      ],
+      "score": 67
+    },
+    "search-results-mobile": {
+      "screen": "search-results-mobile",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 40/100\n- Search-First Design: 50/100\n- Mobile-First: 60/100\n- Brutalist Simplicity: 70/100\n- Accessibility: 50/100\n- Brand Consistency: 40/100\n- OVERALL: 52/100\n\n**ISSUES FOUND:**\n- Missing translations for key elements (e.g., search title, submit button).\n- Lack of clear visual hierarchy; important elements are not immediately visible.\n- Search bar is present but not prominently highlighted.\n- Touch targets are not clearly defined; may not meet 44px minimum.\n- Color contrast issues, especially with text links.\n- Inconsistent typography and color usage.\n- Brand visibility is weak; EMMSO logo is small and not prominent.\n\n**RECOMMENDATIONS:**\n- Fix translation issues to ensure all text is displayed correctly.\n- Enhance the prominence of the search bar with better contrast and positioning.\n- Ensure all touch targets meet the 44px minimum for better mobile usability.\n- Improve color contrast for better readability and accessibility.\n- Standardize typography and color scheme to enhance brand consistency.\n- Increase the size and visibility of the EMMSO logo for stronger brand presence.\n\n**HIGHLIGHTS:**\n- The design follows a minimalist approach, aligning with the brutalist simplicity goal.\n- The layout is clean with minimal decoration, focusing on function.",
+      "scores": {
+        "visual_hierarchy": 40,
+        "search_first": 50,
+        "mobile_first": 60,
+        "brutalist_simplicity": 70,
+        "accessibility": 50,
+        "brand_consistency": 40
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for key elements (e.g., search title, submit button).",
+        "Lack of clear visual hierarchy; important elements are not immediately visible.",
+        "Search bar is present but not prominently highlighted.",
+        "Touch targets are not clearly defined; may not meet 44px minimum.",
+        "Color contrast issues, especially with text links.",
+        "Inconsistent typography and color usage.",
+        "Brand visibility is weak; EMMSO logo is small and not prominent."
+      ],
+      "recommendations": [
+        "search-results-mobile: *RECOMMENDATIONS:**",
+        "search-results-mobile: Fix translation issues to ensure all text is displayed correctly.",
+        "search-results-mobile: Enhance the prominence of the search bar with better contrast and positioning.",
+        "search-results-mobile: Ensure all touch targets meet the 44px minimum for better mobile usability.",
+        "search-results-mobile: Improve color contrast for better readability and accessibility.",
+        "search-results-mobile: Standardize typography and color scheme to enhance brand consistency.",
+        "search-results-mobile: Increase the size and visibility of the EMMSO logo for stronger brand presence."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design follows a minimalist approach, aligning with the brutalist simplicity goal.",
+        "The layout is clean with minimal decoration, focusing on function."
+      ],
+      "score": 52
+    },
+    "footer-section": {
+      "screen": "footer-section",
+      "raw_analysis": "**SCORES:**\n- Visual Hierarchy: 85/100\n- Search-First Design: 80/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 70/100\n- Brand Consistency: 85/100\n- OVERALL: 81/100\n\n**ISSUES FOUND:**\n- Search bar is prominent but lacks voice search functionality.\n- Footer text contrast may not meet WCAG 2.1 AA standards.\n- Translation missing in the newsletter section.\n- Touch targets may not meet the 44px minimum requirement.\n- Some text may be too small for mobile readability.\n\n**RECOMMENDATIONS:**\n- Add voice search functionality for a more search-focused experience.\n- Increase contrast in the footer text for better accessibility.\n- Fix translation issues in the newsletter section.\n- Ensure all touch targets are at least 44px for mobile usability.\n- Verify and adjust text sizes for better readability on mobile devices.\n\n**HIGHLIGHTS:**\n- The design maintains a clean and minimalistic aesthetic, aligning well with brutalist simplicity.\n- The search bar is centrally located and easy to find.\n- Consistent use of colors and typography enhances brand visibility.\n- The layout provides clear visual hierarchy with a strong focal point.",
+      "scores": {
+        "visual_hierarchy": 85,
+        "search_first": 80,
+        "mobile_first": 75,
+        "brutalist_simplicity": 90,
+        "accessibility": 70,
+        "brand_consistency": 85
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Search bar is prominent but lacks voice search functionality.",
+        "Footer text contrast may not meet WCAG 2.1 AA standards.",
+        "Translation missing in the newsletter section.",
+        "Touch targets may not meet the 44px minimum requirement.",
+        "Some text may be too small for mobile readability."
+      ],
+      "recommendations": [
+        "footer-section: *RECOMMENDATIONS:**",
+        "footer-section: Add voice search functionality for a more search-focused experience.",
+        "footer-section: Increase contrast in the footer text for better accessibility.",
+        "footer-section: Fix translation issues in the newsletter section.",
+        "footer-section: Ensure all touch targets are at least 44px for mobile usability.",
+        "footer-section: Verify and adjust text sizes for better readability on mobile devices."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design maintains a clean and minimalistic aesthetic, aligning well with brutalist simplicity.",
+        "The search bar is centrally located and easy to find.",
+        "Consistent use of colors and typography enhances brand visibility.",
+        "The layout provides clear visual hierarchy with a strong focal point."
+      ],
+      "score": 81
+    }
+  },
+  "screenshots_analyzed": 10,
+  "project_goals_alignment": {
+    "search_first_visual": true,
+    "mobile_optimized": true,
+    "brutalist_design": true,
+    "accessible": false,
+    "issues_found": [
+      "search-results-desktop: Accessibility issues",
+      "header-navigation: Accessibility issues",
+      "collection-page-mobile: Accessibility issues",
+      "product-page-mobile: Accessibility issues",
+      "homepage-mobile: Accessibility issues",
+      "product-page-desktop: Accessibility issues",
+      "collection-page-desktop: Accessibility issues",
+      "search-results-mobile: Accessibility issues",
+      "footer-section: Accessibility issues"
+    ]
+  }
+}
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "screenshot_seo_analysis": {
+    "screenshots_analyzed": 10,
+    "seo_score": 63,
+    "source": "vision_ai_processed_seo",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 50,
+          "accessibility": 55,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Mobile UX issues (score: 50/100)",
+          "Accessibility concerns (score: 55/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "The search bar is not prominent enough; it blends into the background.",
+          "Text sizes and touch targets may not be optimized for mobile.",
+          "Color contrast may not meet accessibility standards."
+        ],
+        "recommendations": [
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "*RECOMMENDATIONS:**",
+          "Increase the prominence of the search bar with a contrasting color or larger size.",
+          "Fix translation errors to improve clarity and user experience.",
+          "Enhance the visual hierarchy by using size and contrast to guide the user's attention.",
+          "Ensure touch targets are at least 44px and text sizes are readable on mobile.",
+          "Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+          "Standardize typography and spacing for a more consistent brand appearance."
+        ]
+      },
+      "homepage-desktop": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 70,
+          "accessibility": 75,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "The search bar is prominent but lacks a voice search option.",
+          "The footer text is small and may not meet accessibility standards.",
+          "Touch targets may not meet the 44px minimum for mobile optimization."
+        ],
+        "recommendations": [
+          "Add a voice search option to enhance the search-first experience.",
+          "Increase footer text size for better readability and accessibility.",
+          "Ensure touch targets are at least 44px for mobile users."
+        ]
+      },
+      "header-navigation": {
+        "seo_scores": {
+          "search_visibility": 30,
+          "mobile_ux": 70,
+          "accessibility": 65,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 30/100)",
+          "Accessibility concerns (score: 65/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "The search bar is not visible, which undermines the search-first design goal.",
+          "The color contrast for text and icons may not meet accessibility standards.",
+          "The language selector and icons might be too small for touch targets."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "Add a prominent search bar to align with the search-first design goal.",
+          "Increase the size of the logo and icons for better visual hierarchy and touch accessibility."
+        ]
+      },
+      "collection-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 75,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Accessibility concerns (score: 65/100)",
+          "The search bar is not prominently visible, reducing the search-first experience.",
+          "Text contrast may not meet accessibility standards, particularly in the footer.",
+          "The navigation and filter options are not immediately thumb-friendly."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "*RECOMMENDATIONS:**",
+          "Make the search bar more prominent and consider adding a voice search option.",
+          "Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+          "Fix translation errors in the newsletter section to enhance user experience.",
+          "Ensure interactive elements have clear hover and focus states.",
+          "Optimize navigation and filter options for thumb reachability.",
+          "Enhance brand messaging throughout the page for better brand consistency."
+        ]
+      },
+      "product-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 70,
+          "accessibility": 60,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Accessibility concerns (score: 60/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "Search bar is not prominently highlighted as a focal point.",
+          "Color contrast might not be sufficient for all text elements."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "*RECOMMENDATIONS:**",
+          "Fix translation errors to improve clarity and professionalism.",
+          "Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+          "Ensure all text meets the minimum size for readability, especially on mobile.",
+          "Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+          "Implement clear visual states for buttons and links (e.g., hover and focus states).",
+          "Consider enlarging the brand logo or placing it in a more prominent position."
+        ]
+      },
+      "homepage-mobile": {
+        "seo_scores": {
+          "search_visibility": 85,
+          "mobile_ux": 75,
+          "accessibility": 70,
+          "cta_hierarchy": 80
+        },
+        "issues": [
+          "The search bar, while prominent, lacks a voice search option.",
+          "Some text elements may not meet the minimum size for readability on mobile.",
+          "Color contrast for some text against the orange background may not meet accessibility standards.",
+          "Touch targets for navigation links in the footer might be smaller than 44px."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add a voice search option to enhance the search-first experience.",
+          "Ensure all text meets the minimum size for readability (16px+).",
+          "Improve color contrast for better accessibility, especially on orange backgrounds.",
+          "Fix translation errors in the newsletter section.",
+          "Increase touch target sizes in the footer for better mobile usability."
+        ]
+      },
+      "product-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 50,
+          "accessibility": 50,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Mobile UX issues (score: 50/100)",
+          "Accessibility concerns (score: 50/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "The search bar is present but not prominently highlighted as a primary feature.",
+          "Accessibility issues with potential insufficient color contrast and missing visual states."
+        ],
+        "recommendations": [
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.",
+          "Improve accessibility by checking color contrast ratios and ensuring all text is readable."
+        ]
+      },
+      "collection-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 50,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Mobile UX issues (score: 50/100)",
+          "Accessibility concerns (score: 65/100)",
+          "The search bar is not prominently visible, which detracts from a search-first experience.",
+          "Touch targets for mobile are not clearly visible; potential issues with thumb reachability.",
+          "Some text may not meet the minimum size for readability on mobile.",
+          "The color contrast for certain elements may not meet WCAG 2.1 AA standards.",
+          "The footer has a \"Translation missing\" error, which affects professionalism and accessibility."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Make the search bar more prominent and consider adding voice search functionality.",
+          "Increase text size for better readability on mobile devices.",
+          "Review and adjust color contrast to meet accessibility standards."
+        ]
+      },
+      "search-results-mobile": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 60,
+          "accessibility": 50,
+          "cta_hierarchy": 40
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Mobile UX issues (score: 60/100)",
+          "Accessibility concerns (score: 50/100)",
+          "Weak visual hierarchy (score: 40/100)",
+          "Missing translations for key elements (e.g., search title, submit button).",
+          "Search bar is present but not prominently highlighted.",
+          "Touch targets are not clearly defined; may not meet 44px minimum.",
+          "Color contrast issues, especially with text links."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to ensure all text is displayed correctly.",
+          "Enhance the prominence of the search bar with better contrast and positioning.",
+          "Ensure all touch targets meet the 44px minimum for better mobile usability.",
+          "Improve color contrast for better readability and accessibility.",
+          "Standardize typography and color scheme to enhance brand consistency.",
+          "Increase the size and visibility of the EMMSO logo for stronger brand presence."
+        ]
+      },
+      "footer-section": {
+        "seo_scores": {
+          "search_visibility": 80,
+          "mobile_ux": 75,
+          "accessibility": 70,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "Search bar is prominent but lacks voice search functionality.",
+          "Footer text contrast may not meet WCAG 2.1 AA standards.",
+          "Touch targets may not meet the 44px minimum requirement.",
+          "Some text may be too small for mobile readability."
+        ],
+        "recommendations": [
+          "Add voice search functionality for a more search-focused experience.",
+          "Increase contrast in the footer text for better accessibility.",
+          "Ensure all touch targets are at least 44px for mobile usability.",
+          "Verify and adjust text sizes for better readability on mobile devices."
+        ]
+      }
+    },
+    "avg_scores": {
+      "search_visibility": 64,
+      "mobile_ux": 64,
+      "accessibility": 62,
+      "cta_hierarchy": 67
+    },
+    "issues": [
+      "search-results-desktop: Mobile UX issues (score: 50/100)",
+      "search-results-desktop: Accessibility concerns (score: 55/100)",
+      "search-results-desktop: Weak visual hierarchy (score: 60/100)",
+      "search-results-desktop: The search bar is not prominent enough; it blends into the background.",
+      "search-results-desktop: Text sizes and touch targets may not be optimized for mobile.",
+      "search-results-desktop: Color contrast may not meet accessibility standards.",
+      "homepage-desktop: The search bar is prominent but lacks a voice search option.",
+      "homepage-desktop: The footer text is small and may not meet accessibility standards.",
+      "homepage-desktop: Touch targets may not meet the 44px minimum for mobile optimization.",
+      "header-navigation: Search not prominent enough (score: 30/100)",
+      "header-navigation: Accessibility concerns (score: 65/100)",
+      "header-navigation: Weak visual hierarchy (score: 60/100)",
+      "header-navigation: The search bar is not visible, which undermines the search-first design goal.",
+      "header-navigation: The color contrast for text and icons may not meet accessibility standards.",
+      "header-navigation: The language selector and icons might be too small for touch targets.",
+      "collection-page-mobile: Search not prominent enough (score: 60/100)",
+      "collection-page-mobile: Accessibility concerns (score: 65/100)",
+      "collection-page-mobile: The search bar is not prominently visible, reducing the search-first experience.",
+      "collection-page-mobile: Text contrast may not meet accessibility standards, particularly in the footer.",
+      "collection-page-mobile: The navigation and filter options are not immediately thumb-friendly.",
+      "product-page-mobile: Search not prominent enough (score: 50/100)",
+      "product-page-mobile: Accessibility concerns (score: 60/100)",
+      "product-page-mobile: Weak visual hierarchy (score: 60/100)",
+      "product-page-mobile: Search bar is not prominently highlighted as a focal point.",
+      "product-page-mobile: Color contrast might not be sufficient for all text elements.",
+      "homepage-mobile: The search bar, while prominent, lacks a voice search option.",
+      "homepage-mobile: Some text elements may not meet the minimum size for readability on mobile.",
+      "homepage-mobile: Color contrast for some text against the orange background may not meet accessibility standards.",
+      "homepage-mobile: Touch targets for navigation links in the footer might be smaller than 44px.",
+      "product-page-desktop: Mobile UX issues (score: 50/100)",
+      "product-page-desktop: Accessibility concerns (score: 50/100)",
+      "product-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "product-page-desktop: The search bar is present but not prominently highlighted as a primary feature.",
+      "product-page-desktop: Accessibility issues with potential insufficient color contrast and missing visual states.",
+      "collection-page-desktop: Search not prominent enough (score: 60/100)",
+      "collection-page-desktop: Mobile UX issues (score: 50/100)",
+      "collection-page-desktop: Accessibility concerns (score: 65/100)",
+      "collection-page-desktop: The search bar is not prominently visible, which detracts from a search-first experience.",
+      "collection-page-desktop: Touch targets for mobile are not clearly visible; potential issues with thumb reachability.",
+      "collection-page-desktop: Some text may not meet the minimum size for readability on mobile.",
+      "collection-page-desktop: The color contrast for certain elements may not meet WCAG 2.1 AA standards.",
+      "collection-page-desktop: The footer has a \"Translation missing\" error, which affects professionalism and accessibility.",
+      "search-results-mobile: Search not prominent enough (score: 50/100)",
+      "search-results-mobile: Mobile UX issues (score: 60/100)",
+      "search-results-mobile: Accessibility concerns (score: 50/100)",
+      "search-results-mobile: Weak visual hierarchy (score: 40/100)",
+      "search-results-mobile: Missing translations for key elements (e.g., search title, submit button).",
+      "search-results-mobile: Search bar is present but not prominently highlighted.",
+      "search-results-mobile: Touch targets are not clearly defined; may not meet 44px minimum.",
+      "search-results-mobile: Color contrast issues, especially with text links.",
+      "footer-section: Search bar is prominent but lacks voice search functionality.",
+      "footer-section: Footer text contrast may not meet WCAG 2.1 AA standards.",
+      "footer-section: Touch targets may not meet the 44px minimum requirement.",
+      "footer-section: Some text may be too small for mobile readability."
+    ],
+    "recommendations": [
+      "search-results-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "search-results-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "search-results-desktop: Strengthen CTA prominence and focal points",
+      "search-results-desktop: *RECOMMENDATIONS:**",
+      "search-results-desktop: Increase the prominence of the search bar with a contrasting color or larger size.",
+      "search-results-desktop: Fix translation errors to improve clarity and user experience.",
+      "search-results-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention.",
+      "search-results-desktop: Ensure touch targets are at least 44px and text sizes are readable on mobile.",
+      "search-results-desktop: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+      "search-results-desktop: Standardize typography and spacing for a more consistent brand appearance.",
+      "homepage-desktop: Add a voice search option to enhance the search-first experience.",
+      "homepage-desktop: Increase footer text size for better readability and accessibility.",
+      "homepage-desktop: Ensure touch targets are at least 44px for mobile users.",
+      "header-navigation: Make search bar larger and more visually prominent",
+      "header-navigation: Improve color contrast to WCAG 2.1 AA standards",
+      "header-navigation: Strengthen CTA prominence and focal points",
+      "header-navigation: Add a prominent search bar to align with the search-first design goal.",
+      "header-navigation: Increase the size of the logo and icons for better visual hierarchy and touch accessibility.",
+      "collection-page-mobile: Make search bar larger and more visually prominent",
+      "collection-page-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Make the search bar more prominent and consider adding a voice search option.",
+      "collection-page-mobile: Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+      "collection-page-mobile: Fix translation errors in the newsletter section to enhance user experience.",
+      "collection-page-mobile: Ensure interactive elements have clear hover and focus states.",
+      "collection-page-mobile: Optimize navigation and filter options for thumb reachability.",
+      "collection-page-mobile: Enhance brand messaging throughout the page for better brand consistency.",
+      "product-page-mobile: Make search bar larger and more visually prominent",
+      "product-page-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "product-page-mobile: Strengthen CTA prominence and focal points",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Fix translation errors to improve clarity and professionalism.",
+      "product-page-mobile: Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+      "product-page-mobile: Ensure all text meets the minimum size for readability, especially on mobile.",
+      "product-page-mobile: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+      "product-page-mobile: Implement clear visual states for buttons and links (e.g., hover and focus states).",
+      "product-page-mobile: Consider enlarging the brand logo or placing it in a more prominent position.",
+      "homepage-mobile: *RECOMMENDATIONS:**",
+      "homepage-mobile: Add a voice search option to enhance the search-first experience.",
+      "homepage-mobile: Ensure all text meets the minimum size for readability (16px+).",
+      "homepage-mobile: Improve color contrast for better accessibility, especially on orange backgrounds.",
+      "homepage-mobile: Fix translation errors in the newsletter section.",
+      "homepage-mobile: Increase touch target sizes in the footer for better mobile usability.",
+      "product-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "product-page-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "product-page-desktop: Strengthen CTA prominence and focal points",
+      "product-page-desktop: Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.",
+      "product-page-desktop: Improve accessibility by checking color contrast ratios and ensuring all text is readable.",
+      "collection-page-desktop: Make search bar larger and more visually prominent",
+      "collection-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "collection-page-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "collection-page-desktop: Make the search bar more prominent and consider adding voice search functionality.",
+      "collection-page-desktop: Increase text size for better readability on mobile devices.",
+      "collection-page-desktop: Review and adjust color contrast to meet accessibility standards.",
+      "search-results-mobile: Make search bar larger and more visually prominent",
+      "search-results-mobile: Ensure touch targets are 44px+ and thumb-reachable",
+      "search-results-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "search-results-mobile: Strengthen CTA prominence and focal points",
+      "search-results-mobile: *RECOMMENDATIONS:**",
+      "search-results-mobile: Fix translation issues to ensure all text is displayed correctly.",
+      "search-results-mobile: Enhance the prominence of the search bar with better contrast and positioning.",
+      "search-results-mobile: Ensure all touch targets meet the 44px minimum for better mobile usability.",
+      "search-results-mobile: Improve color contrast for better readability and accessibility.",
+      "search-results-mobile: Standardize typography and color scheme to enhance brand consistency.",
+      "search-results-mobile: Increase the size and visibility of the EMMSO logo for stronger brand presence.",
+      "footer-section: Add voice search functionality for a more search-focused experience.",
+      "footer-section: Increase contrast in the footer text for better accessibility.",
+      "footer-section: Ensure all touch targets are at least 44px for mobile usability.",
+      "footer-section: Verify and adjust text sizes for better readability on mobile devices."
+    ]
+  },
+  "critical_issues": []
+}
+### Alex (37/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 38,
+      "sections": 18,
+      "snippets": 26,
+      "assets": 46
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 11,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 16,
+    "critical_sections_present": 2,
+    "sections_details": {
+      "404.liquid": {
+        "file_size": 6817,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 35,
+        "performance_rating": 90
+      },
+      "search-hero.liquid": {
+        "file_size": 10862,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "collection.liquid": {
+        "file_size": 10527,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "search-results.liquid": {
+        "file_size": 20363,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 213,
+        "performance_rating": 75
+      },
+      "custom-section.liquid": {
+        "file_size": 1220,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 7,
+        "performance_rating": 100
+      },
+      "page.liquid": {
+        "file_size": 10499,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 55,
+        "performance_rating": 75
+      },
+      "blog.liquid": {
+        "file_size": 9379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 76,
+        "performance_rating": 75
+      },
+      "header.liquid": {
+        "file_size": 8052,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 40,
+        "performance_rating": 90
+      },
+      "product.liquid": {
+        "file_size": 8291,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 34,
+        "performance_rating": 90
+      },
+      "collections.liquid": {
+        "file_size": 2071,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "cart.liquid": {
+        "file_size": 14199,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 118,
+        "performance_rating": 75
+      },
+      "hello-world.liquid": {
+        "file_size": 3708,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "article.liquid": {
+        "file_size": 11872,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 69,
+        "performance_rating": 75
+      },
+      "password.liquid": {
+        "file_size": 11589,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 54,
+        "performance_rating": 75
+      },
+      "footer.liquid": {
+        "file_size": 15676,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 60,
+        "performance_rating": 75
+      },
+      "search.liquid": {
+        "file_size": 2038,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 85.9375
+  },
+  "assets_optimization": {
+    "total_assets": 46,
+    "total_size_mb": 0.52,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "product-card.css",
+          "size": 7332,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-hero.css",
+          "size": 14290,
+          "size_mb": 0.01
+        },
+        {
+          "name": "comparison.css",
+          "size": 13093,
+          "size_mb": 0.01
+        },
+        {
+          "name": "animations.css",
+          "size": 8992,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.css",
+          "size": 9822,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search.css",
+          "size": 14112,
+          "size_mb": 0.01
+        },
+        {
+          "name": "404.css",
+          "size": 7623,
+          "size_mb": 0.01
+        },
+        {
+          "name": "component-predictive-search.css",
+          "size": 2071,
+          "size_mb": 0.0
+        },
+        {
+          "name": "filters.css",
+          "size": 12617,
+          "size_mb": 0.01
+        },
+        {
+          "name": "cart.css",
+          "size": 12565,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-results.css",
+          "size": 15534,
+          "size_mb": 0.01
+        },
+        {
+          "name": "page.css",
+          "size": 10254,
+          "size_mb": 0.01
+        },
+        {
+          "name": "critical.css",
+          "size": 2099,
+          "size_mb": 0.0
+        },
+        {
+          "name": "article.css",
+          "size": 13336,
+          "size_mb": 0.01
+        },
+        {
+          "name": "design-tokens.css",
+          "size": 8319,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-collection.css",
+          "size": 12279,
+          "size_mb": 0.01
+        },
+        {
+          "name": "forms.css",
+          "size": 12650,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-results.css",
+          "size": 6974,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-header.css",
+          "size": 5649,
+          "size_mb": 0.01
+        },
+        {
+          "name": "buttons.css",
+          "size": 12757,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-product.css",
+          "size": 9433,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password.css",
+          "size": 10392,
+          "size_mb": 0.01
+        },
+        {
+          "name": "utilities.css",
+          "size": 18126,
+          "size_mb": 0.02
+        },
+        {
+          "name": "blog.css",
+          "size": 10672,
+          "size_mb": 0.01
+        },
+        {
+          "name": "base.css",
+          "size": 8180,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-footer.css",
+          "size": 9058,
+          "size_mb": 0.01
+        }
+      ],
+      "js_files": [
+        {
+          "name": "query-normalizer.js",
+          "size": 11952,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-intelligence.js",
+          "size": 19212,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-hero.js",
+          "size": 6346,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.js",
+          "size": 20975,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-engine.js",
+          "size": 17885,
+          "size_mb": 0.02
+        },
+        {
+          "name": "cart.js",
+          "size": 8195,
+          "size_mb": 0.01
+        },
+        {
+          "name": "predictive-search.js",
+          "size": 3446,
+          "size_mb": 0.0
+        },
+        {
+          "name": "unified-filters.js",
+          "size": 34141,
+          "size_mb": 0.03
+        },
+        {
+          "name": "related-products.js",
+          "size": 7692,
+          "size_mb": 0.01
+        }
+      ],
+      "images": [
+        {
+          "name": "icon-cart.svg",
+          "size": 496,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shoppy-x-ray.svg",
+          "size": 24552,
+          "size_mb": 0.02
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "icon-account.svg",
+          "size": 427,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": []
+    },
+    "emmso_architecture": {
+      "emmso_css_present": false,
+      "emmso_js_present": false,
+      "single_file_architecture": false
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "screenshot_shopify_analysis": {
+    "screenshots_analyzed": 10,
+    "shopify_score": 66,
+    "source": "vision_ai_processed_shopify",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 65,
+          "section_hierarchy": 60,
+          "mobile_commerce": 50
+        },
+        "issues": [
+          "Brand inconsistency (score: 65/100)"
+        ],
+        "recommendations": [
+          "Standardize logo, colors, and typography across sections",
+          "Standardize typography and spacing for a more consistent brand appearance."
+        ]
+      },
+      "homepage-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 85,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "The newsletter section has missing translations, affecting usability and professionalism."
+        ],
+        "recommendations": [
+          "Fix translation issues in the newsletter section to improve user experience."
+        ]
+      },
+      "header-navigation": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 60,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "The header lacks clear focal points; the logo and icons are small and not prominent."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add a prominent search bar to align with the search-first design goal.",
+          "Increase the size of the logo and icons for better visual hierarchy and touch accessibility.",
+          "Ensure color contrast meets WCAG 2.1 AA standards.",
+          "Verify that all interactive elements meet the 44px touch target requirement."
+        ]
+      },
+      "collection-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 70,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "Translation errors in the newsletter subscription section.",
+          "The navigation and filter options are not immediately thumb-friendly.",
+          "Brand visibility is limited to the logo, with no clear brand messaging."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make the search bar more prominent and consider adding a voice search option.",
+          "Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+          "Fix translation errors in the newsletter section to enhance user experience.",
+          "Ensure interactive elements have clear hover and focus states.",
+          "Optimize navigation and filter options for thumb reachability.",
+          "Enhance brand messaging throughout the page for better brand consistency."
+        ]
+      },
+      "product-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 65,
+          "section_hierarchy": 60,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "Brand inconsistency (score: 65/100)",
+          "Product display hierarchy weak (score: 60/100)",
+          "The brand logo is small and not very prominent."
+        ],
+        "recommendations": [
+          "Standardize logo, colors, and typography across sections",
+          "Improve product title/price/CTA prominence",
+          "*RECOMMENDATIONS:**",
+          "Fix translation errors to improve clarity and professionalism.",
+          "Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+          "Ensure all text meets the minimum size for readability, especially on mobile.",
+          "Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+          "Implement clear visual states for buttons and links (e.g., hover and focus states).",
+          "Consider enlarging the brand logo or placing it in a more prominent position."
+        ]
+      },
+      "homepage-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 80,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "Translation errors in the newsletter section.",
+          "Touch targets for navigation links in the footer might be smaller than 44px."
+        ],
+        "recommendations": [
+          "Fix translation errors in the newsletter section."
+        ]
+      },
+      "product-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 60,
+          "section_hierarchy": 60,
+          "mobile_commerce": 50
+        },
+        "issues": [
+          "Brand inconsistency (score: 60/100)",
+          "Product display hierarchy weak (score: 60/100)",
+          "Brand elements are minimal and not very prominent."
+        ],
+        "recommendations": [
+          "Standardize logo, colors, and typography across sections",
+          "Improve product title/price/CTA prominence",
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to ensure all text is displayed correctly.",
+          "Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.",
+          "Ensure all interactive elements have clear visual states for hover and focus.",
+          "Improve accessibility by checking color contrast ratios and ensuring all text is readable.",
+          "Strengthen brand visibility by incorporating consistent brand colors and typography."
+        ]
+      },
+      "collection-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 50
+        },
+        "issues": [],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make the search bar more prominent and consider adding voice search functionality.",
+          "Ensure all interactive elements have a minimum touch target size of 44px.",
+          "Increase text size for better readability on mobile devices.",
+          "Review and adjust color contrast to meet accessibility standards.",
+          "Fix the translation error in the footer to maintain professionalism.",
+          "Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements."
+        ]
+      },
+      "search-results-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 40,
+          "section_hierarchy": 40,
+          "mobile_commerce": 60
+        },
+        "issues": [
+          "Brand inconsistency (score: 40/100)",
+          "Brand visibility is weak; EMMSO logo is small and not prominent."
+        ],
+        "recommendations": [
+          "Standardize logo, colors, and typography across sections",
+          "Standardize typography and color scheme to enhance brand consistency.",
+          "Increase the size and visibility of the EMMSO logo for stronger brand presence."
+        ]
+      },
+      "footer-section": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 85,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "Translation missing in the newsletter section."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add voice search functionality for a more search-focused experience.",
+          "Increase contrast in the footer text for better accessibility.",
+          "Fix translation issues in the newsletter section.",
+          "Ensure all touch targets are at least 44px for mobile usability.",
+          "Verify and adjust text sizes for better readability on mobile devices."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 69,
+      "section_hierarchy": 67,
+      "mobile_commerce": 64
+    },
+    "issues": [
+      "search-results-desktop: Brand inconsistency (score: 65/100)",
+      "homepage-desktop: The newsletter section has missing translations, affecting usability and professionalism.",
+      "header-navigation: The header lacks clear focal points; the logo and icons are small and not prominent.",
+      "collection-page-mobile: Translation errors in the newsletter subscription section.",
+      "collection-page-mobile: The navigation and filter options are not immediately thumb-friendly.",
+      "collection-page-mobile: Brand visibility is limited to the logo, with no clear brand messaging.",
+      "product-page-mobile: Brand inconsistency (score: 65/100)",
+      "product-page-mobile: Product display hierarchy weak (score: 60/100)",
+      "product-page-mobile: The brand logo is small and not very prominent.",
+      "homepage-mobile: Translation errors in the newsletter section.",
+      "homepage-mobile: Touch targets for navigation links in the footer might be smaller than 44px.",
+      "product-page-desktop: Brand inconsistency (score: 60/100)",
+      "product-page-desktop: Product display hierarchy weak (score: 60/100)",
+      "product-page-desktop: Brand elements are minimal and not very prominent.",
+      "search-results-mobile: Brand inconsistency (score: 40/100)",
+      "search-results-mobile: Brand visibility is weak; EMMSO logo is small and not prominent.",
+      "footer-section: Translation missing in the newsletter section."
+    ],
+    "recommendations": [
+      "search-results-desktop: Standardize logo, colors, and typography across sections",
+      "search-results-desktop: Standardize typography and spacing for a more consistent brand appearance.",
+      "homepage-desktop: Fix translation issues in the newsletter section to improve user experience.",
+      "header-navigation: *RECOMMENDATIONS:**",
+      "header-navigation: Add a prominent search bar to align with the search-first design goal.",
+      "header-navigation: Increase the size of the logo and icons for better visual hierarchy and touch accessibility.",
+      "header-navigation: Ensure color contrast meets WCAG 2.1 AA standards.",
+      "header-navigation: Verify that all interactive elements meet the 44px touch target requirement.",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Make the search bar more prominent and consider adding a voice search option.",
+      "collection-page-mobile: Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+      "collection-page-mobile: Fix translation errors in the newsletter section to enhance user experience.",
+      "collection-page-mobile: Ensure interactive elements have clear hover and focus states.",
+      "collection-page-mobile: Optimize navigation and filter options for thumb reachability.",
+      "collection-page-mobile: Enhance brand messaging throughout the page for better brand consistency.",
+      "product-page-mobile: Standardize logo, colors, and typography across sections",
+      "product-page-mobile: Improve product title/price/CTA prominence",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Fix translation errors to improve clarity and professionalism.",
+      "product-page-mobile: Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+      "product-page-mobile: Ensure all text meets the minimum size for readability, especially on mobile.",
+      "product-page-mobile: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+      "product-page-mobile: Implement clear visual states for buttons and links (e.g., hover and focus states).",
+      "product-page-mobile: Consider enlarging the brand logo or placing it in a more prominent position.",
+      "homepage-mobile: Fix translation errors in the newsletter section.",
+      "product-page-desktop: Standardize logo, colors, and typography across sections",
+      "product-page-desktop: Improve product title/price/CTA prominence",
+      "product-page-desktop: *RECOMMENDATIONS:**",
+      "product-page-desktop: Fix translation issues to ensure all text is displayed correctly.",
+      "product-page-desktop: Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.",
+      "product-page-desktop: Ensure all interactive elements have clear visual states for hover and focus.",
+      "product-page-desktop: Improve accessibility by checking color contrast ratios and ensuring all text is readable.",
+      "product-page-desktop: Strengthen brand visibility by incorporating consistent brand colors and typography.",
+      "collection-page-desktop: *RECOMMENDATIONS:**",
+      "collection-page-desktop: Make the search bar more prominent and consider adding voice search functionality.",
+      "collection-page-desktop: Ensure all interactive elements have a minimum touch target size of 44px.",
+      "collection-page-desktop: Increase text size for better readability on mobile devices.",
+      "collection-page-desktop: Review and adjust color contrast to meet accessibility standards.",
+      "collection-page-desktop: Fix the translation error in the footer to maintain professionalism.",
+      "collection-page-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements.",
+      "search-results-mobile: Standardize logo, colors, and typography across sections",
+      "search-results-mobile: Standardize typography and color scheme to enhance brand consistency.",
+      "search-results-mobile: Increase the size and visibility of the EMMSO logo for stronger brand presence.",
+      "footer-section: *RECOMMENDATIONS:**",
+      "footer-section: Add voice search functionality for a more search-focused experience.",
+      "footer-section: Increase contrast in the footer text for better accessibility.",
+      "footer-section: Fix translation issues in the newsletter section.",
+      "footer-section: Ensure all touch targets are at least 44px for mobile usability.",
+      "footer-section: Verify and adjust text sizes for better readability on mobile devices."
+    ]
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 261.9,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 507.37,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "screenshot_performance_analysis": {
+    "screenshots_analyzed": 10,
+    "performance_score": 70,
+    "source": "vision_ai_processed_performance",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 50,
+          "design_efficiency": 75
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "homepage-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 70,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Touch targets may not meet the 44px minimum for mobile optimization."
+        ],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 70,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "collection-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 75,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": [
+          "Optimize navigation and filter options for thumb reachability."
+        ]
+      },
+      "product-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 70,
+          "design_efficiency": 75
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "homepage-mobile": {
+        "performance_indicators": {
+          "layout_stability": 80,
+          "asset_optimization": 75,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 50,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "collection-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 50,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "search-results-mobile": {
+        "performance_indicators": {
+          "layout_stability": 40,
+          "asset_optimization": 60,
+          "design_efficiency": 70
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 40/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "footer-section": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 75,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "layout_stability": 67,
+      "design_efficiency": 80,
+      "asset_optimization": 64
+    },
+    "issues": [
+      "search-results-desktop: Layout stability concerns (hierarchy: 60/100)",
+      "homepage-desktop: Touch targets may not meet the 44px minimum for mobile optimization.",
+      "header-navigation: Layout stability concerns (hierarchy: 60/100)",
+      "product-page-mobile: Layout stability concerns (hierarchy: 60/100)",
+      "product-page-desktop: Layout stability concerns (hierarchy: 60/100)",
+      "search-results-mobile: Layout stability concerns (hierarchy: 40/100)"
+    ],
+    "recommendations": [
+      "search-results-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "header-navigation: Stabilize layout to prevent Cumulative Layout Shift",
+      "collection-page-mobile: Optimize navigation and filter options for thumb reachability.",
+      "product-page-mobile: Stabilize layout to prevent Cumulative Layout Shift",
+      "product-page-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "search-results-mobile: Stabilize layout to prevent Cumulative Layout Shift"
+    ]
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 261.9,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "screenshot_design_analysis": {
+    "screenshots_analyzed": 10,
+    "design_score": 67,
+    "source": "vision_ai_processed_design",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "design_scores": {
+          "brand_consistency": 65,
+          "visual_hierarchy": 60,
+          "accessibility": 55,
+          "brutalist_simplicity": 75
+        },
+        "issues": [
+          "Brand inconsistency detected (score: 65/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "Accessibility/contrast issues (score: 55/100)",
+          "The visual hierarchy is weak; there's no clear focal point.",
+          "Color contrast may not meet accessibility standards.",
+          "Inconsistent typography and spacing."
+        ],
+        "recommendations": [
+          "Standardize logo size, color palette, and typography",
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility",
+          "Increase the prominence of the search bar with a contrasting color or larger size.",
+          "Enhance the visual hierarchy by using size and contrast to guide the user's attention.",
+          "Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+          "Standardize typography and spacing for a more consistent brand appearance."
+        ]
+      },
+      "homepage-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 85,
+          "accessibility": 75,
+          "brutalist_simplicity": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 60,
+          "accessibility": 65,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Accessibility/contrast issues (score: 65/100)",
+          "The color contrast for text and icons may not meet accessibility standards."
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility",
+          "Add a prominent search bar to align with the search-first design goal.",
+          "Increase the size of the logo and icons for better visual hierarchy and touch accessibility.",
+          "Ensure color contrast meets WCAG 2.1 AA standards."
+        ]
+      },
+      "collection-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)",
+          "Text contrast may not meet accessibility standards, particularly in the footer.",
+          "Lack of clear visual states for interactive elements.",
+          "Brand visibility is limited to the logo, with no clear brand messaging."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+          "Enhance brand messaging throughout the page for better brand consistency."
+        ]
+      },
+      "product-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 65,
+          "visual_hierarchy": 60,
+          "accessibility": 60,
+          "brutalist_simplicity": 75
+        },
+        "issues": [
+          "Brand inconsistency detected (score: 65/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "Accessibility/contrast issues (score: 60/100)",
+          "Color contrast might not be sufficient for all text elements.",
+          "Lack of clear visual states for interactive elements.",
+          "The brand logo is small and not very prominent."
+        ],
+        "recommendations": [
+          "Standardize logo size, color palette, and typography",
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility",
+          "Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+          "Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+          "Implement clear visual states for buttons and links (e.g., hover and focus states).",
+          "Consider enlarging the brand logo or placing it in a more prominent position."
+        ]
+      },
+      "homepage-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 80,
+          "accessibility": 70,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Color contrast for some text against the orange background may not meet accessibility standards."
+        ],
+        "recommendations": [
+          "Improve color contrast for better accessibility, especially on orange backgrounds."
+        ]
+      },
+      "product-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 60,
+          "visual_hierarchy": 60,
+          "accessibility": 50,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Brand inconsistency detected (score: 60/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "Accessibility/contrast issues (score: 50/100)",
+          "Lack of clear visual hierarchy due to missing content and translation errors.",
+          "Accessibility issues with potential insufficient color contrast and missing visual states.",
+          "Brand elements are minimal and not very prominent."
+        ],
+        "recommendations": [
+          "Standardize logo size, color palette, and typography",
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility",
+          "Ensure all interactive elements have clear visual states for hover and focus.",
+          "Improve accessibility by checking color contrast ratios and ensuring all text is readable.",
+          "Strengthen brand visibility by incorporating consistent brand colors and typography."
+        ]
+      },
+      "collection-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)",
+          "The color contrast for certain elements may not meet WCAG 2.1 AA standards.",
+          "The visual hierarchy could be improved to better highlight key elements."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Review and adjust color contrast to meet accessibility standards.",
+          "Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements."
+        ]
+      },
+      "search-results-mobile": {
+        "design_scores": {
+          "brand_consistency": 40,
+          "visual_hierarchy": 40,
+          "accessibility": 50,
+          "brutalist_simplicity": 70
+        },
+        "issues": [
+          "Brand inconsistency detected (score: 40/100)",
+          "Weak visual hierarchy (score: 40/100)",
+          "Accessibility/contrast issues (score: 50/100)",
+          "Lack of clear visual hierarchy; important elements are not immediately visible.",
+          "Color contrast issues, especially with text links.",
+          "Inconsistent typography and color usage.",
+          "Brand visibility is weak; EMMSO logo is small and not prominent."
+        ],
+        "recommendations": [
+          "Standardize logo size, color palette, and typography",
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility",
+          "Improve color contrast for better readability and accessibility.",
+          "Standardize typography and color scheme to enhance brand consistency.",
+          "Increase the size and visibility of the EMMSO logo for stronger brand presence."
+        ]
+      },
+      "footer-section": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 85,
+          "accessibility": 70,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Footer text contrast may not meet WCAG 2.1 AA standards."
+        ],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 69,
+      "visual_hierarchy": 67,
+      "accessibility": 62,
+      "brutalist_simplicity": 80
+    },
+    "issues": [
+      "search-results-desktop: Brand inconsistency detected (score: 65/100)",
+      "search-results-desktop: Weak visual hierarchy (score: 60/100)",
+      "search-results-desktop: Accessibility/contrast issues (score: 55/100)",
+      "search-results-desktop: The visual hierarchy is weak; there's no clear focal point.",
+      "search-results-desktop: Color contrast may not meet accessibility standards.",
+      "search-results-desktop: Inconsistent typography and spacing.",
+      "header-navigation: Weak visual hierarchy (score: 60/100)",
+      "header-navigation: Accessibility/contrast issues (score: 65/100)",
+      "header-navigation: The color contrast for text and icons may not meet accessibility standards.",
+      "collection-page-mobile: Accessibility/contrast issues (score: 65/100)",
+      "collection-page-mobile: Text contrast may not meet accessibility standards, particularly in the footer.",
+      "collection-page-mobile: Lack of clear visual states for interactive elements.",
+      "collection-page-mobile: Brand visibility is limited to the logo, with no clear brand messaging.",
+      "product-page-mobile: Brand inconsistency detected (score: 65/100)",
+      "product-page-mobile: Weak visual hierarchy (score: 60/100)",
+      "product-page-mobile: Accessibility/contrast issues (score: 60/100)",
+      "product-page-mobile: Color contrast might not be sufficient for all text elements.",
+      "product-page-mobile: Lack of clear visual states for interactive elements.",
+      "product-page-mobile: The brand logo is small and not very prominent.",
+      "homepage-mobile: Color contrast for some text against the orange background may not meet accessibility standards.",
+      "product-page-desktop: Brand inconsistency detected (score: 60/100)",
+      "product-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "product-page-desktop: Accessibility/contrast issues (score: 50/100)",
+      "product-page-desktop: Lack of clear visual hierarchy due to missing content and translation errors.",
+      "product-page-desktop: Accessibility issues with potential insufficient color contrast and missing visual states.",
+      "product-page-desktop: Brand elements are minimal and not very prominent.",
+      "collection-page-desktop: Accessibility/contrast issues (score: 65/100)",
+      "collection-page-desktop: The color contrast for certain elements may not meet WCAG 2.1 AA standards.",
+      "collection-page-desktop: The visual hierarchy could be improved to better highlight key elements.",
+      "search-results-mobile: Brand inconsistency detected (score: 40/100)",
+      "search-results-mobile: Weak visual hierarchy (score: 40/100)",
+      "search-results-mobile: Accessibility/contrast issues (score: 50/100)",
+      "search-results-mobile: Lack of clear visual hierarchy; important elements are not immediately visible.",
+      "search-results-mobile: Color contrast issues, especially with text links.",
+      "search-results-mobile: Inconsistent typography and color usage.",
+      "search-results-mobile: Brand visibility is weak; EMMSO logo is small and not prominent.",
+      "footer-section: Footer text contrast may not meet WCAG 2.1 AA standards."
+    ],
+    "recommendations": [
+      "search-results-desktop: Standardize logo size, color palette, and typography",
+      "search-results-desktop: Strengthen focal points using size and contrast",
+      "search-results-desktop: Improve text contrast and color accessibility",
+      "search-results-desktop: Increase the prominence of the search bar with a contrasting color or larger size.",
+      "search-results-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention.",
+      "search-results-desktop: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+      "search-results-desktop: Standardize typography and spacing for a more consistent brand appearance.",
+      "header-navigation: Strengthen focal points using size and contrast",
+      "header-navigation: Improve text contrast and color accessibility",
+      "header-navigation: Add a prominent search bar to align with the search-first design goal.",
+      "header-navigation: Increase the size of the logo and icons for better visual hierarchy and touch accessibility.",
+      "header-navigation: Ensure color contrast meets WCAG 2.1 AA standards.",
+      "collection-page-mobile: Improve text contrast and color accessibility",
+      "collection-page-mobile: Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.",
+      "collection-page-mobile: Enhance brand messaging throughout the page for better brand consistency.",
+      "product-page-mobile: Standardize logo size, color palette, and typography",
+      "product-page-mobile: Strengthen focal points using size and contrast",
+      "product-page-mobile: Improve text contrast and color accessibility",
+      "product-page-mobile: Increase the prominence of the search bar, possibly by using a contrasting color or larger size.",
+      "product-page-mobile: Check and adjust color contrast to meet WCAG 2.1 AA standards.",
+      "product-page-mobile: Implement clear visual states for buttons and links (e.g., hover and focus states).",
+      "product-page-mobile: Consider enlarging the brand logo or placing it in a more prominent position.",
+      "homepage-mobile: Improve color contrast for better accessibility, especially on orange backgrounds.",
+      "product-page-desktop: Standardize logo size, color palette, and typography",
+      "product-page-desktop: Strengthen focal points using size and contrast",
+      "product-page-desktop: Improve text contrast and color accessibility",
+      "product-page-desktop: Ensure all interactive elements have clear visual states for hover and focus.",
+      "product-page-desktop: Improve accessibility by checking color contrast ratios and ensuring all text is readable.",
+      "product-page-desktop: Strengthen brand visibility by incorporating consistent brand colors and typography.",
+      "collection-page-desktop: Improve text contrast and color accessibility",
+      "collection-page-desktop: Review and adjust color contrast to meet accessibility standards.",
+      "collection-page-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements.",
+      "search-results-mobile: Standardize logo size, color palette, and typography",
+      "search-results-mobile: Strengthen focal points using size and contrast",
+      "search-results-mobile: Improve text contrast and color accessibility",
+      "search-results-mobile: Improve color contrast for better readability and accessibility.",
+      "search-results-mobile: Standardize typography and color scheme to enhance brand consistency.",
+      "search-results-mobile: Increase the size and visibility of the EMMSO logo for stronger brand presence."
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Vision**: search-results-desktop: *RECOMMENDATIONS:**
+**Vision**: search-results-desktop: Increase the prominence of the search bar with a contrasting color or larger size.
+**Vision**: search-results-desktop: Fix translation errors to improve clarity and user experience.
+**Vision**: search-results-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention.
+**Vision**: search-results-desktop: Ensure touch targets are at least 44px and text sizes are readable on mobile.
+**Vision**: search-results-desktop: Check and adjust color contrast to meet WCAG 2.1 AA standards.
+**Vision**: search-results-desktop: Standardize typography and spacing for a more consistent brand appearance.
+**Vision**: homepage-desktop: *RECOMMENDATIONS:**
+**Vision**: homepage-desktop: Add a voice search option to enhance the search-first experience.
+**Vision**: homepage-desktop: Increase footer text size for better readability and accessibility.
+**Vision**: homepage-desktop: Fix translation issues in the newsletter section to improve user experience.
+**Vision**: homepage-desktop: Ensure touch targets are at least 44px for mobile users.
+**Vision**: header-navigation: *RECOMMENDATIONS:**
+**Vision**: header-navigation: Add a prominent search bar to align with the search-first design goal.
+**Vision**: header-navigation: Increase the size of the logo and icons for better visual hierarchy and touch accessibility.
+**Vision**: header-navigation: Ensure color contrast meets WCAG 2.1 AA standards.
+**Vision**: header-navigation: Verify that all interactive elements meet the 44px touch target requirement.
+**Vision**: collection-page-mobile: *RECOMMENDATIONS:**
+**Vision**: collection-page-mobile: Make the search bar more prominent and consider adding a voice search option.
+**Vision**: collection-page-mobile: Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.
+**Vision**: collection-page-mobile: Fix translation errors in the newsletter section to enhance user experience.
+**Vision**: collection-page-mobile: Ensure interactive elements have clear hover and focus states.
+**Vision**: collection-page-mobile: Optimize navigation and filter options for thumb reachability.
+**Vision**: collection-page-mobile: Enhance brand messaging throughout the page for better brand consistency.
+**Vision**: product-page-mobile: *RECOMMENDATIONS:**
+**Vision**: product-page-mobile: Fix translation errors to improve clarity and professionalism.
+**Vision**: product-page-mobile: Increase the prominence of the search bar, possibly by using a contrasting color or larger size.
+**Vision**: product-page-mobile: Ensure all text meets the minimum size for readability, especially on mobile.
+**Vision**: product-page-mobile: Check and adjust color contrast to meet WCAG 2.1 AA standards.
+**Vision**: product-page-mobile: Implement clear visual states for buttons and links (e.g., hover and focus states).
+**Vision**: product-page-mobile: Consider enlarging the brand logo or placing it in a more prominent position.
+**Vision**: homepage-mobile: *RECOMMENDATIONS:**
+**Vision**: homepage-mobile: Add a voice search option to enhance the search-first experience.
+**Vision**: homepage-mobile: Ensure all text meets the minimum size for readability (16px+).
+**Vision**: homepage-mobile: Improve color contrast for better accessibility, especially on orange backgrounds.
+**Vision**: homepage-mobile: Fix translation errors in the newsletter section.
+**Vision**: homepage-mobile: Increase touch target sizes in the footer for better mobile usability.
+**Vision**: product-page-desktop: *RECOMMENDATIONS:**
+**Vision**: product-page-desktop: Fix translation issues to ensure all text is displayed correctly.
+**Vision**: product-page-desktop: Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.
+**Vision**: product-page-desktop: Ensure all interactive elements have clear visual states for hover and focus.
+**Vision**: product-page-desktop: Improve accessibility by checking color contrast ratios and ensuring all text is readable.
+**Vision**: product-page-desktop: Strengthen brand visibility by incorporating consistent brand colors and typography.
+**Vision**: collection-page-desktop: *RECOMMENDATIONS:**
+**Vision**: collection-page-desktop: Make the search bar more prominent and consider adding voice search functionality.
+**Vision**: collection-page-desktop: Ensure all interactive elements have a minimum touch target size of 44px.
+**Vision**: collection-page-desktop: Increase text size for better readability on mobile devices.
+**Vision**: collection-page-desktop: Review and adjust color contrast to meet accessibility standards.
+**Vision**: collection-page-desktop: Fix the translation error in the footer to maintain professionalism.
+**Vision**: collection-page-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements.
+**Vision**: search-results-mobile: *RECOMMENDATIONS:**
+**Vision**: search-results-mobile: Fix translation issues to ensure all text is displayed correctly.
+**Vision**: search-results-mobile: Enhance the prominence of the search bar with better contrast and positioning.
+**Vision**: search-results-mobile: Ensure all touch targets meet the 44px minimum for better mobile usability.
+**Vision**: search-results-mobile: Improve color contrast for better readability and accessibility.
+**Vision**: search-results-mobile: Standardize typography and color scheme to enhance brand consistency.
+**Vision**: search-results-mobile: Increase the size and visibility of the EMMSO logo for stronger brand presence.
+**Vision**: footer-section: *RECOMMENDATIONS:**
+**Vision**: footer-section: Add voice search functionality for a more search-focused experience.
+**Vision**: footer-section: Increase contrast in the footer text for better accessibility.
+**Vision**: footer-section: Fix translation issues in the newsletter section.
+**Vision**: footer-section: Ensure all touch targets are at least 44px for mobile usability.
+**Vision**: footer-section: Verify and adjust text sizes for better readability on mobile devices.
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Alex**: {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 261.9KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 70 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 37/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Alex** (Score: 37/100): {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Vision** (Score: 68/100): search-results-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): search-results-desktop: Increase the prominence of the search bar with a contrasting color or larger size.
+- [ ] **Vision** (Score: 68/100): search-results-desktop: Fix translation errors to improve clarity and user experience.
+- [ ] **Vision** (Score: 68/100): search-results-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention.
+- [ ] **Vision** (Score: 68/100): search-results-desktop: Ensure touch targets are at least 44px and text sizes are readable on mobile.
+- [ ] **Vision** (Score: 68/100): search-results-desktop: Check and adjust color contrast to meet WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 68/100): search-results-desktop: Standardize typography and spacing for a more consistent brand appearance.
+- [ ] **Vision** (Score: 68/100): homepage-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): homepage-desktop: Add a voice search option to enhance the search-first experience.
+- [ ] **Vision** (Score: 68/100): homepage-desktop: Increase footer text size for better readability and accessibility.
+- [ ] **Vision** (Score: 68/100): homepage-desktop: Fix translation issues in the newsletter section to improve user experience.
+- [ ] **Vision** (Score: 68/100): homepage-desktop: Ensure touch targets are at least 44px for mobile users.
+- [ ] **Vision** (Score: 68/100): header-navigation: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): header-navigation: Add a prominent search bar to align with the search-first design goal.
+- [ ] **Vision** (Score: 68/100): header-navigation: Increase the size of the logo and icons for better visual hierarchy and touch accessibility.
+- [ ] **Vision** (Score: 68/100): header-navigation: Ensure color contrast meets WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 68/100): header-navigation: Verify that all interactive elements meet the 44px touch target requirement.
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: Make the search bar more prominent and consider adding a voice search option.
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: Improve color contrast, especially in the footer, to meet WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: Fix translation errors in the newsletter section to enhance user experience.
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: Ensure interactive elements have clear hover and focus states.
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: Optimize navigation and filter options for thumb reachability.
+- [ ] **Vision** (Score: 68/100): collection-page-mobile: Enhance brand messaging throughout the page for better brand consistency.
+- [ ] **Vision** (Score: 68/100): product-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): product-page-mobile: Fix translation errors to improve clarity and professionalism.
+- [ ] **Vision** (Score: 68/100): product-page-mobile: Increase the prominence of the search bar, possibly by using a contrasting color or larger size.
+- [ ] **Vision** (Score: 68/100): product-page-mobile: Ensure all text meets the minimum size for readability, especially on mobile.
+- [ ] **Vision** (Score: 68/100): product-page-mobile: Check and adjust color contrast to meet WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 68/100): product-page-mobile: Implement clear visual states for buttons and links (e.g., hover and focus states).
+- [ ] **Vision** (Score: 68/100): product-page-mobile: Consider enlarging the brand logo or placing it in a more prominent position.
+- [ ] **Vision** (Score: 68/100): homepage-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): homepage-mobile: Add a voice search option to enhance the search-first experience.
+- [ ] **Vision** (Score: 68/100): homepage-mobile: Ensure all text meets the minimum size for readability (16px+).
+- [ ] **Vision** (Score: 68/100): homepage-mobile: Improve color contrast for better accessibility, especially on orange backgrounds.
+- [ ] **Vision** (Score: 68/100): homepage-mobile: Fix translation errors in the newsletter section.
+- [ ] **Vision** (Score: 68/100): homepage-mobile: Increase touch target sizes in the footer for better mobile usability.
+- [ ] **Vision** (Score: 68/100): product-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): product-page-desktop: Fix translation issues to ensure all text is displayed correctly.
+- [ ] **Vision** (Score: 68/100): product-page-desktop: Enhance the prominence of the search bar, possibly by increasing its size or adding a contrasting background.
+- [ ] **Vision** (Score: 68/100): product-page-desktop: Ensure all interactive elements have clear visual states for hover and focus.
+- [ ] **Vision** (Score: 68/100): product-page-desktop: Improve accessibility by checking color contrast ratios and ensuring all text is readable.
+- [ ] **Vision** (Score: 68/100): product-page-desktop: Strengthen brand visibility by incorporating consistent brand colors and typography.
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: Make the search bar more prominent and consider adding voice search functionality.
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: Ensure all interactive elements have a minimum touch target size of 44px.
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: Increase text size for better readability on mobile devices.
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: Review and adjust color contrast to meet accessibility standards.
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: Fix the translation error in the footer to maintain professionalism.
+- [ ] **Vision** (Score: 68/100): collection-page-desktop: Enhance the visual hierarchy by using size and contrast to guide the user's attention to important elements.
+- [ ] **Vision** (Score: 68/100): search-results-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): search-results-mobile: Fix translation issues to ensure all text is displayed correctly.
+- [ ] **Vision** (Score: 68/100): search-results-mobile: Enhance the prominence of the search bar with better contrast and positioning.
+- [ ] **Vision** (Score: 68/100): search-results-mobile: Ensure all touch targets meet the 44px minimum for better mobile usability.
+- [ ] **Vision** (Score: 68/100): search-results-mobile: Improve color contrast for better readability and accessibility.
+- [ ] **Vision** (Score: 68/100): search-results-mobile: Standardize typography and color scheme to enhance brand consistency.
+- [ ] **Vision** (Score: 68/100): search-results-mobile: Increase the size and visibility of the EMMSO logo for stronger brand presence.
+- [ ] **Vision** (Score: 68/100): footer-section: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 68/100): footer-section: Add voice search functionality for a more search-focused experience.
+- [ ] **Vision** (Score: 68/100): footer-section: Increase contrast in the footer text for better accessibility.
+- [ ] **Vision** (Score: 68/100): footer-section: Fix translation issues in the newsletter section.
+- [ ] **Vision** (Score: 68/100): footer-section: Ensure all touch targets are at least 44px for mobile usability.
+- [ ] **Vision** (Score: 68/100): footer-section: Verify and adjust text sizes for better readability on mobile devices.
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 261.9KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 0 tasks
+- 🔥 High: 5 tasks  
+- ⚡ Medium: 65 tasks
+- 💡 Low: 0 tasks
+- **Total**: 70 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 16:28:39
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 51/100
+
+#### Findings
+
+### Vision (73/100)
+
+{
+  "visual_analysis": {
+    "search-results-desktop": {
+      "screen": "search-results-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 50/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 65/100\n- Brand Consistency: 75/100\n- OVERALL: 69/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? YES\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- \"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.\n- The search bar is not prominently visible, affecting the search-first design goal.\n- Translation errors in the search title, which can confuse users.\n- The cart icon is small and may not be immediately noticeable.\n- The touch targets and text sizes may not be optimized for mobile.\n\n**RECOMMENDATIONS:**\n- Add \"Add to Cart\" buttons to each product for improved e-commerce functionality.\n- Make the search bar more prominent and accessible.\n- Fix translation errors to improve user experience.\n- Increase the size of the cart icon and consider adding a cart count badge.\n- Ensure touch targets and text sizes meet mobile optimization standards.\n\n**HIGHLIGHTS:**\n- Clean and minimal design aligns well with the brutalist simplicity goal.\n- Product pricing is clearly displayed, aiding in shopping decisions.\n- Consistent use of colors and typography supports brand consistency.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 50,
+        "brutalist_simplicity": 85,
+        "accessibility": 65,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "\"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+        "The search bar is not prominently visible, affecting the search-first design goal.",
+        "Translation errors in the search title, which can confuse users.",
+        "The cart icon is small and may not be immediately noticeable.",
+        "The touch targets and text sizes may not be optimized for mobile."
+      ],
+      "recommendations": [
+        "search-results-desktop: *RECOMMENDATIONS:**",
+        "search-results-desktop: Add \"Add to Cart\" buttons to each product for improved e-commerce functionality.",
+        "search-results-desktop: Make the search bar more prominent and accessible.",
+        "search-results-desktop: Fix translation errors to improve user experience.",
+        "search-results-desktop: Increase the size of the cart icon and consider adding a cart count badge.",
+        "search-results-desktop: Ensure touch targets and text sizes meet mobile optimization standards."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean and minimal design aligns well with the brutalist simplicity goal.",
+        "Product pricing is clearly displayed, aiding in shopping decisions.",
+        "Consistent use of colors and typography supports brand consistency."
+      ],
+      "score": 69
+    },
+    "cart-desktop": {
+      "screen": "cart-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 65/100\n- Brand Consistency: 75/100\n- OVERALL: 72/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Missing translations for cart messages.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality not prominent.\n- Accessibility issues with translation errors.\n- Lack of clear shopping intent due to missing elements.\n\n**RECOMMENDATIONS:**\n- Fix translation issues to ensure clear communication.\n- Add product pricing and \"Add to Cart\" buttons for better shopping clarity.\n- Make search bar more prominent and accessible.\n- Ensure all text meets WCAG 2.1 AA contrast requirements.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Cart icon is visible and appropriately placed.\n- Footer provides useful links and subscription option.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 70,
+        "brutalist_simplicity": 85,
+        "accessibility": 65,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for cart messages.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality not prominent.",
+        "Accessibility issues with translation errors.",
+        "Lack of clear shopping intent due to missing elements."
+      ],
+      "recommendations": [
+        "cart-desktop: *RECOMMENDATIONS:**",
+        "cart-desktop: Fix translation issues to ensure clear communication.",
+        "cart-desktop: Add product pricing and \"Add to Cart\" buttons for better shopping clarity.",
+        "cart-desktop: Make search bar more prominent and accessible.",
+        "cart-desktop: Ensure all text meets WCAG 2.1 AA contrast requirements."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Cart icon is visible and appropriately placed.",
+        "Footer provides useful links and subscription option."
+      ],
+      "score": 72
+    },
+    "cart-mobile": {
+      "screen": "cart-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 60/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 50/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 60/100\n- Brand Consistency: 75/100\n- OVERALL: 68/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- Missing product pricing and \"Add to Cart\" buttons.\n- Translation errors affecting user experience.\n- Cart icon is small and might not be prominent enough.\n- Lack of visible search bar or search-first design elements.\n- Accessibility issues with translation errors and potential contrast problems.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, ensure visibility).\n- Fix translation issues to improve clarity and accessibility.\n- Add visible product pricing and \"Add to Cart\" buttons.\n- Enhance search functionality and visibility.\n- Ensure color contrast meets accessibility standards.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Mobile-friendly layout with thumb-reachable navigation.\n- Consistent branding with visible logo and footer elements.",
+      "scores": {
+        "ecommerce_visibility": 60,
+        "visual_hierarchy": 70,
+        "search_first": 50,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 60,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing product pricing and \"Add to Cart\" buttons.",
+        "Translation errors affecting user experience.",
+        "Cart icon is small and might not be prominent enough.",
+        "Lack of visible search bar or search-first design elements.",
+        "Accessibility issues with translation errors and potential contrast problems."
+      ],
+      "recommendations": [
+        "cart-mobile: *RECOMMENDATIONS:**",
+        "cart-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).",
+        "cart-mobile: Fix translation issues to improve clarity and accessibility.",
+        "cart-mobile: Add visible product pricing and \"Add to Cart\" buttons.",
+        "cart-mobile: Enhance search functionality and visibility.",
+        "cart-mobile: Ensure color contrast meets accessibility standards."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly layout with thumb-reachable navigation.",
+        "Consistent branding with visible logo and footer elements."
+      ],
+      "score": 68
+    },
+    "homepage-desktop": {
+      "screen": "homepage-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 83/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- Lack of immediate product display can confuse users about the shopping functionality.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons prominently on the homepage.\n- Consider adding featured products to the homepage to emphasize shopping functionality.\n- Ensure all interactive elements meet the 44px touch target guideline for better mobile usability.\n\n**HIGHLIGHTS:**\n- The search bar is prominently placed, enhancing the search-first design.\n- The design is clean and minimal, aligning with the brutalist simplicity goal.\n- Consistent branding with clear EMMSO logo and color scheme.\n\nThe homepage effectively communicates a search-first experience with a strong visual hierarchy, but it lacks immediate e-commerce elements like pricing and product interaction, which are crucial for an e-commerce platform.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 75,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "Lack of immediate product display can confuse users about the shopping functionality."
+      ],
+      "recommendations": [
+        "homepage-desktop: *RECOMMENDATIONS:**",
+        "homepage-desktop: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+        "homepage-desktop: Consider adding featured products to the homepage to emphasize shopping functionality.",
+        "homepage-desktop: Ensure all interactive elements meet the 44px touch target guideline for better mobile usability."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominently placed, enhancing the search-first design.",
+        "The design is clean and minimal, aligning with the brutalist simplicity goal.",
+        "Consistent branding with clear EMMSO logo and color scheme."
+      ],
+      "score": 83
+    },
+    "header-navigation": {
+      "screen": "header-navigation",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 100/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 80/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 75/100\n- Brand Consistency: 85/100\n- OVERALL: 82/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No visible product pricing or \"Add to Cart\" buttons.\n- Search functionality not prominent.\n- Limited indication of shopping intent beyond cart icon.\n\n**RECOMMENDATIONS:**\n- Enhance search visibility and accessibility.\n- Include product pricing and \"Add to Cart\" buttons for immediate shopping context.\n- Consider adding a tagline or elements that communicate shopping intent.\n\n**HIGHLIGHTS:**\n- Clear and visible shopping cart icon.\n- Clean, minimalistic design aligns with brutalist simplicity.\n- Thumb-friendly touch targets and responsive layout.",
+      "scores": {
+        "ecommerce_visibility": 100,
+        "visual_hierarchy": 80,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 75,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No visible product pricing or \"Add to Cart\" buttons.",
+        "Search functionality not prominent.",
+        "Limited indication of shopping intent beyond cart icon."
+      ],
+      "recommendations": [
+        "header-navigation: *RECOMMENDATIONS:**",
+        "header-navigation: Enhance search visibility and accessibility.",
+        "header-navigation: Include product pricing and \"Add to Cart\" buttons for immediate shopping context.",
+        "header-navigation: Consider adding a tagline or elements that communicate shopping intent."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clear and visible shopping cart icon.",
+        "Clean, minimalistic design aligns with brutalist simplicity.",
+        "Thumb-friendly touch targets and responsive layout."
+      ],
+      "score": 82
+    },
+    "collection-page-mobile": {
+      "screen": "collection-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but no product pricing or \"Add to Cart\" buttons)\n- Visual Hierarchy: 60/100\n- Search-First Design: 50/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 75/100\n- Brand Consistency: 90/100\n- OVERALL: 73/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible.\n- Lack of immediate shopping intent communication.\n- Search functionality not prominently displayed.\n- Visual hierarchy could be improved for better content prioritization.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons prominently.\n- Enhance search visibility, possibly with a larger search bar or icon.\n- Improve visual hierarchy by emphasizing key shopping actions.\n- Consider adding a cart count badge for better user feedback.\n\n**HIGHLIGHTS:**\n- Cart icon is visible and appropriately placed.\n- Design aligns well with brutalist simplicity, maintaining a clean and minimal look.\n- Brand consistency is strong with clear logo and consistent color scheme.\n\nFocus on enhancing e-commerce elements to improve user experience and shopping clarity.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 60,
+        "search_first": 50,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 75,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Lack of immediate shopping intent communication.",
+        "Search functionality not prominently displayed.",
+        "Visual hierarchy could be improved for better content prioritization."
+      ],
+      "recommendations": [
+        "collection-page-mobile: *RECOMMENDATIONS:**",
+        "collection-page-mobile: Display product pricing and \"Add to Cart\" buttons prominently.",
+        "collection-page-mobile: Enhance search visibility, possibly with a larger search bar or icon.",
+        "collection-page-mobile: Improve visual hierarchy by emphasizing key shopping actions.",
+        "collection-page-mobile: Consider adding a cart count badge for better user feedback."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Cart icon is visible and appropriately placed.",
+        "Design aligns well with brutalist simplicity, maintaining a clean and minimal look.",
+        "Brand consistency is strong with clear logo and consistent color scheme."
+      ],
+      "score": 73
+    },
+    "product-page-mobile": {
+      "screen": "product-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 65/100\n- Brand Consistency: 70/100\n- OVERALL: 60/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Missing shopping cart icon in the header.\n- Search bar not prominently visible.\n- Color contrast could be improved for better readability.\n- Visual hierarchy could be enhanced for better flow.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility of the search bar to align with the search-first goal.\n- Improve color contrast for text to meet accessibility standards.\n- Adjust visual hierarchy to guide users more effectively through the page.\n\n**HIGHLIGHTS:**\n- Product pricing and \"Add to Cart\" buttons are clearly visible.\n- The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.\n- Touch targets appear to be thumb-friendly and responsive.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 80,
+        "brutalist_simplicity": 75,
+        "accessibility": 65,
+        "brand_consistency": 70
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing shopping cart icon in the header.",
+        "Search bar not prominently visible.",
+        "Color contrast could be improved for better readability.",
+        "Visual hierarchy could be enhanced for better flow."
+      ],
+      "recommendations": [
+        "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "product-page-mobile: *RECOMMENDATIONS:**",
+        "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-mobile: Enhance the visibility of the search bar to align with the search-first goal.",
+        "product-page-mobile: Improve color contrast for text to meet accessibility standards.",
+        "product-page-mobile: Adjust visual hierarchy to guide users more effectively through the page."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Product pricing and \"Add to Cart\" buttons are clearly visible.",
+        "The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.",
+        "Touch targets appear to be thumb-friendly and responsive."
+      ],
+      "score": 60
+    },
+    "homepage-mobile": {
+      "screen": "homepage-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 80/100\n- Search-First Design: 85/100\n- Mobile-First: 90/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 80/100\n- Brand Consistency: 85/100\n- OVERALL: 80/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- The shopping intent is not immediately clear without pricing or product listings.\n- The cart icon is visible but lacks a cart count badge.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons prominently on the homepage.\n- Ensure the cart icon includes a cart count badge to indicate items in the cart.\n- Enhance the shopping intent by showcasing featured products or promotions.\n- Consider adding a visual cue or animation to the cart icon to draw attention.\n\n**HIGHLIGHTS:**\n- The search bar is prominent and easy to find, supporting a search-first design.\n- The mobile layout is thumb-optimized with touch-friendly targets.\n- The design maintains a clean and minimal aesthetic, aligning with brutalist simplicity.\n- Consistent use of brand colors and typography enhances brand recognition.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 80,
+        "search_first": 85,
+        "mobile_first": 90,
+        "brutalist_simplicity": 75,
+        "accessibility": 80,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "The shopping intent is not immediately clear without pricing or product listings.",
+        "The cart icon is visible but lacks a cart count badge."
+      ],
+      "recommendations": [
+        "homepage-mobile: *RECOMMENDATIONS:**",
+        "homepage-mobile: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+        "homepage-mobile: Ensure the cart icon includes a cart count badge to indicate items in the cart.",
+        "homepage-mobile: Enhance the shopping intent by showcasing featured products or promotions.",
+        "homepage-mobile: Consider adding a visual cue or animation to the cart icon to draw attention."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominent and easy to find, supporting a search-first design.",
+        "The mobile layout is thumb-optimized with touch-friendly targets.",
+        "The design maintains a clean and minimal aesthetic, aligning with brutalist simplicity.",
+        "Consistent use of brand colors and typography enhances brand recognition."
+      ],
+      "score": 80
+    },
+    "product-page-desktop": {
+      "screen": "product-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible but small)\n- Visual Hierarchy: 85/100\n- Search-First Design: 70/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 80/100\n- Brand Consistency: 85/100\n- OVERALL: 81/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Cart icon is small and might be overlooked.\n- Search bar is not very prominent.\n- Touch targets might not be optimized for mobile.\n- Color contrast could be improved for better accessibility.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility of the search bar to emphasize the search-first design.\n- Ensure touch targets meet the 44px minimum for mobile optimization.\n- Review color contrast to meet WCAG 2.1 AA standards.\n\n**HIGHLIGHTS:**\n- Clean and minimal design aligns well with brutalist simplicity.\n- Product pricing and \"Add to Cart\" buttons are clearly displayed.\n- Consistent branding with the EMMSO logo and color scheme.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 70,
+        "mobile_first": 75,
+        "brutalist_simplicity": 90,
+        "accessibility": 80,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and might be overlooked.",
+        "Search bar is not very prominent.",
+        "Touch targets might not be optimized for mobile.",
+        "Color contrast could be improved for better accessibility."
+      ],
+      "recommendations": [
+        "product-page-desktop: *RECOMMENDATIONS:**",
+        "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-desktop: Enhance the visibility of the search bar to emphasize the search-first design.",
+        "product-page-desktop: Ensure touch targets meet the 44px minimum for mobile optimization.",
+        "product-page-desktop: Review color contrast to meet WCAG 2.1 AA standards."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean and minimal design aligns well with brutalist simplicity.",
+        "Product pricing and \"Add to Cart\" buttons are clearly displayed.",
+        "Consistent branding with the EMMSO logo and color scheme."
+      ],
+      "score": 81
+    },
+    "collection-page-desktop": {
+      "screen": "collection-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 74/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the page.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- Search functionality is not prominently displayed.\n- Cart icon is small and may not be noticeable immediately.\n- Lack of visual indicators for shopping intent.\n\n**RECOMMENDATIONS:**\n- Make product pricing and \"Add to Cart\" buttons visible on the main page.\n- Increase the size of the shopping cart icon for better visibility.\n- Enhance the search bar's prominence to align with the search-first design goal.\n- Consider adding visual cues or text to emphasize the shopping nature of the page.\n\n**HIGHLIGHTS:**\n- The design adheres to a minimalist, brutalist style, focusing on function over decoration.\n- The layout is clean and uncluttered, with a consistent brand appearance.\n- Footer provides useful links and payment options, enhancing usability.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 70,
+        "brutalist_simplicity": 85,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the page.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "Search functionality is not prominently displayed.",
+        "Cart icon is small and may not be noticeable immediately.",
+        "Lack of visual indicators for shopping intent."
+      ],
+      "recommendations": [
+        "collection-page-desktop: *RECOMMENDATIONS:**",
+        "collection-page-desktop: Make product pricing and \"Add to Cart\" buttons visible on the main page.",
+        "collection-page-desktop: Increase the size of the shopping cart icon for better visibility.",
+        "collection-page-desktop: Enhance the search bar's prominence to align with the search-first design goal.",
+        "collection-page-desktop: Consider adding visual cues or text to emphasize the shopping nature of the page."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design adheres to a minimalist, brutalist style, focusing on function over decoration.",
+        "The layout is clean and uncluttered, with a consistent brand appearance.",
+        "Footer provides useful links and payment options, enhancing usability."
+      ],
+      "score": 74
+    },
+    "search-results-mobile": {
+      "screen": "search-results-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 65/100\n- Brand Consistency: 70/100\n- OVERALL: 60/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- Missing shopping cart icon, which is critical for e-commerce.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- \"Translation missing\" error in the search title.\n- Search bar is not prominent enough.\n- Some text may not meet accessibility contrast requirements.\n- Visual hierarchy could be improved for better flow.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Add \"Add to Cart\" buttons for each product.\n- Fix translation error in the search title.\n- Enhance the prominence of the search bar.\n- Ensure all text meets WCAG 2.1 AA contrast requirements.\n- Improve visual hierarchy to guide users more effectively.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Product images are clear and well-spaced.\n- Pricing is clearly displayed.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 75,
+        "brutalist_simplicity": 80,
+        "accessibility": 65,
+        "brand_consistency": 70
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing shopping cart icon, which is critical for e-commerce.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "\"Translation missing\" error in the search title.",
+        "Search bar is not prominent enough.",
+        "Some text may not meet accessibility contrast requirements.",
+        "Visual hierarchy could be improved for better flow."
+      ],
+      "recommendations": [
+        "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "search-results-mobile: *RECOMMENDATIONS:**",
+        "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "search-results-mobile: Add \"Add to Cart\" buttons for each product.",
+        "search-results-mobile: Fix translation error in the search title.",
+        "search-results-mobile: Enhance the prominence of the search bar.",
+        "search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.",
+        "search-results-mobile: Improve visual hierarchy to guide users more effectively."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Product images are clear and well-spaced.",
+        "Pricing is clearly displayed."
+      ],
+      "score": 60
+    },
+    "footer-section": {
+      "screen": "footer-section",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 84/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible.\n- No \"Add to Cart\" or \"Buy Now\" buttons present.\n- Shopping intent is not immediately clear without pricing or product listings.\n\n**RECOMMENDATIONS:**\n- Display product pricing prominently.\n- Add \"Add to Cart\" buttons to enhance shopping functionality.\n- Ensure the shopping cart icon is more prominent if possible, perhaps with a badge for item count.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean, minimal design aligns with brutalist simplicity.\n- Consistent branding with clear logo and color scheme.\n\nThe footer section provides useful links and information, but the main shopping elements like pricing and purchase options need to be more visible to enhance the e-commerce experience.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons present.",
+        "Shopping intent is not immediately clear without pricing or product listings."
+      ],
+      "recommendations": [
+        "footer-section: *RECOMMENDATIONS:**",
+        "footer-section: Display product pricing prominently.",
+        "footer-section: Add \"Add to Cart\" buttons to enhance shopping functionality.",
+        "footer-section: Ensure the shopping cart icon is more prominent if possible, perhaps with a badge for item count."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Consistent branding with clear logo and color scheme."
+      ],
+      "score": 84
+    }
+  },
+  "screenshots_analyzed": 12,
+  "project_goals_alignment": {
+    "search_first_visual": true,
+    "mobile_optimized": true,
+    "brutalist_design": true,
+    "accessible": false,
+    "issues_found": [
+      "cart-mobile: Accessibility issues",
+      "product-page-mobile: Accessibility issues",
+      "product-page-desktop: Accessibility issues",
+      "search-results-mobile: Accessibility issues"
+    ]
+  }
+}
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "screenshot_seo_analysis": {
+    "screenshots_analyzed": 12,
+    "seo_score": 70,
+    "source": "vision_ai_processed_seo",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 50,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Mobile UX issues (score: 50/100)",
+          "Accessibility concerns (score: 65/100)",
+          "\"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+          "The search bar is not prominently visible, affecting the search-first design goal.",
+          "Translation errors in the search title, which can confuse users.",
+          "The touch targets and text sizes may not be optimized for mobile."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "*RECOMMENDATIONS:**",
+          "Add \"Add to Cart\" buttons to each product for improved e-commerce functionality.",
+          "Make the search bar more prominent and accessible.",
+          "Fix translation errors to improve user experience.",
+          "Increase the size of the cart icon and consider adding a cart count badge.",
+          "Ensure touch targets and text sizes meet mobile optimization standards."
+        ]
+      },
+      "cart-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 70,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Accessibility concerns (score: 65/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality not prominent.",
+          "Accessibility issues with translation errors."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Make search bar more prominent and accessible."
+        ]
+      },
+      "cart-mobile": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 80,
+          "accessibility": 60,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Accessibility concerns (score: 60/100)",
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Lack of visible search bar or search-first design elements.",
+          "Accessibility issues with translation errors and potential contrast problems."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, ensure visibility).",
+          "Fix translation issues to improve clarity and accessibility.",
+          "Add visible product pricing and \"Add to Cart\" buttons.",
+          "Enhance search functionality and visibility.",
+          "Ensure color contrast meets accessibility standards."
+        ]
+      },
+      "homepage-desktop": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 75,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible."
+        ],
+        "recommendations": [
+          "Ensure all interactive elements meet the 44px touch target guideline for better mobile usability."
+        ]
+      },
+      "header-navigation": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 80
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No visible product pricing or \"Add to Cart\" buttons.",
+          "Search functionality not prominent."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Enhance search visibility and accessibility."
+        ]
+      },
+      "collection-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 80,
+          "accessibility": 75,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality not prominently displayed."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Strengthen CTA prominence and focal points",
+          "*RECOMMENDATIONS:**",
+          "Display product pricing and \"Add to Cart\" buttons prominently.",
+          "Enhance search visibility, possibly with a larger search bar or icon.",
+          "Improve visual hierarchy by emphasizing key shopping actions.",
+          "Consider adding a cart count badge for better user feedback."
+        ]
+      },
+      "product-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 80,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Accessibility concerns (score: 65/100)",
+          "Search bar not prominently visible.",
+          "Color contrast could be improved for better readability."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility of the search bar to align with the search-first goal.",
+          "Improve color contrast for text to meet accessibility standards.",
+          "Adjust visual hierarchy to guide users more effectively through the page."
+        ]
+      },
+      "homepage-mobile": {
+        "seo_scores": {
+          "search_visibility": 85,
+          "mobile_ux": 90,
+          "accessibility": 80,
+          "cta_hierarchy": 80
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+          "Ensure the cart icon includes a cart count badge to indicate items in the cart.",
+          "Enhance the shopping intent by showcasing featured products or promotions.",
+          "Consider adding a visual cue or animation to the cart icon to draw attention."
+        ]
+      },
+      "product-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 75,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "Search bar is not very prominent.",
+          "Touch targets might not be optimized for mobile.",
+          "Color contrast could be improved for better accessibility."
+        ],
+        "recommendations": [
+          "Enhance the visibility of the search bar to emphasize the search-first design.",
+          "Ensure touch targets meet the 44px minimum for mobile optimization."
+        ]
+      },
+      "collection-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 70,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Search functionality is not prominently displayed."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Enhance the search bar's prominence to align with the search-first design goal."
+        ]
+      },
+      "search-results-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 75,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Accessibility concerns (score: 65/100)",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "\"Translation missing\" error in the search title.",
+          "Search bar is not prominent enough.",
+          "Some text may not meet accessibility contrast requirements."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add \"Add to Cart\" buttons for each product.",
+          "Fix translation error in the search title.",
+          "Enhance the prominence of the search bar.",
+          "Ensure all text meets WCAG 2.1 AA contrast requirements.",
+          "Improve visual hierarchy to guide users more effectively."
+        ]
+      },
+      "footer-section": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 80,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons present."
+        ],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "search_visibility": 66,
+      "mobile_ux": 75,
+      "accessibility": 72,
+      "cta_hierarchy": 74
+    },
+    "issues": [
+      "search-results-desktop: Search not prominent enough (score: 60/100)",
+      "search-results-desktop: Mobile UX issues (score: 50/100)",
+      "search-results-desktop: Accessibility concerns (score: 65/100)",
+      "search-results-desktop: \"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+      "search-results-desktop: The search bar is not prominently visible, affecting the search-first design goal.",
+      "search-results-desktop: Translation errors in the search title, which can confuse users.",
+      "search-results-desktop: The touch targets and text sizes may not be optimized for mobile.",
+      "cart-desktop: Search not prominent enough (score: 60/100)",
+      "cart-desktop: Accessibility concerns (score: 65/100)",
+      "cart-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-desktop: Search functionality not prominent.",
+      "cart-desktop: Accessibility issues with translation errors.",
+      "cart-mobile: Search not prominent enough (score: 50/100)",
+      "cart-mobile: Accessibility concerns (score: 60/100)",
+      "cart-mobile: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Lack of visible search bar or search-first design elements.",
+      "cart-mobile: Accessibility issues with translation errors and potential contrast problems.",
+      "homepage-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "header-navigation: Search not prominent enough (score: 60/100)",
+      "header-navigation: No visible product pricing or \"Add to Cart\" buttons.",
+      "header-navigation: Search functionality not prominent.",
+      "collection-page-mobile: Search not prominent enough (score: 50/100)",
+      "collection-page-mobile: Weak visual hierarchy (score: 60/100)",
+      "collection-page-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "collection-page-mobile: Search functionality not prominently displayed.",
+      "product-page-mobile: Search not prominent enough (score: 60/100)",
+      "product-page-mobile: Accessibility concerns (score: 65/100)",
+      "product-page-mobile: Search bar not prominently visible.",
+      "product-page-mobile: Color contrast could be improved for better readability.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "product-page-desktop: Search bar is not very prominent.",
+      "product-page-desktop: Touch targets might not be optimized for mobile.",
+      "product-page-desktop: Color contrast could be improved for better accessibility.",
+      "collection-page-desktop: Search not prominent enough (score: 60/100)",
+      "collection-page-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "collection-page-desktop: Search functionality is not prominently displayed.",
+      "search-results-mobile: Search not prominent enough (score: 60/100)",
+      "search-results-mobile: Accessibility concerns (score: 65/100)",
+      "search-results-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "search-results-mobile: \"Translation missing\" error in the search title.",
+      "search-results-mobile: Search bar is not prominent enough.",
+      "search-results-mobile: Some text may not meet accessibility contrast requirements.",
+      "footer-section: No \"Add to Cart\" or \"Buy Now\" buttons present."
+    ],
+    "recommendations": [
+      "search-results-desktop: Make search bar larger and more visually prominent",
+      "search-results-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "search-results-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "search-results-desktop: *RECOMMENDATIONS:**",
+      "search-results-desktop: Add \"Add to Cart\" buttons to each product for improved e-commerce functionality.",
+      "search-results-desktop: Make the search bar more prominent and accessible.",
+      "search-results-desktop: Fix translation errors to improve user experience.",
+      "search-results-desktop: Increase the size of the cart icon and consider adding a cart count badge.",
+      "search-results-desktop: Ensure touch targets and text sizes meet mobile optimization standards.",
+      "cart-desktop: Make search bar larger and more visually prominent",
+      "cart-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-desktop: Make search bar more prominent and accessible.",
+      "cart-mobile: Make search bar larger and more visually prominent",
+      "cart-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).",
+      "cart-mobile: Fix translation issues to improve clarity and accessibility.",
+      "cart-mobile: Add visible product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Enhance search functionality and visibility.",
+      "cart-mobile: Ensure color contrast meets accessibility standards.",
+      "homepage-desktop: Ensure all interactive elements meet the 44px touch target guideline for better mobile usability.",
+      "header-navigation: Make search bar larger and more visually prominent",
+      "header-navigation: Enhance search visibility and accessibility.",
+      "collection-page-mobile: Make search bar larger and more visually prominent",
+      "collection-page-mobile: Strengthen CTA prominence and focal points",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Display product pricing and \"Add to Cart\" buttons prominently.",
+      "collection-page-mobile: Enhance search visibility, possibly with a larger search bar or icon.",
+      "collection-page-mobile: Improve visual hierarchy by emphasizing key shopping actions.",
+      "collection-page-mobile: Consider adding a cart count badge for better user feedback.",
+      "product-page-mobile: Make search bar larger and more visually prominent",
+      "product-page-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility of the search bar to align with the search-first goal.",
+      "product-page-mobile: Improve color contrast for text to meet accessibility standards.",
+      "product-page-mobile: Adjust visual hierarchy to guide users more effectively through the page.",
+      "homepage-mobile: *RECOMMENDATIONS:**",
+      "homepage-mobile: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+      "homepage-mobile: Ensure the cart icon includes a cart count badge to indicate items in the cart.",
+      "homepage-mobile: Enhance the shopping intent by showcasing featured products or promotions.",
+      "homepage-mobile: Consider adding a visual cue or animation to the cart icon to draw attention.",
+      "product-page-desktop: Enhance the visibility of the search bar to emphasize the search-first design.",
+      "product-page-desktop: Ensure touch targets meet the 44px minimum for mobile optimization.",
+      "collection-page-desktop: Make search bar larger and more visually prominent",
+      "collection-page-desktop: Enhance the search bar's prominence to align with the search-first design goal.",
+      "search-results-mobile: Make search bar larger and more visually prominent",
+      "search-results-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "search-results-mobile: *RECOMMENDATIONS:**",
+      "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "search-results-mobile: Add \"Add to Cart\" buttons for each product.",
+      "search-results-mobile: Fix translation error in the search title.",
+      "search-results-mobile: Enhance the prominence of the search bar.",
+      "search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.",
+      "search-results-mobile: Improve visual hierarchy to guide users more effectively."
+    ]
+  },
+  "critical_issues": []
+}
+### Alex (37/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 38,
+      "sections": 18,
+      "snippets": 26,
+      "assets": 46
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 11,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 16,
+    "critical_sections_present": 2,
+    "sections_details": {
+      "404.liquid": {
+        "file_size": 6817,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 35,
+        "performance_rating": 90
+      },
+      "search-hero.liquid": {
+        "file_size": 11144,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "collection.liquid": {
+        "file_size": 10527,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "search-results.liquid": {
+        "file_size": 20363,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 213,
+        "performance_rating": 75
+      },
+      "custom-section.liquid": {
+        "file_size": 1220,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 7,
+        "performance_rating": 100
+      },
+      "page.liquid": {
+        "file_size": 10499,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 55,
+        "performance_rating": 75
+      },
+      "blog.liquid": {
+        "file_size": 9379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 76,
+        "performance_rating": 75
+      },
+      "header.liquid": {
+        "file_size": 8794,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 42,
+        "performance_rating": 90
+      },
+      "product.liquid": {
+        "file_size": 8291,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 34,
+        "performance_rating": 90
+      },
+      "collections.liquid": {
+        "file_size": 2071,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "cart.liquid": {
+        "file_size": 14199,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 118,
+        "performance_rating": 75
+      },
+      "hello-world.liquid": {
+        "file_size": 3708,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "article.liquid": {
+        "file_size": 11872,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 69,
+        "performance_rating": 75
+      },
+      "password.liquid": {
+        "file_size": 11589,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 54,
+        "performance_rating": 75
+      },
+      "footer.liquid": {
+        "file_size": 15676,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 60,
+        "performance_rating": 75
+      },
+      "search.liquid": {
+        "file_size": 2038,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 85.9375
+  },
+  "assets_optimization": {
+    "total_assets": 46,
+    "total_size_mb": 0.52,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "product-card.css",
+          "size": 7332,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-hero.css",
+          "size": 15720,
+          "size_mb": 0.01
+        },
+        {
+          "name": "comparison.css",
+          "size": 13093,
+          "size_mb": 0.01
+        },
+        {
+          "name": "animations.css",
+          "size": 8992,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.css",
+          "size": 9822,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search.css",
+          "size": 14112,
+          "size_mb": 0.01
+        },
+        {
+          "name": "404.css",
+          "size": 7623,
+          "size_mb": 0.01
+        },
+        {
+          "name": "component-predictive-search.css",
+          "size": 2071,
+          "size_mb": 0.0
+        },
+        {
+          "name": "filters.css",
+          "size": 12617,
+          "size_mb": 0.01
+        },
+        {
+          "name": "cart.css",
+          "size": 12565,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-results.css",
+          "size": 15534,
+          "size_mb": 0.01
+        },
+        {
+          "name": "page.css",
+          "size": 10254,
+          "size_mb": 0.01
+        },
+        {
+          "name": "critical.css",
+          "size": 2099,
+          "size_mb": 0.0
+        },
+        {
+          "name": "article.css",
+          "size": 13336,
+          "size_mb": 0.01
+        },
+        {
+          "name": "design-tokens.css",
+          "size": 9034,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-collection.css",
+          "size": 12279,
+          "size_mb": 0.01
+        },
+        {
+          "name": "forms.css",
+          "size": 12650,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-results.css",
+          "size": 6974,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-header.css",
+          "size": 5802,
+          "size_mb": 0.01
+        },
+        {
+          "name": "buttons.css",
+          "size": 12998,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-product.css",
+          "size": 9433,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password.css",
+          "size": 10392,
+          "size_mb": 0.01
+        },
+        {
+          "name": "utilities.css",
+          "size": 18126,
+          "size_mb": 0.02
+        },
+        {
+          "name": "blog.css",
+          "size": 10672,
+          "size_mb": 0.01
+        },
+        {
+          "name": "base.css",
+          "size": 9514,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-footer.css",
+          "size": 9791,
+          "size_mb": 0.01
+        }
+      ],
+      "js_files": [
+        {
+          "name": "query-normalizer.js",
+          "size": 11952,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-intelligence.js",
+          "size": 19212,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-hero.js",
+          "size": 6346,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.js",
+          "size": 20975,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-engine.js",
+          "size": 17885,
+          "size_mb": 0.02
+        },
+        {
+          "name": "cart.js",
+          "size": 8195,
+          "size_mb": 0.01
+        },
+        {
+          "name": "predictive-search.js",
+          "size": 3446,
+          "size_mb": 0.0
+        },
+        {
+          "name": "unified-filters.js",
+          "size": 34141,
+          "size_mb": 0.03
+        },
+        {
+          "name": "related-products.js",
+          "size": 7692,
+          "size_mb": 0.01
+        }
+      ],
+      "images": [
+        {
+          "name": "icon-cart.svg",
+          "size": 496,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shoppy-x-ray.svg",
+          "size": 24552,
+          "size_mb": 0.02
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "icon-account.svg",
+          "size": 427,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": []
+    },
+    "emmso_architecture": {
+      "emmso_css_present": false,
+      "emmso_js_present": false,
+      "single_file_architecture": false
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "screenshot_shopify_analysis": {
+    "screenshots_analyzed": 12,
+    "shopify_score": 76,
+    "source": "vision_ai_processed_shopify",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 50
+        },
+        "issues": [
+          "\"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+          "The cart icon is small and may not be immediately noticeable."
+        ],
+        "recommendations": [
+          "Add \"Add to Cart\" buttons to each product for improved e-commerce functionality.",
+          "Increase the size of the cart icon and consider adding a cart count badge."
+        ]
+      },
+      "cart-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "Missing translations for cart messages.",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to ensure clear communication.",
+          "Add product pricing and \"Add to Cart\" buttons for better shopping clarity.",
+          "Make search bar more prominent and accessible.",
+          "Ensure all text meets WCAG 2.1 AA contrast requirements."
+        ]
+      },
+      "cart-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Cart icon is small and might not be prominent enough."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, ensure visibility).",
+          "Fix translation issues to improve clarity and accessibility.",
+          "Add visible product pricing and \"Add to Cart\" buttons.",
+          "Enhance search functionality and visibility.",
+          "Ensure color contrast meets accessibility standards."
+        ]
+      },
+      "homepage-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Lack of immediate product display can confuse users about the shopping functionality."
+        ],
+        "recommendations": [
+          "Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+          "Consider adding featured products to the homepage to emphasize shopping functionality."
+        ]
+      },
+      "header-navigation": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 80,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No visible product pricing or \"Add to Cart\" buttons.",
+          "Limited indication of shopping intent beyond cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Enhance search visibility and accessibility.",
+          "Include product pricing and \"Add to Cart\" buttons for immediate shopping context.",
+          "Consider adding a tagline or elements that communicate shopping intent."
+        ]
+      },
+      "collection-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 60,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Product display hierarchy weak (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "Improve product title/price/CTA prominence",
+          "*RECOMMENDATIONS:**",
+          "Display product pricing and \"Add to Cart\" buttons prominently.",
+          "Enhance search visibility, possibly with a larger search bar or icon.",
+          "Improve visual hierarchy by emphasizing key shopping actions.",
+          "Consider adding a cart count badge for better user feedback."
+        ]
+      },
+      "product-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Missing shopping cart icon in the header."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility of the search bar to align with the search-first goal.",
+          "Improve color contrast for text to meet accessibility standards.",
+          "Adjust visual hierarchy to guide users more effectively through the page."
+        ]
+      },
+      "homepage-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 80,
+          "mobile_commerce": 90
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "The shopping intent is not immediately clear without pricing or product listings.",
+          "The cart icon is visible but lacks a cart count badge."
+        ],
+        "recommendations": [
+          "Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+          "Ensure the cart icon includes a cart count badge to indicate items in the cart.",
+          "Enhance the shopping intent by showcasing featured products or promotions.",
+          "Consider adding a visual cue or animation to the cart icon to draw attention."
+        ]
+      },
+      "product-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 85,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "Cart icon is small and might be overlooked."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility of the search bar to emphasize the search-first design.",
+          "Ensure touch targets meet the 44px minimum for mobile optimization.",
+          "Review color contrast to meet WCAG 2.1 AA standards."
+        ]
+      },
+      "collection-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "No product pricing visible on the page.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Cart icon is small and may not be noticeable immediately."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make product pricing and \"Add to Cart\" buttons visible on the main page.",
+          "Increase the size of the shopping cart icon for better visibility.",
+          "Enhance the search bar's prominence to align with the search-first design goal.",
+          "Consider adding visual cues or text to emphasize the shopping nature of the page."
+        ]
+      },
+      "search-results-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 70,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "Missing shopping cart icon, which is critical for e-commerce.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add \"Add to Cart\" buttons for each product."
+        ]
+      },
+      "footer-section": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing visible.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons present.",
+          "Shopping intent is not immediately clear without pricing or product listings."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Display product pricing prominently.",
+          "Add \"Add to Cart\" buttons to enhance shopping functionality.",
+          "Ensure the shopping cart icon is more prominent if possible, perhaps with a badge for item count."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 80,
+      "section_hierarchy": 74,
+      "mobile_commerce": 75
+    },
+    "issues": [
+      "search-results-desktop: \"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+      "search-results-desktop: The cart icon is small and may not be immediately noticeable.",
+      "cart-desktop: Missing translations for cart messages.",
+      "cart-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-mobile: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Cart icon is small and might not be prominent enough.",
+      "homepage-desktop: No product pricing visible on the homepage.",
+      "homepage-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "homepage-desktop: Lack of immediate product display can confuse users about the shopping functionality.",
+      "header-navigation: No visible product pricing or \"Add to Cart\" buttons.",
+      "header-navigation: Limited indication of shopping intent beyond cart icon.",
+      "collection-page-mobile: Product display hierarchy weak (score: 60/100)",
+      "collection-page-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "product-page-mobile: Missing shopping cart icon in the header.",
+      "homepage-mobile: No product pricing visible on the homepage.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "homepage-mobile: The shopping intent is not immediately clear without pricing or product listings.",
+      "homepage-mobile: The cart icon is visible but lacks a cart count badge.",
+      "product-page-desktop: Cart icon is small and might be overlooked.",
+      "collection-page-desktop: No product pricing visible on the page.",
+      "collection-page-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "collection-page-desktop: Cart icon is small and may not be noticeable immediately.",
+      "search-results-mobile: Missing shopping cart icon, which is critical for e-commerce.",
+      "search-results-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "footer-section: No product pricing visible.",
+      "footer-section: No \"Add to Cart\" or \"Buy Now\" buttons present.",
+      "footer-section: Shopping intent is not immediately clear without pricing or product listings."
+    ],
+    "recommendations": [
+      "search-results-desktop: Add \"Add to Cart\" buttons to each product for improved e-commerce functionality.",
+      "search-results-desktop: Increase the size of the cart icon and consider adding a cart count badge.",
+      "cart-desktop: *RECOMMENDATIONS:**",
+      "cart-desktop: Fix translation issues to ensure clear communication.",
+      "cart-desktop: Add product pricing and \"Add to Cart\" buttons for better shopping clarity.",
+      "cart-desktop: Make search bar more prominent and accessible.",
+      "cart-desktop: Ensure all text meets WCAG 2.1 AA contrast requirements.",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).",
+      "cart-mobile: Fix translation issues to improve clarity and accessibility.",
+      "cart-mobile: Add visible product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Enhance search functionality and visibility.",
+      "cart-mobile: Ensure color contrast meets accessibility standards.",
+      "homepage-desktop: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+      "homepage-desktop: Consider adding featured products to the homepage to emphasize shopping functionality.",
+      "header-navigation: *RECOMMENDATIONS:**",
+      "header-navigation: Enhance search visibility and accessibility.",
+      "header-navigation: Include product pricing and \"Add to Cart\" buttons for immediate shopping context.",
+      "header-navigation: Consider adding a tagline or elements that communicate shopping intent.",
+      "collection-page-mobile: Improve product title/price/CTA prominence",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Display product pricing and \"Add to Cart\" buttons prominently.",
+      "collection-page-mobile: Enhance search visibility, possibly with a larger search bar or icon.",
+      "collection-page-mobile: Improve visual hierarchy by emphasizing key shopping actions.",
+      "collection-page-mobile: Consider adding a cart count badge for better user feedback.",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility of the search bar to align with the search-first goal.",
+      "product-page-mobile: Improve color contrast for text to meet accessibility standards.",
+      "product-page-mobile: Adjust visual hierarchy to guide users more effectively through the page.",
+      "homepage-mobile: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+      "homepage-mobile: Ensure the cart icon includes a cart count badge to indicate items in the cart.",
+      "homepage-mobile: Enhance the shopping intent by showcasing featured products or promotions.",
+      "homepage-mobile: Consider adding a visual cue or animation to the cart icon to draw attention.",
+      "product-page-desktop: *RECOMMENDATIONS:**",
+      "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-desktop: Enhance the visibility of the search bar to emphasize the search-first design.",
+      "product-page-desktop: Ensure touch targets meet the 44px minimum for mobile optimization.",
+      "product-page-desktop: Review color contrast to meet WCAG 2.1 AA standards.",
+      "collection-page-desktop: *RECOMMENDATIONS:**",
+      "collection-page-desktop: Make product pricing and \"Add to Cart\" buttons visible on the main page.",
+      "collection-page-desktop: Increase the size of the shopping cart icon for better visibility.",
+      "collection-page-desktop: Enhance the search bar's prominence to align with the search-first design goal.",
+      "collection-page-desktop: Consider adding visual cues or text to emphasize the shopping nature of the page.",
+      "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "search-results-mobile: Add \"Add to Cart\" buttons for each product.",
+      "footer-section: *RECOMMENDATIONS:**",
+      "footer-section: Display product pricing prominently.",
+      "footer-section: Add \"Add to Cart\" buttons to enhance shopping functionality.",
+      "footer-section: Ensure the shopping cart icon is more prominent if possible, perhaps with a badge for item count."
+    ]
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 266.4,
+    "total_js_size_kb": 126.8,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 346.62,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "screenshot_performance_analysis": {
+    "screenshots_analyzed": 12,
+    "performance_score": 76,
+    "source": "vision_ai_processed_performance",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 50,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "cart-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 70,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "cart-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 75,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "performance_indicators": {
+          "layout_stability": 80,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "product-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-mobile": {
+        "performance_indicators": {
+          "layout_stability": 80,
+          "asset_optimization": 90,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 75,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 70,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "search-results-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 75,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "footer-section": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "layout_stability": 74,
+      "design_efficiency": 83,
+      "asset_optimization": 75
+    },
+    "issues": [
+      "collection-page-mobile: Layout stability concerns (hierarchy: 60/100)"
+    ],
+    "recommendations": [
+      "collection-page-mobile: Stabilize layout to prevent Cumulative Layout Shift"
+    ]
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 266.4,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "screenshot_design_analysis": {
+    "screenshots_analyzed": 12,
+    "design_score": 76,
+    "source": "vision_ai_processed_design",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)"
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility"
+        ]
+      },
+      "cart-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)"
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility"
+        ]
+      },
+      "cart-mobile": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 60,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 60/100)",
+          "Accessibility issues with translation errors and potential contrast problems."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Ensure color contrast meets accessibility standards."
+        ]
+      },
+      "homepage-desktop": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 80,
+          "accessibility": 75,
+          "brutalist_simplicity": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 60,
+          "accessibility": 75,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Visual hierarchy could be improved for better content prioritization."
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve visual hierarchy by emphasizing key shopping actions."
+        ]
+      },
+      "product-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 75
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)",
+          "Color contrast could be improved for better readability.",
+          "Visual hierarchy could be enhanced for better flow."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Improve color contrast for text to meet accessibility standards.",
+          "Adjust visual hierarchy to guide users more effectively through the page."
+        ]
+      },
+      "homepage-mobile": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 80,
+          "accessibility": 80,
+          "brutalist_simplicity": 75
+        },
+        "issues": [],
+        "recommendations": [
+          "Consider adding a visual cue or animation to the cart icon to draw attention."
+        ]
+      },
+      "product-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Color contrast could be improved for better accessibility."
+        ],
+        "recommendations": [
+          "Enhance the visibility of the search bar to emphasize the search-first design.",
+          "Review color contrast to meet WCAG 2.1 AA standards."
+        ]
+      },
+      "collection-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Lack of visual indicators for shopping intent."
+        ],
+        "recommendations": [
+          "Enhance the search bar's prominence to align with the search-first design goal.",
+          "Consider adding visual cues or text to emphasize the shopping nature of the page."
+        ]
+      },
+      "search-results-mobile": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)",
+          "Some text may not meet accessibility contrast requirements.",
+          "Visual hierarchy could be improved for better flow."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Improve visual hierarchy to guide users more effectively."
+        ]
+      },
+      "footer-section": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 80,
+      "visual_hierarchy": 74,
+      "accessibility": 72,
+      "brutalist_simplicity": 83
+    },
+    "issues": [
+      "search-results-desktop: Accessibility/contrast issues (score: 65/100)",
+      "cart-desktop: Accessibility/contrast issues (score: 65/100)",
+      "cart-mobile: Accessibility/contrast issues (score: 60/100)",
+      "cart-mobile: Accessibility issues with translation errors and potential contrast problems.",
+      "collection-page-mobile: Weak visual hierarchy (score: 60/100)",
+      "collection-page-mobile: Visual hierarchy could be improved for better content prioritization.",
+      "product-page-mobile: Accessibility/contrast issues (score: 65/100)",
+      "product-page-mobile: Color contrast could be improved for better readability.",
+      "product-page-mobile: Visual hierarchy could be enhanced for better flow.",
+      "product-page-desktop: Color contrast could be improved for better accessibility.",
+      "collection-page-desktop: Lack of visual indicators for shopping intent.",
+      "search-results-mobile: Accessibility/contrast issues (score: 65/100)",
+      "search-results-mobile: Some text may not meet accessibility contrast requirements.",
+      "search-results-mobile: Visual hierarchy could be improved for better flow."
+    ],
+    "recommendations": [
+      "search-results-desktop: Improve text contrast and color accessibility",
+      "cart-desktop: Improve text contrast and color accessibility",
+      "cart-mobile: Improve text contrast and color accessibility",
+      "cart-mobile: Ensure color contrast meets accessibility standards.",
+      "collection-page-mobile: Strengthen focal points using size and contrast",
+      "collection-page-mobile: Improve visual hierarchy by emphasizing key shopping actions.",
+      "product-page-mobile: Improve text contrast and color accessibility",
+      "product-page-mobile: Improve color contrast for text to meet accessibility standards.",
+      "product-page-mobile: Adjust visual hierarchy to guide users more effectively through the page.",
+      "homepage-mobile: Consider adding a visual cue or animation to the cart icon to draw attention.",
+      "product-page-desktop: Enhance the visibility of the search bar to emphasize the search-first design.",
+      "product-page-desktop: Review color contrast to meet WCAG 2.1 AA standards.",
+      "collection-page-desktop: Enhance the search bar's prominence to align with the search-first design goal.",
+      "collection-page-desktop: Consider adding visual cues or text to emphasize the shopping nature of the page.",
+      "search-results-mobile: Improve text contrast and color accessibility",
+      "search-results-mobile: Improve visual hierarchy to guide users more effectively."
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Vision**: search-results-desktop: *RECOMMENDATIONS:**
+**Vision**: search-results-desktop: Add "Add to Cart" buttons to each product for improved e-commerce functionality.
+**Vision**: search-results-desktop: Make the search bar more prominent and accessible.
+**Vision**: search-results-desktop: Fix translation errors to improve user experience.
+**Vision**: search-results-desktop: Increase the size of the cart icon and consider adding a cart count badge.
+**Vision**: search-results-desktop: Ensure touch targets and text sizes meet mobile optimization standards.
+**Vision**: cart-desktop: *RECOMMENDATIONS:**
+**Vision**: cart-desktop: Fix translation issues to ensure clear communication.
+**Vision**: cart-desktop: Add product pricing and "Add to Cart" buttons for better shopping clarity.
+**Vision**: cart-desktop: Make search bar more prominent and accessible.
+**Vision**: cart-desktop: Ensure all text meets WCAG 2.1 AA contrast requirements.
+**Vision**: cart-mobile: *RECOMMENDATIONS:**
+**Vision**: cart-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).
+**Vision**: cart-mobile: Fix translation issues to improve clarity and accessibility.
+**Vision**: cart-mobile: Add visible product pricing and "Add to Cart" buttons.
+**Vision**: cart-mobile: Enhance search functionality and visibility.
+**Vision**: cart-mobile: Ensure color contrast meets accessibility standards.
+**Vision**: homepage-desktop: *RECOMMENDATIONS:**
+**Vision**: homepage-desktop: Display product pricing and "Add to Cart" buttons prominently on the homepage.
+**Vision**: homepage-desktop: Consider adding featured products to the homepage to emphasize shopping functionality.
+**Vision**: homepage-desktop: Ensure all interactive elements meet the 44px touch target guideline for better mobile usability.
+**Vision**: header-navigation: *RECOMMENDATIONS:**
+**Vision**: header-navigation: Enhance search visibility and accessibility.
+**Vision**: header-navigation: Include product pricing and "Add to Cart" buttons for immediate shopping context.
+**Vision**: header-navigation: Consider adding a tagline or elements that communicate shopping intent.
+**Vision**: collection-page-mobile: *RECOMMENDATIONS:**
+**Vision**: collection-page-mobile: Display product pricing and "Add to Cart" buttons prominently.
+**Vision**: collection-page-mobile: Enhance search visibility, possibly with a larger search bar or icon.
+**Vision**: collection-page-mobile: Improve visual hierarchy by emphasizing key shopping actions.
+**Vision**: collection-page-mobile: Consider adding a cart count badge for better user feedback.
+**Vision**: product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: product-page-mobile: *RECOMMENDATIONS:**
+**Vision**: product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-mobile: Enhance the visibility of the search bar to align with the search-first goal.
+**Vision**: product-page-mobile: Improve color contrast for text to meet accessibility standards.
+**Vision**: product-page-mobile: Adjust visual hierarchy to guide users more effectively through the page.
+**Vision**: homepage-mobile: *RECOMMENDATIONS:**
+**Vision**: homepage-mobile: Display product pricing and "Add to Cart" buttons prominently on the homepage.
+**Vision**: homepage-mobile: Ensure the cart icon includes a cart count badge to indicate items in the cart.
+**Vision**: homepage-mobile: Enhance the shopping intent by showcasing featured products or promotions.
+**Vision**: homepage-mobile: Consider adding a visual cue or animation to the cart icon to draw attention.
+**Vision**: product-page-desktop: *RECOMMENDATIONS:**
+**Vision**: product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-desktop: Enhance the visibility of the search bar to emphasize the search-first design.
+**Vision**: product-page-desktop: Ensure touch targets meet the 44px minimum for mobile optimization.
+**Vision**: product-page-desktop: Review color contrast to meet WCAG 2.1 AA standards.
+**Vision**: collection-page-desktop: *RECOMMENDATIONS:**
+**Vision**: collection-page-desktop: Make product pricing and "Add to Cart" buttons visible on the main page.
+**Vision**: collection-page-desktop: Increase the size of the shopping cart icon for better visibility.
+**Vision**: collection-page-desktop: Enhance the search bar's prominence to align with the search-first design goal.
+**Vision**: collection-page-desktop: Consider adding visual cues or text to emphasize the shopping nature of the page.
+**Vision**: search-results-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: search-results-mobile: *RECOMMENDATIONS:**
+**Vision**: search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: search-results-mobile: Add "Add to Cart" buttons for each product.
+**Vision**: search-results-mobile: Fix translation error in the search title.
+**Vision**: search-results-mobile: Enhance the prominence of the search bar.
+**Vision**: search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.
+**Vision**: search-results-mobile: Improve visual hierarchy to guide users more effectively.
+**Vision**: footer-section: *RECOMMENDATIONS:**
+**Vision**: footer-section: Display product pricing prominently.
+**Vision**: footer-section: Add "Add to Cart" buttons to enhance shopping functionality.
+**Vision**: footer-section: Ensure the shopping cart icon is more prominent if possible, perhaps with a badge for item count.
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Alex**: {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 266.4KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 70 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🚨 Phase 1: CRITICAL - Immediate Action Required
+
+**Priority**: BLOCKER - Must fix before launch
+**Timeline**: This week
+
+- [ ] **Vision** (Score: 73/100): product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+- [ ] **Vision** (Score: 73/100): search-results-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 37/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Alex** (Score: 37/100): {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Vision** (Score: 73/100): search-results-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): search-results-desktop: Add "Add to Cart" buttons to each product for improved e-commerce functionality.
+- [ ] **Vision** (Score: 73/100): search-results-desktop: Make the search bar more prominent and accessible.
+- [ ] **Vision** (Score: 73/100): search-results-desktop: Fix translation errors to improve user experience.
+- [ ] **Vision** (Score: 73/100): search-results-desktop: Increase the size of the cart icon and consider adding a cart count badge.
+- [ ] **Vision** (Score: 73/100): search-results-desktop: Ensure touch targets and text sizes meet mobile optimization standards.
+- [ ] **Vision** (Score: 73/100): cart-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): cart-desktop: Fix translation issues to ensure clear communication.
+- [ ] **Vision** (Score: 73/100): cart-desktop: Add product pricing and "Add to Cart" buttons for better shopping clarity.
+- [ ] **Vision** (Score: 73/100): cart-desktop: Make search bar more prominent and accessible.
+- [ ] **Vision** (Score: 73/100): cart-desktop: Ensure all text meets WCAG 2.1 AA contrast requirements.
+- [ ] **Vision** (Score: 73/100): cart-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): cart-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).
+- [ ] **Vision** (Score: 73/100): cart-mobile: Fix translation issues to improve clarity and accessibility.
+- [ ] **Vision** (Score: 73/100): cart-mobile: Add visible product pricing and "Add to Cart" buttons.
+- [ ] **Vision** (Score: 73/100): cart-mobile: Enhance search functionality and visibility.
+- [ ] **Vision** (Score: 73/100): cart-mobile: Ensure color contrast meets accessibility standards.
+- [ ] **Vision** (Score: 73/100): homepage-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): homepage-desktop: Display product pricing and "Add to Cart" buttons prominently on the homepage.
+- [ ] **Vision** (Score: 73/100): homepage-desktop: Consider adding featured products to the homepage to emphasize shopping functionality.
+- [ ] **Vision** (Score: 73/100): homepage-desktop: Ensure all interactive elements meet the 44px touch target guideline for better mobile usability.
+- [ ] **Vision** (Score: 73/100): header-navigation: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): header-navigation: Enhance search visibility and accessibility.
+- [ ] **Vision** (Score: 73/100): header-navigation: Include product pricing and "Add to Cart" buttons for immediate shopping context.
+- [ ] **Vision** (Score: 73/100): header-navigation: Consider adding a tagline or elements that communicate shopping intent.
+- [ ] **Vision** (Score: 73/100): collection-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): collection-page-mobile: Display product pricing and "Add to Cart" buttons prominently.
+- [ ] **Vision** (Score: 73/100): collection-page-mobile: Enhance search visibility, possibly with a larger search bar or icon.
+- [ ] **Vision** (Score: 73/100): collection-page-mobile: Improve visual hierarchy by emphasizing key shopping actions.
+- [ ] **Vision** (Score: 73/100): collection-page-mobile: Consider adding a cart count badge for better user feedback.
+- [ ] **Vision** (Score: 73/100): product-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 73/100): product-page-mobile: Enhance the visibility of the search bar to align with the search-first goal.
+- [ ] **Vision** (Score: 73/100): product-page-mobile: Improve color contrast for text to meet accessibility standards.
+- [ ] **Vision** (Score: 73/100): product-page-mobile: Adjust visual hierarchy to guide users more effectively through the page.
+- [ ] **Vision** (Score: 73/100): homepage-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): homepage-mobile: Display product pricing and "Add to Cart" buttons prominently on the homepage.
+- [ ] **Vision** (Score: 73/100): homepage-mobile: Ensure the cart icon includes a cart count badge to indicate items in the cart.
+- [ ] **Vision** (Score: 73/100): homepage-mobile: Enhance the shopping intent by showcasing featured products or promotions.
+- [ ] **Vision** (Score: 73/100): homepage-mobile: Consider adding a visual cue or animation to the cart icon to draw attention.
+- [ ] **Vision** (Score: 73/100): product-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 73/100): product-page-desktop: Enhance the visibility of the search bar to emphasize the search-first design.
+- [ ] **Vision** (Score: 73/100): product-page-desktop: Ensure touch targets meet the 44px minimum for mobile optimization.
+- [ ] **Vision** (Score: 73/100): product-page-desktop: Review color contrast to meet WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 73/100): collection-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): collection-page-desktop: Make product pricing and "Add to Cart" buttons visible on the main page.
+- [ ] **Vision** (Score: 73/100): collection-page-desktop: Increase the size of the shopping cart icon for better visibility.
+- [ ] **Vision** (Score: 73/100): collection-page-desktop: Enhance the search bar's prominence to align with the search-first design goal.
+- [ ] **Vision** (Score: 73/100): collection-page-desktop: Consider adding visual cues or text to emphasize the shopping nature of the page.
+- [ ] **Vision** (Score: 73/100): search-results-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 73/100): search-results-mobile: Add "Add to Cart" buttons for each product.
+- [ ] **Vision** (Score: 73/100): search-results-mobile: Fix translation error in the search title.
+- [ ] **Vision** (Score: 73/100): search-results-mobile: Enhance the prominence of the search bar.
+- [ ] **Vision** (Score: 73/100): search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.
+- [ ] **Vision** (Score: 73/100): search-results-mobile: Improve visual hierarchy to guide users more effectively.
+- [ ] **Vision** (Score: 73/100): footer-section: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 73/100): footer-section: Display product pricing prominently.
+- [ ] **Vision** (Score: 73/100): footer-section: Add "Add to Cart" buttons to enhance shopping functionality.
+- [ ] **Vision** (Score: 73/100): footer-section: Ensure the shopping cart icon is more prominent if possible, perhaps with a badge for item count.
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 266.4KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 2 tasks
+- 🔥 High: 5 tasks  
+- ⚡ Medium: 63 tasks
+- 💡 Low: 0 tasks
+- **Total**: 70 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 16:56:21
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 50/100
+
+#### Findings
+
+### Vision (71/100)
+
+{
+  "visual_analysis": {
+    "search-results-desktop": {
+      "screen": "search-results-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 65/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 71/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (Top right corner, standard size)\n- Pricing visible? YES\n- Add to Cart buttons? NO\n- Shopping intent clear? SOMEWHAT\n\n**ISSUES FOUND:**\n- Missing \"Add to Cart\" buttons, which are crucial for e-commerce functionality.\n- The search bar is not prominently placed or easily noticeable.\n- Translation error visible at the top, affecting professionalism.\n- Lack of clear focal points; the page feels cluttered.\n- No visible voice search option.\n\n**RECOMMENDATIONS:**\n- Add \"Add to Cart\" buttons to each product for better functionality.\n- Make the search bar more prominent, possibly larger or with a contrasting color.\n- Fix translation errors to enhance professionalism.\n- Improve visual hierarchy by using size and contrast to guide the user's eye.\n- Consider adding a voice search option for accessibility.\n\n**HIGHLIGHTS:**\n- The shopping cart icon is visible and well-placed.\n- Product pricing is clear and easy to read.\n- The design maintains a clean, minimalistic style consistent with brutalist simplicity.\n- Brand colors and typography are consistent throughout the page.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 65,
+        "brutalist_simplicity": 75,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing \"Add to Cart\" buttons, which are crucial for e-commerce functionality.",
+        "The search bar is not prominently placed or easily noticeable.",
+        "Translation error visible at the top, affecting professionalism.",
+        "Lack of clear focal points; the page feels cluttered.",
+        "No visible voice search option."
+      ],
+      "recommendations": [
+        "search-results-desktop: *RECOMMENDATIONS:**",
+        "search-results-desktop: Add \"Add to Cart\" buttons to each product for better functionality.",
+        "search-results-desktop: Make the search bar more prominent, possibly larger or with a contrasting color.",
+        "search-results-desktop: Fix translation errors to enhance professionalism.",
+        "search-results-desktop: Improve visual hierarchy by using size and contrast to guide the user's eye.",
+        "search-results-desktop: Consider adding a voice search option for accessibility."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The shopping cart icon is visible and well-placed.",
+        "Product pricing is clear and easy to read.",
+        "The design maintains a clean, minimalistic style consistent with brutalist simplicity.",
+        "Brand colors and typography are consistent throughout the page."
+      ],
+      "score": 71
+    },
+    "cart-desktop": {
+      "screen": "cart-desktop",
+      "raw_analysis": "**SCORES:**\n\n- E-Commerce Visibility: 50/100 (CRITICAL - Cart icon visible but lacks other e-commerce elements)\n- Visual Hierarchy: 60/100\n- Search-First Design: 40/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 50/100\n- Brand Consistency: 70/100\n- OVERALL: 60/100\n\n**E-COMMERCE CHECK:**\n\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n\n- Missing product pricing and \"Add to Cart\" buttons.\n- Translation errors present, affecting user understanding.\n- Lack of clear shopping intent or product display.\n- Search functionality not prominent or visible.\n- Accessibility issues due to missing text translations.\n\n**RECOMMENDATIONS:**\n\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Fix translation errors to improve user comprehension.\n- Add visible product pricing and \"Add to Cart\" buttons.\n- Enhance search visibility and functionality.\n- Improve accessibility by ensuring all text is translated and readable.\n\n**HIGHLIGHTS:**\n\n- Clean, minimal design aligns with brutalist simplicity.\n- Consistent color scheme and typography.\n- Footer provides useful links and subscription option.",
+      "scores": {
+        "ecommerce_visibility": 50,
+        "visual_hierarchy": 60,
+        "search_first": 40,
+        "mobile_first": 70,
+        "brutalist_simplicity": 80,
+        "accessibility": 50,
+        "brand_consistency": 70
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing product pricing and \"Add to Cart\" buttons.",
+        "Translation errors present, affecting user understanding.",
+        "Lack of clear shopping intent or product display.",
+        "Search functionality not prominent or visible.",
+        "Accessibility issues due to missing text translations."
+      ],
+      "recommendations": [
+        "cart-desktop: *RECOMMENDATIONS:**",
+        "cart-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "cart-desktop: Fix translation errors to improve user comprehension.",
+        "cart-desktop: Add visible product pricing and \"Add to Cart\" buttons.",
+        "cart-desktop: Enhance search visibility and functionality.",
+        "cart-desktop: Improve accessibility by ensuring all text is translated and readable."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Consistent color scheme and typography.",
+        "Footer provides useful links and subscription option."
+      ],
+      "score": 60
+    },
+    "cart-mobile": {
+      "screen": "cart-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 75/100\n- Brand Consistency: 85/100\n- OVERALL: 78/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY (cart icon present, but no product/pricing)\n\n**ISSUES FOUND:**\n- Missing translations for cart messages.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality not prominent.\n- Lack of product visuals or descriptions.\n\n**RECOMMENDATIONS:**\n- Fix translation issues to improve user experience.\n- Include product listings with clear pricing and \"Add to Cart\" buttons.\n- Make search bar more prominent to align with search-first goal.\n- Ensure all text meets accessibility standards for contrast.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Cart icon is clearly visible and easily accessible.\n- Mobile-friendly layout with thumb-optimized navigation.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 75,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for cart messages.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality not prominent.",
+        "Lack of product visuals or descriptions."
+      ],
+      "recommendations": [
+        "cart-mobile: *RECOMMENDATIONS:**",
+        "cart-mobile: Fix translation issues to improve user experience.",
+        "cart-mobile: Include product listings with clear pricing and \"Add to Cart\" buttons.",
+        "cart-mobile: Make search bar more prominent to align with search-first goal.",
+        "cart-mobile: Ensure all text meets accessibility standards for contrast."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Cart icon is clearly visible and easily accessible.",
+        "Mobile-friendly layout with thumb-optimized navigation."
+      ],
+      "score": 78
+    },
+    "homepage-desktop": {
+      "screen": "homepage-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 83/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (Top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- Shopping intent is not immediately clear without product listings.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons on the homepage.\n- Enhance the visibility of shopping elements to communicate the e-commerce nature more clearly.\n- Consider adding featured products or categories to highlight shopping options.\n\n**HIGHLIGHTS:**\n- The search bar is prominently placed and easy to find, supporting the search-first design goal.\n- The design is clean and minimal, aligning with the brutalist simplicity goal.\n- Consistent branding with clear use of colors and typography.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "Shopping intent is not immediately clear without product listings."
+      ],
+      "recommendations": [
+        "homepage-desktop: *RECOMMENDATIONS:**",
+        "homepage-desktop: Display product pricing and \"Add to Cart\" buttons on the homepage.",
+        "homepage-desktop: Enhance the visibility of shopping elements to communicate the e-commerce nature more clearly.",
+        "homepage-desktop: Consider adding featured products or categories to highlight shopping options."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominently placed and easy to find, supporting the search-first design goal.",
+        "The design is clean and minimal, aligning with the brutalist simplicity goal.",
+        "Consistent branding with clear use of colors and typography."
+      ],
+      "score": 83
+    },
+    "header-navigation": {
+      "screen": "header-navigation",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but not prominent)\n- Visual Hierarchy: 60/100\n- Search-First Design: 30/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 70/100\n- Brand Consistency: 75/100\n- OVERALL: 67/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- Cart icon is small and lacks prominence.\n- No visible pricing or \"Add to Cart\" buttons.\n- Search functionality is not visible.\n- Lack of clear indicators that this is an e-commerce site.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Add visible pricing and \"Add to Cart\" buttons to reinforce shopping intent.\n- Introduce a prominent search bar to enhance search-first design.\n- Ensure all elements meet accessibility standards, such as color contrast and touch target size.\n\n**HIGHLIGHTS:**\n- Clean and minimal design aligns with brutalist simplicity.\n- Mobile-friendly layout with thumb-reachable icons.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 60,
+        "search_first": 30,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 70,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and lacks prominence.",
+        "No visible pricing or \"Add to Cart\" buttons.",
+        "Search functionality is not visible.",
+        "Lack of clear indicators that this is an e-commerce site."
+      ],
+      "recommendations": [
+        "header-navigation: *RECOMMENDATIONS:**",
+        "header-navigation: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "header-navigation: Add visible pricing and \"Add to Cart\" buttons to reinforce shopping intent.",
+        "header-navigation: Introduce a prominent search bar to enhance search-first design.",
+        "header-navigation: Ensure all elements meet accessibility standards, such as color contrast and touch target size."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean and minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly layout with thumb-reachable icons."
+      ],
+      "score": 67
+    },
+    "collection-page-mobile": {
+      "screen": "collection-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 60/100 (CRITICAL - Cart icon is visible but lacks additional e-commerce elements)\n- Visual Hierarchy: 70/100\n- Search-First Design: 50/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 71/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible.\n- No \"Add to Cart\" or \"Buy Now\" buttons.\n- Search functionality is not prominently displayed.\n- Cart icon is small and might not be immediately noticeable.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Display product pricing and \"Add to Cart\" buttons clearly.\n- Enhance the visibility and accessibility of the search bar.\n- Consider adding a badge to the cart icon to indicate item count.\n\n**HIGHLIGHTS:**\n- Clean and minimal design aligns with brutalist simplicity.\n- Mobile-friendly layout with thumb-optimized touch targets.\n- Consistent branding with clear typography and color scheme.",
+      "scores": {
+        "ecommerce_visibility": 60,
+        "visual_hierarchy": 70,
+        "search_first": 50,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons.",
+        "Search functionality is not prominently displayed.",
+        "Cart icon is small and might not be immediately noticeable."
+      ],
+      "recommendations": [
+        "collection-page-mobile: *RECOMMENDATIONS:**",
+        "collection-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "collection-page-mobile: Display product pricing and \"Add to Cart\" buttons clearly.",
+        "collection-page-mobile: Enhance the visibility and accessibility of the search bar.",
+        "collection-page-mobile: Consider adding a badge to the cart icon to indicate item count."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean and minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly layout with thumb-optimized touch targets.",
+        "Consistent branding with clear typography and color scheme."
+      ],
+      "score": 71
+    },
+    "product-page-mobile": {
+      "screen": "product-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 62/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Shopping cart icon is missing, which is critical for an e-commerce platform.\n- The search bar is not prominently displayed.\n- Visual hierarchy could be improved for better content prioritization.\n- Some text might not meet accessibility contrast standards.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility and accessibility of the search bar.\n- Improve contrast for better readability.\n- Consider reorganizing elements for clearer visual hierarchy.\n\n**HIGHLIGHTS:**\n- The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.\n- Touch targets appear to be appropriately sized for mobile use.\n- Brand consistency is maintained with clear and professional appearance.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 80,
+        "brutalist_simplicity": 75,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Shopping cart icon is missing, which is critical for an e-commerce platform.",
+        "The search bar is not prominently displayed.",
+        "Visual hierarchy could be improved for better content prioritization.",
+        "Some text might not meet accessibility contrast standards."
+      ],
+      "recommendations": [
+        "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "product-page-mobile: *RECOMMENDATIONS:**",
+        "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-mobile: Enhance the visibility and accessibility of the search bar.",
+        "product-page-mobile: Improve contrast for better readability.",
+        "product-page-mobile: Consider reorganizing elements for clearer visual hierarchy."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.",
+        "Touch targets appear to be appropriately sized for mobile use.",
+        "Brand consistency is maintained with clear and professional appearance."
+      ],
+      "score": 62
+    },
+    "homepage-mobile": {
+      "screen": "homepage-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 75/100\n- Brand Consistency: 90/100\n- OVERALL: 83/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- Shopping intent is not immediately clear without product listings.\n- Accessibility could be improved with better color contrast.\n\n**RECOMMENDATIONS:**\n- Include product listings with visible pricing on the homepage.\n- Add \"Add to Cart\" buttons to enhance e-commerce functionality.\n- Improve color contrast for better accessibility.\n- Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility.\n\n**HIGHLIGHTS:**\n- The search bar is prominently placed and easy to find, supporting a search-first design.\n- The design is clean and minimal, adhering to the brutalist simplicity goal.\n- Brand consistency is strong with clear EMMSO branding and consistent color usage.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 85,
+        "brutalist_simplicity": 80,
+        "accessibility": 75,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "Shopping intent is not immediately clear without product listings.",
+        "Accessibility could be improved with better color contrast."
+      ],
+      "recommendations": [
+        "homepage-mobile: *RECOMMENDATIONS:**",
+        "homepage-mobile: Include product listings with visible pricing on the homepage.",
+        "homepage-mobile: Add \"Add to Cart\" buttons to enhance e-commerce functionality.",
+        "homepage-mobile: Improve color contrast for better accessibility.",
+        "homepage-mobile: Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominently placed and easy to find, supporting a search-first design.",
+        "The design is clean and minimal, adhering to the brutalist simplicity goal.",
+        "Brand consistency is strong with clear EMMSO branding and consistent color usage."
+      ],
+      "score": 83
+    },
+    "product-page-desktop": {
+      "screen": "product-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 60/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 70/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right, small size)\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Cart icon is small and not very prominent.\n- Search bar is not very prominent; could be more central.\n- Visual hierarchy could be improved for better flow.\n- Touch targets may not be optimized for mobile.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the search bar's visibility and accessibility.\n- Improve visual hierarchy by adjusting size and contrast for key elements.\n- Ensure touch targets are at least 44px for mobile optimization.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns well with brutalist simplicity.\n- Consistent branding with clear typography and color use.\n- Pricing and product details are clearly displayed.",
+      "scores": {
+        "ecommerce_visibility": 60,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 70,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and not very prominent.",
+        "Search bar is not very prominent; could be more central.",
+        "Visual hierarchy could be improved for better flow.",
+        "Touch targets may not be optimized for mobile."
+      ],
+      "recommendations": [
+        "product-page-desktop: *RECOMMENDATIONS:**",
+        "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-desktop: Enhance the search bar's visibility and accessibility.",
+        "product-page-desktop: Improve visual hierarchy by adjusting size and contrast for key elements.",
+        "product-page-desktop: Ensure touch targets are at least 44px for mobile optimization."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns well with brutalist simplicity.",
+        "Consistent branding with clear typography and color use.",
+        "Pricing and product details are clearly displayed."
+      ],
+      "score": 70
+    },
+    "collection-page-desktop": {
+      "screen": "collection-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but not prominent)\n- Visual Hierarchy: 60/100\n- Search-First Design: 50/100\n- Mobile-First: 60/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 75/100\n- OVERALL: 66/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Cart icon is small and lacks prominence.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search bar is not prominent.\n- Visual hierarchy could be improved for better flow.\n- Text size and touch targets may not be optimized for mobile.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Display product pricing and \"Add to Cart\" buttons clearly.\n- Enhance the visibility of the search bar.\n- Improve visual hierarchy with better use of contrast and spacing.\n- Ensure touch targets are at least 44px for mobile usability.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with Brutalist Simplicity.\n- Consistent branding with clear EMMSO logo.\n- Footer provides comprehensive navigation and information.\n\nFocus on improving e-commerce visibility and search prominence to enhance user experience.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 60,
+        "search_first": 50,
+        "mobile_first": 60,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and lacks prominence.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search bar is not prominent.",
+        "Visual hierarchy could be improved for better flow.",
+        "Text size and touch targets may not be optimized for mobile."
+      ],
+      "recommendations": [
+        "collection-page-desktop: *RECOMMENDATIONS:**",
+        "collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "collection-page-desktop: Display product pricing and \"Add to Cart\" buttons clearly.",
+        "collection-page-desktop: Enhance the visibility of the search bar.",
+        "collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.",
+        "collection-page-desktop: Ensure touch targets are at least 44px for mobile usability."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with Brutalist Simplicity.",
+        "Consistent branding with clear EMMSO logo.",
+        "Footer provides comprehensive navigation and information."
+      ],
+      "score": 66
+    },
+    "search-results-mobile": {
+      "screen": "search-results-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 65/100\n- Brand Consistency: 70/100\n- OVERALL: 60/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- No visible shopping cart icon.\n- Missing \"Add to Cart\" or \"Buy Now\" buttons.\n- \"Translation missing\" text indicates potential localization issues.\n- Search bar is not prominently placed.\n- Lack of clear shopping indicators (e.g., cart count badge).\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Add \"Add to Cart\" buttons to each product listing.\n- Ensure search bar is easily accessible and prominent.\n- Fix localization issues to improve user experience.\n- Enhance visual hierarchy to guide users more effectively.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Product pricing is clearly displayed.\n- Thumb-friendly navigation and touch targets are well-considered.\n\nFocus on improving e-commerce visibility and addressing localization issues to enhance user experience and functionality.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 75,
+        "brutalist_simplicity": 80,
+        "accessibility": 65,
+        "brand_consistency": 70
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No visible shopping cart icon.",
+        "Missing \"Add to Cart\" or \"Buy Now\" buttons.",
+        "\"Translation missing\" text indicates potential localization issues.",
+        "Search bar is not prominently placed.",
+        "Lack of clear shopping indicators (e.g., cart count badge)."
+      ],
+      "recommendations": [
+        "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "search-results-mobile: *RECOMMENDATIONS:**",
+        "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "search-results-mobile: Add \"Add to Cart\" buttons to each product listing.",
+        "search-results-mobile: Ensure search bar is easily accessible and prominent.",
+        "search-results-mobile: Fix localization issues to improve user experience.",
+        "search-results-mobile: Enhance visual hierarchy to guide users more effectively."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Product pricing is clearly displayed.",
+        "Thumb-friendly navigation and touch targets are well-considered."
+      ],
+      "score": 60
+    },
+    "footer-section": {
+      "screen": "footer-section",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 84/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible.\n- Lack of immediate product display may confuse users about the shopping intent.\n- Accessibility could be improved with better color contrast.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons prominently.\n- Enhance the visibility of the shopping cart icon with a badge for items in the cart.\n- Improve color contrast for better accessibility.\n- Consider adding product images or categories to emphasize shopping intent.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean, minimalistic design aligning with brutalist simplicity.\n- Consistent branding with clear typography and color scheme.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Lack of immediate product display may confuse users about the shopping intent.",
+        "Accessibility could be improved with better color contrast."
+      ],
+      "recommendations": [
+        "footer-section: *RECOMMENDATIONS:**",
+        "footer-section: Display product pricing and \"Add to Cart\" buttons prominently.",
+        "footer-section: Enhance the visibility of the shopping cart icon with a badge for items in the cart.",
+        "footer-section: Improve color contrast for better accessibility.",
+        "footer-section: Consider adding product images or categories to emphasize shopping intent."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean, minimalistic design aligning with brutalist simplicity.",
+        "Consistent branding with clear typography and color scheme."
+      ],
+      "score": 84
+    }
+  },
+  "screenshots_analyzed": 12,
+  "project_goals_alignment": {
+    "search_first_visual": true,
+    "mobile_optimized": true,
+    "brutalist_design": true,
+    "accessible": false,
+    "issues_found": [
+      "product-page-mobile: Accessibility issues",
+      "homepage-mobile: Accessibility issues",
+      "footer-section: Accessibility issues"
+    ]
+  }
+}
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "screenshot_seo_analysis": {
+    "screenshots_analyzed": 12,
+    "seo_score": 66,
+    "source": "vision_ai_processed_seo",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 65,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Mobile UX issues (score: 65/100)",
+          "Missing \"Add to Cart\" buttons, which are crucial for e-commerce functionality.",
+          "The search bar is not prominently placed or easily noticeable.",
+          "No visible voice search option."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "*RECOMMENDATIONS:**",
+          "Add \"Add to Cart\" buttons to each product for better functionality.",
+          "Make the search bar more prominent, possibly larger or with a contrasting color.",
+          "Fix translation errors to enhance professionalism.",
+          "Improve visual hierarchy by using size and contrast to guide the user's eye.",
+          "Consider adding a voice search option for accessibility."
+        ]
+      },
+      "cart-desktop": {
+        "seo_scores": {
+          "search_visibility": 40,
+          "mobile_ux": 70,
+          "accessibility": 50,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 40/100)",
+          "Accessibility concerns (score: 50/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Search functionality not prominent or visible.",
+          "Accessibility issues due to missing text translations."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "Enhance search visibility and functionality.",
+          "Improve accessibility by ensuring all text is translated and readable."
+        ]
+      },
+      "cart-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality not prominent."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to improve user experience.",
+          "Include product listings with clear pricing and \"Add to Cart\" buttons.",
+          "Make search bar more prominent to align with search-first goal.",
+          "Ensure all text meets accessibility standards for contrast."
+        ]
+      },
+      "homepage-desktop": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 80,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible."
+        ],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "seo_scores": {
+          "search_visibility": 30,
+          "mobile_ux": 80,
+          "accessibility": 70,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 30/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "No visible pricing or \"Add to Cart\" buttons.",
+          "Search functionality is not visible."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Strengthen CTA prominence and focal points",
+          "Introduce a prominent search bar to enhance search-first design.",
+          "Ensure all elements meet accessibility standards, such as color contrast and touch target size."
+        ]
+      },
+      "collection-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 80,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "No \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Search functionality is not prominently displayed."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons clearly.",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Consider adding a badge to the cart icon to indicate item count."
+        ]
+      },
+      "product-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 80,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "The search bar is not prominently displayed.",
+          "Some text might not meet accessibility contrast standards."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Improve contrast for better readability.",
+          "Consider reorganizing elements for clearer visual hierarchy."
+        ]
+      },
+      "homepage-mobile": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Accessibility could be improved with better color contrast."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Include product listings with visible pricing on the homepage.",
+          "Add \"Add to Cart\" buttons to enhance e-commerce functionality.",
+          "Improve color contrast for better accessibility.",
+          "Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility."
+        ]
+      },
+      "product-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 70,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Search bar is not very prominent; could be more central.",
+          "Touch targets may not be optimized for mobile."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Enhance the search bar's visibility and accessibility.",
+          "Ensure touch targets are at least 44px for mobile optimization."
+        ]
+      },
+      "collection-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 60,
+          "accessibility": 70,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Mobile UX issues (score: 60/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search bar is not prominent.",
+          "Text size and touch targets may not be optimized for mobile."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Strengthen CTA prominence and focal points",
+          "Enhance the visibility of the search bar.",
+          "Ensure touch targets are at least 44px for mobile usability."
+        ]
+      },
+      "search-results-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 75,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Accessibility concerns (score: 65/100)",
+          "Missing \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Search bar is not prominently placed."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add \"Add to Cart\" buttons to each product listing.",
+          "Ensure search bar is easily accessible and prominent.",
+          "Fix localization issues to improve user experience.",
+          "Enhance visual hierarchy to guide users more effectively."
+        ]
+      },
+      "footer-section": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 80,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Accessibility could be improved with better color contrast."
+        ],
+        "recommendations": [
+          "Improve color contrast for better accessibility."
+        ]
+      }
+    },
+    "avg_scores": {
+      "search_visibility": 61,
+      "mobile_ux": 75,
+      "accessibility": 70,
+      "cta_hierarchy": 71
+    },
+    "issues": [
+      "search-results-desktop: Search not prominent enough (score: 60/100)",
+      "search-results-desktop: Mobile UX issues (score: 65/100)",
+      "search-results-desktop: Missing \"Add to Cart\" buttons, which are crucial for e-commerce functionality.",
+      "search-results-desktop: The search bar is not prominently placed or easily noticeable.",
+      "search-results-desktop: No visible voice search option.",
+      "cart-desktop: Search not prominent enough (score: 40/100)",
+      "cart-desktop: Accessibility concerns (score: 50/100)",
+      "cart-desktop: Weak visual hierarchy (score: 60/100)",
+      "cart-desktop: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Search functionality not prominent or visible.",
+      "cart-desktop: Accessibility issues due to missing text translations.",
+      "cart-mobile: Search not prominent enough (score: 60/100)",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-mobile: Search functionality not prominent.",
+      "homepage-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "header-navigation: Search not prominent enough (score: 30/100)",
+      "header-navigation: Weak visual hierarchy (score: 60/100)",
+      "header-navigation: No visible pricing or \"Add to Cart\" buttons.",
+      "header-navigation: Search functionality is not visible.",
+      "collection-page-mobile: Search not prominent enough (score: 50/100)",
+      "collection-page-mobile: No \"Add to Cart\" or \"Buy Now\" buttons.",
+      "collection-page-mobile: Search functionality is not prominently displayed.",
+      "product-page-mobile: Search not prominent enough (score: 60/100)",
+      "product-page-mobile: The search bar is not prominently displayed.",
+      "product-page-mobile: Some text might not meet accessibility contrast standards.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "homepage-mobile: Accessibility could be improved with better color contrast.",
+      "product-page-desktop: Search not prominent enough (score: 60/100)",
+      "product-page-desktop: Search bar is not very prominent; could be more central.",
+      "product-page-desktop: Touch targets may not be optimized for mobile.",
+      "collection-page-desktop: Search not prominent enough (score: 50/100)",
+      "collection-page-desktop: Mobile UX issues (score: 60/100)",
+      "collection-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "collection-page-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "collection-page-desktop: Search bar is not prominent.",
+      "collection-page-desktop: Text size and touch targets may not be optimized for mobile.",
+      "search-results-mobile: Search not prominent enough (score: 60/100)",
+      "search-results-mobile: Accessibility concerns (score: 65/100)",
+      "search-results-mobile: Missing \"Add to Cart\" or \"Buy Now\" buttons.",
+      "search-results-mobile: Search bar is not prominently placed.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible.",
+      "footer-section: Accessibility could be improved with better color contrast."
+    ],
+    "recommendations": [
+      "search-results-desktop: Make search bar larger and more visually prominent",
+      "search-results-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "search-results-desktop: *RECOMMENDATIONS:**",
+      "search-results-desktop: Add \"Add to Cart\" buttons to each product for better functionality.",
+      "search-results-desktop: Make the search bar more prominent, possibly larger or with a contrasting color.",
+      "search-results-desktop: Fix translation errors to enhance professionalism.",
+      "search-results-desktop: Improve visual hierarchy by using size and contrast to guide the user's eye.",
+      "search-results-desktop: Consider adding a voice search option for accessibility.",
+      "cart-desktop: Make search bar larger and more visually prominent",
+      "cart-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-desktop: Strengthen CTA prominence and focal points",
+      "cart-desktop: Enhance search visibility and functionality.",
+      "cart-desktop: Improve accessibility by ensuring all text is translated and readable.",
+      "cart-mobile: Make search bar larger and more visually prominent",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation issues to improve user experience.",
+      "cart-mobile: Include product listings with clear pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Make search bar more prominent to align with search-first goal.",
+      "cart-mobile: Ensure all text meets accessibility standards for contrast.",
+      "header-navigation: Make search bar larger and more visually prominent",
+      "header-navigation: Strengthen CTA prominence and focal points",
+      "header-navigation: Introduce a prominent search bar to enhance search-first design.",
+      "header-navigation: Ensure all elements meet accessibility standards, such as color contrast and touch target size.",
+      "collection-page-mobile: Make search bar larger and more visually prominent",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "collection-page-mobile: Display product pricing and \"Add to Cart\" buttons clearly.",
+      "collection-page-mobile: Enhance the visibility and accessibility of the search bar.",
+      "collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.",
+      "product-page-mobile: Make search bar larger and more visually prominent",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility and accessibility of the search bar.",
+      "product-page-mobile: Improve contrast for better readability.",
+      "product-page-mobile: Consider reorganizing elements for clearer visual hierarchy.",
+      "homepage-mobile: *RECOMMENDATIONS:**",
+      "homepage-mobile: Include product listings with visible pricing on the homepage.",
+      "homepage-mobile: Add \"Add to Cart\" buttons to enhance e-commerce functionality.",
+      "homepage-mobile: Improve color contrast for better accessibility.",
+      "homepage-mobile: Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility.",
+      "product-page-desktop: Make search bar larger and more visually prominent",
+      "product-page-desktop: Enhance the search bar's visibility and accessibility.",
+      "product-page-desktop: Ensure touch targets are at least 44px for mobile optimization.",
+      "collection-page-desktop: Make search bar larger and more visually prominent",
+      "collection-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "collection-page-desktop: Strengthen CTA prominence and focal points",
+      "collection-page-desktop: Enhance the visibility of the search bar.",
+      "collection-page-desktop: Ensure touch targets are at least 44px for mobile usability.",
+      "search-results-mobile: Make search bar larger and more visually prominent",
+      "search-results-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "search-results-mobile: *RECOMMENDATIONS:**",
+      "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "search-results-mobile: Add \"Add to Cart\" buttons to each product listing.",
+      "search-results-mobile: Ensure search bar is easily accessible and prominent.",
+      "search-results-mobile: Fix localization issues to improve user experience.",
+      "search-results-mobile: Enhance visual hierarchy to guide users more effectively.",
+      "footer-section: Improve color contrast for better accessibility."
+    ]
+  },
+  "critical_issues": []
+}
+### Alex (37/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 38,
+      "sections": 18,
+      "snippets": 26,
+      "assets": 46
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 11,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 16,
+    "critical_sections_present": 2,
+    "sections_details": {
+      "404.liquid": {
+        "file_size": 6817,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 35,
+        "performance_rating": 90
+      },
+      "search-hero.liquid": {
+        "file_size": 11144,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "collection.liquid": {
+        "file_size": 10527,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "search-results.liquid": {
+        "file_size": 20363,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 213,
+        "performance_rating": 75
+      },
+      "custom-section.liquid": {
+        "file_size": 1220,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 7,
+        "performance_rating": 100
+      },
+      "page.liquid": {
+        "file_size": 10499,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 55,
+        "performance_rating": 75
+      },
+      "blog.liquid": {
+        "file_size": 9379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 76,
+        "performance_rating": 75
+      },
+      "header.liquid": {
+        "file_size": 8794,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 42,
+        "performance_rating": 90
+      },
+      "product.liquid": {
+        "file_size": 8291,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 34,
+        "performance_rating": 90
+      },
+      "collections.liquid": {
+        "file_size": 2071,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "cart.liquid": {
+        "file_size": 14199,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 118,
+        "performance_rating": 75
+      },
+      "hello-world.liquid": {
+        "file_size": 3708,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "article.liquid": {
+        "file_size": 11872,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 69,
+        "performance_rating": 75
+      },
+      "password.liquid": {
+        "file_size": 11589,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 54,
+        "performance_rating": 75
+      },
+      "footer.liquid": {
+        "file_size": 15676,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 60,
+        "performance_rating": 75
+      },
+      "search.liquid": {
+        "file_size": 2038,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 85.9375
+  },
+  "assets_optimization": {
+    "total_assets": 46,
+    "total_size_mb": 0.53,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "product-card.css",
+          "size": 7332,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-hero.css",
+          "size": 15720,
+          "size_mb": 0.01
+        },
+        {
+          "name": "comparison.css",
+          "size": 13093,
+          "size_mb": 0.01
+        },
+        {
+          "name": "animations.css",
+          "size": 8992,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.css",
+          "size": 9822,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search.css",
+          "size": 14112,
+          "size_mb": 0.01
+        },
+        {
+          "name": "404.css",
+          "size": 7623,
+          "size_mb": 0.01
+        },
+        {
+          "name": "component-predictive-search.css",
+          "size": 2071,
+          "size_mb": 0.0
+        },
+        {
+          "name": "filters.css",
+          "size": 12617,
+          "size_mb": 0.01
+        },
+        {
+          "name": "cart.css",
+          "size": 12565,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-results.css",
+          "size": 15534,
+          "size_mb": 0.01
+        },
+        {
+          "name": "page.css",
+          "size": 10254,
+          "size_mb": 0.01
+        },
+        {
+          "name": "critical.css",
+          "size": 2099,
+          "size_mb": 0.0
+        },
+        {
+          "name": "article.css",
+          "size": 13336,
+          "size_mb": 0.01
+        },
+        {
+          "name": "design-tokens.css",
+          "size": 9034,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-collection.css",
+          "size": 12279,
+          "size_mb": 0.01
+        },
+        {
+          "name": "forms.css",
+          "size": 12650,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-results.css",
+          "size": 8701,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-header.css",
+          "size": 6807,
+          "size_mb": 0.01
+        },
+        {
+          "name": "buttons.css",
+          "size": 12998,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-product.css",
+          "size": 9433,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password.css",
+          "size": 10392,
+          "size_mb": 0.01
+        },
+        {
+          "name": "utilities.css",
+          "size": 18126,
+          "size_mb": 0.02
+        },
+        {
+          "name": "blog.css",
+          "size": 10672,
+          "size_mb": 0.01
+        },
+        {
+          "name": "base.css",
+          "size": 9514,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-footer.css",
+          "size": 9791,
+          "size_mb": 0.01
+        }
+      ],
+      "js_files": [
+        {
+          "name": "query-normalizer.js",
+          "size": 11952,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-intelligence.js",
+          "size": 19212,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-hero.js",
+          "size": 6346,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.js",
+          "size": 20975,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-engine.js",
+          "size": 21337,
+          "size_mb": 0.02
+        },
+        {
+          "name": "cart.js",
+          "size": 8195,
+          "size_mb": 0.01
+        },
+        {
+          "name": "predictive-search.js",
+          "size": 3446,
+          "size_mb": 0.0
+        },
+        {
+          "name": "unified-filters.js",
+          "size": 34141,
+          "size_mb": 0.03
+        },
+        {
+          "name": "related-products.js",
+          "size": 7692,
+          "size_mb": 0.01
+        }
+      ],
+      "images": [
+        {
+          "name": "icon-cart.svg",
+          "size": 496,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shoppy-x-ray.svg",
+          "size": 24552,
+          "size_mb": 0.02
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "icon-account.svg",
+          "size": 427,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": []
+    },
+    "emmso_architecture": {
+      "emmso_css_present": false,
+      "emmso_js_present": false,
+      "single_file_architecture": false
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "screenshot_shopify_analysis": {
+    "screenshots_analyzed": 12,
+    "shopify_score": 75,
+    "source": "vision_ai_processed_shopify",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 65
+        },
+        "issues": [
+          "Missing \"Add to Cart\" buttons, which are crucial for e-commerce functionality."
+        ],
+        "recommendations": [
+          "Add \"Add to Cart\" buttons to each product for better functionality."
+        ]
+      },
+      "cart-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 60,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Lack of clear shopping intent or product display."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Fix translation errors to improve user comprehension.",
+          "Add visible product pricing and \"Add to Cart\" buttons.",
+          "Enhance search visibility and functionality.",
+          "Improve accessibility by ensuring all text is translated and readable."
+        ]
+      },
+      "cart-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 70,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "Missing translations for cart messages.",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Lack of product visuals or descriptions."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to improve user experience.",
+          "Include product listings with clear pricing and \"Add to Cart\" buttons.",
+          "Make search bar more prominent to align with search-first goal.",
+          "Ensure all text meets accessibility standards for contrast."
+        ]
+      },
+      "homepage-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Shopping intent is not immediately clear without product listings."
+        ],
+        "recommendations": [
+          "Display product pricing and \"Add to Cart\" buttons on the homepage.",
+          "Enhance the visibility of shopping elements to communicate the e-commerce nature more clearly.",
+          "Consider adding featured products or categories to highlight shopping options."
+        ]
+      },
+      "header-navigation": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 60,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Cart icon is small and lacks prominence.",
+          "No visible pricing or \"Add to Cart\" buttons."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add visible pricing and \"Add to Cart\" buttons to reinforce shopping intent.",
+          "Introduce a prominent search bar to enhance search-first design.",
+          "Ensure all elements meet accessibility standards, such as color contrast and touch target size."
+        ]
+      },
+      "collection-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing visible.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Cart icon is small and might not be immediately noticeable."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons clearly.",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Consider adding a badge to the cart icon to indicate item count."
+        ]
+      },
+      "product-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Shopping cart icon is missing, which is critical for an e-commerce platform."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Improve contrast for better readability.",
+          "Consider reorganizing elements for clearer visual hierarchy."
+        ]
+      },
+      "homepage-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Shopping intent is not immediately clear without product listings."
+        ],
+        "recommendations": [
+          "Include product listings with visible pricing on the homepage.",
+          "Add \"Add to Cart\" buttons to enhance e-commerce functionality.",
+          "Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility."
+        ]
+      },
+      "product-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "Cart icon is small and not very prominent."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the search bar's visibility and accessibility.",
+          "Improve visual hierarchy by adjusting size and contrast for key elements.",
+          "Ensure touch targets are at least 44px for mobile optimization."
+        ]
+      },
+      "collection-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 60,
+          "mobile_commerce": 60
+        },
+        "issues": [
+          "Product display hierarchy weak (score: 60/100)",
+          "Cart icon is small and lacks prominence.",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "Improve product title/price/CTA prominence",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons clearly.",
+          "Enhance the visibility of the search bar.",
+          "Improve visual hierarchy with better use of contrast and spacing.",
+          "Ensure touch targets are at least 44px for mobile usability."
+        ]
+      },
+      "search-results-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 70,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "No visible shopping cart icon.",
+          "Missing \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Lack of clear shopping indicators (e.g., cart count badge)."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add \"Add to Cart\" buttons to each product listing."
+        ]
+      },
+      "footer-section": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Lack of immediate product display may confuse users about the shopping intent."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Display product pricing and \"Add to Cart\" buttons prominently.",
+          "Enhance the visibility of the shopping cart icon with a badge for items in the cart.",
+          "Improve color contrast for better accessibility.",
+          "Consider adding product images or categories to emphasize shopping intent."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 80,
+      "section_hierarchy": 71,
+      "mobile_commerce": 75
+    },
+    "issues": [
+      "search-results-desktop: Missing \"Add to Cart\" buttons, which are crucial for e-commerce functionality.",
+      "cart-desktop: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Lack of clear shopping intent or product display.",
+      "cart-mobile: Missing translations for cart messages.",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-mobile: Lack of product visuals or descriptions.",
+      "homepage-desktop: No product pricing visible on the homepage.",
+      "homepage-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "homepage-desktop: Shopping intent is not immediately clear without product listings.",
+      "header-navigation: Cart icon is small and lacks prominence.",
+      "header-navigation: No visible pricing or \"Add to Cart\" buttons.",
+      "collection-page-mobile: No product pricing visible.",
+      "collection-page-mobile: No \"Add to Cart\" or \"Buy Now\" buttons.",
+      "collection-page-mobile: Cart icon is small and might not be immediately noticeable.",
+      "product-page-mobile: Shopping cart icon is missing, which is critical for an e-commerce platform.",
+      "homepage-mobile: No product pricing visible on the homepage.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "homepage-mobile: Shopping intent is not immediately clear without product listings.",
+      "product-page-desktop: Cart icon is small and not very prominent.",
+      "collection-page-desktop: Product display hierarchy weak (score: 60/100)",
+      "collection-page-desktop: Cart icon is small and lacks prominence.",
+      "collection-page-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "search-results-mobile: No visible shopping cart icon.",
+      "search-results-mobile: Missing \"Add to Cart\" or \"Buy Now\" buttons.",
+      "search-results-mobile: Lack of clear shopping indicators (e.g., cart count badge).",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible.",
+      "footer-section: Lack of immediate product display may confuse users about the shopping intent."
+    ],
+    "recommendations": [
+      "search-results-desktop: Add \"Add to Cart\" buttons to each product for better functionality.",
+      "cart-desktop: *RECOMMENDATIONS:**",
+      "cart-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "cart-desktop: Fix translation errors to improve user comprehension.",
+      "cart-desktop: Add visible product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Enhance search visibility and functionality.",
+      "cart-desktop: Improve accessibility by ensuring all text is translated and readable.",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation issues to improve user experience.",
+      "cart-mobile: Include product listings with clear pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Make search bar more prominent to align with search-first goal.",
+      "cart-mobile: Ensure all text meets accessibility standards for contrast.",
+      "homepage-desktop: Display product pricing and \"Add to Cart\" buttons on the homepage.",
+      "homepage-desktop: Enhance the visibility of shopping elements to communicate the e-commerce nature more clearly.",
+      "homepage-desktop: Consider adding featured products or categories to highlight shopping options.",
+      "header-navigation: *RECOMMENDATIONS:**",
+      "header-navigation: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "header-navigation: Add visible pricing and \"Add to Cart\" buttons to reinforce shopping intent.",
+      "header-navigation: Introduce a prominent search bar to enhance search-first design.",
+      "header-navigation: Ensure all elements meet accessibility standards, such as color contrast and touch target size.",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "collection-page-mobile: Display product pricing and \"Add to Cart\" buttons clearly.",
+      "collection-page-mobile: Enhance the visibility and accessibility of the search bar.",
+      "collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility and accessibility of the search bar.",
+      "product-page-mobile: Improve contrast for better readability.",
+      "product-page-mobile: Consider reorganizing elements for clearer visual hierarchy.",
+      "homepage-mobile: Include product listings with visible pricing on the homepage.",
+      "homepage-mobile: Add \"Add to Cart\" buttons to enhance e-commerce functionality.",
+      "homepage-mobile: Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility.",
+      "product-page-desktop: *RECOMMENDATIONS:**",
+      "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-desktop: Enhance the search bar's visibility and accessibility.",
+      "product-page-desktop: Improve visual hierarchy by adjusting size and contrast for key elements.",
+      "product-page-desktop: Ensure touch targets are at least 44px for mobile optimization.",
+      "collection-page-desktop: Improve product title/price/CTA prominence",
+      "collection-page-desktop: *RECOMMENDATIONS:**",
+      "collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "collection-page-desktop: Display product pricing and \"Add to Cart\" buttons clearly.",
+      "collection-page-desktop: Enhance the visibility of the search bar.",
+      "collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.",
+      "collection-page-desktop: Ensure touch targets are at least 44px for mobile usability.",
+      "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "search-results-mobile: Add \"Add to Cart\" buttons to each product listing.",
+      "footer-section: *RECOMMENDATIONS:**",
+      "footer-section: Display product pricing and \"Add to Cart\" buttons prominently.",
+      "footer-section: Enhance the visibility of the shopping cart icon with a badge for items in the cart.",
+      "footer-section: Improve color contrast for better accessibility.",
+      "footer-section: Consider adding product images or categories to emphasize shopping intent."
+    ]
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 269.1,
+    "total_js_size_kb": 130.2,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 360.86,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "screenshot_performance_analysis": {
+    "screenshots_analyzed": 12,
+    "performance_score": 74,
+    "source": "vision_ai_processed_performance",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 65,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "cart-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 70,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "cart-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "collection-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-mobile": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 85,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 70,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 60,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "search-results-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 75,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "footer-section": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": [
+          "Consider adding product images or categories to emphasize shopping intent."
+        ]
+      }
+    },
+    "avg_scores": {
+      "layout_stability": 71,
+      "design_efficiency": 81,
+      "asset_optimization": 75
+    },
+    "issues": [
+      "cart-desktop: Layout stability concerns (hierarchy: 60/100)",
+      "header-navigation: Layout stability concerns (hierarchy: 60/100)",
+      "collection-page-desktop: Layout stability concerns (hierarchy: 60/100)"
+    ],
+    "recommendations": [
+      "cart-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "header-navigation: Stabilize layout to prevent Cumulative Layout Shift",
+      "collection-page-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "footer-section: Consider adding product images or categories to emphasize shopping intent."
+    ]
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 269.1,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "screenshot_design_analysis": {
+    "screenshots_analyzed": 12,
+    "design_score": 74,
+    "source": "vision_ai_processed_design",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 75
+        },
+        "issues": [],
+        "recommendations": [
+          "Make the search bar more prominent, possibly larger or with a contrasting color.",
+          "Improve visual hierarchy by using size and contrast to guide the user's eye."
+        ]
+      },
+      "cart-desktop": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 60,
+          "accessibility": 50,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Accessibility/contrast issues (score: 50/100)"
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility"
+        ]
+      },
+      "cart-mobile": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Lack of product visuals or descriptions."
+        ],
+        "recommendations": []
+      },
+      "homepage-desktop": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 60,
+          "accessibility": 70,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)"
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Introduce a prominent search bar to enhance search-first design.",
+          "Ensure all elements meet accessibility standards, such as color contrast and touch target size."
+        ]
+      },
+      "collection-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 75
+        },
+        "issues": [
+          "Visual hierarchy could be improved for better content prioritization.",
+          "Some text might not meet accessibility contrast standards."
+        ],
+        "recommendations": [
+          "Consider reorganizing elements for clearer visual hierarchy."
+        ]
+      },
+      "homepage-mobile": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 75,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility could be improved with better color contrast."
+        ],
+        "recommendations": [
+          "Improve color contrast for better accessibility."
+        ]
+      },
+      "product-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Visual hierarchy could be improved for better flow."
+        ],
+        "recommendations": [
+          "Improve visual hierarchy by adjusting size and contrast for key elements."
+        ]
+      },
+      "collection-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 60,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Visual hierarchy could be improved for better flow."
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve visual hierarchy with better use of contrast and spacing."
+        ]
+      },
+      "search-results-mobile": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)"
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Enhance visual hierarchy to guide users more effectively."
+        ]
+      },
+      "footer-section": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility could be improved with better color contrast."
+        ],
+        "recommendations": [
+          "Improve color contrast for better accessibility."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 80,
+      "visual_hierarchy": 71,
+      "accessibility": 70,
+      "brutalist_simplicity": 81
+    },
+    "issues": [
+      "cart-desktop: Weak visual hierarchy (score: 60/100)",
+      "cart-desktop: Accessibility/contrast issues (score: 50/100)",
+      "cart-mobile: Lack of product visuals or descriptions.",
+      "header-navigation: Weak visual hierarchy (score: 60/100)",
+      "product-page-mobile: Visual hierarchy could be improved for better content prioritization.",
+      "product-page-mobile: Some text might not meet accessibility contrast standards.",
+      "homepage-mobile: Accessibility could be improved with better color contrast.",
+      "product-page-desktop: Visual hierarchy could be improved for better flow.",
+      "collection-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "collection-page-desktop: Visual hierarchy could be improved for better flow.",
+      "search-results-mobile: Accessibility/contrast issues (score: 65/100)",
+      "footer-section: Accessibility could be improved with better color contrast."
+    ],
+    "recommendations": [
+      "search-results-desktop: Make the search bar more prominent, possibly larger or with a contrasting color.",
+      "search-results-desktop: Improve visual hierarchy by using size and contrast to guide the user's eye.",
+      "cart-desktop: Strengthen focal points using size and contrast",
+      "cart-desktop: Improve text contrast and color accessibility",
+      "header-navigation: Strengthen focal points using size and contrast",
+      "header-navigation: Introduce a prominent search bar to enhance search-first design.",
+      "header-navigation: Ensure all elements meet accessibility standards, such as color contrast and touch target size.",
+      "product-page-mobile: Consider reorganizing elements for clearer visual hierarchy.",
+      "homepage-mobile: Improve color contrast for better accessibility.",
+      "product-page-desktop: Improve visual hierarchy by adjusting size and contrast for key elements.",
+      "collection-page-desktop: Strengthen focal points using size and contrast",
+      "collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.",
+      "search-results-mobile: Improve text contrast and color accessibility",
+      "search-results-mobile: Enhance visual hierarchy to guide users more effectively.",
+      "footer-section: Improve color contrast for better accessibility."
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Vision**: search-results-desktop: *RECOMMENDATIONS:**
+**Vision**: search-results-desktop: Add "Add to Cart" buttons to each product for better functionality.
+**Vision**: search-results-desktop: Make the search bar more prominent, possibly larger or with a contrasting color.
+**Vision**: search-results-desktop: Fix translation errors to enhance professionalism.
+**Vision**: search-results-desktop: Improve visual hierarchy by using size and contrast to guide the user's eye.
+**Vision**: search-results-desktop: Consider adding a voice search option for accessibility.
+**Vision**: cart-desktop: *RECOMMENDATIONS:**
+**Vision**: cart-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: cart-desktop: Fix translation errors to improve user comprehension.
+**Vision**: cart-desktop: Add visible product pricing and "Add to Cart" buttons.
+**Vision**: cart-desktop: Enhance search visibility and functionality.
+**Vision**: cart-desktop: Improve accessibility by ensuring all text is translated and readable.
+**Vision**: cart-mobile: *RECOMMENDATIONS:**
+**Vision**: cart-mobile: Fix translation issues to improve user experience.
+**Vision**: cart-mobile: Include product listings with clear pricing and "Add to Cart" buttons.
+**Vision**: cart-mobile: Make search bar more prominent to align with search-first goal.
+**Vision**: cart-mobile: Ensure all text meets accessibility standards for contrast.
+**Vision**: homepage-desktop: *RECOMMENDATIONS:**
+**Vision**: homepage-desktop: Display product pricing and "Add to Cart" buttons on the homepage.
+**Vision**: homepage-desktop: Enhance the visibility of shopping elements to communicate the e-commerce nature more clearly.
+**Vision**: homepage-desktop: Consider adding featured products or categories to highlight shopping options.
+**Vision**: header-navigation: *RECOMMENDATIONS:**
+**Vision**: header-navigation: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: header-navigation: Add visible pricing and "Add to Cart" buttons to reinforce shopping intent.
+**Vision**: header-navigation: Introduce a prominent search bar to enhance search-first design.
+**Vision**: header-navigation: Ensure all elements meet accessibility standards, such as color contrast and touch target size.
+**Vision**: collection-page-mobile: *RECOMMENDATIONS:**
+**Vision**: collection-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: collection-page-mobile: Display product pricing and "Add to Cart" buttons clearly.
+**Vision**: collection-page-mobile: Enhance the visibility and accessibility of the search bar.
+**Vision**: collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.
+**Vision**: product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: product-page-mobile: *RECOMMENDATIONS:**
+**Vision**: product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-mobile: Enhance the visibility and accessibility of the search bar.
+**Vision**: product-page-mobile: Improve contrast for better readability.
+**Vision**: product-page-mobile: Consider reorganizing elements for clearer visual hierarchy.
+**Vision**: homepage-mobile: *RECOMMENDATIONS:**
+**Vision**: homepage-mobile: Include product listings with visible pricing on the homepage.
+**Vision**: homepage-mobile: Add "Add to Cart" buttons to enhance e-commerce functionality.
+**Vision**: homepage-mobile: Improve color contrast for better accessibility.
+**Vision**: homepage-mobile: Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility.
+**Vision**: product-page-desktop: *RECOMMENDATIONS:**
+**Vision**: product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-desktop: Enhance the search bar's visibility and accessibility.
+**Vision**: product-page-desktop: Improve visual hierarchy by adjusting size and contrast for key elements.
+**Vision**: product-page-desktop: Ensure touch targets are at least 44px for mobile optimization.
+**Vision**: collection-page-desktop: *RECOMMENDATIONS:**
+**Vision**: collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: collection-page-desktop: Display product pricing and "Add to Cart" buttons clearly.
+**Vision**: collection-page-desktop: Enhance the visibility of the search bar.
+**Vision**: collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.
+**Vision**: collection-page-desktop: Ensure touch targets are at least 44px for mobile usability.
+**Vision**: search-results-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: search-results-mobile: *RECOMMENDATIONS:**
+**Vision**: search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: search-results-mobile: Add "Add to Cart" buttons to each product listing.
+**Vision**: search-results-mobile: Ensure search bar is easily accessible and prominent.
+**Vision**: search-results-mobile: Fix localization issues to improve user experience.
+**Vision**: search-results-mobile: Enhance visual hierarchy to guide users more effectively.
+**Vision**: footer-section: *RECOMMENDATIONS:**
+**Vision**: footer-section: Display product pricing and "Add to Cart" buttons prominently.
+**Vision**: footer-section: Enhance the visibility of the shopping cart icon with a badge for items in the cart.
+**Vision**: footer-section: Improve color contrast for better accessibility.
+**Vision**: footer-section: Consider adding product images or categories to emphasize shopping intent.
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Alex**: {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 269.1KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 72 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🚨 Phase 1: CRITICAL - Immediate Action Required
+
+**Priority**: BLOCKER - Must fix before launch
+**Timeline**: This week
+
+- [ ] **Vision** (Score: 71/100): product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 37/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Alex** (Score: 37/100): {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Vision** (Score: 71/100): search-results-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Add "Add to Cart" buttons to each product for better functionality.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Make the search bar more prominent, possibly larger or with a contrasting color.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Fix translation errors to enhance professionalism.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Improve visual hierarchy by using size and contrast to guide the user's eye.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Consider adding a voice search option for accessibility.
+- [ ] **Vision** (Score: 71/100): cart-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): cart-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): cart-desktop: Fix translation errors to improve user comprehension.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Add visible product pricing and "Add to Cart" buttons.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Enhance search visibility and functionality.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Improve accessibility by ensuring all text is translated and readable.
+- [ ] **Vision** (Score: 71/100): cart-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): cart-mobile: Fix translation issues to improve user experience.
+- [ ] **Vision** (Score: 71/100): cart-mobile: Include product listings with clear pricing and "Add to Cart" buttons.
+- [ ] **Vision** (Score: 71/100): cart-mobile: Make search bar more prominent to align with search-first goal.
+- [ ] **Vision** (Score: 71/100): cart-mobile: Ensure all text meets accessibility standards for contrast.
+- [ ] **Vision** (Score: 71/100): homepage-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): homepage-desktop: Display product pricing and "Add to Cart" buttons on the homepage.
+- [ ] **Vision** (Score: 71/100): homepage-desktop: Enhance the visibility of shopping elements to communicate the e-commerce nature more clearly.
+- [ ] **Vision** (Score: 71/100): homepage-desktop: Consider adding featured products or categories to highlight shopping options.
+- [ ] **Vision** (Score: 71/100): header-navigation: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): header-navigation: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): header-navigation: Add visible pricing and "Add to Cart" buttons to reinforce shopping intent.
+- [ ] **Vision** (Score: 71/100): header-navigation: Introduce a prominent search bar to enhance search-first design.
+- [ ] **Vision** (Score: 71/100): header-navigation: Ensure all elements meet accessibility standards, such as color contrast and touch target size.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Display product pricing and "Add to Cart" buttons clearly.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Enhance the visibility and accessibility of the search bar.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.
+- [ ] **Vision** (Score: 71/100): product-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Enhance the visibility and accessibility of the search bar.
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Improve contrast for better readability.
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Consider reorganizing elements for clearer visual hierarchy.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Include product listings with visible pricing on the homepage.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Add "Add to Cart" buttons to enhance e-commerce functionality.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Improve color contrast for better accessibility.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Ensure the shopping cart icon is prominent and possibly add a cart count badge for better visibility.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Enhance the search bar's visibility and accessibility.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Improve visual hierarchy by adjusting size and contrast for key elements.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Ensure touch targets are at least 44px for mobile optimization.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Display product pricing and "Add to Cart" buttons clearly.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Enhance the visibility of the search bar.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Ensure touch targets are at least 44px for mobile usability.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Add "Add to Cart" buttons to each product listing.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Ensure search bar is easily accessible and prominent.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Fix localization issues to improve user experience.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Enhance visual hierarchy to guide users more effectively.
+- [ ] **Vision** (Score: 71/100): footer-section: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): footer-section: Display product pricing and "Add to Cart" buttons prominently.
+- [ ] **Vision** (Score: 71/100): footer-section: Enhance the visibility of the shopping cart icon with a badge for items in the cart.
+- [ ] **Vision** (Score: 71/100): footer-section: Improve color contrast for better accessibility.
+- [ ] **Vision** (Score: 71/100): footer-section: Consider adding product images or categories to emphasize shopping intent.
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 269.1KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 2 tasks
+- 🔥 High: 5 tasks  
+- ⚡ Medium: 65 tasks
+- 💡 Low: 0 tasks
+- **Total**: 72 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 17:06:55
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 50/100
+
+#### Findings
+
+### Vision (71/100)
+
+{
+  "visual_analysis": {
+    "search-results-desktop": {
+      "screen": "search-results-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 65/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 71/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (Located in the header, top right, medium size)\n- Pricing visible? YES\n- Add to Cart buttons? NO\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- \"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.\n- Translation issues in the search results title.\n- Search bar is not very prominent.\n- Potentially insufficient touch target sizes for mobile.\n\n**RECOMMENDATIONS:**\n- Add \"Add to Cart\" buttons below each product to enhance shopping functionality.\n- Fix translation errors to improve user experience.\n- Make the search bar more prominent to align with the search-first design goal.\n- Ensure all touch targets meet the 44px guideline for mobile usability.\n\n**HIGHLIGHTS:**\n- Clear pricing under each product, enhancing transparency.\n- Consistent branding with visible logo and color scheme.\n- Minimalist design aligns with the brutalist simplicity goal.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 65,
+        "brutalist_simplicity": 75,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "\"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+        "Translation issues in the search results title.",
+        "Search bar is not very prominent.",
+        "Potentially insufficient touch target sizes for mobile."
+      ],
+      "recommendations": [
+        "search-results-desktop: *RECOMMENDATIONS:**",
+        "search-results-desktop: Add \"Add to Cart\" buttons below each product to enhance shopping functionality.",
+        "search-results-desktop: Fix translation errors to improve user experience.",
+        "search-results-desktop: Make the search bar more prominent to align with the search-first design goal.",
+        "search-results-desktop: Ensure all touch targets meet the 44px guideline for mobile usability."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clear pricing under each product, enhancing transparency.",
+        "Consistent branding with visible logo and color scheme.",
+        "Minimalist design aligns with the brutalist simplicity goal."
+      ],
+      "score": 71
+    },
+    "cart-desktop": {
+      "screen": "cart-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 50/100 (CRITICAL - Cart icon visible but lacks other e-commerce elements)\n- Visual Hierarchy: 60/100\n- Search-First Design: 40/100\n- Mobile-First: 60/100\n- Brutalist Simplicity: 70/100\n- Accessibility: 50/100\n- Brand Consistency: 70/100\n- OVERALL: 57/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- Missing translations for cart messages.\n- No visible product pricing or \"Add to Cart\" buttons.\n- Search functionality not prominent.\n- Lack of clear shopping indicators beyond the cart icon.\n- Accessibility issues with missing text translations.\n\n**RECOMMENDATIONS:**\n- Ensure translations are complete for all text elements.\n- Add visible product pricing and \"Add to Cart\" buttons.\n- Make search bar more prominent and accessible.\n- Increase the size and visibility of the cart icon.\n- Improve accessibility by ensuring all text is readable and properly translated.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Consistent branding with logo and footer design.\n\nFocus on enhancing e-commerce visibility and accessibility to improve user experience and functionality.",
+      "scores": {
+        "ecommerce_visibility": 50,
+        "visual_hierarchy": 60,
+        "search_first": 40,
+        "mobile_first": 60,
+        "brutalist_simplicity": 70,
+        "accessibility": 50,
+        "brand_consistency": 70
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for cart messages.",
+        "No visible product pricing or \"Add to Cart\" buttons.",
+        "Search functionality not prominent.",
+        "Lack of clear shopping indicators beyond the cart icon.",
+        "Accessibility issues with missing text translations."
+      ],
+      "recommendations": [
+        "cart-desktop: *RECOMMENDATIONS:**",
+        "cart-desktop: Ensure translations are complete for all text elements.",
+        "cart-desktop: Add visible product pricing and \"Add to Cart\" buttons.",
+        "cart-desktop: Make search bar more prominent and accessible.",
+        "cart-desktop: Increase the size and visibility of the cart icon.",
+        "cart-desktop: Improve accessibility by ensuring all text is readable and properly translated."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Consistent branding with logo and footer design."
+      ],
+      "score": 57
+    },
+    "cart-mobile": {
+      "screen": "cart-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 65/100\n- Brand Consistency: 80/100\n- OVERALL: 73/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Missing translations for cart messages.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality not prominent.\n- Accessibility issues with translation errors affecting usability.\n\n**RECOMMENDATIONS:**\n- Fix translation errors to improve clarity and accessibility.\n- Ensure product pricing and \"Add to Cart\" buttons are visible.\n- Make search bar more prominent to align with search-first goal.\n- Improve accessibility by ensuring all text is readable and has sufficient contrast.\n\n**HIGHLIGHTS:**\n- Cart icon is clearly visible and accessible.\n- Clean, minimal design aligns with brutalist simplicity.\n- Mobile-friendly layout with touch-friendly elements.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 75,
+        "accessibility": 65,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for cart messages.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality not prominent.",
+        "Accessibility issues with translation errors affecting usability."
+      ],
+      "recommendations": [
+        "cart-mobile: *RECOMMENDATIONS:**",
+        "cart-mobile: Fix translation errors to improve clarity and accessibility.",
+        "cart-mobile: Ensure product pricing and \"Add to Cart\" buttons are visible.",
+        "cart-mobile: Make search bar more prominent to align with search-first goal.",
+        "cart-mobile: Improve accessibility by ensuring all text is readable and has sufficient contrast."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Cart icon is clearly visible and accessible.",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly layout with touch-friendly elements."
+      ],
+      "score": 73
+    },
+    "homepage-desktop": {
+      "screen": "homepage-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 60/100 (CRITICAL - Cart icon visible but lacks other e-commerce elements)\n- Visual Hierarchy: 80/100\n- Search-First Design: 90/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 77/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible.\n- Cart icon is small and may not be prominent enough.\n- Lack of immediate shopping cues beyond the cart icon.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Display product pricing and \"Add to Cart\" buttons on the homepage.\n- Enhance visual cues that indicate shopping functionality.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean, minimalistic design aligns with brutalist simplicity.\n- Good visual hierarchy with clear focal points and flow.",
+      "scores": {
+        "ecommerce_visibility": 60,
+        "visual_hierarchy": 80,
+        "search_first": 90,
+        "mobile_first": 70,
+        "brutalist_simplicity": 85,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Cart icon is small and may not be prominent enough.",
+        "Lack of immediate shopping cues beyond the cart icon."
+      ],
+      "recommendations": [
+        "homepage-desktop: *RECOMMENDATIONS:**",
+        "homepage-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "homepage-desktop: Display product pricing and \"Add to Cart\" buttons on the homepage.",
+        "homepage-desktop: Enhance visual cues that indicate shopping functionality."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean, minimalistic design aligns with brutalist simplicity.",
+        "Good visual hierarchy with clear focal points and flow."
+      ],
+      "score": 77
+    },
+    "header-navigation": {
+      "screen": "header-navigation",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 77/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality not prominently visible.\n- Minimal indication of shopping intent beyond the cart icon.\n\n**RECOMMENDATIONS:**\n- Add visible product pricing and \"Add to Cart\" buttons to reinforce shopping intent.\n- Make search bar more prominent and accessible.\n- Consider adding a cart count badge to indicate items in the cart.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Consistent branding with clear logo placement.\n- Cart icon is visible and recognizable.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 75,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality not prominently visible.",
+        "Minimal indication of shopping intent beyond the cart icon."
+      ],
+      "recommendations": [
+        "header-navigation: *RECOMMENDATIONS:**",
+        "header-navigation: Add visible product pricing and \"Add to Cart\" buttons to reinforce shopping intent.",
+        "header-navigation: Make search bar more prominent and accessible.",
+        "header-navigation: Consider adding a cart count badge to indicate items in the cart."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Consistent branding with clear logo placement.",
+        "Cart icon is visible and recognizable."
+      ],
+      "score": 77
+    },
+    "collection-page-mobile": {
+      "screen": "collection-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 75/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 70/100\n- Brand Consistency: 85/100\n- OVERALL: 78/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, clear and appropriately sized)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible.\n- No \"Add to Cart\" buttons present.\n- Search bar not prominently visible.\n- Accessibility features like color contrast and focus states need improvement.\n\n**RECOMMENDATIONS:**\n- Display product pricing clearly on the page.\n- Add \"Add to Cart\" buttons for immediate purchasing options.\n- Make the search bar more prominent and accessible.\n- Improve color contrast for better accessibility.\n- Ensure all interactive elements have clear focus states.\n\n**HIGHLIGHTS:**\n- The cart icon is clearly visible and well-placed.\n- The design follows a brutalist simplicity, focusing on function.\n- Mobile-friendly with touch-friendly targets and thumb-reachable navigation.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 75,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 70,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible.",
+        "No \"Add to Cart\" buttons present.",
+        "Search bar not prominently visible.",
+        "Accessibility features like color contrast and focus states need improvement."
+      ],
+      "recommendations": [
+        "collection-page-mobile: *RECOMMENDATIONS:**",
+        "collection-page-mobile: Display product pricing clearly on the page.",
+        "collection-page-mobile: Add \"Add to Cart\" buttons for immediate purchasing options.",
+        "collection-page-mobile: Make the search bar more prominent and accessible.",
+        "collection-page-mobile: Improve color contrast for better accessibility.",
+        "collection-page-mobile: Ensure all interactive elements have clear focus states."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The cart icon is clearly visible and well-placed.",
+        "The design follows a brutalist simplicity, focusing on function.",
+        "Mobile-friendly with touch-friendly targets and thumb-reachable navigation."
+      ],
+      "score": 78
+    },
+    "product-page-mobile": {
+      "screen": "product-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 85/100\n- OVERALL: 63/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No visible shopping cart icon, which is critical for e-commerce functionality.\n- The \"Add to Cart\" button is present but not prominent enough.\n- Lack of immediate shopping intent communication.\n- Search bar is not prominently placed or easily accessible.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility and prominence of the \"Add to Cart\" button.\n- Improve the search bar's visibility and accessibility, possibly by placing it at the top.\n- Consider adding a cart count badge if items are in the cart.\n\n**HIGHLIGHTS:**\n- The design maintains a clean and minimalistic look, aligning with the brutalist simplicity goal.\n- Consistent use of colors and typography supports brand consistency.\n- Touch targets appear to be thumb-friendly and responsive.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 75,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No visible shopping cart icon, which is critical for e-commerce functionality.",
+        "The \"Add to Cart\" button is present but not prominent enough.",
+        "Lack of immediate shopping intent communication.",
+        "Search bar is not prominently placed or easily accessible."
+      ],
+      "recommendations": [
+        "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "product-page-mobile: *RECOMMENDATIONS:**",
+        "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-mobile: Enhance the visibility and prominence of the \"Add to Cart\" button.",
+        "product-page-mobile: Improve the search bar's visibility and accessibility, possibly by placing it at the top.",
+        "product-page-mobile: Consider adding a cart count badge if items are in the cart."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design maintains a clean and minimalistic look, aligning with the brutalist simplicity goal.",
+        "Consistent use of colors and typography supports brand consistency.",
+        "Touch targets appear to be thumb-friendly and responsive."
+      ],
+      "score": 63
+    },
+    "homepage-mobile": {
+      "screen": "homepage-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 90/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 85/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO (not visible in the screenshot)\n- Add to Cart buttons? NO (not visible in the screenshot)\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Product pricing is not visible in the screenshot.\n- No \"Add to Cart\" or \"Buy Now\" buttons are visible.\n- Accessibility could be improved with clearer visual states for interactive elements.\n\n**RECOMMENDATIONS:**\n- Ensure product pricing and \"Add to Cart\" buttons are prominently displayed on the homepage.\n- Enhance accessibility by providing clearer focus and hover states.\n- Consider adding a cart count badge to the cart icon if items are present.\n\n**HIGHLIGHTS:**\n- The search bar is prominent and easy to find, supporting the search-first design goal.\n- The design is clean and minimal, aligning with the brutalist simplicity goal.\n- The navigation and touch targets appear thumb-friendly and responsive.\n- Brand identity is clear with consistent use of colors and typography.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 90,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Product pricing is not visible in the screenshot.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons are visible.",
+        "Accessibility could be improved with clearer visual states for interactive elements."
+      ],
+      "recommendations": [
+        "homepage-mobile: *RECOMMENDATIONS:**",
+        "homepage-mobile: Ensure product pricing and \"Add to Cart\" buttons are prominently displayed on the homepage.",
+        "homepage-mobile: Enhance accessibility by providing clearer focus and hover states.",
+        "homepage-mobile: Consider adding a cart count badge to the cart icon if items are present."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominent and easy to find, supporting the search-first design goal.",
+        "The design is clean and minimal, aligning with the brutalist simplicity goal.",
+        "The navigation and touch targets appear thumb-friendly and responsive.",
+        "Brand identity is clear with consistent use of colors and typography."
+      ],
+      "score": 85
+    },
+    "product-page-desktop": {
+      "screen": "product-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 50/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 75/100\n- OVERALL: 58/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- No visible shopping cart icon in the header.\n- Search bar is not prominently placed.\n- Touch targets may not be optimized for mobile (44px minimum).\n- Visual hierarchy could be improved for better flow.\n- Accessibility features such as color contrast need verification.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility and accessibility of the search bar.\n- Ensure touch targets are mobile-friendly.\n- Improve visual hierarchy with better contrast and spacing.\n- Verify and enhance color contrast for accessibility compliance.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Product pricing and \"Add to Cart\" buttons are clear and visible.\n- Brand consistency is maintained with consistent colors and typography.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 50,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No visible shopping cart icon in the header.",
+        "Search bar is not prominently placed.",
+        "Touch targets may not be optimized for mobile (44px minimum).",
+        "Visual hierarchy could be improved for better flow.",
+        "Accessibility features such as color contrast need verification."
+      ],
+      "recommendations": [
+        "product-page-desktop: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "product-page-desktop: *RECOMMENDATIONS:**",
+        "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+        "product-page-desktop: Ensure touch targets are mobile-friendly.",
+        "product-page-desktop: Improve visual hierarchy with better contrast and spacing.",
+        "product-page-desktop: Verify and enhance color contrast for accessibility compliance."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Product pricing and \"Add to Cart\" buttons are clear and visible.",
+        "Brand consistency is maintained with consistent colors and typography."
+      ],
+      "score": 58
+    },
+    "collection-page-desktop": {
+      "screen": "collection-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but small)\n- Visual Hierarchy: 60/100\n- Search-First Design: 50/100\n- Mobile-First: 60/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 75/100\n- OVERALL: 66/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Cart icon is small and may not be immediately noticeable.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search bar not prominent.\n- Visual hierarchy could be improved for better content prioritization.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, ensure visibility).\n- Display product pricing and \"Add to Cart\" buttons clearly.\n- Enhance the search bar's visibility and accessibility.\n- Improve visual hierarchy by using size and contrast to highlight key elements.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with Brutalist Simplicity.\n- Consistent brand colors and typography.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 60,
+        "search_first": 50,
+        "mobile_first": 60,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and may not be immediately noticeable.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search bar not prominent.",
+        "Visual hierarchy could be improved for better content prioritization."
+      ],
+      "recommendations": [
+        "collection-page-desktop: *RECOMMENDATIONS:**",
+        "collection-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).",
+        "collection-page-desktop: Display product pricing and \"Add to Cart\" buttons clearly.",
+        "collection-page-desktop: Enhance the search bar's visibility and accessibility.",
+        "collection-page-desktop: Improve visual hierarchy by using size and contrast to highlight key elements."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with Brutalist Simplicity.",
+        "Consistent brand colors and typography."
+      ],
+      "score": 66
+    },
+    "search-results-mobile": {
+      "screen": "search-results-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 80/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 65/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No visible shopping cart icon, which is critical for an e-commerce platform.\n- Lack of \"Add to Cart\" or \"Buy Now\" buttons.\n- Cart count badge not visible.\n- Some text may not meet the minimum contrast requirements for accessibility.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Add \"Add to Cart\" buttons to enhance shopping functionality.\n- Ensure all text meets WCAG 2.1 AA contrast requirements.\n- Consider adding a cart count badge for better user feedback.\n\n**HIGHLIGHTS:**\n- The search bar is prominent, supporting the search-first design goal.\n- The design is clean and minimal, aligning with the brutalist simplicity goal.\n- Product pricing is clearly displayed, which is essential for e-commerce.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 80,
+        "mobile_first": 75,
+        "brutalist_simplicity": 85,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No visible shopping cart icon, which is critical for an e-commerce platform.",
+        "Lack of \"Add to Cart\" or \"Buy Now\" buttons.",
+        "Cart count badge not visible.",
+        "Some text may not meet the minimum contrast requirements for accessibility."
+      ],
+      "recommendations": [
+        "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "search-results-mobile: *RECOMMENDATIONS:**",
+        "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "search-results-mobile: Add \"Add to Cart\" buttons to enhance shopping functionality.",
+        "search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.",
+        "search-results-mobile: Consider adding a cart count badge for better user feedback."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The search bar is prominent, supporting the search-first design goal.",
+        "The design is clean and minimal, aligning with the brutalist simplicity goal.",
+        "Product pricing is clearly displayed, which is essential for e-commerce."
+      ],
+      "score": 65
+    },
+    "footer-section": {
+      "screen": "footer-section",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon is visible but no pricing or \"Add to Cart\" buttons)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 83/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible.\n- Cart icon is small and may not be prominent enough.\n- Lack of immediate shopping indicators like product images or categories.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Display product pricing and \"Add to Cart\" buttons on the main page to emphasize e-commerce functionality.\n- Consider adding product images or categories to reinforce the shopping aspect.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean and minimal design aligning with brutalist simplicity.\n- Consistent branding with clear typography and color scheme.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Cart icon is small and may not be prominent enough.",
+        "Lack of immediate shopping indicators like product images or categories."
+      ],
+      "recommendations": [
+        "footer-section: *RECOMMENDATIONS:**",
+        "footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "footer-section: Display product pricing and \"Add to Cart\" buttons on the main page to emphasize e-commerce functionality.",
+        "footer-section: Consider adding product images or categories to reinforce the shopping aspect."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean and minimal design aligning with brutalist simplicity.",
+        "Consistent branding with clear typography and color scheme."
+      ],
+      "score": 83
+    }
+  },
+  "screenshots_analyzed": 12,
+  "project_goals_alignment": {
+    "search_first_visual": true,
+    "mobile_optimized": true,
+    "brutalist_design": true,
+    "accessible": false,
+    "issues_found": [
+      "collection-page-mobile: Accessibility issues",
+      "product-page-desktop: Accessibility issues",
+      "search-results-mobile: Accessibility issues"
+    ]
+  }
+}
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "screenshot_seo_analysis": {
+    "screenshots_analyzed": 12,
+    "seo_score": 68,
+    "source": "vision_ai_processed_seo",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 65,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Mobile UX issues (score: 65/100)",
+          "\"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+          "Translation issues in the search results title.",
+          "Search bar is not very prominent.",
+          "Potentially insufficient touch target sizes for mobile."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "*RECOMMENDATIONS:**",
+          "Add \"Add to Cart\" buttons below each product to enhance shopping functionality.",
+          "Fix translation errors to improve user experience.",
+          "Make the search bar more prominent to align with the search-first design goal.",
+          "Ensure all touch targets meet the 44px guideline for mobile usability."
+        ]
+      },
+      "cart-desktop": {
+        "seo_scores": {
+          "search_visibility": 40,
+          "mobile_ux": 60,
+          "accessibility": 50,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 40/100)",
+          "Mobile UX issues (score: 60/100)",
+          "Accessibility concerns (score: 50/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "No visible product pricing or \"Add to Cart\" buttons.",
+          "Search functionality not prominent.",
+          "Accessibility issues with missing text translations."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Strengthen CTA prominence and focal points",
+          "Make search bar more prominent and accessible.",
+          "Improve accessibility by ensuring all text is readable and properly translated."
+        ]
+      },
+      "cart-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 65,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Accessibility concerns (score: 65/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality not prominent.",
+          "Accessibility issues with translation errors affecting usability."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "*RECOMMENDATIONS:**",
+          "Fix translation errors to improve clarity and accessibility.",
+          "Ensure product pricing and \"Add to Cart\" buttons are visible.",
+          "Make search bar more prominent to align with search-first goal.",
+          "Improve accessibility by ensuring all text is readable and has sufficient contrast."
+        ]
+      },
+      "homepage-desktop": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 70,
+          "accessibility": 75,
+          "cta_hierarchy": 80
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 75,
+          "accessibility": 80,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality not prominently visible."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Make search bar more prominent and accessible."
+        ]
+      },
+      "collection-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 70,
+          "cta_hierarchy": 75
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No \"Add to Cart\" buttons present.",
+          "Search bar not prominently visible.",
+          "Accessibility features like color contrast and focus states need improvement."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "*RECOMMENDATIONS:**",
+          "Display product pricing clearly on the page.",
+          "Add \"Add to Cart\" buttons for immediate purchasing options.",
+          "Make the search bar more prominent and accessible.",
+          "Improve color contrast for better accessibility.",
+          "Ensure all interactive elements have clear focus states."
+        ]
+      },
+      "product-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 75,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "The \"Add to Cart\" button is present but not prominent enough.",
+          "Search bar is not prominently placed or easily accessible."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility and prominence of the \"Add to Cart\" button.",
+          "Improve the search bar's visibility and accessibility, possibly by placing it at the top.",
+          "Consider adding a cart count badge if items are in the cart."
+        ]
+      },
+      "homepage-mobile": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 90,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons are visible.",
+          "Accessibility could be improved with clearer visual states for interactive elements."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Ensure product pricing and \"Add to Cart\" buttons are prominently displayed on the homepage.",
+          "Enhance accessibility by providing clearer focus and hover states.",
+          "Consider adding a cart count badge to the cart icon if items are present."
+        ]
+      },
+      "product-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 50,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Mobile UX issues (score: 50/100)",
+          "Search bar is not prominently placed.",
+          "Touch targets may not be optimized for mobile (44px minimum).",
+          "Accessibility features such as color contrast need verification."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Ensure touch targets are mobile-friendly.",
+          "Verify and enhance color contrast for accessibility compliance."
+        ]
+      },
+      "collection-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 60,
+          "accessibility": 70,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Mobile UX issues (score: 60/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search bar not prominent."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Strengthen CTA prominence and focal points",
+          "Enhance the search bar's visibility and accessibility."
+        ]
+      },
+      "search-results-mobile": {
+        "seo_scores": {
+          "search_visibility": 80,
+          "mobile_ux": 75,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Lack of \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Some text may not meet the minimum contrast requirements for accessibility."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add \"Add to Cart\" buttons to enhance shopping functionality.",
+          "Ensure all text meets WCAG 2.1 AA contrast requirements.",
+          "Consider adding a cart count badge for better user feedback."
+        ]
+      },
+      "footer-section": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 80,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "search_visibility": 66,
+      "mobile_ux": 72,
+      "accessibility": 70,
+      "cta_hierarchy": 72
+    },
+    "issues": [
+      "search-results-desktop: Search not prominent enough (score: 60/100)",
+      "search-results-desktop: Mobile UX issues (score: 65/100)",
+      "search-results-desktop: \"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+      "search-results-desktop: Translation issues in the search results title.",
+      "search-results-desktop: Search bar is not very prominent.",
+      "search-results-desktop: Potentially insufficient touch target sizes for mobile.",
+      "cart-desktop: Search not prominent enough (score: 40/100)",
+      "cart-desktop: Mobile UX issues (score: 60/100)",
+      "cart-desktop: Accessibility concerns (score: 50/100)",
+      "cart-desktop: Weak visual hierarchy (score: 60/100)",
+      "cart-desktop: No visible product pricing or \"Add to Cart\" buttons.",
+      "cart-desktop: Search functionality not prominent.",
+      "cart-desktop: Accessibility issues with missing text translations.",
+      "cart-mobile: Search not prominent enough (score: 60/100)",
+      "cart-mobile: Accessibility concerns (score: 65/100)",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-mobile: Search functionality not prominent.",
+      "cart-mobile: Accessibility issues with translation errors affecting usability.",
+      "homepage-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "header-navigation: Search not prominent enough (score: 60/100)",
+      "header-navigation: No product pricing or \"Add to Cart\" buttons visible.",
+      "header-navigation: Search functionality not prominently visible.",
+      "collection-page-mobile: Search not prominent enough (score: 60/100)",
+      "collection-page-mobile: No \"Add to Cart\" buttons present.",
+      "collection-page-mobile: Search bar not prominently visible.",
+      "collection-page-mobile: Accessibility features like color contrast and focus states need improvement.",
+      "product-page-mobile: Search not prominent enough (score: 60/100)",
+      "product-page-mobile: The \"Add to Cart\" button is present but not prominent enough.",
+      "product-page-mobile: Search bar is not prominently placed or easily accessible.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons are visible.",
+      "homepage-mobile: Accessibility could be improved with clearer visual states for interactive elements.",
+      "product-page-desktop: Search not prominent enough (score: 60/100)",
+      "product-page-desktop: Mobile UX issues (score: 50/100)",
+      "product-page-desktop: Search bar is not prominently placed.",
+      "product-page-desktop: Touch targets may not be optimized for mobile (44px minimum).",
+      "product-page-desktop: Accessibility features such as color contrast need verification.",
+      "collection-page-desktop: Search not prominent enough (score: 50/100)",
+      "collection-page-desktop: Mobile UX issues (score: 60/100)",
+      "collection-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "collection-page-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "collection-page-desktop: Search bar not prominent.",
+      "search-results-mobile: Lack of \"Add to Cart\" or \"Buy Now\" buttons.",
+      "search-results-mobile: Some text may not meet the minimum contrast requirements for accessibility.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible."
+    ],
+    "recommendations": [
+      "search-results-desktop: Make search bar larger and more visually prominent",
+      "search-results-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "search-results-desktop: *RECOMMENDATIONS:**",
+      "search-results-desktop: Add \"Add to Cart\" buttons below each product to enhance shopping functionality.",
+      "search-results-desktop: Fix translation errors to improve user experience.",
+      "search-results-desktop: Make the search bar more prominent to align with the search-first design goal.",
+      "search-results-desktop: Ensure all touch targets meet the 44px guideline for mobile usability.",
+      "cart-desktop: Make search bar larger and more visually prominent",
+      "cart-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "cart-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-desktop: Strengthen CTA prominence and focal points",
+      "cart-desktop: Make search bar more prominent and accessible.",
+      "cart-desktop: Improve accessibility by ensuring all text is readable and properly translated.",
+      "cart-mobile: Make search bar larger and more visually prominent",
+      "cart-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation errors to improve clarity and accessibility.",
+      "cart-mobile: Ensure product pricing and \"Add to Cart\" buttons are visible.",
+      "cart-mobile: Make search bar more prominent to align with search-first goal.",
+      "cart-mobile: Improve accessibility by ensuring all text is readable and has sufficient contrast.",
+      "header-navigation: Make search bar larger and more visually prominent",
+      "header-navigation: Make search bar more prominent and accessible.",
+      "collection-page-mobile: Make search bar larger and more visually prominent",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Display product pricing clearly on the page.",
+      "collection-page-mobile: Add \"Add to Cart\" buttons for immediate purchasing options.",
+      "collection-page-mobile: Make the search bar more prominent and accessible.",
+      "collection-page-mobile: Improve color contrast for better accessibility.",
+      "collection-page-mobile: Ensure all interactive elements have clear focus states.",
+      "product-page-mobile: Make search bar larger and more visually prominent",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility and prominence of the \"Add to Cart\" button.",
+      "product-page-mobile: Improve the search bar's visibility and accessibility, possibly by placing it at the top.",
+      "product-page-mobile: Consider adding a cart count badge if items are in the cart.",
+      "homepage-mobile: *RECOMMENDATIONS:**",
+      "homepage-mobile: Ensure product pricing and \"Add to Cart\" buttons are prominently displayed on the homepage.",
+      "homepage-mobile: Enhance accessibility by providing clearer focus and hover states.",
+      "homepage-mobile: Consider adding a cart count badge to the cart icon if items are present.",
+      "product-page-desktop: Make search bar larger and more visually prominent",
+      "product-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+      "product-page-desktop: Ensure touch targets are mobile-friendly.",
+      "product-page-desktop: Verify and enhance color contrast for accessibility compliance.",
+      "collection-page-desktop: Make search bar larger and more visually prominent",
+      "collection-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "collection-page-desktop: Strengthen CTA prominence and focal points",
+      "collection-page-desktop: Enhance the search bar's visibility and accessibility.",
+      "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "search-results-mobile: *RECOMMENDATIONS:**",
+      "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "search-results-mobile: Add \"Add to Cart\" buttons to enhance shopping functionality.",
+      "search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.",
+      "search-results-mobile: Consider adding a cart count badge for better user feedback."
+    ]
+  },
+  "critical_issues": []
+}
+### Alex (37/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 38,
+      "sections": 18,
+      "snippets": 26,
+      "assets": 46
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 11,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 16,
+    "critical_sections_present": 2,
+    "sections_details": {
+      "404.liquid": {
+        "file_size": 6817,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 35,
+        "performance_rating": 90
+      },
+      "search-hero.liquid": {
+        "file_size": 11144,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "collection.liquid": {
+        "file_size": 10527,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "search-results.liquid": {
+        "file_size": 20363,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 213,
+        "performance_rating": 75
+      },
+      "custom-section.liquid": {
+        "file_size": 1220,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 7,
+        "performance_rating": 100
+      },
+      "page.liquid": {
+        "file_size": 10499,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 55,
+        "performance_rating": 75
+      },
+      "blog.liquid": {
+        "file_size": 9379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 76,
+        "performance_rating": 75
+      },
+      "header.liquid": {
+        "file_size": 8794,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 42,
+        "performance_rating": 90
+      },
+      "product.liquid": {
+        "file_size": 8291,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 34,
+        "performance_rating": 90
+      },
+      "collections.liquid": {
+        "file_size": 2071,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "cart.liquid": {
+        "file_size": 14199,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 118,
+        "performance_rating": 75
+      },
+      "hello-world.liquid": {
+        "file_size": 3708,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "article.liquid": {
+        "file_size": 11872,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 69,
+        "performance_rating": 75
+      },
+      "password.liquid": {
+        "file_size": 11589,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 54,
+        "performance_rating": 75
+      },
+      "footer.liquid": {
+        "file_size": 15676,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 60,
+        "performance_rating": 75
+      },
+      "search.liquid": {
+        "file_size": 2038,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 85.9375
+  },
+  "assets_optimization": {
+    "total_assets": 46,
+    "total_size_mb": 0.53,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "product-card.css",
+          "size": 7332,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-hero.css",
+          "size": 15720,
+          "size_mb": 0.01
+        },
+        {
+          "name": "comparison.css",
+          "size": 13093,
+          "size_mb": 0.01
+        },
+        {
+          "name": "animations.css",
+          "size": 8992,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.css",
+          "size": 9822,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search.css",
+          "size": 14112,
+          "size_mb": 0.01
+        },
+        {
+          "name": "404.css",
+          "size": 7623,
+          "size_mb": 0.01
+        },
+        {
+          "name": "component-predictive-search.css",
+          "size": 2071,
+          "size_mb": 0.0
+        },
+        {
+          "name": "filters.css",
+          "size": 12617,
+          "size_mb": 0.01
+        },
+        {
+          "name": "cart.css",
+          "size": 12565,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-results.css",
+          "size": 15534,
+          "size_mb": 0.01
+        },
+        {
+          "name": "page.css",
+          "size": 10254,
+          "size_mb": 0.01
+        },
+        {
+          "name": "critical.css",
+          "size": 2099,
+          "size_mb": 0.0
+        },
+        {
+          "name": "article.css",
+          "size": 13336,
+          "size_mb": 0.01
+        },
+        {
+          "name": "design-tokens.css",
+          "size": 9034,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-collection.css",
+          "size": 12279,
+          "size_mb": 0.01
+        },
+        {
+          "name": "forms.css",
+          "size": 12650,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-results.css",
+          "size": 8701,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-header.css",
+          "size": 6807,
+          "size_mb": 0.01
+        },
+        {
+          "name": "buttons.css",
+          "size": 12998,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-product.css",
+          "size": 9433,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password.css",
+          "size": 10392,
+          "size_mb": 0.01
+        },
+        {
+          "name": "utilities.css",
+          "size": 18126,
+          "size_mb": 0.02
+        },
+        {
+          "name": "blog.css",
+          "size": 10672,
+          "size_mb": 0.01
+        },
+        {
+          "name": "base.css",
+          "size": 9514,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-footer.css",
+          "size": 9791,
+          "size_mb": 0.01
+        }
+      ],
+      "js_files": [
+        {
+          "name": "query-normalizer.js",
+          "size": 11952,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-intelligence.js",
+          "size": 19212,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-hero.js",
+          "size": 6346,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.js",
+          "size": 20975,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-engine.js",
+          "size": 21337,
+          "size_mb": 0.02
+        },
+        {
+          "name": "cart.js",
+          "size": 8195,
+          "size_mb": 0.01
+        },
+        {
+          "name": "predictive-search.js",
+          "size": 3446,
+          "size_mb": 0.0
+        },
+        {
+          "name": "unified-filters.js",
+          "size": 34141,
+          "size_mb": 0.03
+        },
+        {
+          "name": "related-products.js",
+          "size": 7692,
+          "size_mb": 0.01
+        }
+      ],
+      "images": [
+        {
+          "name": "icon-cart.svg",
+          "size": 496,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shoppy-x-ray.svg",
+          "size": 24552,
+          "size_mb": 0.02
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "icon-account.svg",
+          "size": 427,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": []
+    },
+    "emmso_architecture": {
+      "emmso_css_present": false,
+      "emmso_js_present": false,
+      "single_file_architecture": false
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "screenshot_shopify_analysis": {
+    "screenshots_analyzed": 12,
+    "shopify_score": 74,
+    "source": "vision_ai_processed_shopify",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 65
+        },
+        "issues": [
+          "\"Add to Cart\" buttons are missing, which is critical for e-commerce functionality."
+        ],
+        "recommendations": [
+          "Add \"Add to Cart\" buttons below each product to enhance shopping functionality."
+        ]
+      },
+      "cart-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 60,
+          "mobile_commerce": 60
+        },
+        "issues": [
+          "Missing translations for cart messages.",
+          "No visible product pricing or \"Add to Cart\" buttons.",
+          "Lack of clear shopping indicators beyond the cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Ensure translations are complete for all text elements.",
+          "Add visible product pricing and \"Add to Cart\" buttons.",
+          "Make search bar more prominent and accessible.",
+          "Increase the size and visibility of the cart icon.",
+          "Improve accessibility by ensuring all text is readable and properly translated."
+        ]
+      },
+      "cart-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "Missing translations for cart messages.",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Fix translation errors to improve clarity and accessibility.",
+          "Ensure product pricing and \"Add to Cart\" buttons are visible.",
+          "Make search bar more prominent to align with search-first goal.",
+          "Improve accessibility by ensuring all text is readable and has sufficient contrast."
+        ]
+      },
+      "homepage-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 80,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Cart icon is small and may not be prominent enough.",
+          "Lack of immediate shopping cues beyond the cart icon."
+        ],
+        "recommendations": [
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons on the homepage."
+        ]
+      },
+      "header-navigation": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 70,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Minimal indication of shopping intent beyond the cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add visible product pricing and \"Add to Cart\" buttons to reinforce shopping intent.",
+          "Make search bar more prominent and accessible.",
+          "Consider adding a cart count badge to indicate items in the cart."
+        ]
+      },
+      "collection-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 75,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No product pricing visible.",
+          "No \"Add to Cart\" buttons present."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Display product pricing clearly on the page.",
+          "Add \"Add to Cart\" buttons for immediate purchasing options.",
+          "Make the search bar more prominent and accessible.",
+          "Improve color contrast for better accessibility.",
+          "Ensure all interactive elements have clear focus states."
+        ]
+      },
+      "product-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 70,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "No visible shopping cart icon, which is critical for e-commerce functionality.",
+          "The \"Add to Cart\" button is present but not prominent enough."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility and prominence of the \"Add to Cart\" button.",
+          "Improve the search bar's visibility and accessibility, possibly by placing it at the top.",
+          "Consider adding a cart count badge if items are in the cart."
+        ]
+      },
+      "homepage-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 90
+        },
+        "issues": [
+          "Product pricing is not visible in the screenshot.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons are visible."
+        ],
+        "recommendations": [
+          "Ensure product pricing and \"Add to Cart\" buttons are prominently displayed on the homepage.",
+          "Consider adding a cart count badge to the cart icon if items are present."
+        ]
+      },
+      "product-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 50
+        },
+        "issues": [
+          "No visible shopping cart icon in the header."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Ensure touch targets are mobile-friendly.",
+          "Improve visual hierarchy with better contrast and spacing.",
+          "Verify and enhance color contrast for accessibility compliance."
+        ]
+      },
+      "collection-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 60,
+          "mobile_commerce": 60
+        },
+        "issues": [
+          "Product display hierarchy weak (score: 60/100)",
+          "Cart icon is small and may not be immediately noticeable.",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "Improve product title/price/CTA prominence",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons clearly.",
+          "Enhance the search bar's visibility and accessibility.",
+          "Improve visual hierarchy by using size and contrast to highlight key elements."
+        ]
+      },
+      "search-results-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "No visible shopping cart icon, which is critical for an e-commerce platform.",
+          "Lack of \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Cart count badge not visible."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Add \"Add to Cart\" buttons to enhance shopping functionality.",
+          "Consider adding a cart count badge for better user feedback."
+        ]
+      },
+      "footer-section": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Cart icon is small and may not be prominent enough.",
+          "Lack of immediate shopping indicators like product images or categories."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons on the main page to emphasize e-commerce functionality.",
+          "Consider adding product images or categories to reinforce the shopping aspect."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 81,
+      "section_hierarchy": 72,
+      "mobile_commerce": 72
+    },
+    "issues": [
+      "search-results-desktop: \"Add to Cart\" buttons are missing, which is critical for e-commerce functionality.",
+      "cart-desktop: Missing translations for cart messages.",
+      "cart-desktop: No visible product pricing or \"Add to Cart\" buttons.",
+      "cart-desktop: Lack of clear shopping indicators beyond the cart icon.",
+      "cart-mobile: Missing translations for cart messages.",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "homepage-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "homepage-desktop: Cart icon is small and may not be prominent enough.",
+      "homepage-desktop: Lack of immediate shopping cues beyond the cart icon.",
+      "header-navigation: No product pricing or \"Add to Cart\" buttons visible.",
+      "header-navigation: Minimal indication of shopping intent beyond the cart icon.",
+      "collection-page-mobile: No product pricing visible.",
+      "collection-page-mobile: No \"Add to Cart\" buttons present.",
+      "product-page-mobile: No visible shopping cart icon, which is critical for e-commerce functionality.",
+      "product-page-mobile: The \"Add to Cart\" button is present but not prominent enough.",
+      "homepage-mobile: Product pricing is not visible in the screenshot.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons are visible.",
+      "product-page-desktop: No visible shopping cart icon in the header.",
+      "collection-page-desktop: Product display hierarchy weak (score: 60/100)",
+      "collection-page-desktop: Cart icon is small and may not be immediately noticeable.",
+      "collection-page-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "search-results-mobile: No visible shopping cart icon, which is critical for an e-commerce platform.",
+      "search-results-mobile: Lack of \"Add to Cart\" or \"Buy Now\" buttons.",
+      "search-results-mobile: Cart count badge not visible.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible.",
+      "footer-section: Cart icon is small and may not be prominent enough.",
+      "footer-section: Lack of immediate shopping indicators like product images or categories."
+    ],
+    "recommendations": [
+      "search-results-desktop: Add \"Add to Cart\" buttons below each product to enhance shopping functionality.",
+      "cart-desktop: *RECOMMENDATIONS:**",
+      "cart-desktop: Ensure translations are complete for all text elements.",
+      "cart-desktop: Add visible product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Make search bar more prominent and accessible.",
+      "cart-desktop: Increase the size and visibility of the cart icon.",
+      "cart-desktop: Improve accessibility by ensuring all text is readable and properly translated.",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation errors to improve clarity and accessibility.",
+      "cart-mobile: Ensure product pricing and \"Add to Cart\" buttons are visible.",
+      "cart-mobile: Make search bar more prominent to align with search-first goal.",
+      "cart-mobile: Improve accessibility by ensuring all text is readable and has sufficient contrast.",
+      "homepage-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "homepage-desktop: Display product pricing and \"Add to Cart\" buttons on the homepage.",
+      "header-navigation: *RECOMMENDATIONS:**",
+      "header-navigation: Add visible product pricing and \"Add to Cart\" buttons to reinforce shopping intent.",
+      "header-navigation: Make search bar more prominent and accessible.",
+      "header-navigation: Consider adding a cart count badge to indicate items in the cart.",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Display product pricing clearly on the page.",
+      "collection-page-mobile: Add \"Add to Cart\" buttons for immediate purchasing options.",
+      "collection-page-mobile: Make the search bar more prominent and accessible.",
+      "collection-page-mobile: Improve color contrast for better accessibility.",
+      "collection-page-mobile: Ensure all interactive elements have clear focus states.",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility and prominence of the \"Add to Cart\" button.",
+      "product-page-mobile: Improve the search bar's visibility and accessibility, possibly by placing it at the top.",
+      "product-page-mobile: Consider adding a cart count badge if items are in the cart.",
+      "homepage-mobile: Ensure product pricing and \"Add to Cart\" buttons are prominently displayed on the homepage.",
+      "homepage-mobile: Consider adding a cart count badge to the cart icon if items are present.",
+      "product-page-desktop: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-desktop: *RECOMMENDATIONS:**",
+      "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+      "product-page-desktop: Ensure touch targets are mobile-friendly.",
+      "product-page-desktop: Improve visual hierarchy with better contrast and spacing.",
+      "product-page-desktop: Verify and enhance color contrast for accessibility compliance.",
+      "collection-page-desktop: Improve product title/price/CTA prominence",
+      "collection-page-desktop: *RECOMMENDATIONS:**",
+      "collection-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).",
+      "collection-page-desktop: Display product pricing and \"Add to Cart\" buttons clearly.",
+      "collection-page-desktop: Enhance the search bar's visibility and accessibility.",
+      "collection-page-desktop: Improve visual hierarchy by using size and contrast to highlight key elements.",
+      "search-results-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "search-results-mobile: Add \"Add to Cart\" buttons to enhance shopping functionality.",
+      "search-results-mobile: Consider adding a cart count badge for better user feedback.",
+      "footer-section: *RECOMMENDATIONS:**",
+      "footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "footer-section: Display product pricing and \"Add to Cart\" buttons on the main page to emphasize e-commerce functionality.",
+      "footer-section: Consider adding product images or categories to reinforce the shopping aspect."
+    ]
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 269.1,
+    "total_js_size_kb": 130.2,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 380.3,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "screenshot_performance_analysis": {
+    "screenshots_analyzed": 12,
+    "performance_score": 74,
+    "source": "vision_ai_processed_performance",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 65,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "cart-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 60,
+          "design_efficiency": 70
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "cart-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 85,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-desktop": {
+        "performance_indicators": {
+          "layout_stability": 80,
+          "asset_optimization": 70,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 75,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 75,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 75,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-mobile": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 90,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 50,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 60,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)"
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift"
+        ]
+      },
+      "search-results-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 75,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "footer-section": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [
+          "Lack of immediate shopping indicators like product images or categories."
+        ],
+        "recommendations": [
+          "Consider adding product images or categories to reinforce the shopping aspect."
+        ]
+      }
+    },
+    "avg_scores": {
+      "layout_stability": 72,
+      "design_efficiency": 81,
+      "asset_optimization": 72
+    },
+    "issues": [
+      "cart-desktop: Layout stability concerns (hierarchy: 60/100)",
+      "collection-page-desktop: Layout stability concerns (hierarchy: 60/100)",
+      "footer-section: Lack of immediate shopping indicators like product images or categories."
+    ],
+    "recommendations": [
+      "cart-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "collection-page-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "footer-section: Consider adding product images or categories to reinforce the shopping aspect."
+    ]
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 269.1,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "screenshot_design_analysis": {
+    "screenshots_analyzed": 12,
+    "design_score": 75,
+    "source": "vision_ai_processed_design",
+    "detailed_analyses": {
+      "search-results-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 75
+        },
+        "issues": [],
+        "recommendations": [
+          "Make the search bar more prominent to align with the search-first design goal."
+        ]
+      },
+      "cart-desktop": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 60,
+          "accessibility": 50,
+          "brutalist_simplicity": 70
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Accessibility/contrast issues (score: 50/100)"
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve text contrast and color accessibility"
+        ]
+      },
+      "cart-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 65,
+          "brutalist_simplicity": 75
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 65/100)"
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility"
+        ]
+      },
+      "homepage-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 80,
+          "accessibility": 75,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": [
+          "Enhance visual cues that indicate shopping functionality."
+        ]
+      },
+      "header-navigation": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 70,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 75,
+          "accessibility": 70,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Accessibility features like color contrast and focus states need improvement."
+        ],
+        "recommendations": [
+          "Improve color contrast for better accessibility."
+        ]
+      },
+      "product-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-mobile": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility could be improved with clearer visual states for interactive elements."
+        ],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Visual hierarchy could be improved for better flow.",
+          "Accessibility features such as color contrast need verification."
+        ],
+        "recommendations": [
+          "Improve visual hierarchy with better contrast and spacing.",
+          "Verify and enhance color contrast for accessibility compliance."
+        ]
+      },
+      "collection-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 60,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Visual hierarchy could be improved for better content prioritization."
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve visual hierarchy by using size and contrast to highlight key elements."
+        ]
+      },
+      "search-results-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Some text may not meet the minimum contrast requirements for accessibility."
+        ],
+        "recommendations": []
+      },
+      "footer-section": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 81,
+      "visual_hierarchy": 72,
+      "accessibility": 70,
+      "brutalist_simplicity": 81
+    },
+    "issues": [
+      "cart-desktop: Weak visual hierarchy (score: 60/100)",
+      "cart-desktop: Accessibility/contrast issues (score: 50/100)",
+      "cart-mobile: Accessibility/contrast issues (score: 65/100)",
+      "collection-page-mobile: Accessibility features like color contrast and focus states need improvement.",
+      "homepage-mobile: Accessibility could be improved with clearer visual states for interactive elements.",
+      "product-page-desktop: Visual hierarchy could be improved for better flow.",
+      "product-page-desktop: Accessibility features such as color contrast need verification.",
+      "collection-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "collection-page-desktop: Visual hierarchy could be improved for better content prioritization.",
+      "search-results-mobile: Some text may not meet the minimum contrast requirements for accessibility."
+    ],
+    "recommendations": [
+      "search-results-desktop: Make the search bar more prominent to align with the search-first design goal.",
+      "cart-desktop: Strengthen focal points using size and contrast",
+      "cart-desktop: Improve text contrast and color accessibility",
+      "cart-mobile: Improve text contrast and color accessibility",
+      "homepage-desktop: Enhance visual cues that indicate shopping functionality.",
+      "collection-page-mobile: Improve color contrast for better accessibility.",
+      "product-page-desktop: Improve visual hierarchy with better contrast and spacing.",
+      "product-page-desktop: Verify and enhance color contrast for accessibility compliance.",
+      "collection-page-desktop: Strengthen focal points using size and contrast",
+      "collection-page-desktop: Improve visual hierarchy by using size and contrast to highlight key elements."
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Vision**: search-results-desktop: *RECOMMENDATIONS:**
+**Vision**: search-results-desktop: Add "Add to Cart" buttons below each product to enhance shopping functionality.
+**Vision**: search-results-desktop: Fix translation errors to improve user experience.
+**Vision**: search-results-desktop: Make the search bar more prominent to align with the search-first design goal.
+**Vision**: search-results-desktop: Ensure all touch targets meet the 44px guideline for mobile usability.
+**Vision**: cart-desktop: *RECOMMENDATIONS:**
+**Vision**: cart-desktop: Ensure translations are complete for all text elements.
+**Vision**: cart-desktop: Add visible product pricing and "Add to Cart" buttons.
+**Vision**: cart-desktop: Make search bar more prominent and accessible.
+**Vision**: cart-desktop: Increase the size and visibility of the cart icon.
+**Vision**: cart-desktop: Improve accessibility by ensuring all text is readable and properly translated.
+**Vision**: cart-mobile: *RECOMMENDATIONS:**
+**Vision**: cart-mobile: Fix translation errors to improve clarity and accessibility.
+**Vision**: cart-mobile: Ensure product pricing and "Add to Cart" buttons are visible.
+**Vision**: cart-mobile: Make search bar more prominent to align with search-first goal.
+**Vision**: cart-mobile: Improve accessibility by ensuring all text is readable and has sufficient contrast.
+**Vision**: homepage-desktop: *RECOMMENDATIONS:**
+**Vision**: homepage-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: homepage-desktop: Display product pricing and "Add to Cart" buttons on the homepage.
+**Vision**: homepage-desktop: Enhance visual cues that indicate shopping functionality.
+**Vision**: header-navigation: *RECOMMENDATIONS:**
+**Vision**: header-navigation: Add visible product pricing and "Add to Cart" buttons to reinforce shopping intent.
+**Vision**: header-navigation: Make search bar more prominent and accessible.
+**Vision**: header-navigation: Consider adding a cart count badge to indicate items in the cart.
+**Vision**: collection-page-mobile: *RECOMMENDATIONS:**
+**Vision**: collection-page-mobile: Display product pricing clearly on the page.
+**Vision**: collection-page-mobile: Add "Add to Cart" buttons for immediate purchasing options.
+**Vision**: collection-page-mobile: Make the search bar more prominent and accessible.
+**Vision**: collection-page-mobile: Improve color contrast for better accessibility.
+**Vision**: collection-page-mobile: Ensure all interactive elements have clear focus states.
+**Vision**: product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: product-page-mobile: *RECOMMENDATIONS:**
+**Vision**: product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-mobile: Enhance the visibility and prominence of the "Add to Cart" button.
+**Vision**: product-page-mobile: Improve the search bar's visibility and accessibility, possibly by placing it at the top.
+**Vision**: product-page-mobile: Consider adding a cart count badge if items are in the cart.
+**Vision**: homepage-mobile: *RECOMMENDATIONS:**
+**Vision**: homepage-mobile: Ensure product pricing and "Add to Cart" buttons are prominently displayed on the homepage.
+**Vision**: homepage-mobile: Enhance accessibility by providing clearer focus and hover states.
+**Vision**: homepage-mobile: Consider adding a cart count badge to the cart icon if items are present.
+**Vision**: product-page-desktop: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: product-page-desktop: *RECOMMENDATIONS:**
+**Vision**: product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-desktop: Enhance the visibility and accessibility of the search bar.
+**Vision**: product-page-desktop: Ensure touch targets are mobile-friendly.
+**Vision**: product-page-desktop: Improve visual hierarchy with better contrast and spacing.
+**Vision**: product-page-desktop: Verify and enhance color contrast for accessibility compliance.
+**Vision**: collection-page-desktop: *RECOMMENDATIONS:**
+**Vision**: collection-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).
+**Vision**: collection-page-desktop: Display product pricing and "Add to Cart" buttons clearly.
+**Vision**: collection-page-desktop: Enhance the search bar's visibility and accessibility.
+**Vision**: collection-page-desktop: Improve visual hierarchy by using size and contrast to highlight key elements.
+**Vision**: search-results-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: search-results-mobile: *RECOMMENDATIONS:**
+**Vision**: search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: search-results-mobile: Add "Add to Cart" buttons to enhance shopping functionality.
+**Vision**: search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.
+**Vision**: search-results-mobile: Consider adding a cart count badge for better user feedback.
+**Vision**: footer-section: *RECOMMENDATIONS:**
+**Vision**: footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: footer-section: Display product pricing and "Add to Cart" buttons on the main page to emphasize e-commerce functionality.
+**Vision**: footer-section: Consider adding product images or categories to reinforce the shopping aspect.
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Alex**: {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 269.1KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 69 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🚨 Phase 1: CRITICAL - Immediate Action Required
+
+**Priority**: BLOCKER - Must fix before launch
+**Timeline**: This week
+
+- [ ] **Vision** (Score: 71/100): product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 37/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Alex** (Score: 37/100): {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Vision** (Score: 71/100): search-results-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Add "Add to Cart" buttons below each product to enhance shopping functionality.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Fix translation errors to improve user experience.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Make the search bar more prominent to align with the search-first design goal.
+- [ ] **Vision** (Score: 71/100): search-results-desktop: Ensure all touch targets meet the 44px guideline for mobile usability.
+- [ ] **Vision** (Score: 71/100): cart-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): cart-desktop: Ensure translations are complete for all text elements.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Add visible product pricing and "Add to Cart" buttons.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Make search bar more prominent and accessible.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Increase the size and visibility of the cart icon.
+- [ ] **Vision** (Score: 71/100): cart-desktop: Improve accessibility by ensuring all text is readable and properly translated.
+- [ ] **Vision** (Score: 71/100): cart-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): cart-mobile: Fix translation errors to improve clarity and accessibility.
+- [ ] **Vision** (Score: 71/100): cart-mobile: Ensure product pricing and "Add to Cart" buttons are visible.
+- [ ] **Vision** (Score: 71/100): cart-mobile: Make search bar more prominent to align with search-first goal.
+- [ ] **Vision** (Score: 71/100): cart-mobile: Improve accessibility by ensuring all text is readable and has sufficient contrast.
+- [ ] **Vision** (Score: 71/100): homepage-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): homepage-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): homepage-desktop: Display product pricing and "Add to Cart" buttons on the homepage.
+- [ ] **Vision** (Score: 71/100): homepage-desktop: Enhance visual cues that indicate shopping functionality.
+- [ ] **Vision** (Score: 71/100): header-navigation: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): header-navigation: Add visible product pricing and "Add to Cart" buttons to reinforce shopping intent.
+- [ ] **Vision** (Score: 71/100): header-navigation: Make search bar more prominent and accessible.
+- [ ] **Vision** (Score: 71/100): header-navigation: Consider adding a cart count badge to indicate items in the cart.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Display product pricing clearly on the page.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Add "Add to Cart" buttons for immediate purchasing options.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Make the search bar more prominent and accessible.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Improve color contrast for better accessibility.
+- [ ] **Vision** (Score: 71/100): collection-page-mobile: Ensure all interactive elements have clear focus states.
+- [ ] **Vision** (Score: 71/100): product-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Enhance the visibility and prominence of the "Add to Cart" button.
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Improve the search bar's visibility and accessibility, possibly by placing it at the top.
+- [ ] **Vision** (Score: 71/100): product-page-mobile: Consider adding a cart count badge if items are in the cart.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Ensure product pricing and "Add to Cart" buttons are prominently displayed on the homepage.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Enhance accessibility by providing clearer focus and hover states.
+- [ ] **Vision** (Score: 71/100): homepage-mobile: Consider adding a cart count badge to the cart icon if items are present.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Enhance the visibility and accessibility of the search bar.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Ensure touch targets are mobile-friendly.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Improve visual hierarchy with better contrast and spacing.
+- [ ] **Vision** (Score: 71/100): product-page-desktop: Verify and enhance color contrast for accessibility compliance.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Display product pricing and "Add to Cart" buttons clearly.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Enhance the search bar's visibility and accessibility.
+- [ ] **Vision** (Score: 71/100): collection-page-desktop: Improve visual hierarchy by using size and contrast to highlight key elements.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Add "Add to Cart" buttons to enhance shopping functionality.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Ensure all text meets WCAG 2.1 AA contrast requirements.
+- [ ] **Vision** (Score: 71/100): search-results-mobile: Consider adding a cart count badge for better user feedback.
+- [ ] **Vision** (Score: 71/100): footer-section: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 71/100): footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 71/100): footer-section: Display product pricing and "Add to Cart" buttons on the main page to emphasize e-commerce functionality.
+- [ ] **Vision** (Score: 71/100): footer-section: Consider adding product images or categories to reinforce the shopping aspect.
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 269.1KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 3 tasks
+- 🔥 High: 5 tasks  
+- ⚡ Medium: 61 tasks
+- 💡 Low: 0 tasks
+- **Total**: 69 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 17:23:25
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 51/100
+
+#### Findings
+
+### Vision (77/100)
+
+{
+  "visual_analysis": {
+    "cart-desktop": {
+      "screen": "cart-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 60/100 (CRITICAL - Cart icon visible but lacks other elements)\n- Visual Hierarchy: 70/100\n- Search-First Design: 40/100\n- Mobile-First: 50/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 60/100\n- Brand Consistency: 70/100\n- OVERALL: 61/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (Top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- Missing product pricing and \"Add to Cart\" buttons.\n- Translation errors present, affecting user experience.\n- Search functionality not prominent.\n- Cart icon is small and could be more noticeable.\n- Lack of product visuals or descriptions to indicate shopping.\n\n**RECOMMENDATIONS:**\n- Increase the size and prominence of the shopping cart icon.\n- Ensure product pricing and \"Add to Cart\" buttons are visible.\n- Fix translation errors to improve clarity.\n- Make search functionality more prominent and accessible.\n- Add product visuals or descriptions to communicate shopping intent.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Footer provides useful links and subscription options.\n\nFocus on improving the visibility of key e-commerce elements and fixing translation issues to enhance user experience.",
+      "scores": {
+        "ecommerce_visibility": 60,
+        "visual_hierarchy": 70,
+        "search_first": 40,
+        "mobile_first": 50,
+        "brutalist_simplicity": 80,
+        "accessibility": 60,
+        "brand_consistency": 70
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing product pricing and \"Add to Cart\" buttons.",
+        "Translation errors present, affecting user experience.",
+        "Search functionality not prominent.",
+        "Cart icon is small and could be more noticeable.",
+        "Lack of product visuals or descriptions to indicate shopping."
+      ],
+      "recommendations": [
+        "cart-desktop: *RECOMMENDATIONS:**",
+        "cart-desktop: Increase the size and prominence of the shopping cart icon.",
+        "cart-desktop: Ensure product pricing and \"Add to Cart\" buttons are visible.",
+        "cart-desktop: Fix translation errors to improve clarity.",
+        "cart-desktop: Make search functionality more prominent and accessible.",
+        "cart-desktop: Add product visuals or descriptions to communicate shopping intent."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Footer provides useful links and subscription options."
+      ],
+      "score": 61
+    },
+    "cart-mobile": {
+      "screen": "cart-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 77/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Missing translations for cart messages.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality not prominent.\n- Accessibility issues with translation errors affecting user experience.\n\n**RECOMMENDATIONS:**\n- Fix translation errors to ensure clear communication.\n- Add product pricing and \"Add to Cart\" buttons for better e-commerce functionality.\n- Make search bar more prominent to align with search-first design goals.\n- Ensure all text elements meet WCAG 2.1 AA contrast requirements.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Cart icon is visible and appropriately placed.\n- Mobile-friendly layout with touch-friendly targets and readable text sizes.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for cart messages.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality not prominent.",
+        "Accessibility issues with translation errors affecting user experience."
+      ],
+      "recommendations": [
+        "cart-mobile: *RECOMMENDATIONS:**",
+        "cart-mobile: Fix translation errors to ensure clear communication.",
+        "cart-mobile: Add product pricing and \"Add to Cart\" buttons for better e-commerce functionality.",
+        "cart-mobile: Make search bar more prominent to align with search-first design goals.",
+        "cart-mobile: Ensure all text elements meet WCAG 2.1 AA contrast requirements."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Cart icon is visible and appropriately placed.",
+        "Mobile-friendly layout with touch-friendly targets and readable text sizes."
+      ],
+      "score": 77
+    },
+    "homepage-desktop": {
+      "screen": "homepage-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon present)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 70/100\n- Brutalist Simplicity: 95/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 84/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible on the homepage.\n- Shopping intent is not immediately clear without product displays.\n- Accessibility could be improved with clearer visual states for interactive elements.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons on the homepage to enhance shopping clarity.\n- Improve accessibility by ensuring all interactive elements have clear visual states.\n- Consider adding featured products or categories to immediately communicate the shopping aspect.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean, minimalistic design aligns well with brutalist simplicity.\n- Consistent branding with clear typography and color scheme.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 70,
+        "brutalist_simplicity": 95,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible on the homepage.",
+        "Shopping intent is not immediately clear without product displays.",
+        "Accessibility could be improved with clearer visual states for interactive elements."
+      ],
+      "recommendations": [
+        "homepage-desktop: *RECOMMENDATIONS:**",
+        "homepage-desktop: Display product pricing and \"Add to Cart\" buttons on the homepage to enhance shopping clarity.",
+        "homepage-desktop: Improve accessibility by ensuring all interactive elements have clear visual states.",
+        "homepage-desktop: Consider adding featured products or categories to immediately communicate the shopping aspect."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean, minimalistic design aligns well with brutalist simplicity.",
+        "Consistent branding with clear typography and color scheme."
+      ],
+      "score": 84
+    },
+    "header-navigation": {
+      "screen": "header-navigation",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 50/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 75/100\n- Brand Consistency: 85/100\n- OVERALL: 76/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality is not prominent.\n- Lack of immediate shopping cues beyond the cart icon.\n- Minimal visual hierarchy; elements are sparse.\n\n**RECOMMENDATIONS:**\n- Make search bar more prominent to align with search-first vision.\n- Include product pricing and \"Add to Cart\" buttons in the header for immediate shopping recognition.\n- Enhance visual hierarchy with better contrast and focal points.\n- Ensure all interactive elements meet touch target size for mobile.\n\n**HIGHLIGHTS:**\n- Cart icon is clearly visible and identifiable.\n- Design follows brutalist simplicity with minimal clutter.\n- Brand logo is clear and consistent with overall design.\n\nThe header effectively uses simplicity and minimalism, but needs enhancements in search prominence and immediate shopping cues to fully meet e-commerce goals.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 50,
+        "mobile_first": 80,
+        "brutalist_simplicity": 90,
+        "accessibility": 75,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality is not prominent.",
+        "Lack of immediate shopping cues beyond the cart icon.",
+        "Minimal visual hierarchy; elements are sparse."
+      ],
+      "recommendations": [
+        "header-navigation: *RECOMMENDATIONS:**",
+        "header-navigation: Make search bar more prominent to align with search-first vision.",
+        "header-navigation: Include product pricing and \"Add to Cart\" buttons in the header for immediate shopping recognition.",
+        "header-navigation: Enhance visual hierarchy with better contrast and focal points.",
+        "header-navigation: Ensure all interactive elements meet touch target size for mobile."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Cart icon is clearly visible and identifiable.",
+        "Design follows brutalist simplicity with minimal clutter.",
+        "Brand logo is clear and consistent with overall design."
+      ],
+      "score": 76
+    },
+    "collection-page-mobile": {
+      "screen": "collection-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 77/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible.\n- No \"Add to Cart\" buttons present.\n- Search bar not prominently displayed.\n- Lack of immediate shopping indicators beyond cart icon.\n\n**RECOMMENDATIONS:**\n- Display product pricing clearly on the page.\n- Add \"Add to Cart\" buttons for immediate purchase options.\n- Make the search bar more prominent to align with the search-first goal.\n- Enhance visual indicators of shopping, such as featured products or promotions.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Mobile-friendly with thumb-optimized navigation and touch targets.\n- Consistent branding with clear EMMSO logo and color scheme.\n\nOverall, the design is clean and mobile-friendly but lacks clear e-commerce elements like pricing and purchase options, which are critical for an online shopping experience.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible.",
+        "No \"Add to Cart\" buttons present.",
+        "Search bar not prominently displayed.",
+        "Lack of immediate shopping indicators beyond cart icon."
+      ],
+      "recommendations": [
+        "collection-page-mobile: *RECOMMENDATIONS:**",
+        "collection-page-mobile: Display product pricing clearly on the page.",
+        "collection-page-mobile: Add \"Add to Cart\" buttons for immediate purchase options.",
+        "collection-page-mobile: Make the search bar more prominent to align with the search-first goal.",
+        "collection-page-mobile: Enhance visual indicators of shopping, such as featured products or promotions."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly with thumb-optimized navigation and touch targets.",
+        "Consistent branding with clear EMMSO logo and color scheme."
+      ],
+      "score": 77
+    },
+    "product-page-mobile": {
+      "screen": "product-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible but small)\n- Visual Hierarchy: 75/100\n- Search-First Design: 70/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 78/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right, small size)\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Cart icon is small and may not be immediately noticeable.\n- Search bar is not very prominent.\n- Text contrast could be improved for better readability.\n- Visual hierarchy could be clearer; product details are somewhat cluttered.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, ensure visibility).\n- Enhance the prominence of the search bar to emphasize search-first design.\n- Improve text contrast for better accessibility.\n- Simplify and organize product details for clearer visual hierarchy.\n\n**HIGHLIGHTS:**\n- The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.\n- Touch targets appear to be thumb-friendly and responsive.\n- Brand elements are consistent and professional.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 75,
+        "search_first": 70,
+        "mobile_first": 85,
+        "brutalist_simplicity": 80,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and may not be immediately noticeable.",
+        "Search bar is not very prominent.",
+        "Text contrast could be improved for better readability.",
+        "Visual hierarchy could be clearer; product details are somewhat cluttered."
+      ],
+      "recommendations": [
+        "product-page-mobile: *RECOMMENDATIONS:**",
+        "product-page-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).",
+        "product-page-mobile: Enhance the prominence of the search bar to emphasize search-first design.",
+        "product-page-mobile: Improve text contrast for better accessibility.",
+        "product-page-mobile: Simplify and organize product details for clearer visual hierarchy."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The design maintains a clean and minimalistic approach, aligning with brutalist simplicity.",
+        "Touch targets appear to be thumb-friendly and responsive.",
+        "Brand elements are consistent and professional."
+      ],
+      "score": 78
+    },
+    "homepage-mobile": {
+      "screen": "homepage-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but no pricing or \"Add to Cart\" buttons)\n- Visual Hierarchy: 80/100\n- Search-First Design: 90/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 83/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons present.\n- Shopping intent is not immediately clear without pricing or purchase options.\n\n**RECOMMENDATIONS:**\n- Include product pricing on the homepage to clarify shopping intent.\n- Add \"Add to Cart\" or \"Buy Now\" buttons for immediate purchase options.\n- Enhance the visibility of the cart icon with animation or color contrast to draw attention.\n\n**HIGHLIGHTS:**\n- Strong brand consistency with clear logo and color scheme.\n- Prominent search bar supports search-first design.\n- Clean and minimal design aligns with brutalist simplicity.\n- Mobile-friendly layout with thumb-reachable navigation and touch-friendly targets.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 80,
+        "search_first": 90,
+        "mobile_first": 85,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons present.",
+        "Shopping intent is not immediately clear without pricing or purchase options."
+      ],
+      "recommendations": [
+        "homepage-mobile: *RECOMMENDATIONS:**",
+        "homepage-mobile: Include product pricing on the homepage to clarify shopping intent.",
+        "homepage-mobile: Add \"Add to Cart\" or \"Buy Now\" buttons for immediate purchase options.",
+        "homepage-mobile: Enhance the visibility of the cart icon with animation or color contrast to draw attention."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong brand consistency with clear logo and color scheme.",
+        "Prominent search bar supports search-first design.",
+        "Clean and minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly layout with thumb-reachable navigation and touch-friendly targets."
+      ],
+      "score": 83
+    },
+    "product-page-desktop": {
+      "screen": "product-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 75/100\n- Search-First Design: 70/100\n- Mobile-First: 65/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 78/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Cart icon is small and might be overlooked.\n- Search bar is not prominently placed.\n- Touch targets may not meet the 44px minimum for mobile.\n- Text size for product descriptions might be small for some users.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, ensure visibility).\n- Enhance the visibility and accessibility of the search bar.\n- Ensure touch targets meet the 44px minimum for mobile usability.\n- Increase text size for better readability.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns well with the Brutalist Simplicity goal.\n- Consistent branding with clear EMMSO logo and color scheme.\n- Product pricing and \"Add to Cart\" buttons are clearly visible, supporting shopping intent.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 75,
+        "search_first": 70,
+        "mobile_first": 65,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and might be overlooked.",
+        "Search bar is not prominently placed.",
+        "Touch targets may not meet the 44px minimum for mobile.",
+        "Text size for product descriptions might be small for some users."
+      ],
+      "recommendations": [
+        "product-page-desktop: *RECOMMENDATIONS:**",
+        "product-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).",
+        "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+        "product-page-desktop: Ensure touch targets meet the 44px minimum for mobile usability.",
+        "product-page-desktop: Increase text size for better readability."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns well with the Brutalist Simplicity goal.",
+        "Consistent branding with clear EMMSO logo and color scheme.",
+        "Product pricing and \"Add to Cart\" buttons are clearly visible, supporting shopping intent."
+      ],
+      "score": 78
+    },
+    "collection-page-desktop": {
+      "screen": "collection-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 75/100\n- Search-First Design: 70/100\n- Mobile-First: 60/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 74/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the page.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- Search bar is not prominently displayed.\n- Touch targets and navigation may not be optimized for mobile.\n\n**RECOMMENDATIONS:**\n- Display product pricing clearly on the page.\n- Add visible \"Add to Cart\" buttons for each product.\n- Make the search bar more prominent and accessible.\n- Ensure touch targets are at least 44px for mobile optimization.\n- Improve mobile navigation for thumb reachability.\n- Enhance color contrast for better accessibility.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with Brutalist Simplicity.\n- Consistent branding with the EMMSO logo and color scheme.\n- Cart icon is visible and recognizable.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 75,
+        "search_first": 70,
+        "mobile_first": 60,
+        "brutalist_simplicity": 85,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the page.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "Search bar is not prominently displayed.",
+        "Touch targets and navigation may not be optimized for mobile."
+      ],
+      "recommendations": [
+        "collection-page-desktop: *RECOMMENDATIONS:**",
+        "collection-page-desktop: Display product pricing clearly on the page.",
+        "collection-page-desktop: Add visible \"Add to Cart\" buttons for each product.",
+        "collection-page-desktop: Make the search bar more prominent and accessible.",
+        "collection-page-desktop: Ensure touch targets are at least 44px for mobile optimization.",
+        "collection-page-desktop: Improve mobile navigation for thumb reachability.",
+        "collection-page-desktop: Enhance color contrast for better accessibility."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with Brutalist Simplicity.",
+        "Consistent branding with the EMMSO logo and color scheme.",
+        "Cart icon is visible and recognizable."
+      ],
+      "score": 74
+    },
+    "footer-section": {
+      "screen": "footer-section",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 80/100\n- Brand Consistency: 85/100\n- OVERALL: 85/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY (search-focused, but lacks product/pricing visibility)\n\n**ISSUES FOUND:**\n- No product pricing or \"Add to Cart\" buttons visible on the main page.\n- Lack of immediate shopping cues beyond the cart icon.\n- Accessibility could be improved with more contrast and clearer focus states.\n\n**RECOMMENDATIONS:**\n- Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.\n- Increase visibility of shopping elements to communicate the e-commerce nature more effectively.\n- Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states.\n\n**HIGHLIGHTS:**\n- Strong search-first design with prominent search bar.\n- Clean, minimal design aligns with brutalist simplicity.\n- Consistent branding with clear logo and color scheme.\n\nOverall, the page effectively communicates a search-focused experience but could benefit from more explicit e-commerce elements like product listings and pricing to enhance clarity and functionality.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 80,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing or \"Add to Cart\" buttons visible on the main page.",
+        "Lack of immediate shopping cues beyond the cart icon.",
+        "Accessibility could be improved with more contrast and clearer focus states."
+      ],
+      "recommendations": [
+        "footer-section: *RECOMMENDATIONS:**",
+        "footer-section: Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.",
+        "footer-section: Increase visibility of shopping elements to communicate the e-commerce nature more effectively.",
+        "footer-section: Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with prominent search bar.",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Consistent branding with clear logo and color scheme."
+      ],
+      "score": 85
+    }
+  },
+  "screenshots_analyzed": 10,
+  "project_goals_alignment": {
+    "search_first_visual": true,
+    "mobile_optimized": true,
+    "brutalist_design": true,
+    "accessible": false,
+    "issues_found": [
+      "product-page-mobile: Accessibility issues",
+      "footer-section: Accessibility issues"
+    ]
+  }
+}
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "screenshot_seo_analysis": {
+    "screenshots_analyzed": 10,
+    "seo_score": 71,
+    "source": "vision_ai_processed_seo",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "seo_scores": {
+          "search_visibility": 40,
+          "mobile_ux": 50,
+          "accessibility": 60,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 40/100)",
+          "Mobile UX issues (score: 50/100)",
+          "Accessibility concerns (score: 60/100)",
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Search functionality not prominent."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Make search functionality more prominent and accessible."
+        ]
+      },
+      "cart-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality not prominent.",
+          "Accessibility issues with translation errors affecting user experience."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "*RECOMMENDATIONS:**",
+          "Fix translation errors to ensure clear communication.",
+          "Add product pricing and \"Add to Cart\" buttons for better e-commerce functionality.",
+          "Make search bar more prominent to align with search-first design goals.",
+          "Ensure all text elements meet WCAG 2.1 AA contrast requirements."
+        ]
+      },
+      "homepage-desktop": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 70,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible on the homepage.",
+          "Accessibility could be improved with clearer visual states for interactive elements."
+        ],
+        "recommendations": [
+          "Improve accessibility by ensuring all interactive elements have clear visual states."
+        ]
+      },
+      "header-navigation": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 80,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality is not prominent."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Make search bar more prominent to align with search-first vision.",
+          "Ensure all interactive elements meet touch target size for mobile."
+        ]
+      },
+      "collection-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No \"Add to Cart\" buttons present.",
+          "Search bar not prominently displayed."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "*RECOMMENDATIONS:**",
+          "Display product pricing clearly on the page.",
+          "Add \"Add to Cart\" buttons for immediate purchase options.",
+          "Make the search bar more prominent to align with the search-first goal.",
+          "Enhance visual indicators of shopping, such as featured products or promotions."
+        ]
+      },
+      "product-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 75
+        },
+        "issues": [
+          "Search bar is not very prominent.",
+          "Text contrast could be improved for better readability."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, ensure visibility).",
+          "Enhance the prominence of the search bar to emphasize search-first design.",
+          "Improve text contrast for better accessibility.",
+          "Simplify and organize product details for clearer visual hierarchy."
+        ]
+      },
+      "homepage-mobile": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 85,
+          "accessibility": 80,
+          "cta_hierarchy": 80
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons present."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Include product pricing on the homepage to clarify shopping intent.",
+          "Add \"Add to Cart\" or \"Buy Now\" buttons for immediate purchase options.",
+          "Enhance the visibility of the cart icon with animation or color contrast to draw attention."
+        ]
+      },
+      "product-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 65,
+          "accessibility": 80,
+          "cta_hierarchy": 75
+        },
+        "issues": [
+          "Mobile UX issues (score: 65/100)",
+          "Search bar is not prominently placed.",
+          "Touch targets may not meet the 44px minimum for mobile."
+        ],
+        "recommendations": [
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Ensure touch targets meet the 44px minimum for mobile usability."
+        ]
+      },
+      "collection-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 60,
+          "accessibility": 70,
+          "cta_hierarchy": 75
+        },
+        "issues": [
+          "Mobile UX issues (score: 60/100)",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Search bar is not prominently displayed.",
+          "Touch targets and navigation may not be optimized for mobile."
+        ],
+        "recommendations": [
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Make the search bar more prominent and accessible.",
+          "Ensure touch targets are at least 44px for mobile optimization.",
+          "Improve mobile navigation for thumb reachability.",
+          "Enhance color contrast for better accessibility."
+        ]
+      },
+      "footer-section": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 85,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible on the main page.",
+          "Accessibility could be improved with more contrast and clearer focus states."
+        ],
+        "recommendations": [
+          "Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states."
+        ]
+      }
+    },
+    "avg_scores": {
+      "search_visibility": 69,
+      "mobile_ux": 75,
+      "accessibility": 75,
+      "cta_hierarchy": 75
+    },
+    "issues": [
+      "cart-desktop: Search not prominent enough (score: 40/100)",
+      "cart-desktop: Mobile UX issues (score: 50/100)",
+      "cart-desktop: Accessibility concerns (score: 60/100)",
+      "cart-desktop: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Search functionality not prominent.",
+      "cart-mobile: Search not prominent enough (score: 60/100)",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-mobile: Search functionality not prominent.",
+      "cart-mobile: Accessibility issues with translation errors affecting user experience.",
+      "homepage-desktop: No product pricing or \"Add to Cart\" buttons visible on the homepage.",
+      "homepage-desktop: Accessibility could be improved with clearer visual states for interactive elements.",
+      "header-navigation: Search not prominent enough (score: 50/100)",
+      "header-navigation: No product pricing or \"Add to Cart\" buttons visible.",
+      "header-navigation: Search functionality is not prominent.",
+      "collection-page-mobile: Search not prominent enough (score: 60/100)",
+      "collection-page-mobile: No \"Add to Cart\" buttons present.",
+      "collection-page-mobile: Search bar not prominently displayed.",
+      "product-page-mobile: Search bar is not very prominent.",
+      "product-page-mobile: Text contrast could be improved for better readability.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons present.",
+      "product-page-desktop: Mobile UX issues (score: 65/100)",
+      "product-page-desktop: Search bar is not prominently placed.",
+      "product-page-desktop: Touch targets may not meet the 44px minimum for mobile.",
+      "collection-page-desktop: Mobile UX issues (score: 60/100)",
+      "collection-page-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "collection-page-desktop: Search bar is not prominently displayed.",
+      "collection-page-desktop: Touch targets and navigation may not be optimized for mobile.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible on the main page.",
+      "footer-section: Accessibility could be improved with more contrast and clearer focus states."
+    ],
+    "recommendations": [
+      "cart-desktop: Make search bar larger and more visually prominent",
+      "cart-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "cart-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-desktop: Make search functionality more prominent and accessible.",
+      "cart-mobile: Make search bar larger and more visually prominent",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation errors to ensure clear communication.",
+      "cart-mobile: Add product pricing and \"Add to Cart\" buttons for better e-commerce functionality.",
+      "cart-mobile: Make search bar more prominent to align with search-first design goals.",
+      "cart-mobile: Ensure all text elements meet WCAG 2.1 AA contrast requirements.",
+      "homepage-desktop: Improve accessibility by ensuring all interactive elements have clear visual states.",
+      "header-navigation: Make search bar larger and more visually prominent",
+      "header-navigation: Make search bar more prominent to align with search-first vision.",
+      "header-navigation: Ensure all interactive elements meet touch target size for mobile.",
+      "collection-page-mobile: Make search bar larger and more visually prominent",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Display product pricing clearly on the page.",
+      "collection-page-mobile: Add \"Add to Cart\" buttons for immediate purchase options.",
+      "collection-page-mobile: Make the search bar more prominent to align with the search-first goal.",
+      "collection-page-mobile: Enhance visual indicators of shopping, such as featured products or promotions.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).",
+      "product-page-mobile: Enhance the prominence of the search bar to emphasize search-first design.",
+      "product-page-mobile: Improve text contrast for better accessibility.",
+      "product-page-mobile: Simplify and organize product details for clearer visual hierarchy.",
+      "homepage-mobile: *RECOMMENDATIONS:**",
+      "homepage-mobile: Include product pricing on the homepage to clarify shopping intent.",
+      "homepage-mobile: Add \"Add to Cart\" or \"Buy Now\" buttons for immediate purchase options.",
+      "homepage-mobile: Enhance the visibility of the cart icon with animation or color contrast to draw attention.",
+      "product-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+      "product-page-desktop: Ensure touch targets meet the 44px minimum for mobile usability.",
+      "collection-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "collection-page-desktop: Make the search bar more prominent and accessible.",
+      "collection-page-desktop: Ensure touch targets are at least 44px for mobile optimization.",
+      "collection-page-desktop: Improve mobile navigation for thumb reachability.",
+      "collection-page-desktop: Enhance color contrast for better accessibility.",
+      "footer-section: Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states."
+    ]
+  },
+  "critical_issues": []
+}
+### Alex (37/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 38,
+      "sections": 18,
+      "snippets": 26,
+      "assets": 46
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 11,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 16,
+    "critical_sections_present": 2,
+    "sections_details": {
+      "404.liquid": {
+        "file_size": 6817,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 35,
+        "performance_rating": 90
+      },
+      "search-hero.liquid": {
+        "file_size": 11144,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "collection.liquid": {
+        "file_size": 10527,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "search-results.liquid": {
+        "file_size": 20363,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 213,
+        "performance_rating": 75
+      },
+      "custom-section.liquid": {
+        "file_size": 1220,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 7,
+        "performance_rating": 100
+      },
+      "page.liquid": {
+        "file_size": 10499,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 55,
+        "performance_rating": 75
+      },
+      "blog.liquid": {
+        "file_size": 9379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 76,
+        "performance_rating": 75
+      },
+      "header.liquid": {
+        "file_size": 8794,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 42,
+        "performance_rating": 90
+      },
+      "product.liquid": {
+        "file_size": 8291,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 34,
+        "performance_rating": 90
+      },
+      "collections.liquid": {
+        "file_size": 2071,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "cart.liquid": {
+        "file_size": 14199,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 118,
+        "performance_rating": 75
+      },
+      "hello-world.liquid": {
+        "file_size": 3708,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "article.liquid": {
+        "file_size": 11872,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 69,
+        "performance_rating": 75
+      },
+      "password.liquid": {
+        "file_size": 11589,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 54,
+        "performance_rating": 75
+      },
+      "footer.liquid": {
+        "file_size": 15676,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 60,
+        "performance_rating": 75
+      },
+      "search.liquid": {
+        "file_size": 2038,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 85.9375
+  },
+  "assets_optimization": {
+    "total_assets": 46,
+    "total_size_mb": 0.53,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "product-card.css",
+          "size": 7332,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-hero.css",
+          "size": 15720,
+          "size_mb": 0.01
+        },
+        {
+          "name": "comparison.css",
+          "size": 13093,
+          "size_mb": 0.01
+        },
+        {
+          "name": "animations.css",
+          "size": 8992,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.css",
+          "size": 9822,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search.css",
+          "size": 14112,
+          "size_mb": 0.01
+        },
+        {
+          "name": "404.css",
+          "size": 7623,
+          "size_mb": 0.01
+        },
+        {
+          "name": "component-predictive-search.css",
+          "size": 2071,
+          "size_mb": 0.0
+        },
+        {
+          "name": "filters.css",
+          "size": 12617,
+          "size_mb": 0.01
+        },
+        {
+          "name": "cart.css",
+          "size": 12565,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-results.css",
+          "size": 15534,
+          "size_mb": 0.01
+        },
+        {
+          "name": "page.css",
+          "size": 10254,
+          "size_mb": 0.01
+        },
+        {
+          "name": "critical.css",
+          "size": 2099,
+          "size_mb": 0.0
+        },
+        {
+          "name": "article.css",
+          "size": 13336,
+          "size_mb": 0.01
+        },
+        {
+          "name": "design-tokens.css",
+          "size": 9034,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-collection.css",
+          "size": 12279,
+          "size_mb": 0.01
+        },
+        {
+          "name": "forms.css",
+          "size": 12650,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-results.css",
+          "size": 8701,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-header.css",
+          "size": 6807,
+          "size_mb": 0.01
+        },
+        {
+          "name": "buttons.css",
+          "size": 12998,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-product.css",
+          "size": 9433,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password.css",
+          "size": 10392,
+          "size_mb": 0.01
+        },
+        {
+          "name": "utilities.css",
+          "size": 18126,
+          "size_mb": 0.02
+        },
+        {
+          "name": "blog.css",
+          "size": 10672,
+          "size_mb": 0.01
+        },
+        {
+          "name": "base.css",
+          "size": 9514,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-footer.css",
+          "size": 9791,
+          "size_mb": 0.01
+        }
+      ],
+      "js_files": [
+        {
+          "name": "query-normalizer.js",
+          "size": 11952,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-intelligence.js",
+          "size": 19212,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-hero.js",
+          "size": 6346,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.js",
+          "size": 20975,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-engine.js",
+          "size": 21337,
+          "size_mb": 0.02
+        },
+        {
+          "name": "cart.js",
+          "size": 8195,
+          "size_mb": 0.01
+        },
+        {
+          "name": "predictive-search.js",
+          "size": 3446,
+          "size_mb": 0.0
+        },
+        {
+          "name": "unified-filters.js",
+          "size": 34141,
+          "size_mb": 0.03
+        },
+        {
+          "name": "related-products.js",
+          "size": 7692,
+          "size_mb": 0.01
+        }
+      ],
+      "images": [
+        {
+          "name": "icon-cart.svg",
+          "size": 496,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shoppy-x-ray.svg",
+          "size": 24552,
+          "size_mb": 0.02
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "icon-account.svg",
+          "size": 427,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": []
+    },
+    "emmso_architecture": {
+      "emmso_css_present": false,
+      "emmso_js_present": false,
+      "single_file_architecture": false
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "screenshot_shopify_analysis": {
+    "screenshots_analyzed": 10,
+    "shopify_score": 77,
+    "source": "vision_ai_processed_shopify",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 70,
+          "section_hierarchy": 70,
+          "mobile_commerce": 50
+        },
+        "issues": [
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Cart icon is small and could be more noticeable.",
+          "Lack of product visuals or descriptions to indicate shopping."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Increase the size and prominence of the shopping cart icon.",
+          "Ensure product pricing and \"Add to Cart\" buttons are visible.",
+          "Fix translation errors to improve clarity.",
+          "Make search functionality more prominent and accessible.",
+          "Add product visuals or descriptions to communicate shopping intent."
+        ]
+      },
+      "cart-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "Missing translations for cart messages.",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Fix translation errors to ensure clear communication.",
+          "Add product pricing and \"Add to Cart\" buttons for better e-commerce functionality.",
+          "Make search bar more prominent to align with search-first design goals.",
+          "Ensure all text elements meet WCAG 2.1 AA contrast requirements."
+        ]
+      },
+      "homepage-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 70
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible on the homepage.",
+          "Shopping intent is not immediately clear without product displays."
+        ],
+        "recommendations": [
+          "Display product pricing and \"Add to Cart\" buttons on the homepage to enhance shopping clarity.",
+          "Consider adding featured products or categories to immediately communicate the shopping aspect."
+        ]
+      },
+      "header-navigation": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Lack of immediate shopping cues beyond the cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make search bar more prominent to align with search-first vision.",
+          "Include product pricing and \"Add to Cart\" buttons in the header for immediate shopping recognition.",
+          "Enhance visual hierarchy with better contrast and focal points.",
+          "Ensure all interactive elements meet touch target size for mobile."
+        ]
+      },
+      "collection-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No product pricing visible.",
+          "No \"Add to Cart\" buttons present.",
+          "Lack of immediate shopping indicators beyond cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Display product pricing clearly on the page.",
+          "Add \"Add to Cart\" buttons for immediate purchase options.",
+          "Make the search bar more prominent to align with the search-first goal.",
+          "Enhance visual indicators of shopping, such as featured products or promotions."
+        ]
+      },
+      "product-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 75,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "Cart icon is small and may not be immediately noticeable.",
+          "Visual hierarchy could be clearer; product details are somewhat cluttered."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, ensure visibility).",
+          "Enhance the prominence of the search bar to emphasize search-first design.",
+          "Improve text contrast for better accessibility.",
+          "Simplify and organize product details for clearer visual hierarchy."
+        ]
+      },
+      "homepage-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 80,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons present."
+        ],
+        "recommendations": [
+          "Include product pricing on the homepage to clarify shopping intent.",
+          "Add \"Add to Cart\" or \"Buy Now\" buttons for immediate purchase options.",
+          "Enhance the visibility of the cart icon with animation or color contrast to draw attention."
+        ]
+      },
+      "product-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 75,
+          "mobile_commerce": 65
+        },
+        "issues": [
+          "Cart icon is small and might be overlooked.",
+          "Text size for product descriptions might be small for some users."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, ensure visibility).",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Ensure touch targets meet the 44px minimum for mobile usability.",
+          "Increase text size for better readability."
+        ]
+      },
+      "collection-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 75,
+          "mobile_commerce": 60
+        },
+        "issues": [
+          "No product pricing visible on the page.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Touch targets and navigation may not be optimized for mobile."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Display product pricing clearly on the page.",
+          "Add visible \"Add to Cart\" buttons for each product.",
+          "Make the search bar more prominent and accessible.",
+          "Ensure touch targets are at least 44px for mobile optimization.",
+          "Improve mobile navigation for thumb reachability.",
+          "Enhance color contrast for better accessibility."
+        ]
+      },
+      "footer-section": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 85,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible on the main page.",
+          "Lack of immediate shopping cues beyond the cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.",
+          "Increase visibility of shopping elements to communicate the e-commerce nature more effectively.",
+          "Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 83,
+      "section_hierarchy": 75,
+      "mobile_commerce": 75
+    },
+    "issues": [
+      "cart-desktop: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Cart icon is small and could be more noticeable.",
+      "cart-desktop: Lack of product visuals or descriptions to indicate shopping.",
+      "cart-mobile: Missing translations for cart messages.",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "homepage-desktop: No product pricing or \"Add to Cart\" buttons visible on the homepage.",
+      "homepage-desktop: Shopping intent is not immediately clear without product displays.",
+      "header-navigation: No product pricing or \"Add to Cart\" buttons visible.",
+      "header-navigation: Lack of immediate shopping cues beyond the cart icon.",
+      "collection-page-mobile: No product pricing visible.",
+      "collection-page-mobile: No \"Add to Cart\" buttons present.",
+      "collection-page-mobile: Lack of immediate shopping indicators beyond cart icon.",
+      "product-page-mobile: Cart icon is small and may not be immediately noticeable.",
+      "product-page-mobile: Visual hierarchy could be clearer; product details are somewhat cluttered.",
+      "homepage-mobile: No product pricing visible on the homepage.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons present.",
+      "product-page-desktop: Cart icon is small and might be overlooked.",
+      "product-page-desktop: Text size for product descriptions might be small for some users.",
+      "collection-page-desktop: No product pricing visible on the page.",
+      "collection-page-desktop: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "collection-page-desktop: Touch targets and navigation may not be optimized for mobile.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible on the main page.",
+      "footer-section: Lack of immediate shopping cues beyond the cart icon."
+    ],
+    "recommendations": [
+      "cart-desktop: *RECOMMENDATIONS:**",
+      "cart-desktop: Increase the size and prominence of the shopping cart icon.",
+      "cart-desktop: Ensure product pricing and \"Add to Cart\" buttons are visible.",
+      "cart-desktop: Fix translation errors to improve clarity.",
+      "cart-desktop: Make search functionality more prominent and accessible.",
+      "cart-desktop: Add product visuals or descriptions to communicate shopping intent.",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation errors to ensure clear communication.",
+      "cart-mobile: Add product pricing and \"Add to Cart\" buttons for better e-commerce functionality.",
+      "cart-mobile: Make search bar more prominent to align with search-first design goals.",
+      "cart-mobile: Ensure all text elements meet WCAG 2.1 AA contrast requirements.",
+      "homepage-desktop: Display product pricing and \"Add to Cart\" buttons on the homepage to enhance shopping clarity.",
+      "homepage-desktop: Consider adding featured products or categories to immediately communicate the shopping aspect.",
+      "header-navigation: *RECOMMENDATIONS:**",
+      "header-navigation: Make search bar more prominent to align with search-first vision.",
+      "header-navigation: Include product pricing and \"Add to Cart\" buttons in the header for immediate shopping recognition.",
+      "header-navigation: Enhance visual hierarchy with better contrast and focal points.",
+      "header-navigation: Ensure all interactive elements meet touch target size for mobile.",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Display product pricing clearly on the page.",
+      "collection-page-mobile: Add \"Add to Cart\" buttons for immediate purchase options.",
+      "collection-page-mobile: Make the search bar more prominent to align with the search-first goal.",
+      "collection-page-mobile: Enhance visual indicators of shopping, such as featured products or promotions.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).",
+      "product-page-mobile: Enhance the prominence of the search bar to emphasize search-first design.",
+      "product-page-mobile: Improve text contrast for better accessibility.",
+      "product-page-mobile: Simplify and organize product details for clearer visual hierarchy.",
+      "homepage-mobile: Include product pricing on the homepage to clarify shopping intent.",
+      "homepage-mobile: Add \"Add to Cart\" or \"Buy Now\" buttons for immediate purchase options.",
+      "homepage-mobile: Enhance the visibility of the cart icon with animation or color contrast to draw attention.",
+      "product-page-desktop: *RECOMMENDATIONS:**",
+      "product-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).",
+      "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+      "product-page-desktop: Ensure touch targets meet the 44px minimum for mobile usability.",
+      "product-page-desktop: Increase text size for better readability.",
+      "collection-page-desktop: *RECOMMENDATIONS:**",
+      "collection-page-desktop: Display product pricing clearly on the page.",
+      "collection-page-desktop: Add visible \"Add to Cart\" buttons for each product.",
+      "collection-page-desktop: Make the search bar more prominent and accessible.",
+      "collection-page-desktop: Ensure touch targets are at least 44px for mobile optimization.",
+      "collection-page-desktop: Improve mobile navigation for thumb reachability.",
+      "collection-page-desktop: Enhance color contrast for better accessibility.",
+      "footer-section: *RECOMMENDATIONS:**",
+      "footer-section: Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.",
+      "footer-section: Increase visibility of shopping elements to communicate the e-commerce nature more effectively.",
+      "footer-section: Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states."
+    ]
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 269.1,
+    "total_js_size_kb": 130.2,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 473.5,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "screenshot_performance_analysis": {
+    "screenshots_analyzed": 10,
+    "performance_score": 78,
+    "source": "vision_ai_processed_performance",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 50,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "cart-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 70,
+          "design_efficiency": 95
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 75,
+          "asset_optimization": 85,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-mobile": {
+        "performance_indicators": {
+          "layout_stability": 80,
+          "asset_optimization": 85,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 75,
+          "asset_optimization": 65,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 75,
+          "asset_optimization": 60,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "footer-section": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "layout_stability": 75,
+      "design_efficiency": 87,
+      "asset_optimization": 75
+    },
+    "issues": [],
+    "recommendations": []
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 269.1,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "screenshot_design_analysis": {
+    "screenshots_analyzed": 10,
+    "design_score": 77,
+    "source": "vision_ai_processed_design",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "design_scores": {
+          "brand_consistency": 70,
+          "visual_hierarchy": 70,
+          "accessibility": 60,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 60/100)",
+          "Lack of product visuals or descriptions to indicate shopping."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Add product visuals or descriptions to communicate shopping intent."
+        ]
+      },
+      "cart-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 90
+        },
+        "issues": [],
+        "recommendations": [
+          "Make search bar more prominent to align with search-first design goals."
+        ]
+      },
+      "homepage-desktop": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 95
+        },
+        "issues": [
+          "Accessibility could be improved with clearer visual states for interactive elements."
+        ],
+        "recommendations": [
+          "Improve accessibility by ensuring all interactive elements have clear visual states."
+        ]
+      },
+      "header-navigation": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Minimal visual hierarchy; elements are sparse."
+        ],
+        "recommendations": [
+          "Enhance visual hierarchy with better contrast and focal points."
+        ]
+      },
+      "collection-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 90
+        },
+        "issues": [],
+        "recommendations": [
+          "Enhance visual indicators of shopping, such as featured products or promotions."
+        ]
+      },
+      "product-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 75,
+          "accessibility": 75,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Text contrast could be improved for better readability.",
+          "Visual hierarchy could be clearer; product details are somewhat cluttered."
+        ],
+        "recommendations": [
+          "Enhance the prominence of the search bar to emphasize search-first design.",
+          "Simplify and organize product details for clearer visual hierarchy."
+        ]
+      },
+      "homepage-mobile": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 80,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": [
+          "Enhance the visibility of the cart icon with animation or color contrast to draw attention."
+        ]
+      },
+      "product-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 75,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 75,
+          "accessibility": 70,
+          "brutalist_simplicity": 85
+        },
+        "issues": [],
+        "recommendations": [
+          "Enhance color contrast for better accessibility."
+        ]
+      },
+      "footer-section": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Accessibility could be improved with more contrast and clearer focus states."
+        ],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 83,
+      "visual_hierarchy": 75,
+      "accessibility": 75,
+      "brutalist_simplicity": 87
+    },
+    "issues": [
+      "cart-desktop: Accessibility/contrast issues (score: 60/100)",
+      "cart-desktop: Lack of product visuals or descriptions to indicate shopping.",
+      "homepage-desktop: Accessibility could be improved with clearer visual states for interactive elements.",
+      "header-navigation: Minimal visual hierarchy; elements are sparse.",
+      "product-page-mobile: Text contrast could be improved for better readability.",
+      "product-page-mobile: Visual hierarchy could be clearer; product details are somewhat cluttered.",
+      "footer-section: Accessibility could be improved with more contrast and clearer focus states."
+    ],
+    "recommendations": [
+      "cart-desktop: Improve text contrast and color accessibility",
+      "cart-desktop: Add product visuals or descriptions to communicate shopping intent.",
+      "cart-mobile: Make search bar more prominent to align with search-first design goals.",
+      "homepage-desktop: Improve accessibility by ensuring all interactive elements have clear visual states.",
+      "header-navigation: Enhance visual hierarchy with better contrast and focal points.",
+      "collection-page-mobile: Enhance visual indicators of shopping, such as featured products or promotions.",
+      "product-page-mobile: Enhance the prominence of the search bar to emphasize search-first design.",
+      "product-page-mobile: Simplify and organize product details for clearer visual hierarchy.",
+      "homepage-mobile: Enhance the visibility of the cart icon with animation or color contrast to draw attention.",
+      "collection-page-desktop: Enhance color contrast for better accessibility."
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Vision**: cart-desktop: *RECOMMENDATIONS:**
+**Vision**: cart-desktop: Increase the size and prominence of the shopping cart icon.
+**Vision**: cart-desktop: Ensure product pricing and "Add to Cart" buttons are visible.
+**Vision**: cart-desktop: Fix translation errors to improve clarity.
+**Vision**: cart-desktop: Make search functionality more prominent and accessible.
+**Vision**: cart-desktop: Add product visuals or descriptions to communicate shopping intent.
+**Vision**: cart-mobile: *RECOMMENDATIONS:**
+**Vision**: cart-mobile: Fix translation errors to ensure clear communication.
+**Vision**: cart-mobile: Add product pricing and "Add to Cart" buttons for better e-commerce functionality.
+**Vision**: cart-mobile: Make search bar more prominent to align with search-first design goals.
+**Vision**: cart-mobile: Ensure all text elements meet WCAG 2.1 AA contrast requirements.
+**Vision**: homepage-desktop: *RECOMMENDATIONS:**
+**Vision**: homepage-desktop: Display product pricing and "Add to Cart" buttons on the homepage to enhance shopping clarity.
+**Vision**: homepage-desktop: Improve accessibility by ensuring all interactive elements have clear visual states.
+**Vision**: homepage-desktop: Consider adding featured products or categories to immediately communicate the shopping aspect.
+**Vision**: header-navigation: *RECOMMENDATIONS:**
+**Vision**: header-navigation: Make search bar more prominent to align with search-first vision.
+**Vision**: header-navigation: Include product pricing and "Add to Cart" buttons in the header for immediate shopping recognition.
+**Vision**: header-navigation: Enhance visual hierarchy with better contrast and focal points.
+**Vision**: header-navigation: Ensure all interactive elements meet touch target size for mobile.
+**Vision**: collection-page-mobile: *RECOMMENDATIONS:**
+**Vision**: collection-page-mobile: Display product pricing clearly on the page.
+**Vision**: collection-page-mobile: Add "Add to Cart" buttons for immediate purchase options.
+**Vision**: collection-page-mobile: Make the search bar more prominent to align with the search-first goal.
+**Vision**: collection-page-mobile: Enhance visual indicators of shopping, such as featured products or promotions.
+**Vision**: product-page-mobile: *RECOMMENDATIONS:**
+**Vision**: product-page-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).
+**Vision**: product-page-mobile: Enhance the prominence of the search bar to emphasize search-first design.
+**Vision**: product-page-mobile: Improve text contrast for better accessibility.
+**Vision**: product-page-mobile: Simplify and organize product details for clearer visual hierarchy.
+**Vision**: homepage-mobile: *RECOMMENDATIONS:**
+**Vision**: homepage-mobile: Include product pricing on the homepage to clarify shopping intent.
+**Vision**: homepage-mobile: Add "Add to Cart" or "Buy Now" buttons for immediate purchase options.
+**Vision**: homepage-mobile: Enhance the visibility of the cart icon with animation or color contrast to draw attention.
+**Vision**: product-page-desktop: *RECOMMENDATIONS:**
+**Vision**: product-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).
+**Vision**: product-page-desktop: Enhance the visibility and accessibility of the search bar.
+**Vision**: product-page-desktop: Ensure touch targets meet the 44px minimum for mobile usability.
+**Vision**: product-page-desktop: Increase text size for better readability.
+**Vision**: collection-page-desktop: *RECOMMENDATIONS:**
+**Vision**: collection-page-desktop: Display product pricing clearly on the page.
+**Vision**: collection-page-desktop: Add visible "Add to Cart" buttons for each product.
+**Vision**: collection-page-desktop: Make the search bar more prominent and accessible.
+**Vision**: collection-page-desktop: Ensure touch targets are at least 44px for mobile optimization.
+**Vision**: collection-page-desktop: Improve mobile navigation for thumb reachability.
+**Vision**: collection-page-desktop: Enhance color contrast for better accessibility.
+**Vision**: footer-section: *RECOMMENDATIONS:**
+**Vision**: footer-section: Add product pricing and "Add to Cart" buttons to enhance shopping clarity.
+**Vision**: footer-section: Increase visibility of shopping elements to communicate the e-commerce nature more effectively.
+**Vision**: footer-section: Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states.
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Alex**: {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 269.1KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 57 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 37/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Alex** (Score: 37/100): {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Vision** (Score: 77/100): cart-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): cart-desktop: Increase the size and prominence of the shopping cart icon.
+- [ ] **Vision** (Score: 77/100): cart-desktop: Ensure product pricing and "Add to Cart" buttons are visible.
+- [ ] **Vision** (Score: 77/100): cart-desktop: Fix translation errors to improve clarity.
+- [ ] **Vision** (Score: 77/100): cart-desktop: Make search functionality more prominent and accessible.
+- [ ] **Vision** (Score: 77/100): cart-desktop: Add product visuals or descriptions to communicate shopping intent.
+- [ ] **Vision** (Score: 77/100): cart-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): cart-mobile: Fix translation errors to ensure clear communication.
+- [ ] **Vision** (Score: 77/100): cart-mobile: Add product pricing and "Add to Cart" buttons for better e-commerce functionality.
+- [ ] **Vision** (Score: 77/100): cart-mobile: Make search bar more prominent to align with search-first design goals.
+- [ ] **Vision** (Score: 77/100): cart-mobile: Ensure all text elements meet WCAG 2.1 AA contrast requirements.
+- [ ] **Vision** (Score: 77/100): homepage-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): homepage-desktop: Display product pricing and "Add to Cart" buttons on the homepage to enhance shopping clarity.
+- [ ] **Vision** (Score: 77/100): homepage-desktop: Improve accessibility by ensuring all interactive elements have clear visual states.
+- [ ] **Vision** (Score: 77/100): homepage-desktop: Consider adding featured products or categories to immediately communicate the shopping aspect.
+- [ ] **Vision** (Score: 77/100): header-navigation: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): header-navigation: Make search bar more prominent to align with search-first vision.
+- [ ] **Vision** (Score: 77/100): header-navigation: Include product pricing and "Add to Cart" buttons in the header for immediate shopping recognition.
+- [ ] **Vision** (Score: 77/100): header-navigation: Enhance visual hierarchy with better contrast and focal points.
+- [ ] **Vision** (Score: 77/100): header-navigation: Ensure all interactive elements meet touch target size for mobile.
+- [ ] **Vision** (Score: 77/100): collection-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): collection-page-mobile: Display product pricing clearly on the page.
+- [ ] **Vision** (Score: 77/100): collection-page-mobile: Add "Add to Cart" buttons for immediate purchase options.
+- [ ] **Vision** (Score: 77/100): collection-page-mobile: Make the search bar more prominent to align with the search-first goal.
+- [ ] **Vision** (Score: 77/100): collection-page-mobile: Enhance visual indicators of shopping, such as featured products or promotions.
+- [ ] **Vision** (Score: 77/100): product-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): product-page-mobile: Make shopping cart icon more prominent (increase size, ensure visibility).
+- [ ] **Vision** (Score: 77/100): product-page-mobile: Enhance the prominence of the search bar to emphasize search-first design.
+- [ ] **Vision** (Score: 77/100): product-page-mobile: Improve text contrast for better accessibility.
+- [ ] **Vision** (Score: 77/100): product-page-mobile: Simplify and organize product details for clearer visual hierarchy.
+- [ ] **Vision** (Score: 77/100): homepage-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): homepage-mobile: Include product pricing on the homepage to clarify shopping intent.
+- [ ] **Vision** (Score: 77/100): homepage-mobile: Add "Add to Cart" or "Buy Now" buttons for immediate purchase options.
+- [ ] **Vision** (Score: 77/100): homepage-mobile: Enhance the visibility of the cart icon with animation or color contrast to draw attention.
+- [ ] **Vision** (Score: 77/100): product-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): product-page-desktop: Make shopping cart icon more prominent (increase size, ensure visibility).
+- [ ] **Vision** (Score: 77/100): product-page-desktop: Enhance the visibility and accessibility of the search bar.
+- [ ] **Vision** (Score: 77/100): product-page-desktop: Ensure touch targets meet the 44px minimum for mobile usability.
+- [ ] **Vision** (Score: 77/100): product-page-desktop: Increase text size for better readability.
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: Display product pricing clearly on the page.
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: Add visible "Add to Cart" buttons for each product.
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: Make the search bar more prominent and accessible.
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: Ensure touch targets are at least 44px for mobile optimization.
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: Improve mobile navigation for thumb reachability.
+- [ ] **Vision** (Score: 77/100): collection-page-desktop: Enhance color contrast for better accessibility.
+- [ ] **Vision** (Score: 77/100): footer-section: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 77/100): footer-section: Add product pricing and "Add to Cart" buttons to enhance shopping clarity.
+- [ ] **Vision** (Score: 77/100): footer-section: Increase visibility of shopping elements to communicate the e-commerce nature more effectively.
+- [ ] **Vision** (Score: 77/100): footer-section: Improve accessibility by ensuring all text meets contrast requirements and providing clear focus states.
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 269.1KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 0 tasks
+- 🔥 High: 5 tasks  
+- ⚡ Medium: 52 tasks
+- 💡 Low: 0 tasks
+- **Total**: 57 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
+
+
+---
+
+## AI Analysis - FULL_AUDIT - 2025-11-03 17:38:22
+
+
+### Mission: FULL_AUDIT
+**Overall Score**: 51/100
+
+#### Findings
+
+### Vision (75/100)
+
+{
+  "visual_analysis": {
+    "cart-desktop": {
+      "screen": "cart-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 50/100\n- Mobile-First: 60/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 60/100\n- Brand Consistency: 75/100\n- OVERALL: 68/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Missing product pricing and \"Add to Cart\" buttons.\n- Translation errors present, affecting user experience.\n- Search functionality not prominent.\n- Accessibility issues with color contrast and missing text.\n\n**RECOMMENDATIONS:**\n- Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.\n- Fix translation errors to improve user experience.\n- Make search bar more prominent and consider adding voice search.\n- Improve color contrast for better accessibility.\n- Ensure all text is readable and meets WCAG 2.1 AA standards.\n\n**HIGHLIGHTS:**\n- Cart icon is visible and recognizable.\n- Design follows a brutalist simplicity approach with minimal clutter.\n- Brand logo is clear and consistent.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 50,
+        "mobile_first": 60,
+        "brutalist_simplicity": 85,
+        "accessibility": 60,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing product pricing and \"Add to Cart\" buttons.",
+        "Translation errors present, affecting user experience.",
+        "Search functionality not prominent.",
+        "Accessibility issues with color contrast and missing text."
+      ],
+      "recommendations": [
+        "cart-desktop: *RECOMMENDATIONS:**",
+        "cart-desktop: Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.",
+        "cart-desktop: Fix translation errors to improve user experience.",
+        "cart-desktop: Make search bar more prominent and consider adding voice search.",
+        "cart-desktop: Improve color contrast for better accessibility.",
+        "cart-desktop: Ensure all text is readable and meets WCAG 2.1 AA standards."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Cart icon is visible and recognizable.",
+        "Design follows a brutalist simplicity approach with minimal clutter.",
+        "Brand logo is clear and consistent."
+      ],
+      "score": 68
+    },
+    "cart-mobile": {
+      "screen": "cart-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 60/100 (CRITICAL - Cart icon present but issues with translation)\n- Visual Hierarchy: 70/100\n- Search-First Design: 40/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 60/100\n- Brand Consistency: 75/100\n- OVERALL: 67/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? NO\n\n**ISSUES FOUND:**\n- Missing translations for cart messages.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Lack of clear search functionality.\n- Accessibility issues with translation errors and potential color contrast.\n\n**RECOMMENDATIONS:**\n- Fix translation issues to ensure messages are clear.\n- Include product pricing and \"Add to Cart\" buttons.\n- Enhance search functionality and visibility.\n- Ensure color contrast meets accessibility standards.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with brutalist simplicity.\n- Mobile-friendly layout with thumb-reachable icons.\n\nThe design needs improvements in e-commerce visibility and functionality, especially regarding translations and search features.",
+      "scores": {
+        "ecommerce_visibility": 60,
+        "visual_hierarchy": 70,
+        "search_first": 40,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 60,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing translations for cart messages.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Lack of clear search functionality.",
+        "Accessibility issues with translation errors and potential color contrast."
+      ],
+      "recommendations": [
+        "cart-mobile: *RECOMMENDATIONS:**",
+        "cart-mobile: Fix translation issues to ensure messages are clear.",
+        "cart-mobile: Include product pricing and \"Add to Cart\" buttons.",
+        "cart-mobile: Enhance search functionality and visibility.",
+        "cart-mobile: Ensure color contrast meets accessibility standards."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Mobile-friendly layout with thumb-reachable icons."
+      ],
+      "score": 67
+    },
+    "homepage-desktop": {
+      "screen": "homepage-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but no product pricing or \"Add to Cart\" buttons)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 85/100\n- Brand Consistency: 90/100\n- OVERALL: 84/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (Top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY (Search-focused, but lacks immediate shopping cues)\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons.\n- Shopping intent not immediately clear without product visuals or pricing.\n\n**RECOMMENDATIONS:**\n- Display product pricing and \"Add to Cart\" buttons prominently on the homepage.\n- Include product images or featured products to enhance shopping intent.\n- Make the cart icon more prominent with a badge for item count.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean, minimalistic design adhering to Brutalist simplicity.\n- Consistent branding with clear typography and color scheme.\n\nThe homepage effectively highlights the search functionality but needs enhancements in displaying e-commerce elements like product pricing and purchase buttons to communicate its shopping purpose more clearly.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 80,
+        "brutalist_simplicity": 90,
+        "accessibility": 85,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons.",
+        "Shopping intent not immediately clear without product visuals or pricing."
+      ],
+      "recommendations": [
+        "homepage-desktop: *RECOMMENDATIONS:**",
+        "homepage-desktop: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+        "homepage-desktop: Include product images or featured products to enhance shopping intent.",
+        "homepage-desktop: Make the cart icon more prominent with a badge for item count."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean, minimalistic design adhering to Brutalist simplicity.",
+        "Consistent branding with clear typography and color scheme."
+      ],
+      "score": 84
+    },
+    "header-navigation": {
+      "screen": "header-navigation",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 100/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 80/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 75/100\n- Brand Consistency: 85/100\n- OVERALL: 82/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (located at the top right, clear and appropriately sized)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY (cart icon suggests shopping, but no pricing or product buttons visible)\n\n**ISSUES FOUND:**\n- No visible product pricing or \"Add to Cart\" buttons.\n- Search functionality is not prominent.\n- Limited indication of shopping intent beyond the cart icon.\n- Accessibility features like color contrast and focus states not clearly visible.\n\n**RECOMMENDATIONS:**\n- Make search functionality more prominent, possibly by increasing size or adding a search bar.\n- Include product pricing and \"Add to Cart\" buttons in the header or nearby for immediate visibility.\n- Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.\n- Consider adding more elements that communicate the shopping experience, such as featured products or promotions.\n\n**HIGHLIGHTS:**\n- The cart icon is clear and well-placed, indicating e-commerce functionality.\n- The design is clean and minimal, aligning with the brutalist simplicity goal.\n- The layout appears thumb-friendly and responsive for mobile users.",
+      "scores": {
+        "ecommerce_visibility": 100,
+        "visual_hierarchy": 80,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 90,
+        "accessibility": 75,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No visible product pricing or \"Add to Cart\" buttons.",
+        "Search functionality is not prominent.",
+        "Limited indication of shopping intent beyond the cart icon.",
+        "Accessibility features like color contrast and focus states not clearly visible."
+      ],
+      "recommendations": [
+        "header-navigation: *RECOMMENDATIONS:**",
+        "header-navigation: Make search functionality more prominent, possibly by increasing size or adding a search bar.",
+        "header-navigation: Include product pricing and \"Add to Cart\" buttons in the header or nearby for immediate visibility.",
+        "header-navigation: Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.",
+        "header-navigation: Consider adding more elements that communicate the shopping experience, such as featured products or promotions."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "The cart icon is clear and well-placed, indicating e-commerce functionality.",
+        "The design is clean and minimal, aligning with the brutalist simplicity goal.",
+        "The layout appears thumb-friendly and responsive for mobile users."
+      ],
+      "score": 82
+    },
+    "collection-page-mobile": {
+      "screen": "collection-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon is visible)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 85/100\n- Brutalist Simplicity: 75/100\n- Accessibility: 70/100\n- Brand Consistency: 80/100\n- OVERALL: 74/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (Top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Product pricing and \"Add to Cart\" buttons are not visible.\n- Search bar is not prominently displayed.\n- Lack of immediate product visibility might confuse users about the shopping intent.\n- Accessibility elements like color contrast and focus states are not clearly visible.\n\n**RECOMMENDATIONS:**\n- Ensure product pricing and \"Add to Cart\" buttons are visible on the main page.\n- Make the search bar more prominent, possibly at the top.\n- Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.\n- Consider adding a badge to the cart icon to indicate item count.\n\n**HIGHLIGHTS:**\n- Cart icon is clearly visible, indicating shopping functionality.\n- Clean and minimal design aligns with the brutalist simplicity goal.\n- Thumb-friendly touch targets and navigation are well-implemented.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 85,
+        "brutalist_simplicity": 75,
+        "accessibility": 70,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Product pricing and \"Add to Cart\" buttons are not visible.",
+        "Search bar is not prominently displayed.",
+        "Lack of immediate product visibility might confuse users about the shopping intent.",
+        "Accessibility elements like color contrast and focus states are not clearly visible."
+      ],
+      "recommendations": [
+        "collection-page-mobile: *RECOMMENDATIONS:**",
+        "collection-page-mobile: Ensure product pricing and \"Add to Cart\" buttons are visible on the main page.",
+        "collection-page-mobile: Make the search bar more prominent, possibly at the top.",
+        "collection-page-mobile: Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.",
+        "collection-page-mobile: Consider adding a badge to the cart icon to indicate item count."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Cart icon is clearly visible, indicating shopping functionality.",
+        "Clean and minimal design aligns with the brutalist simplicity goal.",
+        "Thumb-friendly touch targets and navigation are well-implemented."
+      ],
+      "score": 74
+    },
+    "product-page-mobile": {
+      "screen": "product-page-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 0/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 70/100\n- Search-First Design: 60/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 75/100\n- Brand Consistency: 80/100\n- OVERALL: 64/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? NO\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Missing shopping cart icon in the header.\n- Search bar is not prominently visible.\n- Text size could be improved for better readability.\n- Lack of clear visual states for interactive elements.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility of the search bar to emphasize search-first design.\n- Increase text size for better readability on mobile.\n- Improve visual states for buttons and links to enhance accessibility.\n\n**HIGHLIGHTS:**\n- Clean and minimal design aligns well with brutalist simplicity.\n- Touch targets appear to be thumb-friendly and appropriately sized.\n- Consistent use of colors and typography throughout the page.",
+      "scores": {
+        "ecommerce_visibility": 0,
+        "visual_hierarchy": 70,
+        "search_first": 60,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 75,
+        "brand_consistency": 80
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": false,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Missing shopping cart icon in the header.",
+        "Search bar is not prominently visible.",
+        "Text size could be improved for better readability.",
+        "Lack of clear visual states for interactive elements."
+      ],
+      "recommendations": [
+        "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+        "product-page-mobile: *RECOMMENDATIONS:**",
+        "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-mobile: Enhance the visibility of the search bar to emphasize search-first design.",
+        "product-page-mobile: Increase text size for better readability on mobile.",
+        "product-page-mobile: Improve visual states for buttons and links to enhance accessibility."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean and minimal design aligns well with brutalist simplicity.",
+        "Touch targets appear to be thumb-friendly and appropriately sized.",
+        "Consistent use of colors and typography throughout the page."
+      ],
+      "score": 64
+    },
+    "homepage-mobile": {
+      "screen": "homepage-mobile",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Must see cart icon!)\n- Visual Hierarchy: 75/100\n- Search-First Design: 85/100\n- Mobile-First: 90/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 85/100\n- OVERALL: 81/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, standard size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- No product pricing visible on the homepage.\n- No \"Add to Cart\" or \"Buy Now\" buttons visible.\n- Limited immediate indication that this is a shopping platform.\n- Accessibility issues with potential color contrast.\n\n**RECOMMENDATIONS:**\n- Add product pricing and \"Add to Cart\" buttons for immediate shopping cues.\n- Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.\n- Enhance the visibility of shopping features to communicate the e-commerce nature more clearly.\n\n**HIGHLIGHTS:**\n- Clear search bar with a prominent position.\n- Thumb-friendly navigation and touch targets.\n- Consistent branding with a clean, minimalist design.\n\nThe design effectively incorporates a search-first approach and maintains a clean, simple aesthetic. However, it needs stronger e-commerce signals, such as visible pricing and purchase options, to immediately convey its shopping functionality.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 75,
+        "search_first": 85,
+        "mobile_first": 90,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "No product pricing visible on the homepage.",
+        "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+        "Limited immediate indication that this is a shopping platform.",
+        "Accessibility issues with potential color contrast."
+      ],
+      "recommendations": [
+        "homepage-mobile: *RECOMMENDATIONS:**",
+        "homepage-mobile: Add product pricing and \"Add to Cart\" buttons for immediate shopping cues.",
+        "homepage-mobile: Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.",
+        "homepage-mobile: Enhance the visibility of shopping features to communicate the e-commerce nature more clearly."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clear search bar with a prominent position.",
+        "Thumb-friendly navigation and touch targets.",
+        "Consistent branding with a clean, minimalist design."
+      ],
+      "score": 81
+    },
+    "product-page-desktop": {
+      "screen": "product-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 80/100 (CRITICAL - Cart icon visible but small)\n- Visual Hierarchy: 85/100\n- Search-First Design: 70/100\n- Mobile-First: 75/100\n- Brutalist Simplicity: 90/100\n- Accessibility: 80/100\n- Brand Consistency: 85/100\n- OVERALL: 81/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? YES\n- Add to Cart buttons? YES\n- Shopping intent clear? YES\n\n**ISSUES FOUND:**\n- Cart icon is small and may not be immediately noticeable.\n- Search bar is not prominently placed or highlighted.\n- Touch targets may not meet the 44px minimum for mobile.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Enhance the visibility and accessibility of the search bar.\n- Ensure touch targets are at least 44px for better mobile usability.\n\n**HIGHLIGHTS:**\n- Clean and minimal design aligns well with brutalist simplicity.\n- Product pricing and \"Add to Cart\" buttons are clearly visible.\n- Brand is consistently represented with colors and typography.",
+      "scores": {
+        "ecommerce_visibility": 80,
+        "visual_hierarchy": 85,
+        "search_first": 70,
+        "mobile_first": 75,
+        "brutalist_simplicity": 90,
+        "accessibility": 80,
+        "brand_consistency": 85
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": true,
+        "add_to_cart_buttons": true,
+        "shopping_intent_clear": true
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and may not be immediately noticeable.",
+        "Search bar is not prominently placed or highlighted.",
+        "Touch targets may not meet the 44px minimum for mobile."
+      ],
+      "recommendations": [
+        "product-page-desktop: *RECOMMENDATIONS:**",
+        "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+        "product-page-desktop: Ensure touch targets are at least 44px for better mobile usability."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean and minimal design aligns well with brutalist simplicity.",
+        "Product pricing and \"Add to Cart\" buttons are clearly visible.",
+        "Brand is consistently represented with colors and typography."
+      ],
+      "score": 81
+    },
+    "collection-page-desktop": {
+      "screen": "collection-page-desktop",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon present but needs improvement)\n- Visual Hierarchy: 60/100\n- Search-First Design: 50/100\n- Mobile-First: 65/100\n- Brutalist Simplicity: 80/100\n- Accessibility: 70/100\n- Brand Consistency: 75/100\n- OVERALL: 67/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Cart icon is small and may not be immediately noticeable.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Search functionality is not prominent.\n- Lack of product images or descriptions reduces shopping intent clarity.\n- Visual hierarchy could be improved for better content prioritization.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Display product pricing and \"Add to Cart\" buttons clearly.\n- Enhance search visibility and accessibility.\n- Improve visual hierarchy with better use of contrast and spacing.\n- Include product images and descriptions to clarify shopping intent.\n\n**HIGHLIGHTS:**\n- Clean, minimal design aligns with Brutalist Simplicity.\n- Consistent use of brand colors and typography.\n- Footer provides comprehensive navigation and information.\n\nFocus on enhancing e-commerce elements and search functionality to improve user experience and shopping clarity.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 60,
+        "search_first": 50,
+        "mobile_first": 65,
+        "brutalist_simplicity": 80,
+        "accessibility": 70,
+        "brand_consistency": 75
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and may not be immediately noticeable.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Search functionality is not prominent.",
+        "Lack of product images or descriptions reduces shopping intent clarity.",
+        "Visual hierarchy could be improved for better content prioritization."
+      ],
+      "recommendations": [
+        "collection-page-desktop: *RECOMMENDATIONS:**",
+        "collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "collection-page-desktop: Display product pricing and \"Add to Cart\" buttons clearly.",
+        "collection-page-desktop: Enhance search visibility and accessibility.",
+        "collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.",
+        "collection-page-desktop: Include product images and descriptions to clarify shopping intent."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Clean, minimal design aligns with Brutalist Simplicity.",
+        "Consistent use of brand colors and typography.",
+        "Footer provides comprehensive navigation and information."
+      ],
+      "score": 67
+    },
+    "footer-section": {
+      "screen": "footer-section",
+      "raw_analysis": "**SCORES:**\n- E-Commerce Visibility: 70/100 (CRITICAL - Cart icon visible but lacks prominence)\n- Visual Hierarchy: 85/100\n- Search-First Design: 90/100\n- Mobile-First: 80/100\n- Brutalist Simplicity: 85/100\n- Accessibility: 80/100\n- Brand Consistency: 90/100\n- OVERALL: 83/100\n\n**E-COMMERCE CHECK:**\n- Cart icon visible? YES (top right corner, small size)\n- Pricing visible? NO\n- Add to Cart buttons? NO\n- Shopping intent clear? PARTIALLY\n\n**ISSUES FOUND:**\n- Cart icon is small and not very prominent.\n- No product pricing or \"Add to Cart\" buttons visible.\n- Shopping intent is not immediately clear due to lack of product visuals or pricing.\n\n**RECOMMENDATIONS:**\n- Make shopping cart icon more prominent (increase size, add animation, ensure visibility).\n- Include product pricing and \"Add to Cart\" buttons to enhance e-commerce visibility.\n- Consider adding product images or categories to communicate shopping intent more clearly.\n\n**HIGHLIGHTS:**\n- Strong search-first design with a prominent search bar.\n- Clean, minimal design aligns with brutalist simplicity.\n- Consistent branding with clear typography and color scheme.",
+      "scores": {
+        "ecommerce_visibility": 70,
+        "visual_hierarchy": 85,
+        "search_first": 90,
+        "mobile_first": 80,
+        "brutalist_simplicity": 85,
+        "accessibility": 80,
+        "brand_consistency": 90
+      },
+      "ecommerce_check": {
+        "cart_icon_visible": true,
+        "pricing_visible": false,
+        "add_to_cart_buttons": false,
+        "shopping_intent_clear": false
+      },
+      "issues": [
+        "*ISSUES FOUND:**",
+        "Cart icon is small and not very prominent.",
+        "No product pricing or \"Add to Cart\" buttons visible.",
+        "Shopping intent is not immediately clear due to lack of product visuals or pricing."
+      ],
+      "recommendations": [
+        "footer-section: *RECOMMENDATIONS:**",
+        "footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+        "footer-section: Include product pricing and \"Add to Cart\" buttons to enhance e-commerce visibility.",
+        "footer-section: Consider adding product images or categories to communicate shopping intent more clearly."
+      ],
+      "highlights": [
+        "*HIGHLIGHTS:**",
+        "Strong search-first design with a prominent search bar.",
+        "Clean, minimal design aligns with brutalist simplicity.",
+        "Consistent branding with clear typography and color scheme."
+      ],
+      "score": 83
+    }
+  },
+  "screenshots_analyzed": 10,
+  "project_goals_alignment": {
+    "search_first_visual": true,
+    "mobile_optimized": true,
+    "brutalist_design": true,
+    "accessible": false,
+    "issues_found": [
+      "cart-desktop: Accessibility issues",
+      "cart-mobile: Accessibility issues",
+      "header-navigation: Accessibility issues",
+      "collection-page-mobile: Accessibility issues",
+      "homepage-mobile: Accessibility issues"
+    ]
+  }
+}
+### Sarah (40/100)
+
+{
+  "preview_url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+  "pagespeed_performance": {
+    "error": "PageSpeed API error: 400"
+  },
+  "technical_audit": {
+    "error": "Website not accessible: 422",
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main"
+  },
+  "theme_seo_analysis": {
+    "theme_path": "/Users/Frank/Documents/EMMSO NOV",
+    "seo_elements_found": {
+      "seo_snippets": [
+        "structured-data-breadcrumbs.liquid",
+        "meta-tags-enhanced.liquid",
+        "structured-data-howto.liquid",
+        "structured-data-collection-main.liquid",
+        "structured-data-article-main.liquid",
+        "structured-data-collection-articles.liquid",
+        "structured-data-blog-articles.liquid",
+        "meta-tags.liquid",
+        "structured-data-related-articles.liquid",
+        "structured-data-product-main.liquid",
+        "structured-data-faq.liquid",
+        "structured-data-organization.liquid",
+        "structured-data.liquid",
+        "structured-data-video.liquid",
+        "structured-data-collection-carrousel.liquid",
+        "structured-data-reviews.liquid"
+      ],
+      "seo_settings": true,
+      "seo_settings_count": 6
+    },
+    "missing_seo_elements": [],
+    "template_analysis": {
+      "template_count": 38,
+      "files": [
+        "password.json",
+        "cart.json",
+        "search.json",
+        "404.json",
+        "article.json",
+        "collection.json",
+        "product.json",
+        "index.json",
+        "blog.json",
+        "list-collections.json",
+        "page.json",
+        "page.sitemap-blogs-es.liquid",
+        "page.sitemap-blogs-de.liquid",
+        "collection.all-products-feed-nl.liquid",
+        "page.sitemap-blogs-it.liquid",
+        "page.sitemap-collections-nl.liquid",
+        "collection.all-products-feed-en.liquid",
+        "page.sitemap-collections-pt.liquid",
+        "page.sitemap-collections-fr.liquid",
+        "page.sitemap-blogs-da.liquid",
+        "page.sitemap-collections-en.liquid",
+        "collection.all-products-feed-pt.liquid",
+        "collection.all-products-feed-fr.liquid",
+        "page.sitemap-collections-es.liquid",
+        "page.sitemap-collections-de.liquid",
+        "collection.all-products-feed-it.liquid",
+        "collection.all-products-feed-es.liquid",
+        "gift_card.liquid",
+        "page.sitemap-pages-de.liquid",
+        "page.sitemap-blogs-nl.liquid",
+        "page.sitemap-collections-it.liquid",
+        "collection.all-products-feed-de.liquid",
+        "page.sitemap-blogs-pt.liquid",
+        "page.sitemap-blogs-fr.liquid",
+        "collection.all-products-feed-da.liquid",
+        "page.sitemap-pages-da.liquid",
+        "page.sitemap-collections-da.liquid",
+        "page.sitemap-blogs-en.liquid"
+      ],
+      "json_templates": 11,
+      "liquid_templates": 27
+    },
+    "theme_seo_score": 100
+  },
+  "project_goals_check": {
+    "vision_score": 100,
+    "search_first_implemented": true,
+    "languages_found": 20,
+    "voice_search_found": true,
+    "mobile_first_found": true,
+    "violations": [],
+    "goal_alignment": "100/100"
+  },
+  "screenshot_seo_analysis": {
+    "screenshots_analyzed": 10,
+    "seo_score": 70,
+    "source": "vision_ai_processed_seo",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 60,
+          "accessibility": 60,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Mobile UX issues (score: 60/100)",
+          "Accessibility concerns (score: 60/100)",
+          "Missing product pricing and \"Add to Cart\" buttons.",
+          "Search functionality not prominent.",
+          "Accessibility issues with color contrast and missing text."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "Make search bar more prominent and consider adding voice search.",
+          "Improve color contrast for better accessibility."
+        ]
+      },
+      "cart-mobile": {
+        "seo_scores": {
+          "search_visibility": 40,
+          "mobile_ux": 80,
+          "accessibility": 60,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 40/100)",
+          "Accessibility concerns (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Lack of clear search functionality.",
+          "Accessibility issues with translation errors and potential color contrast."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Improve color contrast to WCAG 2.1 AA standards",
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to ensure messages are clear.",
+          "Include product pricing and \"Add to Cart\" buttons.",
+          "Enhance search functionality and visibility.",
+          "Ensure color contrast meets accessibility standards."
+        ]
+      },
+      "homepage-desktop": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 80,
+          "accessibility": 85,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons."
+        ],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 75,
+          "cta_hierarchy": 80
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "No visible product pricing or \"Add to Cart\" buttons.",
+          "Search functionality is not prominent.",
+          "Accessibility features like color contrast and focus states not clearly visible."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Make search functionality more prominent, possibly by increasing size or adding a search bar.",
+          "Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast."
+        ]
+      },
+      "collection-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 85,
+          "accessibility": 70,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Product pricing and \"Add to Cart\" buttons are not visible.",
+          "Search bar is not prominently displayed.",
+          "Accessibility elements like color contrast and focus states are not clearly visible."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "*RECOMMENDATIONS:**",
+          "Ensure product pricing and \"Add to Cart\" buttons are visible on the main page.",
+          "Make the search bar more prominent, possibly at the top.",
+          "Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.",
+          "Consider adding a badge to the cart icon to indicate item count."
+        ]
+      },
+      "product-page-mobile": {
+        "seo_scores": {
+          "search_visibility": 60,
+          "mobile_ux": 80,
+          "accessibility": 75,
+          "cta_hierarchy": 70
+        },
+        "issues": [
+          "Search not prominent enough (score: 60/100)",
+          "Search bar is not prominently visible."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility of the search bar to emphasize search-first design.",
+          "Increase text size for better readability on mobile.",
+          "Improve visual states for buttons and links to enhance accessibility."
+        ]
+      },
+      "homepage-mobile": {
+        "seo_scores": {
+          "search_visibility": 85,
+          "mobile_ux": 90,
+          "accessibility": 70,
+          "cta_hierarchy": 75
+        },
+        "issues": [
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+          "Accessibility issues with potential color contrast."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add product pricing and \"Add to Cart\" buttons for immediate shopping cues.",
+          "Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.",
+          "Enhance the visibility of shopping features to communicate the e-commerce nature more clearly."
+        ]
+      },
+      "product-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 70,
+          "mobile_ux": 75,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "Search bar is not prominently placed or highlighted.",
+          "Touch targets may not meet the 44px minimum for mobile."
+        ],
+        "recommendations": [
+          "Enhance the visibility and accessibility of the search bar.",
+          "Ensure touch targets are at least 44px for better mobile usability."
+        ]
+      },
+      "collection-page-desktop": {
+        "seo_scores": {
+          "search_visibility": 50,
+          "mobile_ux": 65,
+          "accessibility": 70,
+          "cta_hierarchy": 60
+        },
+        "issues": [
+          "Search not prominent enough (score: 50/100)",
+          "Mobile UX issues (score: 65/100)",
+          "Weak visual hierarchy (score: 60/100)",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Search functionality is not prominent."
+        ],
+        "recommendations": [
+          "Make search bar larger and more visually prominent",
+          "Ensure touch targets are 44px+ and thumb-reachable",
+          "Strengthen CTA prominence and focal points",
+          "Enhance search visibility and accessibility."
+        ]
+      },
+      "footer-section": {
+        "seo_scores": {
+          "search_visibility": 90,
+          "mobile_ux": 80,
+          "accessibility": 80,
+          "cta_hierarchy": 85
+        },
+        "issues": [
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "search_visibility": 65,
+      "mobile_ux": 78,
+      "accessibility": 72,
+      "cta_hierarchy": 75
+    },
+    "issues": [
+      "cart-desktop: Search not prominent enough (score: 50/100)",
+      "cart-desktop: Mobile UX issues (score: 60/100)",
+      "cart-desktop: Accessibility concerns (score: 60/100)",
+      "cart-desktop: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-desktop: Search functionality not prominent.",
+      "cart-desktop: Accessibility issues with color contrast and missing text.",
+      "cart-mobile: Search not prominent enough (score: 40/100)",
+      "cart-mobile: Accessibility concerns (score: 60/100)",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "cart-mobile: Lack of clear search functionality.",
+      "cart-mobile: Accessibility issues with translation errors and potential color contrast.",
+      "homepage-desktop: No \"Add to Cart\" or \"Buy Now\" buttons.",
+      "header-navigation: Search not prominent enough (score: 60/100)",
+      "header-navigation: No visible product pricing or \"Add to Cart\" buttons.",
+      "header-navigation: Search functionality is not prominent.",
+      "header-navigation: Accessibility features like color contrast and focus states not clearly visible.",
+      "collection-page-mobile: Search not prominent enough (score: 60/100)",
+      "collection-page-mobile: Product pricing and \"Add to Cart\" buttons are not visible.",
+      "collection-page-mobile: Search bar is not prominently displayed.",
+      "collection-page-mobile: Accessibility elements like color contrast and focus states are not clearly visible.",
+      "product-page-mobile: Search not prominent enough (score: 60/100)",
+      "product-page-mobile: Search bar is not prominently visible.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "homepage-mobile: Accessibility issues with potential color contrast.",
+      "product-page-desktop: Search bar is not prominently placed or highlighted.",
+      "product-page-desktop: Touch targets may not meet the 44px minimum for mobile.",
+      "collection-page-desktop: Search not prominent enough (score: 50/100)",
+      "collection-page-desktop: Mobile UX issues (score: 65/100)",
+      "collection-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "collection-page-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "collection-page-desktop: Search functionality is not prominent.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible."
+    ],
+    "recommendations": [
+      "cart-desktop: Make search bar larger and more visually prominent",
+      "cart-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "cart-desktop: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-desktop: Make search bar more prominent and consider adding voice search.",
+      "cart-desktop: Improve color contrast for better accessibility.",
+      "cart-mobile: Make search bar larger and more visually prominent",
+      "cart-mobile: Improve color contrast to WCAG 2.1 AA standards",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation issues to ensure messages are clear.",
+      "cart-mobile: Include product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Enhance search functionality and visibility.",
+      "cart-mobile: Ensure color contrast meets accessibility standards.",
+      "header-navigation: Make search bar larger and more visually prominent",
+      "header-navigation: Make search functionality more prominent, possibly by increasing size or adding a search bar.",
+      "header-navigation: Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.",
+      "collection-page-mobile: Make search bar larger and more visually prominent",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Ensure product pricing and \"Add to Cart\" buttons are visible on the main page.",
+      "collection-page-mobile: Make the search bar more prominent, possibly at the top.",
+      "collection-page-mobile: Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.",
+      "collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.",
+      "product-page-mobile: Make search bar larger and more visually prominent",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility of the search bar to emphasize search-first design.",
+      "product-page-mobile: Increase text size for better readability on mobile.",
+      "product-page-mobile: Improve visual states for buttons and links to enhance accessibility.",
+      "homepage-mobile: *RECOMMENDATIONS:**",
+      "homepage-mobile: Add product pricing and \"Add to Cart\" buttons for immediate shopping cues.",
+      "homepage-mobile: Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.",
+      "homepage-mobile: Enhance the visibility of shopping features to communicate the e-commerce nature more clearly.",
+      "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+      "product-page-desktop: Ensure touch targets are at least 44px for better mobile usability.",
+      "collection-page-desktop: Make search bar larger and more visually prominent",
+      "collection-page-desktop: Ensure touch targets are 44px+ and thumb-reachable",
+      "collection-page-desktop: Strengthen CTA prominence and focal points",
+      "collection-page-desktop: Enhance search visibility and accessibility."
+    ]
+  },
+  "critical_issues": []
+}
+### Alex (37/100)
+
+{
+  "theme_structure": {
+    "file_structure": {
+      "layouts": 2,
+      "templates": 38,
+      "sections": 18,
+      "snippets": 26,
+      "assets": 46
+    },
+    "critical_files_present": {
+      "theme_liquid": true,
+      "product_template": true,
+      "collection_template": true,
+      "cart_template": true
+    },
+    "theme_completeness": 100.0
+  },
+  "template_quality": {
+    "templates_analyzed": 11,
+    "template_details": {
+      "password.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "cart.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "search.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "404.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "article.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "collection.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "product.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "index.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "blog.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "list-collections.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "page.json": {
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "quality_score": 0
+  },
+  "sections_performance": {
+    "total_sections": 16,
+    "critical_sections_present": 2,
+    "sections_details": {
+      "404.liquid": {
+        "file_size": 6817,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 35,
+        "performance_rating": 90
+      },
+      "search-hero.liquid": {
+        "file_size": 11144,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 38,
+        "performance_rating": 90
+      },
+      "collection.liquid": {
+        "file_size": 10527,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 26,
+        "performance_rating": 90
+      },
+      "search-results.liquid": {
+        "file_size": 20363,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 213,
+        "performance_rating": 75
+      },
+      "custom-section.liquid": {
+        "file_size": 1220,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 7,
+        "performance_rating": 100
+      },
+      "page.liquid": {
+        "file_size": 10499,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 55,
+        "performance_rating": 75
+      },
+      "blog.liquid": {
+        "file_size": 9379,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 76,
+        "performance_rating": 75
+      },
+      "header.liquid": {
+        "file_size": 8794,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 42,
+        "performance_rating": 90
+      },
+      "product.liquid": {
+        "file_size": 8721,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 34,
+        "performance_rating": 90
+      },
+      "collections.liquid": {
+        "file_size": 2071,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 13,
+        "performance_rating": 100
+      },
+      "cart.liquid": {
+        "file_size": 14199,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 118,
+        "performance_rating": 75
+      },
+      "hello-world.liquid": {
+        "file_size": 3708,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 6,
+        "performance_rating": 100
+      },
+      "article.liquid": {
+        "file_size": 11872,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 69,
+        "performance_rating": 75
+      },
+      "password.liquid": {
+        "file_size": 11589,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 54,
+        "performance_rating": 75
+      },
+      "footer.liquid": {
+        "file_size": 15676,
+        "is_critical": true,
+        "has_schema": true,
+        "has_stylesheet": false,
+        "has_javascript": false,
+        "liquid_tags_count": 60,
+        "performance_rating": 75
+      },
+      "search.liquid": {
+        "file_size": 2038,
+        "is_critical": false,
+        "has_schema": true,
+        "has_stylesheet": true,
+        "has_javascript": false,
+        "liquid_tags_count": 22,
+        "performance_rating": 100
+      }
+    },
+    "overall_sections_score": 85.9375
+  },
+  "assets_optimization": {
+    "total_assets": 46,
+    "total_size_mb": 0.53,
+    "assets_breakdown": {
+      "css_files": [
+        {
+          "name": "product-card.css",
+          "size": 9205,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-hero.css",
+          "size": 15720,
+          "size_mb": 0.01
+        },
+        {
+          "name": "comparison.css",
+          "size": 13093,
+          "size_mb": 0.01
+        },
+        {
+          "name": "animations.css",
+          "size": 8992,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.css",
+          "size": 9822,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search.css",
+          "size": 14112,
+          "size_mb": 0.01
+        },
+        {
+          "name": "404.css",
+          "size": 7623,
+          "size_mb": 0.01
+        },
+        {
+          "name": "component-predictive-search.css",
+          "size": 2071,
+          "size_mb": 0.0
+        },
+        {
+          "name": "filters.css",
+          "size": 12617,
+          "size_mb": 0.01
+        },
+        {
+          "name": "cart.css",
+          "size": 12565,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-search-results.css",
+          "size": 15534,
+          "size_mb": 0.01
+        },
+        {
+          "name": "page.css",
+          "size": 10254,
+          "size_mb": 0.01
+        },
+        {
+          "name": "critical.css",
+          "size": 2099,
+          "size_mb": 0.0
+        },
+        {
+          "name": "article.css",
+          "size": 13336,
+          "size_mb": 0.01
+        },
+        {
+          "name": "design-tokens.css",
+          "size": 9034,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-collection.css",
+          "size": 12279,
+          "size_mb": 0.01
+        },
+        {
+          "name": "forms.css",
+          "size": 12650,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-results.css",
+          "size": 8701,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-header.css",
+          "size": 6807,
+          "size_mb": 0.01
+        },
+        {
+          "name": "buttons.css",
+          "size": 12998,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-product.css",
+          "size": 9792,
+          "size_mb": 0.01
+        },
+        {
+          "name": "password.css",
+          "size": 10392,
+          "size_mb": 0.01
+        },
+        {
+          "name": "utilities.css",
+          "size": 18126,
+          "size_mb": 0.02
+        },
+        {
+          "name": "blog.css",
+          "size": 10672,
+          "size_mb": 0.01
+        },
+        {
+          "name": "base.css",
+          "size": 9514,
+          "size_mb": 0.01
+        },
+        {
+          "name": "section-footer.css",
+          "size": 9791,
+          "size_mb": 0.01
+        }
+      ],
+      "js_files": [
+        {
+          "name": "query-normalizer.js",
+          "size": 11952,
+          "size_mb": 0.01
+        },
+        {
+          "name": "search-intelligence.js",
+          "size": 19212,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-hero.js",
+          "size": 6346,
+          "size_mb": 0.01
+        },
+        {
+          "name": "product-comparison.js",
+          "size": 20975,
+          "size_mb": 0.02
+        },
+        {
+          "name": "search-engine.js",
+          "size": 21337,
+          "size_mb": 0.02
+        },
+        {
+          "name": "cart.js",
+          "size": 8195,
+          "size_mb": 0.01
+        },
+        {
+          "name": "predictive-search.js",
+          "size": 3446,
+          "size_mb": 0.0
+        },
+        {
+          "name": "unified-filters.js",
+          "size": 37403,
+          "size_mb": 0.04
+        },
+        {
+          "name": "related-products.js",
+          "size": 7692,
+          "size_mb": 0.01
+        }
+      ],
+      "images": [
+        {
+          "name": "icon-cart.svg",
+          "size": 496,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-homepage.webp",
+          "size": 5996,
+          "size_mb": 0.01
+        },
+        {
+          "name": "emmso-favicon.webp",
+          "size": 6475,
+          "size_mb": 0.01
+        },
+        {
+          "name": "webwinkel-keur-trustmark.webp",
+          "size": 5059,
+          "size_mb": 0.0
+        },
+        {
+          "name": "shoppy-x-ray.svg",
+          "size": 24552,
+          "size_mb": 0.02
+        },
+        {
+          "name": "confianza-online-trustmark.webp",
+          "size": 40888,
+          "size_mb": 0.04
+        },
+        {
+          "name": "icon-account.svg",
+          "size": 427,
+          "size_mb": 0.0
+        },
+        {
+          "name": "emmso-logo-invert.webp",
+          "size": 6415,
+          "size_mb": 0.01
+        },
+        {
+          "name": "thuiswinkel-trustmark.webp",
+          "size": 7157,
+          "size_mb": 0.01
+        },
+        {
+          "name": "trusted-shops-trustmark.webp",
+          "size": 28516,
+          "size_mb": 0.03
+        },
+        {
+          "name": "webshop-keur-trustmark.webp",
+          "size": 18897,
+          "size_mb": 0.02
+        }
+      ],
+      "other_files": []
+    },
+    "emmso_architecture": {
+      "emmso_css_present": false,
+      "emmso_js_present": false,
+      "single_file_architecture": false
+    },
+    "performance_rating": 100
+  },
+  "shopify_config": {
+    "error": "Config analysis failed: Expecting value: line 1 column 1 (char 0)"
+  },
+  "screenshot_shopify_analysis": {
+    "screenshots_analyzed": 10,
+    "shopify_score": 77,
+    "source": "vision_ai_processed_shopify",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 60
+        },
+        "issues": [
+          "Missing product pricing and \"Add to Cart\" buttons."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.",
+          "Fix translation errors to improve user experience.",
+          "Make search bar more prominent and consider adding voice search.",
+          "Improve color contrast for better accessibility.",
+          "Ensure all text is readable and meets WCAG 2.1 AA standards."
+        ]
+      },
+      "cart-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Missing translations for cart messages.",
+          "No product pricing or \"Add to Cart\" buttons visible."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Fix translation issues to ensure messages are clear.",
+          "Include product pricing and \"Add to Cart\" buttons.",
+          "Enhance search functionality and visibility.",
+          "Ensure color contrast meets accessibility standards."
+        ]
+      },
+      "homepage-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons.",
+          "Shopping intent not immediately clear without product visuals or pricing."
+        ],
+        "recommendations": [
+          "Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+          "Include product images or featured products to enhance shopping intent.",
+          "Make the cart icon more prominent with a badge for item count."
+        ]
+      },
+      "header-navigation": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 80,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "No visible product pricing or \"Add to Cart\" buttons.",
+          "Limited indication of shopping intent beyond the cart icon."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make search functionality more prominent, possibly by increasing size or adding a search bar.",
+          "Include product pricing and \"Add to Cart\" buttons in the header or nearby for immediate visibility.",
+          "Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.",
+          "Consider adding more elements that communicate the shopping experience, such as featured products or promotions."
+        ]
+      },
+      "collection-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 85
+        },
+        "issues": [
+          "Product pricing and \"Add to Cart\" buttons are not visible.",
+          "Lack of immediate product visibility might confuse users about the shopping intent."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Ensure product pricing and \"Add to Cart\" buttons are visible on the main page.",
+          "Make the search bar more prominent, possibly at the top.",
+          "Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.",
+          "Consider adding a badge to the cart icon to indicate item count."
+        ]
+      },
+      "product-page-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 80,
+          "section_hierarchy": 70,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Missing shopping cart icon in the header."
+        ],
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility of the search bar to emphasize search-first design.",
+          "Increase text size for better readability on mobile.",
+          "Improve visual states for buttons and links to enhance accessibility."
+        ]
+      },
+      "homepage-mobile": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 75,
+          "mobile_commerce": 90
+        },
+        "issues": [
+          "No product pricing visible on the homepage.",
+          "No \"Add to Cart\" or \"Buy Now\" buttons visible."
+        ],
+        "recommendations": [
+          "Add product pricing and \"Add to Cart\" buttons for immediate shopping cues.",
+          "Enhance the visibility of shopping features to communicate the e-commerce nature more clearly."
+        ]
+      },
+      "product-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 85,
+          "section_hierarchy": 85,
+          "mobile_commerce": 75
+        },
+        "issues": [
+          "Cart icon is small and may not be immediately noticeable."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Enhance the visibility and accessibility of the search bar.",
+          "Ensure touch targets are at least 44px for better mobile usability."
+        ]
+      },
+      "collection-page-desktop": {
+        "shopify_scores": {
+          "brand_consistency": 75,
+          "section_hierarchy": 60,
+          "mobile_commerce": 65
+        },
+        "issues": [
+          "Product display hierarchy weak (score: 60/100)",
+          "Cart icon is small and may not be immediately noticeable.",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Lack of product images or descriptions reduces shopping intent clarity."
+        ],
+        "recommendations": [
+          "Improve product title/price/CTA prominence",
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Display product pricing and \"Add to Cart\" buttons clearly.",
+          "Enhance search visibility and accessibility.",
+          "Improve visual hierarchy with better use of contrast and spacing.",
+          "Include product images and descriptions to clarify shopping intent."
+        ]
+      },
+      "footer-section": {
+        "shopify_scores": {
+          "brand_consistency": 90,
+          "section_hierarchy": 85,
+          "mobile_commerce": 80
+        },
+        "issues": [
+          "Cart icon is small and not very prominent.",
+          "No product pricing or \"Add to Cart\" buttons visible.",
+          "Shopping intent is not immediately clear due to lack of product visuals or pricing."
+        ],
+        "recommendations": [
+          "*RECOMMENDATIONS:**",
+          "Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+          "Include product pricing and \"Add to Cart\" buttons to enhance e-commerce visibility.",
+          "Consider adding product images or categories to communicate shopping intent more clearly."
+        ]
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 82,
+      "section_hierarchy": 75,
+      "mobile_commerce": 78
+    },
+    "issues": [
+      "cart-desktop: Missing product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Missing translations for cart messages.",
+      "cart-mobile: No product pricing or \"Add to Cart\" buttons visible.",
+      "homepage-desktop: No product pricing visible on the homepage.",
+      "homepage-desktop: No \"Add to Cart\" or \"Buy Now\" buttons.",
+      "homepage-desktop: Shopping intent not immediately clear without product visuals or pricing.",
+      "header-navigation: No visible product pricing or \"Add to Cart\" buttons.",
+      "header-navigation: Limited indication of shopping intent beyond the cart icon.",
+      "collection-page-mobile: Product pricing and \"Add to Cart\" buttons are not visible.",
+      "collection-page-mobile: Lack of immediate product visibility might confuse users about the shopping intent.",
+      "product-page-mobile: Missing shopping cart icon in the header.",
+      "homepage-mobile: No product pricing visible on the homepage.",
+      "homepage-mobile: No \"Add to Cart\" or \"Buy Now\" buttons visible.",
+      "product-page-desktop: Cart icon is small and may not be immediately noticeable.",
+      "collection-page-desktop: Product display hierarchy weak (score: 60/100)",
+      "collection-page-desktop: Cart icon is small and may not be immediately noticeable.",
+      "collection-page-desktop: No product pricing or \"Add to Cart\" buttons visible.",
+      "collection-page-desktop: Lack of product images or descriptions reduces shopping intent clarity.",
+      "footer-section: Cart icon is small and not very prominent.",
+      "footer-section: No product pricing or \"Add to Cart\" buttons visible.",
+      "footer-section: Shopping intent is not immediately clear due to lack of product visuals or pricing."
+    ],
+    "recommendations": [
+      "cart-desktop: *RECOMMENDATIONS:**",
+      "cart-desktop: Add product pricing and \"Add to Cart\" buttons to enhance shopping clarity.",
+      "cart-desktop: Fix translation errors to improve user experience.",
+      "cart-desktop: Make search bar more prominent and consider adding voice search.",
+      "cart-desktop: Improve color contrast for better accessibility.",
+      "cart-desktop: Ensure all text is readable and meets WCAG 2.1 AA standards.",
+      "cart-mobile: *RECOMMENDATIONS:**",
+      "cart-mobile: Fix translation issues to ensure messages are clear.",
+      "cart-mobile: Include product pricing and \"Add to Cart\" buttons.",
+      "cart-mobile: Enhance search functionality and visibility.",
+      "cart-mobile: Ensure color contrast meets accessibility standards.",
+      "homepage-desktop: Display product pricing and \"Add to Cart\" buttons prominently on the homepage.",
+      "homepage-desktop: Include product images or featured products to enhance shopping intent.",
+      "homepage-desktop: Make the cart icon more prominent with a badge for item count.",
+      "header-navigation: *RECOMMENDATIONS:**",
+      "header-navigation: Make search functionality more prominent, possibly by increasing size or adding a search bar.",
+      "header-navigation: Include product pricing and \"Add to Cart\" buttons in the header or nearby for immediate visibility.",
+      "header-navigation: Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.",
+      "header-navigation: Consider adding more elements that communicate the shopping experience, such as featured products or promotions.",
+      "collection-page-mobile: *RECOMMENDATIONS:**",
+      "collection-page-mobile: Ensure product pricing and \"Add to Cart\" buttons are visible on the main page.",
+      "collection-page-mobile: Make the search bar more prominent, possibly at the top.",
+      "collection-page-mobile: Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.",
+      "collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.",
+      "product-page-mobile: \ud83d\udea8 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.",
+      "product-page-mobile: *RECOMMENDATIONS:**",
+      "product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-mobile: Enhance the visibility of the search bar to emphasize search-first design.",
+      "product-page-mobile: Increase text size for better readability on mobile.",
+      "product-page-mobile: Improve visual states for buttons and links to enhance accessibility.",
+      "homepage-mobile: Add product pricing and \"Add to Cart\" buttons for immediate shopping cues.",
+      "homepage-mobile: Enhance the visibility of shopping features to communicate the e-commerce nature more clearly.",
+      "product-page-desktop: *RECOMMENDATIONS:**",
+      "product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "product-page-desktop: Enhance the visibility and accessibility of the search bar.",
+      "product-page-desktop: Ensure touch targets are at least 44px for better mobile usability.",
+      "collection-page-desktop: Improve product title/price/CTA prominence",
+      "collection-page-desktop: *RECOMMENDATIONS:**",
+      "collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "collection-page-desktop: Display product pricing and \"Add to Cart\" buttons clearly.",
+      "collection-page-desktop: Enhance search visibility and accessibility.",
+      "collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.",
+      "collection-page-desktop: Include product images and descriptions to clarify shopping intent.",
+      "footer-section: *RECOMMENDATIONS:**",
+      "footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).",
+      "footer-section: Include product pricing and \"Add to Cart\" buttons to enhance e-commerce visibility.",
+      "footer-section: Consider adding product images or categories to communicate shopping intent more clearly."
+    ]
+  },
+  "multi_brand_support": {
+    "metafields_usage": false,
+    "brand_switching": false,
+    "dynamic_styling": false
+  }
+}
+### Marcus (75/100)
+
+{
+  "theme_file_analysis": {
+    "css_count": 26,
+    "js_count": 9,
+    "total_css_size_kb": 271.3,
+    "total_js_size_kb": 133.4,
+    "css_files": [
+      "product-card.css",
+      "section-search-hero.css",
+      "comparison.css",
+      "animations.css",
+      "product-comparison.css",
+      "search.css",
+      "404.css",
+      "component-predictive-search.css",
+      "filters.css",
+      "cart.css",
+      "section-search-results.css",
+      "page.css",
+      "critical.css",
+      "article.css",
+      "design-tokens.css",
+      "section-collection.css",
+      "forms.css",
+      "search-results.css",
+      "section-header.css",
+      "buttons.css",
+      "section-product.css",
+      "password.css",
+      "utilities.css",
+      "blog.css",
+      "base.css",
+      "section-footer.css"
+    ],
+    "js_files": [
+      "query-normalizer.js",
+      "search-intelligence.js",
+      "search-hero.js",
+      "product-comparison.js",
+      "search-engine.js",
+      "cart.js",
+      "predictive-search.js",
+      "unified-filters.js",
+      "related-products.js"
+    ]
+  },
+  "preview_performance": {
+    "url": "https://vloerproducten.myshopify.com/?preview_theme_id=main",
+    "status_code": 422,
+    "response_time": 350.47,
+    "page_size": 124,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "screenshot_performance_analysis": {
+    "screenshots_analyzed": 10,
+    "performance_score": 78,
+    "source": "vision_ai_processed_performance",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 60,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "cart-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 80,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": [
+          "Include product images or featured products to enhance shopping intent."
+        ]
+      },
+      "header-navigation": {
+        "performance_indicators": {
+          "layout_stability": 80,
+          "asset_optimization": 85,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 85,
+          "design_efficiency": 75
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-mobile": {
+        "performance_indicators": {
+          "layout_stability": 70,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "homepage-mobile": {
+        "performance_indicators": {
+          "layout_stability": 75,
+          "asset_optimization": 90,
+          "design_efficiency": 80
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "product-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 75,
+          "design_efficiency": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "performance_indicators": {
+          "layout_stability": 60,
+          "asset_optimization": 65,
+          "design_efficiency": 80
+        },
+        "issues": [
+          "Layout stability concerns (hierarchy: 60/100)",
+          "Lack of product images or descriptions reduces shopping intent clarity."
+        ],
+        "recommendations": [
+          "Stabilize layout to prevent Cumulative Layout Shift",
+          "Include product images and descriptions to clarify shopping intent."
+        ]
+      },
+      "footer-section": {
+        "performance_indicators": {
+          "layout_stability": 85,
+          "asset_optimization": 80,
+          "design_efficiency": 85
+        },
+        "issues": [],
+        "recommendations": [
+          "Consider adding product images or categories to communicate shopping intent more clearly."
+        ]
+      }
+    },
+    "avg_scores": {
+      "layout_stability": 75,
+      "design_efficiency": 84,
+      "asset_optimization": 78
+    },
+    "issues": [
+      "collection-page-desktop: Layout stability concerns (hierarchy: 60/100)",
+      "collection-page-desktop: Lack of product images or descriptions reduces shopping intent clarity."
+    ],
+    "recommendations": [
+      "homepage-desktop: Include product images or featured products to enhance shopping intent.",
+      "collection-page-desktop: Stabilize layout to prevent Cumulative Layout Shift",
+      "collection-page-desktop: Include product images and descriptions to clarify shopping intent.",
+      "footer-section: Consider adding product images or categories to communicate shopping intent more clearly."
+    ]
+  }
+}
+### Nora (30/100)
+
+{
+  "css_compliance": {
+    "compliance_score": 100,
+    "total_css_files": 26,
+    "total_size_kb": 271.3,
+    "violations": [],
+    "elements_found": 3
+  },
+  "visual_consistency": {
+    "consistency_score": 65,
+    "issues": [
+      "Product category not clear"
+    ],
+    "accessibility": true
+  },
+  "brand_implementation": {
+    "brand_score": 45,
+    "elements": {
+      "logo_presence": false,
+      "color_consistency": false,
+      "typography_system": false,
+      "brand_messaging": false
+    },
+    "violations": [
+      "EMMSO logo not properly implemented",
+      "Brand colors not consistently applied"
+    ]
+  },
+  "responsive_design": {
+    "responsive_score": 50,
+    "issues": [
+      "Mobile navigation needs optimization",
+      "Product grid layout inconsistent on tablet",
+      "Cart drawer not fully responsive"
+    ],
+    "devices_tested": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ]
+  },
+  "screenshot_design_analysis": {
+    "screenshots_analyzed": 10,
+    "design_score": 76,
+    "source": "vision_ai_processed_design",
+    "detailed_analyses": {
+      "cart-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 60,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 60/100)",
+          "Accessibility issues with color contrast and missing text."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Improve color contrast for better accessibility."
+        ]
+      },
+      "cart-mobile": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 70,
+          "accessibility": 60,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Accessibility/contrast issues (score: 60/100)",
+          "Accessibility issues with translation errors and potential color contrast."
+        ],
+        "recommendations": [
+          "Improve text contrast and color accessibility",
+          "Ensure color contrast meets accessibility standards."
+        ]
+      },
+      "homepage-desktop": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 85,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Shopping intent not immediately clear without product visuals or pricing."
+        ],
+        "recommendations": []
+      },
+      "header-navigation": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 80,
+          "accessibility": 75,
+          "brutalist_simplicity": 90
+        },
+        "issues": [
+          "Accessibility features like color contrast and focus states not clearly visible."
+        ],
+        "recommendations": [
+          "Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast."
+        ]
+      },
+      "collection-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 70,
+          "brutalist_simplicity": 75
+        },
+        "issues": [
+          "Accessibility elements like color contrast and focus states are not clearly visible."
+        ],
+        "recommendations": [
+          "Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards."
+        ]
+      },
+      "product-page-mobile": {
+        "design_scores": {
+          "brand_consistency": 80,
+          "visual_hierarchy": 70,
+          "accessibility": 75,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Lack of clear visual states for interactive elements."
+        ],
+        "recommendations": [
+          "Enhance the visibility of the search bar to emphasize search-first design.",
+          "Improve visual states for buttons and links to enhance accessibility."
+        ]
+      },
+      "homepage-mobile": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 75,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Accessibility issues with potential color contrast."
+        ],
+        "recommendations": [
+          "Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards."
+        ]
+      },
+      "product-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 85,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 90
+        },
+        "issues": [],
+        "recommendations": []
+      },
+      "collection-page-desktop": {
+        "design_scores": {
+          "brand_consistency": 75,
+          "visual_hierarchy": 60,
+          "accessibility": 70,
+          "brutalist_simplicity": 80
+        },
+        "issues": [
+          "Weak visual hierarchy (score: 60/100)",
+          "Visual hierarchy could be improved for better content prioritization."
+        ],
+        "recommendations": [
+          "Strengthen focal points using size and contrast",
+          "Improve visual hierarchy with better use of contrast and spacing."
+        ]
+      },
+      "footer-section": {
+        "design_scores": {
+          "brand_consistency": 90,
+          "visual_hierarchy": 85,
+          "accessibility": 80,
+          "brutalist_simplicity": 85
+        },
+        "issues": [
+          "Shopping intent is not immediately clear due to lack of product visuals or pricing."
+        ],
+        "recommendations": []
+      }
+    },
+    "avg_scores": {
+      "brand_consistency": 82,
+      "visual_hierarchy": 75,
+      "accessibility": 72,
+      "brutalist_simplicity": 84
+    },
+    "issues": [
+      "cart-desktop: Accessibility/contrast issues (score: 60/100)",
+      "cart-desktop: Accessibility issues with color contrast and missing text.",
+      "cart-mobile: Accessibility/contrast issues (score: 60/100)",
+      "cart-mobile: Accessibility issues with translation errors and potential color contrast.",
+      "homepage-desktop: Shopping intent not immediately clear without product visuals or pricing.",
+      "header-navigation: Accessibility features like color contrast and focus states not clearly visible.",
+      "collection-page-mobile: Accessibility elements like color contrast and focus states are not clearly visible.",
+      "product-page-mobile: Lack of clear visual states for interactive elements.",
+      "homepage-mobile: Accessibility issues with potential color contrast.",
+      "collection-page-desktop: Weak visual hierarchy (score: 60/100)",
+      "collection-page-desktop: Visual hierarchy could be improved for better content prioritization.",
+      "footer-section: Shopping intent is not immediately clear due to lack of product visuals or pricing."
+    ],
+    "recommendations": [
+      "cart-desktop: Improve text contrast and color accessibility",
+      "cart-desktop: Improve color contrast for better accessibility.",
+      "cart-mobile: Improve text contrast and color accessibility",
+      "cart-mobile: Ensure color contrast meets accessibility standards.",
+      "header-navigation: Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.",
+      "collection-page-mobile: Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.",
+      "product-page-mobile: Enhance the visibility of the search bar to emphasize search-first design.",
+      "product-page-mobile: Improve visual states for buttons and links to enhance accessibility.",
+      "homepage-mobile: Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.",
+      "collection-page-desktop: Strengthen focal points using size and contrast",
+      "collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing."
+    ]
+  },
+  "critical_violations": [
+    "Visual: Product category not clear",
+    "Brand: EMMSO logo not properly implemented",
+    "Brand: Brand colors not consistently applied"
+  ]
+}
+
+#### Action Items
+
+**Vision**: cart-desktop: *RECOMMENDATIONS:**
+**Vision**: cart-desktop: Add product pricing and "Add to Cart" buttons to enhance shopping clarity.
+**Vision**: cart-desktop: Fix translation errors to improve user experience.
+**Vision**: cart-desktop: Make search bar more prominent and consider adding voice search.
+**Vision**: cart-desktop: Improve color contrast for better accessibility.
+**Vision**: cart-desktop: Ensure all text is readable and meets WCAG 2.1 AA standards.
+**Vision**: cart-mobile: *RECOMMENDATIONS:**
+**Vision**: cart-mobile: Fix translation issues to ensure messages are clear.
+**Vision**: cart-mobile: Include product pricing and "Add to Cart" buttons.
+**Vision**: cart-mobile: Enhance search functionality and visibility.
+**Vision**: cart-mobile: Ensure color contrast meets accessibility standards.
+**Vision**: homepage-desktop: *RECOMMENDATIONS:**
+**Vision**: homepage-desktop: Display product pricing and "Add to Cart" buttons prominently on the homepage.
+**Vision**: homepage-desktop: Include product images or featured products to enhance shopping intent.
+**Vision**: homepage-desktop: Make the cart icon more prominent with a badge for item count.
+**Vision**: header-navigation: *RECOMMENDATIONS:**
+**Vision**: header-navigation: Make search functionality more prominent, possibly by increasing size or adding a search bar.
+**Vision**: header-navigation: Include product pricing and "Add to Cart" buttons in the header or nearby for immediate visibility.
+**Vision**: header-navigation: Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.
+**Vision**: header-navigation: Consider adding more elements that communicate the shopping experience, such as featured products or promotions.
+**Vision**: collection-page-mobile: *RECOMMENDATIONS:**
+**Vision**: collection-page-mobile: Ensure product pricing and "Add to Cart" buttons are visible on the main page.
+**Vision**: collection-page-mobile: Make the search bar more prominent, possibly at the top.
+**Vision**: collection-page-mobile: Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.
+**Vision**: collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.
+**Vision**: product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+**Vision**: product-page-mobile: *RECOMMENDATIONS:**
+**Vision**: product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-mobile: Enhance the visibility of the search bar to emphasize search-first design.
+**Vision**: product-page-mobile: Increase text size for better readability on mobile.
+**Vision**: product-page-mobile: Improve visual states for buttons and links to enhance accessibility.
+**Vision**: homepage-mobile: *RECOMMENDATIONS:**
+**Vision**: homepage-mobile: Add product pricing and "Add to Cart" buttons for immediate shopping cues.
+**Vision**: homepage-mobile: Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.
+**Vision**: homepage-mobile: Enhance the visibility of shopping features to communicate the e-commerce nature more clearly.
+**Vision**: product-page-desktop: *RECOMMENDATIONS:**
+**Vision**: product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: product-page-desktop: Enhance the visibility and accessibility of the search bar.
+**Vision**: product-page-desktop: Ensure touch targets are at least 44px for better mobile usability.
+**Vision**: collection-page-desktop: *RECOMMENDATIONS:**
+**Vision**: collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: collection-page-desktop: Display product pricing and "Add to Cart" buttons clearly.
+**Vision**: collection-page-desktop: Enhance search visibility and accessibility.
+**Vision**: collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.
+**Vision**: collection-page-desktop: Include product images and descriptions to clarify shopping intent.
+**Vision**: footer-section: *RECOMMENDATIONS:**
+**Vision**: footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+**Vision**: footer-section: Include product pricing and "Add to Cart" buttons to enhance e-commerce visibility.
+**Vision**: footer-section: Consider adding product images or categories to communicate shopping intent more clearly.
+**Alex**: {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+**Alex**: {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+**Marcus**: Consider consolidating 26 CSS files for better performance
+**Marcus**: Total CSS size is 271.3KB - consider optimization
+**Nora**: {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+**Nora**: {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+**Nora**: {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+#### Status
+- ✅ Analysis complete
+- 📋 56 recommendations generated
+- 🎯 Next: Implement high-priority items
+
+---
+
+## 🎯 ACTION PLAN - 2025-11-03
+
+### 🚨 Phase 1: CRITICAL - Immediate Action Required
+
+**Priority**: BLOCKER - Must fix before launch
+**Timeline**: This week
+
+- [ ] **Vision** (Score: 75/100): product-page-mobile: 🚨 CRITICAL - Shopping cart icon not visible! Increase size to 28-32px, add prominent positioning, ensure users immediately recognize this as e-commerce.
+
+### 🔥 Phase 2: HIGH PRIORITY - Core Functionality
+
+**Priority**: HIGH - Essential for project goals
+**Timeline**: Next 2 weeks
+
+- [ ] **Alex** (Score: 37/100): {'title': 'Template Quality Improvement Needed', 'description': 'Optimize Liquid template structure and settings', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Alex** (Score: 37/100): {'title': 'EMMSO Architecture Compliance', 'description': 'Implement single emmso.css and emmso.js file architecture', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Visual Consistency Improvements', 'description': 'Standardize visual elements across all pages', 'priority': 'high', 'impact': 'medium'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Brand Implementation Enhancement', 'description': 'Strengthen EMMSO brand presence and consistency', 'priority': 'high', 'impact': 'high'}
+- [ ] **Nora** (Score: 30/100): {'title': 'Responsive Design Optimization', 'description': 'Fix mobile and tablet layout inconsistencies', 'priority': 'medium', 'impact': 'medium'}
+
+### ⚡ Phase 3: MEDIUM - Optimization & Polish
+
+**Priority**: MEDIUM - Improve user experience
+**Timeline**: Next sprint
+
+- [ ] **Vision** (Score: 75/100): cart-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): cart-desktop: Add product pricing and "Add to Cart" buttons to enhance shopping clarity.
+- [ ] **Vision** (Score: 75/100): cart-desktop: Fix translation errors to improve user experience.
+- [ ] **Vision** (Score: 75/100): cart-desktop: Make search bar more prominent and consider adding voice search.
+- [ ] **Vision** (Score: 75/100): cart-desktop: Improve color contrast for better accessibility.
+- [ ] **Vision** (Score: 75/100): cart-desktop: Ensure all text is readable and meets WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 75/100): cart-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): cart-mobile: Fix translation issues to ensure messages are clear.
+- [ ] **Vision** (Score: 75/100): cart-mobile: Include product pricing and "Add to Cart" buttons.
+- [ ] **Vision** (Score: 75/100): cart-mobile: Enhance search functionality and visibility.
+- [ ] **Vision** (Score: 75/100): cart-mobile: Ensure color contrast meets accessibility standards.
+- [ ] **Vision** (Score: 75/100): homepage-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): homepage-desktop: Display product pricing and "Add to Cart" buttons prominently on the homepage.
+- [ ] **Vision** (Score: 75/100): homepage-desktop: Include product images or featured products to enhance shopping intent.
+- [ ] **Vision** (Score: 75/100): homepage-desktop: Make the cart icon more prominent with a badge for item count.
+- [ ] **Vision** (Score: 75/100): header-navigation: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): header-navigation: Make search functionality more prominent, possibly by increasing size or adding a search bar.
+- [ ] **Vision** (Score: 75/100): header-navigation: Include product pricing and "Add to Cart" buttons in the header or nearby for immediate visibility.
+- [ ] **Vision** (Score: 75/100): header-navigation: Ensure accessibility features are clearly implemented, such as focus states and sufficient color contrast.
+- [ ] **Vision** (Score: 75/100): header-navigation: Consider adding more elements that communicate the shopping experience, such as featured products or promotions.
+- [ ] **Vision** (Score: 75/100): collection-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): collection-page-mobile: Ensure product pricing and "Add to Cart" buttons are visible on the main page.
+- [ ] **Vision** (Score: 75/100): collection-page-mobile: Make the search bar more prominent, possibly at the top.
+- [ ] **Vision** (Score: 75/100): collection-page-mobile: Enhance accessibility by ensuring color contrast and focus states meet WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 75/100): collection-page-mobile: Consider adding a badge to the cart icon to indicate item count.
+- [ ] **Vision** (Score: 75/100): product-page-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): product-page-mobile: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 75/100): product-page-mobile: Enhance the visibility of the search bar to emphasize search-first design.
+- [ ] **Vision** (Score: 75/100): product-page-mobile: Increase text size for better readability on mobile.
+- [ ] **Vision** (Score: 75/100): product-page-mobile: Improve visual states for buttons and links to enhance accessibility.
+- [ ] **Vision** (Score: 75/100): homepage-mobile: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): homepage-mobile: Add product pricing and "Add to Cart" buttons for immediate shopping cues.
+- [ ] **Vision** (Score: 75/100): homepage-mobile: Improve accessibility by ensuring color contrast meets WCAG 2.1 AA standards.
+- [ ] **Vision** (Score: 75/100): homepage-mobile: Enhance the visibility of shopping features to communicate the e-commerce nature more clearly.
+- [ ] **Vision** (Score: 75/100): product-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): product-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 75/100): product-page-desktop: Enhance the visibility and accessibility of the search bar.
+- [ ] **Vision** (Score: 75/100): product-page-desktop: Ensure touch targets are at least 44px for better mobile usability.
+- [ ] **Vision** (Score: 75/100): collection-page-desktop: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): collection-page-desktop: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 75/100): collection-page-desktop: Display product pricing and "Add to Cart" buttons clearly.
+- [ ] **Vision** (Score: 75/100): collection-page-desktop: Enhance search visibility and accessibility.
+- [ ] **Vision** (Score: 75/100): collection-page-desktop: Improve visual hierarchy with better use of contrast and spacing.
+- [ ] **Vision** (Score: 75/100): collection-page-desktop: Include product images and descriptions to clarify shopping intent.
+- [ ] **Vision** (Score: 75/100): footer-section: *RECOMMENDATIONS:**
+- [ ] **Vision** (Score: 75/100): footer-section: Make shopping cart icon more prominent (increase size, add animation, ensure visibility).
+- [ ] **Vision** (Score: 75/100): footer-section: Include product pricing and "Add to Cart" buttons to enhance e-commerce visibility.
+- [ ] **Vision** (Score: 75/100): footer-section: Consider adding product images or categories to communicate shopping intent more clearly.
+- [ ] **Marcus** (Score: 75/100): Consider consolidating 26 CSS files for better performance
+- [ ] **Marcus** (Score: 75/100): Total CSS size is 271.3KB - consider optimization
+
+
+### 📊 Summary
+
+- 🚨 Critical: 1 tasks
+- 🔥 High: 5 tasks  
+- ⚡ Medium: 50 tasks
+- 💡 Low: 0 tasks
+- **Total**: 56 tasks
+
+**Next Action**: Start with Phase 1 critical tasks
+
+
