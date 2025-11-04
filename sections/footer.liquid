@@ -3,6 +3,32 @@
 <footer class="site-footer" role="contentinfo">
   <div class="page-width">
     <div class="footer__content">
+      {%- # EMMSO Brand Logo - Brand Consistency Enhancement (Inverted for dark footer) -%}
+      {%- if section.settings.show_footer_logo -%}
+        <div class="footer__logo">
+          <a href="{{ routes.root_url }}" aria-label="{{ shop.name }} - {{ 'general.accessibility.return_home' | t | default: 'Return to homepage' }}">
+            <picture>
+              <source 
+                type="image/webp"
+                srcset="{{ 'emmso-logo-invert.webp' | asset_url }} 1x,
+                        {{ 'emmso-logo-invert.webp' | asset_url }} 2x"
+              >
+              <img 
+                src="{{ 'emmso-logo-invert.webp' | asset_url }}"
+                alt="EMMSO - European Marketplace for Smart Shopping"
+                class="footer__logo-image"
+                width="160"
+                height="45"
+                loading="lazy"
+              >
+            </picture>
+          </a>
+          {%- if section.settings.footer_tagline != blank -%}
+            <p class="footer__tagline">{{ section.settings.footer_tagline }}</p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      
       {%- if section.blocks.size > 0 -%}
         <div class="footer__blocks">
           {%- for block in section.blocks -%}
@@ -198,6 +224,24 @@
   "name": "Footer",
   "max_blocks": 12,
   "settings": [
+    {
+      "type": "header",
+      "content": "Brand & Logo"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_footer_logo",
+      "label": "Show EMMSO logo in footer",
+      "default": true,
+      "info": "Displays the EMMSO brand logo at the top of the footer for consistency"
+    },
+    {
+      "type": "text",
+      "id": "footer_tagline",
+      "label": "Footer tagline",
+      "default": "Search-First E-Commerce Excellence",
+      "info": "Short brand message displayed below the logo"
+    },
     {
       "type": "header",
       "content": "Footer Bottom"

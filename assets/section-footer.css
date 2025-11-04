@@ -33,6 +33,49 @@
 }
 
 /* ============================================================================
+   Footer Logo - Brand Consistency Enhancement
+   ========================================================================= */
+
+.footer__logo {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.footer__logo a {
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer__logo a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.footer__logo a:focus-visible {
+  outline: 2px solid var(--color-primary, #FBB03B);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.footer__logo-image {
+  height: 45px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  /* Inverted logo optimized for dark background - no filter needed */
+}
+
+.footer__tagline {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: var(--footer-text-muted);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================================
    Footer Grid (Blocks)
    ========================================================================= */
 
