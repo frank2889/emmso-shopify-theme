@@ -55,6 +55,10 @@
   </head>
 
   <body>
+    {%- # ACCESSIBILITY: Skip Links for keyboard navigation -%}
+    <a href="#main-content" class="skip-to-content">{{ 'accessibility.skip_to_content' | t | default: 'Skip to content' }}</a>
+    <a href="#search-bar" class="skip-to-search">{{ 'accessibility.skip_to_search' | t | default: 'Skip to search' }}</a>
+    
     {% sections 'header-group' %}
 
     <main id="main-content" role="main">
