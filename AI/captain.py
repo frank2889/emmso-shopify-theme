@@ -118,7 +118,17 @@ class EMMSOCaptain:
             return {}
     
     def _save_to_definition_of_done(self, content: str, section: str = "AI Analysis"):
-        """Append findings to DEFINITION-OF-DONE.md"""
+        """
+        APPEND to DEFINITION-OF-DONE.md (chronological documentation)
+        
+        Following DOD Documentation Policy:
+        - Appends at end (chronological history)
+        - NO code blocks, NO JSON dumps
+        - Only summaries and ACTION PLAN tasks
+        
+        Note: Duplicates are OK - they show history of Captain runs
+        User manually cleans old ACTION PLANs when tasks are done
+        """
         try:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
@@ -126,13 +136,21 @@ class EMMSOCaptain:
                 f.write(f"\n\n---\n\n## {section} - {timestamp}\n\n{content}\n")
             
             print(f"   ✅ Saved to DEFINITION-OF-DONE.md ({section})")
+            print(f"   📋 Policy: Chronological append, NO code/JSON")
             return True
         except Exception as e:
             print(f"   ❌ Error saving to DoD: {e}")
             return False
     
     def _save_to_design_system(self, content: str, section: str = "AI Recommendations"):
-        """Append design recommendations to DESIGN-SYSTEM.md"""
+        """
+        APPEND to DESIGN-SYSTEM.md (chronological documentation)
+        
+        Following Design System Policy:
+        - Copilot writes design specs (manual updates)
+        - Captain appends AI analysis at end (chronological)
+        - Shows history of design recommendations
+        """
         try:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
@@ -140,6 +158,7 @@ class EMMSOCaptain:
                 f.write(f"\n\n---\n\n## {section} - {timestamp}\n\n{content}\n")
             
             print(f"   ✅ Saved to DESIGN-SYSTEM.md ({section})")
+            print(f"   📋 Policy: Copilot writes specs, Captain appends analysis")
             return True
         except Exception as e:
             print(f"   ❌ Error saving to Design System: {e}")
