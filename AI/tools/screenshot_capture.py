@@ -4,10 +4,10 @@ Screenshot Capture Tool for EMMSO Theme
 ========================================
 Automatically captures screenshots of all important pages for Vision AI analysis
 
-SMART DEPLOYMENT-AWARE LOGIC:
-- Only capture screenshots 5+ minutes after latest git deployment
-- Skip capture if deployment is too recent (< 5 min)
-- User decides when to run Captain - NO automatic waiting
+IMMEDIATE CAPTURE LOGIC:
+- Captures screenshots immediately when Captain runs
+- No waiting for deployment
+- Timestamps every capture with deployment folder + individual file timestamps
 - Store screenshots in deployment-specific folders with timestamps
 - Use symlink 'latest/' pointing to most recent deployment
 """
@@ -20,9 +20,6 @@ from datetime import datetime, timedelta
 
 # Shopify preview URL
 PREVIEW_URL = "https://y0hnl2y5cksklmw7-63663472878.shopifypreview.com"
-
-# Wait time after deployment before capturing (Shopify needs time to build)
-DEPLOYMENT_WAIT_MINUTES = 5
 
 # Pages to capture
 PAGES_TO_CAPTURE = [
@@ -126,14 +123,10 @@ def get_latest_screenshot_deployment():
 
 def should_capture_new_screenshots():
     """
-    Determine if new screenshots are needed based on:
-    1. Last git commit time (deployment)
-    2. Minimum 5-minute wait for Shopify deployment
+    ALWAYS captures new screenshots - no deployment wait time.
     
-    ALWAYS CAPTURES NEW SCREENSHOTS when deployment is ready.
-    
-    Returns: (should_wait_and_capture, deployment_timestamp)
-    - should_wait_and_capture: True if deployment ready
+    Returns: (should_capture, deployment_timestamp)
+    - should_capture: Always True
     - deployment_timestamp: Timestamp to use for folder name
     """
     last_commit_time = get_last_deployment_time()
@@ -147,23 +140,14 @@ def should_capture_new_screenshots():
     
     print(f"📅 Last deployment: {commit_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"⏱️  Time since deployment: {minutes_since_commit:.1f} minutes")
+    print(f"📸 Capturing NEW screenshots immediately (no wait time)")
     
-    # Check if deployment is recent (< 5 min)
-    if minutes_since_commit < DEPLOYMENT_WAIT_MINUTES:
-        print(f"\n⚠️  DEPLOYMENT TOO RECENT ({minutes_since_commit:.1f} min)")
-        print(f"   💡 Shopify needs ~{DEPLOYMENT_WAIT_MINUTES} min to build theme")
-        print(f"   🕐 Wait {DEPLOYMENT_WAIT_MINUTES - minutes_since_commit:.1f} more minutes before running Captain")
-        print(f"\n   ❌ NOT capturing screenshots - deployment not ready")
-        return False, None
-    
-    print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
-    print(f"📸 Will ALWAYS capture NEW screenshots for fresh analysis")
     return True, last_commit_time
 
 def capture_screenshots(output_dir='screenshots'):
     """
-    Capture screenshots with smart deployment awareness.
-    Only captures new screenshots when needed (5+ min after deployment).
+    Capture screenshots immediately - no deployment wait.
+    Always captures fresh screenshots when Captain runs.
     """
     
     print("🚀 EMMSO Screenshot Capture Tool")
@@ -173,12 +157,8 @@ def capture_screenshots(output_dir='screenshots'):
     should_capture, deployment_info = should_capture_new_screenshots()
     
     if not should_capture:
-        if deployment_info:
-            print(f"\n✅ Using existing screenshots from: {deployment_info}")
-            return str(deployment_info)
-        else:
-            print(f"\n⏸️  Skipping screenshot capture - waiting for deployment")
-            return None
+        print(f"\n⏸️  Screenshot capture cancelled")
+        return None
     
     # Create deployment-specific folder with timestamp
     deployment_timestamp = deployment_info if isinstance(deployment_info, int) else int(datetime.now().timestamp())
