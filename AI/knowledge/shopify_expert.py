@@ -24,6 +24,48 @@ FILTERS:
 {{ 1999 | money }} → $19.99
 {{ product.images | first | image_url: width: 600 }}
 {{ array | where: 'available' | sort: 'price' }}
+
+LIQUID VALIDATION RULES (CRITICAL):
+================================
+
+1. COMMENT TAG SYNTAX:
+   ❌ WRONG: comment text endcomment (missing {% %})
+   ✅ CORRECT: {% comment %}text{% endcomment %}
+   ✅ CORRECT: {%- comment -%}text{%- endcomment -%}
+   
+2. LIQUID TAG SYNTAX:
+   ❌ WRONG: {% liquid assign x = 5 endliquid %}
+   ✅ CORRECT: {% liquid
+                 assign x = 5
+               %}
+   - Inside {% liquid %} blocks, use # for comments (NOT comment tag)
+   - Example: {% liquid
+                # This is a comment
+                assign price = 100
+              %}
+
+3. ALL TAGS MUST BE PROPERLY CLOSED:
+   - {% if %} requires {% endif %}
+   - {% for %} requires {% endfor %}
+   - {% comment %} requires {% endcomment %}
+   - {% liquid %} requires %} (on separate line)
+   - {% schema %} requires {% endschema %}
+   
+4. WHITESPACE CONTROL:
+   - Use {%- -%} to strip whitespace
+   - Example: {%- if condition -%}...{%- endif -%}
+   
+5. COMMON VALIDATION ERRORS:
+   - Missing endcomment, endif, endfor, endschema
+   - Using 'comment' without {% %} tags inside {% liquid %} blocks
+   - Unclosed quotes in strings
+   - Missing | pipe before filters
+   - Wrong filter syntax
+
+6. SHOPIFY THEME CHECK:
+   - Run 'shopify theme check' before deploying
+   - Fix all syntax errors (line number shown in error)
+   - All templates must pass validation
 """
 
 ONLINE_STORE_2_0 = """

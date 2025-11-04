@@ -99,7 +99,7 @@
   assign og_locale = request.locale.iso_code | replace: '-', '_'
   assign og_locale_alternate = ''
   
-  comment Generate alternate locales for OG endcomment
+  # Generate alternate locales for OG
   for market in markets
     assign market_parts = market | split: '-'
     assign market_locale = market_parts[0] | append: '_' | append: market_parts[1]
