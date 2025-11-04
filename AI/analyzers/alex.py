@@ -260,18 +260,21 @@ class AlexShopifyAnalyst:
                     else:
                         assets_analysis['other_files'].append(file_info)
             
-            # Check for EMMSO specific files
-            emmso_css = any(f['name'] == 'emmso.css' for f in assets_analysis['css_files'])
-            emmso_js = any(f['name'] == 'emmso.js' for f in assets_analysis['js_files'])
+            # EMMSO uses modular CSS/JS architecture (multiple optimized files)
+            # Each file is minified separately for better caching and performance
+            minified_css = sum(1 for f in assets_analysis['css_files'] if '.min.css' in f['name'])
+            minified_js = sum(1 for f in assets_analysis['js_files'] if '.min.js' in f['name'])
             
             return {
                 'total_assets': sum(len(assets_analysis[key]) for key in assets_analysis),
                 'total_size_mb': round(total_size / 1024 / 1024, 2),
                 'assets_breakdown': assets_analysis,
-                'emmso_architecture': {
-                    'emmso_css_present': emmso_css,
-                    'emmso_js_present': emmso_js,
-                    'single_file_architecture': emmso_css and emmso_js
+                'modular_architecture': {
+                    'minified_css_files': minified_css,
+                    'minified_js_files': minified_js,
+                    'total_css_files': len(assets_analysis['css_files']),
+                    'total_js_files': len(assets_analysis['js_files']),
+                    'minification_coverage': round((minified_css + minified_js) / max(len(assets_analysis['css_files']) + len(assets_analysis['js_files']), 1) * 100, 1)
                 },
                 'performance_rating': self._rate_assets_performance(total_size, assets_analysis)
             }
@@ -405,21 +408,29 @@ class AlexShopifyAnalyst:
             else:
                 score += 0   # OPTIMIZATION DISASTER
         
-        # ADDITIONAL STRICT REQUIREMENTS
+        # ADDITIONAL REQUIREMENTS - Modular Architecture
         violations = []
         
-        # Check for CSS/JS architecture violations
-        css_files = assets_analysis.get('assets_breakdown', {}).get('css_files', [])
-        js_files = assets_analysis.get('assets_breakdown', {}).get('js_files', [])
+        # Check for minification coverage
+        modular = assets_analysis.get('modular_architecture', {})
+        minification_coverage = modular.get('minification_coverage', 0)
         
-        # Must have EXACTLY emmso.css and emmso.js
-        if len(css_files) > 1 or (len(css_files) == 1 and 'emmso.css' not in str(css_files)):
-            violations.append("CSS architecture violation")
-            score = max(0, score - 25)  # SEVERE PENALTY
+        # Require good minification coverage (80%+)
+        if minification_coverage < 80:
+            violations.append(f"Low minification coverage: {minification_coverage}% (target: 80%+)")
+            score = max(0, score - 15)  # Penalty for poor minification
+        
+        # Check for excessive file count (too many files = poor organization)
+        total_css = modular.get('total_css_files', 0)
+        total_js = modular.get('total_js_files', 0)
+        
+        if total_css > 30:  # More than 30 CSS files = bloat
+            violations.append(f"Too many CSS files: {total_css} (consider consolidation)")
+            score = max(0, score - 10)
             
-        if len(js_files) > 1 or (len(js_files) == 1 and 'emmso.js' not in str(js_files)):
-            violations.append("JS architecture violation")
-            score = max(0, score - 25)  # SEVERE PENALTY
+        if total_js > 20:  # More than 20 JS files = bloat
+            violations.append(f"Too many JS files: {total_js} (consider consolidation)")
+            score = max(0, score - 10)
         
         # File size violations (copied from Marcus' strict standards)
         total_size = assets_analysis.get('total_size', 0)
@@ -561,12 +572,12 @@ class AlexShopifyAnalyst:
                 'impact': 'high'
             })
         
-        # EMMSO-specific recommendations
-        emmso_arch = assets_analysis.get('emmso_architecture', {})
-        if not emmso_arch.get('single_file_architecture'):
+        # Modular architecture recommendations
+        modular = assets_analysis.get('modular_architecture', {})
+        if modular.get('minification_coverage', 100) < 80:
             recommendations.append({
-                'title': 'EMMSO Architecture Compliance',
-                'description': 'Implement single emmso.css and emmso.js file architecture',
+                'title': 'Improve Minification Coverage',
+                'description': f'Currently {modular.get("minification_coverage", 0)}% - target 80%+ for optimal performance',
                 'priority': 'high',
                 'impact': 'high'
             })

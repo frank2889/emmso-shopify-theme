@@ -517,16 +517,16 @@ class SarahSEOAnalyst:
                         'priority': 'HIGH'
                     })
         
-        # Performance fixes
+        # Performance fixes - Modular architecture
         if pagespeed_data and pagespeed_data.get('performance_score', 0) < 75:
             target_files.append({
-                'file': 'assets/emmso.css',
-                'action': 'Optimize CSS - remove unused styles, minify',
+                'file': 'assets/*.min.css',
+                'action': 'Ensure all CSS files are minified and loading correctly',
                 'priority': 'HIGH'
             })
             target_files.append({
-                'file': 'assets/emmso.js', 
-                'action': 'Optimize JavaScript - defer non-critical scripts',
+                'file': 'assets/*.min.js', 
+                'action': 'Ensure all JavaScript uses defer/async and is minified',
                 'priority': 'MEDIUM'
             })
         
