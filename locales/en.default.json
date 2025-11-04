@@ -62,6 +62,7 @@
     },
     "accessibility": {
       "skip_to_content": "Skip to content",
+      "skip_to_search": "Skip to search",
       "language_selector": "Select language"
     },
     "breadcrumbs": {
