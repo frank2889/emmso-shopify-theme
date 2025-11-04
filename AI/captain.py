@@ -333,16 +333,22 @@ class EMMSOCaptain:
         
         # STEP 1: Vision AI analyzes screenshots (now with fresh captures)
         screenshot_data = None
+        deployment_info = None
         if 'vision' in self.ai_team:
             try:
                 print(f"      👁️  Vision AI: Creating & analyzing screenshots...")
                 vision_result = self.ai_team['vision'].analyze(site_data)
                 mission_results['vision'] = vision_result
                 
-                # Extract screenshot analysis for sharing
+                # Extract screenshot analysis and deployment info for sharing
                 if 'findings' in vision_result and 'visual_analysis' in vision_result['findings']:
                     screenshot_data = vision_result['findings']['visual_analysis']
                     print(f"         ✅ {len(screenshot_data)} screenshots analyzed and ready to share")
+                
+                # Extract deployment timestamp
+                if 'findings' in vision_result and 'deployment' in vision_result['findings']:
+                    deployment_info = vision_result['findings']['deployment']
+                    print(f"         📅 Using screenshots from: {deployment_info['datetime']}")
                 
                 score = vision_result.get('score', 0)
                 print(f"         Score: {score}/100")
@@ -415,9 +421,14 @@ class EMMSOCaptain:
         # - NO detailed implementation ❌
         # - NO large JSON dumps ❌
         
+        # Build header with deployment info if available
+        deployment_header = ""
+        if deployment_info:
+            deployment_header = f"\n**Screenshots**: {deployment_info['datetime']} ({deployment_info['folder']})"
+        
         dod_content = f"""
 ### Mission: {mission_type}
-**Overall Score**: {overall_score}/100
+**Overall Score**: {overall_score}/100{deployment_header}
 
 #### Action Items
 
@@ -430,7 +441,7 @@ class EMMSOCaptain:
 
 ---
 
-## 🎯 ACTION PLAN - {datetime.now().strftime('%Y-%m-%d')}
+## 🎯 ACTION PLAN - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 {phase_tasks}
 """

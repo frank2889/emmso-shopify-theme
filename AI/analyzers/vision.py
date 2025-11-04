@@ -52,7 +52,7 @@ class VisionAIAnalyst:
         project_goals = site_data.get('project_goals', {})
         
         # Screenshots to analyze
-        screenshots = self._get_screenshots(site_data)
+        screenshots, deployment_info = self._get_screenshots(site_data)
         
         if not screenshots:
             return {
@@ -93,16 +93,23 @@ class VisionAIAnalyst:
         
         print(f"      Score: {overall_score}/100")
         
+        # Build findings with deployment info
+        findings = {
+            'visual_analysis': visual_analysis,
+            'screenshots_analyzed': len(screenshots),
+            'project_goals_alignment': self._check_visual_goals(visual_analysis, project_goals)
+        }
+        
+        # Add deployment timestamp if available
+        if deployment_info:
+            findings['deployment'] = deployment_info
+        
         return {
             'analyst': self.name,
             'specialty': self.specialty,
             'timestamp': datetime.now().isoformat(),
             'score': overall_score,
-            'findings': {
-                'visual_analysis': visual_analysis,
-                'screenshots_analyzed': len(screenshots),
-                'project_goals_alignment': self._check_visual_goals(visual_analysis, project_goals)
-            },
+            'findings': findings,
             'recommendations': all_recommendations
         }
     
@@ -110,15 +117,37 @@ class VisionAIAnalyst:
         """
         Get screenshots from latest deployment folder.
         Uses screenshots/latest/ symlink to automatically use most recent deployment.
+        Returns: (screenshots_dict, deployment_info)
         """
         base_path = site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV')
         
         # Try 'latest' symlink first (new deployment-aware structure)
         latest_dir = os.path.join(base_path, 'screenshots', 'latest')
+        deployment_info = None
         
         if os.path.exists(latest_dir) and os.path.islink(latest_dir):
             screenshots_dir = latest_dir
-            print(f"      📁 Using deployment folder: {os.readlink(latest_dir)}")
+            deployment_folder = os.readlink(latest_dir)
+            
+            # Extract timestamp from folder name: deployment-20251104-181523-1730649600
+            if deployment_folder.startswith('deployment-'):
+                parts = deployment_folder.split('-')
+                if len(parts) >= 4:
+                    date_str = parts[1]  # 20251104
+                    time_str = parts[2]  # 181523
+                    timestamp = parts[3]  # 1730649600
+                    
+                    # Format: 2025-11-04 18:15:23
+                    formatted_datetime = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:8]} {time_str[:2]}:{time_str[2:4]}:{time_str[4:6]}"
+                    deployment_info = {
+                        'folder': deployment_folder,
+                        'timestamp': timestamp,
+                        'datetime': formatted_datetime
+                    }
+            
+            print(f"      📁 Using deployment: {deployment_folder}")
+            if deployment_info:
+                print(f"      📅 Screenshots captured: {deployment_info['datetime']}")
         else:
             # Fallback to old flat structure
             screenshots_dir = os.path.join(base_path, 'screenshots')
@@ -133,7 +162,7 @@ class VisionAIAnalyst:
                     name = os.path.splitext(filename)[0]
                     screenshots[name] = os.path.join(screenshots_dir, filename)
         
-        return screenshots
+        return screenshots, deployment_info
     
     def _analyze_screenshot(self, image_path, screen_name, project_goals):
         """Analyze a single screenshot using OpenAI Vision API"""
