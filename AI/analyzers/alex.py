@@ -265,6 +265,15 @@ class AlexShopifyAnalyst:
             minified_css = sum(1 for f in assets_analysis['css_files'] if '.min.css' in f['name'])
             minified_js = sum(1 for f in assets_analysis['js_files'] if '.min.js' in f['name'])
             
+            # Count source files that NEED minification (exclude .min files from total)
+            source_css = sum(1 for f in assets_analysis['css_files'] if '.min.css' not in f['name'])
+            source_js = sum(1 for f in assets_analysis['js_files'] if '.min.js' not in f['name'])
+            
+            # Coverage = minified files / source files that need minification
+            # If every source file has a .min version, coverage is 100%
+            total_sources = source_css + source_js
+            coverage = round((minified_css + minified_js) / max(total_sources, 1) * 100, 1) if total_sources > 0 else 100.0
+            
             return {
                 'total_assets': sum(len(assets_analysis[key]) for key in assets_analysis),
                 'total_size_mb': round(total_size / 1024 / 1024, 2),
@@ -272,9 +281,11 @@ class AlexShopifyAnalyst:
                 'modular_architecture': {
                     'minified_css_files': minified_css,
                     'minified_js_files': minified_js,
+                    'source_css_files': source_css,
+                    'source_js_files': source_js,
                     'total_css_files': len(assets_analysis['css_files']),
                     'total_js_files': len(assets_analysis['js_files']),
-                    'minification_coverage': round((minified_css + minified_js) / max(len(assets_analysis['css_files']) + len(assets_analysis['js_files']), 1) * 100, 1)
+                    'minification_coverage': coverage
                 },
                 'performance_rating': self._rate_assets_performance(total_size, assets_analysis)
             }
