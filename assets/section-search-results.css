@@ -511,6 +511,14 @@
   grid-template-columns: 1fr;
 }
 
+/* Tablet optimization - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-grid[data-view-mode="grid"] {
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns on tablet */
+    gap: 1.25rem;
+  }
+}
+
 @media (max-width: 768px) {
   .product-grid[data-view-mode="grid"] {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
