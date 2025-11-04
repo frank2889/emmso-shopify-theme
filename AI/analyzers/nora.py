@@ -18,6 +18,7 @@ import os
 import sys
 import requests
 from datetime import datetime
+from pathlib import Path
 from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 # Import expert knowledge from centralized library
@@ -231,20 +232,76 @@ class NoraVisualAnalyst:
         }
     
     def _analyze_responsive_design(self):
-        """Analyze responsive design implementation"""
-        # Mock responsive analysis
-        responsive_score = 65  # Conservative score
+        """Analyze ACTUAL responsive design implementation by checking CSS media queries"""
+        issues = []
+        responsive_score = 100  # Start perfect, deduct for real issues
         
-        issues = [
-            'Mobile navigation needs optimization',
-            'Product grid layout inconsistent on tablet',
-            'Cart drawer not fully responsive'
-        ]
+        # Check for critical responsive breakpoints in CSS files
+        css_files = list(Path('assets').glob('*.css')) if Path('assets').exists() else []
+        
+        breakpoints_found = {
+            'mobile': False,    # @media (max-width: 640px) or (max-width: 768px)
+            'tablet': False,    # @media (min-width: 769px) and (max-width: 1024px)
+            'desktop': False    # @media (min-width: 1025px) or larger
+        }
+        
+        tablet_grid_patterns = []
+        mobile_nav_optimized = False
+        
+        for css_file in css_files:
+            try:
+                content = css_file.read_text(encoding='utf-8')
+                
+                # Check for mobile breakpoints (<=768px)
+                if '@media' in content and ('max-width: 640px' in content or 'max-width: 768px' in content):
+                    breakpoints_found['mobile'] = True
+                    
+                    # Check if mobile nav is optimized (has specific mobile-nav styles)
+                    if 'mobile-nav' in content or 'mobile__nav' in content:
+                        mobile_nav_optimized = True
+                
+                # Check for tablet-specific breakpoints (769px-1024px)
+                if 'min-width: 769px' in content or '(min-width: 768px) and (max-width: 1024px)' in content:
+                    breakpoints_found['tablet'] = True
+                    
+                    # Check if product grid has tablet optimization
+                    if 'product-grid' in content or 'product__grid' in content:
+                        tablet_grid_patterns.append(css_file.name)
+                
+                # Check for desktop breakpoints (>=1024px)
+                if '@media' in content and ('min-width: 1024px' in content or 'min-width: 1025px' in content):
+                    breakpoints_found['desktop'] = True
+                    
+            except Exception as e:
+                continue
+        
+        # Evaluate findings and generate SPECIFIC issues
+        if not breakpoints_found['mobile']:
+            issues.append('Missing mobile breakpoints (<=768px) - site may not be mobile-friendly')
+            responsive_score -= 30
+        
+        if not breakpoints_found['tablet']:
+            issues.append(f'Missing tablet breakpoints (769-1024px) - layout may jump from mobile to desktop without tablet optimization')
+            responsive_score -= 20
+        elif not tablet_grid_patterns:
+            issues.append('Tablet breakpoint exists but product-grid lacks tablet-specific styling (check section-search-results.css, section-collection.css)')
+            responsive_score -= 15
+        
+        if not mobile_nav_optimized:
+            issues.append('Mobile navigation lacks responsive optimization - ensure mobile-nav CSS exists in base.css or dedicated file')
+            responsive_score -= 15
+        
+        # If NO issues found, check that we actually found responsive code
+        if not issues and not any(breakpoints_found.values()):
+            issues.append('No responsive CSS media queries detected - site appears to lack responsive design')
+            responsive_score = 20
         
         return {
-            'responsive_score': max(0, responsive_score - len(issues) * 5),
+            'responsive_score': max(0, responsive_score),
             'issues': issues,
-            'devices_tested': ['mobile', 'tablet', 'desktop']
+            'devices_tested': ['mobile', 'tablet', 'desktop'],
+            'breakpoints_found': breakpoints_found,
+            'affected_files': tablet_grid_patterns if not tablet_grid_patterns else []
         }
     
     def _calculate_visual_score(self, css_analysis, visual_analysis, brand_analysis, responsive_analysis, screenshot_analysis=None):
