@@ -346,6 +346,13 @@
   animation: cart-badge-pulse 0.3s ease;
 }
 
+/* Empty cart state - subtle but always visible for e-commerce clarity */
+.cart-count[data-empty="true"] {
+  background: var(--color-text-muted, #6B6B6B);
+  opacity: 0.6;
+  box-shadow: 0 2px 6px rgba(107, 107, 107, 0.3);
+}
+
 @keyframes cart-badge-pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
