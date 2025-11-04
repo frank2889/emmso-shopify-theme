@@ -355,32 +355,40 @@ class NoraVisualAnalyst:
                 'impact': 'medium'
             })
         
-        # Visual consistency recommendations
+        # Visual consistency recommendations - SPECIFIC details
         if visual_analysis.get('consistency_score', 0) < 80:
+            issues = visual_analysis.get('issues', [])
+            specific_issues = ', '.join(issues[:3]) if issues else 'spacing, typography, color usage'
             recommendations.append({
                 'title': 'Visual Consistency Improvements',
-                'description': 'Standardize visual elements across all pages',
+                'description': f'Inconsistencies found in: {specific_issues}. Score: {visual_analysis.get("consistency_score", 0)}/100',
                 'priority': 'high',
-                'impact': 'medium'
+                'impact': 'medium',
+                'files': visual_analysis.get('affected_files', [])
             })
         
-        # Brand implementation recommendations
+        # Brand implementation recommendations - SPECIFIC details
         if brand_analysis.get('brand_score', 0) < 75:
+            brand_issues = brand_analysis.get('issues', [])
+            specific_brand = ', '.join(brand_issues[:3]) if brand_issues else 'logo visibility, color consistency, brand elements'
             recommendations.append({
                 'title': 'Brand Implementation Enhancement',
-                'description': 'Strengthen EMMSO brand presence and consistency',
+                'description': f'Brand issues: {specific_brand}. Score: {brand_analysis.get("brand_score", 0)}/100',
                 'priority': 'high',
-                'impact': 'high'
+                'impact': 'high',
+                'files': brand_analysis.get('affected_files', [])
             })
         
-        # Responsive design recommendations
+        # Responsive design recommendations - SPECIFIC details
         responsive_issues = responsive_analysis.get('issues', [])
         if len(responsive_issues) > 2:
+            specific_responsive = ', '.join(responsive_issues[:3])
             recommendations.append({
                 'title': 'Responsive Design Optimization',
-                'description': 'Fix mobile and tablet layout inconsistencies',
+                'description': f'Mobile/tablet issues: {specific_responsive}. Total issues: {len(responsive_issues)}',
                 'priority': 'medium',
-                'impact': 'medium'
+                'impact': 'medium',
+                'files': responsive_analysis.get('affected_files', [])
             })
         
         return recommendations

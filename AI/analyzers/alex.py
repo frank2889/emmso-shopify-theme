@@ -519,34 +519,44 @@ class AlexShopifyAnalyst:
                 'impact': 'high'
             })
         
-        # Template quality recommendations
+        # Template quality recommendations - SPECIFIC details
         template_quality = template_analysis.get('quality_score', 0)
         if template_quality < 70:
+            template_issues = template_analysis.get('issues', [])
+            specific_templates = ', '.join(template_issues[:3]) if template_issues else 'Liquid syntax, performance, structure'
+            total_templates = template_analysis.get('total_templates', 0)
             recommendations.append({
                 'title': 'Template Quality Improvement Needed',
-                'description': 'Optimize Liquid template structure and settings',
+                'description': f'Issues in {total_templates} templates: {specific_templates}. Score: {template_quality}/100',
                 'priority': 'high',
-                'impact': 'medium'
+                'impact': 'medium',
+                'files': template_analysis.get('problematic_files', [])
             })
         
-        # Sections performance recommendations
+        # Sections performance recommendations - SPECIFIC details
         sections_score = sections_analysis.get('overall_sections_score', 0)
         if sections_score < 80:
+            section_issues = sections_analysis.get('issues', [])
+            specific_sections = ', '.join(section_issues[:3]) if section_issues else 'section rendering, Liquid loops, performance'
             recommendations.append({
                 'title': 'Sections Performance Optimization',
-                'description': 'Optimize Liquid sections for better performance',
+                'description': f'Section issues: {specific_sections}. Score: {sections_score}/100',
                 'priority': 'medium',
-                'impact': 'medium'
+                'impact': 'medium',
+                'files': sections_analysis.get('slow_sections', [])
             })
         
-        # Assets optimization recommendations
+        # Assets optimization recommendations - SPECIFIC details
         assets_rating = assets_analysis.get('performance_rating', 0)
         if assets_rating < 75:
+            total_css = assets_analysis.get('total_css_kb', 0)
+            total_js = assets_analysis.get('total_js_kb', 0)
             recommendations.append({
                 'title': 'Assets Optimization Required',
-                'description': 'Optimize CSS, JS, and image assets for better performance',
+                'description': f'Current size: {total_css}KB CSS, {total_js}KB JS. Rating: {assets_rating}/100',
                 'priority': 'medium',
-                'impact': 'high'
+                'impact': 'high',
+                'target': 'Minify, compress, lazy-load assets'
             })
         
         # Modular architecture recommendations
