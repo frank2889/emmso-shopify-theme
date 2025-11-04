@@ -5,6 +5,64 @@
 
 ---
 
+## ⚠️ DESIGN SYSTEM POLICY
+
+**This document is the SINGLE SOURCE OF TRUTH for all design decisions.**
+
+### 🔒 WRITE ACCESS RULES:
+
+**✅ WHO CAN WRITE:**
+- **GitHub Copilot ONLY** - AI-driven design updates based on:
+  - Vision AI analysis results
+  - Captain recommendations
+  - User feedback implementation
+  - Accessibility audits
+  - Performance optimizations
+
+**❌ WHO CANNOT WRITE:**
+- Manual edits by developers
+- Captain (writes to DOD only)
+- Other AI analyzers (read-only access)
+- Automated tools (except Copilot)
+
+### 📝 WHAT BELONGS HERE:
+
+**✅ DESIGN SPECIFICATIONS:**
+1. Color palette with hex codes
+2. Typography scale and font stacks
+3. Spacing system (rem/px values)
+4. Component design patterns
+5. Accessibility requirements (WCAG)
+6. Animation timing functions
+7. Responsive breakpoints
+8. Touch target sizes
+9. Visual hierarchy rules
+10. Design tokens (CSS variables)
+
+**✅ DESIGN VALIDATION:**
+- Vision AI analysis results
+- WCAG compliance reports
+- Component screenshots/examples
+- Design iteration history
+
+**❌ WHAT DOES NOT BELONG:**
+- Task lists (use DOD ACTION PLAN)
+- Implementation code (use git commits)
+- Business strategy (use DOD Part I)
+- Bug reports (use git issues)
+
+### 🎯 UPDATE PROCESS:
+
+1. **Vision AI analyzes** → Identifies design issues
+2. **Captain creates** → Tasks in DOD ACTION PLAN
+3. **Developer implements** → Design changes in code
+4. **Copilot documents** → Updates this Design System
+5. **Next cycle validates** → Vision AI confirms improvements
+
+**Rule:** Design System is READ-ONLY except for Copilot design documentation updates.
+
+---
+
 ## 🎨 Design Philosophy
 
 ### Core Principles
