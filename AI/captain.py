@@ -22,8 +22,7 @@ class EMMSOCaptain:
     =====================================
     
     Captain stuurt het AI team en slaat alle bevindingen op in:
-    - DEFINITION-OF-DONE.md: Taken (ACTION PLAN), checkboxes, summaries ONLY
-    - DESIGN-SYSTEM.md: Design wijzigingen en aanbevelingen
+    - DEFINITION-OF-DONE.md: Single source of truth for ALL documentation
     
     ⚠️ DOD DOCUMENTATION POLICY:
     - DO: Add tasks with clear descriptions
@@ -71,7 +70,7 @@ class EMMSOCaptain:
             print(f"      • Languages: {self.project_goals.get('languages', 'N/A')}")
     
     def _load_project_goals(self):
-        """Load project goals from DEFINITION-OF-DONE.md and DESIGN-SYSTEM.md"""
+        """Load project goals from DEFINITION-OF-DONE.md (single source of truth)"""
         goals = {}
         
         try:
@@ -468,8 +467,7 @@ class EMMSOCaptain:
 📅 Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 🎖️  Overall Score: {overall_score}/100
 📋 Recommendations: {len(all_recommendations)}
-📄 Saved to DEFINITION-OF-DONE.md
-🎨 Design items saved to DESIGN-SYSTEM.md
+📄 Saved to DEFINITION-OF-DONE.md (single source of truth)
 
 Ready for next orders.
         """)
@@ -486,7 +484,7 @@ def main():
     print("\n🚀 Running full audit...")
     captain.execute_mission("FULL_AUDIT")
     
-    print("\n✅ Mission complete. Check DEFINITION-OF-DONE.md and DESIGN-SYSTEM.md for results.")
+    print("\n✅ Mission complete. Check DEFINITION-OF-DONE.md for all results.")
 
 if __name__ == "__main__":
     main()
