@@ -1,51 +1,28 @@
 """
 Nora - Visual Design Analyst for EMMSO AI System
-MEEDOGENLOOS STRENGE visual design evaluation
-+ GPT-4 Vision voor Design-focused screenshot analyse
+================================================
 
-EXPERT KNOWLEDGE BASE - Design Systems & Accessibility
-======================================================
-Based on WCAG + Material UI documentation (8,000 tokens)
+Uses centralized design_expert knowledge base for analysis.
+Accesses expert knowledge on design systems, accessibility (WCAG), brutalist design, and UX best practices.
 
-COLOR CONTRAST & ACCESSIBILITY (WCAG):
-- AA Standard (minimum): 4.5:1 for normal text, 3:1 for large text (18pt+/14pt+ bold)
-- AAA Standard (enhanced): 7:1 for normal text, 4.5:1 for large text
-- Contrast calculation: (L1 + 0.05) / (L2 + 0.05) where L is relative luminance
-- Relative luminance: L = 0.2126*R + 0.7152*G + 0.0722*B (linearized sRGB)
-- Focus indicators: Minimum 2px thickness, 3:1 contrast with adjacent colors
-- Non-text contrast: 3:1 for UI components (buttons, form controls, icons)
-
-FOCUS STATES & KEYBOARD NAVIGATION:
-- Visible focus indicators required for all interactive elements
-- Use outline + outline-offset for clear separation from element
-- Two-color technique: outline + box-shadow for visibility on any background
-- Focus styles: :focus-visible for keyboard users, avoid :focus on click
-- Touch targets: Minimum 44x44px for interactive elements (WCAG AAA: 2.5.5)
-
-TYPOGRAPHY SCALE & SPACING:
-- Hierarchy: h1 (2.5rem+), h2 (2rem), h3 (1.5rem), body (1rem), small (0.875rem)
-- Line height: 1.5 for body text, 1.2-1.3 for headings
-- Letter spacing: Adjust for readability (-0.015em for large headings, +0.01em for small text)
-- Font weights: 300 (light), 400 (regular), 500 (medium), 700 (bold)
-- Responsive typography: Use clamp() or responsive font sizes with breakpoints
-
-DESIGN TOKENS & SYSTEM:
-- Color palette: Primary, secondary, success, error, warning, info + shades (50-900)
-- Spacing scale: 4px base unit (0.25rem), multiples of 8px for major spacing
-- Breakpoints: xs (0), sm (600px), md (900px), lg (1200px), xl (1536px)
-- Border radius: xs (4px), sm (8px), md (12px), lg (16px)
-- Shadows: Elevation system (1-24), use box-shadow for depth
-
-GRID & LAYOUT:
-- 12-column grid system, responsive columns via breakpoints
-- Container max-widths: sm (600px), md (900px), lg (1200px), xl (1536px)
-- Spacing props: margin (m), padding (p), with directional variants (mt, mx, etc.)
-- Flexbox for component-level layout, Grid for page-level structure
+Specializes in:
+- Visual design analysis
+- Brand consistency
+- Accessibility (WCAG 2.1 AA)
+- Responsive design
+- Design system compliance
+- GPT-4 Vision for design-focused screenshot analysis
 """
-import requests
+
 import os
+import sys
+import requests
 from datetime import datetime
 from analyzers.screenshot_analyzer import ScreenshotAnalyzer
+
+# Import expert knowledge from centralized library
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from knowledge import design_expert
 
 class NoraVisualAnalyst:
     """Visual design specialist with WCAG accessibility and design system expertise."""
@@ -56,6 +33,7 @@ class NoraVisualAnalyst:
         self.specialty = "Visual Design"
         self.theme_root = "/Users/Frank/Documents/EMMSO NOV"
         self.screenshot_analyzer = ScreenshotAnalyzer()
+        self.knowledge = design_expert  # Access to centralized knowledge base
         self.expertise_areas = [
             'visual_design',
             'brand_consistency',

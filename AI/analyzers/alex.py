@@ -1,47 +1,12 @@
 """
-Alex - Shopify Specialist for EMMSO AI System
-=============================================
-SMART SHOPIFY ANALYSIS - Heeft toegang tot alle Shopify theme data!
-Analyseert ECHTE Shopify files: templates, sections, snippets, assets
-+ GPT-4 Vision voor Shopify-focused screenshot analyse
-
-EXPERT KNOWLEDGE BASE - Shopify Theme Development Best Practices
-================================================================
-Based on official Shopify.dev and Liquid documentation (13,000 tokens)
-
-SECTION/BLOCK ARCHITECTURE:
-- Use {% schema %} tag for all sections with JSON object (validate against schemas/section.json)
-- Settings types: text, image_picker, color_background, checkbox, range, select, product, collection
-- Block types: @theme (any theme block), @app (app blocks), local blocks, static blocks
-- Presets: Quick merchant configuration with default blocks
-- Online Store 2.0: JSON templates + dynamic section rendering via {% sections 'name' %}
-
-LIQUID TEMPLATING BEST PRACTICES:
-- Filters: Use | t for translations, | asset_url for assets, | image_url for responsive images
-- Tags: {% render 'snippet' %} for includes, {% liquid %} for multi-line logic
-- Responsive images (MODERN): Use <picture> with <source> elements for art direction + format switching
-  * <picture> → <source type="image/avif"> → <source type="image/webp"> → <img> fallback
-  * Add srcset with width descriptors (400w, 800w, 1200w) per source
-  * Use sizes attribute for responsive sizing: sizes="(min-width: 768px) 50vw, 100vw"
-  * Legacy: Plain <img srcset=""> for simple resolution switching only
-- Performance: fetchpriority="high" for LCP images, loading="eager" above fold, loading="lazy" below
-- Forms: {% form 'type' %} with proper autocomplete attributes
-- Localization: All static text via {{ 'key' | t }}, hierarchical keys in locales/*.json
-
-SHOPIFY-SPECIFIC PATTERNS:
-- content_for 'blocks' for dynamic block rendering
-- content_for 'block' for static blocks with type/id
-- Block nesting: sections can have blocks with 'blocks' property
-- Settings schema: required name, id, type, label; optional default, info, placeholder
-- Section limits: Use 'limit' in schema to control max sections
-- App blocks: {% content_for 'block', type: '@app' %}
+Alex - Shopify Specialist
+Uses centralized shopify_expert knowledge base
 """
-
-import os
-import json
+import os, sys, json
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 from pathlib import Path
+from knowledge import shopify_expert
 from analyzers.screenshot_analyzer import ScreenshotAnalyzer
 
 class AlexShopifyAnalyst:
@@ -53,6 +18,7 @@ class AlexShopifyAnalyst:
         self.specialty = "Shopify"
         self.shopify_root = "/Users/Frank/Documents/EMMSO NOV"
         self.screenshot_analyzer = ScreenshotAnalyzer()
+        self.knowledge = shopify_expert  # Access to centralized knowledge base
         self.expertise_areas = [
             'shopify_theme_analysis',
             'liquid_templates',

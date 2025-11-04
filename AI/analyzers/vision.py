@@ -1,19 +1,19 @@
 """
 Vision AI Analyst - Visual Design & UX Analysis
-================================================
-Analyzes screenshots and visual appearance of the live theme
-Uses OpenAI Vision API to evaluate design, layout, and user experience
+Uses centralized vision_expert knowledge base
 """
 import os
 import base64
 import json
 from datetime import datetime
 from openai import OpenAI
+from knowledge import vision_expert
 
 class VisionAIAnalyst:
     def __init__(self):
         self.name = "Vision AI"
         self.specialty = "Visual Design & Screenshot Analysis"
+        self.knowledge = vision_expert  # Access to centralized UX/UI expertise
         
         # Initialize OpenAI client (optional - graceful degradation)
         api_key = os.getenv('OPENAI_API_KEY')
@@ -195,62 +195,75 @@ class VisionAIAnalyst:
             }
     
     def _build_analysis_prompt(self, screen_name, project_goals):
-        """Build analysis prompt based on screen type and project goals"""
+        """Build analysis prompt using expert vision knowledge base"""
         
-        base_prompt = f"""Analyze this screenshot of the {screen_name} page/section of an e-commerce website.
+        # Determine if mobile or desktop analysis
+        is_mobile = 'mobile' in screen_name.lower() or 'phone' in screen_name.lower()
+        
+        # Get expert prompt from knowledge base
+        expert_analysis = self.knowledge.get_mobile_analysis_prompt() if is_mobile else self.knowledge.get_analysis_prompt()
+        
+        # Add project-specific context
+        context_prompt = f"""
+SCREENSHOT CONTEXT:
+- Page/Section: {screen_name}
+- Project Vision: {project_goals.get('vision', 'Search-first e-commerce marketplace')}
+- Design Principle: {project_goals.get('design_principle', 'Brutalist Simplicity - Function over decoration')}
+- Accessibility Target: {project_goals.get('accessibility', 'WCAG 2.1 AA compliance')}
 
-PROJECT GOALS:
-- Vision: {project_goals.get('vision', 'Search-first e-commerce marketplace')}
-- Design: {project_goals.get('design_principle', 'Brutalist Simplicity - Function over decoration')}
-- Mobile: {project_goals.get('mobile_first', 'Thumb-optimized, 44px touch targets')}
-- Accessibility: {project_goals.get('accessibility', 'WCAG 2.1 AA compliance')}
+CRITICAL E-COMMERCE CHECKS:
+- Shopping cart icon visible in header (with item count badge if applicable)
+- Product pricing clearly displayed
+- "Add to Cart" or "Buy Now" buttons prominent
+- Design immediately communicates "this is a shop"
+- Trust signals visible (payment icons, security badges, guarantees)
 
-CRITICAL: This is an **E-COMMERCE PLATFORM** (online shopping). Look for shopping cart indicators!
+{expert_analysis}
 
-EVALUATE THE FOLLOWING (Score 0-100 for each):
+SCORING RUBRIC (0-100 for each category):
+1. E-Commerce Visibility (0-100)
+   - Cart icon visible: 40 points
+   - Product prices visible: 20 points
+   - CTA buttons prominent: 20 points
+   - Trust signals present: 10 points
+   - Cart count badge visible: 10 points
 
-1. **E-Commerce Visibility** (0-100) **[NEW - CRITICAL]**
-   - Is there a visible shopping cart icon/button in the header?
-   - Can you see product pricing clearly displayed?
-   - Are there "Add to Cart" or "Buy Now" buttons visible?
-   - Does the design communicate "this is a shop" immediately?
-   - Is the cart count badge visible (if items in cart)?
-   - **Score 0 if no cart icon visible, even if other e-commerce elements present**
+2. Visual Hierarchy (0-100)
+   - Clear focal points: 30 points
+   - Proper size/contrast: 30 points
+   - Adequate spacing: 20 points
+   - Logical flow: 20 points
 
-2. **Visual Hierarchy** (0-100)
-   - Is the most important content immediately visible?
-   - Clear focal points and visual flow?
-   - Proper use of size, contrast, and spacing?
+3. Search-First Design (0-100)
+   - Search prominent: 40 points
+   - Search accessible: 30 points
+   - Autocomplete visible: 20 points
+   - Voice search option: 10 points
 
-3. **Search-First Design** (0-100)
-   - Is search prominent and easy to find?
-   - Does it feel like a search-focused experience?
-   - Voice search visible/accessible?
+4. Mobile-First/Responsive (0-100)
+   - Touch targets 48px+: 30 points
+   - Thumb-zone optimization: 25 points
+   - Readable text (16px+): 25 points
+   - No horizontal scroll: 20 points
 
-4. **Mobile-First/Responsive** (0-100)
-   - Touch-friendly targets (44px minimum)?
-   - Thumb-reachable navigation?
-   - Readable text sizes (16px+ for body)?
+5. Brutalist Simplicity (0-100)
+   - Function over form: 40 points
+   - Minimal decoration: 30 points
+   - Clear purpose: 30 points
 
-5. **Brutalist Simplicity** (0-100)
-   - Function over decoration?
-   - Clean, minimal design?
-   - No unnecessary visual clutter?
+6. Accessibility (0-100)
+   - Text contrast 4.5:1: 40 points
+   - Focus indicators: 30 points
+   - Readable typography: 30 points
 
-6. **Accessibility** (0-100)
-   - Sufficient color contrast (4.5:1 for text)?
-   - Clear visual states (hover, focus)?
-   - Readable typography?
+7. Brand Consistency (0-100)
+   - Consistent colors: 35 points
+   - Consistent typography: 35 points
+   - Brand visibility: 30 points
 
-7. **Brand Consistency** (0-100)
-   - Consistent colors and typography?
-   - Professional appearance?
-   - EMMSO brand visible/clear?
-
-PROVIDE YOUR ANALYSIS IN THIS FORMAT:
-
+OUTPUT FORMAT:
 **SCORES:**
-- E-Commerce Visibility: X/100 (CRITICAL - Must see cart icon!)
+- E-Commerce Visibility: X/100
 - Visual Hierarchy: X/100
 - Search-First Design: X/100
 - Mobile-First: X/100
@@ -259,27 +272,13 @@ PROVIDE YOUR ANALYSIS IN THIS FORMAT:
 - Brand Consistency: X/100
 - OVERALL: X/100
 
-**E-COMMERCE CHECK:**
-- Cart icon visible? YES/NO (describe location and size)
-- Pricing visible? YES/NO
-- Add to Cart buttons? YES/NO
-- Shopping intent clear? YES/NO
+**CRITICAL ISSUES:** [List with severity, location, fix]
+**RECOMMENDED FIXES:** [Actionable with measurements]
+**WHAT WORKS WELL:** [Positive highlights]
 
-**ISSUES FOUND:**
-- [List specific visual problems you see]
-- [Flag if cart icon is missing or too small to notice]
-
-**RECOMMENDATIONS:**
-- [Specific actionable improvements]
-- [If cart not visible: "Make shopping cart icon more prominent (increase size, add animation, ensure visibility)"]
-
-**HIGHLIGHTS:**
-- [What works well visually]
-
-Be critical and specific. Focus on what you can actually SEE in the screenshot. 
-If you cannot see a shopping cart icon in the header, FLAG THIS IMMEDIATELY as critical issue."""
-
-        return base_prompt
+Provide MEEDOGENLOOS STRENGE (ruthlessly strict) analysis.
+"""
+        return context_prompt
     
     def _parse_vision_response(self, response_text, screen_name):
         """Parse Vision API response into structured data for sharing with other analysts"""
