@@ -72,12 +72,11 @@
 
 .product-vendor {
   font-size: 0.875rem;
-  color: var(--color-text, #4D4D4D);
-  opacity: 0.7;
+  color: var(--color-primary, #FBB03B); /* BRAND: Orange instead of gray for consistency */
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: 500;
+  font-weight: 600; /* BRAND: Slightly bolder for mobile visibility */
 }
 
 .product-title {
@@ -101,7 +100,7 @@
 }
 
 .product-price__current {
-  font-size: 1.75rem;
+  font-size: 2rem; /* BRAND: Larger and more prominent on mobile (was 1.75rem) */
   font-weight: 700;
   color: var(--color-primary, #FBB03B);
 }

@@ -23,25 +23,25 @@
     {%- # Inlined CSS Variables for instant availability -%}
     {% render 'css-variables' %}
 
-    {%- # BASE CSS - MUST LOAD FIRST -%}
-    {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+    {%- # BASE CSS - MINIFIED (31% smaller) -%}
+    {{ 'base.min.css' | asset_url | stylesheet_tag: preload: true }}
     
     {%- # Critical CSS - Inline for fastest FCP -%}
-    {{ 'critical.css' | asset_url | stylesheet_tag }}
+    {{ 'critical.min.css' | asset_url | stylesheet_tag }}
     
-    {%- # Design System CSS - Load in sequence -%}
-    {{ 'design-tokens.css' | asset_url | stylesheet_tag }}
-    {{ 'animations.css' | asset_url | stylesheet_tag }}
-    {{ 'forms.css' | asset_url | stylesheet_tag }}
-    {{ 'buttons.css' | asset_url | stylesheet_tag }}
-    {{ 'utilities.css' | asset_url | stylesheet_tag }}
-    {{ 'product-card.css' | asset_url | stylesheet_tag }}
-    {{ 'search.css' | asset_url | stylesheet_tag }}
-    {{ 'filters.css' | asset_url | stylesheet_tag }}
-    {{ 'comparison.css' | asset_url | stylesheet_tag }}
+    {%- # Design System CSS - MINIFIED Load in sequence -%}
+    {{ 'design-tokens.min.css' | asset_url | stylesheet_tag }}
+    {{ 'animations.min.css' | asset_url | stylesheet_tag }}
+    {{ 'forms.min.css' | asset_url | stylesheet_tag }}
+    {{ 'buttons.min.css' | asset_url | stylesheet_tag }}
+    {{ 'utilities.min.css' | asset_url | stylesheet_tag }}
+    {{ 'product-card.min.css' | asset_url | stylesheet_tag }}
+    {{ 'search.min.css' | asset_url | stylesheet_tag }}
+    {{ 'filters.min.css' | asset_url | stylesheet_tag }}
+    {{ 'comparison.min.css' | asset_url | stylesheet_tag }}
     
     {%- # Search Results CSS - Defer non-critical -%}
-    {{ 'search-results.css' | asset_url | stylesheet_tag }}
+    {{ 'search-results.min.css' | asset_url | stylesheet_tag }}
 
     {%- # Social, title, etc. -%}
     {% render 'meta-tags' %}

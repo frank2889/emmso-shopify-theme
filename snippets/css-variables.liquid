@@ -51,9 +51,11 @@
     --color-background-secondary: {{ settings.background_secondary | default: '#f5f5f5' }};
     
     --color-text: {{ settings.foreground_color | default: '#1a1a1a' }};
-    --color-text-secondary: {{ settings.text_secondary | default: '#666666' }};
+    --color-text-secondary: {{ settings.text_secondary | default: '#4a4a4a' }}; /* IMPROVED: Was #666, now darker for better contrast */
+    --color-text-muted: #6b6b6b; /* ADDED: Lighter than secondary but still WCAG AA compliant */
     
     --color-border: {{ settings.border_color | default: '#e5e5e5' }};
+    --color-border-strong: #b0b0b0; /* ADDED: Darker border for better visibility */
     
     --color-button-bg: {{ settings.button_background | default: '#3b82f6' }};
     --color-button-bg-hover: {{ settings.button_background_hover | default: '#2563eb' }};
@@ -76,6 +78,9 @@
     --page-width: {{ settings.max_page_width | default: 1440 }}px;
     --page-margin: {{ settings.min_page_margin | default: 20 }}px;
     --header-height: 80px;
+    
+    /* ACCESSIBILITY: Touch Target Sizes - WCAG 2.5.5 Level AAA */
+    --touch-target-min: 44px; /* Minimum for all interactive elements */
     
     /* ============================================
        Design System

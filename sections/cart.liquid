@@ -16,15 +16,15 @@
 {% endcomment %}
 
 {% render 'css-variables' %}
-<link rel="stylesheet" href="{{ 'cart.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'general.cart.css' | asset_url }}">
 
 <div class="cart" data-cart-wrapper>
   {%- if cart.item_count > 0 -%}
     {%- comment %} Cart Header {% endcomment -%}
     <div class="cart__header">
-      <h1 class="cart__title">{{ 'cart.title' | t }}</h1>
+      <h1 class="cart__title">{{ 'general.cart.title' | t }}</h1>
       <p class="cart__count">
-        {{ 'cart.item_count' | t: count: cart.item_count }}
+        {{ 'general.cart.item_count' | t: count: cart.item_count }}
       </p>
     </div>
 
@@ -41,11 +41,11 @@
       <div class="cart__shipping-bar" data-shipping-bar>
         {%- if remaining > 0 -%}
           <p class="cart__shipping-message">
-            {{ 'cart.free_shipping_remaining' | t: amount: remaining | money }}
+            {{ 'general.cart.free_shipping_remaining' | t: amount: remaining | money }}
           </p>
         {%- else -%}
           <p class="cart__shipping-message cart__shipping-message--success">
-            {{ 'cart.free_shipping_eligible' | t }}
+            {{ 'general.cart.free_shipping_eligible' | t }}
           </p>
         {%- endif -%}
         <div class="cart__shipping-progress">
@@ -141,9 +141,9 @@
                 class="cart-item__remove" 
                 data-remove-item
                 data-index="{{ forloop.index }}"
-                aria-label="{{ 'cart.remove' | t }}"
+                aria-label="{{ 'general.cart.remove' | t }}"
               >
-                {{ 'cart.remove' | t }}
+                {{ 'general.cart.remove' | t }}
               </button>
             </div>
 
@@ -154,7 +154,7 @@
                 class="cart-item__qty-button" 
                 data-qty-decrease
                 data-index="{{ forloop.index }}"
-                aria-label="{{ 'cart.decrease_quantity' | t }}"
+                aria-label="{{ 'general.cart.decrease_quantity' | t }}"
               >
                 -
               </button>
@@ -166,14 +166,14 @@
                 class="cart-item__qty-input"
                 data-qty-input
                 data-index="{{ forloop.index }}"
-                aria-label="{{ 'cart.quantity' | t }}"
+                aria-label="{{ 'general.cart.quantity' | t }}"
               >
               <button 
                 type="button" 
                 class="cart-item__qty-button" 
                 data-qty-increase
                 data-index="{{ forloop.index }}"
-                aria-label="{{ 'cart.increase_quantity' | t }}"
+                aria-label="{{ 'general.cart.increase_quantity' | t }}"
               >
                 +
               </button>
@@ -193,12 +193,12 @@
         {%- comment %} Cart Note {% endcomment -%}
         {%- if section.settings.show_cart_note -%}
           <div class="cart__note">
-            <label for="cart-note">{{ 'cart.note' | t }}</label>
+            <label for="cart-note">{{ 'general.cart.note' | t }}</label>
             <textarea 
               id="cart-note" 
               name="note" 
               class="cart__note-textarea"
-              placeholder="{{ 'cart.note_placeholder' | t }}"
+              placeholder="{{ 'general.cart.note_placeholder' | t }}"
             >{{ cart.note }}</textarea>
           </div>
         {%- endif -%}
@@ -208,7 +208,7 @@
           
           {%- comment %} Subtotal {% endcomment -%}
           <div class="cart__subtotal">
-            <span>{{ 'cart.subtotal' | t }}</span>
+            <span>{{ 'general.cart.subtotal' | t }}</span>
             <span data-cart-subtotal>{{ cart.total_price | money }}</span>
           </div>
 
@@ -226,7 +226,7 @@
 
           {%- comment %} Shipping Note {% endcomment -%}
           <p class="cart__shipping-note">
-            {{ 'cart.shipping_at_checkout' | t }}
+            {{ 'general.cart.shipping_at_checkout' | t }}
           </p>
 
           {%- comment %} Checkout Button {% endcomment -%}
@@ -236,12 +236,12 @@
             class="cart__checkout-button"
             data-checkout-button
           >
-            {{ 'cart.checkout' | t }}
+            {{ 'general.cart.checkout' | t }}
           </button>
 
           {%- comment %} Continue Shopping {% endcomment -%}
           <a href="{{ routes.all_products_collection_url }}" class="cart__continue-shopping">
-            {{ 'cart.continue_shopping' | t }}
+            {{ 'general.cart.continue_shopping' | t }}
           </a>
         </div>
       </div>
@@ -304,14 +304,14 @@
           <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
         </svg>
       </div>
-      <h2 class="cart__empty-title">{{ 'cart.empty_title' | t }}</h2>
-      <p class="cart__empty-message">{{ 'cart.empty_message' | t }}</p>
+      <h2 class="cart__empty-title">{{ 'general.cart.empty_title' | t }}</h2>
+      <p class="cart__empty-message">{{ 'general.cart.empty_message' | t }}</p>
       
       {%- comment %} Search Prompt {% endcomment -%}
       <div class="cart__empty-search">
-        <p>{{ 'cart.empty_search_prompt' | t }}</p>
+        <p>{{ 'general.cart.empty_search_prompt' | t }}</p>
         <a href="{{ routes.search_url }}" class="cart__empty-search-button">
-          {{ 'cart.start_searching' | t }}
+          {{ 'general.cart.start_searching' | t }}
         </a>
       </div>
 
@@ -320,7 +320,7 @@
         {%- assign popular_collection = collections[section.settings.empty_cart_collection] -%}
         {%- if popular_collection.products.size > 0 -%}
           <div class="cart__popular">
-            <h3>{{ 'cart.popular_products' | t }}</h3>
+            <h3>{{ 'general.cart.popular_products' | t }}</h3>
             <div class="cart__popular-products">
               {%- for product in popular_collection.products limit: 3 -%}
                 <div class="cart__popular-product">
@@ -365,7 +365,7 @@
   {%- endif -%}
 </div>
 
-<script src="{{ 'cart.js' | asset_url }}" defer></script>
+<script src="{{ 'general.cart.js' | asset_url }}" defer></script>
 
 {% schema %}
 {

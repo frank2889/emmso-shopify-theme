@@ -709,7 +709,9 @@ class UnifiedFilters {
             <h3 class="${cardClass}__title">${product.title}</h3>
             
             <div class="${cardClass}__price-wrapper">
-              <span class="${cardClass}__price">€${price.toFixed(2)}</span>
+              <span class="${cardClass}__price">
+                <span class="${cardClass}__price-value">€${price.toFixed(2)}</span>
+              </span>
             </div>
             
             <span class="${cardClass}__availability ${inStock ? 'in-stock' : 'out-of-stock'}">
