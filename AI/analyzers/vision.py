@@ -93,6 +93,9 @@ class VisionAIAnalyst:
         
         print(f"      Score: {overall_score}/100")
         
+        # Cleanup old screenshot folders after analysis
+        self._cleanup_old_screenshots(site_data, deployment_info)
+        
         # Build findings with deployment info
         findings = {
             'visual_analysis': visual_analysis,
@@ -163,6 +166,41 @@ class VisionAIAnalyst:
                     screenshots[name] = os.path.join(screenshots_dir, filename)
         
         return screenshots, deployment_info
+    
+    def _cleanup_old_screenshots(self, site_data, current_deployment_info):
+        """
+        Delete old screenshot folders after analysis.
+        Keeps only the current deployment folder.
+        """
+        import shutil
+        
+        base_path = site_data.get('shopify_theme_path', '/Users/Frank/Documents/EMMSO NOV')
+        screenshots_base = os.path.join(base_path, 'screenshots')
+        
+        if not current_deployment_info:
+            return
+        
+        current_folder = current_deployment_info.get('folder')
+        if not current_folder:
+            return
+        
+        try:
+            # List all deployment folders
+            if os.path.exists(screenshots_base):
+                for item in os.listdir(screenshots_base):
+                    item_path = os.path.join(screenshots_base, item)
+                    
+                    # Skip the 'latest' symlink and current deployment
+                    if item == 'latest' or item == current_folder:
+                        continue
+                    
+                    # Delete old deployment folders
+                    if os.path.isdir(item_path) and item.startswith('deployment-'):
+                        shutil.rmtree(item_path)
+                        print(f"      🗑️  Deleted old screenshots: {item}")
+        
+        except Exception as e:
+            print(f"      ⚠️  Screenshot cleanup warning: {e}")
     
     def _analyze_screenshot(self, image_path, screen_name, project_goals):
         """Analyze a single screenshot using OpenAI Vision API"""
