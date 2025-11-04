@@ -5,15 +5,15 @@ Screenshot Capture Tool for EMMSO Theme
 Automatically captures screenshots of all important pages for Vision AI analysis
 
 SMART DEPLOYMENT-AWARE LOGIC:
-- Only capture NEW screenshots 5+ minutes after latest git deployment
-- Reuse existing screenshots if recent (< 5 min since last commit)
+- Only capture screenshots 5+ minutes after latest git deployment
+- Skip capture if deployment is too recent (< 5 min)
+- User decides when to run Captain - NO automatic waiting
 - Store screenshots in deployment-specific folders with timestamps
 - Use symlink 'latest/' pointing to most recent deployment
 """
 import os
 import sys
 import subprocess
-import time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from datetime import datetime, timedelta
@@ -161,27 +161,15 @@ def should_capture_new_screenshots():
             print(f"💡 Make code changes + git push to trigger new deployment + screenshots")
             return False, None
     
-    # Check if we need to wait longer for Shopify to deploy
+    # Check if deployment is recent (< 5 min)
     if minutes_since_commit < DEPLOYMENT_WAIT_MINUTES:
-        wait_seconds = int((DEPLOYMENT_WAIT_MINUTES - minutes_since_commit) * 60)
-        print(f"\n⏳ WAITING FOR SHOPIFY DEPLOYMENT...")
-        print(f"   Deployment: {commit_datetime.strftime('%H:%M:%S')}")
-        print(f"   Wait time: {wait_seconds // 60} min {wait_seconds % 60} sec")
+        print(f"\n⚠️  DEPLOYMENT TOO RECENT ({minutes_since_commit:.1f} min)")
         print(f"   💡 Shopify needs ~{DEPLOYMENT_WAIT_MINUTES} min to build theme")
-        print(f"\n   Sleeping {wait_seconds}s then auto-capturing screenshots...")
-        
-        # Sleep with progress updates every 30 seconds
-        for elapsed in range(0, wait_seconds, 30):
-            remaining = wait_seconds - elapsed
-            if remaining > 0:
-                time.sleep(min(30, remaining))
-                if remaining > 30:
-                    print(f"   ⏰ {remaining // 60} min {remaining % 60} sec remaining...")
-        
-        print(f"\n✅ Deployment wait complete! Starting screenshot capture...")
-    else:
-        print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
+        print(f"   🕐 Wait {DEPLOYMENT_WAIT_MINUTES - minutes_since_commit:.1f} more minutes before running Captain")
+        print(f"\n   ❌ NOT capturing screenshots - deployment not ready")
+        return False, None
     
+    print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
     print(f"📸 Will capture NEW screenshots for this deployment")
     return True, last_commit_time
 
