@@ -22,8 +22,18 @@ class EMMSOCaptain:
     =====================================
     
     Captain stuurt het AI team en slaat alle bevindingen op in:
-    - DEFINITION-OF-DONE.md: wat gedaan moet worden, wat gedaan is
-    - DESIGN-SYSTEM.md: design wijzigingen en aanbevelingen
+    - DEFINITION-OF-DONE.md: Taken (ACTION PLAN), checkboxes, summaries ONLY
+    - DESIGN-SYSTEM.md: Design wijzigingen en aanbevelingen
+    
+    ⚠️ DOD DOCUMENTATION POLICY:
+    - DO: Add tasks with clear descriptions
+    - DO: Reference file names and commit hashes
+    - DO: Mark tasks complete with brief summary
+    - DON'T: Include full code blocks
+    - DON'T: Add detailed JSON analyzer outputs
+    - DON'T: Create duplicate ACTION PLAN sections
+    
+    Rule: If it's longer than 10 lines, it doesn't belong in DOD.
     """
     
     def __init__(self):
@@ -405,14 +415,18 @@ class EMMSOCaptain:
         # Convert recommendations to concrete Phase tasks
         phase_tasks = self._convert_to_phase_tasks(mission_results, overall_score)
         
-        # Save to DEFINITION-OF-DONE.md
+        # Save to DEFINITION-OF-DONE.md (SUMMARY ONLY - NO CODE)
+        # Following DOD Documentation Policy:
+        # - Task lists with checkboxes ✅
+        # - References to files/commits ✅
+        # - High-level summaries ✅
+        # - NO full code blocks ❌
+        # - NO detailed implementation ❌
+        # - NO large JSON dumps ❌
+        
         dod_content = f"""
 ### Mission: {mission_type}
 **Overall Score**: {overall_score}/100
-
-#### Findings
-
-{chr(10).join(all_findings)}
 
 #### Action Items
 
