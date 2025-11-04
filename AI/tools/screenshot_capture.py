@@ -128,11 +128,12 @@ def should_capture_new_screenshots():
     """
     Determine if new screenshots are needed based on:
     1. Last git commit time (deployment)
-    2. Time since last screenshot capture
-    3. Minimum 5-minute wait for Shopify deployment
+    2. Minimum 5-minute wait for Shopify deployment
+    
+    ALWAYS CAPTURES NEW SCREENSHOTS when deployment is ready.
     
     Returns: (should_wait_and_capture, deployment_timestamp)
-    - should_wait_and_capture: True if need to wait then capture
+    - should_wait_and_capture: True if deployment ready
     - deployment_timestamp: Timestamp to use for folder name
     """
     last_commit_time = get_last_deployment_time()
@@ -147,20 +148,6 @@ def should_capture_new_screenshots():
     print(f"📅 Last deployment: {commit_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"⏱️  Time since deployment: {minutes_since_commit:.1f} minutes")
     
-    # Check if we already have screenshots from this deployment
-    latest_deployment = get_latest_screenshot_deployment()
-    
-    if latest_deployment:
-        # Extract timestamp from folder name: deployment-1730649600
-        folder_timestamp = int(latest_deployment.name.split('-')[1])
-        
-        # If screenshots are from this deployment or newer, reuse them
-        if folder_timestamp >= last_commit_time:
-            print(f"✅ Screenshots already exist for this deployment: {latest_deployment.name}")
-            print(f"📁 Reusing existing screenshots (no new deployment since last capture)")
-            print(f"💡 Make code changes + git push to trigger new deployment + screenshots")
-            return False, None
-    
     # Check if deployment is recent (< 5 min)
     if minutes_since_commit < DEPLOYMENT_WAIT_MINUTES:
         print(f"\n⚠️  DEPLOYMENT TOO RECENT ({minutes_since_commit:.1f} min)")
@@ -170,7 +157,7 @@ def should_capture_new_screenshots():
         return False, None
     
     print(f"🆕 Deployment is ready ({minutes_since_commit:.1f} min old)")
-    print(f"📸 Will capture NEW screenshots for this deployment")
+    print(f"📸 Will ALWAYS capture NEW screenshots for fresh analysis")
     return True, last_commit_time
 
 def capture_screenshots(output_dir='screenshots'):
@@ -193,14 +180,20 @@ def capture_screenshots(output_dir='screenshots'):
             print(f"\n⏸️  Skipping screenshot capture - waiting for deployment")
             return None
     
-    # Create deployment-specific folder
+    # Create deployment-specific folder with timestamp
     deployment_timestamp = deployment_info if isinstance(deployment_info, int) else int(datetime.now().timestamp())
+    deployment_datetime = datetime.fromtimestamp(deployment_timestamp)
+    
     screenshots_base = Path('/Users/Frank/Documents/EMMSO NOV') / output_dir
-    deployment_folder = screenshots_base / f"deployment-{deployment_timestamp}"
+    
+    # Folder name: deployment-YYYYMMDD-HHMMSS-timestamp
+    folder_name = f"deployment-{deployment_datetime.strftime('%Y%m%d-%H%M%S')}-{deployment_timestamp}"
+    deployment_folder = screenshots_base / folder_name
     
     deployment_folder.mkdir(parents=True, exist_ok=True)
     
-    print(f"\n� Output folder: {deployment_folder.name}")
+    print(f"\n📁 Output folder: {deployment_folder.name}")
+    print(f"📅 Timestamp: {deployment_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"📸 Capturing {len(PAGES_TO_CAPTURE)} screenshots...")
     print("=" * 60 + "\n")
     
@@ -230,8 +223,10 @@ def capture_screenshots(output_dir='screenshots'):
                     page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
                     page.wait_for_timeout(1000)
                 
-                # Take screenshot
-                screenshot_path = deployment_folder / f"{page_config['name']}.png"
+                # Take screenshot with timestamp in filename
+                timestamp_suffix = datetime.now().strftime('%H%M%S')
+                screenshot_filename = f"{page_config['name']}-{timestamp_suffix}.png"
+                screenshot_path = deployment_folder / screenshot_filename
                 
                 if 'clip' in page_config:
                     # Partial screenshot (e.g., header only)
@@ -240,7 +235,7 @@ def capture_screenshots(output_dir='screenshots'):
                     # Full page screenshot
                     page.screenshot(path=str(screenshot_path), full_page=True)
                 
-                print(f"    ✅ Saved to {page_config['name']}.png")
+                print(f"    ✅ Saved to {screenshot_filename}")
                 
                 page.close()
                 
