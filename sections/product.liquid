@@ -24,6 +24,10 @@
 
     {%- # Product Info -%}
     <div class="product-info">
+      {%- # Product Category/Type - Nora: Make category clear -%}
+      {% if product.type != blank %}
+        <p class="product-category">{{ product.type }}</p>
+      {% endif %}
       <p class="product-vendor">{{ product.vendor }}</p>
       <h1 class="product-title">{{ product.title }}</h1>
       
