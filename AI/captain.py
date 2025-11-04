@@ -38,16 +38,15 @@ class EMMSOCaptain:
     
     def __init__(self):
         print("🚢 EMMSO AI Captain reporting for duty!")
-        print("   Simplified version - tracking in DoD and Design System")
+        print("   Simplified version - tracking in DoD only (single source of truth)")
         
         self.ai_team = {}
         
-        # Paths to documentation files
+        # Path to documentation file (single source of truth)
         self.theme_root = '/Users/Frank/Documents/EMMSO NOV'
         self.definition_of_done_path = os.path.join(self.theme_root, 'DEFINITION-OF-DONE.md')
-        self.design_system_path = os.path.join(self.theme_root, 'DESIGN-SYSTEM.md')
         
-        # Load the goals and vision from DoD and Design System
+        # Load the goals and vision from DoD
         self.project_goals = self._load_project_goals()
         
         # Initialize Revenue Calculator for business impact analysis
@@ -63,8 +62,7 @@ class EMMSOCaptain:
         self.human_commands = []
         
         print(f"\n   📋 Documentation tracking:")
-        print(f"      ✅ Definition of Done: {self.definition_of_done_path}")
-        print(f"      ✅ Design System: {self.design_system_path}")
+        print(f"      ✅ DEFINITION-OF-DONE.md (single source of truth)")
         
         if self.project_goals:
             print(f"\n   🎯 Project Goals Loaded:")
@@ -100,17 +98,14 @@ class EMMSOCaptain:
             if 'Lighthouse Score' in dod_content:
                 goals['lighthouse_target'] = '95+ (Performance/Accessibility/SEO)'
             
-            # Read DESIGN-SYSTEM.md for design principles
-            with open(self.design_system_path, 'r', encoding='utf-8') as f:
-                design_content = f.read()
-            
-            if 'Brutalist Simplicity' in design_content:
+            # Design principles from DoD
+            if 'Brutalist Simplicity' in dod_content:
                 goals['design_principle'] = 'Brutalist Simplicity - Function over decoration'
             
-            if 'WCAG 2.1 AA' in design_content:
+            if 'WCAG 2.1 AA' in dod_content:
                 goals['accessibility'] = 'WCAG 2.1 AA compliance required'
             
-            print(f"   📖 Loaded {len(goals)} project goals from documentation")
+            print(f"   📖 Loaded {len(goals)} project goals from DEFINITION-OF-DONE.md")
             return goals
             
         except Exception as e:
@@ -119,7 +114,7 @@ class EMMSOCaptain:
     
     def _save_to_definition_of_done(self, content: str, section: str = "AI Analysis"):
         """
-        APPEND to DEFINITION-OF-DONE.md (chronological documentation)
+        APPEND to DEFINITION-OF-DONE.md (single source of truth)
         
         Following DOD Documentation Policy:
         - Appends at end (chronological history)
@@ -136,32 +131,10 @@ class EMMSOCaptain:
                 f.write(f"\n\n---\n\n## {section} - {timestamp}\n\n{content}\n")
             
             print(f"   ✅ Saved to DEFINITION-OF-DONE.md ({section})")
-            print(f"   📋 Policy: Chronological append, NO code/JSON")
+            print(f"   📋 Single source of truth - all documentation in DoD")
             return True
         except Exception as e:
             print(f"   ❌ Error saving to DoD: {e}")
-            return False
-    
-    def _save_to_design_system(self, content: str, section: str = "AI Recommendations"):
-        """
-        APPEND to DESIGN-SYSTEM.md (chronological documentation)
-        
-        Following Design System Policy:
-        - Copilot writes design specs (manual updates)
-        - Captain appends AI analysis at end (chronological)
-        - Shows history of design recommendations
-        """
-        try:
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            
-            with open(self.design_system_path, 'a', encoding='utf-8') as f:
-                f.write(f"\n\n---\n\n## {section} - {timestamp}\n\n{content}\n")
-            
-            print(f"   ✅ Saved to DESIGN-SYSTEM.md ({section})")
-            print(f"   📋 Policy: Copilot writes specs, Captain appends analysis")
-            return True
-        except Exception as e:
-            print(f"   ❌ Error saving to Design System: {e}")
             return False
     
     def _convert_to_phase_tasks(self, mission_results: Dict, overall_score: int) -> str:
@@ -464,7 +437,7 @@ class EMMSOCaptain:
 """
         self._save_to_definition_of_done(dod_content, f"AI Analysis - {mission_type}")
         
-        # Save design recommendations to DESIGN-SYSTEM.md
+        # Save design recommendations to DEFINITION-OF-DONE.md (single source of truth)
         if design_recommendations:
             design_content = f"""
 ### Design Analysis Results
@@ -480,7 +453,7 @@ class EMMSOCaptain:
 3. Medium (Score < 85): Next sprint
 4. Low (Score >= 85): Future enhancement
 """
-            self._save_to_design_system(design_content, f"AI Design Analysis - {mission_type}")
+            self._save_to_definition_of_done(design_content, f"AI Design Analysis - {mission_type}")
         
         self.last_analysis = {
             'timestamp': datetime.now().isoformat(),
