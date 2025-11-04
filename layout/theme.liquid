@@ -70,14 +70,14 @@
     {%- # Mobile Bottom Navigation -%}
     {% render 'mobile-nav' %}
     
-    {%- # Search Intelligence Module - Load first -%}
-    <script src="{{ 'search-intelligence.js' | asset_url }}"></script>
+    {%- # Search Intelligence Module - Load first (MINIFIED) -%}
+    <script src="{{ 'search-intelligence.min.js' | asset_url }}"></script>
     
-    {%- # Search Engine JavaScript - Load after intelligence -%}
-    <script src="{{ 'search-engine.js' | asset_url }}" defer></script>
+    {%- # Search Engine JavaScript - Load after intelligence (MINIFIED) -%}
+    <script src="{{ 'search-engine.min.js' | asset_url }}" defer></script>
     
-    {%- # Related Products - Uses search intelligence -%}
-    <script src="{{ 'related-products.js' | asset_url }}" defer></script>
+    {%- # Related Products - Uses search intelligence (MINIFIED) -%}
+    <script src="{{ 'related-products.min.js' | asset_url }}" defer></script>
     
     {%- # Performance monitoring -%}
     <script>
