@@ -19,7 +19,7 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime, timedelta
 
 # Shopify preview URL
-PREVIEW_URL = "https://y0hnl2y5cksklmw7-63663472878.shopifypreview.com"
+PREVIEW_URL = "https://jfnjr52c1q3uk18h-63663472878.shopifypreview.com"
 
 # Pages to capture
 PAGES_TO_CAPTURE = [
