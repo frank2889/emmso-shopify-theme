@@ -72,6 +72,26 @@ PAGES_TO_CAPTURE = [
         'description': 'Shopping cart mobile - CRITICAL'
     },
     {
+        'name': 'search-page-desktop',
+        'url': f"{PREVIEW_URL}/search?q=Bathrooms",
+        'viewport': {'width': 1920, 'height': 1080},
+        'description': 'Search results page - Check for translation errors'
+    },
+    {
+        'name': 'search-page-mobile',
+        'url': f"{PREVIEW_URL}/search?q=Bathrooms",
+        'viewport': {'width': 390, 'height': 844},
+        'description': 'Search results mobile - Translation validation'
+    },
+    {
+        'name': 'cart-drawer-open',
+        'url': PREVIEW_URL,
+        'viewport': {'width': 1920, 'height': 1080},
+        'execute_js': "document.querySelector('[data-cart-drawer-toggle]')?.click() || document.querySelector('.cart-icon')?.click()",
+        'wait_after_js': 800,  # Wait for drawer slide-in animation
+        'description': 'Cart drawer AJAX overlay - Modern e-commerce UX'
+    },
+    {
         'name': 'header-navigation',
         'url': PREVIEW_URL,
         'viewport': {'width': 1920, 'height': 1080},
@@ -197,6 +217,12 @@ def capture_screenshots(output_dir='screenshots'):
                 
                 # Wait for content to load
                 page.wait_for_timeout(2000)  # 2 second wait for animations
+                
+                # Execute custom JavaScript if provided (e.g., open cart drawer)
+                if 'execute_js' in page_config:
+                    page.evaluate(page_config['execute_js'])
+                    wait_time = page_config.get('wait_after_js', 500)
+                    page.wait_for_timeout(wait_time)
                 
                 # Scroll to bottom if needed (for footer)
                 if page_config.get('scroll_to_bottom'):
