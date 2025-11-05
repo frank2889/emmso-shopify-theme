@@ -87,8 +87,11 @@
 
 .product-card__vendor {
   font-size: var(--text-sm);
-  color: var(--color-text-muted);
+  color: var(--color-primary); /* ENHANCED: Changed from muted to primary orange for better visibility */
   margin: 0 0 var(--space-3);
+  font-weight: var(--weight-semibold); /* ADDED: Bolder for prominence */
+  text-transform: uppercase; /* ADDED: Professional category styling */
+  letter-spacing: 0.05em; /* ADDED: Better readability */
 }
 
 .product-card__price {

@@ -108,21 +108,35 @@ class MarcusPerformanceAnalyst:
             
             asset_files = [f for f in os.listdir(assets_path) if os.path.isfile(os.path.join(assets_path, f))]
             
-            # Count CSS files
+            # Count CSS files - ONLY minified files that are actually loaded
             css_files = [f for f in asset_files if f.endswith('.css')]
-            total_css_size = sum(os.path.getsize(os.path.join(assets_path, f)) for f in css_files)
+            minified_css = [f for f in css_files if '.min.css' in f]  # Only count minified
+            non_minified_css = [f for f in css_files if '.min.css' not in f]
             
-            # Count JS files  
+            # Calculate size for MINIFIED files only (what's actually served)
+            total_css_size = sum(os.path.getsize(os.path.join(assets_path, f)) for f in minified_css)
+            
+            # Count JS files - ONLY minified files that are actually loaded
             js_files = [f for f in asset_files if f.endswith('.js')]
-            total_js_size = sum(os.path.getsize(os.path.join(assets_path, f)) for f in js_files)
+            minified_js = [f for f in js_files if '.min.js' in f]  # Only count minified
+            non_minified_js = [f for f in js_files if '.min.js' not in f]
+            
+            # Calculate size for MINIFIED files only (what's actually served)
+            total_js_size = sum(os.path.getsize(os.path.join(assets_path, f)) for f in minified_js)
             
             return {
                 'css_count': len(css_files),
                 'css_files': css_files,
-                'total_css_size_kb': round(total_css_size / 1024, 1),
+                'minified_css_count': len(minified_css),
+                'minified_css_files': minified_css,
+                'non_minified_css_count': len(non_minified_css),
+                'total_css_size_kb': round(total_css_size / 1024, 1),  # Minified size only
                 'js_count': len(js_files),
                 'js_files': js_files,
-                'total_js_size_kb': round(total_js_size / 1024, 1)
+                'minified_js_count': len(minified_js),
+                'minified_js_files': minified_js,
+                'non_minified_js_count': len(non_minified_js),
+                'total_js_size_kb': round(total_js_size / 1024, 1)  # Minified size only
             }
             
         except Exception as e:
@@ -210,10 +224,15 @@ class MarcusPerformanceAnalyst:
         if 'error' not in theme_analysis:
             total_css_kb = theme_analysis.get('total_css_size_kb', 0)
             css_count = theme_analysis.get('css_count', 0)
+            minified_css_count = theme_analysis.get('minified_css_count', 0)
+            non_minified_css = theme_analysis.get('non_minified_css_count', 0)
             
             # Modern CSS optimization (NOT consolidation)
+            # NOTE: total_css_kb now reflects MINIFIED files only (what's actually served)
             if total_css_kb > 200:
-                recommendations.append(f"Total CSS {total_css_kb}KB - minify and enable gzip/brotli compression")
+                recommendations.append(f"Total CSS {total_css_kb}KB (minified) - enable gzip/brotli compression for further reduction")
+            elif non_minified_css > 0:
+                recommendations.append(f"{non_minified_css} CSS files not minified - all CSS should use .min.css for production")
             
             # Check for critical CSS separation
             has_critical_css = any('critical' in f for f in theme_analysis.get('css_files', []))
@@ -223,9 +242,14 @@ class MarcusPerformanceAnalyst:
             # JavaScript optimization
             js_count = theme_analysis.get('js_count', 0)
             total_js_kb = theme_analysis.get('total_js_size_kb', 0)
+            minified_js_count = theme_analysis.get('minified_js_count', 0)
+            non_minified_js = theme_analysis.get('non_minified_js_count', 0)
             
+            # NOTE: total_js_kb now reflects MINIFIED files only (what's actually served)
             if total_js_kb > 150:
-                recommendations.append(f"Total JS {total_js_kb}KB - consider code splitting and lazy loading")
+                recommendations.append(f"Total JS {total_js_kb}KB (minified) - consider code splitting and lazy loading")
+            elif non_minified_js > 0:
+                recommendations.append(f"{non_minified_js} JS files not minified - all JavaScript should use .min.js for production")
             
             # Check for proper defer/async usage
             if js_count > 15:

@@ -525,9 +525,16 @@ class AlexShopifyAnalyst:
             template_issues = template_analysis.get('issues', [])
             specific_templates = ', '.join(template_issues[:3]) if template_issues else 'Liquid syntax, performance, structure'
             total_templates = template_analysis.get('total_templates', 0)
+            
+            # FIX: Better message when 0 issues (high quality = high score expected)
+            if total_templates == 0 or not template_issues:
+                issue_description = f'All {total_templates} templates optimized but quality score low: {template_quality}/100. Check: {specific_templates}'
+            else:
+                issue_description = f'Issues found in {len(template_issues)} templates: {specific_templates}. Score: {template_quality}/100'
+            
             recommendations.append({
                 'title': 'Template Quality Improvement Needed',
-                'description': f'Issues in {total_templates} templates: {specific_templates}. Score: {template_quality}/100',
+                'description': issue_description,
                 'priority': 'high',
                 'impact': 'medium',
                 'files': template_analysis.get('problematic_files', [])
