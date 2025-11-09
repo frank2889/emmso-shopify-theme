@@ -18,8 +18,10 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 from datetime import datetime, timedelta
 
-# Shopify preview URL
-PREVIEW_URL = "https://jfnjr52c1q3uk18h-63663472878.shopifypreview.com"
+# EMMSO Shopify Preview URL - CREDENTIALS ROTATE, UPDATE AS NEEDED
+# Last updated: 2025-11-09 (kqkw8gtti0xafl6x credentials - expires in ~2 days)
+# Note: Preview URLs expire every 2 days, check https://admin.shopify.com for latest credentials
+PREVIEW_URL = "https://kqkw8gtti0xafl6x-63663472878.shopifypreview.com"
 
 # Pages to capture
 PAGES_TO_CAPTURE = [
